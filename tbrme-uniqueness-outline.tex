@@ -1,0 +1,759 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{bm}
+\usepackage{geometry}
+\geometry{margin=1in}
+\usepackage{hyperref}
+\usepackage{cleveref}
+\usepackage{enumitem}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{axiom}[theorem]{Axiom}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\newcommand{\HH}{\mathcal{H}}
+\newcommand{\MM}{\mathcal{M}}
+\newcommand{\AAA}{\mathcal{A}}
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\CC}{\mathbb{C}}
+\newcommand{\id}{\mathbb{1}}
+\newcommand{\KK}{\mathbb{K}}
+\newcommand{\tr}{\tau}
+\newcommand{\ctr}[1]{{#1}^{\hat\omega}}
+
+% Status labels for honest gap accounting
+\newcommand{\PROVEN}{\textbf{[Status: proven]}}
+\newcommand{\PROVABLE}{\textbf{[Status: provable now, proof to be written]}}
+\newcommand{\PARTIAL}{\textbf{[Status: partially proven]}}
+\newcommand{\OPEN}{\textbf{[Status: genuinely open]}}
+
+\title{Uniqueness of the Two-Boundary Retrocausal Master
+Equation: a Giulini--Marolf--Acz\'el--Connes Theorem for the
+TBRME\\
+\large\emph{Companion-paper architecture (rev.~2: Type~II$_1$
+gravity sector, Acz\'el clock re-route)}}
+\author{Alexandru Dima}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This companion paper proves a uniqueness theorem for the
+Two-Boundary Retrocausal Master Equation (TBRME) of the main
+unification paper. Under seven explicit axioms on a
+densely-defined symmetric constraint operator $\widehat C$ on
+the universal Hilbert space $\mathcal U$ --- clock covariance
+with the fibrewise Acz\'el--d'Alembert cocycle, modular
+covariance with respect to the \emph{non-tracial} dual seed
+state $\hat\omega$ on the CLPW Type~II$_1$ gravity sector,
+direct-sum locality in the branch index, TDSE flat-space limit,
+semiclassical-Einstein WKB limit, a pure-geometry
+\emph{universality-class} condition in the sense of
+Kaimakkamis--Sil, and branch-uniform Part~I normalization ---
+we show $\widehat C$ equals $\lambda\,\widehat{\mathfrak C}_k$
+uniquely up to (a) a single overall positive scale $\lambda$,
+(b) conjugation by unitaries of the $\hat\omega$-centralizer
+$\ctr{\MM_{\rm geom}}$, and (c) von~Neumann
+self-adjoint-extension freedom where the deficiency indices of
+$\widehat C\!\restriction_\Phi$ are non-trivial and equal. The
+structural template is Giulini--Marolf rigging-map uniqueness
+(outer frame; it also sources the per-branch scale freedom that
+Axiom~X7 collapses), with the scalar Acz\'el--d'Alembert
+classification supplying the clock factor (Kisy\'nski--Sova
+operator-cosine theory certifying the generator), the
+Pedersen--Takesaki noncommutative Radon--Nikodym theorem
+supplying the gravity factor on the finite-trace Type~II$_1$
+sector, and Meda--Pinamonti--Siemssen semiclassical
+well-posedness closing the WKB leg. All external ingredients
+are in the ambient literature and are cited at theorem level;
+the contribution of this paper is assembly, an axiom
+independence/consistency audit, the over-determination lemma
+for the matter--gravity coupling, and explicit identification
+of the three irreducible ambiguity classes.
+\end{abstract}
+
+\section{Introduction and context}
+\label{sec:intro}
+
+\emph{Placeholder.} State the main paper's TBRME
+$\widehat{\mathfrak C}_k=\widehat K_k-\kappa^{-1}\widehat
+Q^{(k)}[f]$, recap the five-fold reduction theorem (U1)--(U5),
+and motivate the uniqueness question. Stress the ``modulo
+centralizer'' status --- this is not an iff classification; it
+is the same uniqueness quality as the Acz\'el--d'Alembert
+classification for the clock shift.
+
+Two corrections relative to the first scaffold are structural
+and propagate everywhere:
+\begin{itemize}[leftmargin=*,nosep]
+  \item \textbf{Type~II$_1$, not II$_\infty$.} With a positive
+    clock Hamiltonian on $L^2(\RR_+)$ and a compact region, the
+    CLPW/DEHK crossed-product gravity sector is a Type~II$_1$
+    factor with a \emph{finite}, trace-normalized trace $\tr$
+    ($\tr(\id)=1$)~\cite{CLPW2022}; ``II$_\infty$ with induced
+    finite trace'' is a contradiction in terms. The II$_\infty$
+    variant survives only on non-compact/black-hole-exterior
+    sectors~\cite{CPW2022}, treated in
+    Rem.~\ref{rem:IIinfty-variant}.
+  \item \textbf{Acz\'el, not Kisy\'nski, selects the clock
+    shape.} Per ledger item A29, $C=B+\id$ does not satisfy the
+    homogeneous operator-cosine equation; the clock-sector
+    uniqueness is the fibrewise scalar Acz\'el--d'Alembert
+    classification (main paper, App.~A as corrected), with
+    Kisy\'nski--Sova theory certifying the reconstructed
+    generator only. The axioms below import the corrected
+    measurability/continuity hypotheses explicitly.
+\end{itemize}
+
+\section{Standing structures and axioms}
+\label{sec:axioms}
+
+Let $\mathcal U=\bigoplus_{k\in\KK_+}\HH_{\rm clock}\otimes
+\HH_{\rm geom}^{(k)}\otimes\HH_{\rm matter}^{(k)}$, where each
+$\HH_{\rm geom}^{(k)}=L^2(\MM_{\rm geom}^{(k)},\tr_k)$ carries
+the CLPW/DEHK crossed-product structure of App.~F of the main
+paper in its corrected form: for a positive clock Hamiltonian
+on $L^2(\RR_+)$ and compact region, $\MM_{\rm geom}^{(k)}$ is a
+\emph{Type~II$_1$ factor} with normalized finite trace $\tr_k$,
+$\tr_k(\id)=1$~\cite{CLPW2022,PedersenTakesaki1973}. Let
+$\hat\omega_k=\tr_k(h_k\,\cdot\,)$ be the dual state induced by
+the branch seed $\omega_k$, with Radon--Nikodym density
+$h_k\in L^1(\MM_{\rm geom}^{(k)},\tr_k)_+$, $h_k$ injective
+(faithfulness), $\tr_k(h_k)=1$. Its modular automorphism group
+is \emph{inner},
+\begin{equation}\label{eq:inner-modular}
+  \sigma^{\hat\omega_k}_s\;=\;\mathrm{Ad}\bigl(h_k^{\,is}\bigr),
+\end{equation}
+by the Pedersen--Takesaki Radon--Nikodym theorem for semifinite
+algebras~\cite{PedersenTakesaki1973} (equivalently: a von
+Neumann algebra is semifinite iff its modular flows are inner).
+In particular the modular group of the \emph{trace} is trivial,
+$\sigma^{\tr_k}=\mathrm{id}$; all modular-covariance statements
+below are therefore made with respect to $\hat\omega_k$, never
+$\tr_k$.
+
+Let $\widehat C$ be a densely-defined \emph{symmetric} operator
+on a common invariant rigged-Hilbert dense domain
+$\Phi\subset\mathcal U$ (essential self-adjointness is
+\emph{not} assumed; see ambiguity (c) and
+Rem.~\ref{rem:esa-vs-c}). Assume:
+
+\begin{axiom}[(X1) Clock covariance and Acz\'el--d'Alembert
+cocycle]\label{ax:X1}
+$[\widehat C,\widehat H_{\rm c}\otimes\id\otimes\id]=0$ on
+$\Phi$, where $\widehat H_{\rm c}$ is the Page--Wootters clock
+generator, and the clock-shift response
+$B(\delta):=\widehat\Sigma$-part of $\widehat C$ under finite
+clock shifts satisfies, on the band-limited subspace
+$\HH_{[E_\star]}$, the package of the main paper's
+Prop.~A (operator-sense d'Alembert reduction): $B(\delta)$
+bounded, self-adjoint, even in $\delta$, strongly continuous
+in $\delta$ on $\mathcal D(\widehat H_{\rm c}^2)$, with
+$B(\delta)\in\{\widehat H_{\rm c}\}''$ and the inhomogeneous
+cocycle
+\[
+  B(\delta_1+\delta_2)+B(\delta_1-\delta_2)
+  =2\cos(\delta_1\widehat H_{\rm c}/\hbar)B(\delta_2)
+  +2B(\delta_1),
+\]
+together with $\mu_{\widehat H_{\rm c}}$-measurability of the
+fibrewise data $\xi\mapsto f(\xi,\delta)$ for each rational
+$\delta$.
+\end{axiom}
+
+\begin{remark}[A29 accommodation]\label{rem:A29}
+X1 deliberately states the \emph{inhomogeneous} cocycle plus
+the measurability/continuity hypotheses under which the
+fibrewise scalar Acz\'el classification is a theorem (main
+paper, Prop.~\emph{wdw-dalembert} and
+Thm.~\emph{wdw-selection}); no homogeneous operator-cosine
+hypothesis on $C=B+\id$ is made or used. If the sibling
+re-route adds further measurability hypotheses, they are to be
+absorbed into X1 verbatim.
+\end{remark}
+
+\begin{axiom}[(X2) Modular covariance w.r.t.\ the dual seed
+state, non-degenerate]\label{ax:X2}
+For each branch $k$ there is a decomposition on $\Phi$,
+$\widehat C_k=\id\otimes\widehat C_{\rm grav}^{(k)}\otimes\id
++\widehat C_{\rm rest}^{(k)}$, with
+$\widehat C_{\rm grav}^{(k)}$ symmetric and affiliated to
+$\MM_{\rm geom}^{(k)}$, $\widehat C_{\rm rest}^{(k)}$
+commuting with $h_k^{\,is}$ for all $s$, such that
+\begin{equation}\label{eq:X2}
+  \mathrm{Ad}\bigl(e^{it\widehat C_{\rm grav}^{(k)}}\bigr)
+  \restriction_{\MM_{\rm geom}^{(k)}}
+  \;=\;\sigma^{\hat\omega_k}_{-\lambda_k t}
+  \qquad\text{for some }\lambda_k>0\text{ and all }t\in\RR .
+\end{equation}
+\emph{Non-degeneracy:} $\hat\omega_k$ is non-tracial, i.e.\
+$h_k\notin\CC\,\id$. (If $h_k$ were scalar,
+$\sigma^{\hat\omega_k}=\mathrm{id}$ and \eqref{eq:X2} would be
+vacuous; the axiom then selects nothing. Non-degeneracy holds
+automatically whenever the seed modular Hamiltonian
+$K_{\omega_k}$ is non-scalar, i.e.\ in every physical branch.)
+\end{axiom}
+
+\begin{axiom}[(X3) Direct-sum locality in the branch
+index]\label{ax:X3}
+$\widehat C=\bigoplus_{k\in\KK_+}\widehat C_k$, with each
+$\widehat C_k$ affiliated to $\mathcal B(\HH_{\rm clock})
+\otimes\MM_{\rm geom}^{(k)}\otimes\mathcal B(\HH_{\rm matter}
+^{(k)})$, where $\MM_{\rm geom}^{(k)}$ is the Type~II$_1$
+crossed-product factor above.
+\end{axiom}
+
+\begin{axiom}[(X4) TDSE flat-space limit, projective
+form]\label{ax:X4}
+In the flat, classical-clock, finite-matter limit (reduction
+(U1)/(U2) of the main paper), $\widehat C_k\downarrow
+c_k\bigl(\widehat H_{\rm clock}+\widehat H_{\rm matter}^{(k)}
+\bigr)$ for some $c_k>0$, strongly on the limit domain.
+\emph{(Projective form: only the ray of the limit generator is
+fixed. The strict form $c_k=1$ would force $\lambda=1$ in
+Thm.~\ref{thm:main} and render ambiguity (a) vacuous; see
+Sec.~\ref{sec:audit}.)} The limit additionally supplies the
+TDSE normalization $-B''(0)=\alpha\widehat H_{\rm c}^2/\hbar^2$
+on $\mathcal D(\widehat H_{\rm c}^2)$ used to fix the common
+fibrewise scale in the clock sector.
+\end{axiom}
+
+\begin{axiom}[(X5) Semiclassical-Einstein WKB
+limit]\label{ax:X5}
+In the WKB-geometry sector, $\langle\widehat C\rangle$-vanishing
+yields the semiclassical Einstein equation
+$G_{\mu\nu}=(8\pi G/c^4)\langle T_{\mu\nu}\rangle$ (reduction
+(U3) of the main paper), within the scope where
+Meda--Pinamonti--Siemssen local existence--uniqueness
+holds~\cite{MedaPinamontiSiemssen2020}: \emph{flat} FLRW
+backgrounds driven by a massive scalar with arbitrary curvature
+coupling, initial data at finite time, regular compatible
+state. (The earlier ``compact-Cauchy FLRW'' scope and the
+``Pinamonti--Drago--Hack'' attribution were incorrect and are
+withdrawn.)
+\end{axiom}
+
+\begin{axiom}[(X6) Pure-geometry universality class
+(weakened)]\label{ax:X6}
+Tracing out $\HH_{\rm clock}\otimes\HH_{\rm matter}^{(k)}$
+reduces $\widehat C_k$ to a quantum Hamiltonian constraint
+whose (i) classical limit is the ADM/Wheeler--DeWitt constraint
+of general relativity, and whose (ii) operator-ordering
+ambiguity function lies in the \emph{same Kaimakkamis--Sil
+universality class}~\cite{KaimakkamisSil2024} as the minimal
+(Laplace--Beltrami-covariant) ordering: under the
+field-redefinition-invariant reformulation, all ordering
+ambiguities consolidate into a single higher-order scalar
+function on minisuperspace, and X6 requires only membership of
+the minimal class. \emph{X6 makes no reference to the cosine
+deformation $\widehat\Sigma_\delta$ or to any other structure
+that Thm.~\ref{thm:main} is supposed to deliver; the
+$\Sigma_\delta$ term is derived from X1+X4, not assumed here.}
+\end{axiom}
+
+\begin{axiom}[(X7) Branch-uniform Part~I
+normalization]\label{ax:X7}
+On finite-dimensional matter factors, $\widehat C_k$ restricts
+to the Part~I two-boundary constraint (reduction (U2) of the
+main paper) \emph{with a branch-independent normalization}:
+the constants $c_k$ of X4 and the flow rescalings $\lambda_k$
+of X2 satisfy $c_k=c$, $\lambda_k=\lambda$ for all
+$k\in\KK_+$. Equivalently: the Giulini--Marolf per-sector
+scale freedom~\cite{GiuliniMarolf1999} is fixed to a single
+global scale by Part~I consistency of the branch weights
+$w(k)$.
+\end{axiom}
+
+\begin{remark}[What X7 is for]\label{rem:X7-role}
+Giulini--Marolf uniqueness is \emph{per superselection
+sector}: on a direct sum the rigging map (and with it the
+normalization of the constraint) is unique only up to one
+positive constant per sector~\cite{GiuliniMarolf1999}. Under
+X3 every branch $k$ is a superselection sector, so X1--X6
+alone can at best give $\widehat C_k=\lambda_k\widehat{
+\mathfrak C}_k$ with an uncontrolled sequence $(\lambda_k)$.
+X7's entire job is to collapse $(\lambda_k)\to\lambda$; it is
+\emph{not} an independent rigidity input on the operator form
+(that part of the old X7 was implied by X4 and has been
+removed --- see Sec.~\ref{sec:audit}).
+\end{remark}
+
+\section{Main theorem}
+\label{sec:main-theorem}
+
+\begin{theorem}[TBRME uniqueness, sharp form]\label{thm:main}
+Under Ax.~\ref{ax:X1}--\ref{ax:X7} on the universal Hilbert
+space $\mathcal U$ of the main paper,
+\[
+  \widehat C\;=\;\lambda\,\bigoplus_{k\in\KK_+}
+  \widehat{\mathfrak C}_k
+  \qquad\text{for some }\lambda\in\RR_{>0},
+\]
+uniquely up to:
+\begin{itemize}[leftmargin=*,nosep]
+  \item[(\textbf{a})] the overall positive scalar $\lambda>0$
+    (single and global, by X7; per-branch scales $\lambda_k$
+    if X7 is dropped);
+  \item[(\textbf{b})] conjugation by unitaries of the
+    $\hat\omega_k$-centralizers
+    $\ctr{\MM_{\rm geom}^{(k)}}=\{h_k\}'\cap\MM_{\rm geom}^{(k)}$
+    (a genuine gauge class: such conjugations fix the clock and
+    gravity generators but act non-trivially on the
+    gravity--matter coupling ordering);
+  \item[(\textbf{c})] a von~Neumann self-adjoint-extension
+    choice when the deficiency indices $(n_+,n_-)$ of
+    $\widehat C\!\restriction_\Phi$ are non-trivial and equal
+    \cite{ReedSimonII}. \emph{(Attribution corrected: this
+    freedom is von~Neumann extension theory, not
+    Giulini--Marolf~\cite{GiuliniMarolf1999}, whose theorem
+    concerns rigging-map scale per superselection sector and
+    contains no deficiency-index content.)}
+\end{itemize}
+\end{theorem}
+
+\begin{remark}[Essential self-adjointness vs.\ ambiguity
+(c)]\label{rem:esa-vs-c}
+The first scaffold assumed $\widehat C$ essentially
+self-adjoint \emph{and} kept ambiguity (c); that conjunction is
+inconsistent (essential self-adjointness means
+$(n_+,n_-)=(0,0)$). The standing assumption is now symmetry on
+$\Phi$ only. In the regime where the main paper's Kato--Rellich
+argument (T4)+(T7) applies, $\widehat C\!\restriction_\Phi$ is
+essentially self-adjoint and (c) collapses; (c) is live
+precisely outside that regime (e.g.\ at minisuperspace
+boundaries $a\to0$), see Sec.~\ref{sec:GM-extension}.
+\end{remark}
+
+\section{Proof architecture}
+\label{sec:proof}
+
+\subsection{Clock sector: fibrewise Acz\'el--d'Alembert
+closure}\label{sec:proof-clock}
+
+X1 (covariance $+$ spectral theorem) forces
+$B(\delta)=f(\widehat H_{\rm c},\delta)$; the cocycle read on
+each spectral fibre $\xi$ is the \emph{scalar} inhomogeneous
+d'Alembert equation, whose continuous even solutions with
+$f(\xi,0)=0$ are $f(\xi,\delta)=c(\xi)(\cos(\delta\xi/\hbar)-1)$
+(Acz\'el~\cite{Aczel1966}); measurability of $c(\xi)$ from X1's
+measurability clause; the TDSE normalization inside X4 forces
+$c(\xi)\equiv\alpha$. Kisy\'nski--Sova operator-cosine theory
+\cite{Kisynski1972,Sova1966} enters only to certify that the
+normalized member is the cosine function of
+$A=(\widehat H_{\rm c}/\hbar)^2\succeq0$.
+\emph{Import from App.~A of the main paper as corrected under
+A29; do not import the withdrawn $C=B+\id$ homogeneous-cosine
+step.} \PROVEN{} on $\HH_{[E_\star]}$;
+extension to unbounded $\widehat H_{\rm c}$ without band-limit:
+\OPEN{} (tedious spectral-limit argument, expected routine).
+
+\subsection{Gravity sector: Pedersen--Takesaki rigidity on the
+Type~II$_1$ factor}\label{sec:proof-gravity}
+
+The Takesaki--Connes cocycle-derivative theorem
+\cite[Thm.~VIII.3.3]{Takesaki2003} is type-agnostic and
+survives the reclassification; but on a II$_1$ factor it must
+be deployed against the non-tracial state $\hat\omega_k$, since
+$\sigma^{\tr}=\mathrm{id}$. On the finite-trace sector the
+argument in fact simplifies to the following elementary lemma.
+
+\begin{lemma}[Gravity-sector rigidity, II$_1$
+form]\label{lem:gravity-rigidity}
+Let $\MM$ be a II$_1$ factor with normalized trace $\tr$, and
+$\hat\omega=\tr(h\,\cdot\,)$ a faithful normal non-tracial
+state, $h\in L^1(\MM,\tr)_+$ injective, $\tr(h)=1$. Suppose
+$\widehat C_{\rm grav}$ is self-adjoint, affiliated to $\MM$,
+and satisfies \eqref{eq:X2}:
+$\mathrm{Ad}(e^{it\widehat C_{\rm grav}})\restriction_\MM
+=\sigma^{\hat\omega}_{-\lambda t}=\mathrm{Ad}(h^{-i\lambda t})$.
+Then
+\[
+  \widehat C_{\rm grav}\;=\;\lambda\,(-\log h)\;+\;\mu\,\id,
+  \qquad \mu\in\RR,
+\]
+and $\mu=0$ iff $\tr\!\bigl(e^{-\widehat C_{\rm grav}/\lambda}
+\bigr)=1$. In particular the II$_1$ trace normalization
+$\tr(\id)=1$, $\tr(h)=1$ \emph{canonically fixes the additive
+constant}, a strengthening unavailable in the II$_\infty$
+setting.
+\end{lemma}
+
+\begin{proof}[Proof sketch]
+Set $u_t:=e^{it\widehat C_{\rm grav}}\,h^{\,i\lambda t}$. By
+hypothesis $\mathrm{Ad}(u_t)=\mathrm{id}$ on $\MM$, so
+$u_t\in\MM'\cap\MM=\CC\id$ ($\MM$ a factor; $u_t\in\MM$ since
+both factors are affiliated to $\MM$). Thus
+$e^{it\widehat C_{\rm grav}}=c(t)\,h^{-i\lambda t}$ with
+$c:\RR\to\mathbb T$; strong continuity and the group law give
+$c(t)=e^{i\mu t}$, and Stone's theorem yields
+$\widehat C_{\rm grav}=-\lambda\log h+\mu\id$ on the common
+core. The normalization claim is functional calculus plus
+$\tr(h)=1$.
+\end{proof}
+
+\PROVABLE{} (the sketch is complete modulo domain bookkeeping
+for the affiliated logarithm, which is standard in
+$L^1(\MM,\tr)$).
+
+\begin{remark}[Where the centralizer ambiguity (b) actually
+lives]\label{rem:centralizer}
+Lemma~\ref{lem:gravity-rigidity} pins
+$\widehat C_{\rm grav}^{(k)}$ \emph{exactly} (up to
+$\lambda_k$); conjugation by a unitary
+$u\in\ctr{\MM_{\rm geom}^{(k)}}$ fixes $h_k$ (hence
+$\widehat C_{\rm grav}^{(k)}$) and fixes
+$\sigma^{\hat\omega_k}$, but acts non-trivially on the
+gravity--matter coupling term $\widehat Q^{(k)}[f]$. Ambiguity
+(b) is therefore \emph{not} a residual freedom of the gravity
+generator (as the first scaffold suggested); it is a residual
+gauge action on the \emph{coupling ordering}. In a II$_1$
+factor the centralizer $\{h\}'\cap\MM$ is typically large, so
+(b) is a genuinely non-trivial class; partial collapse under
+X5 is discussed in Sec.~\ref{sec:proof-matter}, step (v).
+\end{remark}
+
+\begin{remark}[II$_\infty$ variant]\label{rem:IIinfty-variant}
+On non-compact sectors (black-hole exterior, CPW
+\cite{CPW2022}) $\MM$ is II$_\infty$ with semifinite trace;
+Lemma~\ref{lem:gravity-rigidity} survives verbatim except that
+the density $h$ is $\tr$-measurable with possibly
+$\tr(h)=\infty$-adjacent normalization, and the additive
+constant $\mu$ is no longer canonically fixed. The theorem
+statement is uniform: ``Type~II factor with faithful normal
+semifinite trace, finite (and normalized) in the
+positive-clock/compact case.''
+\end{remark}
+
+\subsection{Matter sector: the over-determination
+lemma}\label{sec:proof-matter}
+
+After Secs.~\ref{sec:proof-clock}--\ref{sec:proof-gravity} and
+X3, the residual freedom in $\widehat C_k$ is: the pure-matter
+part, the gravity--matter coupling ordering in
+$\widehat Q^{(k)}[f]$, and centralizer conjugation (b).
+
+\begin{lemma}[Over-determination of the coupling
+ordering]\label{lem:overdetermination}
+Let $\widehat C,\widehat C'$ both satisfy X1--X7 and define
+$D_k:=\widehat C_k-\widehat C'_k$ on $\Phi$. Then:
+\begin{enumerate}[label=\textup{(\roman*)},leftmargin=*,nosep]
+  \item \textup{(Clock.)} The clock parts of $\widehat
+    C_k,\widehat C'_k$ coincide up to the global scale; $D_k$
+    commutes with the clock algebra.
+    \PROVEN{} (Sec.~\ref{sec:proof-clock}).
+  \item \textup{(Gravity.)} The gravity parts differ by
+    $(\lambda-\lambda')(-\log h_k)$ only; no centralizer term
+    survives in the generator itself.
+    \PROVABLE{} (Lemma~\ref{lem:gravity-rigidity}).
+  \item \textup{(Pure matter.)} X4 (projective TDSE limit)
+    forces the pure-matter parts onto the same ray:
+    the flat-limit reduction of $D_k$ is
+    $(c_k-c_k')(\widehat H_{\rm clock}+\widehat H_{\rm matter}
+    ^{(k)})$, i.e.\ scale only. \PROVABLE{} (strong-limit
+    bookkeeping on the limit domain).
+  \item \textup{(WKB order.)} X5 forces the leading WKB symbol
+    of the coupling part of $D_k$ to vanish: both constraints
+    reduce to semiclassical Einstein flows through the
+    \emph{same} initial data, and Meda--Pinamonti--Siemssen
+    uniqueness~\cite{MedaPinamontiSiemssen2020} of the
+    semiclassical solution forces the two flows --- hence the
+    two leading symbols --- to coincide, fixing in particular
+    the coupling constant $\kappa^{-1}$ relative to the matter
+    normalization of (iii). \PARTIAL{} (MPS supply forward
+    well-posedness as a theorem; the ``equal limits $+$ unique
+    flow $\Rightarrow$ equal leading symbols'' step is an
+    inverse-direction argument that must be written; expected
+    provable on the MPS scope, i.e.\ flat FLRW + massive
+    scalar).
+  \item \textup{(Ordering class.)} X6 places the pure-geometry
+    reductions of both constraints in the Kaimakkamis--Sil
+    minimal universality class~\cite{KaimakkamisSil2024}; the
+    within-class freedom is, by their field-redefinition-
+    invariant reformulation, a change of inner-product measure
+    / field redefinition, i.e.\ unitarily implemented gauge ---
+    and the unitaries in question that preserve X2 lie in the
+    centralizer, so the within-class freedom is \emph{absorbed
+    into ambiguity (b)}. \PARTIAL{}: proven by
+    \cite{KaimakkamisSil2024} for minisuperspace models
+    (1-dim and $n$-dim with scalar matter); the lift to the
+    midisuperspace/QFT matter content of the main paper is
+    \OPEN{} (this is open problem O1, the principal
+    conjectural input of the companion paper).
+  \item \textup{(Residual $=$ extension data.)} What survives
+    (i)--(v) is supported on minisuperspace boundary terms
+    (e.g.\ $a\to0$): symmetric, annihilated by all interior
+    limits, hence localized in the deficiency subspaces of
+    $\widehat C_k\!\restriction_\Phi$. This is exactly the
+    von~Neumann extension freedom, ambiguity (c). \OPEN{}
+    (conjecture O2: ``interior-trivial $\Rightarrow$
+    boundary-supported'' needs a precise boundary-triple
+    formulation; plausible via standard boundary-triple theory
+    on the DeWitt-metric minisuperspace, but not yet written).
+\end{enumerate}
+Consequently $\widehat C_k=\lambda_k\widehat{\mathfrak C}_k$
+modulo (b) and (c), with $(\lambda_k)$ per-branch.
+\end{lemma}
+
+\subsection{Assembly}\label{sec:proof-assembly}
+
+X3 assembles the branch constraints as a direct sum. Each
+branch is a superselection sector; Giulini--Marolf
+\cite{GiuliniMarolf1999} uniqueness of the rigging map holds
+per sector up to a positive scale, so the assembly step alone
+yields $(\lambda_k)_{k\in\KK_+}$. X7 collapses
+$\lambda_k\equiv\lambda$, which is ambiguity (a). \PROVABLE{}
+(bookkeeping once (i)--(vi) are in place).
+
+\section{Self-adjoint-extension discussion (ambiguity
+(c))}\label{sec:GM-extension}
+
+Spell out when deficiency indices can be non-trivial for
+$\widehat C\!\restriction_\Phi$: in the Kato--Rellich regime of
+the main paper's (T4)+(T7) the constraint is essentially
+self-adjoint and (c) collapses; candidate non-trivial cases are
+minisuperspace boundaries ($a\to0$) and non-compact matter
+sectors. Physical principles that collapse (c): positive clock
+spectrum, positivity of the semiclassical energy, DeWitt
+boundary condition. \emph{Cite von~Neumann extension theory
+\cite[Thm.~X.2]{ReedSimonII} and, for the constraint-quantization
+frame, Marolf's single-constraint RAQ~\cite{GiuliniMarolf1999};
+the former ``Giulini--Marolf case (iii)'' citation is withdrawn
+--- no such enumeration exists in gr-qc/9902045.}
+
+\section{Relation to the main paper's App.~A}
+\label{sec:vs-kisynski}
+
+The clock-shift cocycle $\widehat\Sigma_\delta=
+\cos(\delta\widehat H_{\rm c}/\hbar)-\id$ of the main paper's
+clock-sector uniqueness (App.~A, as corrected under A29:
+fibrewise Acz\'el selection, Kisy\'nski--Sova certification) is
+the clock-sector projection of Thm.~\ref{thm:main}. The present
+paper extends that closure from the clock factor to the full
+universal Hilbert space $\mathcal U$.
+
+\section{Axiom audit: dependency, independence,
+consistency}\label{sec:audit}
+
+\subsection*{Dependency diagram}
+
+\begin{center}
+\begin{tabular}{rcl}
+X1 (cocycle $+$ measurability) & $\xrightarrow{\text{Acz\'el
+fibrewise}}$ & clock shape $\alpha\widehat\Sigma_\delta$\\[2pt]
+X4 (TDSE, projective) & $\xrightarrow{\text{normalization}}$ &
+fibre scale $c(\xi)\equiv\alpha$; pure-matter ray\\[2pt]
+X2 ($\hat\omega$, non-tracial) &
+$\xrightarrow{\text{Pedersen--Takesaki}}$ &
+$\widehat C_{\rm grav}=\lambda(-\log h)$ exactly\\[2pt]
+X5 (WKB $+$ MPS) & $\xrightarrow{\text{unique s.c.\ flow}}$ &
+leading coupling symbol, $\kappa$\\[2pt]
+X6 (KS class) & $\xrightarrow{\text{within-class $=$
+gauge}}$ & coupling ordering mod (b)\\[2pt]
+X3 (direct sum) & $\xrightarrow{\text{GM per-sector}}$ &
+assembly with $(\lambda_k)$\\[2pt]
+X7 (branch-uniform) & $\xrightarrow{\phantom{xx}}$ &
+$\lambda_k\equiv\lambda$ (ambiguity (a))\\[2pt]
+residual of (i)--(v) & $\xrightarrow{\text{boundary
+triples}}$ & extension data (ambiguity (c))
+\end{tabular}
+\end{center}
+
+Joint use: clock closure $=$ X1$\wedge$X4; matter closure $=$
+X4$\wedge$X5$\wedge$X6 (the over-determination); gravity
+closure $=$ X2 alone; assembly $=$ X3$\wedge$X7.
+
+\subsection*{Independence and non-redundancy}
+
+\begin{itemize}[leftmargin=*,nosep]
+  \item \textbf{X4 vs X7 (redundancy found and removed).} The
+    old X7 (``restricts to the Part~I constraint on finite-dim
+    factors'') was, at the level of the constraint
+    \emph{operator}, implied by X4: the flat classical-clock
+    limit through finite-dimensional matter factors already
+    fixes the Part~I generator. The non-redundant content of
+    X7 is only the branch-\emph{uniform} normalization (and the
+    boundary-data/Born-weight structure, which concerns the
+    state space, not $\widehat C$, and is moved out of the
+    axiom set). X7 has been restated accordingly.
+  \item \textbf{X4 strict form would kill ambiguity (a).} If
+    X4 demanded $c_k=1$ (exact reduction), then $\lambda=1$
+    and the ``up to scale'' clause of Thm.~\ref{thm:main} is
+    vacuous. The projective form is the consistent choice.
+  \item \textbf{X6 conclusion-smuggling (referee attack
+    sustained, axiom weakened).} The old X6 required reduction
+    to ``the modified Wheeler--DeWitt constraint of (U4)'',
+    whose statement contains $\alpha\widehat\Sigma_\delta$ ---
+    i.e.\ it assumed on the clock--geometry cross-sector
+    precisely what X1$+$X4 are supposed to derive. The
+    weakened X6 above is a pure universality-class membership
+    statement (Kaimakkamis--Sil), makes no reference to
+    $\Sigma_\delta$, and demonstrably does independent work
+    only in step (v) of Lemma~\ref{lem:overdetermination}.
+  \item \textbf{X2 near-smuggling (assessed, kept, scoped).}
+    X2 identifies the gravity generator's flow with the
+    $\hat\omega$-modular flow; this is the main paper's
+    thermal-time postulate, and relative to it X2 does the
+    bulk of the gravity-sector work
+    (Lemma~\ref{lem:gravity-rigidity} is then short). This is
+    legitimate \emph{relative} uniqueness (as Poincar\'e
+    covariance is for $P^\mu$), but the theorem must be
+    advertised as ``unique given thermal time,'' not as
+    deriving thermal time. The non-degeneracy clause
+    ($h\notin\CC\id$) is required: without it X2 is vacuous on
+    the II$_1$ sector and the conjunction X1--X7 loses
+    gravity-sector selectivity entirely --- this is the new
+    failure mode introduced by the II$_1$ reclassification,
+    and it is exactly why X2 cannot be stated w.r.t.\ the
+    trace.
+  \item \textbf{Mutual consistency / non-vacuous
+    conjunction.} The de~Sitter static-patch witness model of
+    the main paper's (H6)/(U6) satisfies X1--X7: it is
+    \emph{natively} II$_1$~\cite{CLPW2022}, so the
+    reclassification improves rather than damages
+    non-vacuity. $\widehat C=\widehat{\mathfrak C}_k$ itself
+    satisfies all seven axioms on that model by construction.
+  \item \textbf{X1's old form had a vacuous clause.} The
+    commutator condition
+    ``$[\widehat C,\widehat\Pi_{\rm c}+\id\otimes\id]=0$''
+    contained an identity summand that commutes with
+    everything; removed.
+\end{itemize}
+
+\section{Open questions and triage}
+\label{sec:open}
+
+\subsection*{Provable now (write-up work only)}
+\begin{itemize}[leftmargin=*,nosep]
+  \item Clock closure on $\HH_{[E_\star]}$ (done in the main
+    paper post-A29; import).
+  \item Gravity rigidity Lemma~\ref{lem:gravity-rigidity}
+    (elementary on II$_1$; Pedersen--Takesaki
+    \cite{PedersenTakesaki1973} $+$ factor triviality of the
+    relative commutant).
+  \item Over-determination steps (i)--(iii);
+    assembly $+$ X7 scale-tying; the audit of
+    Sec.~\ref{sec:audit}.
+\end{itemize}
+
+\subsection*{Partially proven (external theorem in place,
+inverse/bridging argument to write)}
+\begin{itemize}[leftmargin=*,nosep]
+  \item Step (iv): MPS-based WKB rigidity (forward
+    well-posedness is \cite{MedaPinamontiSiemssen2020};
+    inverse direction to write; scope limited to flat FLRW
+    $+$ massive scalar).
+  \item Step (v) on minisuperspace
+    (\cite{KaimakkamisSil2024} is the input theorem; the
+    ``within-class $=$ centralizer gauge'' identification to
+    write).
+\end{itemize}
+
+\subsection*{Genuinely open}
+\begin{itemize}[leftmargin=*,nosep]
+  \item[\textbf{O1}] Lift of the Kaimakkamis--Sil universality
+    classification beyond minisuperspace to the
+    midisuperspace/QFT matter content of the main paper.
+    \emph{Principal conjectural input.}
+  \item[\textbf{O2}] Step (vi): interior-trivial residuals are
+    boundary-supported (boundary-triple formulation on
+    DeWitt-metric minisuperspace).
+  \item[\textbf{O3}] Partial collapse of the centralizer class
+    (b) by X5 beyond leading WKB order.
+  \item[\textbf{O4}] Clock closure for unbounded
+    $\widehat H_{\rm c}$ without the band-limit.
+  \item[\textbf{O5}] Relaxing X3 to a continuous field of
+    II$_1$ factors over the branch index.
+  \item[\textbf{O6}] Non-perturbative dynamical-horizon regime
+    (II$_\infty$ sectors of Rem.~\ref{rem:IIinfty-variant};
+    residual (E3a) of the main paper).
+\end{itemize}
+
+\begin{thebibliography}{99}
+
+\bibitem{Dima2026unification}
+A.~Dima, \emph{A Two-Boundary Retrocausal Unification of
+Quantum Mechanics and General Relativity: Rigorous Core and
+a Conditional Master Theorem} (main paper; 2026).
+
+\bibitem{GiuliniMarolf1999}
+D.~Giulini, D.~Marolf, \emph{A uniqueness theorem for
+constraint quantization}, Class.~Quantum Grav.~\textbf{16},
+2479 (1999), arXiv:gr-qc/9902045 [verified: rigging map unique
+up to scale per superselection sector under absolutely
+convergent group averaging; no deficiency-index content];
+D.~Marolf, \emph{Refined algebraic quantization: systems with
+a single constraint}, arXiv:gr-qc/9508015.
+
+\bibitem{Kisynski1972}
+J.~Kisy\'nski, \emph{On cosine operator functions and
+one-parameter groups of operators}, Studia Math.~\textbf{44},
+93--105 (1972) [verified].
+
+\bibitem{Sova1966}
+M.~Sova, \emph{Cosine operator functions}, Rozprawy
+Mat.~\textbf{49}, 1--47 (1966).
+
+\bibitem{Aczel1966}
+J.~Acz\'el, \emph{Lectures on Functional Equations and Their
+Applications}, Academic Press (1966).
+
+\bibitem{Takesaki2003}
+M.~Takesaki, \emph{Theory of Operator Algebras II}, Springer
+(2003). [Connes cocycle-derivative theorem: Thm.~VIII.3.3;
+type-agnostic. The converse characterization of unitary
+$\sigma$-cocycles as derivatives is in \S VIII.3; exact
+numbering to be checked against the 2003 printing.]
+
+\bibitem{PedersenTakesaki1973}
+G.~K.~Pedersen, M.~Takesaki, \emph{The Radon--Nikodym theorem
+for von Neumann algebras}, Acta Math.~\textbf{130}, 53--87
+(1973) [verified; includes: $\MM$ semifinite iff modular
+automorphism groups are inner].
+
+\bibitem{MedaPinamontiSiemssen2020}
+P.~Meda, N.~Pinamonti, D.~Siemssen, \emph{Existence and
+uniqueness of solutions of the semiclassical Einstein
+equation in cosmological models}, Ann.~Henri Poincar\'e~
+\textbf{22}, 3965 (2021), arXiv:2007.14665 [verified: flat
+FLRW, massive scalar with arbitrary curvature coupling, local
+existence--uniqueness via Banach fixed point].
+
+\bibitem{KaimakkamisSil2024}
+E.~Kaimakkamis, K.~Sil, \emph{A formalism for the ambiguities
+of the Wheeler--DeWitt equation}, arXiv:2407.03077 (2024)
+[author attribution corrected from the earlier erroneous
+``L.~Chataignier et~al.''; verified: operator-ordering
+ambiguities consolidate into a single higher-order scalar
+function on minisuperspace, yielding universality classes with
+order-by-order universal semiclassical predictions].
+
+\bibitem{CLPW2022}
+V.~Chandrasekaran, R.~Longo, G.~Penington, E.~Witten,
+\emph{An algebra of observables for de~Sitter space},
+JHEP~\textbf{02} (2023) 082, arXiv:2206.10780 [verified: the
+static-patch observer algebra is Type~II$_1$].
+
+\bibitem{CPW2022}
+V.~Chandrasekaran, G.~Penington, E.~Witten, \emph{Large $N$
+algebras and generalized entropy}, JHEP~\textbf{04} (2023)
+009, arXiv:2209.10454 [black-hole exterior: Type~II$_\infty$].
+
+\bibitem{ReedSimonII}
+M.~Reed, B.~Simon, \emph{Methods of Modern Mathematical
+Physics II: Fourier Analysis, Self-Adjointness}, Academic
+Press (1975) [von Neumann deficiency-index theory,
+Thm.~X.2].
+
+\end{thebibliography}
+
+\end{document}

@@ -1,0 +1,133 @@
+\contentsline {section}{\numberline {1}Scope and status of claims}{7}{section.1}%
+\contentsline {section}{\numberline {2}Setup}{9}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Spacetime and propagators}{9}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Boundary data and local algebras}{9}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Forward state and backward effect}{11}{subsection.2.3}%
+\contentsline {section}{\numberline {3}Conditioned states and unitary covariance}{11}{section.3}%
+\contentsline {section}{\numberline {4}Conservation of conditioned expectation values}{15}{section.4}%
+\contentsline {section}{\numberline {5}Filtration and posterior martingale}{16}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Filtration along a worldline}{16}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Posterior and retrocausal state}{17}{subsection.5.2}%
+\contentsline {section}{\numberline {6}Bulk no-signalling}{18}{section.6}%
+\contentsline {section}{\numberline {7}Posterior collapse along a worldline}{21}{section.7}%
+\contentsline {section}{\numberline {8}Summary of Part I}{23}{section.8}%
+\contentsline {section}{\numberline {9}Partial resolutions of open problems}{24}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Generalized collapse without terminal record-completeness}{24}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}Fermionic matter: the graded two-boundary framework}{25}{subsection.9.2}%
+\contentsline {subsection}{\numberline {9.3}Classical limit along realizations}{26}{subsection.9.3}%
+\contentsline {section}{\numberline {10}Outlook: conjectural bridges to gravity}{28}{section.10}%
+\contentsline {subsection}{\numberline {10.1}Conjecture 1: Final-state semiclassical gravity}{28}{subsection.10.1}%
+\contentsline {paragraph}{Hypotheses required for a proof.}{34}{section*.2}%
+\contentsline {subsection}{\numberline {10.2}Conjecture 2: Modified Wheeler--DeWitt constraint}{42}{subsection.10.2}%
+\contentsline {paragraph}{Status.}{43}{section*.3}%
+\contentsline {subsection}{\numberline {10.3}The temporal link derived: from states over time to the cosine cocycle}{45}{subsection.10.3}%
+\contentsline {subsection}{\numberline {10.4}Parameter scaling and low-energy effective Hamiltonian}{49}{subsection.10.4}%
+\contentsline {section}{\numberline {11}Open problems}{50}{section.11}%
+\contentsline {subsection}{\numberline {11.1}Speculative conjectures aimed at the remaining open problems}{51}{subsection.11.1}%
+\contentsline {subsection}{\numberline {11.2}Entropic time: the thermal-time postulate}{66}{subsection.11.2}%
+\contentsline {subsection}{\numberline {11.3}Entropic gravity: the stress-energy identification}{69}{subsection.11.3}%
+\contentsline {subsection}{\numberline {11.4}Planck-scale matter cutoff: the EFT scope postulate}{78}{subsection.11.4}%
+\contentsline {subsection}{\numberline {11.5}Consistency checks: Page--Geilker and an explicit entropy-smallness bound}{84}{subsection.11.5}%
+\contentsline {subsubsection}{\numberline {11.5.1}Page--Geilker: the branch-indexed source evades the pathology}{84}{subsubsection.11.5.1}%
+\contentsline {paragraph}{Worked example with the record step explicit.}{86}{section*.4}%
+\contentsline {paragraph}{Correspondence limit: the classical two-body force.}{87}{section*.5}%
+\contentsline {subsubsection}{\numberline {11.5.2}Explicit contraction bound for Conj.~\ref {conj:entropy-smallness}}{92}{subsubsection.11.5.2}%
+\contentsline {paragraph}{Worked numerical example.}{92}{section*.6}%
+\contentsline {paragraph}{Worked numerical examples in higher dimensions.}{93}{section*.7}%
+\contentsline {subsection}{\numberline {11.6}A speculative unified master equation}{97}{subsection.11.6}%
+\contentsline {paragraph}{Revised summary.}{115}{section*.11}%
+\contentsline {section}{\numberline {12}Sharpening the hypothesis bundle: residual structural discharge and the external programme}{116}{section.12}%
+\contentsline {subsection}{\numberline {12.1}Structural (T)-conditions discharged as theorems under (H0)}{116}{subsection.12.1}%
+\contentsline {subsection}{\numberline {12.2}Nelson-core discharge of (T3) and (T4)}{120}{subsection.12.2}%
+\contentsline {subsection}{\numberline {12.3}Consolidation of (T8), (T9), (T12) via the band-limited rigged boundary}{121}{subsection.12.3}%
+\contentsline {subsection}{\numberline {12.4}Sharpened Master Unification Theorem}{122}{subsection.12.4}%
+\contentsline {subsection}{\numberline {12.5}Residual external programme}{125}{subsection.12.5}%
+\contentsline {subsubsection}{\numberline {12.5.1}(E0) Pos.~\ref {pos:entropic-gravity} as a primitive postulate (not an external open problem)}{126}{subsubsection.12.5.1}%
+\contentsline {subsubsection}{\numberline {12.5.2}(E1) Planck-cutoff postulate derivation via CLPW Type~II crossed product}{127}{subsubsection.12.5.2}%
+\contentsline {subsubsection}{\numberline {12.5.3}(E2) QFT-regime entropy-smallness via spacetime-smeared QEIs and modular-energy estimates}{127}{subsubsection.12.5.3}%
+\contentsline {subsubsection}{\numberline {12.5.4}(E3) Dynamical-horizon algebra via Ashtekar--Krishnan + quasi-local modular flow}{128}{subsubsection.12.5.4}%
+\contentsline {subsubsection}{\numberline {12.5.5}(E4) Non-(CP) Tomita two-boundary conditioning via Araki perturbation of KMS states}{128}{subsubsection.12.5.5}%
+\contentsline {subsubsection}{\numberline {12.5.6}(E5) A.s.\ record-shell summability on uniformly informative protocols}{129}{subsubsection.12.5.6}%
+\contentsline {subsection}{\numberline {12.6}Revised summary under the sharpened theorem}{130}{subsection.12.6}%
+\contentsline {paragraph}{Sharpened summary (post-discharge).}{130}{section*.12}%
+\contentsline {section}{\numberline {13}Predictions and empirical differentiators}{132}{section.13}%
+\contentsline {subsection}{\numberline {13.1}Page curve from two-boundary martingale convergence}{132}{subsection.13.1}%
+\contentsline {subsection}{\numberline {13.2}Coherent gravity-mediated entanglement at Bose--Marletto--Vedral scales}{134}{subsection.13.2}%
+\contentsline {subsection}{\numberline {13.3}Primordial-spectrum signatures from $\setbox \z@ \hbox {\mathsurround \z@ $\textstyle \Sigma $}\mathaccent "0362{\Sigma }_\delta $: the parity-even correction, and a retraction}{135}{subsection.13.3}%
+\contentsline {subsection}{\numberline {13.4}Thermal-time cosmological constant}{137}{subsection.13.4}%
+\contentsline {subsection}{\numberline {13.5}Laboratory falsifier: universal quadratic softening in macroscopic phonon cavities}{139}{subsection.13.5}%
+\contentsline {paragraph}{Testability triage.}{141}{section*.13}%
+\contentsline {section}{\numberline {A}The finite-dimensional two-boundary core}{142}{appendix.A}%
+\contentsline {subsection}{\numberline {A.1}Setup and Born invariance}{142}{subsection.A.1}%
+\contentsline {subsection}{\numberline {A.2}Measurement records and the posterior martingale}{143}{subsection.A.2}%
+\contentsline {subsection}{\numberline {A.3}Posterior collapse}{144}{subsection.A.3}%
+\contentsline {subsection}{\numberline {A.4}Retrocausal present state}{144}{subsection.A.4}%
+\contentsline {subsection}{\numberline {A.5}Strengthening I: the concrete instrument filtration}{146}{subsection.A.5}%
+\contentsline {subsection}{\numberline {A.6}Strengthening II: infinite dimensions and the type~III interface}{147}{subsection.A.6}%
+\contentsline {subsection}{\numberline {A.7}Strengthening III: quantitative collapse without record-completeness}{148}{subsection.A.7}%
+\contentsline {section}{\numberline {B}Operator-cosine uniqueness for the clock shift: symmetrized d'Alembert reduction in the Kisy\'nski--Sova framework}{149}{appendix.B}%
+\contentsline {section}{\numberline {C}Derivation of the retrocausal modified TDSE: motivation, reduction, and consistency}{154}{appendix.C}%
+\contentsline {subsection}{\numberline {C.1}Physical motivation: Oppenheimer--Snyder collapse and the minimal clock increment}{154}{subsection.C.1}%
+\contentsline {paragraph}{Classical collapse reaches Planck density in finite proper time.}{155}{section*.17}%
+\contentsline {paragraph}{Semiclassical fields blueshift and lose adiabaticity at the same crossing.}{155}{section*.18}%
+\contentsline {paragraph}{The operational moral: a minimal clock increment.}{156}{section*.19}%
+\contentsline {subsection}{\numberline {C.2}From constraint to modified TDSE: exact fiberwise reduction and $\alpha $-matching}{156}{subsection.C.2}%
+\contentsline {subsection}{\numberline {C.3}Thermodynamic consistency: Araki-perturbed equilibrium and the modified first law}{159}{subsection.C.3}%
+\contentsline {subsection}{\numberline {C.4}Structural compatibility: Born invariance, no-signalling, conservation, unitarity}{162}{subsection.C.4}%
+\contentsline {section}{\numberline {D}CLPW Type~II trace finiteness: status of (E1) as the scope postulate (H0)}{166}{appendix.D}%
+\contentsline {section}{\numberline {E}Spacetime-smeared QEI and modular-energy estimates: conditional discharge of (E2)}{170}{appendix.E}%
+\contentsline {paragraph}{Two admissible bookings of the $\partial _y$ slice (the elected primary is Option~A; Option~B is the unconditional fallback).}{173}{section*.24}%
+\contentsline {section}{\numberline {F}Ashtekar--Krishnan dynamical-horizon modular flow: discharge of (E3)}{178}{appendix.F}%
+\contentsline {section}{\numberline {G}Non-(CP) Araki realisation of two-boundary conditioning: discharge of (E4)}{180}{appendix.G}%
+\contentsline {section}{\numberline {H}Gravity-sector realisation: CLPW Type~II crossed product}{183}{appendix.H}%
+\contentsline {section}{\numberline {I}Scope-split of (E0): linearised Jacobson theorem and nonlinear buck-stop axiom}{186}{appendix.I}%
+\contentsline {section}{\numberline {J}Standard Model accommodation: Clausius--SM compatibility and spectral-triple consistency}{194}{appendix.J}%
+\contentsline {section}{\numberline {K}UV completion via Type~II trace-stable inductive limit}{204}{appendix.K}%
+\contentsline {section}{\numberline {L}Cosmological-Horizon Terminal POVM: selection principle for $\{E_k\}$}{206}{appendix.L}%
+\contentsline {section}{\numberline {M}Hawking recovery and AdS/CFT reduction: canonical benchmarks}{210}{appendix.M}%
+\contentsline {section}{\numberline {N}Numerical toy model: finite-dimensional TBRME on FLRW}{211}{appendix.N}%
+\contentsline {section}{\numberline {O}Kuchar-evasion: thermal time, Trinity, and PW=CLPW}{213}{appendix.O}%
+\contentsline {section}{\numberline {P}Wood--Spekkens evasion: terminal data as modular- theoretic invariant}{214}{appendix.P}%
+\contentsline {section}{\numberline {Q}Wave-function normalisation on $\mathcal U$: refined algebraic quantisation via the CLPW trace}{216}{appendix.Q}%
+\contentsline {section}{\numberline {R}Reeh--Schlieder for ABL conditioning}{217}{appendix.R}%
+\contentsline {section}{\numberline {S}Conformal compatibility of the Planck cutoff: EFT-precise, not operator-exact}{218}{appendix.S}%
+\contentsline {paragraph}{Why not a covariant cutoff.}{219}{section*.54}%
+\contentsline {section}{\numberline {T}Bell-style no-go evasion beyond Wood--Spekkens}{220}{appendix.T}%
+\contentsline {section}{\numberline {U}Cosmological-constant fluctuations: refinement of Prop.~\ref {prop:pred-cc}}{221}{appendix.U}%
+\contentsline {section}{\numberline {V}Sector-resolved cluster decomposition at cosmological scales}{223}{appendix.V}%
+\contentsline {section}{\numberline {W}Causal-set compatibility: continuum-limit status}{224}{appendix.W}%
+\contentsline {section}{\numberline {X}Lorentz-violating dispersion bounds: thermal-time sector exact ($\xi =\eta =0$); $\Sigma _\delta $ matter sector subluminal linear}{225}{appendix.X}%
+\contentsline {section}{\numberline {Y}Time-of-arrival in modular time: Pauli evasion via unbounded modular spectrum}{227}{appendix.Y}%
+\contentsline {section}{\numberline {Z}Observer invariance via the perspective-neutral framework}{228}{appendix.Z}%
+\contentsline {section}{\numberline {E2a}The analytic platform: $U_\omega $, the geometric package, and the ball-uniform fold count}{229}{appendix.Alph27}%
+\contentsline {subsection}{\numberline {E2a.1}The class $U_\omega $ (cited) and its $H^s$-embedding}{230}{subsection.Alph27.1}%
+\contentsline {subsection}{\numberline {E2a.2}The fixed-atlas geometric package $(R1)$--$(R5)$}{230}{subsection.Alph27.2}%
+\contentsline {subsection}{\numberline {E2a.3}The ball-uniform fold count $N_0$}{233}{subsection.Alph27.3}%
+\contentsline {subsection}{\numberline {E2a.4}The fan model integral and the oscillatory branch}{236}{subsection.Alph27.4}%
+\contentsline {subsection}{\numberline {E2a.5}The multiplicity device: a count-free sublevel measure}{238}{subsection.Alph27.5}%
+\contentsline {subsection}{\numberline {E2a.6}The stationary cone: the fold-aware cell ledger and the $\bar \kappa _2$-cancellation}{240}{subsection.Alph27.6}%
+\contentsline {subsection}{\numberline {E2a.7}The near-flat sliver: (D3) closes device-free at the binding cut}{242}{subsection.Alph27.7}%
+\contentsline {subsection}{\numberline {E2a.8}The linear device over $U_\omega $, and (D3) end-to-end}{246}{subsection.Alph27.8}%
+\contentsline {subsection}{\numberline {E2a.9}The analytic slice register: from the Schur assembly to $T1'$-Main over $U_\omega $}{248}{subsection.Alph27.9}%
+\contentsline {subsection}{\numberline {E2a.10}A.6\hskip 1em\relax The Schur assembly: (D1), the frequency-transfer matrix (D4), and the extraction (D5)}{248}{subsection.Alph27.10}%
+\contentsline {paragraph}{Standing data and the two consumed square bounds.}{249}{section*.57}%
+\contentsline {paragraph}{$S4b$: the discrete Schur summation and the extraction (D5).}{250}{section*.58}%
+\contentsline {paragraph}{The constant chain (where $(\rho _a,\varepsilon _a)$ enters).}{252}{section*.59}%
+\contentsline {subsection}{\numberline {E2a.11}A.6$'$\hskip 1em\relax The $S1$ transfer and the collar bookkeeping}{253}{subsection.Alph27.11}%
+\contentsline {paragraph}{(T-R) Restriction: the $S1$ bulk transfers verbatim.}{253}{section*.60}%
+\contentsline {paragraph}{(T-C) Improvement: one collar datum controls every $C^k$.}{253}{section*.61}%
+\contentsline {paragraph}{(T-X) Re-proof: complexifying the exp map, with collar shrinkage.}{254}{section*.62}%
+\contentsline {subsection}{\numberline {E2a.12}A.6$''$\hskip 1em\relax Calibration record (a numerics witness)}{254}{subsection.Alph27.12}%
+\contentsline {subsection}{\numberline {E2a.13}The trace audit, the dimensional refund, and the transverse data legs}{256}{subsection.Alph27.13}%
+\contentsline {subsection}{\numberline {E2a.14}The slice-register ladder at $s>11$ over $U_\omega $}{257}{subsection.Alph27.14}%
+\contentsline {subsection}{\numberline {E2a.15}The locked-4d variant at $s>\tfrac {23}2$}{262}{subsection.Alph27.15}%
+\contentsline {subsection}{\numberline {E2a.16}Anchor restatements and the collar-margin attainment notes}{262}{subsection.Alph27.16}%
+\contentsline {subsection}{\numberline {E2a.17}The data legs: \textup {(N-a)}, \textup {(N-c)}, and the named residues}{263}{subsection.Alph27.17}%
+\contentsline {paragraph}{The parametrix package \textup {(N-a)}.}{263}{section*.63}%
+\contentsline {subsection}{\numberline {E2a.18}Clause (ii) assembly: the mixed jets and the consumer scalar $\rho ^{(2)}_{\mathrm {kin}}$}{265}{subsection.Alph27.18}%
+\contentsline {subsection}{\numberline {E2a.19}What Part 4 establishes, and its place in the appendix}{266}{subsection.Alph27.19}%
+\contentsline {subsection}{\numberline {E2a.20}Clause (i): the singular part (banked single-metric theorem; difference form a named input)}{266}{subsection.Alph27.20}%
+\contentsline {subsection}{\numberline {E2a.21}Clause (iii): the QEI-constant uniformity (a named input, at its audited grade)}{267}{subsection.Alph27.21}%
+\contentsline {subsection}{\numberline {E2a.22}The master theorem}{268}{subsection.Alph27.22}%
+\contentsline {subsection}{\numberline {E2a.23}Scope of the master theorem}{269}{subsection.Alph27.23}%
+\contentsline {subsection}{\numberline {E2a.24}The modulo-list, in print}{270}{subsection.Alph27.24}%
