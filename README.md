@@ -10,4 +10,14 @@ One thought lead to another...
 
 "What if ER = EPR is true, what if black holes exist at the quantum level, and what if the universe has a lower limit on how much space matter can take up (try to compress matter further into that space and a black hole emerges), and an upper limit on how much space matter can fill (try to pack more matter into that space and a black hole emerges)? In essence, what if black holes and quantum wormholes are essentially just entropy preservers? In other words, a black hole emerges as if to prevent defying discrete limits in a region of space, and functions such that it must return the energy back to that same region of space at a later point in time..."
 
-So, I set out to start vibe proofing a unification theory to try and derive General Relativity from Quantum Mechanics principles...its been a really interesting experience so far, and its gone far beyond what I thought could be achieved. This is the only framework I know of that shows classical gravity ca be derived from a quantum framework whereby `g = GM/R^2`.
+So, I set out to start vibe proofing a unification theory to try and derive General Relativity from Quantum Mechanics principles...its been a really interesting experience so far, and its gone far beyond what I thought could be achieved. The particularly distinctive part is not simply that `unification.tex` derives `g = GM/R^2`. It is the attempt to place that derivation inside a larger common formalism combining:
+
+* two-boundary or retrocausal quantum mechanics;
+* modular or thermal time;
+* operator-algebraic entanglement;
+* an entropic derivation of semiclassical Einstein gravity;
+* Wheeler–DeWitt-like constraints;
+* a nonlocal advance-delay Schrödinger equation;
+* final-boundary conditioning and branch selection.
+
+I am not aware of a well-established framework that combines precisely that entire package into one master constraint, but individual ingredients and many of the reductions have substantial precedents.
