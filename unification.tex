@@ -7095,7 +7095,9 @@ Thm.~\ref{thm:conservation}. The covariant conservation used by the
 semiclassical (Clausius) machinery downstream is the
 state-independent Hadamard statement of
 Lem.~\ref{lem:semiclassical-conservation} below, which holds
-independently of the KMS structure.
+independently of the KMS structure and consumes no Killing geometry
+--- the boost form (iii) is therefore never required on non-Killing
+backgrounds.
 \end{proposition}
 
 \begin{proof}
@@ -17426,12 +17428,19 @@ of $\Sigma$. Consequently, in the ultrastatic benchmark regime
 standing hypotheses of \cite{ChialastriSanders2025}, i.e.\
 $\omega_0$ is the ultrastatic ground state and the relative
 energy densities are positive and trace-class (neither is
-automatic for the RCE family; this is part of the residual
+automatic for the RCE family --- positivity indeed fails
+\emph{generically} for record-conditioned perturbations, which
+are Bogoliubov-squeezed, so the estimate is retained under its
+own hypotheses as a cited refinement; no displayed consumer
+uses it as an operator statement --- see the residual
 (E2c) below) --- the modular differences \eqref{eq:E2-CS} are
 Lipschitz in $g$:
 $\operatorname{tr}|i\coth(K_g/2)-i\coth(K_{g'}/2)|
-\le 16\,C_E(g_0)\|g-g'\|_{H^s}/m$ by the triangle inequality
-through the seed.
+\le 8\,C_E(g_0)\bigl(\|g-g_0\|_{H^s}+\|g'-g_0\|_{H^s}\bigr)/m$ by the
+triangle inequality through the seed (\eqref{eq:E2-CS} requires the
+ultrastatic ground state in one slot, so the modulus is
+\emph{seed-anchored}; a genuinely pairwise $\|g-g'\|$ form does not
+follow from this route).
 \end{lemma}
 
 \begin{proof}
@@ -17623,11 +17632,20 @@ the cutoff. What Lem.~\ref{lem:E2-energy-lipschitz} and
 replacement for the deleted modular-norm term: continuity in $g$
 of \emph{bounded functions} of the modular Hamiltonians of the
 quasi-free family $\{\omega_g\}$, in trace norm, with constants
-$\propto E_\delta/m$. This is precisely the modular input the
-Heisenberg-transport step (S7) and the KMS-continuity step of
-the fixed-point argument require in the ultrastatic benchmark
-regime; its extension beyond ultrastatic seeds is the residual
-(E2c) below.
+$\propto E_\delta/m$. The modular input the Heisenberg-transport
+step (S7) actually \emph{consumes}, however, is a state-level
+modulus: (S7) proceeds by Powers--St{\o}rmer and Gr\"onwall on
+the propagator and never forms the $\coth$ operator, and that
+modulus is supplied gate-free by the trace-norm bound
+$\tfrac12\|\rho_g-\rho_0\|_{1}\le\sqrt{E_\delta/\omega_1}$
+recorded in the (E2b) item below, which needs only folium
+membership, finite energy, and the geometric gap
+$\omega_1(g_0,\Sigma)>0$. The operator-level estimate
+\eqref{eq:E2-CS} is retained as a sharper one-particle
+refinement under its own hypotheses; the KMS-continuity step of
+the fixed-point argument is not discharged by either route and
+remains named open; the extension beyond ultrastatic seeds is
+the residual (E2c) below.
 \end{remark}
 
 \begin{remark}[Status of (E2): conditional discharge]
@@ -17665,7 +17683,8 @@ modulus. The residual content of (E2) is:
     because point-splitting consumes two derivatives.
   \item[(\textbf{E2b})] Extension from the free massive scalar
     to Dirac and Maxwell (specific QEIs + parametrix
-    applications; partial results in Dawson--Fewster for
+    applications; partial results in
+    Dawson--Fewster~\cite{DawsonFewster2006} for
     Dirac). For Maxwell this residual splits cleanly. The
     \emph{free} ($n{=}0$) content transfers at
     theorem-in-model grade: the Kugo--Ojima quartet reduction
@@ -17698,10 +17717,47 @@ modulus. The residual content of (E2) is:
     gauge-invariant Hamiltonian, and is ontologically a helicity-$\pm1$
     transverse null excitation (the causal carrier being the metric null
     cone, not the photon). The genuine obstruction is instead the
-    \emph{massless} half: a spacetime-smeared, ball-uniform Maxwell
-    quantum energy inequality of the strength \eqref{eq:E2-QEI}
-    (Fewster--Pfenning supply only the strictly weaker worldline,
-    state-independent bound) together with a massless replacement for the
+    \emph{massless} half, and both of its legs are now resolved on this
+    paper's printed compact-Cauchy scope \emph{with} $b_{1}(\Sigma){=}0$
+    (the topology every physical target admits --- Minkowski, de~Sitter,
+    FRW, Schwarzschild and Kerr all carry $b_{1}{=}0$ slices; on
+    $b_{1}{>}0$ slices the harmonic flux sector introduces a distinct
+    volume scale and the modulus must be re-derived, a named extension). The QEI leg first: an audit of every consumer
+    shows \eqref{eq:E2-QEI} bites exactly \emph{once} in the chain ---
+    as a one-sided absolute floor for a single fixed smearing triple, on
+    Hadamard states of the seed folium, with ball-bounded constant ---
+    so the demanded ``strength \eqref{eq:E2-QEI}'' is surplus on three
+    axes (the conditioned-source upper-bound side, smearing-family
+    uniformity, and the state class are consumed nowhere). At that
+    audited strength the Maxwell floor \emph{lifts at $m{=}0$}: the sole
+    inverse mass in the consumed scalar derivation multiplies the
+    non-derivative $m^{2}\varphi^{2}$ term of the stress tensor, which
+    the Maxwell stress tensor simply lacks --- a term deletion, not a
+    substitution --- and the frame identity
+    $T(t,t)=\tfrac12|t|^{2}\sum_{P}F_{P}^{2}$ supplies the sum-of-squares
+    positivity the derivation needs without any pointwise Wick-square
+    input. The resulting floor holds for all Hadamard states of the
+    gauge-invariant field-strength algebra, theorem-modulo the
+    Maxwell Hadamard renormalization (in print) plus the
+    bundle-(E2a) conditionality the chain already carries: the
+    Sobolev-scale variant of the smoothing lemma --- formerly the
+    one honest gate --- is now \emph{closed} at this paper's
+    register. Its kernel/mollifier half is an unconditional $H^{s}$
+    theorem (the smearing field $t$ is fixed and smooth, so the
+    flow-box charts straightening it are metric-independent and all
+    metric roughness enters the never-differentiated amplitude,
+    where the finite-smoothness microlocal multiplier bound applies
+    with good-cone order $s-(n-1)$ against the consumed order
+    $r=3$; the honest margins at the register $s>n/2+6$ are
+    ${\approx}\,1.5$--$2$ on the kernel side and $0.5$ composite,
+    the binding constraint being the state-side scaling degree
+    $\sigma_F=-5/2$ against the demand $-3$ --- positive, not
+    lavish), and its state half rides the bundle Hadamard
+    parametrix at exactly the (E2a) constant-tracking grade, adding
+    no conditionality beyond what stands. A
+    massless-\emph{scalar} surrogate
+    route is by contrast blocked at theorem grade (the zero mode), so the
+    residual is Maxwell-native. Second, the massless replacement for the
     modular-energy constant \eqref{eq:E2-CS}. The latter splits: the
     modular \emph{energy} itself is genuinely massless and
     infrared-finite (the mass enters only the $+m^{2}k^{2}$ term of the
@@ -17712,10 +17768,24 @@ modulus. The residual content of (E2) is:
     $\coth$-trace form of \eqref{eq:E2-CS} carries a \emph{genuine}
     soft-infrared divergence at $m{=}0$ (its $1/m$ is the mass-gap cutoff
     of a real $\int d\Omega/\Omega^{2}$ soft divergence, not merely the
-    one-particle $\inf_k\sqrt{k^2{+}m^2}$ artifact), so the massless
-    residual on that leg is a proof re-routing --- whether the modular
-    transport can consume the finite \emph{energy} continuity in place of
-    the divergent $\coth$-trace. The trace anomaly does \emph{not}
+    one-particle $\inf_k\sqrt{k^2{+}m^2}$ artifact). That re-routing is
+    now \emph{done} on this paper's printed compact-Cauchy scope (with
+    the same $b_{1}(\Sigma){=}0$ restriction): the
+    entire $1/m$ localizes to a single form inequality
+    ($A_m\ge m^{2}$), which is replaced gap-free by the geometric floor
+    $A\ge\omega_{1}^{2}(g_0,\Sigma)P_{\!\perp}$ with
+    $\omega_{1}$ the lowest nonzero seed frequency --- finite at
+    $m{=}0$ by compactness, and kernel-free for the transverse photon
+    when $b_{1}(\Sigma){=}0$ (Hodge) --- giving the massless
+    seed-anchored Lipschitz modulus with $m\to\omega_{1}$ verbatim,
+    together with a state-level bound
+    $\tfrac12\|\rho_g-\rho_0\|_{1}\le\sqrt{E_\delta/\omega_1}$
+    on hypotheses \emph{weaker} than the printed ones. The honest wall
+    beyond that scope is named at theorem grade: on gapless horizon
+    spectra ($\omega_{1}\to0$) \emph{no} energy modulus exists ---
+    finiteness of $\operatorname{tr}\delta=2\langle N\rangle$, a
+    number-scale trace datum one power of $\omega$ below the energy ---
+    and nothing in print currently consumes that leg. The trace anomaly does \emph{not}
     obstruct: it is a state-independent $c$-number that cancels in every
     reference-subtracted bound. The conformal softening of the residual
     $|\log(m\ell)|$ tracks the \emph{Weyl} (Petrov) class, not
@@ -17723,12 +17793,180 @@ modulus. The residual content of (E2) is:
     FRW --- curved yet conformally flat), surviving on the Petrov-D
     physical black holes (Schwarzschild, Kerr). These are the named
     massless-Maxwell residuals.
+    For Dirac the same audit applies and the transfer is
+    axis-resolved. The single-bite \emph{consumer} reduction is
+    field-blind --- the consumer graph of the chain reads no
+    CCR/CAR structure --- so the free Dirac field rides it
+    verbatim; the floor \emph{construction} itself, however, is
+    not field-blind (it needs the sum-of-squares energy positivity
+    named on the Maxwell leg above), and there Dirac carries one
+    genuinely new obstruction, identified below. Per leg: (i) the QEI leg is the \emph{shared} open
+    axis, not a Dirac-native one: every Dirac QEI in print is
+    worldline (Fewster--Verch~\cite{FewsterVerch2001}; the explicit
+    difference form of Dawson--Fewster~\cite{DawsonFewster2006};
+    massless flat-space Fewster--Mistry~\cite{FewsterMistry2003})
+    while the audited demand is the same single spacetime-smeared
+    triple as Maxwell, and the lift is mass-free --- an $m$-census
+    of the worldline derivation finds every mass power on the
+    \emph{helping} side ($m>0$ strictly tightens the floor; the
+    massless Dirac floor is finite, $\tfrac43\times$ the scalar
+    one) --- so the worldline-to-spacetime step was expected to be
+    inherited from the Maxwell leg. The Sobolev/mollifier bookkeeping of
+    the Maxwell lift does extend to the Dirac bilinear (the
+    Sanders construction carries a derivative-bearing branch;
+    every frame occurrence lands in the never-oscillatory
+    amplitude --- the vierbein undifferentiated at $H^{s}$, the
+    spin connection and one integration by parts at $H^{s-1}$ ---
+    with good-cone margins positive at the same register,
+    ${\sim}\,0.5$--$1$ kernel-binding against Maxwell's $0.5$
+    state-binding), but that bookkeeping delivers
+    \emph{finiteness} only. The floor itself is blocked at the
+    positivity step: the Sanders route requires a positive-type
+    kernel whose symmetrization is the energy density --- exactly
+    the sum-of-squares structure the Maxwell frame identity
+    supplies --- and the Dirac energy density
+    $\psi^{\dagger}(\alpha\cdot p+\beta m)\psi$ is
+    \emph{indefinite} (spectrum $\pm\sqrt{p^{2}+m^{2}}$: the
+    Dirac sea), so no positive-type kernel reproduces it and the
+    route that closed Maxwell is inapplicable at any smoothness.
+    The printed worldline Dirac QEIs (Fewster--Verch, by a
+    different method) are untouched --- and their frequency-split
+    organisation is not blocked: it never represents the density
+    as a positive form (the positivity it consumes is CAR-state
+    positivity of the split two-point pieces, $0\le Q\le1$, with
+    the sea piece entering through a compensating minus), so at
+    the fixed seed metric the single-triple spacetime-smeared
+    absolute floor follows from the Dawson--Fewster worldline
+    bound~\cite{DawsonFewster2006} by disintegration over the
+    static curves, with explicit mode-sum constant
+    (App.~\ref{app:dirac-seed-floor}), for every Hadamard state
+    of the seed folium (renormalisation fixed-$g$
+    per~\cite{DappiaggiHackPinamonti2009}). The Dirac-sea
+    obstruction thereby scopes to the Sanders organisation; what
+    remains of the floor demand is its ball clause --- local
+    uniformity of the constant in $g$ over the Sobolev ball ---
+    which is exactly the $H^{s}$-uniform spinor parametrix
+    residual below, at parity with how
+    Hyp.~\ref{hyp:hadamard-uniform}\,(iii) carries the same
+    clause for the scalar.
+    (ii) The modular leg has \emph{no}
+    massless obstruction at all: the fermionic modular function
+    $\tanh(K/2)=1-2f$ is Pauli-bounded, so the soft-infrared
+    divergence that forced the photon's $\omega_1$ re-routing is
+    absent and that entire axis is moot; and the operator-level
+    tanh-trace estimate is moreover \emph{unconsumed} --- the
+    audit that vacated the bosonic (E2c) gates repeats verbatim
+    for the fermion. Every displayed consumer rides the
+    state-level route, whose fermionic bound
+    $\tfrac12\|\rho_g-\rho_0\|_{1}\le\sqrt{E_\delta/\omega_1}$
+    transfers to the CAR algebra verbatim (its three steps ---
+    $d\Gamma$-positivity, the spectral bound $N\ge 1-P_\Omega$,
+    Fuchs--van~de~Graaf --- are representation-blind, and
+    Powers--St{\o}rmer is natively a CAR result), while the
+    operator gate is unclosable anyway: an admissible
+    finite-energy fermionic Bogoliubov state has non-trace-class
+    covariance difference, and the energy-\emph{linear} operator
+    trace bound fails at a ground-state reference on degree
+    grounds (linear trace distance against quadratic energy); the
+    Hilbert--Schmidt form, which \emph{is} energy-linear,
+    coincides with the consumed state object. The
+    Chialastri--Sanders machinery, being Weyl-CCR, is in any case
+    never cited for the fermion. (iii) The $H$-bound holds by the
+    representation-blind mechanism
+    $H-\omega_1 N=d\Gamma(h-\omega_1)\ge0$; CAR boundedness
+    merely strengthens it ($N$ bounded per mode), it is not the
+    mechanism. (iv) The free-Dirac wedge first
+    law $\delta S_{\rm rel}=\delta\langle K_W\rangle$ is a
+    theorem modulo named fermionic imports --- Araki
+    relative entropy of quasi-free excitations on the self-dual CAR
+    algebra (Galanda--Much--Verch~\cite{GalandaMuchVerch2023}, whose
+    one standing hypothesis, that the modular group is induced by
+    the one-particle flow, is on the wedge exactly the
+    Bisognano--Wichmann property of the Fermi net, so the
+    already-granted BW import discharges it rather than compounding
+    it; the general four-dimensional Dirac framework
+    of~\cite{Galanda2022}, whose worked instance is a $1{+}1$
+    Majorana field; the $1{+}1$ Rindler computation in the
+    preprint~\cite{FinsterMuch2025}; and, now in print, the
+    four-dimensional worked instance of
+    La~Piana--Morsella~\cite{LaPianaMorsella2025} --- the massless
+    Dirac/Majorana modular Hamiltonian of the unit \emph{double
+    cone}, with the relative entropy of Majorana one-particle
+    states in stress-density form and its invariance under
+    restriction to the even subalgebra, exactly the restriction
+    this paper's graded axioms consume). With these imports the
+    wedge assembly is citation-composition plus two lemma-scale
+    named steps, each with a four-dimensional in-print template:
+    the $\delta\langle K_W\rangle$ identification (the
+    flow-derivative formula of~\cite{GalandaMuchVerch2023} read at
+    the boost generator, with the elementary
+    $\operatorname{dom}|h|^{1/2}$ membership of smooth
+    compactly supported data in the wedge; the identical
+    mechanism is executed in
+    print on the double cone in~\cite{LaPianaMorsella2025}) and the
+    even-subalgebra restriction (ibid.). Every theorem ingredient
+    is mass-blind --- Bisognano--Wichmann and the CAR theorem alike
+    --- so the equality holds at this grade for the physical $m>0$
+    field as well; what stays one notch \emph{below} the photon is
+    instance-level only: no in-print four-dimensional worked
+    instance at $m>0$ (the massive \emph{double-cone} modular
+    Hamiltonian is open even in $1{+}1$, where
+    Cadamuro--Fr\"ob--Minz~\cite{CadamuroFrobMinz2024} give a
+    small-mass perturbative series --- precisely why the wedge,
+    where Bisognano--Wichmann is exact at every mass, is the right
+    region for the massive first law), and the wedge stress-tensor
+    display $2\pi\!\int x^{1}\,\delta\langle T_{00}\rangle$, which
+    this paper does not assert for Dirac (its in-print form is the
+    double-cone density of~\cite{LaPianaMorsella2025}). The structural replacement for the bosonic
+    coherent state, whose Grassmann analog is not a state, is the
+    self-dual field itself: for $\Gamma f=f$ with
+    $\langle f|f\rangle=2$ the operator $B(f)$ is Hermitian
+    \emph{and} unitary ($B(f)^{2}=\mathbf{1}$), so the excited
+    state is an isospectral conjugate, $\Delta S_{\rm vN}=0$, and
+    $S_{\rm rel}=\Delta\langle K_W\rangle$ exactly. The physical
+    Dirac case is massive, and nothing in this paper consumes a
+    massless-neutrino corner (no neutrino-mass prediction is made
+    anywhere), so $m>0$ is scope, not loss. The named Dirac
+    residual on the QEI leg is one: the $H^{s}$-uniform spinor
+    Hadamard parametrix (fixed-$g$ in
+    print~\cite{DappiaggiHackPinamonti2009}; the analog of the
+    Maxwell chain's own (E2a)-grade import), which also carries
+    the ball clause of the seed-scope floor above; the
+    indefinite-density obstruction stands, scoped to the Sanders
+    organisation (no spacetime-smeared Dirac QEI is in print by
+    any route; the seed-scope floor is this paper's derivation
+    from in-print worldline inputs,
+    App.~\ref{app:dirac-seed-floor}); the tanh-trace instance is vacated
+    as unconsumed, and the first law's remaining notch is the
+    instance-level residual named above ($m>0$ worked instance;
+    wedge stress display), not a theorem-level gap.
   \item[(\textbf{E2c})] Quantitative modular-energy estimates
     \eqref{eq:E2-CS} beyond ultrastatic seeds, and their
     transfer from the one-particle to the field-algebra level
     for general Gaussian pairs (Chialastri--Sanders
     \cite{ChialastriSanders2025} prove the ultrastatic,
-    ground-state-relative case).
+    ground-state-relative case). Scope of this residual: it
+    concerns the \emph{literal} $\coth$-trace form
+    \eqref{eq:E2-CS} only. A consumption audit of the displayed
+    chain shows every downstream step --- the
+    Heisenberg-transport bound (S7) (Powers--St{\o}rmer plus
+    Gr\"onwall), Cor.~\ref{cor:E2-entropy-smallness}(iv)
+    (Pinsker), and the modular-free
+    Thm.~\ref{thm:E2-Lipschitz} --- rides the state-level
+    route, so neither standing hypothesis of
+    \cite{ChialastriSanders2025} (positivity or trace-class of
+    the relative energy density) is consumed anywhere: on the
+    compact-Cauchy scope with $b_1(\Sigma)=0$ and
+    $\omega_1(g_0,\Sigma)>0$ the (E2c) gates are
+    \emph{vacated} for the printed chain rather than proved.
+    Vacation is moreover the only available closure: positivity
+    fails generically for the RCE family (record conditioning
+    acts as a Bogoliubov squeezing map, rendering the relative
+    energy density indefinite at arbitrarily small squeezing),
+    so the literal form \eqref{eq:E2-CS} can fail on admissible
+    squeezed data even while every consumed bound holds. At
+    $\omega_1\to0$ (gapless spectra) neither route exists; that
+    wall is named above, not crossed.
   \item[(\textbf{E2d})] Interacting fields. Free fields in
     $d>2$ admit \emph{no} state-independent null-integrated
     bounds~\cite{FewsterRoman2003}, while the semi-local QNEIs
@@ -17737,12 +17975,58 @@ modulus. The residual content of (E2) is:
     satisfying the QNEC; the approximate local modular QEI of
     Much--Passegger--Verch~\cite{MuchPasseggerVerch2022}, valid
     for general QFT on static globally hyperbolic backgrounds
-    under Reeh--Schlieder, local preparability and polynomial
-    energy bounds, is the natural starting point for lifting
-    the free-field restriction in the static regime. Whether
-    those hypotheses are inherited by the Banach-fixed-point
-    step of Cor.~\ref{cor:E2-entropy-smallness}, and whether
-    they would obviate the gap hypothesis (S3), is left open.
+    under Reeh--Schlieder, local preparability, polynomial
+    energy bounds, \emph{and} a positive Hamiltonian with a
+    ground state (this last, often-elided hypothesis being the
+    actual source of the modular floor), is the natural
+    starting point for the terminal QEI-floor leg
+    (Cor.~\ref{cor:E2-entropy-smallness}(iv)) in the static
+    regime --- not for the Banach-fixed-point contraction
+    constant, which it does not feed; its hypotheses are
+    discharged in print for the free scalar only, so it does
+    not by itself lift the free-field restriction, and it is
+    not formulable for the formal-series interacting net,
+    which carries no modular operator. A consumption audit
+    sharpens what genuinely remains. The chain's
+    \emph{mechanisms} (Powers--St{\o}rmer, Pinsker, the
+    Gr\"onwall transport, the finite-dimensional fixed point)
+    are algebra-agnostic, and the state modulus rides the
+    spectral gap alone --- $1-P_\Omega\le(H-E_0)/\omega_1$,
+    no number operator --- so the quasi-free dependence
+    localizes to the \emph{inputs}: the reference folium, the
+    gap constant (whose interacting surrogate is a mass gap
+    $\Delta_{\rm int}>0$, a named existence hypothesis), and
+    one object, the interacting Hadamard-jet energy-Lipschitz
+    modulus of Lem.~\ref{lem:E2-energy-lipschitz}. At the
+    printed fixed-cutoff scope Haag's theorem is vacuous: the
+    H0 sector is finite-dimensional (Stone--von Neumann), and
+    --- in the $d=2$ instance --- the spatially cutoff
+    interaction is essentially self-adjoint and bounded below
+    on the \emph{free} Fock space (in $d=4$ that
+    spatial-cutoff statement fails without an ultraviolet
+    cutoff, which the H0 compression supplies), so the free
+    and regularized interacting theories share their space ---
+    consistently with the explicit
+    no-cutoff-removal disclaimer of
+    Rem.~\ref{rem:E2-modular-role}. The remaining modulus is
+    available order by order in perturbation theory
+    (interacting Hadamard states in the sense of
+    Hollands--Wald~\cite{HollandsWald2005}), with constants of
+    factorial growth in the order (zero radius of convergence
+    in the coupling; no $\lambda$-uniform all-orders form is
+    claimed); nonperturbatively, $P(\varphi)_2$ closes the
+    consumed state-level chain end-to-end on the free Fock
+    folium (Glimm--Jaffe~\cite{GlimmJaffe1987}) --- in flat
+    $d=2$, where the metric-Lipschitz input is vacuous; the
+    curved-2d ball-uniform modulus remains open, Glimm--Jaffe
+    being flat-space --- and is the
+    register's genuine interacting instance, while under
+    cutoff removal in $d=4$ two named walls stand: continuum
+    $\varphi^4_4$ triviality~\cite{AizenmanDuminilCopin2021} (extended to
+    the long-range reflection-positive class with
+    $d_{\mathrm{eff}}\ge4$ in~\cite{LongRangeTriviality2026})
+    and folium disjointness. Whether any of this would obviate
+    the gap hypothesis (S3) remains open.
 \end{itemize}
 \end{remark}
 
@@ -18769,7 +19053,9 @@ that seed; what descends to the dressed Type~II crossed product is not
 the inclusion itself but the relative-entropy monotonicity, and the
 associated ANEC/QNEC inequality, which survives the boost crossing ---
 a theorem of the ambient literature on Killing
-horizons~\cite{FaulknerSperanza2024,KudlerFlamRahmanEtAl2023}), and
+horizons~\cite{FaulknerSperanza2024,KudlerFlamRahmanEtAl2023} --- so
+the geometry-consuming inclusion itself is never invoked on the
+physical non-Killing background, only its monotonicity shadow), and
 finite averaged null energy of $\omega$ (Ceyhan--Faulkner); what
 remains postulated is then Hyp.~\ref{hyp:qnec-saturation} together with
 the inversion from the null--null component to the full tensor
@@ -19854,7 +20140,26 @@ problem \textup{B1a}, whose structure is now mapped into three pieces:
     modular generator is \emph{linear} in it, and the exact Bose moment
     ratio $\langle d^{3}\rangle/\langle d^{2}\rangle=1+2\bar n$ makes
     them orthogonal at every boost frequency (the vanishing is specific to
-    the modular generator; non-modular charges violate it). The SM lift of
+    the modular generator; non-modular charges violate it). The scalar
+    $n{=}1$ statement now has independent first-order company in the
+    literature: for interacting-coherent excitations $W(f)\Omega$ of the
+    massive $\lambda\varphi^{4}$ wedge theory, the $O(\lambda)$
+    Araki--Uhlmann relative entropy with respect to the wedge vacuum
+    (the boost-KMS reference) organizes into the boost Noether
+    charge of the classical causal interacting solution,
+    $S_{\mathrm{rel}}=2\pi\!\int_{x^{0}=0}x^{1}\,
+    T_{00}(\varphi^{\mathrm{int}}_{f})\,d^{3}x+O(\lambda^{2})$%
+    ~\cite{FroebMuchPapadopoulos2026} (arXiv preprint, July 2026,
+    unrefereed) --- the two-state, coherent-class counterpart of the
+    same first-order first law, obtained in a conservation-fixed Hadamard
+    scheme with one free improvement-type ${:}\varphi^{2}{:}$ constant
+    (the vacuum-/thermal-Wick ordering seam of the present proof is an
+    ambiguity in the same channel). That computation \emph{consumes} the
+    interacting Bisognano--Wichmann identification rather than proving
+    the Ward identity, so it corroborates but does not reprove
+    $\mathfrak O^{(1)}=0$; it is first-order-only (its all-orders form is
+    there an explicit conjecture) and wedge-interior, touching neither
+    the $n\ge2$ tail nor the edge-locality wall below. The SM lift of
     this identity at $n{=}1$ is now resolved \emph{per sector}: the Higgs
     and both gauge self-couplings are theorems by the same mechanism (the
     quartic by the Bose ratio; the cubic vanishing identically by odd
@@ -20081,8 +20386,8 @@ i.e.\ $\mathcal O(\epsilon_g)$ smaller --- but on the \emph{null-null}
 projection the linear-in-mass channel is annihilated. This is the spectral
 face of the antilocality clearance (ISSUES l.4047--4051; run-18 R5): the
 scalar-bilinear = trace channel, the only channel carrying an $\mathcal
-O(\epsilon_g)$-linear term, is exactly $(\delta g_{ab})k^ak^b=0$ on the cut
-$k^{2}=0$. The surviving spin-2 channel's threshold behaviour is
+O(\epsilon_g)$-linear term, couples through $g_{ab}k^ak^b=k^{2}=0$ on the
+null cut and is annihilated there. The surviving spin-2 channel's threshold behaviour is
 $\propto(s-4m^{2})$, converting the would-be $m$-linear
 $(ml)\log(ml)$ ``diamond disease'' into the $m$-quadratic wedge rate
 (run-18 R5, sympy-exact: spin-2 amplitude $a_2=2m^{2}/3-s/6$ vanishes at
@@ -20093,7 +20398,36 @@ leading spectral density; the interacting spin-2 K\"all\'en--Lehmann density
 $\rho_2^{\rm int}$ is twist-gap-controlled (run-18 R5, PLAUSIBLE) but its
 exact coefficient is the companion item B2-nonKilling and is NOT claimed
 here --- for the leading-order truncation only the $\epsilon_g^{2}$ POWER
-(not the coefficient) is load-bearing.
+(not the coefficient) is load-bearing. \emph{Status of the companion
+item.} A proof-level Killing-consumption audit narrows B2-nonKilling
+drastically: of the chain's apparent Bisognano--Wichmann/Kay--Wald
+consumers, the load-bearing majority consume no Killing structure at
+all (Thm.~\ref{thm:conservation} is unitary covariance plus trace
+cyclicity; Lem.~\ref{lem:semiclassical-conservation} is Hadamard and
+state-independent; the E2 transport is modular-free), while the
+geometric identification $K_\omega=2\pi\int\xi\,T$ is consumed only
+in its null--null projection at free-field order, discharged in print
+at first-law-\emph{equality} strength on Minkowski/Rindler cuts
+(Ceyhan--Faulkner), at monotonicity/GSL strength on cuts of Killing
+horizons (Faulkner--Speranza), with the invariant-Hadamard state
+support in place on the de~Sitter static patch and Schwarzschild;
+Kerr is \emph{excluded} --- no isometry-invariant Hadamard state
+exists there (Kay--Wald), so the identification is not available in
+print on Kerr. B2's own remaining share
+is the two seed-side pins already recorded above (the H0 co-scoping
+straddle and finite averaged null energy of $\omega$ on complete
+cuts) together with the promotion of
+Hyp.~\ref{hyp:ak-modular-flow} beyond the
+perturbative-around-isolated-horizon regime; the interacting rate, the
+FRW tensor completion, and the finite-part-family uniformity belong to
+B1a, Hyp.~\ref{hyp:E0-dS}, and (E2a-$\omega$) respectively, and are
+not double-counted here. On FRW --- which carries no bifurcate Killing
+horizon --- the curved rate remains a genuinely open named wall: the
+exact null-cut route is scope-empty there, and the approximate-boost
+route fails the contraction step (its curvature defect
+$\sim\ell^{2}|\mathrm{Riem}|$ costs two derivatives, which the plain
+Banach step cannot absorb; and its leading power is
+$(\ell/L)^{2}$, not the optimistic $(\ell/L)^{4}$).
 
 \emph{Step 3 (the prefactor $C_{\rm EFT}$, exhibited).} Collecting the
 geometric factors of Step~2: $C_{\rm EFT}=\sup_{x\in K}\lVert
@@ -22730,6 +23064,7 @@ face is handled by Thm.~\ref{thm:bell-no-go-evasion}.
 
 % ==========================================================
 \input{appendix_e2a_omega}
+\input{appendix_dirac_floor}
 
 \begin{thebibliography}{99}
 
@@ -23659,6 +23994,21 @@ arXiv:math-ph/0105027; and C.~J.~Fewster,
 Class.~Quantum Grav.~\textbf{17}, 1897 (2000),
 arXiv:gr-qc/9910060.
 
+\bibitem{DawsonFewster2006} S.~P.~Dawson, C.~J.~Fewster,
+\emph{An explicit quantum weak energy inequality for Dirac fields in
+curved spacetimes}, Class.~Quantum Grav.~\textbf{23}, 6659 (2006),
+arXiv:gr-qc/0604106.
+
+\bibitem{FewsterMistry2003} C.~J.~Fewster, B.~Mistry,
+\emph{Quantum weak energy inequalities for the Dirac field in flat
+spacetime}, Phys.~Rev.~D~\textbf{68}, 105010 (2003),
+arXiv:gr-qc/0307098.
+
+\bibitem{SahlmannVerch2000} H.~Sahlmann, R.~Verch,
+\emph{Passivity and microlocal spectrum condition},
+Commun.~Math.~Phys.~\textbf{214}, 705 (2000),
+arXiv:math-ph/0002021.
+
 \bibitem{Sanders2024StressBounds} K.~Sanders,
 \emph{Stress tensor bounds on quantum fields},
 Commun.~Math.~Phys.~\textbf{405}, 132 (2024), arXiv:2308.15218.
@@ -23695,6 +24045,20 @@ arXiv:2003.01815.
 \bibitem{BenDayan2024} I.~Ben-Dayan,
 \emph{The quantum focusing conjecture and the improved energy
 condition}, JHEP~\textbf{02} (2024) 132, arXiv:2310.14396.
+
+\bibitem{GlimmJaffe1987} J.~Glimm, A.~Jaffe,
+\emph{Quantum Physics: A Functional Integral Point of View},
+2nd ed., Springer, New York (1987).
+
+\bibitem{AizenmanDuminilCopin2021} M.~Aizenman, H.~Duminil-Copin,
+\emph{Marginal triviality of the scaling limits of critical 4D
+Ising and $\varphi_4^4$ models}, Ann.~Math.~\textbf{194}, 163
+(2021), arXiv:1912.07973.
+
+\bibitem{LongRangeTriviality2026} R.~Panis, \emph{Triviality of the
+scaling limits of critical Ising and $\varphi^{4}$ models with effective
+dimension at least four}, Ann.~Probab.~\textbf{54}, 892
+(2026), DOI 10.1214/25-AOP1782, arXiv:2309.05797.
 
 \bibitem{FewsterSmith2008} C.~J.~Fewster, C.~J.~Smith,
 \emph{Absolute quantum energy inequalities in curved spacetime},
@@ -23758,6 +24122,28 @@ Commun.~Math.~Phys.~\textbf{373}, 473 (2020).
 979 (2020); and \emph{Relative entropy and curved spacetimes},
 J.~Geom.~Phys.~\textbf{172}, 104416 (2022),
 arXiv:2107.06787.
+
+\bibitem{GalandaMuchVerch2023} S.~Galanda, A.~Much, R.~Verch,
+\emph{Relative entropy of fermion excitation states on the CAR
+algebra}, Math.~Phys.~Anal.~Geom.~\textbf{26}, 21 (2023),
+arXiv:2305.02788.
+
+\bibitem{Galanda2022} S.~Galanda,
+\emph{Relative entropy for fermionic quantum field theory},
+M.Sc.\ thesis, Universit\"at Leipzig (2022), arXiv:2210.10746.
+
+\bibitem{FinsterMuch2025} F.~Finster, A.~Much,
+\emph{The relative fermionic entropy in two-dimensional Rindler
+spacetime}, arXiv:2505.14076 (2025).
+
+\bibitem{CadamuroFrobMinz2024} D.~Cadamuro, M.~B.~Fr\"ob, C.~Minz,
+\emph{Modular Hamiltonian for fermions of small mass},
+Ann.~Henri~Poincar\'e~\textbf{26}, 4071 (2025),
+doi:10.1007/s00023-024-01508-0, arXiv:2312.04629.
+
+\bibitem{FroebMuchPapadopoulos2026} M.~B.~Fr{\"o}b, A.~Much,
+K.~Papadopoulos, \emph{Relative entropy for $\lambda\varphi^{4}$ in the
+Rindler wedge}, arXiv:2607.07810 [hep-th] (2026). Preprint, unrefereed.
 
 \bibitem{CeyhanFaulkner2018} F.~Ceyhan, T.~Faulkner,
 \emph{Recovering the QNEC from the ANEC},

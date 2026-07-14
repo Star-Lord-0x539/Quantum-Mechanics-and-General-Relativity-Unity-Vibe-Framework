@@ -1,0 +1,167 @@
+% ============================================================================
+% appendix_dirac_floor.tex
+% RUN 49 -- COMPANION APPENDIX for unification.tex: the seed-fixed
+% spacetime-smeared absolute Dirac floor via the Fewster--Verch
+% frequency-split organisation (adversarially certified, run 49; the
+% adjudicator's F1 fix is incorporated in the displayed mode sum).
+%
+% ONE \input fragment. ASSUMES the paper preamble (theorem/remark
+% environments, amsmath); does NOT open \begin{document}.
+% ============================================================================
+
+\section{The seed-fixed spacetime-smeared Dirac floor}
+\label{app:dirac-seed-floor}
+
+This appendix records the derivation, from in-print worldline inputs,
+of the one-sided absolute lower bound on the smeared renormalised
+Dirac energy density at the audited-minimal strength consumed by the
+(E2b) discussion: a \emph{single} fixed smearing triple, Hadamard
+states of the seed folium, fixed seed metric. The organising fact is
+that the Fewster--Verch route~\cite{FewsterVerch2001} never
+represents the energy density as a positive quadratic form --- the
+positivity it consumes is CAR-\emph{state} positivity of the
+frequency-split two-point pieces (the Pauli window $0\le Q\le 1$),
+with the negative-frequency (sea) piece entering through a
+compensating minus sign --- so the indefinite-density obstruction
+that blocks the Sanders positive-type-kernel organisation for Dirac
+does not touch it.
+
+\medskip\noindent\textbf{Standing data.} Seed
+$(M,g_0)=(\mathbb R\times\Sigma,\,-dt^{2}\oplus h_\Sigma)$ with
+$\Sigma$ a compact spin Cauchy slice, $\dim M=4$; Dirac mass $m>0$
+(for $m=0$ see Rem.~\ref{rem:dsf-massless}); $\omega_0$ the
+ultrastatic ground state with its canonical positive-frequency split
+$P_0$ (the positive spectral projection of the time flow; the ground
+state is Hadamard by Sahlmann--Verch~\cite{SahlmannVerch2000});
+$h$ the one-particle Dirac Hamiltonian on $L^{2}(\Sigma;\mathbb C^4)$:
+self-adjoint, discrete spectrum $\{E_k\}$ with $|E_k|\ge m$, smooth
+eigensections $u_k$; $\gamma_x(t)=(t,x)$ the unit-speed static
+worldlines. $\widehat T^{\mathrm{ren}}_{\mu\nu}$ is the fixed-$g_0$
+Hadamard-renormalised Dirac stress
+tensor~\cite{DappiaggiHackPinamonti2009}.
+
+\begin{theorem}[seed-fixed spacetime-smeared absolute Dirac floor]
+\label{thm:dirac-seed-floor}
+Let $t^\mu=(\partial_t)^\mu$ and $F\in C_c^\infty(M;\mathbb R)$. Then
+for every Hadamard state $\omega$ of the Dirac field on $(M,g_0)$,
+\[
+\big\langle\widehat T^{\mathrm{ren}}_{\mu\nu}[t^\mu t^\nu F^{2}]
+\big\rangle_\omega \;\ge\; -c_{\mathrm{fl}}(g_0,\partial_t,F),\qquad
+c_{\mathrm{fl}}:=\int_\Sigma\!d\mathrm{vol}(x)\,B_x
++\Big|\int_M F^{2}\,\big\langle\widehat T^{\mathrm{ren}}
+(\partial_t,\partial_t)\big\rangle_{\omega_0}\Big|\;<\;\infty,
+\]
+where, with $g_x:=F(\cdot,x)\in C_0^\infty(\mathbb R;\mathbb R)$,
+\[
+B_x=\frac1{2\pi}\int_0^\infty\!d\mu\,\mu\,
+\big(S_\mu(x)+S^\Gamma_\mu(x)\big),\qquad
+S_\mu(x)=\sum_{k:\,E_k>0} w_k(x)\,|\widehat{g_x}(\mu+E_k)|^{2},
+\]
+and $S^\Gamma_\mu(x)=\sum_{k:\,E_k<0}w^\Gamma_k(x)\,
+|\widehat{g_x}(\mu+|E_k|)|^{2}$ (the mirrored argument, from the
+$(\mu,-\mu)$ evaluation of the Dawson--Fewster
+bound~\cite{DawsonFewster2006}), with $w_k(x),w^\Gamma_k(x)\ge0$ the
+spin-frame contractions of the mode densities of $u_k$ at $x$. In
+particular the floor holds for the audited single triple, one-sided,
+on Hadamard states of the seed folium.
+\end{theorem}
+
+\begin{proof}
+(1) \emph{Disintegration.} For Hadamard $\omega$ the function
+$x\mapsto\langle\widehat T^{\mathrm{ren}}_{\mu\nu}\rangle_\omega(x)$
+is smooth (fixed-$g_0$ renormalisation,
+\cite{DappiaggiHackPinamonti2009});
+$d\mathrm{vol}_{g_0}=dt\,d\mathrm{vol}_\Sigma$ and $F$ is compactly
+supported, so by Fubini
+$\langle\widehat T^{\mathrm{ren}}[ttF^{2}]\rangle_\omega
+=\int_\Sigma d\mathrm{vol}(x)\int_{\mathbb R}dt\,g_x(t)^{2}\,
+\langle\widehat T^{\mathrm{ren}}(\partial_t,\partial_t)
+\rangle_\omega(t,x)$.
+
+(2) \emph{Reference conversion.} Pointwise on $M$,
+$\langle\widehat T^{\mathrm{ren}}\rangle_\omega
+=\langle{:}T{:}\rangle_\omega
++\langle\widehat T^{\mathrm{ren}}\rangle_{\omega_0}$, with
+${:}T{:}$ the $\omega_0$-normal-ordered density: both subtractions
+are Hadamard subtractions of the same classical density, so they
+differ by the smooth $\omega$-independent $c$-number
+$\langle\widehat T^{\mathrm{ren}}\rangle_{\omega_0}$ (the
+renormalised, reference-free reading of the Fewster--Verch bound run
+in the absolute direction). The $c$-number term integrates to a
+finite constant on the compact support of $F^{2}$.
+
+(3) \emph{Per-curve bound.} Fix $x\in\Sigma$. The static curve
+$\gamma_x$ is smooth, timelike, unit-speed, and the weight $g_x^{2}$
+with $g_x$ real $C_0^\infty$ is exactly the Dawson--Fewster class;
+their explicit worldline quantum weak energy
+inequality~\cite{DawsonFewster2006} with reference $\omega_0$ gives
+$\int dt\,g_x(t)^{2}\,\langle{:}T{:}(\partial_t,\partial_t)
+\rangle_\omega(t,x)\ge-B_x$ for every Hadamard $\omega$, with $B_x$
+as displayed.
+
+(4) \emph{Mode evaluation.} On the seed, the ground-state two-point
+function restricted to positive frequency along $\gamma_x$ is the
+mode sum $\sum_{E_k>0}w_k(x)\,e^{-iE_k(t-t')}$ (convergence in
+$\mathscr D'(\mathbb R^{2})$, locally uniformly in $x$; the standard
+ground-state expansion from $P_0$), and
+$[\bar g_x\otimes g_x\,e^{-iE(t-t')}]^{\wedge}(-\mu,\mu)
+=|\widehat{g_x}(\mu+E)|^{2}\ge0$; termwise summation is justified by
+step (5). The $\Gamma$-piece runs identically on the negative
+spectral subspace, the $(\mu,-\mu)$ evaluation producing the
+mirrored argument $|\widehat{g_x}(\mu+|E_k|)|^{2}$.
+
+(5) \emph{Envelope.} Elliptic sup-norm bound on compact $\Sigma$:
+$\sup_x w_k(x)\le C(1+|E_k|)^{4}$ (Sobolev embedding
+$H^{2}(\Sigma)\hookrightarrow C^{0}$ applied to $u_k$, with
+$\|u_k\|_{H^{2}}\le C(1+E_k^{2})\|u_k\|_{2}$); Weyl asymptotics for
+the first-order elliptic $h$: $\#\{k:|E_k|\le E\}\le C(1+E)^{3}$;
+Paley--Wiener decay $\sup_x|\widehat{g_x}(\xi)|\le
+C_N(1+|\xi|)^{-N}$ for all $N$. Hence
+\[
+\int_0^\infty\!d\mu\,\mu\,S_\mu(x)\le
+C_N\sum_k(1+|E_k|)^{4}\int_0^\infty
+\frac{\mu\,d\mu}{(1+\mu+|E_k|)^{N}}
+\le C\sum_k(1+|E_k|)^{6-N}<\infty\qquad(N>9),
+\]
+uniformly in $x$; dominated convergence gives $x$-continuity of
+$B_x$, hence $\int_\Sigma B_x\,d\mathrm{vol}<\infty$ ($\Sigma$
+compact). All constants depend on $(g_0,F)$ only.
+
+(6) \emph{Summation.} Integrating (3) over
+$(\Sigma,d\mathrm{vol})$ and combining with (1)--(2) gives
+$\langle\widehat T^{\mathrm{ren}}[ttF^{2}]\rangle_\omega
+\ge-\int_\Sigma B_x\,d\mathrm{vol}
+-\big|\int F^{2}\langle\widehat T^{\mathrm{ren}}
+\rangle_{\omega_0}\big|=-c_{\mathrm{fl}}$.
+\end{proof}
+
+\begin{remark}[imports, each at printed strength]
+\label{rem:dsf-imports}
+(a) The Dawson--Fewster worldline bound~\cite{DawsonFewster2006}
+(published), whose proof is the Fewster--Verch frequency-split
+mechanism~\cite{FewsterVerch2001}; (b) the seed ground state, its
+canonical split, and its Hadamard property (Araki--Weinless via the
+Fewster--Verch construction; Sahlmann--Verch
+passivity~\cite{SahlmannVerch2000}, published); (c) the fixed-$g$
+Dirac Hadamard renormalisation~\cite{DappiaggiHackPinamonti2009}
+(published). Steps (1), (2), (4), (5), (6) are derived here and are
+elementary given (a)--(c); no step consumes an unpublished estimate.
+The theorem is therefore closed at the fixed seed metric. The
+remaining \emph{ball clause} of the audited strength --- local
+uniformity of $c_{\mathrm{fl}}$ in $g$ --- is exactly the
+$H^{s}$-uniform spinor Hadamard parametrix residual of the (E2b)
+discussion, at parity with how
+Hyp.~\ref{hyp:hadamard-uniform}\,(iii) carries the same clause on
+the scalar leg.
+\end{remark}
+
+\begin{remark}[massless case]
+\label{rem:dsf-massless}
+For $m=0$ the Fewster--Verch reference exists via their
+variable-mass deformation; it is Hadamard but non-canonical, and
+zero modes of $h$ (harmonic spinors) can obstruct a gapped split on
+special $\Sigma$. A reference change shifts $c_{\mathrm{fl}}$ by a
+finite smooth $c$-number only. The physical case of the (E2b)
+discussion is $m>0$; $m=0$ costs a non-canonical reference, not the
+floor.
+\end{remark}

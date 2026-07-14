@@ -77,57 +77,58 @@
 \contentsline {section}{\numberline {D}CLPW Type~II trace finiteness: status of (E1) as the scope postulate (H0)}{166}{appendix.D}%
 \contentsline {section}{\numberline {E}Spacetime-smeared QEI and modular-energy estimates: conditional discharge of (E2)}{170}{appendix.E}%
 \contentsline {paragraph}{Two admissible bookings of the $\partial _y$ slice (the elected primary is Option~A; Option~B is the unconditional fallback).}{173}{section*.24}%
-\contentsline {section}{\numberline {F}Ashtekar--Krishnan dynamical-horizon modular flow: discharge of (E3)}{178}{appendix.F}%
-\contentsline {section}{\numberline {G}Non-(CP) Araki realisation of two-boundary conditioning: discharge of (E4)}{180}{appendix.G}%
-\contentsline {section}{\numberline {H}Gravity-sector realisation: CLPW Type~II crossed product}{183}{appendix.H}%
-\contentsline {section}{\numberline {I}Scope-split of (E0): linearised Jacobson theorem and nonlinear buck-stop axiom}{186}{appendix.I}%
-\contentsline {section}{\numberline {J}Standard Model accommodation: Clausius--SM compatibility and spectral-triple consistency}{194}{appendix.J}%
-\contentsline {section}{\numberline {K}UV completion via Type~II trace-stable inductive limit}{204}{appendix.K}%
-\contentsline {section}{\numberline {L}Cosmological-Horizon Terminal POVM: selection principle for $\{E_k\}$}{206}{appendix.L}%
-\contentsline {section}{\numberline {M}Hawking recovery and AdS/CFT reduction: canonical benchmarks}{210}{appendix.M}%
-\contentsline {section}{\numberline {N}Numerical toy model: finite-dimensional TBRME on FLRW}{211}{appendix.N}%
-\contentsline {section}{\numberline {O}Kuchar-evasion: thermal time, Trinity, and PW=CLPW}{213}{appendix.O}%
-\contentsline {section}{\numberline {P}Wood--Spekkens evasion: terminal data as modular- theoretic invariant}{214}{appendix.P}%
-\contentsline {section}{\numberline {Q}Wave-function normalisation on $\mathcal U$: refined algebraic quantisation via the CLPW trace}{216}{appendix.Q}%
-\contentsline {section}{\numberline {R}Reeh--Schlieder for ABL conditioning}{217}{appendix.R}%
-\contentsline {section}{\numberline {S}Conformal compatibility of the Planck cutoff: EFT-precise, not operator-exact}{218}{appendix.S}%
-\contentsline {paragraph}{Why not a covariant cutoff.}{219}{section*.54}%
-\contentsline {section}{\numberline {T}Bell-style no-go evasion beyond Wood--Spekkens}{220}{appendix.T}%
-\contentsline {section}{\numberline {U}Cosmological-constant fluctuations: refinement of Prop.~\ref {prop:pred-cc}}{221}{appendix.U}%
-\contentsline {section}{\numberline {V}Sector-resolved cluster decomposition at cosmological scales}{223}{appendix.V}%
-\contentsline {section}{\numberline {W}Causal-set compatibility: continuum-limit status}{224}{appendix.W}%
-\contentsline {section}{\numberline {X}Lorentz-violating dispersion bounds: thermal-time sector exact ($\xi =\eta =0$); $\Sigma _\delta $ matter sector subluminal linear}{225}{appendix.X}%
-\contentsline {section}{\numberline {Y}Time-of-arrival in modular time: Pauli evasion via unbounded modular spectrum}{227}{appendix.Y}%
-\contentsline {section}{\numberline {Z}Observer invariance via the perspective-neutral framework}{228}{appendix.Z}%
-\contentsline {section}{\numberline {E2a}The analytic platform: $U_\omega $, the geometric package, and the ball-uniform fold count}{229}{appendix.Alph27}%
-\contentsline {subsection}{\numberline {E2a.1}The class $U_\omega $ (cited) and its $H^s$-embedding}{230}{subsection.Alph27.1}%
-\contentsline {subsection}{\numberline {E2a.2}The fixed-atlas geometric package $(R1)$--$(R5)$}{230}{subsection.Alph27.2}%
-\contentsline {subsection}{\numberline {E2a.3}The ball-uniform fold count $N_0$}{233}{subsection.Alph27.3}%
-\contentsline {subsection}{\numberline {E2a.4}The fan model integral and the oscillatory branch}{236}{subsection.Alph27.4}%
-\contentsline {subsection}{\numberline {E2a.5}The multiplicity device: a count-free sublevel measure}{238}{subsection.Alph27.5}%
-\contentsline {subsection}{\numberline {E2a.6}The stationary cone: the fold-aware cell ledger and the $\bar \kappa _2$-cancellation}{240}{subsection.Alph27.6}%
-\contentsline {subsection}{\numberline {E2a.7}The near-flat sliver: (D3) closes device-free at the binding cut}{242}{subsection.Alph27.7}%
-\contentsline {subsection}{\numberline {E2a.8}The linear device over $U_\omega $, and (D3) end-to-end}{246}{subsection.Alph27.8}%
-\contentsline {subsection}{\numberline {E2a.9}The analytic slice register: from the Schur assembly to $T1'$-Main over $U_\omega $}{248}{subsection.Alph27.9}%
-\contentsline {subsection}{\numberline {E2a.10}A.6\hskip 1em\relax The Schur assembly: (D1), the frequency-transfer matrix (D4), and the extraction (D5)}{248}{subsection.Alph27.10}%
-\contentsline {paragraph}{Standing data and the two consumed square bounds.}{249}{section*.57}%
-\contentsline {paragraph}{$S4b$: the discrete Schur summation and the extraction (D5).}{250}{section*.58}%
-\contentsline {paragraph}{The constant chain (where $(\rho _a,\varepsilon _a)$ enters).}{252}{section*.59}%
-\contentsline {subsection}{\numberline {E2a.11}A.6$'$\hskip 1em\relax The $S1$ transfer and the collar bookkeeping}{253}{subsection.Alph27.11}%
-\contentsline {paragraph}{(T-R) Restriction: the $S1$ bulk transfers verbatim.}{253}{section*.60}%
-\contentsline {paragraph}{(T-C) Improvement: one collar datum controls every $C^k$.}{253}{section*.61}%
-\contentsline {paragraph}{(T-X) Re-proof: complexifying the exp map, with collar shrinkage.}{254}{section*.62}%
-\contentsline {subsection}{\numberline {E2a.12}A.6$''$\hskip 1em\relax Calibration record (a numerics witness)}{254}{subsection.Alph27.12}%
-\contentsline {subsection}{\numberline {E2a.13}The trace audit, the dimensional refund, and the transverse data legs}{256}{subsection.Alph27.13}%
-\contentsline {subsection}{\numberline {E2a.14}The slice-register ladder at $s>11$ over $U_\omega $}{257}{subsection.Alph27.14}%
-\contentsline {subsection}{\numberline {E2a.15}The locked-4d variant at $s>\tfrac {23}2$}{262}{subsection.Alph27.15}%
-\contentsline {subsection}{\numberline {E2a.16}Anchor restatements and the collar-margin attainment notes}{262}{subsection.Alph27.16}%
-\contentsline {subsection}{\numberline {E2a.17}The data legs: \textup {(N-a)}, \textup {(N-c)}, and the named residues}{263}{subsection.Alph27.17}%
-\contentsline {paragraph}{The parametrix package \textup {(N-a)}.}{263}{section*.63}%
-\contentsline {subsection}{\numberline {E2a.18}Clause (ii) assembly: the mixed jets and the consumer scalar $\rho ^{(2)}_{\mathrm {kin}}$}{265}{subsection.Alph27.18}%
-\contentsline {subsection}{\numberline {E2a.19}What Part 4 establishes, and its place in the appendix}{266}{subsection.Alph27.19}%
-\contentsline {subsection}{\numberline {E2a.20}Clause (i): the singular part (banked single-metric theorem; difference form a named input)}{266}{subsection.Alph27.20}%
-\contentsline {subsection}{\numberline {E2a.21}Clause (iii): the QEI-constant uniformity (a named input, at its audited grade)}{267}{subsection.Alph27.21}%
-\contentsline {subsection}{\numberline {E2a.22}The master theorem}{268}{subsection.Alph27.22}%
-\contentsline {subsection}{\numberline {E2a.23}Scope of the master theorem}{269}{subsection.Alph27.23}%
-\contentsline {subsection}{\numberline {E2a.24}The modulo-list, in print}{270}{subsection.Alph27.24}%
+\contentsline {section}{\numberline {F}Ashtekar--Krishnan dynamical-horizon modular flow: discharge of (E3)}{182}{appendix.F}%
+\contentsline {section}{\numberline {G}Non-(CP) Araki realisation of two-boundary conditioning: discharge of (E4)}{184}{appendix.G}%
+\contentsline {section}{\numberline {H}Gravity-sector realisation: CLPW Type~II crossed product}{187}{appendix.H}%
+\contentsline {section}{\numberline {I}Scope-split of (E0): linearised Jacobson theorem and nonlinear buck-stop axiom}{189}{appendix.I}%
+\contentsline {section}{\numberline {J}Standard Model accommodation: Clausius--SM compatibility and spectral-triple consistency}{197}{appendix.J}%
+\contentsline {section}{\numberline {K}UV completion via Type~II trace-stable inductive limit}{208}{appendix.K}%
+\contentsline {section}{\numberline {L}Cosmological-Horizon Terminal POVM: selection principle for $\{E_k\}$}{209}{appendix.L}%
+\contentsline {section}{\numberline {M}Hawking recovery and AdS/CFT reduction: canonical benchmarks}{214}{appendix.M}%
+\contentsline {section}{\numberline {N}Numerical toy model: finite-dimensional TBRME on FLRW}{215}{appendix.N}%
+\contentsline {section}{\numberline {O}Kuchar-evasion: thermal time, Trinity, and PW=CLPW}{216}{appendix.O}%
+\contentsline {section}{\numberline {P}Wood--Spekkens evasion: terminal data as modular- theoretic invariant}{218}{appendix.P}%
+\contentsline {section}{\numberline {Q}Wave-function normalisation on $\mathcal U$: refined algebraic quantisation via the CLPW trace}{219}{appendix.Q}%
+\contentsline {section}{\numberline {R}Reeh--Schlieder for ABL conditioning}{221}{appendix.R}%
+\contentsline {section}{\numberline {S}Conformal compatibility of the Planck cutoff: EFT-precise, not operator-exact}{222}{appendix.S}%
+\contentsline {paragraph}{Why not a covariant cutoff.}{223}{section*.54}%
+\contentsline {section}{\numberline {T}Bell-style no-go evasion beyond Wood--Spekkens}{223}{appendix.T}%
+\contentsline {section}{\numberline {U}Cosmological-constant fluctuations: refinement of Prop.~\ref {prop:pred-cc}}{225}{appendix.U}%
+\contentsline {section}{\numberline {V}Sector-resolved cluster decomposition at cosmological scales}{227}{appendix.V}%
+\contentsline {section}{\numberline {W}Causal-set compatibility: continuum-limit status}{228}{appendix.W}%
+\contentsline {section}{\numberline {X}Lorentz-violating dispersion bounds: thermal-time sector exact ($\xi =\eta =0$); $\Sigma _\delta $ matter sector subluminal linear}{228}{appendix.X}%
+\contentsline {section}{\numberline {Y}Time-of-arrival in modular time: Pauli evasion via unbounded modular spectrum}{231}{appendix.Y}%
+\contentsline {section}{\numberline {Z}Observer invariance via the perspective-neutral framework}{232}{appendix.Z}%
+\contentsline {section}{\numberline {E2a}The analytic platform: $U_\omega $, the geometric package, and the ball-uniform fold count}{233}{appendix.Alph27}%
+\contentsline {subsection}{\numberline {E2a.1}The class $U_\omega $ (cited) and its $H^s$-embedding}{233}{subsection.Alph27.1}%
+\contentsline {subsection}{\numberline {E2a.2}The fixed-atlas geometric package $(R1)$--$(R5)$}{234}{subsection.Alph27.2}%
+\contentsline {subsection}{\numberline {E2a.3}The ball-uniform fold count $N_0$}{237}{subsection.Alph27.3}%
+\contentsline {subsection}{\numberline {E2a.4}The fan model integral and the oscillatory branch}{240}{subsection.Alph27.4}%
+\contentsline {subsection}{\numberline {E2a.5}The multiplicity device: a count-free sublevel measure}{242}{subsection.Alph27.5}%
+\contentsline {subsection}{\numberline {E2a.6}The stationary cone: the fold-aware cell ledger and the $\bar \kappa _2$-cancellation}{243}{subsection.Alph27.6}%
+\contentsline {subsection}{\numberline {E2a.7}The near-flat sliver: (D3) closes device-free at the binding cut}{246}{subsection.Alph27.7}%
+\contentsline {subsection}{\numberline {E2a.8}The linear device over $U_\omega $, and (D3) end-to-end}{250}{subsection.Alph27.8}%
+\contentsline {subsection}{\numberline {E2a.9}The analytic slice register: from the Schur assembly to $T1'$-Main over $U_\omega $}{251}{subsection.Alph27.9}%
+\contentsline {subsection}{\numberline {E2a.10}A.6\hskip 1em\relax The Schur assembly: (D1), the frequency-transfer matrix (D4), and the extraction (D5)}{252}{subsection.Alph27.10}%
+\contentsline {paragraph}{Standing data and the two consumed square bounds.}{252}{section*.57}%
+\contentsline {paragraph}{$S4b$: the discrete Schur summation and the extraction (D5).}{254}{section*.58}%
+\contentsline {paragraph}{The constant chain (where $(\rho _a,\varepsilon _a)$ enters).}{255}{section*.59}%
+\contentsline {subsection}{\numberline {E2a.11}A.6$'$\hskip 1em\relax The $S1$ transfer and the collar bookkeeping}{256}{subsection.Alph27.11}%
+\contentsline {paragraph}{(T-R) Restriction: the $S1$ bulk transfers verbatim.}{256}{section*.60}%
+\contentsline {paragraph}{(T-C) Improvement: one collar datum controls every $C^k$.}{257}{section*.61}%
+\contentsline {paragraph}{(T-X) Re-proof: complexifying the exp map, with collar shrinkage.}{257}{section*.62}%
+\contentsline {subsection}{\numberline {E2a.12}A.6$''$\hskip 1em\relax Calibration record (a numerics witness)}{258}{subsection.Alph27.12}%
+\contentsline {subsection}{\numberline {E2a.13}The trace audit, the dimensional refund, and the transverse data legs}{259}{subsection.Alph27.13}%
+\contentsline {subsection}{\numberline {E2a.14}The slice-register ladder at $s>11$ over $U_\omega $}{261}{subsection.Alph27.14}%
+\contentsline {subsection}{\numberline {E2a.15}The locked-4d variant at $s>\tfrac {23}2$}{265}{subsection.Alph27.15}%
+\contentsline {subsection}{\numberline {E2a.16}Anchor restatements and the collar-margin attainment notes}{266}{subsection.Alph27.16}%
+\contentsline {subsection}{\numberline {E2a.17}The data legs: \textup {(N-a)}, \textup {(N-c)}, and the named residues}{267}{subsection.Alph27.17}%
+\contentsline {paragraph}{The parametrix package \textup {(N-a)}.}{267}{section*.63}%
+\contentsline {subsection}{\numberline {E2a.18}Clause (ii) assembly: the mixed jets and the consumer scalar $\rho ^{(2)}_{\mathrm {kin}}$}{268}{subsection.Alph27.18}%
+\contentsline {subsection}{\numberline {E2a.19}What Part 4 establishes, and its place in the appendix}{269}{subsection.Alph27.19}%
+\contentsline {subsection}{\numberline {E2a.20}Clause (i): the singular part (banked single-metric theorem; difference form a named input)}{270}{subsection.Alph27.20}%
+\contentsline {subsection}{\numberline {E2a.21}Clause (iii): the QEI-constant uniformity (a named input, at its audited grade)}{270}{subsection.Alph27.21}%
+\contentsline {subsection}{\numberline {E2a.22}The master theorem}{271}{subsection.Alph27.22}%
+\contentsline {subsection}{\numberline {E2a.23}Scope of the master theorem}{272}{subsection.Alph27.23}%
+\contentsline {subsection}{\numberline {E2a.24}The modulo-list, in print}{274}{subsection.Alph27.24}%
+\contentsline {section}{\numberline {E2a}The seed-fixed spacetime-smeared Dirac floor}{274}{appendix.Alph28}%
