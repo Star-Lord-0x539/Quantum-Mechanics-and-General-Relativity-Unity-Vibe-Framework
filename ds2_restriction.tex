@@ -1,0 +1,468 @@
+% ============================================================================
+% ds2_restriction.tex  (RUN 56, ARM A1 — author-commissioned support step)
+% (s1-ii) THE MASSIVE BULK-TO-HORIZON RESTRICTION ON THE dS WEDGE HORIZON
+% Portable appendix-grade write-up for author-gated import into unification.tex
+% (companion to App. app:e0ds-min; discharges the restriction support step of
+% Hyp. hyp:E0-dS-min at n=0 for the compactly generated perturbation class).
+% ONE \input fragment. ASSUMES the paper preamble; no \begin{document}.
+% NEW bibitems needed (append to bibliography; existing keys reused elsewhere):
+%   \bibitem{DappiaggiMorettiPinamonti2009} C.~Dappiaggi, V.~Moretti,
+%     N.~Pinamonti, \emph{Cosmological horizons and reconstruction of quantum
+%     field theories}, Commun.~Math.~Phys.~\textbf{285}, 1129 (2009),
+%     arXiv:0712.1770.
+%   \bibitem{CasiniTesteTorroba2017} H.~Casini, E.~Test\'e, G.~Torroba,
+%     \emph{Modular Hamiltonians on the null plane and the Markov property of
+%     the vacuum state}, J.~Phys.~A~\textbf{50}, 364001 (2017).
+%   \bibitem{Longo2019coherent} R.~Longo, \emph{Entropy of coherent
+%     excitations}, Lett.~Math.~Phys.~\textbf{109}, 2587 (2019).
+% Verification script: ds2_check.py (this scratchpad), 9/9 PASS.
+% ============================================================================
+
+\section{The massive bulk-to-horizon restriction on the de~Sitter
+  wedge horizon: the $n{=}0$ support step (s1-ii)}
+\label{app:ds2-restriction}
+
+This appendix discharges, at $n=0$ (free massive matter, arbitrary
+curvature coupling), the first named support step of
+Hyp.~\ref{hyp:E0-dS-min}: the restriction of the massive
+Bunch--Davies bulk data to the horizon of a de~Sitter wedge lands on
+the \emph{universal massless chiral horizon net}, where the
+Ceyhan--Faulkner-class per-cut equality~\cite{CeyhanFaulkner2018}
+lives natively; composing, the equality-strength per-cut first law of
+Lem.~\ref{lem:e0ds-cut}(a), together with its finite-first-moment
+premise (b), holds on every wedge of the $\mathrm{SO}(1,4)$ orbit for
+the compactly generated perturbation class defined below. The scope
+fences are collected in Rem.~\ref{rem:ds2-fences}; the geometric side
+(premise (c) and the Wald/Raychaudhuri pairing) is the companion step
+(s1-iii) and is not consumed here.
+
+Throughout, $\mathrm{dS}_4=\{X\in\mathbb R^{1,4}:X\cdot
+X=H^{-2}\}$ with $X\cdot X=-\,(X^0)^2+\sum_{i=1}^4(X^i)^2$ (the paper
+elsewhere sets $H=1$); $R=12H^2$; the field is the real scalar with
+$(\Box-m^2-\xi R)\phi=0$ and effective mass
+$m_{\rm eff}^2:=m^2+\xi R>0$, and
+\[
+\nu:=\Bigl(\tfrac94-\tfrac{m_{\rm eff}^2}{H^2}\Bigr)^{1/2},
+\qquad
+h_\pm:=\tfrac32\pm\nu ,
+\]
+so that $\nu\in i\,\mathbb R$ (principal series; all SM masses,
+$m\gg H$) or $\nu\in(0,\tfrac32)$ (complementary series); in all
+cases $\operatorname{Re}h_->0$. $\omega_{\rm BD}$ denotes the
+Bunch--Davies state, whose two-point function is the boundary value
+of
+\begin{equation}
+\label{eq:ds2-bd}
+F(Z)\;=\;\frac{H^{2}\,\Gamma(h_+)\Gamma(h_-)}{16\pi^{2}}\;
+{}_2F_1\!\Bigl(h_+,h_-;2;\frac{1+Z}{2}\Bigr),
+\qquad Z(x,x'):=H^{2}\,X(x)\cdot X(x'),
+\end{equation}
+with the Wightman $i\epsilon$ prescription
+$Z\mapsto Z-i\epsilon\,(X^{0}-X'^{0})$.
+
+\begin{lemma}[wedge-horizon geometry and the boundary dictionary]
+\label{lem:ds2-geom}
+Let $W=\{X^1>|X^0|\}$ be the reference wedge and
+$\mathcal H:=\{X^0=X^1\}\cap\mathrm{dS}_4$ the null hypersurface
+carrying its future horizon. Then:
+\begin{enumerate}
+\item[(i)] $\mathcal H=\{X(v,\hat n)=(v,v,\hat n/H):v\in\mathbb
+  R,\ \hat n\in S^2\}\cong\mathbb R\times S^2$; each generator
+  $v\mapsto X(v,\hat n)$ is a complete null geodesic of
+  $\mathrm{dS}_4$ with \emph{affine} parameter $v$; the cross-metric
+  is the round sphere of radius $1/H$ (area measure $\sqrt h\,
+  d^2\Omega=H^{-2}dS^2$), every cross-section a great sphere. The
+  bifurcation surface of $W$ is the cut $v=0$; cuts $v=V(\hat n)$ of
+  Lem.~\ref{lem:e0ds-cut} are cross-sections of this one surface.
+\item[(ii)] For any two points of $\mathcal H$,
+  $Z=\hat n\cdot\hat n'$ \emph{exactly}: $Z$ is independent of
+  $v,v'$, and $1-Z=\tfrac{H^{2}}{2}\,d_{\rm ch}(\hat n,\hat n')^{2}$
+  with $d_{\rm ch}$ the chordal distance on the radius-$1/H$ sphere.
+\item[(iii)] The wedge boost (the $(X^0,X^1)$ boost of
+  $\mathrm{SO}(1,4)$, the modular/KMS flow of $\omega_{\rm BD}$ on
+  $\mathcal A(W)$~\cite{BorchersBuchholz1999}) acts on $\mathcal H$
+  as the dilations $v\mapsto e^{s}v$, fixing the bifurcation cut.
+\item[(iv)] $\mathrm{SO}(1,4)$ acts transitively on the wedge orbit
+  (Lem.~\ref{lem:e0ds-coverage}) and carries the data
+  (i)--(iii) of any wedge to any other; every statement below is
+  therefore orbit-uniform once proved on $W$.
+\item[(v)] $\mathcal H$ is at the same time the past cosmological
+  horizon $\Im^-$ of the expanding Poincar\'e-type patch
+  $P^+=\{X^0>X^1\}$, i.e.\ exactly the surface of the
+  Dappiaggi--Moretti--Pinamonti bulk-to-boundary
+  construction~\cite{DappiaggiMorettiPinamonti2009}; their Bondi
+  coordinate $\ell$ on $\Im^-$ is an \emph{affine} function of $v$,
+  with the same slope on every generator.
+\end{enumerate}
+\end{lemma}
+
+\begin{proof}
+(i) $X(v,\hat n)\cdot X(v,\hat n)=-v^2+v^2+|\hat n|^2/H^2=H^{-2}$;
+the curve is a straight null line of $\mathbb R^{1,4}$ contained in
+the hyperboloid, hence a complete null geodesic of the induced
+metric with $v$ affine. (ii) $H^{2}X\cdot X'=-vv'+vv'+\hat
+n\cdot\hat n'=\hat n\cdot\hat n'$; $d_{\rm ch}^2=|\hat n-\hat
+n'|^2/H^2=2(1-Z)/H^2$. (iii) The boost
+$(X^0,X^1)\mapsto(X^0\cosh s+X^1\sinh s,\ X^0\sinh s+X^1\cosh s)$
+maps $(v,v,\hat n/H)\mapsto(e^{s}v,e^{s}v,\hat n/H)$. (iv) is
+Lem.~\ref{lem:e0ds-coverage} plus the transitivity used in its
+proof. (v) In the planar chart of $P^+$
+($a(\tau)=-1/(H\tau)$, $\tau\in(-\infty,0)$, conformal to Minkowski)
+one has, along $\tau\to-\infty$, $r\to\infty$ with
+$\tau+r\to v_\ast$: $X^0\to v_\ast$, $X^1\to v_\ast$ and
+$|\vec X_\perp|\to1/H$, so the boundary point is $X(v_\ast,\hat n)$
+--- the null coordinate $\tau+r$ of the
+chart converges on $\Im^-$ to the ambient affine parameter $v$ of
+(i). The Bondi coordinate of
+\cite{DappiaggiMorettiPinamonti2009} is
+$\ell(U)=-\gamma^{-1}\tan U+k_-$ with $U=\arctan(\tau+r)$, i.e.\
+$\ell=-\gamma^{-1}(\tau+r)+k_-$: an affine function of $\tau+r$,
+hence of $v$, with generator-independent slope $-\gamma^{-1}>0$.
+All five statements are verified symbolically/numerically in
+\texttt{ds2\_check.py} (C1).
+\end{proof}
+
+\begin{lemma}[mass-inert restriction: the horizon state is the
+  universal chiral vacuum]
+\label{lem:ds2-massinert}
+Let $J(f):=\int_{\mathcal H}\partial_v\phi\,f\,dv\,\sqrt h\,
+d^2\Omega$, $f\in C^\infty_c(\mathbb R\times S^2;\mathbb R)$, be the
+horizon current smeared on $\mathcal H$, and let $\mathcal A_{\mathcal
+H}$ be the CCR algebra it generates, with cut subalgebras $\mathcal
+A_{\mathcal H}(V):=\{J(f):\operatorname{supp}f\subset\{v>V(\hat
+n)\}\}''$ for any continuous cut $V$. Then the pullback of
+$\partial_v\partial_{v'}\langle\phi\phi\rangle_{\omega_{\rm BD}}$ to
+$\mathcal H\times\mathcal H$ exists as a bidistribution and equals
+\begin{equation}
+\label{eq:ds2-kernel}
+\omega_{\mathcal H}\bigl(\partial_v\phi(v,\hat n)\,
+\partial_{v'}\phi(v',\hat n')\bigr)
+=-\frac{1}{4\pi}\,
+\frac{\delta^2_{\sqrt h}(\hat n,\hat n')}{(v-v'-i0)^2},
+\end{equation}
+\emph{independently of $(m,\xi)$}: the induced quasi-free state
+$\omega_{\mathcal H}$ on $\mathcal A_{\mathcal H}$ is the vacuum of
+the ultralocal chiral $U(1)$-current net fibred over
+$(S^2,\sqrt h)$, i.e.\ the same state for every $m^2_{\rm eff}>0$
+and the same as for the massless field on a Minkowski null plane.
+In particular the per-cut data $(\mathcal A_{\mathcal H}(V),
+\omega_{\mathcal H})$ carries no $m^2$-dependence at \emph{any} cut,
+bifurcation or not: the cut variation of Lem.~\ref{lem:e0ds-cut}
+moves the subalgebra only, never the surface or the state.
+\end{lemma}
+
+\begin{proof}
+Near $Z=1$ the hypergeometric connection formula for parameters
+$(h_+,h_-;2)$, $2-h_+-h_-=-1$, gives
+\[
+F(Z)=\frac{U_0}{1-Z}\;+\;Q(Z)\log(1-Z)\;+\;R(Z),
+\qquad
+U_0=\frac{H^{2}\Gamma(h_+)\Gamma(h_-)}{16\pi^{2}}\cdot
+\frac{\Gamma(2)\Gamma(1)}{\Gamma(h_+)\Gamma(h_-)}\cdot 2
+=\frac{H^{2}}{8\pi^{2}},
+\]
+with $Q,R$ analytic at $Z=1$; the pole coefficient $U_0$ is
+\emph{mass-independent} (the $\Gamma(h_\pm)$ cancel exactly;
+numerically confirmed for $m_{\rm eff}^2/H^2=0.5,\,4,\,100$,
+\texttt{ds2\_check.py} C2), while all $(m,\xi)$-dependence sits in
+$Q$ and $R$. Restrict to $\mathcal H\times\mathcal H$ using
+Lem.~\ref{lem:ds2-geom}(ii): $1-Z=\tfrac{H^2}{2}d_{\rm ch}^2$ is
+$v,v'$-\emph{free}; the entire $v$-dependence of the boundary value
+enters through the prescription
+$1-Z\mapsto\tfrac{H^2}{2}d_{\rm ch}^2+i\epsilon(v-v')$
+($X^0-X'^0=v-v'$ on $\mathcal H$; the sign is fixed by positivity of
+the limit state, below). Writing $\rho:=d_{\rm ch}$ and absorbing
+$2/H^{2}$ into $\epsilon$:
+\[
+F\big|_{\mathcal H\times\mathcal H}
+=\frac{1}{4\pi^{2}\,(\rho^{2}+i\epsilon\,\Delta v)}
++Q\log\bigl(\tfrac{H^2}{2}\rho^{2}+i\epsilon\Delta v\bigr)+R .
+\]
+Apply $\partial_v\partial_{v'}=-\partial^2_{\Delta v}$ and smear
+against $C^\infty_c$ test functions: (pole) $-\partial^2_{\Delta
+v}(\rho^2+i\epsilon\Delta v)^{-1}=2\epsilon^{2}(\rho^{2}
++i\epsilon\Delta v)^{-3}$, whose transverse integral against the
+measure $\sqrt h\,d^2\Omega$ (flat to leading order at coincidence,
+$\int 2\pi\rho\,d\rho$) converges dominatedly to
+$-1/(4\pi(\Delta v-i0)^{2})$ times the transverse evaluation at
+$\hat n=\hat n'$ --- i.e.\ to \eqref{eq:ds2-kernel}; (log)
+$-\partial^2_{\Delta v}\log(\cdots)=-\epsilon^{2}(\rho^{2}
++i\epsilon\Delta v)^{-2}$, whose transverse integral is
+$O(\epsilon)$ and vanishes; (analytic) $R$ and the $Q$-prefactor
+variations are $v$-free after $\epsilon\to0$ and are annihilated
+identically. (Numerics: C3a reproduces $-1/(4\pi\Delta v^{2})$ to
+$10^{-4}$; C3b the $O(\epsilon)$ rate.) The limit kernel
+\eqref{eq:ds2-kernel} has $\ell$-Fourier transform supported on
+positive frequency ($\propto k\,\Theta(k)\,
+\delta^2_{\sqrt h}$), i.e.\ it is precisely the boundary state
+$\lambda$ of \cite{DappiaggiMorettiPinamonti2009}, Eq.~(20) there
+--- the unique $\Im^-$-symmetric positive-energy pure quasi-free
+state --- read in the affine parameter via
+Lem.~\ref{lem:ds2-geom}(v); positivity fixes the $-i0$ orientation
+and confirms $\omega_{\mathcal H}$ is a state. Since $U_0$ is
+universal, $\omega_{\mathcal H}$ is $(m,\xi)$-independent; it
+coincides with the Minkowski null-plane restriction of the massless
+(or any massive) Minkowski vacuum, for which the same computation
+with $\sigma=|y-y'|^2$ gives the same kernel. The final clause holds
+because \eqref{eq:ds2-kernel} is a statement about the state on the
+\emph{whole} net $\mathcal A_{\mathcal H}$ of the fixed complete
+surface $\mathcal H$; cuts index subalgebras of it.
+\end{proof}
+
+\begin{remark}[consistency with the printed massive bulk-to-boundary
+  corpus]
+\label{rem:ds2-dmp}
+For $m^2_{\rm eff}>\tfrac{5}{48}R$ (equivalently $|\operatorname{Re}
+\nu|<1$; all principal-series and hence all SM masses) Theorem~4.4
+of \cite{DappiaggiMorettiPinamonti2009} proves, on the expanding
+patch $P^+$: (a) every bulk wavefunction restricts to their boundary
+space $S(\Im^-)$ (an $L^2$-type space: $\psi,\partial_\ell\psi\in L^2$,
+their Eq.\ (17)) symplectically, giving the isometric injective
+$*$-homomorphism $\imath:\mathcal W(P^+)\to\mathcal W(\Im^-)$ of
+their Theorem~4.2; and (b) $\lambda\circ\imath$ \emph{is} the
+Bunch--Davies state. Lemma~\ref{lem:ds2-massinert} is the
+two-sided, wedge-adapted form of the state content of (b) and was
+derived independently above; the net-level injection (a) is quoted
+here at exactly this printed strength and scope (expanding-patch
+Weyl algebra; no wedge- or cut-localised net correspondence is
+claimed in \cite{DappiaggiMorettiPinamonti2009}, and none is
+consumed below). For $0<m^2_{\rm eff}\le\tfrac{5}{48}R$ their
+Remark~4.4 states the extension on an enlarged boundary space; we do
+not consume it.
+\end{remark}
+
+\begin{lemma}[restriction of the perturbation class; the first
+  moment is finite, not assumed]
+\label{lem:ds2-moment}
+Let the \emph{compactly generated class} $\mathcal P$ consist of the
+coherent perturbations $\omega_f:=\omega_{\rm
+BD}(W(f)^*\,\cdot\,W(f))$, $f\in C^\infty_c(\mathrm{dS}_4;\mathbb
+R)$ real test functions (in particular those supported in a wedge),
+and finite convex/normal combinations thereof. Write $\psi:=Ef$ for
+the causally propagated classical solution. Then, on every generator
+of every orbit-wedge horizon:
+\begin{enumerate}
+\item[(i)] $\psi|_{\mathcal H}$ is smooth with
+  $|\psi(v,\hat n)|\le C(1+|v|)^{-\min(1,\operatorname{Re}h_-)}$ and
+  $|\partial_v\psi(v,\hat n)|\le
+  C(1+|v|)^{-\min(1,\operatorname{Re}h_-)-1}$: the rate is governed
+  by the cone-delta mechanism --- the universal residue of the
+  commutator function on the past cone of the perturbation's support
+  caps the decay at $v^{-1}$ for plane-straddling supports, while
+  wedge-supported perturbations reach $v^{-\operatorname{Re}h_-}$;
+  for principal-series (SM) masses $\min(1,\operatorname{Re}h_-)=1$.
+\item[(ii)] $\delta\langle T_{vv}\rangle:=\langle
+  T_{vv}\rangle_{\omega_f}-\langle T_{vv}\rangle_{\omega_{\rm
+  BD}}=(\partial_v\psi)^2$ exactly (free field, minimal coupling;
+  for $\xi\neq0$ the improvement term is handled by the companion
+  Wald-pairing lemma, the improvement/Wald identity), and the \emph{first
+  moment} of Lem.~\ref{lem:e0ds-cut}(b),
+  $\int^{\infty}_{V}dv\,(v-V)\,|\delta\langle
+  T_{vv}\rangle|<\infty$, \emph{converges on every complete
+  generator, for every $m^2_{\rm eff}>0$}: the integrand is
+  $O(v^{-1-2\min(1,\operatorname{Re}h_-)})$ --- $O(v^{-3})$ for
+  plane-straddling and $O(v^{-4})$ for wedge-supported perturbations
+  at SM masses --- integrable in either case.
+\item[(iii)] the horizon one-particle datum obeys $\psi,\ 
+  \partial_v\psi\in L^2(\mathbb R\times S^2,dv\,\sqrt h\,d^2\Omega)$
+  whenever $\operatorname{Re}h_->\tfrac12$ (all principal-series
+  masses), consistently with the boundary space $S(\Im^-)$ of
+  \cite{DappiaggiMorettiPinamonti2009}, Thm.~4.4(a).
+\end{enumerate}
+\end{lemma}
+
+\begin{proof}
+(i) $\psi(x)=\int E(x,x')f(x')\,d\mu(x')$ with $E=2\,\mathrm{Im}\,F$
+the commutator function, a function of $Z$ (and time orientation).
+Along a generator, $Z(X(v,\hat n),x')=v\,H^2(x'^1-x'^0)+H\,\hat
+n\cdot\vec x'_\perp$ is \emph{linear} in $v$ with slope bounded away
+from $0$ uniformly on the compact $\operatorname{supp}f$ (for $f$
+supported off the null plane $x'^0=x'^1$, e.g.\ in any wedge or its
+complement). A compact support \emph{straddling} the plane is not
+detachable (a second orbit wedge would bound $\psi$ on a
+\emph{different} horizon), and there the slope degenerates on the
+plane's trace; the decay is then set by the cone-delta mechanism:
+the leading singularity of $E$ at $Z=1$ is the universal
+$2\pi U_0\,\delta(Z-1)$ (residue $U_0$ mass-independent,
+Lem.~\ref{lem:ds2-massinert}), and along a generator $Z-1=v\,H^2
+(x'^1-x'^0)+\cdots$, so
+$\int f\,2\pi U_0\,\delta(Z-1)\,d\mu
+=\tfrac{2\pi U_0}{v}\!\int_{\text{plane}}\!f$, giving
+$\psi=O(v^{-1})$ for plane-straddling supports; the smooth interior
+contributes the faster $O(v^{-\operatorname{Re}h_-})$, so the
+envelope is $O(v^{-\min(1,\operatorname{Re}h_-)})$ as stated.
+For $f$ supported off the plane the slope is bounded away from $0$
+and the connection formula for \eqref{eq:ds2-bd} at $Z\to\infty$ gives
+$|F|,|E|\le C|Z|^{-\operatorname{Re}h_-}$ and $|F'|,|E'|\le
+C|Z|^{-\operatorname{Re}h_--1}$ (envelope verified numerically,
+\texttt{ds2\_check.py} C4: complementary exponent to $2\%$;
+principal envelope $|Z|^{-3/2}$ bounded); differentiation in $v$
+multiplies by the bounded slope. (ii) The coherent shift is
+classical: $\phi\mapsto\phi+\psi$ under $\mathrm{Ad}\,W(f)$, so
+$\delta\langle(\partial_v\phi)^2\rangle=(\partial_v\psi)^2$ with the
+normal-ordering constant cancelling in the difference; the moment
+integrand is $(v-V)\,O((1+v)^{-2\operatorname{Re}h_--2})$, integrable
+at $v=\infty$ iff $\operatorname{Re}h_->0$, which holds for every
+$m^2_{\rm eff}>0$. (iii) $2\operatorname{Re}h_->1$.
+This \emph{proves} premise (b) of Lem.~\ref{lem:e0ds-cut} for
+$\mathcal P$ on every generator; the witness state
+($T=(1+v^2)^{-1}$: finite ANEC, divergent first moment) shows the
+premise is \emph{not} implied by the paper's ANEC pin and genuinely
+needed the falloff proof above for the class.
+\end{proof}
+
+\begin{lemma}[transfer: the dS horizon net is the Minkowski
+  null-plane net, so the per-cut machinery applies verbatim]
+\label{lem:ds2-transfer}
+The pair $(\mathcal A_{\mathcal H},\omega_{\mathcal H})$ of
+Lem.~\ref{lem:ds2-massinert}, with its cut ordering $V\le V'$ and
+dilation action of Lem.~\ref{lem:ds2-geom}(iii), is isomorphic ---
+as a cut-indexed net with state --- to the free-field Minkowski
+null-plane net with its vacuum, by any measure isomorphism
+$(S^2,\sqrt h\,d^2\Omega)\to(\mathbb R^2,d^2y)$ (both are standard
+non-atomic $\sigma$-finite measure spaces; the kernel
+\eqref{eq:ds2-kernel} is ultralocal transversally, and no transverse
+derivative or transverse geometry enters any cut object). In
+particular, at $n=0$:
+\begin{enumerate}
+\item[(i)] the vacuum modular Hamiltonian of the cut algebra
+  $\mathcal A_{\mathcal H}(V)$ is
+  $K_V=2\pi\int_{S^2}\!\sqrt h\,d^2\Omega\int_{V(\hat
+  n)}^{\infty}\!dv\,(v-V(\hat n))\,T_{vv}(v,\hat n)$, with
+  $T_{vv}=\,:\!(\partial_v\phi)^2\!:_{\omega_{\mathcal H}}$
+  [\cite{CasiniTesteTorroba2017}, null-plane Markov/factorisation;
+  \cite{Wall2012}, per-generator half-sided structure --- free-field
+  facts whose proofs consume only the transferred data];
+\item[(ii)] translations $v\mapsto v+a$ and cut flows are unitarily
+  implemented in the GNS representation of $\omega_{\mathcal H}$
+  with positive generators (half-sided modular inclusion), and the
+  Ceyhan--Faulkner equality machinery~\cite{CeyhanFaulkner2018},
+  whose hypotheses are exactly (HSMI) $+$ finite $\langle
+  P\rangle$ $+$ finite $S_{\rm rel}$ [their Eqs.~(3.1)--(3.2)],
+  applies to $(\mathcal A_{\mathcal H},\omega_{\mathcal H})$ with no
+  Minkowski-specific residue: \emph{no bulk isometry generating
+  $v$-translations is needed} --- on $\mathrm{dS}$ none exists (the
+  result of Lem.~\ref{lem:pair-chart}(v)) --- because the translations act on the
+  \emph{horizon} net and preserve the kernel
+  \eqref{eq:ds2-kernel} manifestly.
+\end{enumerate}
+\end{lemma}
+
+\begin{proof}
+Ultralocality: \eqref{eq:ds2-kernel} factorises as
+$\delta^2_{\sqrt h}\otimes$ (chiral kernel); the GNS Hilbert space is
+the Bose Fock space over $L^2(S^2,\sqrt h)\otimes\mathfrak h_{\rm
+chiral}$, and every cut algebra is generated fibrewise; a measure
+isomorphism therefore carries nets, states, cut ordering, dilations
+and translations onto their null-plane counterparts and back. The
+$v$-translation invariance of \eqref{eq:ds2-kernel} is manifest
+($Z$ is $v$-free; the kernel depends on $v-v'$ only), so
+translations are $\omega_{\mathcal H}$-preserving automorphisms,
+unitarily implementable in GNS; positivity of the generator and the
+HSMI property then follow from the transferred null-plane statements
+(or intrinsically: the fibred chiral vacuum satisfies
+Bisognano--Wichmann-type dilation KMS at the $V=0$ cut, which is
+also the restriction of the bulk boost KMS
+\cite{BorchersBuchholz1999} by Lem.~\ref{lem:ds2-geom}(iii) --- the
+two structures agree). Points (i)--(ii) are then the quoted printed
+results read through the isomorphism.
+\end{proof}
+
+\begin{theorem}[(s1-ii) discharged at $n=0$ for the compactly
+  generated class]
+\label{thm:ds2-composition}
+Let $W$ be any wedge of the $\mathrm{SO}(1,4)$ orbit, $\mathcal H$
+its extended horizon, $m^2_{\rm eff}>0$, and
+$\omega_f\in\mathcal P$ a compactly generated perturbation of
+$\omega_{\rm BD}$. Then for every cut $V$ in a $C^2$ neighbourhood
+of the bifurcation cut:
+\begin{equation}
+\label{eq:ds2-firstlaw}
+\delta S(V)\;=\;\delta\langle K_V\rangle\;=\;
+2\pi\int_{S^2}\!\sqrt h\,d^2\Omega\int_{V(\hat
+n)}^{\infty}\!dv\,\bigl(v-V(\hat n)\bigr)\,
+\delta\langle T_{vv}(v,\hat n)\rangle ,
+\end{equation}
+where $S(V)$ is the (relative-entropy-renormalised) entropy of the
+horizon cut algebra $\mathcal A_{\mathcal H}(V)$, $K_V$ its vacuum
+modular Hamiltonian, and $\delta\langle T_{vv}\rangle$ the horizon
+restriction of the bulk stress expectation
+(Lem.~\ref{lem:ds2-moment}(ii)); both sides are finite
+(Lem.~\ref{lem:ds2-moment}), twice differentiable in $V$ along the
+$C^2$ cut family for $\psi$ as in Lem.~\ref{lem:ds2-moment}(i)
+(dominated by the $v^{-2\operatorname{Re}h_--2}$ envelope), and the
+matter side of the second cut-variation of Lem.~\ref{lem:e0ds-cut}
+follows: $\delta^2\langle K_V\rangle/\delta V(\hat n)^2=2\pi\,
+\delta\langle T_{vv}(V,\hat n)\rangle\sqrt h$. Consequently premises
+(a$_{\rm matter}$) and (b) of Lem.~\ref{lem:e0ds-cut} hold at $n=0$
+for $\mathcal P$ on \emph{every} wedge of the orbit: what remains of
+Hyp.~\ref{hyp:E0-dS-min} at $n=0$ is exactly the geometric pairing
+(premise (c) and $\delta A/4G$, the companion step (s1-iii)); at
+$n\ge1$ it remains the B1a wall.
+\end{theorem}
+
+\begin{proof}
+Chain: (1) $\omega_{\rm BD}\mapsto\omega_{\mathcal H}$ =
+universal chiral vacuum (Lem.~\ref{lem:ds2-massinert});
+$\omega_f\mapsto$ coherent excitation of $\omega_{\mathcal H}$ with
+one-particle datum $\partial_v\psi$ (the shift is local-classical,
+so restriction commutes with the coherent conjugation). (2) $K_V$ as
+displayed (Lem.~\ref{lem:ds2-transfer}(i)); $\delta\langle
+K_V\rangle$ finite by Lem.~\ref{lem:ds2-moment}(ii) --- the first
+moment \emph{is} the modular energy. (3) First order in the
+perturbation: $\delta S=\delta\langle K_V\rangle$ is the
+entanglement first law (Araki: $S_{\rm rel}\ge0$ vanishing to first
+order); at coherent-class strength the stronger per-cut statement
+holds \emph{exactly}: $S_{\rm rel}(\omega_f\Vert\omega_{\mathcal
+H};\mathcal A_{\mathcal H}(V))=\langle K_V\rangle_{\rm
+cl}[\psi]=2\pi\int(v-V)(\partial_v\psi)^2$, the
+coherent-state relative entropy of the chiral
+net~\cite{Longo2019coherent} read through
+Lem.~\ref{lem:ds2-transfer}, whose premises (finite $\langle
+P\rangle$, finite $S_{\rm rel}$ at a reference cut) are discharged
+by Lem.~\ref{lem:ds2-moment}; the Ceyhan--Faulkner sum
+rule~\cite{CeyhanFaulkner2018} supplies the same equality
+abstractly on the transferred HSMI, so the display is doubly
+anchored. (4) Second cut-variation of the right side of
+\eqref{eq:ds2-firstlaw} in $V(\hat n)$: the boundary term from the
+lower limit vanishes linearly ($(v-V)|_{v=V}=0$) and the second
+variation evaluates the integrand at the cut, giving
+$2\pi\,\delta\langle T_{vv}(V,\hat n)\rangle\sqrt h$; the
+differentiations are justified by the envelope of
+Lem.~\ref{lem:ds2-moment}(i). (5) Orbit uniformity:
+Lem.~\ref{lem:ds2-geom}(iv). \end{proof}
+
+\begin{remark}[scope fences --- what is and is not claimed]
+\label{rem:ds2-fences}
+(F1) \emph{Entropy reading.} $\delta S(V)$ in
+\eqref{eq:ds2-firstlaw} is the entropy of the \emph{horizon} cut
+algebra --- the object the displayed consumers of
+Hyp.~\ref{hyp:E0-dS-min} differentiate. The identification of
+$S(\mathcal A_{\mathcal H}(V{=}0))$-variations with bulk wedge-algebra
+entropy variations (``restriction faithfulness'',
+$\mathcal A(W)$ vs $\mathcal A_{\mathcal H}(0)$ duality for the
+massive field) is \emph{not claimed and not consumed}: no printed
+massive-dS statement supplies it
+(\cite{DappiaggiMorettiPinamonti2009} inject the expanding-patch
+algebra, not the wedge algebra; Rem.~\ref{rem:ds2-dmp}), and the
+per-cut display never uses it. (F2) \emph{Perturbation class.} The
+first-moment premise is \emph{proved} here for $\mathcal P$
+(Lem.~\ref{lem:ds2-moment}); for general Bunch--Davies-class Hadamard
+perturbations it remains the stated premise (b) of
+Lem.~\ref{lem:e0ds-cut} --- the witness state shows it does not
+follow from ANEC finiteness. (F3) \emph{Coupling.} For $\xi\neq0$
+the display pairs with \emph{Wald} entropy via the improvement
+identity, consumed in the companion step (s1-iii),
+not here. (F4) \emph{Imports at printed strength.}
+\cite{DappiaggiMorettiPinamonti2009}: expanding-patch Weyl
+injection $+$ boundary state $=$ Bunch--Davies, $m^2_{\rm
+eff}>\tfrac5{48}R$ for the $L^2$-type boundary space ($\psi,\ \partial_\ell\psi\in L^2$; DMP Eq.\ (17)) (all SM
+masses); \cite{CasiniTesteTorroba2017,Wall2012}: free-field
+null-plane cut modular data; \cite{CeyhanFaulkner2018}: HSMI
+equality machinery at stated premises; \cite{Longo2019coherent}:
+coherent-state entropy on the chiral net. Nothing is cited beyond
+these scopes; the dS-specific content (mass-inertness, dictionary,
+falloff) is derived, not imported. (F5) $n\ge1$ stays the B1a wall;
+FRW stays re-pinned to A3 (no bifurcate Killing horizon), exactly as
+in Rem.~\ref{rem:e0ds-min-status}.
+\end{remark}

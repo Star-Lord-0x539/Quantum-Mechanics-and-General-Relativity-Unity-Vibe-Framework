@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.22)  14 JUL 2026 17:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.22)  15 JUL 2026 18:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -344,7 +344,7 @@ Package: enumitem 2025/02/06 v3.11 Customized lists
 File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count317
 )
-(./tbrme-uniqueness-outline.aux)
+No file tbrme-uniqueness-outline.aux.
 \openout1 = `tbrme-uniqueness-outline.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 47.
@@ -365,7 +365,6 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 47.
 LaTeX Font Info:    ... okay on input line 47.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 47.
 LaTeX Font Info:    ... okay on input line 47.
-
 (/usr/local/texlive/2026/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
 
@@ -465,11 +464,95 @@ LaTeX Font Info:    Trying to load font information for U+euf on input line 63.
 
 (/usr/local/texlive/2026/texmf-dist/tex/latex/amsfonts/ueuf.fd
 File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
-) [1
+)
+
+LaTeX Warning: Citation `CLPW2022' on page 1 undefined on input line 103.
+
+
+LaTeX Warning: Citation `CPW2022' on page 1 undefined on input line 106.
+
+
+LaTeX Warning: Reference `rem:IIinfty-variant' on page 1 undefined on input lin
+e 107.
+
+
+LaTeX Warning: Citation `CLPW2022' on page 1 undefined on input line 128.
+
+
+LaTeX Warning: Citation `PedersenTakesaki1973' on page 1 undefined on input lin
+e 128.
+
+[1
 
 {/usr/local/texlive/2026/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/loc
 al/texlive/2026/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/local
-/texlive/2026/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] [2] [3]
+/texlive/2026/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
+
+LaTeX Warning: Citation `PedersenTakesaki1973' on page 2 undefined on input lin
+e 138.
+
+
+LaTeX Warning: Reference `rem:esa-vs-c' on page 2 undefined on input line 149.
+
+
+LaTeX Warning: Reference `eq:X2' on page 2 undefined on input line 201.
+
+
+LaTeX Warning: Reference `thm:main' on page 2 undefined on input line 225.
+
+
+LaTeX Warning: Reference `sec:audit' on page 2 undefined on input line 225.
+
+
+LaTeX Warning: Citation `MedaPinamontiSiemssen2020' on page 2 undefined on inpu
+t line 238.
+
+[2]
+
+LaTeX Warning: Citation `KaimakkamisSil2024' on page 3 undefined on input line 
+253.
+
+
+LaTeX Warning: Reference `thm:main' on page 3 undefined on input line 261.
+
+
+LaTeX Warning: Citation `GiuliniMarolf1999' on page 3 undefined on input line 2
+72.
+
+
+LaTeX Warning: Citation `GiuliniMarolf1999' on page 3 undefined on input line 2
+81.
+
+
+LaTeX Warning: Reference `sec:audit' on page 3 undefined on input line 288.
+
+
+LaTeX Warning: Reference `ax:X1' on page 3 undefined on input line 295.
+
+
+LaTeX Warning: Reference `ax:X7' on page 3 undefined on input line 295.
+
+
+LaTeX Warning: Citation `ReedSimonII' on page 3 undefined on input line 316.
+
+
+LaTeX Warning: Citation `GiuliniMarolf1999' on page 3 undefined on input line 3
+20.
+
+
+LaTeX Warning: Reference `sec:GM-extension' on page 3 undefined on input line 3
+34.
+
+
+LaTeX Warning: Citation `Aczel1966' on page 3 undefined on input line 348.
+
+
+LaTeX Warning: Citation `Kisynski1972' on page 3 undefined on input line 351.
+
+
+LaTeX Warning: Citation `Sova1966' on page 3 undefined on input line 351.
+
+[3]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 361.
@@ -482,29 +565,139 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 361.
 
+
+LaTeX Warning: Citation `Takesaki2003' on page 4 undefined on input line 364.
+
+
+LaTeX Warning: Reference `eq:X2' on page 4 undefined on input line 376.
+
+
+LaTeX Warning: Reference `lem:gravity-rigidity' on page 4 undefined on input li
+ne 410.
+
+
+LaTeX Warning: Reference `sec:proof-matter' on page 4 undefined on input line 4
+22.
+
+
+LaTeX Warning: Citation `CPW2022' on page 4 undefined on input line 427.
+
+
+LaTeX Warning: Reference `lem:gravity-rigidity' on page 4 undefined on input li
+ne 428.
+
+
+LaTeX Warning: Reference `sec:proof-clock' on page 4 undefined on input line 44
+0.
+
+
+LaTeX Warning: Reference `sec:proof-gravity' on page 4 undefined on input line 
+440.
+
 [4]
+
+LaTeX Warning: Reference `sec:proof-clock' on page 5 undefined on input line 45
+3.
+
+
+LaTeX Warning: Reference `lem:gravity-rigidity' on page 5 undefined on input li
+ne 457.
+
+
+LaTeX Warning: Citation `MedaPinamontiSiemssen2020' on page 5 undefined on inpu
+t line 468.
+
+
+LaTeX Warning: Citation `KaimakkamisSil2024' on page 5 undefined on input line 
+480.
+
+
+LaTeX Warning: Citation `KaimakkamisSil2024' on page 5 undefined on input line 
+487.
+
+
 Overfull \hbox (28.74352pt too wide) in paragraph at lines 478--492
 []\T1/cmr/m/n/10.95 (Ordering class.) \T1/cmr/m/it/10.95 X6 places the pure-geo
 metry re-duc-tions of both con-straints in the Kaimakkamis--
  []
 
-[5] [6] [7] [8] (./tbrme-uniqueness-outline.aux)
+
+LaTeX Warning: Citation `GiuliniMarolf1999' on page 5 undefined on input line 5
+11.
+
+
+LaTeX Warning: Citation `ReedSimonII' on page 5 undefined on input line 531.
+
+
+LaTeX Warning: Citation `GiuliniMarolf1999' on page 5 undefined on input line 5
+31.
+
+[5]
+
+LaTeX Warning: Reference `thm:main' on page 6 undefined on input line 540.
+
+
+LaTeX Warning: Reference `thm:main' on page 6 undefined on input line 590.
+
+
+LaTeX Warning: Reference `lem:overdetermination' on page 6 undefined on input l
+ine 601.
+
+
+LaTeX Warning: Reference `lem:gravity-rigidity' on page 6 undefined on input li
+ne 607.
+
+[6]
+
+LaTeX Warning: Citation `CLPW2022' on page 7 undefined on input line 621.
+
+
+LaTeX Warning: Reference `lem:gravity-rigidity' on page 7 undefined on input li
+ne 639.
+
+
+LaTeX Warning: Citation `PedersenTakesaki1973' on page 7 undefined on input lin
+e 641.
+
+
+LaTeX Warning: Reference `sec:audit' on page 7 undefined on input line 645.
+
+
+LaTeX Warning: Citation `MedaPinamontiSiemssen2020' on page 7 undefined on inpu
+t line 652.
+
+
+LaTeX Warning: Citation `KaimakkamisSil2024' on page 7 undefined on input line 
+656.
+
+
+LaTeX Warning: Reference `rem:IIinfty-variant' on page 7 undefined on input lin
+e 677.
+
+[7] [8] (./tbrme-uniqueness-outline.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
  ***********
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package rerunfilecheck Info: File `tbrme-uniqueness-outline.out' has not change
 d.
 (rerunfilecheck)             Checksum: 5C6ABA283BEDB9D936B2E7EC4B7123EE;2748.
  ) 
 Here is how much of TeX's memory you used:
- 13390 strings out of 467525
- 216894 string characters out of 5418982
+ 13387 strings out of 467525
+ 216795 string characters out of 5418982
  659553 words of memory out of 5000000
- 42062 multiletter control sequences out of 15000+600000
+ 42061 multiletter control sequences out of 15000+600000
  656658 words of font info for 118 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,19n,79p,473b,616s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,19n,79p,473b,612s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
 ></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.
 pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.p
@@ -533,10 +726,10 @@ texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2026/te
 xmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/local/texlive/2026/texm
 f-dist/fonts/type1/public/cm-super/sfti1095.pfb></usr/local/texlive/2026/texmf-
 dist/fonts/type1/public/cm-super/sfti1200.pfb>
-Output written on tbrme-uniqueness-outline.pdf (8 pages, 495180 bytes).
+Output written on tbrme-uniqueness-outline.pdf (8 pages, 492788 bytes).
 PDF statistics:
- 344 PDF objects out of 1000 (max. 8388607)
- 274 compressed objects within 3 object streams
+ 293 PDF objects out of 1000 (max. 8388607)
+ 223 compressed objects within 3 object streams
  62 named destinations out of 1000 (max. 500000)
  97 words of extra memory for PDF output out of 10000 (max. 10000000)
 

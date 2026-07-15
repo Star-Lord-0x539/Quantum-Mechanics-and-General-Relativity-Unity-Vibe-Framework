@@ -1,0 +1,554 @@
+% ======================================================================
+% RUN 57 - P-M3: the clause-(i) difference theorem, PORTED BY RE-DERIVATION
+% Target: item (M3) of appendix_e2a_omega.tex sec:an17-modulo, i.e. the
+% difference bound eq:an17-clausei = clause (i) of hyp:hadamard-uniform
+% (Option B ball form; a fortiori hyp:hadamard-uniform-omega clause (i)).
+% Provenance: the banked LEMMA-II clause-(i) theorem (ISSUES.md l.4100
+% region: C_H = C_sob^3 kappa, Gronwall/transport, exact Christoffel
+% difference, r^{-2} kernel L^1_loc at n=4, state-independent). Per the
+% run-48 law it is RE-DERIVED here in full, not transcribed; every
+% constant is displayed. Paper-preamble-compatible fragment; compile
+% check via port_m3_wrap.tex. ZERO writes to the three protected files.
+% Labels are prefixed port: to avoid collisions.
+% ======================================================================
+
+\subsection*{P-M3. Clause (i), difference form: the dual-Lipschitz
+singular-part theorem over the full $H^s$ ball, with constants}
+
+\paragraph{Setting (the paper's own).} $n=4$, $\mathcal M\cong\mathbb
+R_t\times\Sigma^3$ with the fixed $g_0$-atlas and compacts $K\subset
+K'\subset K''$ of the appendix Setup; $|\cdot|$ and $\partial$ are
+chart-Euclidean; $r:=|x-y|$; $t$ is the fixed $g_0$-time function and
+$t_\Delta:=t(x)-t(y)$. Fix $s>n/2+6=8$ and the ball
+\[
+  U:=\bigl\{g\in H^s:\ \|g-g_0\|_{H^s(K'')}\le\varepsilon_0\bigr\},
+\]
+with $\varepsilon_0$ small enough that (u1) $\inf_U\min_{K''}|\det g|
+=:d_U>0$; (u2) the $C^0$-image of $U$ has radius $<\varepsilon_{\mathrm
+{GH}}$ (global hyperbolicity, \cite{ChruscielGrant2012} --- the
+hypothesis' own smallness); (u3) the cone-transversality constants
+$c_*,c_t$ of Lemma~\ref{port:lem-sigma}(iii) below are positive. This is
+exactly the class $\mathcal U$ of Hyp.\ hyp:hadamard-uniform (Option B);
+by an17:lem-embed, $U_\omega\subseteq U$ once $\varepsilon_a\le
+\varepsilon_0/C_{\mathrm{emb}}$, so everything below holds verbatim over
+$U_\omega$ with the same constants.
+
+$H_g$ is the appendix's own singular part: the $N{=}2$ truncated glued
+Hadamard parametrix of Lem.~an17:G,
+\begin{equation}\label{port:eq-Hdef}
+  H_g=\sum_{a\le N(K)}\theta_a\,Z^{(2),a}_g,\qquad
+  Z^{(2),a}_g(x,y)=\frac{1}{8\pi^2}\Bigl[\frac{\Delta_g^{1/2}(x,y)}
+  {\sigma_{g,\epsilon}(x,y)}
+  +v^{(2)}_g(x,y)\,\log\frac{\sigma_{g,\epsilon}(x,y)}{\ell^2}\Bigr],
+\end{equation}
+$v^{(2)}_g=\sum_{k=0}^{2}v_k[g]\,\sigma_g^k$, on the bi-collar
+$V_{\delta_c}=\{x\in K,\ r\le\delta_c\}$ of the ball-uniform
+convex-normal cover (radius $\delta_c$: Chen--LeFloch /
+Cheeger--Gromov--Taylor, cited at its printed site an17:G, THEOREM;
+the cutoffs $\theta_a$ are $g$-\emph{independent}, built from the
+$g_0$-atlas partition of unity, $\|\theta_a\|_{C^2}\le c_\theta$,
+overlap multiplicity $m(K)$). Here $\sigma_g$ is the world function,
+$\Delta_g^{1/2}$ the van Vleck determinant, $v_k[g]$ the Hadamard
+coefficients of the transport recursion (\cite[Thm.~2.1]{Moretti2003}),
+$\ell$ the single global length scale (an17:G(ii)), and
+$\sigma_{g,\epsilon}=\sigma_g+2i\epsilon t_\Delta+\epsilon^2$ the
+prescription of \cite{KayWald1991}, $\epsilon\downarrow0$. The pairing
+$H_g(u\otimes v)$ is the $\epsilon\downarrow0$ limit, which exists per
+metric on the cited footing (\cite{Moretti2003,KayWald1991}; this is the
+single-metric half, established as Lem.~an17:clausei-single); every bound
+below is uniform in $\epsilon\in(0,1]$, so it passes to the limit.
+
+\begin{theorem}[Clause (i), difference form, over the full $H^s$ ball;
+every constant displayed]\label{port:thm-M3}
+Let $n=4$, $s>n/2+6$, $U$ as above, and set
+$\alpha:=\min\bigl(\tfrac12,\tfrac{s-8}{2}\bigr)\in(0,\tfrac12]$. There
+is a constant
+\[
+  C_H(K)\;=\;C_{\mathrm{sob}}(K)^3\,\kappa(g_0,K),
+\]
+with $C_{\mathrm{sob}}(K)$ and $\kappa(g_0,K)$ the displayed constants
+\eqref{port:eq-csob} and \eqref{port:eq-kappa} below, such that for all
+$g,g'\in U$ and all $u,v$ supported in $K$,
+\begin{equation}\label{port:eq-clausei}
+  \bigl|(H_g-H_{g'})(u\otimes v)\bigr|
+  \;\le\;C_H(K)\,\|g-g'\|_{H^s}\,\|u\|_{H^{s-2}}\,\|v\|_{H^{s-2}}.
+\end{equation}
+The bound is ball-uniform (it depends on $U$ only through
+$(g_0,\varepsilon_0,s,K,\delta_c,\ell)$), state-independent (no state
+enters \eqref{port:eq-Hdef}), and holds a fortiori over
+$U_\omega\times U_\omega$. Sharper form proved en route: one test slot
+needs only $\sup$-norm,
+$\;|(H_g-H_{g'})(u\otimes v)|\le C_{\mathrm{sob}}\,\kappa\,
+\|g-g'\|_{H^s}\|u\|_{C^0}\|v\|_{C^{1,\alpha}}$
+(one embedding, on the metric difference alone).
+\end{theorem}
+
+\paragraph{The constant inventory.} All constants are finite and
+ball-uniform; each is defined at its first use and collected here.
+\begin{equation}\label{port:eq-csob}
+  C_{\mathrm{sob}}(K):=\max\bigl\{
+  C^{\mathrm{Mor}}_{s\to(6,\alpha)}(K''),\;
+  C^{\mathrm{Mor}}_{(s-2)\to(1,\alpha)}(K)\bigr\},
+\end{equation}
+the two Morrey--Sobolev embedding constants
+$\|\cdot\|_{C^{6,\alpha}(K'')}\le C^{\mathrm{Mor}}_{s\to(6,\alpha)}
+\|\cdot\|_{H^{s}(K'')}$ (legal: $s\ge8+2\alpha>8$, $n=4$) and
+$\|\cdot\|_{C^{1,\alpha}(K)}\le C^{\mathrm{Mor}}_{(s-2)\to(1,\alpha)}
+\|\cdot\|_{H^{s-2}(K)}$ (legal: $s-2>6>3+\alpha$); Adams--Fournier.
+The three factors of $C_{\mathrm{sob}}^3$ are the three norm
+conversions of \eqref{port:eq-clausei}: one on the metric difference
+($\|h\|_{C^6}\le C_{\mathrm{sob}}\|h\|_{H^s}$, $h:=g-g'$), one on each
+test slot. Ball-uniform geometry constants:
+$\Lambda_U:=1+\sup_{g\in U}\|g\|_{C^{6,\alpha}(K'')}
+\le1+C_{\mathrm{sob}}(\|g_0\|_{H^s(K'')}+\varepsilon_0)$;
+$d_U$ and $\delta_c$ as above; $|K|$, $|K''|$ chart volumes;
+$\Lambda_{\mathrm{vol}}:=\sup_U\sup_{K''}\sqrt{|\det g|}\le
+c\,\Lambda_U^{2}$. The masses of the two singular profiles
+($n=4$; the $r^{-2}$ kernel is where $L^1_{\mathrm{loc}}$ at $n=4$
+enters):
+\begin{equation}\label{port:eq-masses}
+  M_2:=\sup_{x\in K}\int_{r\le\delta_c}r^{-2}\,dy
+  =\tfrac{|S^3|}{2}\delta_c^{2}=\pi^2\delta_c^2,\qquad
+  M_{\log}:=\sup_{x\in K}\int_{r\le\delta_c}\Bigl(1+\bigl|\log
+  \tfrac{\Lambda_\sigma r^2}{\ell^2}\bigr|\Bigr)dy<\infty .
+\end{equation}
+
+\begin{lemma}[L1: Christoffel difference --- exact identity, then the
+constant]\label{port:lem-gamma}
+For $g,g'\in U$, $h:=g-g'$, with $\nabla'$ the $g'$-connection,
+\begin{equation}\label{port:eq-gammaid}
+  \delta\Gamma^{\lambda}{}_{\mu\nu}
+  :=\Gamma[g]^{\lambda}{}_{\mu\nu}-\Gamma[g']^{\lambda}{}_{\mu\nu}
+  =\tfrac12\,g^{\lambda\rho}\bigl(\nabla'_{\mu}h_{\rho\nu}
+  +\nabla'_{\nu}h_{\rho\mu}-\nabla'_{\rho}h_{\mu\nu}\bigr),
+\end{equation}
+an exact tensor identity (no remainder). Consequently, for $0\le k\le5$,
+\begin{equation}\label{port:eq-gammaconst}
+  \|\delta\Gamma\|_{C^k(K'')}\le\kappa_\Gamma(k)\,\|h\|_{C^{k+1}(K'')},
+  \qquad
+  \kappa_\Gamma(k):=c_k(n)\,\Lambda_U^{\,2k+7}\,d_U^{-2(k+1)} .
+\end{equation}
+\end{lemma}
+\begin{proof}
+The difference of two torsion-free metric connections is a tensor;
+evaluating $\nabla' g=\nabla' (g'+h)=\nabla' h$ in the Koszul formula
+for $\Gamma[g]$ written in $\nabla'$-form gives \eqref{port:eq-gammaid}
+directly (or: verify in $g'$-normal coordinates at a point, where
+$\Gamma[g']=0$ and \eqref{port:eq-gammaid} is the Koszul formula for
+$h$; both sides are tensors, so the identity is global). For
+\eqref{port:eq-gammaconst}: $g^{-1}=\mathrm{cof}(g)^{\mathsf T}/\det g$
+with $\mathrm{cof}$ polynomial of degree $n-1=3$ in the entries of
+$g$, so $\|g^{-1}\|_{C^k(K'')}\le c_k\Lambda_U^{3+k}d_U^{-(k+1)}$
+(Leibniz on the quotient, $|\det g|\ge d_U$); $\nabla'h=\partial h+
+\Gamma'\!\cdot\!h$ with $\|\Gamma'\|_{C^k}\le c\Lambda_U^{k+4}
+d_U^{-(k+1)}$ by the same count at the single metric $g'$. Multiply
+out and absorb the numerical factors into $c_k(n)$.
+\end{proof}
+
+\begin{lemma}[L2: world-function difference at the Gronwall rate; the
+rescaled normal form; uniform cone transversality]\label{port:lem-sigma}
+There are ball-uniform constants $\Lambda_\sigma,\kappa_\sigma,
+\Lambda_S,\kappa_S,c_*,c_t>0$, displayed in the proof, such that on
+$V_{\delta_c}$ (per convex-normal chart $a$, all statements uniform in
+$a$):
+\begin{enumerate}[label=\textup{(\roman*)},leftmargin=*,nosep]
+\item (rescaled normal form) $\sigma_g(x,x+r\omega)=r^2S_g(x,\omega,r)$,
+  $|\omega|=1$, with $S_g\in C^3$,
+  $\|S_g\|_{C^3(K\times S^3\times[0,\delta_c])}\le\Lambda_S$, and
+  $S_g(x,\omega,0)=\tfrac12\,q_{g,x}(\omega,\omega)$ where
+  $q_{g,x}$ is the metric quadratic form at $x$; in particular
+  $|\partial^j_{(x,y)}\sigma_g|\le\Lambda_\sigma r^{(2-j)_+}$, $j\le2$;
+\item (difference legs, Lipschitz, real side) for $j=0,1,2$,
+  \[
+  \bigl|\partial^j_{(x,y)}(\sigma_g-\sigma_{g'})\bigr|
+  \le\kappa_\sigma\,\|h\|_{C^{j+1}(K'')}\,r^{2-j},
+  \qquad\text{equivalently}\quad
+  \|S_g-S_{g'}\|_{C^j}\le\kappa_S\,\|h\|_{C^{j+1}(K'')};
+  \]
+\item (uniform transversality) for every $\tau\in[0,1]$ the interpolant
+  $S_\tau:=(1-\tau)S_{g'}+\tau S_g$ satisfies, on the cone collar
+  $\{|S_\tau|\le\theta_*\}$, $|\nabla_\omega S_\tau|\ge c_*>0$ and
+  $|t_\Delta|\ge c_t\,r$ with $\mathrm{sign}\,t_\Delta$ constant on
+  each (future/past) sheet; $\theta_*=\theta_*(d_U,\Lambda_U)>0$.
+\end{enumerate}
+\end{lemma}
+\begin{proof}
+(i) In the chart, the $g$-exponential flow $\Phi^t_g(x,\xi)$ solves
+$\ddot\gamma=-\Gamma[g](\dot\gamma,\dot\gamma)$; on the compact shell
+$\{x\in K,|\xi|\le2\delta_c\}$ its $C^3$-norm in $(x,\xi,t)_{t\in[0,1]}$
+is bounded by the Picard/Gronwall constant
+$\kappa_{\mathrm{fl}}:=c\,\exp\bigl(c\,\delta_c\,
+\|\Gamma\|_{C^3(K'')}\bigr)\le
+c\exp\bigl(c\,\delta_c\,\Lambda_U^{7}d_U^{-4}\bigr)$
+(coefficients $\Gamma[g]\in C^{4,\alpha}$ since $g\in C^{6,\alpha}$;
+three derivatives of the flow consume $\|\Gamma\|_{C^3}$). With
+$\xi=\exp_x^{-1}(y)$ (well defined and $C^3$, Jacobian
+$\ge\tfrac12$ on $V_{\delta_c}$ after the one ball-uniform shrink of
+$\delta_c$ built into an17:G) and
+$\sigma_g(x,y)=\tfrac12 q_{g,x}(\xi,\xi)$, homogeneity of the geodesic
+flow in $(\xi,t)$ gives $\xi=r\,\Xi_g(x,\omega,r)$ with
+$\Xi_g\in C^3$, $\Xi_g(x,\omega,0)=\omega$; set
+$S_g:=\tfrac12 q_{g,x}(\Xi_g,\Xi_g)$. Then $\Lambda_S\le
+c\,\Lambda_U\kappa_{\mathrm{fl}}^2$ and
+$\Lambda_\sigma\le c\,\Lambda_S$.
+(ii) The flows of $g,g'$ differ by a linear-inhomogeneous
+(variational) ODE with source $\delta\Gamma(\dot\gamma,\dot\gamma)$:
+Gronwall gives
+$\|\Phi_g-\Phi_{g'}\|_{C^j(\text{shell})}\le
+\kappa_{\mathrm{fl}}^2\,\|\delta\Gamma\|_{C^j}$, $j\le2$, hence
+$\|\Xi_g-\Xi_{g'}\|_{C^j}\le c\,\kappa_{\mathrm{fl}}^3
+\|\delta\Gamma\|_{C^j}$ (inverse-function difference at Jacobian
+$\ge\tfrac12$), and with \eqref{port:eq-gammaconst},
+$\kappa_S:=c\,\Lambda_U\kappa_{\mathrm{fl}}^{3}
+\bigl(1+\kappa_\Gamma(3)\bigr)$,
+$\kappa_\sigma:=c\,\kappa_S$. The $r$-grading in the unscaled form is
+the chain rule applied to $r^2S(x,\omega,r)$, $\omega=(y-x)/r$: each
+$(x,y)$-derivative costs one factor $r$ at worst.
+(iii) At $r=0$: $\nabla_\omega S_\tau=q_{\tau,x}(\omega,\cdot)$ with
+$q_\tau:=(1-\tau)q_{g'}+\tau q_g$ --- again a Lorentzian metric in the
+convex ball $U$, $|\det q_\tau|\ge d_U'>0$ for $\varepsilon_0$ small
+(continuity of $\det$ on the $C^0$-ball). On the set
+$\{S_\tau=0,|\omega|=1\}$, $\omega$ is $q_\tau$-null, and for a
+Lorentzian form with $|\det|\ge d_U'$, $\|q\|\le\Lambda_U$ one has
+$|q(\omega,\cdot)|\ge c(d_U',\Lambda_U)>0$ on unit null vectors
+(else $\omega$ would be a null eigenvector of $q$ with vanishing
+eigenvalue, contradicting $|\det q|\ge d_U'$); perturbing in
+$r\le\delta_c$ and in $|S_\tau|\le\theta_*$ costs a factor
+$\tfrac12$ for $\theta_*,\delta_c$ small ball-uniformly:
+$c_*:=\tfrac12c(d_U',\Lambda_U)$. For $c_t$: on the $q_\tau$-null
+cone, $|\omega^0|\ge c(d_U',\Lambda_U)>0$ (time component of unit
+null vectors is bounded below when the cones are pinched between two
+$g_0$-cones, which is (u2)-smallness), and
+$t_\Delta=-r\,\omega^0\,\partial_0t+O(\Lambda_S r^2)$, so
+$c_t:=\tfrac12c(d_U',\Lambda_U)\inf_{K''}|\partial_0 t|$ after one
+more shrink of $\delta_c$; the sign is constant per sheet because
+$\omega^0$ has a fixed sign on each component of the null cone. The
+time leg extends from the collar to the full timelike side
+$\{S_\tau\le\theta_*\}$ by the same linear algebra: on unit
+vectors with $q_\tau(\omega,\omega)\le\theta_*$, a time component
+$|\omega^0|<c'$ would force $q_\tau(\omega,\omega)\ge
+c(d_U',\Lambda_U)-O(c')>\theta_*$ (the spatial block is positive
+definite with determinant bounded below), a contradiction; so
+$|\omega^0|\ge c'(d_U',\Lambda_U)>0$, hence $|t_\Delta|\ge c_t r$
+with per-sheet fixed sign, on all of $\{S_\tau\le\theta_*\}$,
+$r\le\delta_c$.
+\end{proof}
+
+\begin{lemma}[L3: van Vleck and Hadamard-coefficient legs ---
+transport/Gronwall, sup and difference]\label{port:lem-vk}
+With $\Lambda_S,\kappa_S$ as in L2, there are displayed ball-uniform
+$\Lambda_\Delta,\kappa_\Delta,\Lambda_v,\kappa_v$ with, on
+$V_{\delta_c}$:
+\begin{enumerate}[label=\textup{(\roman*)},leftmargin=*,nosep]
+\item $\|\Delta^{\pm1/2}_g\|_{C^{1,\alpha}(V)}\le\Lambda_\Delta$ and
+  $\|\Delta^{1/2}_g-\Delta^{1/2}_{g'}\|_{C^{0,\alpha}(V)}
+  \le\kappa_\Delta\|h\|_{C^{4}(K'')}$;
+\item for $k\le2$: $\|v_k[g]\|_{C^{0,\alpha}(V)}\le\Lambda_v$ and
+  $\|v_k[g]-v_k[g']\|_{C^{0}(V)}\le\kappa_v\|h\|_{C^{2k+2}(K'')}
+  \le\kappa_v\|h\|_{C^{6}(K'')}$.
+\end{enumerate}
+\end{lemma}
+\begin{proof}
+(i) $\Delta_g(x,y)=-\det\bigl(-\partial_x\partial_y\sigma_g\bigr)
+\bigl(|\det g(x)||\det g(y)|\bigr)^{-1/2}$; by L2(i)--(ii) the entries
+$\partial_x\partial_y\sigma_g$ are $C^{1,\alpha}$ with norm
+$\le c\Lambda_S$ and difference $\le c\kappa_S\|h\|_{C^{4}}$ in
+$C^{0,\alpha}$ (one derivative above the $j=2$ leg, obtained by running
+L2(ii) at $j=2$ on the $C^{1,\alpha}$ flow bounds --- the flow is $C^3$,
+one order to spare); the determinant is a cubic polynomial, and on
+$V_{\delta_c}$ the matrix is invertible with determinant
+$\ge\tfrac12 d_U$ (coincidence value $\det(-\partial^2\sigma)=
+|\det g|$, plus the ball-uniform shrink of $\delta_c$), so the square
+roots are Lipschitz functions of the entries:
+$\Lambda_\Delta:=c\,\Lambda_S^{4}d_U^{-3/2}$,
+$\kappa_\Delta:=c\,\Lambda_S^{3}d_U^{-3/2}\kappa_S$.
+(ii) The recursion of \cite[Thm.~2.1]{Moretti2003},
+$2\nabla\sigma\!\cdot\!\nabla v_k+(\square\sigma-2n+4k)v_k
+=-\square v_{k-1}$ ($v_{-1}$-convention anchoring
+$v_0$ at $\Delta^{1/2}$-data), is for each $k$ a linear transport ODE
+along the L2 geodesics: in the rescaled variable it reads
+$\bigl(2r\partial_r+A_k(x,\omega,r)\bigr)v_k=f_k$ with
+$A_k=\square\sigma-2n+4k+O(r)$, $|A_k|\le c\Lambda_S$, and source
+$f_k$ a universal polynomial in the jets
+$(\partial^{\le2}\sigma,\Delta^{\pm1/2},\partial^{\le2k+2}g,g^{-1})$.
+Duhamel along $[0,r]$ with the regular-singular weight
+$r^{-A_k/2}$-type factor (the indicial root is positive for
+$k\ge0$, $n=4$: $\square\sigma\to2n$ at coincidence, so
+$A_k\to4k>0$ for $k\ge1$ and the $k=0$ equation fixes
+$v_0=\Delta^{1/2}$-transported data) gives the sup bound by Gronwall,
+$\Lambda_v:=c\,e^{c\Lambda_S\delta_c}\,
+P\bigl(\Lambda_S,\Lambda_\Delta,\Lambda_U,d_U^{-1}\bigr)$
+($P$ a displayed universal polynomial; the $C^{0,\alpha}$ grade rides
+the same bound one order down, legal since $g\in C^{6,\alpha}$ and
+$f_2$ consumes exactly $\partial^{6}g\in C^{0,\alpha}$). The
+difference leg is the same Duhamel applied to
+$(v_k[g]-v_k[g'])$, whose ODE has coefficient difference
+$\le c(\kappa_S+\kappa_\Gamma(1))\|h\|_{C^{2}}$ and source difference
+$\le cP\cdot\|h\|_{C^{2k+2}}$ (linearity of $f_k$-assembly in its
+top jet; lower-order factors estimated by the sup bounds already
+obtained --- this is the linear-in-top-jet structure the appendix's
+(N-a) block records at l.3219--3222):
+$\kappa_v:=c\,e^{c\Lambda_S\delta_c}P\cdot
+\bigl(1+\kappa_S+\kappa_\Gamma(1)\bigr)$. No step differentiates in
+$g$; every difference is pair-Lipschitz on the real side.
+\end{proof}
+
+\begin{lemma}[L4: uniform cone pairing --- the analytic core]
+\label{port:lem-pair}
+Fix $x\in K$ and a phase $\rho=r^2S$ with $S\in\{S_\tau\}_{\tau\in[0,1]}$
+as in L2 (so $\|S\|_{C^{3}}\le\Lambda_S$ --- L2(i) proves the $C^{3}$
+flow bound --- transversality $(c_*,\theta_*)$,
+time leg $(c_t,\Lambda_T:=\|t_\Delta/r\|_{C^1})$), and
+$\rho_\epsilon:=\rho+2i\epsilon t_\Delta+\epsilon^2$. Let
+$F(y)=r^{a}\Phi(\omega,r)$ in $y=x+r\omega$, $\operatorname{supp}F
+\subset\{r\le\delta_c\}$. Then, uniformly in $\epsilon\in(0,1]$ and in
+$\tau$:
+\begin{enumerate}[label=\textup{(P\arabic*)},leftmargin=*,nosep]
+\item if $a\ge0$ and $\Phi\in C^{0,\alpha}$:
+  $\displaystyle\Bigl|\int\frac{F}{\rho_\epsilon}\,dy\Bigr|
+  \le\kappa_{P}\,\|\Phi\|_{C^{0,\alpha}}\,\frac{\delta_c^{a+2}}{a+2}$;
+\item if $a\ge2$ and $\Phi\in C^{1,\alpha}$:
+  $\displaystyle\Bigl|\int\frac{F}{\rho_\epsilon^{2}}\,dy\Bigr|
+  \le\kappa_{P}\,\|\Phi\|_{C^{1,\alpha}}\,\frac{\delta_c^{a}}{a}$;
+\item if $a\ge0$ and $\Phi\in C^{0}$:
+  $\displaystyle\int|F|\,\bigl|\log(\rho_\epsilon/\ell^2)\bigr|\,dy
+  \le\kappa_{P}\,\|\Phi\|_{C^{0}}\,\delta_c^{a+2}
+  \bigl(1+|\log\delta_c^2/\ell^2|\bigr)$;
+\end{enumerate}
+with the single displayed constant
+\begin{equation}\label{port:eq-kpair}
+  \kappa_{P}:=c_n\bigl(1+\Lambda_S+c_*^{-1}\bigr)^{4}
+  \Bigl[\theta_*^{-2}\varkappa^{-2}+(\pi+4)+\tfrac{2}{\alpha}\theta_*^{\alpha}
+  +\bigl(1+c_t^{-2}\bigr)\bigl(1+\Lambda_T\bigr)\Bigr],\qquad
+  \varkappa:=\min\bigl(\tfrac12,\,\sqrt2\,c_t/\sqrt{\Lambda_S}\bigr).
+\end{equation}
+\end{lemma}
+\begin{proof}
+Rescale: $dy=r^3\,dr\,d\omega$, so
+$\int F\rho_\epsilon^{-2}dy=\int_0^{\delta_c}r^{a-1}
+\bigl[\int_{S^3}\Phi\,(S+i\eta)^{-2}d\omega\bigr]dr$ with
+$\eta(\omega):=(2\epsilon t_\Delta+\epsilon^2)/r^2
+=\eta_0T(\omega,r)+\epsilon^2/r^2$, $\eta_0:=2\epsilon/r$,
+$T:=t_\Delta/r$ ($|T|\ge c_t$ with fixed sign per sheet on the cone
+collar, L2(iii)); similarly $\int F\rho_\epsilon^{-1}dy
+=\int_0^{\delta_c}r^{a+1}[\,\cdot\,]dr$ with $(S+i\eta)^{-1}$. The real
+shift $\epsilon^2/r^2$: where $\epsilon^2\ge\theta_*r^2/2$, i.e.\
+$r\le\epsilon\sqrt{2/\theta_*}$, split by the size of $r^{2}|S|$.
+If $r^{2}|S|\le\epsilon^{2}/2$ then
+$|\rho_\epsilon|\ge\operatorname{Re}\rho_\epsilon
+=r^{2}S+\epsilon^{2}\ge\epsilon^{2}/2$; otherwise
+$r^{2}\ge\epsilon^{2}/(2\Lambda_S)$ (since $|S|\le\Lambda_S$) and
+the time leg --- valid on the whole set $\{S_\tau\le\theta_*\}$,
+collar plus timelike interior, by L2(iii)'s extension --- gives
+$|\rho_\epsilon|\ge|\operatorname{Im}\rho_\epsilon|
+=2\epsilon|t_\Delta|\ge2\epsilon c_t r
+\ge\sqrt2\,c_t\,\epsilon^{2}/\sqrt{\Lambda_S}$. Hence
+$|\rho_\epsilon|\ge\epsilon^{2}\varkappa$ with
+$\varkappa:=\min\bigl(\tfrac12,\,\sqrt2\,c_t/\sqrt{\Lambda_S}\bigr)$,
+and $|\rho_\epsilon|\ge\varkappa\,\theta_*r^{2}/2$ on this range,
+so the slice integrand is $\le\|\Phi\|_\infty
+(2/\theta_*)^2\varkappa^{-2}|S^3|$ pointwise and this radial range
+contributes $\le c\|\Phi\|_\infty\theta_*^{-2}\varkappa^{-2}
+\delta_c^{a}/a$; elsewhere absorb
+$\epsilon^2/r^2\le\theta_*/2$ into $S$ (transversality survives with
+$c_*/2$, $\theta_*/2$). It remains to bound the slice integrals
+$J_p:=\int_{S^3}\Phi(S+i\eta_0T)^{-p}d\omega$, $p=1,2$, uniformly in
+$(r,\eta_0)$. Split $S^3$: on $\{|S|>\theta_*\}$,
+$|J_p^{\mathrm{far}}|\le\|\Phi\|_\infty|S^3|\theta_*^{-p}$. On the cone
+collar, the level flow of $S/|\nabla S|^2$ gives coordinates
+$(z,\zeta)$, $z\in Z=\{S=0\}$, $S=\zeta$, $|\zeta|\le\theta_*$, with
+Jacobian $J_z$, $\|J_z\|_{C^{1,\alpha}}\le c(1+\Lambda_S+c_*^{-1})^{4}$
+(one further implicit-function differentiation, licensed by
+$\|S\|_{C^{3}}\le\Lambda_S$ at $|\nabla S|\ge c_*$ --- the $p=2$
+fiber Taylor split consumes $J_z\in C^{1,\alpha}$; the null sphere $Z$ has at most two sheets, the future and
+past cones of the Lorentzian normal form, L2(iii)). Per fiber, with
+$G:=\Phi J_z$ and $T$ frozen at its foot value $T_0$ ($|T_0|\ge c_t$,
+sign fixed), $a:=\eta_0T_0\ne0$: the exact complex antiderivatives give the four
+moment bounds, each uniform in $a\ne0$ ($L:=\theta_*$),
+\begin{equation}\label{port:eq-moments}
+  \Bigl|\int_{-L}^{L}\frac{d\zeta}{(\zeta+ia)^{2}}\Bigr|
+  =\Bigl|\frac{-2L}{(L+ia)(-L+ia)}\Bigr|\le\frac{2}{L},\quad
+  \Bigl|\int_{-L}^{L}\frac{\zeta\,d\zeta}{(\zeta+ia)^{2}}\Bigr|
+  =\Bigl|\log\frac{L+ia}{-L+ia}+\frac{ia}{\zeta+ia}\Big|_{-L}^{L}\Bigr|
+  \le\pi+2,
+\end{equation}
+\begin{equation}\label{port:eq-moment1}
+  \Bigl|\int_{-L}^{L}\frac{d\zeta}{\zeta+ia}\Bigr|
+  =\Bigl|\log\frac{L+ia}{-L+ia}\Bigr|\le\pi,\qquad
+  \int_{-L}^{L}\frac{|\zeta|^{\beta}\,d\zeta}{|\zeta+ia|^{2}}
+  \le\int_{-L}^{L}|\zeta|^{\beta-2}d\zeta
+  =\tfrac{2}{\beta-1}L^{\beta-1}\ \ (\beta>1),
+\end{equation}
+all uniform in $a\ne0$ (the middle identity uses
+$|L+ia|=|-L+ia|$, so the log has modulus $\le\pi$, its imaginary
+part). For $p=2$ Taylor-split $G=G_0+\zeta G_0'+R$,
+$|R|\le[G']_{\alpha}|\zeta|^{1+\alpha}$, and apply
+\eqref{port:eq-moments}--\eqref{port:eq-moment1} with $\beta=1+\alpha$:
+the fiber integral is $\le\bigl(\tfrac{2}{\theta_*}+\pi+2
++\tfrac{2}{\alpha}\theta_*^{\alpha}\bigr)\|G\|_{C^{1,\alpha}}$. For
+$p=1$ split $G=G_0+(G-G_0)$, $|G-G_0|\le[G]_\alpha|\zeta|^\alpha$:
+fiber $\le(\pi+\tfrac{2}{\alpha}\theta_*^{\alpha})\|G\|_{C^{0,\alpha}}$.
+Unfreezing $T$: $|\eta(\zeta)-\eta_0T_0|\le\eta_0\Lambda_T|\zeta|/c_*$
+and $|\zeta+i\eta|\ge\max(|\zeta|,\eta_0c_t)/2$ on the fiber, so the
+freezing error for $p=2$ is
+$\le c\|G\|_\infty\Lambda_T c_*^{-1}\int\eta_0|\zeta|
+\max(|\zeta|,\eta_0c_t)^{-3}d\zeta\le
+c\|G\|_\infty\Lambda_Tc_*^{-1}(1+c_t^{-2})$, and for $p=1$
+$\le c\|G\|_\infty\Lambda_Tc_*^{-1}(1+c_t^{-1})$ --- uniform in
+$\eta_0>0$. Integrate over $z\in Z$ ($|Z|\le c_n$) and the two sheets,
+then radially: $\int_0^{\delta_c}r^{a-1}dr=\delta_c^{a}/a$ for (P2)
+($a\ge2$; in unrescaled terms the integrand is dominated by
+$r^{a}r^{-4}\cdot r^{3}=r^{a-1}$, the $n=4$ $L^1_{\mathrm{loc}}$ of the
+$r^{-2}$ kernel at $a=2$, mass $M_2$ of \eqref{port:eq-masses}), and
+$\int_0^{\delta_c}r^{a+1}dr=\delta_c^{a+2}/(a+2)$ for (P1). For (P3):
+$|\log(\rho_\epsilon/\ell^2)|\le2|\log r|+|\log|S+i\eta||+
+|{\log\ell^2}|+2\pi$ and $\int_{S^3}|\log|S+i\eta||\,d\omega\le
+c(1+|\log\theta_*|)$ uniformly in $\eta$ (on fibers
+$|\log|\zeta+ia||\le|\log|\zeta||+c$ for $|\zeta|\le\theta_*\le c$),
+so the radial integral converges to the stated mass. Collect
+\eqref{port:eq-kpair}.
+\end{proof}
+
+\begin{proof}[Proof of Theorem~\ref{port:thm-M3} (assembly; four legs)]
+Fix $\epsilon\in(0,1]$ and a chart $a$; drop the chart index. With
+$w:=\sigma_g-\sigma_{g'}$ and the linear interpolant
+$\sigma_{\tau,\epsilon}:=(1-\tau)\sigma_{g',\epsilon}
++\tau\sigma_{g,\epsilon}=r^2S_\tau+2i\epsilon t_\Delta+\epsilon^2$
+(same $t_\Delta$: the prescription is $g$-independent), the exact
+calculus identities
+$\;\sigma_{g,\epsilon}^{-1}-\sigma_{g',\epsilon}^{-1}
+=-\int_0^1 w\,\sigma_{\tau,\epsilon}^{-2}\,d\tau\;$ and
+$\;\log\sigma_{g,\epsilon}-\log\sigma_{g',\epsilon}
+=\int_0^1 w\,\sigma_{\tau,\epsilon}^{-1}\,d\tau\;$ give
+\[
+  8\pi^2\bigl(Z^{(2)}_g-Z^{(2)}_{g'}\bigr)
+  =\underbrace{\frac{\Delta^{1/2}_g-\Delta^{1/2}_{g'}}
+  {\sigma_{g,\epsilon}}}_{\mathrm{(A)}}
+  -\underbrace{\Delta^{1/2}_{g'}\!\int_0^1\!
+  \frac{w\,d\tau}{\sigma_{\tau,\epsilon}^{2}}}_{\mathrm{(B)}}
+  +\underbrace{\bigl(v^{(2)}_g-v^{(2)}_{g'}\bigr)
+  \log\frac{\sigma_{g,\epsilon}}{\ell^2}}_{\mathrm{(C)}}
+  +\underbrace{v^{(2)}_{g'}\!\int_0^1\!
+  \frac{w\,d\tau}{\sigma_{\tau,\epsilon}}}_{\mathrm{(D)}} .
+\]
+Pair each leg with $\theta_a\,u(x)v(y)$, integrate in $y$ at fixed $x$
+by L4, then in $x$. The graded weights, from L2--L3 (all differences
+real-side, none through any collar):
+(A) $F=(\Delta^{1/2}_g-\Delta^{1/2}_{g'})\theta_a u(x)v$: $a=0$,
+$\|\Phi\|_{C^{0,\alpha}}\le c_\theta\kappa_\Delta\|h\|_{C^4}
+\,|u(x)|\,\|v\|_{C^{0,\alpha}}$; apply (P1).
+(B) $F=\Delta^{1/2}_{g'}w\,\theta_a u(x)v$: $w=r^2W$ with
+$\|W\|_{C^{1,\alpha}}\le c\,\kappa_S\|h\|_{C^{3}}$ (L2(ii), $j\le2$,
+plus interpolation to the $\alpha$-grade), so $a=2$,
+$\|\Phi\|_{C^{1,\alpha}}\le c\,c_\theta\Lambda_\Delta\kappa_S
+\|h\|_{C^3}\,|u(x)|\,\|v\|_{C^{1,\alpha}}$; apply (P2) for each
+$\tau$ (the phase family $\{S_\tau\}$ is admissible by L2(iii)) and
+integrate $d\tau$.
+(C) $v^{(2)}_g-v^{(2)}_{g'}=\sum_{k\le2}\bigl[(v_k[g]-v_k[g'])
+\sigma_g^k+v_k[g']\,(\sigma_g^k-\sigma_{g'}^k)\bigr]$ and
+$\sigma_g^k-\sigma_{g'}^k=w\sum_{j<k}\sigma_g^j\sigma_{g'}^{k-1-j}$,
+so $\|v^{(2)}_g-v^{(2)}_{g'}\|_{C^0(V)}\le
+\kappa_C'\|h\|_{C^6}$ with
+$\kappa_C':=c\bigl[\kappa_v(1+\Lambda_\sigma\delta_c^2)^2
++\Lambda_v\kappa_\sigma\delta_c^2(1+\Lambda_\sigma\delta_c^2)\bigr]$;
+apply (P3), $a=0$, weight $|u(x)|\|v\|_{C^0}$.
+(D) $F=v^{(2)}_{g'}w\,\theta_a u(x)v$: $a=2$,
+$\|\Phi\|_{C^{0,\alpha}}\le c\,c_\theta\Lambda_v
+(1+\Lambda_\sigma\delta_c^2)^2\kappa_S\|h\|_{C^2}\,|u(x)|
+\,\|v\|_{C^{0,\alpha}}$; apply (P1) with $a=2$, per $\tau$.
+Summing the four legs, the charts ($\le m(K)$ overlapping terms), and
+integrating $|u(x)|$ over $K$:
+\begin{equation}\label{port:eq-kappa}
+  \bigl|(H_g-H_{g'})(u\otimes v)\bigr|
+  \le\kappa(g_0,K)\,\|h\|_{C^6(K'')}\|u\|_{C^0(K)}\|v\|_{C^{1,\alpha}(K)},
+\end{equation}
+\[
+  \kappa(g_0,K):=\frac{|K|\,m(K)\,c_\theta\,\kappa_P}{8\pi^2}
+  \Bigl[\underbrace{\kappa_\Delta\tfrac{\delta_c^2}{2}}_{\mathrm{(A)}}
+  +\underbrace{c\,\Lambda_\Delta\kappa_S\tfrac{\delta_c^2}{2}}
+  _{\mathrm{(B)}}
+  +\underbrace{\kappa_C'\,\delta_c^{2}
+  \bigl(1+|\log\tfrac{\delta_c^2}{\ell^2}|\bigr)}_{\mathrm{(C)}}
+  +\underbrace{c\,\Lambda_v(1+\Lambda_\sigma\delta_c^2)^2\kappa_S
+  \tfrac{\delta_c^{4}}{4}}_{\mathrm{(D)}}\Bigr].
+\]
+This is the sharper (asymmetric) form. Since
+$\|h\|_{C^6}\le\|h\|_{C^{6,\alpha}}\le C_{\mathrm{sob}}\|h\|_{H^s}$,
+$\|u\|_{C^0}\le C_{\mathrm{sob}}\|u\|_{H^{s-2}}$ and
+$\|v\|_{C^{1,\alpha}}\le C_{\mathrm{sob}}\|v\|_{H^{s-2}}$
+\eqref{port:eq-csob}, the symmetric form \eqref{port:eq-clausei}
+follows with $C_H=C_{\mathrm{sob}}^3\kappa$. All bounds are uniform in
+$\epsilon\in(0,1]$; letting $\epsilon\downarrow0$ against the
+per-metric limits (cited footing) completes the proof. No state was
+used at any step. \qedhere
+\end{proof}
+
+\begin{remark}[Three-way fidelity: what this port states, against the
+appendix demand and the established theorem]\label{port:rem-match}
+(a) \emph{Appendix demand.} Display \eqref{port:eq-clausei} is verbatim
+eq:an17-clausei $=$ clause (i) of Hyp.\ hyp:hadamard-uniform (Option B)
+and of Hyp.\ hyp:hadamard-uniform-omega: same pairing, same three norms
+$H^s,H^{s-2},H^{s-2}$, same support condition, and the quantifier is
+over the \emph{pair} $(g,g')$ ranging over the full ball $U$ ---
+strictly containing the $U_\omega\times U_\omega$ range item
+(M3) asks for (an17:lem-embed). $H_g$ is the appendix's own object
+\eqref{port:eq-Hdef} (the $N{=}2$ glued parametrix, one global $\ell$).
+No hypothesis is strengthened; the only weakening is in the
+\emph{conclusion's} favor (full ball, asymmetric sharper form).
+(b) \emph{The established clause-(i) theorem.}
+The constant reproduces its architecture exactly ---
+$C_H=C_{\mathrm{sob}}^3\kappa$ with the cube accounting for the three
+norm conversions \eqref{port:eq-csob}; the Christoffel difference is
+the exact identity \eqref{port:eq-gammaid}; all transport legs are
+Gronwall along geodesics (L2, L3); the $r^{-2}$ kernel enters as the
+$a{=}2$, $p{=}2$ leg of L4, $L^1_{\mathrm{loc}}$ at $n=4$ with mass
+$M_2$ \eqref{port:eq-masses}; the result is state-independent. The
+suppressed arguments of the compact notation are displayed here:
+$\kappa=\kappa(g_0,K;s,\varepsilon_0,\delta_c,\ell,\text{atlas})$.
+(c) \emph{Single-metric consistency.} Applying L4 legs (P1)/(P3) to
+$H_g$ alone (weights $\Lambda_\Delta,\Lambda_v$ instead of the
+$\kappa$-differences) re-proves the single-metric
+Lem.~an17:clausei-single bound with $C_H(K,g)\le
+C_{\mathrm{sob}}^2\,\kappa'(g_0,K)$, consistent with GT1.
+\end{remark}
+
+\begin{remark}[Sharpening the test-space threshold: $t>3$, not
+$t>2$]\label{port:rem-testspace}
+A prior side note records that the $H^{s-2}$ test space is
+over-strong and ``any $H^t$, $t>2$ suffices''. The re-derivation
+\emph{confirms the over-strength but corrects the threshold}: the legs
+(A), (C), (D) need only $C^{0,\alpha}$ ($t>2+\alpha$) in the $v$-slot
+and $C^0$ in the $u$-slot, but the leading leg (B) --- the $r^{-2}$
+kernel --- consumes one full transversal derivative of the test pair:
+$\mathrm{Fp}(\sigma_\tau^{-2})$ pairs at the Lipschitz rate only
+against $C^{1,\alpha}$, i.e.\ $H^t$, $t>3+\alpha$, in one slot. At
+$2<t\le3$ the pairing rate degrades to H\"older
+$\|g-g'\|^{t-2}$: a shifted first-order pole tested against
+$C^{0,\beta}$ moves at rate $d^{\beta}$, not $d$ (numerically
+confirmed at exponents $0.50$ vs $1.00$; the mechanism is the same
+H\"older-vs-Lipschitz conversion loss as the EP2 fence, now on the
+real side). Consequence for consumers: none --- the clause consumes
+$H^{s-2}$, $s-2>6$, with room to spare on every leg; but the
+side note should read ``any $H^t$, $t>3$, in one slot ($t>2$ in the
+other)''. This corrects a side \emph{remark}, not any
+printed statement of the paper or appendix.
+\end{remark}
+
+\begin{remark}[Grade and consumers; what this port does NOT do]
+\label{port:rem-grade}
+This port closes item (M3) of sec:an17-modulo at THEOREM grade: the difference form
+\eqref{port:eq-clausei} is now \emph{derived}, ball-uniform over the
+family, at the hypothesis' own standing fence $s>n/2+6$ (no re-fence:
+the proof consumes $\|h\|_{C^6}$, $\|g\|_{C^{6,\alpha}}$ with
+$\alpha=\min(\tfrac12,\tfrac{s-8}2)$, both inside $H^{s}$, $s>8$).
+Consumer effect (per the printed audit, appendix l.3588--3591):
+clause (i)-diff feeds only the singular leg of
+thm:E2-Lipschitz and no quantitative slice-register consumer, so no
+downstream constant changes; the pivot's conditionality on (M1) and
+(M2) is untouched. This port says \emph{nothing} about the finite part
+$W_g$ (clause (ii)/M1: still PLAUSIBLE at its printed modulo-list) or
+the QEI constants (clause (iii)/M2: reduced-at-consumed-strength,
+named). The paper's hypothesis statements are unchanged; this port supplies
+the clause-(i) derivation only.
+\end{remark}
+% ====================== end of P-M3 fragment ==========================

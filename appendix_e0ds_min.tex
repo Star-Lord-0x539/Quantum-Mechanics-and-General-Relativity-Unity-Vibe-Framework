@@ -1,0 +1,185 @@
+% ============================================================================
+% appendix_e0ds_min.tex
+% RUN 53 -- COMPANION APPENDIX for unification.tex: the audited-minimal form
+% (E0-dS') of the de Sitter tensor completion -- per-cut first laws on the
+% SO(1,4) wedge orbit replace the ball-modular scanning family.
+% Adversarially certified (run 53); the three adversary premises (finite
+% first moment; Stewart--Walker/on-shell; Wald pairing for xi != 0) are
+% folded into the statements below.
+% ONE \input fragment. ASSUMES the paper preamble; no \begin{document}.
+% ============================================================================
+
+\section{The de~Sitter tensor completion: the audited-minimal form
+  (E0-dS$'$)}
+\label{app:e0ds-min}
+
+A proof-level audit of every displayed consumer of
+Hyp.~\ref{hyp:E0-dS} shows that the ball-modular family of every
+radius and centre --- the Casini--Huerta--Myers scanning
+structure~\cite{CasiniHuertaMyers2011} --- is the shape of the
+AdS-anchored \emph{route} (Thm.~\ref{thm:E0-lin}), not of the
+framework's need: what the printed inversion steps consume is the
+pointwise null--null equation of state at every $(x,k)$, Hadamard
+conservation, the linearised Bianchi identity, and the posited
+$\Lambda$ seam. The following three lemmas show that this consumed
+strength follows from per-cut first laws on the $\mathrm{SO}(1,4)$
+orbit of static-patch wedges of $\mathrm{dS}_4$; the audited-minimal
+hypothesis (E0-dS$'$) then replaces the ball family. Throughout,
+$\mathrm{dS}_4\subset\mathbb R^{1,4}$ is the unit hyperboloid.
+
+\begin{lemma}[null coverage by the wedge orbit]
+\label{lem:e0ds-coverage}
+Let $x\in\mathrm{dS}_4$ and let $k\in T_x\mathrm{dS}_4$ be null. Then
+there is a wedge $W$ in the $\mathrm{SO}(1,4)$ orbit of the static
+patch such that $x$ lies on the bifurcation surface $\partial W$ of
+its bifurcate Killing horizon and $k$ is a null normal of
+$\partial W$ at $x$ (the generator direction of one horizon sheet).
+The wedges with this property form a $2$-parameter family.
+\end{lemma}
+
+\begin{proof}
+The orthogonal complement $k^{\perp}\subset T_x\mathrm{dS}_4$ is a
+degenerate $3$-plane containing $k$; its lifts to spacelike
+$2$-planes $P\subset k^{\perp}$ transverse to $k$ form a
+$2$-parameter family. For any such $P$, the totally geodesic surface
+$\Sigma=\mathrm{dS}_4\cap\Pi$, with $\Pi\subset\mathbb R^{1,4}$ the
+linear $3$-plane with $T_x\Sigma=P$, is a totally geodesic round
+$2$-sphere through $x$ whose normal bundle at $x$ is the Lorentzian
+$2$-plane $P^{\perp}\ni k$, containing exactly two null rays, one of
+them $\mathbb Rk$. The subgroup of $\mathrm{SO}(1,4)$ fixing $\Sigma$
+up to rotation contains a boost whose bifurcate Killing horizon has
+bifurcation surface $\Sigma$ and generators along the null normals;
+its wedge is an $\mathrm{SO}(1,4)$-image of the static patch, since
+$\mathrm{SO}(1,4)$ acts transitively on (totally geodesic bifurcation
+sphere, null normal) data.
+\end{proof}
+
+\begin{lemma}[null--null determination plus identities; trace closure
+  without trace-channel data]
+\label{lem:e0ds-trace}
+Let $E_{\mu\nu}$ be a symmetric tensor field on a region of an
+\emph{on-shell} semiclassical background
+($G^{(0)}_{\mu\nu}+\Lambda g^{(0)}_{\mu\nu}
+=\kappa\langle T^{(0)}_{\mu\nu}\rangle_{\rm BD}$, equivalently
+$\langle T\rangle$ taken Bunch--Davies-relative so that the
+background combination $E^{(0)}=0$; the background field equations
+are consumed here --- they are what make $E_{\mu\nu}$
+gauge-consistent across the per-wedge adapted frames, by
+Stewart--Walker invariance of the linearised combination, which
+requires $E^{(0)}=0$), of the
+form $E=\delta G+\Lambda\,\delta g-\kappa\,\delta\langle T\rangle$
+with $\nabla^{\mu}\delta\langle T_{\mu\nu}\rangle=0$ (Hadamard
+conservation). If $E_{\mu\nu}k^{\mu}k^{\nu}=0$ for every null $k$ at
+every point, then $E_{\mu\nu}=c\,g^{(0)}_{\mu\nu}$ with $c$
+\emph{constant}: the linearised Einstein equation holds up to a
+shift of $\Lambda$.
+\end{lemma}
+
+\begin{proof}
+Pointwise, a symmetric tensor annihilated by all null--null
+contractions is proportional to the metric (polarisation over the
+null cone; the local-Rindler move of step~(i) of the printed
+inversion remark, \cite{Jacobson1995}). So $E=c(x)\,g^{(0)}$. The
+linearised contracted Bianchi identity about an Einstein background
+gives $\nabla^{\mu}(\delta G_{\mu\nu}+\Lambda\,\delta g_{\mu\nu})=0$
+identically; with matter conservation,
+$0=\nabla^{\mu}E_{\mu\nu}=\partial_{\nu}c$. The constant $c$ is the
+trace-value seam of step~(iv) of the printed inversion: it
+renormalises $\Lambda$ and is posited separately, exactly as in
+print. The trace part of the \emph{equation} thus closes by
+identities alone, consuming no modular data at any scale.
+\end{proof}
+
+\begin{lemma}[second cut-variation: the smeared-to-pointwise step,
+  with its cost stated]
+\label{lem:e0ds-cut}
+Fix a wedge $W$ as in Lem.~\ref{lem:e0ds-coverage}, horizon
+coordinates $(v,\Omega)$ with affine $v$ along the generators.
+Suppose: (a) for every cut $V(\cdot)$ in a $C^{2}$ neighbourhood of
+the bifurcation cut the \emph{equality-strength} first law holds at
+first order in the perturbation, with the geometric pairing
+\[
+\frac{\delta\bigl[A_{\infty}-A(V)\bigr]}{4G}\;=\;\delta S(V)
+\;=\;\delta\langle
+K_{V}\rangle \;=\;2\pi\!\int\!d\Omega\,\sqrt h
+\int_{V(\Omega)}^{\infty}\!\!dv\,\bigl(v-V(\Omega)\bigr)\,
+\delta\langle T_{vv}(v,\Omega)\rangle,
+\]
+both sides twice differentiable in $V$ (the geometric side is the
+\emph{future-normalised area deficit} --- the literal $\delta A(V)$
+reading returns the anti-Einstein sign under the second
+cut-variation; $A_{\infty}$ drops out of both variations); (b) the \emph{first moment}
+$\int dv\,(v-V)\,|\delta\langle T_{vv}\rangle|$ is finite on every
+complete generator (an existence premise for the display, strictly
+stronger than the averaged-null-energy pin the paper elsewhere
+assumes); and (c) for cut vector fields with nonvanishing
+$\xi$ the geometric side is read as the first-order \emph{Wald}
+entropy variation --- for the improved stress tensor the improvement
+term in $T_{vv}$ equals the first-order Wald surface term exactly,
+so the pairing is with Wald entropy and no improvement ambiguity
+leaks into the display, the effective coupling being
+$1/G_{\rm eff}=1/G-8\pi\xi\langle\varphi^{2}\rangle_{\rm BD}$
+(spacetime-constant on $\mathrm{dS}$, so the $\Lambda$ seam and the
+Bianchi identity are intact; the correction rescales the coefficient,
+not the form). Then $\delta^{2}/\delta V(\Omega)^{2}$
+yields the pointwise null--null equation of state
+$\delta G_{kk}(x)=8\pi G_{\rm eff}\,\delta\langle T_{kk}(x)\rangle$ at every
+point of every generator (matter side:
+$\delta^{2}\langle K_{V}\rangle/\delta V^{2}
+=2\pi\,\delta\langle T_{vv}(V,\Omega)\rangle\sqrt h$; geometric
+side: linearised Raychaudhuri, $\partial_{v}\delta\theta
+=-\delta R_{vv}$, integrated against the same weight). Combined with
+Lem.~\ref{lem:e0ds-coverage} and Lem.~\ref{lem:e0ds-trace} this
+gives the linearised tensor equation about $\mathrm{dS}_4$ up to the
+$\Lambda$ seam.
+\end{lemma}
+
+\begin{hypothesis}[(E0-dS$'$): cut-localised first law on the
+  de~Sitter wedge orbit --- the audited-minimal form]
+\label{hyp:E0-dS-min}
+On the $\mathrm{SO}(1,4)$ orbit of static-patch wedges of
+$\mathrm{dS}_4$, in a Bunch--Davies-class Hadamard state of the
+massive (SM) matter net, the equality-strength first law of
+Lem.~\ref{lem:e0ds-cut} --- with its premises (a)--(c), including
+the finite first moment per generator --- holds for every cut in a
+$C^{2}$ neighbourhood of the bifurcation cut of every wedge, at the
+order in the couplings at which the tensor equation is asserted.
+\end{hypothesis}
+
+\begin{remark}[audit content and status]
+\label{rem:e0ds-min-status}
+(1) Hyp.~\ref{hyp:E0-dS-min} implies the full strength every
+displayed consumer of Hyp.~\ref{hyp:E0-dS} uses; the printed
+ball-family demand (every radius and centre, the SSA functional,
+the two-sided equivalence) is consumed by \emph{no} downstream
+consumer. (2) What remains open inside Hyp.~\ref{hyp:E0-dS-min}: at
+$n{=}0$ (free massive matter) the per-cut \emph{equality} is in
+print only on Minkowski/Rindler cuts (Ceyhan--Faulkner
+\cite{CeyhanFaulkner2018}), with monotonicity/GSL strength on cuts
+of Killing horizons \cite{FaulknerSperanza2024} and the
+de~Sitter-wedge KMS structure in
+print~\cite{BorchersBuchholz1999}; both named support steps are now
+discharged at $n{=}0$ for the compactly generated (coherent)
+Bunch--Davies perturbation class --- the massive bulk-to-horizon
+restriction (App.~\ref{app:ds2-restriction}: mass-inertness from
+the exact Bunch--Davies closed form, the DMP injection at printed
+strength, the first-moment premise \emph{proved} for the class)
+and the per-cut pairing (App.~\ref{app:ds-pairing}: exact horizon
+chart, complete boundary-term list, the improvement/Wald lemma
+with its $G_{\mathrm{eff}}$ bookkeeping); the remaining $n{=}0$
+opens are the general Bunch--Davies-class Hadamard perturbations
+(the first moment stays premise (b) there) and, if wanted, the
+identification of horizon cut-algebra entropy with bulk
+wedge-algebra entropy. At $n\ge1$ it
+\emph{is} the B1a interacting first-law wall --- no new wall. (3)
+Scope fence: the wedge orbit exists on exact $\mathrm{dS}$ only; on
+FRW there is no bifurcate Killing horizon, so the FRW share of the
+completion re-pins to the A3 obstruction and stays walled --- and
+that is the only habitat of the marginal-$\Delta$ diamond disease,
+which lives in the small-ball trace-channel extraction that this
+route never consumes: $k^{2}=0$ annihilates the trace channel on
+the null--null projection, there is no small-radius dial on the
+wedge orbit (every bifurcation surface is a great sphere pinned at
+the Hubble scale), and the trace part of the equation closes by the
+identities of Lem.~\ref{lem:e0ds-trace}.
+\end{remark}

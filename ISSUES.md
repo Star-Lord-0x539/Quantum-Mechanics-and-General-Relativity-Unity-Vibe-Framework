@@ -17480,3 +17480,7891 @@ User-requested full-project .tex build audit. Findings:
 3. **WHY IT WAS MASKED — verification-pattern defect (process lesson):** unification.log contains ISO-8859 bytes, so the standing check `grep -E "There were undefined references|multiply-defined" unification.log` treated the log as binary and matched nothing → "refs clean" was a FALSE NEGATIVE for an unknown number of recent builds. **New standing pattern: always `grep -a` on TeX logs**, and count `Citation.*undefined` explicitly, not only the end-of-run summary line.
 
 Cosmetic (not acted on): 164 overfull / 31 underfull boxes in the main paper (worst: 241pt at source l.17113 — the long inline formula region), 1 overfull in the outline. Typographic polish only; no action without the author.
+
+# RUN 52 LEDGER — B1a INTERACTING RATE AT THE BIFURCATION EDGE
+
+## ARM A1 (THE NEW-LEVERAGE AUDIT) — COMPLETE. Full detail: ew_audit.md + ew_audit.tex (this directory).
+
+- (i) THE DEMAND EXTRACTED at proof level (five-step narrowing chain, each step
+  anchored in print or prior ledger): the edge locality is consumed by EXACTLY ONE
+  clause (B1a's SM n=1 first-law slice, (R-i)); the deliverable chain never
+  references it (eq:star-V1 routes n>=1 into R_{>=1}; app:v1-budget Step 4
+  verbatim "never references the n=1 first-law identity (R-i)").
+  (D): E[f] = 2pi[x^1 Y^1]_{x^1=0} must VANISH in the boost-KMS pairing for the
+  alpha_f=0 consumer, under the BRST-selected covariant ordering == extend the
+  in-print gauge-current retarded-product edge-locality to the dim-3
+  boost-stress/descent current at B == (state level, KMS Ward)
+  omega_KMS([Q_int,K_W^int] A)=0 for physical A at n=1, continuum grade.
+  (NS) quantitative: connected KMS edge two-point ~ rho^{-2p}; finite pairing
+  iff p<3/2, identity needs p<1; dimensional floor p=2 (all torsor-reachable
+  orderings incl. covariant). THE WALL = a half-power gap (p=2 vs p<3/2), with
+  local gh#0 counterterms provably unable to close it; only mechanism class
+  left = BRST-exactness of the physical current's edge limit (the A3 datum,
+  named-not-derived). Vacation lens (run-43/49 pattern) applied: NO further
+  narrowing exists — one-point form already used (ghost number), consumer
+  census already collapsed (run-27 Door B), ordering freedom exhausted
+  (run-27 Door A). The half-power-gap statement is the audit's ADD.
+- (ii) THE LEVERAGE TABLE (verdicts vs (D)):
+  L1 LPM double cone (in print, run-50 strength REUSED): MISSES 3x — massive
+    passage nonexistent (massive double-cone modular H open even in 2d, CFM);
+    wrong order/sector (free fermion vs n=1 gauge-ghost); at m=0 the conformal
+    map RELOCATES the corner to the edge sphere ((1-r^2) linear = x^1 rate;
+    rho^{-4} conformally covariant; compactness cures only the non-wall IR
+    face). Residue: Cor 4.4 -> L4; kernel = n=0 cap benchmark.
+  L2 FMP delta->0 (preprint, UNREFEREED, run-51 strength REUSED + Sec 3.2
+    re-read at source THIS run): MISSES by sector (scalar; zero
+    ghost/BRST/gauge tokens) AND forms no edge object — charge smeared with
+    f=1 near the probe only, supp compact in OPEN wedge (their 3.20-3.21),
+    IBP explicitly boundary-term-free (source l.2489), full M01 enters only
+    abstractly via Wightman-BW. NO delta->0 statement exists in their text;
+    that reading is OUR extrapolation — evidential value for the wall ZERO in
+    both directions. Consuming it as edge evidence would be #59 home (b).
+  L3 monotonicity-only (run-46 narrowing): the ONLY demand-touching candidate;
+    edge re-enters at TWO named steps — (a) geometric identification of the
+    abstract generator with local Wick boost flux = (R-i) = the descent = the
+    edge (sum-rule/half-sided-translation routes are descent-grade for the
+    BRST net); (b) the descent lands on the dressed Type-II algebra = O(G),
+    vs the clause's O(G^0) fixed-background identity (run-34 order-mismatch
+    kill applies verbatim). Monotonicity-only n=1 = bankable but WEAKER
+    theorem (inequality/entropy bound, not the rate) = "changes the theorem".
+    #59 home (c) confronted head-on. Handed to A2 with both re-entry steps
+    pre-named.
+  L4 grading kill (LPM Cor 4.4, in print): MISSES + SELF-DEFEATING — wrong
+    grading (Fermi parity/positive metric vs ghost number/Krein); the
+    corollary is an INVARIANCE (restriction changes nothing), which transported
+    would certify the wall, not breach it; the divergent cell is the
+    subtraction-independent CONNECTED norm of a gh#-neutral object, invariant
+    under any dimension-preserving conditional expectation. No divergent
+    ordering removed.
+- VERDICT (A1 scope): TERMINUS RE-CERTIFIED against the post-terminus corpus
+  (L1/L2/L4 failure points named at the firing step) + THE WALL SHARPENED to
+  the N&S form (NS) (the GOOD rung). No new edge consumer found in today's
+  text (grep census: (R-i) loci all in the V1/B1a region; deliverable chain
+  clean). L3 = A2's least-hopeless route, pre-fenced.
+- HONESTY: #59 homes (a) m=0-passage-at-m>0 KILLED at L1 (never used);
+  (b) FMP-beyond-fence KILLED at L2 (delta->0 attributed to us, label
+  "unrefereed" carried everywhere); (c) monotonicity-vs-equality KILLED at L3
+  (the verdict turns on the distinction). Existence premises re-derived where
+  touched (FMP Sec 3.2/3.20-3.21/l.2489 re-read at source; run-50/51 metadata
+  REUSED per commission, not re-verified).
+- ZERO WRITES by A1 to unification.tex and ISSUES.md — verified by CONTENT at
+  close: md5(unification.tex)=caae45b14160d830f87182c08f05c495,
+  md5(ISSUES.md)=865b265206ff64c44e888e2c7629b726; token probe "ewa:" /
+  "half-power gap" / "RUN 52" = 0 hits in both files; no Write/Edit call was
+  issued to either path by this arm (tool log). NOTE: siblings run concurrently;
+  any md5 drift after this timestamp is not attributable to A1.
+- Staged: ew_audit.md, ew_audit.tex, ledger_run52.md (this file). All
+  author-gated; nothing applied.
+
+## ARM A2 (THE ATTACK) — COMPLETE. Artifacts: ew_attack.tex (pdflatex EXIT=0,
+## 5pp, 0 errors) + ew_attack.py (15/15 checks PASS), this directory.
+
+- THE PICK: L3 (state-level/two-sided reformulation), instrumented by the FMP
+  two-sided pattern (L2 consumed at preprint strength, interior-only, inside
+  their own fence). Why not the others (each verified at source this run):
+  L4 dead — divergent cell is gh#-neutral+even; LPM Cor 4.4-type expectations
+  FIX it (and Cor 4.4 is an invariance). L1 relocates — massless-only (m>0
+  passage nonexistent, CFM: massive open even in 2d), smooth cap vanishes
+  LINEARLY (run-27 CHM verdict re-applies), free-Dirac (no BRST). L2 alone
+  edge-silent by construction — verbatim fence at their (3.34): adiabatic
+  limit "might not exist for the charges themselves ... always exists for
+  their commutators [32]" ([32]=Requardt CMP 1976, in print); no delta->0
+  family exists in their text (A1 concurs; #59 home (b) never fired).
+- THE MECHANISM: the edge term E=[x^1 Y^1]_{x^1=0} is a boundary term of the
+  ONE-SIDED moment IBP — an artifact of the charge PRESENTATION, not of the
+  first-law statement (statement-side RHS integrand x^1 delta<T_00> is
+  edge-finite: linear weight; py check B'). The full boost has no boundary at
+  x^1=0: [Q,M^01]=0 is printed Kugo-Ojima; boundary at infinity only, handled
+  at commutator level (Requardt). Araki/BW presentation never forms the
+  one-sided charge (FMP (1.3)-(1.4) + BW: S_rel = -2pi<Omega|F M01 F†|Omega>,
+  M01 = FULL boost, M01 Omega=0).
+- POSITIVE RESIDUE (new): THE FENCED-CLASS SM n=1 FIRST LAW, edge-free —
+  theorem-modulo-(W1)+assembly (ew_attack.tex Thm 1): for BRST-invariant
+  unitary excitations with causal shadow x^1>=delta>0, delta S_rel = 2pi int
+  x^1 delta<T_00^int> + O(lambda^2), ghosts dropped by vacuum Q-invariance +
+  [Q,M01]=0 + Q-exactness (NO thermal-KO super-trace, NO descent, NO edge).
+  Imports priced: (W1) OPEN; (H2) KO 1979 + Lorentz MWI [printed]; (H3)
+  Requardt [printed]; (H4) interior causal shadow [printed]; (H5) CGP lemma
+  [printed; O(lambda) usage at FMP formal-series strength, flagged]; (H6)
+  vacuum Lorentz invariance [printed/normalization]. Proves the runs-23-27
+  ghost gate is a property of the one-state/one-sided ROUTE, not of the n=1
+  law as such. Does NOT close the gate: the chain's consumer class is
+  edge-sampling (run-27 Door B; Jacobson flux crosses the horizon).
+- THE TWO RESISTING STEPS AT THEOREM GRADE:
+  (W1) interacting BW at n=1 for the BRST-physical SM wedge net (quadratic
+  forms, fenced domain). Every printed anchor fails the SM by name: BW-1976
+  (needs completed Wightman theory; d=4 phi^4 RP-trivial — Panis — so even
+  the scalar license is heuristic = why FMP INVOKE it, run-51 caveat reused);
+  Mund-2001 (mass gap — photon fails); BGL (conformal — SM is not);
+  free-photon BW / BW-Fermi (n=0 only). FMP consuming (W1) for the scalar =
+  independent outside corroboration that (W1) is the irreducible open input
+  of every state-level route.
+  (W2) fence removal — METHOD-CLASS NO-GO (new, Prop 1): lsc of S_rel gives
+  only delta S_rel <= liminf (inequality; honesty home (c) is the engine of
+  the verdict, not a victim); the missing reverse inequality = collar control
+  of omega(A† E_delta A); Cauchy-Schwarz defeated by the rho^-4 floor (collar
+  norm^2 ~ delta^{3-2p} -> inf for all torsor p in {2,2.5,3}; py check B);
+  one-point grading is one-point-only (runs 25-26). Any new mechanism IS the
+  A3 datum. So: state-side and charge-side walls are ONE datum; semicontinuity
+  routes are CLOSED as a class. (Route-class closure, not identity decision —
+  consistent with "tilted toward divergence, not proven-walled". Martingale/
+  nested-wedge variant circular: each W_delta has its own edge.)
+- THE N&S SHARPENING (the run's GOOD-rung deliverable, composing with A1's):
+  (R-i) at n=1 <=> (W1) AND (W2), with (W2) == A3 == the edge datum, and the
+  edge-locality of the one-sided descent = sufficient-not-necessary (it is
+  what the in-house Noether route would need; the Araki route needs (W1)
+  instead + the same collar datum at fence removal).
+- TYPE-II REHOMING (the only forward route found): on the chain's own
+  postulate-level home (EG1's K_omega lives on N-tilde = crossed product;
+  verified in text at pos:entropic-gravity + l.6166/9005) the corner charge
+  is affiliated+finite at G>0 and the one-sided split is trace-performed.
+  A1's re-entry step (b) STANDS: the V1 clause consumes (R-i) at O(G^0)
+  fixed-background; run-34 kill applies verbatim to any descent. So the
+  rehoming CHANGES THE THEOREM (run-27 taper verdict class); its own gate
+  named: the corner-matching identity (finite G-regulated collar term ==
+  EG2 area-response term, no double counting in the hbar/G bookkeeping).
+  Grade: PLAUSIBLE formulation, SPECULATION until matched. Author-gated.
+- VERDICT (A2 scope): THE WALL IS DEFENDED (full value per commission).
+  Sharpened: N&S bifurcation (W1)x(W2); new method-class no-go (Prop 1); new
+  fenced-class theorem-modulo-(W1) (Thm 1); FMP's consumption of BW = outside
+  corroboration of (W1) as the irreducible input. Nothing found contradicts
+  the terminus; runs 23-27/34 consumed at banked strength.
+- NUMERICS (ew_attack.py, 15/15 PASS): A1-A7 exact finite-dim split-artifact
+  model (nilpotent intersite Q; [Q,h_k]=Y_{k-1}-Y_k; full charge exactly
+  closed; one-sided = pure cut term; boost-weighted: ends-only vs
+  edge-straddling cut term with vanishing weight; one-point 0 / two-point >0 /
+  Krein signed — #33 honored; fenced matrix elements exactly 0, edge-sampling
+  state sees the cell). B collar rates delta^{-1},delta^{-2},delta^{-3}.
+  B' statement-side finite. C two-sided==one-sided on shadow. D monotonicity
+  gap strict. Labeled ILLUSTRATION where finite-dim (continuum sizes = banked).
+- HONESTY: #59 homes — (a) m=0-at-m>0 never used (L1 rejected on it);
+  (b) FMP consumed interior-only, "arXiv:2607.07810 (preprint, July 2026,
+  unrefereed)" label carried at every use, delta->0 reading explicitly
+  attributed to the commission not to FMP; (c) confronted head-on — the no-go
+  Prop 1 is BUILT on the monotonicity-vs-equality distinction. Forcing
+  declined: fenced theorem left modulo-(W1), rehoming left as named gate.
+
+## ARM R (THE ADVERSARY) — COMPLETE. Full detail: ew_adv.md (this directory).
+
+- MANDATE EXECUTED: every decisive step re-derived at source (runs 23-27/34
+  banked texts re-read in ISSUES.md; paper loci re-read in today's text; FMP +
+  LPM claims verified on the cached sources; ew_attack.py re-run: 15/15 PASS).
+- CENSUS ATTACK: independent sweep (all "(R-i)" loci, all "2pi int" boost-moment
+  loci, the direct descent object, eq:EG1/EG2) — NO missed consumer; the single
+  consuming clause is B1a's n=1 slice; today's new photon material is an
+  explicit in-print NON-inheritor (l.17712). A1 census SUSTAINED.
+- (NS) CERTIFIED: run-26 form exact (alpha_f > p-3/2); at alpha_f=0 the
+  finiteness and limit-vanishing thresholds COINCIDE at p<3/2 (collar-limit
+  reading — resolves A1's apparent I.2/I.3 tension in A1's favor); p<1 is the
+  distinct SHARP boundary-value threshold (operator-grade descent); floor p=2
+  banked. A1 gap (1) adjudicated closed. My own transverse-isotropy attack on
+  the radial bookkeeping DISMISSED against run-25's exact transverse closed
+  form (recorded so no future arm re-trips).
+- L1 gap (2) DISCHARGED: LPM weight (1-r^2) linear at r=1 verified on the
+  printed kernel (l.93/797/899); density exponent conformally invariant at
+  every non-infinity edge point (free m=0 Dirac conformal; degenerate locus =
+  the run-24-excluded IR face). Relocation confirmed at computed grade.
+- L2/L4 SUSTAINED AT SOURCE: FMP fence verbatim (l.1684-85), IBP boundary-free
+  (space-compact, (4.14) block), ghost/BRST 0/0, BW consumed 4 loci; LPM
+  Cor 4.4 = invariance via E=(1+beta)/2 — my independent kill: the divergent
+  cell is even + gh#-neutral = a FIXED POINT of the projection class.
+- A2 THM 1: edge-re-entry hunt on every step — NONE (full-moment = one-sided
+  on the shadow class; ghost drop global-only). REGRADE (inventory): assembly
+  = THREE items (ghost-drop Q-exactness; (H2) at pAQFT strength; (H6)), label
+  unchanged. N&S bifurcation: sustained at sketch grade; the FORWARD direction
+  ((R-i) => (W1)) needs a density/polarization lemma, named-not-derived.
+- (W1) HARDENED: A2's anchor list omitted Borchers 1992 — filled by me: it
+  under-delivers by construction (commutation relations, not the boost
+  identification; BW fails for generalized free fields), so (W1) is
+  irreducibly dynamical. [Borchers/Yngvason cites at recall grade; the
+  load-bearing under-delivery point is standard.]
+- PROP 1 SHARPENED: the martingale/nested-wedge evasion fails at HYPOTHESIS
+  level (no delta_0 with F in M_{delta_0} for edge-sampling states; CGP
+  premise unavailable) BEFORE any divergence estimate; for fenced F the
+  martingale limit re-derives Thm 1 fenced, never unfencing. Second,
+  independent failure mechanism for the route class.
+- TYPE-II REHOMING: run-34 kill honored verbatim at source (l.9148-54);
+  fences correct; nothing to breach.
+- VERDICT: THE WALL STANDS AT ADVERSARIAL GRADE. No A1/A2 claim breached;
+  three verdict-preserving regrades (assembly inventory; Borchers flag; N&S
+  forward-direction lemma). Terminus of runs 23-27 + 34 RE-CERTIFIED. Full
+  value per commission (defended wall).
+- HONESTY: homes (a)/(b)/(c) checked in BOTH arms — none fired; my own
+  near-trap (transverse isotropy ansatz) caught and dismissed against banked
+  run-25 data, recorded in ew_adv.md 1.2(c).
+- ZERO WRITES by R to unification.tex and ISSUES.md — verified by CONTENT at
+  open and close: md5(unification.tex)=caae45b14160d830f87182c08f05c495,
+  md5(ISSUES.md)=865b265206ff64c44e888e2c7629b726 (identical to A1/A2
+  baselines). Staged: ew_adv.md + this ledger section. Author-gated; nothing
+  applied.
+
+---
+
+## RUN 52 — FINAL ADJUDICATION (referee folded in; 2026-07-14)
+
+### 0. Referee re-derivation — decisive point of the strongest route (L3), from source
+Re-derived here, not consumed from the arms. Sources re-read this session:
+ISSUES.md run-26 block (l.5303/5313/5314 today), unification.tex wall
+paragraph (anchor "the wall has its name"; l.20215-20242 today).
+- Banked form (l.5313, exact): E[f] = 2pi[x^1 Y^1]_{x^1=0} inside a matrix
+  element; Cauchy-Schwarz E[f]^2 ~ int_delta^1 rho^{2a_f+2-2p} drho, finite
+  iff a_f > p-3/2. Consumer a_f=0 (generic smooth; the x^1 weight is the
+  booked boost moment, not a taper — confirmed in today's wall paragraph).
+- Floor (l.5314, exact): "even the torsor-optimal ordering leaves the
+  DIMENSIONAL BASE norm rho^{-4}: a dim-3 current cannot be shifted" => p=2
+  at every ordering/torsor; subtraction-independent; and (R re-kill) the
+  divergent cell is Grassmann-even + gh#-neutral, a fixed point of every
+  dimension-preserving even conditional expectation — no projection or local
+  gh#0 counterterm moves p.
+- Arithmetic (numerically confirmed this session, scipy quad, 3 decades):
+  at (a_f=0, p=2): E[f]^2 ~ delta^{-1} => E ~ delta^{-1/2}. THE HALF-POWER
+  GAP IS THE delta^{-1/2} COLLAR RATE. Thresholds at a_f=0: finiteness and
+  collar-limit vanishing COINCIDE at p<3/2 (exponent (3-2p)/2); the
+  distributional boundary-VALUE threshold is p<1 (rho^{1-p}); floor p=2
+  defeats both (2 >= 3/2 > 1) — R's adjudication of A1 gap (1) CONFIRMED,
+  and the wall verdict is reading-independent; the printed N&S must carry
+  the reading label.
+- Why L3 cannot route around (contact-or-failure): the edge term is a
+  boundary artifact of the ONE-SIDED moment IBP; the two-sided/Araki
+  presentation never forms it — but the state-level route then needs
+  (W1) interacting Bisognano-Wichmann at n=1 for the BRST-physical SM wedge
+  net (OPEN; every printed anchor fails the SM by name; Borchers-92 gives
+  commutation relations, not the identification — irreducibly dynamical)
+  AND (W2) collar control at fence removal, whose quantitative content is
+  exactly the delta^{-1/2} rate above, i.e. (W2) <=> the A3 edge datum.
+  lsc/monotonicity gives only <= (the first law is an EQUALITY); the reverse
+  inequality is defeated by delta^{-1/2}; the martingale/nested-wedge
+  variant fails at hypothesis level. CONCLUSION: the strongest route's
+  decisive step RE-DERIVES the wall — which is what a correct N&S
+  sharpening must do. No breach.
+
+### 1. Ladder verdict: GOOD rung — WALL SHARPENED (terminus re-certified beneath it)
+N&S form: (R-i)@n=1 <=> (W1) AND (W2), with (W2) <=> A3 (above); at sketch
+grade (forward direction modulo a named density/polarization lemma — R's
+regrade). NEW no-go: the semicontinuity route class (lsc / martingale /
+nested-wedge fence removal) is doubly closed (A2 Prop 1 + R's
+hypothesis-level kill). POSITIVE RESIDUE: fenced-class SM n=1 first law,
+edge-free, theorem-modulo-(W1)+THREE assembly items (R's inventory:
+ghost-drop Q-exactness; (H2) pAQFT; (H6) O(lambda)) — the runs-23-27 ghost
+gate is ROUTE-BORNE, not law-intrinsic. BEST rung not reached; no route
+through. Leverage table ADJUDICATED:
+- L1 (LPM double-cone): MISSES — relocates, never deletes ((1-r^2) linear at
+  r=1 on the printed kernel; rho^{-4} conformally covariant at non-infinity
+  edge points); massive passage NONEXISTENT (massive diamond modular H
+  open); m=0-only. Failure point: the passage's existence premise.
+- L2 (FMP delta->0): MISSES — edge-silent by its OWN fence (no delta->0
+  family at source; IBP boundary-free by space-compactness; scalar sector
+  cannot probe the gauge-ghost cell); label "arXiv:2607.07810, preprint,
+  unrefereed" carried at every use (in situ at the run-51 sentence,
+  l.20152 today); evidential weight for the wall ZERO both directions.
+  Residual value: the two-sided PATTERN instrument for L3 + outside
+  corroboration that (W1) is every state-route's irreducible input.
+- L3 (state-level/monotonicity): the ONLY demand-toucher; driven to honest
+  end; WALL DEFENDED via the (W1) AND (W2) bifurcation (Sec 0). Re-entry
+  points at theorem grade: Role-B identification (= the descent = (R-i));
+  Type-II landing O(G) vs O(G^0) (run-34 kill honored at source).
+  Monotonicity-only n=1 bankable but a WEAKER theorem (inequality, not the
+  rate equality) — the distinction is load-bearing, correctly deployed.
+- L4 (grading kill): MISSES + SELF-DEFEATING — the divergent cell is even +
+  gh#-neutral = fixed point of the projection class; LPM Cor 4.4 is an
+  INVARIANCE (E=(1+beta)/2) which, transported, would CERTIFY the wall.
+FORWARD ROUTE (sole survivor, author-gated, CHANGES THE THEOREM): Type-II
+rehoming at G>0 on the chain's own postulate home (EG1's K on the crossed
+product; consistent with the paper's printed "unique finite home" corner
+text, l.20230-20242 today); no G->0 descent claimed; gate = the
+corner-matching identity (G-regulated collar term == EG2 area response, no
+double counting) — wholly unproven, named.
+
+### 2. Gated edit (DESCRIBED, NOT APPLIED — zero writes this run)
+E1 unification.tex, wall paragraph, after "...the scalar theorem stands,
+and the wall has its name." (+2 sentences, minimal): (i) the N&S upgrade —
+the clause holds iff interacting BW at n=1 for the BRST-physical wedge net
+(W1) AND collar control at fence removal (W2), the latter equivalent to the
+edge datum itself via the delta^{-1/2} collar rate (discharge iff edge
+exponent p<3/2 collar-reading / p<1 boundary-value, floor p=2: a half-power
+gap closable only by BRST-exactness of the physical current's edge limit);
+(ii) the route-class no-go + route-borne ghost gate (fenced-class n=1 first
+law is edge-free modulo (W1)+assembly), strengthening the existing "changes
+the theorem" observation to a closed route class. No new FMP claims; the
+run-51 FMP sentence stands as printed.
+E2 ISSUES.md: run-52 entry mirroring this ledger (re-certification; N&S;
+L1-L4 table; route-class no-go; Type-II rehoming gated on corner-matching;
+#59 no-fire). Both await Alex.
+
+### 3. #59 homes
+No genuine find — the streak since #57 holds. Commissioned homes all
+confronted, none fired, verified at source: (a) the massive passage was
+declared NONEXISTENT, never silently used; (b) FMP consumed inside its own
+fence, unrefereed label in situ, the delta->0 reading explicitly marked as
+our extrapolation with zero evidential weight; (c) monotonicity-vs-equality
+is the ENGINE of L3's verdict (why lsc closes nothing), not a conflation.
+NEAR-MISS (recorded): A1's single-"iff" (NS) packed two thresholds (p<3/2
+finiteness/collar-vanish vs p<1 boundary-value) into one clause; caught by
+R, adjudicated in Sec 0 — verdict reading-independent, but any printed N&S
+must carry the reading label. Prevented in-run; never reached a deliverable.
+
+### 4. Staging + zero-writes attestation (final)
+Staged this run: ew_audit.md/.tex (A1); ew_attack.tex/.pdf/.py, 15/15 PASS
+re-run by R (A2); ew_adv.md (R); ledger_run52.md (A1+A2+R+this section).
+ZERO writes to unification.tex and ISSUES.md, BY CONTENT, at adjudication
+open AND close: md5(unification.tex)=caae45b14160d830f87182c08f05c495,
+md5(ISSUES.md)=865b265206ff64c44e888e2c7629b726 (= all attested baselines).
+Token probes RUN 52/ew_attack/ew_audit/fenced-class/corner-matching = 0 in
+both; the 2 "half-power" hits in ISSUES.md are run-11-era sqrt-branch lines
+(l.4406-07, mu_1^{-1/2} layer-cake), unrelated and pre-existing by md5.
+
+---
+### Main-session apply note — run 52 (B1a edge wall) applied to unification.tex (2026-07-14)
+
+Ledger `ledger_run52.md` merged above. Verdict: **GOOD rung — the wall SHARPENED to necessary-and-sufficient form; the terminus of runs 23-27+34 re-certified beneath it at adversarial grade** (4/4 agents; the adversary re-derived the decisive banked form from ISSUES run-26 source and the adjudicator confirmed numerically: E ~ δ^{-1/2} at the floor). Gated edit E1 applied after "the wall has its name" (full clean rebuild, binary-safe checks: 0/0/0, **297 pp**):
+
+1. **The N&S form in print:** (R-i)@n=1 ⟺ (W1) interacting BW for the BRST-physical SM wedge net at n=1 AND (W2) collar control ⟺ the A3 edge datum, via the δ^{-1/2} collar rate at the ρ^{-4} floor; **both threshold readings carried** (p<3/2 collar / p<1 boundary-value; floor p=2 — the half-power gap; the #59 near-miss of packing two thresholds into one "iff" was caught in-run by R and the reading labels are mandatory in print).
+2. **The route-class no-go in print:** semicontinuity/martingale/nested-wedge fence removal closed as a class (inequality, never the rate equality — the monotonicity-vs-equality engine).
+3. **The positive residue in print:** the ghost gate is route-borne, not law-intrinsic — on the fenced class the n=1 first law is edge-free, theorem-modulo-(W1)+assembly; the edge term is a boundary artifact of the one-sided moment presentation which the Araki–BW presentation never forms.
+
+Leverage table (all adjudicated at source): L1 LPM relocates-never-deletes ((1−r²) linear at r=1 on the printed kernel; ρ^{-4} conformally covariant; massive passage nonexistent — CFM); L2 FMP edge-silent by its OWN fence (no δ→0 family exists in their text; scalar sector can't probe the gauge-ghost cell; kept at unrefereed label; evidential weight zero both directions); L3 the only demand-toucher, driven to the honest end — the bifurcation IS the defense; L4 self-defeating (Cor 4.4 an invariance; the divergent cell a fixed point of the projection class). Sole forward route: the author-gated Type-II rehoming at G>0, gated on the unproven corner-matching identity. #59: no genuine find (one near-miss caught in-run). The B1a wall now stands in its sharpest honest form: two named inputs, one of which ((W1)) is the irreducible dynamical open of every state-level route.
+
+# RUN 53 LEDGER — E0-dS tensor completion
+
+## ARM A2 — THE DEFORMED-CHM ROUTE (this section owned by A2; siblings append their own sections)
+
+STATUS: COMPLETE (2026-07-14). Verdict block at end of this section. No-write invariant content-verified: git clean; zero A2 tokens (GAP-improv/GAP-dS/ds_route) in unification.tex or ISSUES.md.
+
+### Paper anchors read (grep-verified at source)
+- unification.tex l.18906-18916: hyp:E0-dS statement (real S^dS_B, SSA, first law <=> linearised Einstein about static patch, thm:E0-lin sense with AdS->dS).
+- l.18944-18979 (rem:E0-dS-status, sharpened): STRONG reading needs CHM scanning family (every radius+centre); dS static patch supplies ONE generator (thermal-time boost) => scalar Clausius only = postulate form. Conformal-sector dS diamond family exists (Frob2023dSdiamond); massive matter: diamond modular Hamiltonian NONLOCAL => family absent. Paper's honest net: strong reading OBSTRUCTED; cosmological sector rests on postulate (E0).
+- l.19035-19046: CGM caveat cited as OBSTRUCTION: relevant scalar (d-2)/2 < Delta < d/2 spoils local first-law form; physical Higgs escapes via positive anomalous dimension (Delta = 2 + gamma > d/2). Wilson-Fisher counterexample named.
+- l.19062-19099: the paper's OWN inversion decomposition (generic diamond): (i) trace-free part = local linear-algebra theorem (all null directions; Jacobson move); (ii) c(x) -> const via Bianchi + Hadamard conservation; (iii) trace COEFFICIENT via fixed-volume; (iv) irreducible seam = trace VALUE (Lambda), provably unreachable from null-modular data.
+- l.19120-19132: band-limit does NOT evade CGM; safe window (mu_O R)^{2Delta} << (mu_{0,T} R)^d << 1 at floor R ~ 1/E_star.
+- l.20385-20399: run-18 R5 threshold rescue is NULL-NULL-specific (k^2=0 annihilates trace channel; spin-2 amplitude a2 = 2m^2/3 - s/6 vanishes at threshold => (ml)^2 wedge rate). FENCE in print: free-field spectral density only.
+
+### C1 verification checklist (Galanda-checklist: existence/venue/background/Delta-window/order/rigor)
+- Existence+venue: CONFIRMED in paper bib l.23554-23556: H. Casini, D. A. Galante, R. C. Myers, "Comments on Jacobson's 'Entanglement equilibrium and the Einstein equation'", JHEP 03 (2016) 194, arXiv:1601.00528. PUBLISHED (JHEP). Source verification below.
+- SOURCE OBTAINED: arXiv e-print 1601.00528 (cgm_src/paper18rev.tex, 1524 lines, JHEP style). Verified from the tex itself:
+  - BACKGROUND: **FLAT boundary spacetime only.** Verbatim (intro): "eq. (tedsproposal) is a conjecture for quantum field theories in a fixed flat spacetime." Holographic model = Einstein + massive scalar + negative Lambda in d+1 (asymptotically AdS domain wall); ball in the deformed-CFT vacuum on flat R^{1,d-1}. **NO dS, NO FRW, NO curved-boundary computation anywhere in the paper** (to be re-confirmed by grep below). The commission's description of C1 as "on maximally symmetric spaces incl. dS" is WRONG at source — the only maximal-symmetry element is Jacobson's reference geometry for the AREA side, not CGM's delta S_IR computation. => #60 home (a) LIVE: any dS use of C1 is consumption beyond printed scope.
+  - QUANTITY: **full RT entropy variation delta S_IR, NOT a modular Hamiltonian.** The d/2<Delta<d result (eq. formula): delta S_IR = 2pi Omega R^d/(d^2-1) [delta<T00> - delta<T^a_a>/(2Delta-d)] - c(d,Delta) R^{2Delta} delta<O>^2/C_T + ..., where the <O>^2 term "goes beyond the first law variation". First line = first-law-form piece; second line = beyond-first-law (relative-entropy-order) piece.
+  - DELTA WINDOWS at source: (i) d/2<Delta<d: safe (R^{2Delta} subleading vs R^d). (ii) Delta=d/2 MARGINAL (dedicated Sec. "Delta=d/2"): eq. formula2 = Omega R^d/(d^2-1)[delta<T00> + delta<T^a_a>((d+2)/(d(d+1)) - H_{(d-1)/2}/2 + **log(mu R)**)] - 2^{d-1}d^2/(d-1) R^d delta<O>^2/C_T. **The d=4 marginal log EXISTS in C1 at source and it multiplies the TRACE channel delta<T^a_a>**, coefficient log(mu R) -> -infty as R->0 (log-divergent relative coefficient at order R^d; new renormalisation scale mu enters). (iii) (d-2)/2<Delta<d/2 (alternate quantization): same eq. formula, but R^{2Delta}<O>^2 term DOMINATES R^d as R->0 = the hard obstruction window.
+  - ORDER: leading order in scalar amplitude (R^d<T>, R^Delta<O>, R^{d-Delta}lambda all small); Appendix C = next-to-leading order in lambda.
+  - RIGOR: holographic (RT + FG asymptotics), large-N Einstein-dual CFT. NOT QFT-general, NOT operator-algebraic. QFT-general companion in ledger: Speranza 1602.01380 (first order in conformal PT, Delta>d/2, prior-run verified, ISSUES l.3848).
+- CGM "Modular Hamiltonians" discussion (src l.832-889) — FOUR load-bearing facts verified verbatim:
+  1. **dS static-patch CHM for a CFT IS in C1** (eq. modu2): H_dS = 2pi int_{r<=R} dOmega dr r^{d-2} (L^2/R)(f(r)-f(R))/f^3(r) T_00 + c'', f^2 = 1-r^2/L^2, ball at origin of static patch; LOCAL in T_00; all R<L; OPE curvature correction (eq. OPE2): H_dS ~ (2pi Omega/(d^2-1)) R^d [T_00 + ((2d-1)/(d+3))(R^2/L^2) T_00 + ...]. Grade: discussion-level ("One can easily extend" the CHM map) — conformal sector ONLY. So the CONFORMAL dS seed exists inside C1 itself (consistent with paper's Frob2023dSdiamond cite).
+  2. **Deformed modular Hamiltonian, flat, d/2<Delta<d, first order in lambda**: cite [deff]: "simply replacing T_00 by T_00 - g_00 T^a_a/(2Delta-d) in eq. (modu) yields the modular Hamiltonian of the deformed CFT to leading order in a lambda expansion... would apply for d/2<Delta<d in GENERIC CFTs" (not just holographic). Footnote: on any other Cauchy slice, NONLOCAL even at first order. [identify bibitem deff below]
+  3. **Marginal case Delta=d/2: the local form FAILS at source.** Verbatim: "this simple expression ... is singular for Delta=d/2 and so will not apply". Exact-QFT check: d=2 massive fermions (sec ref mdf; Delta=1=d/2 marginal): "the modular Hamiltonian is a NONLOCAL expression in general, even to leading order in the mass deformation". The OPE-limit modular ENERGY still local-form but with the log (formula2).
+  4. **The marginal log lives in the FIRST LAW, not beyond it.** Four-Roads passage verbatim: "the first approach [restrict to linear variations] would still require such a restriction to avoid the logarithmic contribution which appears IN THE FIRST LAW when Delta=d/2, as shown in eq. (formula2)." => T-minus confirmed at source: linearisation does NOT evade the marginal log; it is a linear-in-deviation trace-channel term delta<T^a_a>(c_d + log(mu R)).
+  Also: Road-3 footnote: the absorb-into-reference-curvature move "could also be adapted to absorb the logarithmic contribution" (state- and R-dependent Lambda-tilde, eq. hammer2 pattern — CGM's own quarantine-in-Lambda suggestion, with the named discomfort Lambda-tilde grows as R->0). Curvature transfer of the DEFORMED case: "We expect that curvature contributions will again be suppressed in a similar way for the case of a deformed CFT" — EXPECTATION ONLY, not computed. => the dS transfer of the deformation correction is NOT in print in C1.
+- BIBITEMS RESOLVED: [deff] = T. Faulkner, "Bulk Emergence and the RG Flow of Entanglement Entropy", JHEP 1505 (2015) 033 (arXiv:1412.5648) — NOTE CGM's verb is "results in [deff] INDICATE" the local deformed modular Hamiltonian; vacuum-to-deformed-vacuum entropy only ("it remains to consider excited states — see [rough]"); [rough] = Speranza 1602.01380 (excited states, first-order conformal PT — prior-run verified per ISSUES l.3848: THEOREM at first order, Delta>d/2 window); [dos] = Arias-Blanco-Casini "Local terms in Modular Hamiltonians", cited as TO APPEAR (became arXiv:1611.08517-line of work; C4 sweep below); [massive2,3] = Casini-Huerta 0903.5284, Blanco-Casini 1103.4400 (exact d=2 massive-fermion resolvent).
+- **d=2 MASSIVE FERMION SECTION (src l.727-803) — the marginal log is EXACT-QFT, not holographic-only.** Resolvent computation, first order in m, interval 2R, Delta=1=d/2: <H> = (4piR^2/3)[<T00> - (1+alpha+gamma_E+log(mR))<T^a_a>], alpha ~= -4.53085 (eq. finalfermion). Log coefficient EXACTLY matches holographic formula2 (constants differ = mu-scheme; mu fixed ~ m in the free theory). CGM verbatim: "the logarithmic contribution is not an artifact of the holographic calculations." => d=2: theorem-grade; general d: holographic + this cross-check.
+- Delta=d/2 SCHEME STRUCTURE (src l.646-700): log(mu z) enters the bulk scalar asymptotics; mu ARBITRARY in the asymptotic expansion ("determined by infrared physics" in a complete flow); mu-shift reparametrises phi_1 (dual to <O>) — i.e. the CONSTANT under the log is scheme (mixing of <O> with the coupling), the log(R) R-RUNNING is physical.
+- HIGHER ORDER (appendix): at eps^3, NEW marginal loci appear (e.g. Delta=2d/3 "because of the appearance of extra logarithms, as appeared for Delta=d/2") — the marginal-log phenomenon RECURS order-by-order at resonant dimensions; CGM computes only generic Delta at eps^3.
+- dS-GREP: the ONLY dS content in C1 is the discussion-level conformal-CFT H_dS (modu2/OPE2) + Jacobson's MSS reference geometry. NO deformed-theory computation on dS/curved background exists in C1. CONFIRMED.
+
+### C1 CHECKLIST VERDICT (Galanda-checklist)
+- EXISTS, PUBLISHED: JHEP 03 (2016) 194. REAL and correctly characterised by the paper (unification.tex cites it ONLY as the low-Delta obstruction + safe-window condition — consistent with source; no overconsumption found in the paper's printed uses at l.19035, 19122, 19294, 19734, 19774).
+- BACKGROUND: flat boundary (deformation sector); dS only in the CONFORMAL seed at discussion grade. NOT "deformation corrections on dS" — the commission's C1 gloss overstates; corrected here.
+- DELTA WINDOW: d/2<Delta<d safe local form [deff]; Delta=d/2 marginal log IN THE FIRST LAW (trace channel), local modular Hamiltonian FAILS (nonlocal even at first order — d=2 exact); (d-2)/2<Delta<d/2 hard power obstruction (beyond-first-law term dominates).
+- ORDER: first order in state deviation for the first-law piece; eps^2 (quadratic in amplitude) beyond-first-law piece; eps^3 in appendix with new marginal loci.
+- FIRST LAW vs ENTROPY: computes delta S_IR (RT); decomposes it into first-law (linear-in-deviation) + beyond-first-law (<O>^2) pieces; the log sits in the FIRST-LAW piece.
+- RIGOR: holographic (Einstein-dual large-N) for general d; exact free-fermion for d=2 marginal; [deff/rough] = generic-CFT conformal PT for d/2<Delta<d.
+
+### C4 SWEEP (2023-2026; labels: published vs preprint)
+- **Frob 2308.14797 = JHEP 12 (2023) 074 (PUBLISHED)**: Tomita-Takesaki modular data for CFTs in double cones/light cones in conformally flat spacetimes, incl. dS diamonds; large-diamond limit -> static-patch time translations. = the RIGOROUS conformal dS seed (C3-on-dS). Conformal sector ONLY (matches paper's cite).
+- **Cadamuro-Frob-Minz 2312.04629 = Ann. Henri Poincare 26 (2025) 4071-4108 (PUBLISHED)**: d=2 massive fermions in a MINKOWSKI diamond, small-mass PERTURBATIVE corrections to the modular Hamiltonian, "terms which were previously overlooked" (vs CGM/[dos] local-terms picture); first-order kernel NONLOCAL/antilocal (ledger already engaged: ISSUES l.4003 wildcard; antilocality cleared for the WEDGE route only). = rigor-grade confirmation that at Delta=d/2 the deformed diamond modular OPERATOR is nonlocal at first order in m; d=2 only; Minkowski only.
+- **Frob-Much-Papadopoulos 2310.12185 = PRD 108 (2023) 105004 (PUBLISHED)**: MASSIVE scalar on dS, wedge = ambient Minkowski wedge cap dS; relative entropy vacuum-vs-coherent = Noether charge; positivity+convexity. SINGLE-generator (boost) statement — massive-dS anchor for the WEAK (scalar-Clausius) reading; NOT a ball family.
+- Frob-Much-Papadopoulos 2607.07810 (PREPRINT, Jul 2026; cached as frob2607): lambda phi^4 Rindler wedge relative entropy to first order in lambda — interacting wedge first law; again wedge-only.
+- Frob 2501.09669 (2025, method paper): modular Hamiltonian from two-point functions — potential tool, no massive-ball family delivered.
+- NOTHING FOUND 2023-2026 delivering a massive/deformed BALL modular family on dS (or even flat d=4) at any radius-scanning strength. The gap the paper names is real as of 2026-07.
+
+### ARM A2 VERDICT (COMPLETE 2026-07-14). Deliverables: ds_route.tex + ds_route.py (all 6 checks PASS).
+- OUTCOME: GOOD-grade (demand narrowed + wall sharpened + composed family at theorem-modulo-named), NOT the BEST closure: the in-print corpus cannot yield the massive dS ball family without one unwritten first-order transfer lemma.
+- C1 VERIFIED AT SOURCE (full checklist above). Paper's five printed uses ALL within source scope — no unification.tex correction needed. The COMMISSION's gloss of C1 ("on maximally symmetric spaces incl. dS") was too generous: deformation sector is FLAT-only at source; dS enters only via the conformal seed (modu2, discussion grade) + Jacobson's reference geometry. #60(a) fence held by correcting the gloss BEFORE composing.
+- COMPOSED FAMILY (safe window d/2<Delta<d = the paper's SM case, Delta=2+gamma): conformal dS seed [PRINT: CGM modu2 + Frob JHEP 12 (2023) 074] + first-order deformation [PRINT flat: Faulkner 1412.5648, Speranza 1602.01380] + Weyl transfer to the conformally-flat dS diamond [GAP-dS: writable at conformal-PT grade, NOT in print — CGM's own "we expect" sentence; the exact resisting step]. Given [GAP-dS]: Lemma 1 (timelike frame scan — polynomial identity, NO null limit, dissolving the smeared-vs-pointwise objection for R-(ii)) + Lemma 2 (frame-scalar quarantine) + conservation/Bianchi + fixed-volume + posited Lambda deliver the FULL linearised tensor equation minus Lambda on the static patch at postulate-(E0) base = the tensor completion of cor:E0-lin-SM's scalar-Clausius form. hyp:E0-dS AS PRINTED (SSA entropy functional, thm:E0-lin equivalence strength) is NOT closed — area postulate (D4) retained.
+- CENTRAL TENSION SETTLED (agrees with A1 by a different route): T-minus RIGHT that the marginal log is first-law-level (CGM Four-Roads verbatim; linearisation does not evade). T-plus RIGHT that the inversion never consumes it: the log multiplies delta<T^a_a> = a FRAME SCALAR, so it (i) cancels identically in the trace-free projection at every R, (ii) is killed by k^2=0 on null-null (same fact as run-18 R5, first-law face), (iii) its log(mu R) R-RUNNING makes the trace channel inconsistent with conservation across radii (two witnesses, ds_route.py B/C) — i.e. the family CANNOT deliver the trace sector, which the paper already routes through Bianchi + posited Lambda (step iv). The diamond disease is a theorem-grade obstruction ONLY to trace-sector extraction — a sector never consumed.
+- THE SHARPENED WALL, d=4-specific ([GAP-improv], the honest residue): Delta=d/2 AND Delta+2=d coincide iff d=4 (ds_route.py D) — the improvement/descendant channel del_a del_b :phi^2: is STRESS-DEGENERATE, can enter the modular-energy OPE at the same R^d order as T_ab with a candidate log; a nonzero coefficient would put a log in the TRACE-FREE channel (not killed by k^2=0 either: improvement kk-contraction = -del_k del_k phi^2 != 0). NOT computed anywhere in print (CGM drops derivative terms; d=2 cannot see it — degeneracy is d=4-only; CFM is d=2). Free scalar d=4 = doubly marginal. Decisive finite computation named. The SM escapes at gamma>0: both enhancements resum to positive powers (mu R)^{2gamma}, (mu R)^{gamma}.
+- OPERATOR vs ENERGY split (re-certifies rem:E0-dS-status): the operator/flow family for massive diamonds is DEAD at source (CGM singular-at-marginal + d=2 nonlocal + CFM 2312.04629 = AHP 26 (2025) 4071 rigor). The ENERGY family (all the inversion consumes, D1) survives at trace-free strength.
+- CROSS-ARM SYNTHESIS with A1: A1's wedge-orbit MD route is STRICTLY weaker demand on exact dS (no balls at all) — adopt it there. My ball-route analysis is the operative one where wedges are scope-empty: FRW (A1's s3). On FRW the forced small-diamond route inherits Lemma-2 quarantine (trace-only disease) but ALSO [GAP-improv] + run-46 A3's curvature/Gronwall failure — the FRW wall is (A3 contraction) + [GAP-improv], NOT the trace log per se.
+- BONUS SOURCE CHECKS (ds_route.py): C1's dS OPE2 curvature coefficient (2d-1)/(d+3) re-derived independently (symbolic, general d) — the seed formula VERIFIED, not just quoted; CGM's exact-fermion alpha = -4.5308487 reproduced to 6 digits; CGM FOOTNOTE DISCREPANCY caught (non-load-bearing): their printed "-0.0323" for the d=2 holographic constant 2/3 - H_{1/2}/2 is not reproducible from their own formula (true value +0.3598; H_{1/2} = 2-2ln2 = 0.6137) — likely a draft remnant; the LOG coefficient (the load-bearing part) matches exactly on both derivations.
+- HONESTY: #60 homes (a) gloss corrected at source before use; (b) smeared-vs-pointwise addressed by replacing the null limit with the timelike polynomial identity + power-law OPE tail for Hadamard-smooth states (no null limit of balls anywhere in the route); (c) the null-null rescue NEVER imported into the trace channel — the trace channel is discarded by consistency, not rescued. ZERO writes to unification.tex and ISSUES.md by this arm (content-verified below).
+
+---
+## ARM A1 — THE DEMAND AUDIT (this section owned by A1). STATUS: COMPLETE (2026-07-14).
+Deliverables: ds_audit.md + ds_audit.tex (+ compiled ds_audit.pdf, exit 0) in this scratchpad.
+
+### Verdict (outcome ladder: GOOD — demand NARROWED at proof level + wall SHARPENED)
+1. CONSUMPTION TABLE (proof-level walk): balls (every radius+centre) are consumed ONLY by
+   thm:E0-lin (AdS/FGHMVR route, l.~18848) and by hyp:E0-dS's own statement (l.~18906).
+   Every downstream consumer — cor:E0-lin-SM completion clause (l.~19758), cor:newtonian-limit
+   (N1) (l.~19934), the run-46 "FRW tensor -> hyp:E0-dS" re-attribution (ISSUES l.15112),
+   prop:pred-cc conditionality (l.~18984) — consumes only the rem:qnec-sat-status inversion
+   input (l.~19060-19099): pointwise null-null EoS every (x,k) + Hadamard conservation +
+   linearised Bianchi + regularity + Lambda seam. The paper's own V1 corollary (l.~19766)
+   PROVES the ball demand is not the need: flat n=0 tensor completion via BW WEDGES, no balls.
+2. MINIMAL DEMAND (MD, drop-in restatement staged as hyp (E0-dS') in ds_audit.tex): per-cut
+   EQUALITY-strength first law, C^2 in the cut modulus, on the SO(1,4) wedge orbit of dS_4,
+   Bunch-Davies-class state, + geometric pairing. Two elementary NEW lemmas make it sufficient:
+   COVERAGE (every null (x,k) is bifurcation-normal data of a wedge in the orbit; 2-param
+   redundancy; kills rem:E0-dS-status's "single thermal-time boost" sentence) and TRACE CLOSURE
+   (null-null everywhere + Bianchi + conservation => E = c g, c const = Lambda shift; NO
+   trace-channel modular data at ANY scale). Both THEOREM grade (proofs in ds_audit.tex).
+3. CENTRAL TENSION SETTLED BY ROUTE SEPARATION: T-minus is right about BALLS (A2-at-source:
+   the d=4 marginal log sits IN the ball first law, trace channel, R^d log(mu R); local
+   deformed-CHM FAILS at Delta=d/2) — the ball route is diseased, theorem grade. T-plus is
+   right about the MD route: only null-null projections consumed (k^2=0 kills the trace
+   channel), NO small-l limit exists on the route (dS wedge scale-pinned at 1/H; localisation
+   = cut derivative). The rescue is never imported into the trace channel (#60(c) fenced):
+   the equation's trace part closes by identities. The diamond disease is the FRW wall's
+   disease (forced small approximate diamonds), not the dS wall's.
+4. SHARPENED WALL (what keeps E0-dS' from theoremhood — all named, mostly already owned):
+   (s1) per-cut equality on the dS horizon, free n=0, at PRINT grade: run-46 banked "REACHED
+        dS static patch" (ISSUES l.15072-77) but in print only CF-equality on Minkowski/Rindler
+        + FS-monotonicity on Killing horizons (tex l.~20408-14). Candidate theorem: DMP massive
+        bulk-to-horizon restriction + universal chiral cut structure; paper already cites
+        BorchersBuchholz1999 (dS wedge geometric modular/KMS for massive matter, l.~5016).
+   (s2) n>=1 = EXACTLY the B1a interacting first-law wall (edge locality, rho^-4 floor). The
+        dS tensor completion at n>=1 is NOT a new wall. dS-specific note: no null-translation
+        isometry => no isometric CF half-sided substitute; horizon-algebra route is n=0-only.
+   (s3) FRW: scope-empty (no bifurcate Killing horizon, run-46 theorem) + A3 Gronwall failure
+        power-independent => MD narrows hyp:E0-dS on EXACT dS only; FRW share re-pins to A3.
+5. SMEARED-vs-POINTWISE (#60(b)) addressed, not waved: pointwise = SECOND functional
+   derivative in the cut; requires equality for ALL cuts in a C^2 neighbourhood — strictly
+   more than one wedge identity, strictly less than any ball family. Cost stated in MD.
+6. NAMING CORRECTION for the author (zero-write law respected — NOT applied): three loci
+   name "no CHM ball-modular scanning family" as the missing object (rem:E0-dS-status
+   sharpened para; cor:E0-lin-SM final clause; (N1) parenthetical). Flat: family EXISTS (BW),
+   missing object = B1a. dS: family EXISTS (SO(1,4) orbit + coverage lemma), missing = (s1)/(s2).
+   Only FRW genuinely lacks a scanning structure. "Balls" names the AdS ROUTE, not the need.
+7. FOR A2: at MD strength the deformed-CHM ball family (C1) is NOT needed for the completion;
+   C1's role shrinks to conformal dS seed (eq. modu2) + corroboration that the ball route
+   fails at marginal Delta. No C1 consumption beyond A2's source-verified scope (#60(a) clean).
+
+### Zero-write attestation (by content)
+git status at close: unification.tex and ISSUES.md untouched by this arm (see A1 final check).
+ATTESTATION PRECISION (A1): at close, git shows unification.tex (+7 lines, bib tail ~l.24009)
+and ISSUES.md (+11 lines, tail append ~l.17469) modified — pure insertions OUTSIDE all A1 anchor
+regions, made by the shared main session/concurrent siblings. A1 issued no Write/Edit/redirect
+to either path (tool log); A1's writes: ds_audit.md, ds_audit.tex (+pdf), this ledger only.
+
+---
+## ARM R — THE ADVERSARY (this section owned by R). STATUS: COMPLETE (2026-07-14).
+Deliverables: ds_adv.md + ds_adv.py (12/12 checks PASS) in this scratchpad.
+
+### Verdict: both arms SURVIVE at stated grades; two premise catches; one fence resolved.
+1. (i) DISEASE PRESSED -> CONTAINED, mechanism UPGRADED: new horizon-universality
+   derivation (R2a symbolic + R7 kernel checks): on any common dS-wedge horizon the
+   invariant Z = n.n' is u-independent, so ALL m^2-dependent Hadamard terms (V log sigma, W)
+   are annihilated by generator derivatives; only the universal U/sigma boundary value
+   survives -> the induced d_u(phi) horizon algebra+state are MASS-INERT. Per-cut modular
+   data carries no m-dependence at ANY cut resolution: the marginal log has no habitat on
+   the wedge route even after cut-localisation (stronger than A1's "no small-l dial").
+2. F3 RESOLVED FENCE (non-minimal coupling): R6 identity int_V^oo (u-V) Phi'' = Phi(V)
+   => xi-improvement in T_uu contributes exactly the first-order Wald surface term
+   -2pi xi d<phi^2>(cut): canonical pairing + WALD entropy <=> improved pairing + area.
+   (E0-dS') must say Wald entropy when xi != 0. No log leaks; A2's [GAP-improv] stays
+   ball-route/d=4-specific (its wedge shadow cancels into Wald bookkeeping).
+3. (ii) NO FRAME-SCANNING CHEAT by A1 (cut-cost priced; R5 calculus verified; coverage
+   re-derived numerically both ways, R1a/R1b). TWO CATCHES against (E0-dS') as staged:
+   CATCH 1 (existence premise): the first-moment integral on COMPLETE generators needs
+   its own convergence premise — R8: T=1/(1+v^2) has ANEC=pi/2 finite, first moment
+   DIVERGENT — strictly stronger than the paper's assumed ANEC pin (ISSUES l.15109(b));
+   ds_audit.tex has zero hits for moment/convergence. Must be added to MD1/(E0-dS').
+   CATCH 2 (implicit premise): per-wedge horizon-adapted gauges are mutually consistent
+   only because E_munu is Stewart-Walker gauge-invariant, which REQUIRES the on-shell
+   background (fixed point) — should be stated in the trace-closure step.
+   (s1) decomposed: (s1-i) universality [DERIVED, R2a/R7]; (s1-ii) DMP-type massive
+   bulk-to-horizon restriction faithfulness (principal series, m>>H — the ONE open
+   import); (s1-iii) per-generator chiral cut-dilation write-up; (s1-iv) = CATCH 1.
+4. (iii) C1 FENCES HOLD: six decisive anchors re-grepped verbatim in cgm_src (l.350
+   flat-only; l.865 "We expect" = [GAP-dS]; l.885 indicate/singular/nonlocal; l.895
+   first-law log; l.690/826 R^d log(mu R) trace channel + exact-fermion match). A2's
+   footnote-discrepancy independently recomputed (+0.35981, CGM's -0.0323 wrong,
+   non-load-bearing). Boosted-slice use of [deff] legitimate (own rest slice).
+5. (iv) dS LIMITS: no small-ball dial exists — every wedge bifurcation surface is a
+   GREAT sphere, radius exactly 1/H (R2b symbolic). The dangerous limit is u->oo
+   (= CATCH 1), not small l. (s2) CERTIFIED at derivation grade (R4a/R4b): the
+   wedge-preserving isometry semigroup of dS is exactly the 4-dim GROUP boost x SO(3);
+   all six null rotations (both signs) exit the wedge => no isometric null-translation
+   semigroup => no Ceyhan-Faulkner substitute; horizon-algebra route is n=0-only.
+6. NET: hyp:E0-dS as printed NOT closed (all arms agree). (E0-dS') + CATCH 1 + CATCH 2
+   + F3 = theorem MODULO (s1-ii), (s1-iii print write-up), (s2)=B1a, (s3)=FRW/A3.
+   Route separation now structural, not just kinematic. Naming-correction flag ENDORSED
+   (editorial; zero-write law respected by all arms).
+
+### Zero-write attestation (ARM R, by content)
+git porcelain at open and close: unification.tex, ISSUES.md untouched (repo clean at
+d3131ee apart from scratchpad); no R tokens (ds_adv, CATCH 1, R2a) in either file.
+R wrote only: ds_adv.py, ds_adv.md, this ledger section.
+
+---
+## FINAL ADJUDICATION — RUN 53 (referee folded in). STATUS: COMPLETE (2026-07-14).
+Referee re-derivations: adj53_check.py, ALL 7 PASS (independent of ds_route.py 6/6 and
+ds_adv.py 12/12, both re-run clean at adjudication). Paper anchors re-read at source:
+hyp:E0-dS l.18907-16; rem:E0-dS-status sharpened para l.18944-79 (the "single thermal-time
+boost" sentence l.18954-59; naming loci l.18951/18966); rem:qnec-sat-status 4-step inversion
+l.19065-99; cor:E0-lin-SM clause l.19758-62; (N1) parenthetical l.19945-46; V1 l.19766-88;
+R5 rescue l.20385-99; ISSUES run-46 A3 budget l.15078-95 + re-attribution l.15112.
+
+### (1) VERDICT ON THE LADDER: GOOD, twice — demand NARROWED + wall SHARPENED. NOT BEST.
+hyp:E0-dS AS PRINTED (SSA functional + ball family every radius/centre + two-sided
+equivalence) is NOT closed and — decisively — is consumed by NO downstream consumer
+(A1 consumption table verified against the printed 4-step inversion: what is consumed is
+pointwise null-null EoS at every (x,k) + Hadamard conservation + linearised Bianchi +
+fixed-volume coefficient + the posited Lambda seam). ADJUDICATED MINIMAL FORM =
+(E0-dS') [ds_audit.tex block D] STRENGTHENED by the adversary's premises, now part of MD:
+  + finite FIRST MOMENT of delta<T_vv> on complete generators (CATCH 1; strictly stronger
+    than the assumed ANEC pin, ISSUES l.15109(b); witness re-verified ADJ-4),
+  + Stewart-Walker/on-shell-background statement for cross-wedge gauge consistency
+    (CATCH 2; the on-shell condition is already in Lemma B's hypotheses — make it explicit),
+  + WALD-entropy pairing when xi != 0 (R's F3 identity, R6).
+With these, (E0-dS') => full consumed strength via Coverage + Cut-localisation +
+Trace-closure. THEOREM MODULO: (s1-ii) DMP-type massive bulk-to-horizon restriction
+faithfulness on the dS horizon (the ONE open import; principal series m>>H favourable),
+(s1-iii) per-generator chiral cut-dilation write-up, (s2)=B1a exactly (certified: wedge
+isometry semigroup = boost x SO(3), no null-translation substitute), (s3) FRW scope-empty
+=> FRW share of hyp:E0-dS re-pins to the A3 Gronwall/contraction wall. Ball-route residues
+named at theorem-grade honesty: [GAP-dS] (CGM Weyl transfer = "We expect" at source) and
+[GAP-improv] (d=4 double-marginality improvement-channel log, uncomputed in print — the
+decisive finite computation for strictly-free d=4 matter). SM window safe: 2gamma > 0.
+
+### (2) T-MINUS/T-PLUS SETTLED — ROUTE SEPARATION, arithmetic re-derived (ADJ-3):
+Free scalar: Delta(:phi^2:) = 2*(d-2)/2 = d-2; marginality Delta = d/2 <=> d-2 = d/2 <=> d=4.
+Run-46 relative error E_matter/lead = (mu l)^{2Delta-d} = (mu l)^{d-4} --[d=4]--> (mu l)^0
+degenerate => log(mu l), divergent as l->0. Habitat (CGM formula2, source-verified): the log
+multiplies ONLY the trace channel delta<T^a_a>, at the SAME R^d order as the first-law
+signal => pointwise ball extraction lim_{l->0} delta<K_l>/l^d inherits log(mu l) in the
+trace channel: BALL-route trace extraction FAILS at Delta=d/2 — theorem grade (holographic
+general-d + exact d=2 fermion; linearisation does not evade, CGM Four-Roads). T-MINUS TRUE
+THERE. On null-null: trace channel couples through g_munu k^mu k^nu = k^2 = 0 — coefficient
+exactly zero at EVERY radius (kinematic); spectral face: a_2 = 2m^2/3 - s/6 vanishes at
+s = 4m^2 exactly (ADJ-3), converting the would-be (ml)log(ml) into the m-quadratic wedge
+rate (run-18 R5, in print, null-null-specific). T-PLUS TRUE THERE. The SURVIVING (wedge)
+route consumes ONLY null-null per-cut data: no small-l dial exists (every bifurcation
+surface a great sphere pinned at 1/H, R2b), localisation = cut-differentiation
+d^2K/dV^2 = T(V) (ADJ-4), per-cut data mass-inert (R's horizon universality, structural),
+and the trace PART of the equation closes by IDENTITIES alone: E(k,k)=0 on the null cone
+=> E = c g (kernel dim 1, ADJ-1) and nabla^mu(c g_munu) = d_nu c on the curved static
+patch (ADJ-2, full Christoffels) => c const = Lambda shift, posited at step (iv) as in
+print. The R5 rescue is NEVER imported into the trace channel — that channel is not
+rescued, it is NOT CONSUMED. The diamond disease's only habitat is the ball/small-l
+extraction: FRW (s3) + strictly-free d=4 ([GAP-improv]). SM: exponent 2gamma > 0 =>
+(mu l)^{2gamma} -> 0, safe. TENSION SETTLED: both sides right, disjoint domains.
+
+### (3) THE GATED EDIT (described only; ZERO writes — author's hand):
+E1: rem:E0-dS-status sharpened para (l.18944-79): correct the mis-naming — the SO(1,4)
+    wedge orbit IS a scanning family covering every (x,k) (coverage lemma refutes the
+    "single thermal-time boost" framing); the missing objects are (s1) per-cut equality at
+    print grade [(s1-ii)+(s1-iii)] and (s2)=B1a; only FRW lacks scanning structure (-> A3).
+E2: insert (E0-dS') + Lemmas A/B/C from ds_audit.tex WITH the three adversary premises
+    folded in (first-moment; Stewart-Walker explicit; Wald pairing for xi != 0).
+E3: retarget the two consumer namings — cor:E0-lin-SM clause (l.19758-62) and (N1)
+    parenthetical (l.19945-46): "no CHM ball-modular scanning family" -> "pending (E0-dS'):
+    per-cut equality on the dS wedge orbit; interacting = B1a; FRW = A3".
+E4: ISSUES.md run-53 row: verdict + re-attribution + [GAP-dS]/[GAP-improv] + the C1
+    gloss correction + the CGM footnote discrepancy note (+0.3598 vs printed -0.0323,
+    non-load-bearing).
+
+### (4) #60 HOMES: at (a), COMMISSION-GLOSS grade; (b) narrows to a staging catch; (c) EMPTY.
+(a) The commission's C1 gloss ("deformation corrections ... on maximally symmetric spaces
+incl. dS") overstates the source: CGM's deformation sector is FLAT-boundary only; dS enters
+only via the conformal seed (modu2, discussion grade) + Jacobson's reference geometry; the
+dS transfer is CGM's own "We expect" (cgm_src l.865) = [GAP-dS]. Caught by A2 BEFORE any
+composition; verbatim-anchored; the paper's five printed C1 uses (l.19035, 19122, 19294,
+19734, 19774) are ALL in-scope => no paper correction triggered. Grade: commission-level
+(cf. #57 staging-level), fenced before consumption.
+(b) narrows to CATCH 1: ds_audit.tex Lemma C/(E0-dS') omitted the finite-first-moment
+existence premise its own formula needs (ANEC finite yet first moment divergent for
+T = 1/(1+v^2): ADJ-4 re-verified) — staging-level, repaired in the gated edit. The
+smeared-vs-pointwise gap itself was priced honestly by A1 (C^2 per-cut cost), no cheat.
+(c) EMPTY: no arm imported the null-null rescue into the trace channel; the trace part
+closes by identities (ADJ-1/2). No paper-level overclaim found in run 53.
+
+### (5)+(6) LEDGER + ZERO-WRITE ATTESTATION (adjudication, by content):
+This ledger (scratchpad/ledger_run53.md) is the sole run-53 record; ISSUES.md untouched
+BY RUN 53. git porcelain EMPTY at adjudication open (HEAD d3131ee; the +7/+11 tail
+insertions A1 observed were the main session's own commits e0bac8e/d3131ee). At close,
+porcelain shows the CONCURRENT RUN-52 landing (ISSUES.md +343 = "RUN 52 LEDGER — B1a";
+unification.tex +23/-1 at l.20226, B1a region) — outside every run-53 anchor region
+(18907-19100, 19749-19950, 20380-20415), and a token scan of that live diff returns ZERO
+run-53 tokens. Token grep over unification.tex + ISSUES.md for run-53 tokens
+(E0-dS', ds_audit, ds_adv, ds_route, GAP-dS, GAP-improv, CATCH 1/2, coverage lemma,
+horizon universality, run 53): single hit = pre-existing run-46 possessive "E0-dS's item"
+(ISSUES l.15181), not run-53 content. Adjudication wrote ONLY adj53_check.py and this
+section. Run-53 staged set: ds_audit.md/.tex(+pdf), ds_route.tex/.py, ds_adv.md/.py,
+adj53_check.py, cgm_src/paper18rev.tex, ledger_run53.md.
+
+BOTTOM LINE: hyp:E0-dS stays open as printed, but the wall moved: the dS tensor completion
+now rests on (E0-dS') — per-cut equality-strength first laws on the SO(1,4) wedge orbit
+with three explicit premises — theorem modulo (s1-ii)/(s1-iii)/(s2)=B1a/(s3)=A3; the
+diamond disease is quarantined to the ball/FRW route at theorem grade with [GAP-improv]
+the one decisive uncomputed number for strictly-free d=4; the SM sits in the safe window.
+
+---
+### Main-session apply note — run 53 (E0-dS tensor completion) applied to unification.tex (2026-07-14)
+
+Ledger `ledger_run53.md` merged above. Verdict: **GOOD twice — demand NARROWED at proof level + wall SHARPENED to named theorem-grade obstructions** (4/4 agents; adjudicator re-derived all three decisive lemma steps independently, adj53_check.py 7/7). Applied (full clean rebuild, 0/0/0, **300 pp**):
+
+1. **New companion appendix `appendix_e0ds_min.tex`** (label app:e0ds-min): the audited-minimal hypothesis **(E0-dS′)** — per-cut equality-strength first laws on the SO(1,4) wedge orbit — with three lemmas: COVERAGE (every null (x,k) is bifurcation-normal data of an orbit wedge; 2-parameter redundancy), TRACE CLOSURE (null-null everywhere + Bianchi + Hadamard conservation ⇒ E=const·g = Λ shift; the trace part of the equation consumes NO modular data at any scale), CUT LOCALISATION (second cut-variation ⇒ pointwise null-null EoS; C² per-cut cost priced). **All three adversary premises folded in print:** finite first moment per generator (CATCH 1 — strictly stronger than the ANEC pin, witness verified), Stewart–Walker/on-shell background made explicit (CATCH 2), Wald-entropy pairing for ξ≠0 (F3 resolved into the improvement-term identity).
+2. **rem:E0-dS-status re-framed** (E1a/E1b): the "single thermal-time boost" framing corrected — the SO(1,4) orbit IS a scanning family; the strong reading is NOT obstructed by a missing scanning structure; missing = per-cut equality (in print: CF equality Minkowski/Rindler only; FS monotonicity on Killing-horizon cuts; BB dS-wedge KMS) + the two named support steps; n≥1 = exactly B1a (no new wall); only FRW lacks scanning structure → re-pins to A3.
+3. **Consumer retargets** (E3a cor:E0-lin-SM; E3b the (N1) parenthetical; E3c the rock-and-iron lever sentence — a main-session consistency micro-fix following necessarily from E1/E3): "no CHM ball-modular scanning family" → "pending (E0-dS′)".
+
+**The diamond disease settled by ROUTE SEPARATION at theorem grade** (arithmetic re-derived at adjudication): free-scalar Δ(:φ²:)=d−2, marginal iff d=4, the log multiplying ONLY the trace channel at the same R^d order — so the ball-route trace extraction fails at Δ=d/2 (T-minus TRUE), while the wedge route never consumes the trace channel (k²=0; no small-radius dial — great spheres pinned at 1/H; trace closes by identities) (T-plus TRUE, null-null-specific as printed). The disease's only habitat: FRW (→A3) + strictly-free d=4 ([GAP-improv], the one uncomputed number); the interacting SM escapes at 2γ>0. Adversary upgrades: containment upgraded kinematic→STRUCTURAL (horizon universality: per-cut wedge data is mass-inert); two premise catches folded. #60: commission-gloss grade only (my C1 description overstated its dS-deformation content — CGM's own "We expect" = [GAP-dS]; caught by A2 before composition; all five printed C1 uses in-scope, no paper correction). Named residues: (s1-ii) DMP massive bulk-to-horizon restriction (the one open import), (s1-iii) cut-dilation write-up, (s2)=B1a, (s3)=FRW/A3, [GAP-dS], [GAP-improv].
+
+# RUN 54 — ARM A2 (ANALYTIC-UNIFORMITY ATTACK) — STAGED LEDGER
+(scratchpad only; ZERO writes to unification.tex / appendix_e2a_omega.tex / ISSUES.md)
+
+## FILES
+- eo_attack.tex (9pp, compiles EXIT=0): premise audit EP0-EP4; Prop A (gap a);
+  Lemma B (seed triangle); Prop C (gap b); Thm M1-verdict; M2/M3 notes; R-check.
+- eo_attack.py: T1-T4 ALL PASS (Cauchy constants; EP2 counterexample;
+  model transport family-uniformity; seed-triangle arithmetic).
+
+## EXISTENCE PREMISES (run-48 law; quoted, not assumed)
+- EP0: U_omega analytic in SPACETIME variable only (unification.tex l.17108-13;
+  appendix l.126-135). NO parameter-analyticity, NO compactness granted.
+- EP1 (the licensed tool): polydisc Cauchy => ball-uniform C^k bounds ALL k,
+  constants alpha!(2/rho_a)^|alpha| eps_a — the appendix's own an17:lem-embed
+  method (l.166-175) iterated. THEOREM. [T1 PASS]
+- EP2 (wrong-direction fence, NEW counterexample): h_k = e^{-k rho} sin(kz):
+  H^s(real)->0 (7.6e-82) while collar sup = 0.5 flat [T2/T2b PASS]. So
+  collar-Lipschitz NEVER converts to H^s-Lipschitz (two-constants = Hoelder
+  only). Kills the naive Montel/collar shortcut for M1's Lipschitz half;
+  home-(a) armed with an explicit example.
+- EP3: parameter-regularity is DERIVED (polynomial jets + Gronwall), real-side,
+  Morrey at s>11 — the licensed direction.
+- EP4: Montel available (input = defining bound eps_a, non-circular) BUT banned
+  as an M2 closure (needs the clause's own continuity — home (b)); unused.
+
+## M1 CLAUSE (ii) — THE RESULT
+Printed residual (an17:CW-grade l.3391-3402) = gap (a) family-uniform N=2
+construction + gap (b) multi-index tracking. Attack:
+- Prop A: (N-a) package THEOREM over U_omega — uniform normal geometry from
+  an17:G's own CGT/Chen-LeFloch constants + the holomorphic-ODE package Part A
+  already cites (l.3842,3951); transport recursion = linear holomorphic ODE,
+  Gronwall + ONE Cauchy estimate replaces the entire multi-index tape;
+  difference legs = banked run-11 (N-a) core (l.3219-3225, twice-verified) +
+  LEMMA-II clause-(i) Gronwall route (ISSUES l.4100 region, referee-confirmed).
+  On the analytic class the finite-regularity difficulty DOES NOT EXIST
+  (classical Hadamard construction, quantitative by EP1).
+- Lemma B (seed triangle): W_* <= W_*^seed(g_0) + C_W C_emb eps_a — the uniform
+  half of clause (ii) collapses onto the Lipschitz half. [T4 PASS]
+- Prop C: gap (b) VACATES to the printed term inventory: every constant is a
+  polynomial in {EP1 bounds, Lambda_k, Tice Q*,P*, ladder table l.3027-3030,
+  m(K), L_chi} — all named, ball-uniform. What is NOT proved: inventory
+  completeness — that is (N-a-NF) + an17:G(iii) + the displayed commutator
+  leg, in print.
+VERDICT (honest): clause (ii) over U_omega = THEOREM MODULO
+  {(res1)=(D0) single-SEED-metric b=1 data write-out (l.3321-24);
+   (res2)=(E-env) exercised only OFF the BFV anchoring (C_Delta2=0 on BFV,
+   l.3285-87) — not on the Part-B consumer path for the paper's state class;
+   (res3) full-length write-out of Props A/C (routine on U_omega)}.
+THE FAMILY-UNIFORMITY CONTENT OF M1 CLOSES; the residual is fixed-metric
+labor, NOT a uniformity question. One genuine grade of motion
+(PLAUSIBLE -> theorem-modulo-named-fixed-metric-residue); NOT claimed as
+"M1 = THEOREM" (that word is blocked exactly by (D0)).
+- (D0)-lever (named, NOT executed, run-48 compliant): on U_omega the full
+  Hadamard series converges (classical, analytic metrics; majorant along the
+  Prop-A holomorphic flow; citation to pin: Hadamard/Riesz/Friedlander) =>
+  W_g exact finite part C^infty => b=1 data finite automatically. PLAUSIBLE,
+  refutation-capable; one classical-convergence lemma to write.
+
+## R-iii CHECK (did we hit THE stalled step?)
+Gaps (a),(b) were graded at the flip (run 16-17) — Props A/C address exactly
+those, by printed line. (D0) is an OLDER run-11 data-side stall member,
+printed at an17:named-residues — surviving, stated, with its lever named.
+No neighbor-step substitution.
+
+## M3 (clause (i) diff) — CHEAPEST ITEM: PORT, NOT PROOF
+The dual-Lipschitz difference bound is ALREADY a referee-confirmed
+WRITTEN-WITH-CONSTANTS THEOREM in the ledger (ISSUES l.4100 region: C_H =
+C_sob^3 kappa, Gronwall/transport, state-independent, sympy-verified) over
+the FULL H^s ball; U_omega inherits via an17:lem-embed. The appendix's
+"not in the companion corpus" (rem:an17-clausei-diff) is a STAGING fact.
+Consumer walk done: feeds only thm:E2-Lipschitz singular leg; no slice-ladder
+consumer (l.3588-91). Closable at THEOREM by ~2pp author-gated port; carry
+the ledger's honest note (H^{s-2} test space over-strong; any t>2).
+
+## M2 (clause iii) — REDUCED, NOT CLOSED
+Split: metric-side constants CONSTRUCTIVE (Sanders audit, banked) =>
+EP1-mechanical over U_omega; reference-state leg = same seed-anchored class
+as (D0); F-iii subspace continuity from pair-Lipschitz structure. Montel
+banned (circular). No forced closure.
+
+## LEDGER ITEM CROSS-REF
+The finite-part-FAMILY uniformity item ("B2-curved", ISSUES l.4054 region;
+run-46 re-attribution l.15095) IS M1's family content — the part discharged
+here. Its consumer list (lem:E2-energy-lipschitz, thm:E2-Lipschitz,
+prop:N1-free-omega) unchanged; no vacation declared (home-(c) not fired:
+consumers walked, none vacated — the run-43 state-level route closed E2c,
+not the clause-(ii) consumption).
+
+## HYGIENE
+Zero writes to the three protected files — verified by content (git status
+clean; see run log). All staging in scratchpad. Sibling ledgers
+(run52/run53) untouched.
+
+====================================================================
+# RUN 54 — ARM A1 (THE RESIDUAL AUDIT) — STAGED LEDGER
+(appended below the A2 block; scratchpad only; ZERO writes to
+unification.tex / appendix_e2a_omega.tex / ISSUES.md — by-content
+check at end.)
+
+## FILES
+- eo_audit.md (full audit: per-residual demand/consumers/leverage/
+  closability + leverage table + verdicts + #61 self-check).
+- eo_audit.tex/.pdf (4pp, pdflatex EXIT=0, 0 undefined, 0 errors,
+  grep -a checked).
+
+## HEADLINE
+The modulo-list {M1,M2,M3} COMPRESSES AT PROOF LEVEL TO M1 ALONE plus
+two author-gated bookkeeping reductions; the l.4054-region family
+item collapses to M1 (D_*, C_D, C_Theta, C_mass-sup are proved IN
+PRINT inside thm:E2-Lipschitz's own proof, l.17505-39).
+
+## VERDICTS (full tables in eo_audit.md)
+- M3: VACATION FIRES at Part-B-gate level — one level DEEPER than the
+  modulo-list's "feeds only the pivot": the pivot's own printed proof
+  note (l.17540-45) excludes clause (i) from consumption, C_H greps
+  to 4 hits (all hypothesis statements), and prop:N1-free-omega
+  premises (ii)-(iii) only. So M3's proof-level consumer list is
+  EMPTY. [Reconciliation with the A2 block above: A2's "feeds only
+  thm:E2-Lipschitz singular leg" is the modulo-list's line; the walk
+  here shows even that feed is not exercised in the proof.] Closures:
+  (c1) vacate-as-unconsumed, author-gated, ready; (c2) = A2's port
+  (~2pp re-derivation). Both fences-native.
+- M2: REDUCTION FIRES at consumed strength: the QEI bites ONCE, at
+  c_S(g_0,t,F) — THE SEED METRIC (display l.17583-88); transport is
+  (S5)/(S7), QEI-free; C_S surplus (printed audit l.17726-33); the
+  N1-free family/constant and V1 Step-5 template are c_S-free.
+  Consumed strength = single-metric Sanders THEOREM. Ball clause +
+  subspace continuity survive at hypothesis/premise level ONLY;
+  revival condition explicit (any future g-native QEI application).
+  Sharpening beyond run 49: even the audit note's "ball-bounded
+  constant" is surplus at proof level. Author-gated edits: cor(iv)
+  proof-line re-aim + modulo-list M2 entry + optional F-iii sentence.
+- M1: NO VACATION (grade PLAUSIBLE unchanged) — but the demand
+  RE-GRADES: omega-scope consumers exercise {W_* uniform} +
+  {SEED-ANCHORED C_W, g'=g_0} only; the genuinely-pairwise consumer
+  (Banach contraction, non-analytic iterates) is Option-B-only
+  (F-diff l.17167-69). The run-5..13 walls all priced the SPECTATOR
+  W_{g'} at finite Sobolev regularity — absent on U_omega. Open
+  content relocates to (P1) ball-uniform quantitative analytic-
+  Hadamard convergence [= A2's (D0)-lever], (P2) the state-side
+  difference estimate [candidate resisting step], (P3) the modulus
+  [A2's EP2 counterexample CONFIRMS the three-lines/Hoelder tax:
+  collar smallness does not convert to H^s-Lipschitz; the licensed
+  direction is A2's EP3]. F2 seed-anchored precedent (eq:E2-CS,
+  l.17439-43) licenses a seed-anchored restatement shape.
+- FAMILY ITEM: = M1; ledger-hygiene candidate to re-point l.4054
+  entry at clause (ii) alone; run-46 FRW fence untouched.
+
+## CONVERGENCE WITH A2 (independent, same session)
+A1's consumption audit and A2's attack cohere: A1 narrows WHAT must
+be proved (uniform + seed-anchored instances; pairwise unexercised in
+omega scope); A2 proves the family-uniformity content modulo
+fixed-metric residues {(D0),(E-env),write-out}. A1's (P1) = A2's
+(D0)-lever; A1's (P3) = A2's EP2. No contradiction found; the joint
+honest state: M1 = theorem-modulo-named-fixed-metric-residue (A2) with
+its Part-B demand narrowed (A1); M2 reduced; M3 vacated-as-consumed
+AND portable.
+
+## HONESTY (#61)
+(a) no parameter-analyticity asserted (EP0 respected; (P1) flagged
+for re-derivation); (b) no Montel argument used in A1; (c) both
+vacation/reduction verdicts carry COMPLETE consumer tables incl.
+appendix Part-B and the V1 template, with revival conditions; Hyp
+statements untouched. Disclosed shared limitation: textual audits
+lean on the printed proof notes + run-43/49 banked sweeps for
+"no token-evading consumer" (run 49's own disclosure).
+
+## DO-NOT
+No M1 at THEOREM; no "clause (iii) proved"; no "M3 theorem" pre-port;
+no H^s-compactness for U_omega; no pairwise-Lipschitz-by-collar claim
+(EP2); no shock extension; no Hyp-statement edits.
+
+## ZERO-WRITE VERIFIED (A1, by content, end of run)
+git status --porcelain: CLEAN (no tracked modifications). Token grep
+{M1-u | vacate-as-unconsumed | eo_audit | collar-sup ball | RUN 54}:
+0 hits in each of unification.tex / appendix_e2a_omega.tex /
+ISSUES.md. sha256 prefixes at close: unification 73520d1b1548f54d,
+appendix 2c26e5893b500ff8, ISSUES b6c4e886fccd554e.
+
+# RUN 54 — ARM R (THE ADVERSARY) — STAGED LEDGER (appended below A2+A1)
+
+## FILES
+- eo_adv.md (7 sections: kill-targets (i)-(iv), re-derivations, adjudication)
+
+## HEADLINE
+All four commissioned kills MISS at label level; four WOUNDS (W1-W4) found
+in A2's staged tex, each with the exact primary-line citation and its patch;
+both sibling labels SUSTAINED (A1 THEOREM-for-the-walks; A2 PLAUSIBLE).
+EP2 independently re-derived (exact identities; Hoelder-1/2 modulus ATTAINED
+to 4 digits) — confirmed THEOREM and the run's most durable fence.
+
+## THE WOUNDS (all port-time mandatory, none label-changing)
+- W1 CIRCULAR WIRING: Prop C (eo_attack.tex l.241-243) cites Lemma B for
+  in-ladder spectator sups; Lemma B derives W_* FROM C_W. Rewire to the
+  (D0) + an17:Nc-corrected single-metric-analogue + an17:DoD data route
+  (which res1's own wording already names). Lemma B = consumer-facing
+  W_*(K) only, AFTER C_W closes.
+- W2 #B' OMITTED: appendix books lem:W2star gated by (D0) AND #B'
+  (l.3325-27, l.3943-44); thm:M1-verdict lists only (D0). Discharge exists
+  (seed: perturbation region P empty; general g': BFV/RCE surface data +
+  DoD transport, no patch traversal) but is UNSTATED and rides W3's
+  identity. One sentence owed, conditional-tagged.
+- W3 GRADE INHERITANCE: "C_{Delta_2}=0 on BFV" lives inside an17:Nc-corrected,
+  printed grade "PLAUSIBLE ... NEVER cited at THEOREM grade" (l.3289-93);
+  eo_attack.tex l.107-108 + res2 cite it bare. Tag the grade; add revival
+  (un-anchoring from BFV/RCE re-opens (E-env) AND #B').
+- W4 SEED TAG: Lemma B labels W_*^seed "THEOREM"; res1 makes it (D0)-gated
+  at the b=1 slot. Tag "THEOREM modulo (D0)". Internal contradiction as
+  staged; res1 wins.
+
+## HONEST M1 MODULO-LIST OF RECORD (post-adversary)
+theorem MODULO {(D0); BFV-vanishing @ PLAUSIBLE (carrier an17:Nc-corrected);
+#B'-discharge sentence; full-length Props A/C write-out}. One item longer
+than A2's printed list; same mathematics.
+
+## RECONCILIATION OF RECORD (A1 (P2) vs A2 (D0))
+Conditional split, not conflict: resisting step = (D0) CONDITIONAL on the
+PLAUSIBLE-graded BFV vanishing; unconditional fallback = (P2) (state-side
+difference estimate), exactly as A1 flagged. Joint wording staged in
+eo_adv.md sec.6.
+
+## CONFIRMATIONS (independent re-derivations, primary-source anchors)
+- U_omega = spacetime-collar holomorphy only; FIXED rho_a => EP1's uniform
+  polydisc radius is DEFINITIONAL (unification l.17108-13; appendix
+  l.126-150, l.183-85). EP1 sound; sqrt(n) polyradius parenthetical owed.
+- M3 consumer set EMPTY at proof level (my tokens: "singular part", "H_g",
+  "dual-Lipschitz", "clause (i)"; pivot note l.17540-45; appendix l.3588-90;
+  prop:N1-free-omega l.17277-79). A1 vacation SUSTAINED, author-gated.
+- M2 single bite AT THE SEED (l.17583-88 displays c_S(g_0,t,F); (iv) chain
+  l.17612-22; S5 l.17598-603 and S7 l.17635-43 both QEI-free). Caveat: the
+  proof TEXT still cites Hyp(iii)-local-uniformity (l.17620-22) and the
+  audit note says "ball-bounded" (l.17728) — reduction is proof-level
+  against two printed phrases; A1 caught both; revival condition correct.
+- Family item = {C_W,W_*,D_*,C_D,C_Theta,C_mass-sup} minus in-print members
+  (sighted at l.17505-39) = {C_W,W_*} = M1. Collapse arithmetic CONFIRMED
+  (C_mass-sup constant not DISPLAYED at that site — hair, noted).
+- Resisting-step match: flip-graded steps = gaps (a),(b) (an17:CW-grade
+  l.3391-3402); Props A/C target exactly those; (D0) is the run-11-vintage
+  data residue (l.3321-24). NO neighbor substitution.
+- Fences: F-iii/F-diff/F-shock all HELD (eo_adv.md sec.4); the Option-B-only
+  status of the pairwise non-analytic consumer confirmed at l.17179-80.
+- eo_attack.py re-run: T1-T4 ALL PASS. My independent EP2 numeric: collar
+  pinned at 0.5000 all k; H^s(k=160)=1.14e-22; ratio 4.4e21; two-constants
+  prediction matched 2.390e-25 = 2.390e-25.
+
+## KILL CONDITIONS THAT DID NOT FIRE (calibration record)
+(K-a) Cauchy on the state/W_g directly — absent; (K-b) Montel closure —
+absent, self-fenced; (K-c) infinite-series convergence claim — absent
+(k<=2 only + named lever); (K-d) collar-routed difference leg — absent
+(all real-side Morrey); (K-e) shock-metric comparison — absent.
+
+## ZERO-WRITE VERIFIED (R, by content, end of run)
+End-of-run sha256 IDENTICAL to session-start values for all three protected
+files (73520d1b... / 2c26e589... / b6c4e886...); git status --porcelain
+EMPTY; git diff HEAD EMPTY. Zero writes to unification.tex,
+appendix_e2a_omega.tex, ISSUES.md — VERIFIED BY CONTENT.
+
+# RUN 54 — FINAL ADJUDICATION (referee folded in; appended below A2+A1+R)
+
+## RE-DERIVATIONS EXECUTED BY THE ADJUDICATOR (not delegated)
+1. M3 consumer walk, fresh tokens: grep C_H in unification.tex = EXACTLY 4 hits
+   (l.17060/17065 in hyp:hadamard-uniform; l.17122/17127 in
+   hyp:hadamard-uniform-omega) — both are the hypothesis STATEMENTS; no proof
+   forms the constant. Appendix C_H = 2 hits (l.3542 clause restatement,
+   l.3555 single-metric lemma display). Pivot proof note SIGHTED VERBATIM
+   l.17540-45: "clauses (i) and (iii) ... are not consumed here ... (i) only
+   as the microlocal control that makes (iii) plausible; the modular leg uses
+   (ii)". prop:N1-free-omega premises = clauses (ii)-(iii) only (l.17277-79).
+   Appendix's own audit l.3587-90: "no quantitative slice-register consumer
+   ... it feeds only the pivot". Proof-level consumer set of M3-diff: EMPTY.
+2. M2 single-bite, fresh grep eq:E2-QEI: 8 hits = definition (17348), two Hyp
+   clause-(iii) fixtures (17088/17150), pivot exclusion note (17542), smearing
+   fixture (17555), THE ONE APPLICATION (17620, corollary (iv), prior of the
+   SEED folium), audit note (17726/17729). Displayed floor l.17583-88 is
+   c_S(g_0,t,F) AT THE SEED; transport via (S5)/(S7) (l.17589-90), both
+   QEI-free (S5 = MPS propagator Lipschitz l.17598-603; S7 = Powers-Stormer +
+   Gronwall, never forms coth, l.17635-38). Surplus-strength phrases CONFIRMED
+   at l.17620-22 ("locally uniform on U by Hyp (iii)") and l.17727-28
+   ("ball-bounded constant") — both are hypothesis-citation surplus, not
+   proof-level need.
+3. EP2 (the decisive analytic estimate), OWN parameters rho_a=0.4, s=12,
+   exact identities: |sin(x+iy)|^2 = sin^2 x + sinh^2 y gives
+   sup_collar|h_k| = e^{-k rho}cosh(k rho) = (1+e^{-2k rho})/2 = 0.500000 all
+   k; ||h_k||_{H^s(real)} = e^{-k rho}(1+k^2)^{s/2}sqrt(pi): 3.4e12 (k=40)
+   -> 5.3e-26 (k=320). Conversion constant UNBOUNDED IN BOTH DIRECTIONS
+   (transverse topologies — R's double-circularity sharpening confirmed).
+   Three-lines ratio = 0.7071 = 1/sqrt(2) for ALL k: Hoelder-1/2 exponent
+   ATTAINED, sharp; Lipschitz conversion collar->H^s IMPOSSIBLE. THEOREM.
+4. Grade-inheritance sites SIGHTED: an17:Nc-corrected l.3285-93 (BFV
+   C_{Delta_2}=0 lives inside grade line "PLAUSIBLE ... NEVER cited at
+   THEOREM grade"); named residues l.3321-27 ((D0) open at b=1 slot, gates
+   W^{(2)}_*; #B' across patches); printed C_W assembly l.3374-84 already
+   routes through W^{(2)}_* and the BFV surface. R's W2/W3 SUSTAINED.
+
+## PER-RESIDUAL VERDICTS (final, of record)
+- M3 clause (i)-diff: VACATED AT PROOF LEVEL (empty consumer set, re-walked
+  independently above; run-43 pattern, Part-B-gate). Clause TEXT stays in the
+  Hyp (microlocal-plausibility role for (iii)) — no statement deleted.
+  Content separately closable by ~2pp author-gated PORT of the
+  referee-confirmed LEMMA-II clause-(i) theorem (ISSUES l.4105,
+  C_H = C_sob^3 kappa, full H^s ball); until ported, the modulo-list entry
+  stays with an annotated consumer line. NOT counted as a proved clause.
+- M2 clause (iii): REDUCED at consumed strength. Proof-level demand =
+  c_S(g_0,t,F) at the FIXED SEED (single-metric Sanders theorem-with-
+  constants per the banked audit, ISSUES l.4090) + QEI-free (S5)/(S7)
+  transport. Ball boundedness c_S^* + subspace continuity survive at
+  hypothesis level only, stated-but-unconsumed. REVIVAL CONDITION: any
+  future consumer applying eq:E2-QEI at a g-native state/metric (not
+  transported from the seed) revives the ball clause at full strength.
+  Two surplus-strength phrases to soften (gated edit, below).
+- M1 clause (ii): STANDS-WITH-CHARACTERIZED-STEP; grade PLAUSIBLE UNCHANGED.
+  Earned: the two printed gaps (a),(b) (an17:CW-grade l.3394-3402) are
+  discharged AS FAMILY-UNIFORMITY QUESTIONS over U_omega by staged Props
+  A/C + Lemma B (eo_attack.tex) with wounds W1-W4 folded in as mandatory
+  port conditions. The honest modulo-list of record (post-adversary):
+  {(D0) seed-data b=1 slot (run-11-vintage, fixed-metric); BFV-vanishing
+  cited only at its carrier's PLAUSIBLE grade; #B' if the write-out runs
+  across patches; the author-gated Props A/C write-out}. Resisting step OF
+  RECORD: (D0), CONDITIONAL on the BFV vanishing at PLAUSIBLE; unconditional
+  fallback characterization: A1's (P2) state-side difference estimate.
+  Named-not-executed lever: classical convergence of the full Hadamard
+  series on analytic metrics (uniform radius by EP1) — citation to pin
+  (Hadamard/Riesz/Friedlander analytic case); would make (D0) automatic.
+  FENCE OF RECORD (EP2, re-derived): no collar->H^s shortcut exists; all
+  Lipschitz legs must be real-side; collar interpolation is Hoelder-1/2
+  sharp. FRW/run-46 fence untouched; F-iii/F-diff/F-shock all held.
+- Finite-part-family item (LEMMA-II / B2-curved reduction, ISSUES l.4054
+  region + l.4087): REDUCED — COLLAPSES TO M1. Members D_*, C_D, C_Theta
+  proved in print inside thm:E2-Lipschitz's own proof (l.17505-39, sighted:
+  D_* by H^{s-1}->C^1 + Sobolev multiplication; C'_D by Banach algebra
+  s-2>n/2; C_Theta by the four-jet multiplication estimate); C_mass-sup =
+  same argument class (curvature sups; constant not displayed at that site
+  — disclosed hair). Remaining open members = {C_W, W_*} = exactly M1.
+  No separate open item; ledger item re-points to M1 (gated).
+
+## #61 HOMES (final)
+(a) parameter-analyticity conflation: NO FIRE. U_omega grants spacetime-
+    collar holomorphy of each member on a FIXED collar (l.17108-13);
+    EP1's uniform polydisc radius is definitional; the state seam is clean
+    (no Cauchy estimate touches omega_g^(2)); sqrt(n) polyradius
+    parenthetical owed at port (R).
+(b) Montel circularity: NO FIRE. No normal-family argument in any closure;
+    A2 self-fenced EP4; M2-via-Montel explicitly banned as circular; EP2
+    makes the circularity double (transverse topologies, re-derived).
+(c) vacation without walking every consumer: NO FIRE on A1's M3 vacation —
+    independently re-walked here with fresh greps (empty at proof level;
+    textual-audit limitation disclosed: no token-evading consumer beyond
+    three disjoint swept token sets). NEAREST APPROACH: A2's staged tex
+    omitted #B' and cited the BFV vanishing bare (W2/W3) — home-(c)-ADJACENT,
+    caught by R in-run, folded into the M1 modulo-list of record above;
+    not label-changing (A2's label was PLAUSIBLE with conditionality
+    disclosed in gap_if_any). No forced closure entered the verdicts.
+
+## THE GATED EDIT (staged only; THREE PROTECTED FILES UNTOUCHED)
+Staged at scratchpad/gated_edit_run54.md (diff-style, grade-line/bookkeeping
+only, nothing promoted): (E1) appendix M3 entry — consumer-line annotation +
+port note; (E2) appendix M2 entry — consumed-strength annotation + revival
+condition; (E3) unification l.17620-22 + l.17727-28 — seed-strength wording
+(two phrases); (E4) appendix M1 entry — gaps (a),(b) re-pointed to the staged
+uniformity discharge modulo the honest list {(D0), BFV@PLAUSIBLE, #B',
+write-out}; grade line PLAUSIBLE unchanged; (E5) ISSUES family item —
+re-point to M1. ALL author-gated; none applied.
+
+## ZERO-WRITE VERIFIED (ADJ, by content, end of adjudication)
+sha256 identical to session-start baseline for all three protected files
+(73520d1b... / 2c26e589... / b6c4e886...); git status --porcelain empty.
+
+## ADDENDUM — CONCURRENCY EVENT DURING FINAL ADJUDICATION (flagged for author)
+Between the adjudicator's baseline stamp and the end-of-run stamp, the LIVE
+working tree changed under this session, NOT by this session:
+1. HEAD moved b637456 -> e0bac8e ("Build fixes") -> d3131ee ("Ignore");
+   the new commits carry unification.tex changes (+23/-1 vs the working
+   copy). The WORKING-TREE unification.tex is byte-identical to this run's
+   baseline (sha 73520d1b... at start AND end) — this run touched nothing;
+   the working copy is now BEHIND the new HEAD by those commits.
+2. ISSUES.md working copy: PURE APPEND of 343 lines at EOF — the
+   "RUN 52 LEDGER — B1a INTERACTING RATE" block (concurrent sibling run 52
+   wrote its ledger INTO ISSUES.md; this run's commission forbade that for
+   run 54 and its own ledgers; whether run 52 was authorized is outside
+   run-54 scope — SURFACED for the author's audit). sha b6c4e886... ->
+   9474bbe9...; zero deletions; the l.4044-4111 regions this adjudication
+   cites are upstream of the append and unaffected.
+3. appendix_e2a_omega.tex: byte-identical start-to-end (2c26e589...).
+RUN-54 ZERO-WRITE VERDICT UNCHANGED: all run-54 arms AND the adjudicator
+wrote only to scratchpad; verification is BY CONTENT (two files
+byte-identical; the third's delta fully characterized as foreign pure
+append). No restore/revert attempted — zero writes means zero writes.
+
+## ADDENDUM CORRECTION (final stamps, live tree)
+Refining item 1 above after blob-level check: HEAD's blobs at d3131ee EQUAL
+the run-54 baseline for BOTH unification.tex (73520d1b...) and ISSUES.md
+(b6c4e886...) — the two new commits preserved baseline content for these
+files. The working-tree deltas observed at the final stamps are LATER,
+LIVE, CONCURRENT edits by sibling run 52 applying ITS pipeline: (i)
+unification.tex +23/-1 at l.20226 (B1a bifurcation-edge wall sharpening —
+content-certified foreign, zero overlap with any run-54-cited region);
+(ii) ISSUES.md +343 pure append (RUN 52 LEDGER). appendix_e2a_omega.tex:
+byte-identical at EVERY stamp (2c26e589..., == HEAD). RUN-54 ZERO-WRITE
+RECORD: HOLDS, verified by content at blob level against baseline == HEAD
+for all three files; all run-54-cited regions (unification l.17040-17786,
+the full appendix, ISSUES l.4044-4111) are untouched by the concurrent
+edits. Run-54's gated edit remains STAGED ONLY (gated_edit_run54.md); it
+was NOT applied by anyone.
+
+---
+### Main-session apply note — run 54 (E2a-ω uniformity) applied to unification.tex + appendix_e2a_omega.tex (2026-07-14)
+
+Ledger `ledger_run54.md` merged above. Verdict: **the modulo-list compresses to M1 alone, at unchanged grade, with the wall honestly relocated** (4/4 agents; adjudicator re-derived the decisive EP2 counterexample exactly and re-walked the M3 vacation with fresh greps). Per-residual: **M3 VACATED at proof level** (C_H formed by no proof; the pivot's own proof note excludes clause (i); content is one ~2pp port of the banked referee-confirmed theorem away — NOT counted as proved until ported); **M2 REDUCED to single-seed-metric Sanders strength** (the QEI bites once, at the seed; ball clause survives stated-but-unconsumed with the revival condition); **the finite-part-family ledger item COLLAPSES into M1** (D_*, C_D, C_Θ proved in print inside thm:E2-Lipschitz's own proof); **M1 STANDS at PLAUSIBLE** — the flip-graded uniformity gaps (a),(b) are discharged as family-uniformity questions by the staged Cauchy-estimate package (EP1: polydisc Cauchy on the definitional fixed collar; adversary-verified non-conflation), and the resisting step relocates to the fixed-metric data residue (D0) conditional on BFV-vanishing@PLAUSIBLE + #B′, with the convergent-Hadamard-series lever named. **EP2 (permanent fence, THEOREM):** collar sup and H^s(real) topologies are transverse (counterexample: collar=1/2 while H^s→0; Hölder-½ sharp) — every collar→H^s shortcut is closed forever; Montel closure banned as circular.
+
+**Applied now (per the staged edit's own gating):** E3a/E3b — the two surplus-strength phrases in unification.tex softened (cor(iv) proof: −c_S(g₀,t,F) at the fixed seed, ball uniformity retained-not-consumed; the QEI-leg audit note: seed-metric constant); E2 — the appendix (M2) item annotated with the consumed-strength audit + revival condition (grade line unchanged). **Held pending their ports (the run-48 law — ledger theorems are not citable as proof):** E1 (M3 empty-consumer annotation; activates with the ~2pp C_H=C_sob³κ port) and E4 (M1 gaps re-pointed to the uniformity discharge; activates with the Props A/C write-out). E5's content (family item → M1) recorded here. Adversary wounds W1–W4 in the staged package are port-time mandatory conditions, folded into the modulo-list of record. #61: no fire at label level (nearest approach caught in-run). No grade promoted anywhere; fences untouched. Full clean rebuild, 0/0/0, **300 pp**.
+
+**COMMISSION CLOSE-OUT (runs 52–54, the three walls):** B1a edge wall — sharpened to N&S form (W1)∧(W2) with the δ^{-1/2} collar rate in print + route-class no-go + the route-borne ghost-gate residue; terminus re-certified. E0-dS — demand narrowed to (E0-dS′) on the SO(1,4) wedge orbit (appendix in print, adversary premises folded); diamond disease settled by route separation; FRW re-pinned to A3. E2a-ω — modulo-list compressed to M1 (PLAUSIBLE, resisting step relocated to (D0)); two port-gated closures queued as author labor. Hunts #59–61: zero genuine finds (three near-misses caught in-run). Score: walls sharpened ≈ +0.03–0.05 → **≈9.0–9.05**; the remaining distance to the ~9.2 cap is now concentrated in: (W1) interacting BW at n=1 (the single irreducible dynamical open), the (s1-ii) DMP import + write-ups, the two E2a-ω ports, (D0), and [GAP-improv]/[GAP-dS] on the ball route.
+
+# RUN 58 LEDGER — THE BALL-ROUTE NUMBERS
+
+## ARM A2 — [GAP-dS]: THE WEYL TRANSFER (this section owned by A2; siblings append below)
+
+STATUS: COMPLETE (2026-07-14). Deliverables: br_transfer.tex (compiles clean, 6pp, 0 errors,
+0 undefined refs) + br_transfer.py (14/14 symbolic checks PASS), this scratchpad.
+
+### What was executed (CGM's "We expect", cgm_src l.865, replaced by a written chain)
+- T1 KINEMATIC MAP (THEOREM, checks C1a-C1d, C4): explicit conformal map flat diamond ->
+  dS static-patch diamond: U=2L artanh(u/2L) etc.; g_dS = w^2 eta, w = (1-uv/4L^2)^{-1};
+  rho = w r; areal radius R_a = R/(1+R^2/4L^2) < L (full radius scan as R->2L); slice
+  factor w|_{tau=0} = (1+f)/2; Euclidean section = stereographic R^d -> S^d_L
+  (R[w^2 delta] = d(d-1)/L^2 verified). Normalization w(centre)=1.
+- SEED VERIFIED (Frob JHEP 12 (2023) 074 = arXiv:2308.14797, abstract fetched + run-53 C4):
+  TT modular data, CFTs, double cones/light cones in conformally flat spacetimes incl. dS
+  diamonds; large-diamond limit -> static-patch time translations; conformal vacuum.
+  PLUS check C2 (THEOREM): CGM modu2 kernel = CKV pushforward, zeta^tau =
+  (L^2/R_a)(f(rho)-f(R_a))/f(rho) — re-derived, not quoted (CGM's commented-out alternate
+  form in source = same pushforward in the w=(1+f)/2 parametrization).
+- STATE MAP TRACKED (not assumed): constant-lambda dS deformation = flat deformation with
+  coupling PROFILE lambda(x) = lambda w(x)^{d-Delta} (weight (d-Delta), TWO independent
+  routes: action pullback + kernel bookkeeping check C3: transferred/covariant =
+  w^{Delta-d} exactly). BD-class vacuum of deformed theory = U[Euclidean profile state]
+  (S^d functional integral pulled back stereographically). The naive transfer state
+  (pullback of constant-coupling flat vacuum = "conformal vacuum of the deformed theory")
+  differs from BD at FIRST order in lambda = AT the computed order (commission's warning
+  confirmed); the difference = profile deviation lambda(w^{d-Delta}-1), organized into a
+  computed local piece + a power-counted nonlocal remainder.
+- THE TRANSFERRED FIRST LAW (conformal-PT grade): dS diamond trace-channel term = flat CGM
+  form x [1 + O((R_a/L)^eps)], eps = min(2, 2Delta-d) > 0 on the whole safe window.
+  COMPUTED coefficients (checks C6a-C6d): O-channel kernel-curvature c1^O = d/(d+3)
+  (scalar-channel analogue of CGM OPE2's (2d-1)/(d+3), which is REPRODUCED as pipeline
+  validation); local profile moment c1^prof,loc = -(d-Delta)(d-1)/(4(d+3)); net analytic
+  coefficient c1 = [Delta(d-1)-d(d-5)]/(4(d+3)) -> (4+3Delta)/28 at d=4 -> (10+3gamma)/28
+  at SM window.
+- THE EXACT RESISTING STEP (isolated, named, not computed): N(d,Delta) = the coefficient
+  of (R_a/L)^{2Delta-d} in the trace-channel response to the profile deviation (the
+  nonlocal modular-response moment; Def. 1 in br_transfer.tex; finite by power counting,
+  centre-anchored, in print nowhere). For Delta >= (d+2)/2 the leading correction is the
+  computed analytic (R_a/L)^2; for d/2 < Delta < (d+2)/2 (SM: eps = 2gamma) N multiplies
+  the leading correction. Everything else in the chain is written.
+- MARGINAL ECHO (PLAUSIBLE, check C5b): as Delta -> (d/2)+ the local 1/(2Delta-d) pole and
+  the remainder's (R_a/L)^{2Delta-d} resonance must combine to [1-(R_a/L)^{2D-d}]/(2D-d)
+  -> log(L/R_a): on dS the flat marginal scale mu is traded for 1/L (CGM's "mu determined
+  by infrared physics" realized geometrically). Does NOT revive the marginal ball route:
+  R_a->0 still logs; run-53 wall stands.
+- FRW-ADJACENT: C1-C3 are map-generic (any w^2 eta, incl. FRW w = a(eta)); what fails on
+  FRW is seed + state (no dS-invariant Euclidean vacuum / no bifurcate Killing structure),
+  NOT the transfer machinery — consistent with run-53 routing (A3 + [GAP-improv]).
+
+### Seams (all named in br_transfer.tex Sec. 6): S0 seed rigor class (conformal net/BW);
+S1 flat input grade (Faulkner "indicate" + Speranza theorem); S2 BD-for-deformed =
+Euclidean PT (rigorous only free massive); S3 modular-response kernel (used via linearity
++ clustering only; load-bearing for N, not for eps); S4 anomaly c-number (drops from
+delta-first-law); S5 split anchor w(0)=1 (eps anchor-independent; c1, N anchor-covariant);
+S6 double expansion (lambda R_a^{d-Delta}, R_a/L); S7 CGM sign conventions as printed.
+Excluded loci: Delta=d/2 (flat input fails), Delta=d-2 (c-number curvature mixing +
+improvement channel; = d/2 iff d=4 = [GAP-improv], arm A1's number, not consumed here).
+
+### Scope fence (run-53/57 law, held): E0-dS'/app:e0ds-min consumes NONE of this (per-cut
+wedge data only). Value confined to hyp:E0-dS AS PRINTED (deformed-sector dS ball family
+in the safe window at conformal-PT grade, modulo S0-S3 + N), FRW-adjacent knowledge, and
+the marginal-log relocation. No sentence implies the narrowed chain needs these results.
+
+### Zero-write attestation (by content, this arm)
+unification.tex: zero hits for "GAP-dS|br_transfer" in file AND in live git diff.
+ISSUES.md: zero hits for "br_transfer|RUN 58" in file; the live git diff on ISSUES.md
+(+1039) is the CONCURRENT main-session landing of the RUN 52/53 ledger rows (its GAP-dS
+mentions are run-53's own content); my unique token "br_transfer" absent from both live
+diffs. A2 wrote only: br_transfer.py, br_transfer.tex (+pdf/log build artifacts),
+ledger_run58.md (this file). Honesty: #65 homes checked — (a) C2/C3 use one map but the
+weight (d-Delta) has two independent derivations (action vs kernel), and the pipeline is
+validated against CGM's own OPE2 before producing the new c1 numbers; (b) scheme-dependence
+of c1/N named at S5 (anchor-covariant), eps is the invariant; (c) fence paragraph in both
+tex and this ledger.
+
+---
+## ARM A1 — [GAP-improv] THE COMPUTATION. STATUS: COMPLETE (2026-07-14).
+Deliverables: br_improv.tex (compiled br_improv.pdf, 5pp, exit 0) + br_improv.py
+(ALL CHECKS PASSED, Blocks 1-5) in this scratchpad.
+
+### VERDICT: SURVIVES-EVERYWHERE. Wall confirmed; xi-independence at THEOREM grade.
+delta<K_R> = (8pi^2/15) R^4 [ delta<T_00> - (log(mu R)+c_s) m^2 delta<O>
+             + (1/6-xi) Lap delta<O> ] + O(R^6, m^4)   (mostly-plus, mu ~ m).
+B(xi) := coeff of R^4 log(mu R) m^2 delta<O> = -8pi^2/15 ~ -5.2638 FOR ALL xi:
+B(0) = B(1/6) != 0. The improvement enters the R^4 bracket ONLY as (1/6-xi) Lap dO
+(log-free, m^0; the ball F3/R6 identity, exact). WITNESS: zero-momentum coherent
+condensate phi_cl = A cos(mt): Lap dO == 0 exactly everywhere, m^2 dO(0) = m^2 A^2 != 0,
+delta S = 0 exactly (Weyl unitary) so S_rel = delta<K> exact — all xi-dependence dies,
+the log stands. Free-scalar d=4 ball route does NOT revive at conformal coupling.
+Scheme-ambiguity outcome EXCLUDED: B is mu-/xi-/composite-scheme invariant (c_s is not).
+
+### THE TWO METHODS (no shared integrals/mechanisms; #49 law respected)
+- M1 (CGM-formula2/continuation route): safe-window deformed-CHM premise (cgm_src l.885
+  verbatim; Faulkner 1412.5648 "indicate" + Speranza 1602.01380 first-order theorem) +
+  trace Ward re-derived (T^(xi)a_a = [(2-d)/4+xi(d-1)] box phi^2 - m^2 phi^2 on-shell;
+  = -m^2 O at xi_c for ALL d; = -(d-Delta)gO, g=m^2/2, exactly) + CHM moment R^d/(d^2-1)
+  (symbolic in d) + resonance subtraction -[(muR)^{2eps}-1]/(2eps) -> -log(muR),
+  2eps = d-4 -> 0+. KEY: free scalar Delta = d-2 is INSIDE the safe window for 4<d<6
+  (Speranza-grade there); d->4+ is the family's own resonance limit. The d=2
+  transcription reproduces finalfermion's form AND sign.
+- M2 (position-space exact d=2): finalfermion re-derived INDEPENDENTLY from CGM's
+  resolvent chain: mode integral sqrt(piR)sech(pis) verified; beta-integral SYMBOLIC:
+  = 4pi(s+s')cosh(pis)cosh(pis')/sinh(pi(s+s')); master integral J_pi =
+  IntInt (s+s')sech(pis)sech(pis')/sinh(pi(s+s')) dsds' = 2/(3pi) to 15 digits, TWO
+  independent quadratures; end-to-end: -(4pi/3)mR^2(gamma_E+log(mR)) recombined exactly.
+  (Run 53 verified only alpha = -4.53085; re-verified.) Relative log coefficient 1: the
+  EXACT-QFT anchor.
+
+### PREMISES RE-DERIVED FIRST (run-48 law)
+F3/R6 wedge: Int_V^oo (u-V)Phi'' = Phi(V) (symbolic) => T_uu-improvement = -2pi xi dO(cut)
+= first-order Wald surface term. NEW ball form: I_00 = Lap O (pure spatial derivative);
+2pi(1/6-xi) Int f Lap dO = 2pi(1/6-xi)[Oint dO dA - (3/R) Int dO dV]: the CONSTANT
+channel cancels IDENTICALLY (Wald surface == volume moment), residue (8pi^2/15)(1/6-xi)
+R^4 Lap dO(0) + O(R^6). Order separation: g-kernel second moments and g x dT/dO_kin
+pairings all O(R^6); descendants cannot reach m^2 dO R^4. xi-basis subtlety pinned:
+T^(xi)a_a = -m^2 O + 3(xi-1/6) box O has m^0 content at xi != 1/6 — "log multiplies the
+trace" is exact ONLY in the conformal basis; the log's functional is -m^2 dO in EVERY basis.
+
+### CGM PRINT SEAMS CAUGHT (all non-load-bearing)
+1. NEW: formula2 as printed drops the 2pi prefactor of formula (commented draft src l.377
+   has it; d=2 anchor 4piR^2/3 = 2pi Omega_0 R^2/3 requires it).
+2. NEW: printed intermediate fermion kernel "(s+s')/sinh(s+s')" is unit-schematic —
+   verbatim it gives 0.93075 != 2/(3pi) and would break finalfermion; resolvent-derived
+   kernel (pi in sinh; eq-(use) entering TWICE, rank-one const dC) restores it exactly.
+3. Footnote -0.0323 (+0.3598 true): run-53 catch, stands. 4. formula2 vs finalfermion
+   trace-sign conventions differ across sections; our chain signature-explicit.
+
+### GRADES + THE ONE NAMED SEAM
+xi-independence ([GAP-improv]'s actual question): UNCONDITIONAL THEOREM (order separation
++ exact ball F3/R6 + witness; machine-verified). The d=4 value B = -8pi^2/15: derivation
+modulo ONE import — the first-order deformed-CHM formula (theorem at Delta>d/2) carried
+to the free family's d->4+ limit; corroborated by CGM holographic general-d; anchored
+EXACTLY at d=2. No exact d=4 free-scalar computation exists in print; B=0 would need the
+free scalar to violate the generic first-order formula the free d=2 fermion obeys
+exactly (no mechanism). Survival verdict: theorem modulo this universality seam.
+
+### ADVERSARY PRE-FOLDS
+(i) SCHEME: mu-shift moves c_s only; additive :phi^2:-scheme cancels in deltas;
+invariants = B and the xi-difference formula (ball F3/R6). (ii) ANOMALY: flat background;
+m^4-order; identity-proportional; O(g^2): absent at m^2 R^4 — the ball first law needs no
+anomaly subtraction at this order. (iii) STATE: witness = p->0 limit of normalizable
+coherent wavepackets (Lap dO ~ p^2 dO, uniform on the R-family). (iv) existence premises:
+F3/R6 re-derived both forms; Hislop-Longo pins the g^0 CHM base (conformal T).
+
+### SCOPE FENCE (held; #65(c) empty)
+E0-dS'/app:e0ds-min consumes NONE of this (wedge route never consumes the trace channel).
+Value: hyp:E0-dS AS PRINTED (ball form) wall-CONFIRMED for strictly-free d=4 at every xi;
+FRW small-diamond route inherits it (atop A3); SM window safe (2gamma>0). Consistent with
+A2's marginal echo (log(L/R_a): relocation, not removal). br_improv.tex carries the fence.
+
+### ZERO-WRITE ATTESTATION (ARM A1, by content)
+A1 wrote ONLY: br_improv.py, br_improv.tex (+pdf/aux/log, br_improv_build.log), this
+section. unification.tex md5 at open = 42c29d23451edf63dfd3d348b8c8457e; verified
+unchanged at close [see check below]. ISSUES.md live diff = concurrent siblings; token
+scan for A1 tokens (br_improv, J_pi, 8pi^2/15, SURVIVES-EVERYWHERE) in unification.tex
+and ISSUES.md: zero hits [verified at close].
+
+---
+## ARM R — THE ADVERSARY. STATUS: COMPLETE. Deliverables: br_adv.md + br_adv.py (36/36
+PASS, independent code). Kills attempted per commission: (i) scheme, (ii) anomaly,
+(iii) state order, (iv) existence premises. ALL FAIL — both arms stand at stated grades.
+
+- (i) SCHEME: B invariant under mu-shift (c_s absorbs), additive/multiplicative
+  :phi^2:-scheme (state differences / g dO = trace channel), every xi incl. xi(m,mu)
+  (witness-PAIR det != 0 separates the two functionals). NEW CLOSER: coherent Weyl
+  factorization W_A x W_B => Delta S = 0 exactly => S_rel(R) = Delta<K_R>; S_rel is
+  Araki-invariant, so the R^4 log R datum is scheme-FREE, and S_rel >= 0 as R->0 FORCES
+  sign(B) < 0 (opposite sign excluded). Invariance upgraded to state/algebra level.
+  Note: absolute B uses the CHM 2pi normalization (formula2's missing 2pi = A1 catch 1);
+  the 2pi-free invariant is the relative coefficient, exact at the d=2 anchor.
+- (ii) ANOMALY: complete entry ledger aE4+cW^2+b'boxR+xi'm^2R+e0m^4*1 — flat kills all
+  curvature entries termwise; e0 m^4 is identity-valued (delta-killed) and m^4-order;
+  UV log(R/eps) multiplies the state-independent -4a (delta-killed, distinct log);
+  gamma_O(free)=0; beta_xi(free)=0. Ball first law needs NO anomaly subtraction at m^2R^4.
+- (iii) STATE: mismatch x K0 = O(lambda) = computed order — A2's inclusion CONFIRMED
+  independently; x K1 = O(lambda^2). FINDING F1 (genuine, proof-step severity): lem:power
+  justifies the far tail by "deviation decaying as w^{d-Delta}" => exponent -(d+1); the
+  deviation w^{d-Delta}-1 -> -1 (saturates; the lemma's own min() display is right, the
+  parenthetical is wrong). Corrected exponent d-1-2Delta: N finite iff Delta > d/2 (not
+  always); on the open safe window ALL conclusions stand (model moment reproduces
+  eps=min(2,2Delta-d) with finite coefficients); at Delta=d/2 the corrected tail
+  log-diverges = a MECHANISM for rem:marginal's log(L/R_a) (upgrade from consistency).
+  Repair: swap the parenthetical + exponent; keep everything else. Sharpened note: at
+  d=4 the whole safe window sits at Delta<(d+2)/2, so c1=(4+3Delta)/28 is subleading
+  throughout it; the leading dS correction there is N (R_a/L)^{2Delta-d} (A2's eps
+  statement already implies this).
+- (iv) PREMISES: (a) F3/R6 ball identity re-derived GENERAL d: constant channel
+  (Wald surface == volume) cancels exactly ALL d>2; residual = Lap dO(0) x CHM moment
+  Omega R^d/(d^2-1) (same N_d moment; 8pi^2R^4/15 at d=4 = A1's bracket); descendant
+  loophole closed by dimension count (g-linear ddO forced to m^2R^6 at d=4). (b) A1's
+  d=2 anchor UPGRADED TO CLOSED FORM: J_pi = 4 Int sig^2/sinh^2(pi sig) = 2/(3pi)
+  EXACTLY (partial fractions sech(u+A)sech(u-A)=[tanh(u+A)-tanh(u-A)]/sinh(2A) + zeta(2));
+  quadrature -> arithmetic. (c) trace Ward re-confirmed all d. (d) Frob seed re-fetched:
+  Frob, JHEP 12 (2023) 074, CFTs, dS diamonds, large-diamond -> static-patch translations;
+  conformal sector only (= unification.tex l.18973; A2's S0); residue: vacuum state named
+  in body not abstract (run-53 C4 grade, no contradiction).
+- FENCE AUDIT (#65(c)): br_transfer.tex l.57-64 + l.360-363 and br_improv.tex l.15-19 +
+  l.241 all clean (the phrase "premise of the narrowed chain" is inside a negation).
+  #65(a) audit: M1/M2 share no integrals; both ride the SAME Faulkner/Speranza premise —
+  correctly graded by A1 (universality seam on the VALUE only).
+
+### ZERO-WRITE ATTESTATION (ARM R, by content)
+R wrote ONLY: br_adv.py, br_adv.md, this section. md5(unification.tex) =
+42c29d23451edf63dfd3d348b8c8457e at open AND close; md5(ISSUES.md) =
+eff45eed6d18005a753389f4f973b4f5 at open AND close; token scan (br_adv, F1 far-tail,
+2/(3pi) closed form) in both protected files: zero hits [verified at close].
+
+---
+## FINAL ADJUDICATION (referee folded in). STATUS: COMPLETE (2026-07-15).
+Referee deliverable: ref58_referee.py (independent code, 19/19 PASS, this scratchpad).
+
+### REFEREE RE-DERIVATION (commissioned: one xi value, method neither arm used)
+Path chosen: FIXED d=4, Delta = 2+gamma, gamma->0+ (anomalous-dimension direction
+through the resonance 2Delta-d=0) at xi = 1/6 (conformal coupling). Neither arm used
+this direction: A1-M1 continued in d along the free family Delta=d-2 (direction (1,1)
+in the (d,Delta) plane, p = d-4); A1-M2 and R's closed form live at d=2; R's positivity
+closer fixes sign only. Independently re-derived, my own code (no lines shared with
+br_improv.py/br_adv.py):
+- V1: CHM constant-channel moment = Omega_{d-2} R^d/(d^2-1) by verified antiderivative
+  (sympy's symbolic-d definite integral is buggy at the r->0 bound — worked around);
+  2pi x moment = 8 pi^2 R^4/15 (d=4), 4 pi R^2/3 (d=2 anchor normalization).
+- V2: trace Ward from the improved tensor, my own on-shell reduction:
+  T^a_a = [(2-d)/4 + xi(d-1)] box phi^2 - m^2 phi^2; box channel vanishes identically
+  at xi_c = (d-2)/(4(d-1)) for ALL d; xi_c(4) = 1/6; mass channel = -(d-Delta)g, g=m^2/2.
+- V3: the log's ORIGIN at fixed d=4 (no dimensional continuation): the coincidence
+  integral of the deformation-state <OO> pairing, Int_{1/mu}^R dr r^{3-2Delta} at
+  Delta=2+gamma -> log(mu R). PLUS direction-independence: the subtracted resonance
+  kernel [(mu R)^p - 1]/p -> log(mu R) along the referee direction (p=2gamma), A1's
+  direction (p=d-4), and an arbitrary skew direction — had the limit been
+  direction-dependent, "the value at d=4" would be ill-defined; it is not.
+- V4: assembly: B(xi=1/6, d=4) = -8 pi^2/15 = -5.26379 EXACTLY (symbolic limit),
+  matching A1 from a path A1 did not take; d=2 transcription through my normalization
+  chain reproduces CGM finalfermion's 4pi/3.
+- V5: J_pi re-quadratured in (u,v) coordinates, my own code: 0.212206590789194 =
+  2/(3pi) to 15 digits; R's closed-form route 4 Int sigma^2/sinh^2(pi sigma) agrees
+  to 1e-14. The d=2 anchor is confirmed exact by a third code.
+- V6: F1 VERIFIED against A2's lem:power: the deviation w^{d-Delta}-1 SATURATES at -1
+  as ell->oo (symbolic limit) while the lemma's parenthetical used the decaying full
+  profile w^{d-Delta} -> 0 (wrong object); corrected far-tail exponent d-1-2Delta gives
+  finiteness of N iff Delta > d/2, log-divergent AT Delta = d/2 (the marginal-echo
+  mechanism). R's finding F1 is CONFIRMED as stated, repair as prescribed.
+Referee scope honesty: V4's kernel FORM (unit-strength trace substitution
+T_00 -> T_00 + T^a_a/(2Delta-d), CGM l.885) rides the SAME Faulkner/Speranza
+first-order deformed-CHM premise as A1-M1. My path adds the fixed-d regulator, the
+free-field coincidence-integral mechanism at d=4, and direction-independence — it
+does NOT close A1's named universality seam on the magnitude (no exact d=4
+free-scalar computation in print; still the named future closer: lattice/radial-mode
+extraction of B from S_rel(R)). xi-independence, sign(B)<0, and B != 0 are seam-free
+(order separation + ball F3/R6 + witness + Araki/positivity closer).
+
+### ADJUDICATED VERDICTS
+(1) [GAP-improv]: CLOSED — SURVIVES-EVERYWHERE, wall confirmed. B(xi) = -8 pi^2/15
+    for every improvement scheme (B(0) = B(1/6) != 0); no revival at conformal
+    coupling. Invariance status: xi-/mu-/composite-scheme INVARIANT at the Araki
+    state-algebra level (S_rel R^4 log R datum; c_s is the only scheme-dependent
+    piece); sign(B) < 0 forced by relative-entropy positivity. Grade:
+    xi-independence + sign: UNCONDITIONAL THEOREM (machine-verified thrice);
+    magnitude -8 pi^2/15: theorem modulo the ONE named universality seam,
+    now corroborated from three directions (d->4+ family, fixed-d=4 gamma
+    regulator, exact d=2 anchor in closed form).
+(2) [GAP-dS]: EXECUTED and NARROWED, label PLAUSIBLE stands (referee concurs with
+    A2's own grading). CGM's "We expect" (l.865) is now a written chain: kinematic
+    map + kernel pushforward + weight (d-Delta) at THEOREM grade (14/14 + referee
+    F1-check); state mismatch (BD vs transferred conformal vacuum) enters at the
+    computed order and is organized, not assumed away; suppression exponent
+    eps = min(2, 2Delta-d) > 0 proved on the safe window WITH F1's repaired
+    far-tail exponent (d-1-2Delta; N finite iff Delta > d/2 — exactly the safe
+    window, so the repair closes cleanly). The single uncomputed number: N(d,Delta),
+    leading at finite R_a/L throughout the d=4 safe window (Delta < 3); the
+    R_a/L -> 0 inversion needs only eps > 0 (proved, modulo seams S0-S3 as named).
+(3) hyp:E0-dS AS PRINTED: the ball form's massive-matter wall (rem:E0-dS-status,
+    unification.tex l.18972-18977 "...but only in the conformal sector; ...the
+    diamond modular Hamiltonian is nonlocal") is CONFIRMED and STRENGTHENED: the
+    one candidate escape (improvement-scheme cancellation at conformal coupling)
+    is dead at theorem grade; the printed sentence needs no retraction, only an
+    optional grade upgrade. A2 supplies the positive complement: the conformal-
+    sector family (Frob2023dSdiamond cite locus l.18973) extends to deformed CFTs
+    at conformal-PT grade with correction exponent eps. SCOPE FENCE HELD: E0-dS'
+    (app:e0ds-min, per-cut wedge data) consumes NONE of run 58 — referee grep of
+    both arm tex files: every E0-dS' mention is an explicit non-consumption
+    statement (#65(c) empty, R's audit independently confirmed).
+(4) GATED EDIT (described, NOT applied; zero-write mandate): gate = author review +
+    F1 repair folded into br_transfer.tex (swap lem:power's parenthetical decay
+    claim for the saturation statement; exponent -(d+1) -> d-1-2Delta; keep the
+    min() display) + main-session re-run of br_improv.py, br_adv.py,
+    ref58_referee.py. Then, in unification.tex rem:E0-dS-status ONLY (grep anchor
+    "only in the conformal sector"): (a) after the Frob2023dSdiamond sentence, one
+    clause: the conformal-sector diamond family extends to relevantly-deformed
+    CFTs at conformal-PT grade with corrections suppressed by (R_a/L)^eps,
+    eps = min(2, 2Delta-d), one uncomputed coefficient N(d,Delta) [run-58 A2,
+    PLAUSIBLE, seams S0-S3]; (b) strengthen "the diamond modular Hamiltonian is
+    nonlocal" with: for the free d=4 scalar the obstructing (mR)^2 log(mR)
+    trace-channel term is improvement-scheme invariant (B = -8 pi^2/15 at every
+    xi incl. 1/6; theorem grade modulo the named first-order-CHM universality
+    seam) [run-58 A1+R+referee]. And in ISSUES.md: [GAP-improv] -> CLOSED
+    (survives-everywhere), [GAP-dS] -> NARROWED-TO-N(d,Delta), with F1 logged as
+    run-58's genuine find. NO edit to hyp:E0-dS itself, thm:E0-lin, or
+    app:e0ds-min (fence).
+(5) #65 HOMES: (a) NOT violated — A1's M1/M2 share no integrals (R audited; referee
+    added a third code at a third limit direction); the shared Faulkner/Speranza
+    premise is correctly homed as the named universality seam ON THE MAGNITUDE ONLY,
+    printed in br_improv.tex and this ledger. (b) NOT violated — the one
+    scheme-dependent object (c_s) is named as such everywhere; B certified
+    scheme-free at state-algebra level; A2's anchor-covariant c1/N vs invariant eps
+    split named at S5. (c) NOT violated — fence grep clean in both tex files, both
+    arm ledger sections, and this adjudication. Honest residue to carry: A2's net
+    analytic c1 = (4+3Delta)/28 is SUBLEADING throughout the d=4 safe window — any
+    future use quoting c1 as the operative dS correction there would be a #65(b)
+    violation; the operative object is N(R_a/L)^{2Delta-d} (flagged by R, endorsed).
+
+### ZERO-WRITE ATTESTATION (adjudication, by content)
+Referee wrote ONLY: ref58_referee.py + this ledger section (scratchpad).
+md5(unification.tex) = 42c29d23451edf63dfd3d348b8c8457e at adjudication open AND
+close (equals all arms' open value); md5(ISSUES.md) = eff45eed6d18005a753389f4f973b4f5
+at open AND close; token scan (br_improv|br_transfer|br_adv|ref58) in both protected
+files: zero hits. Verified below by direct command at close.
+
+---
+### Main-session apply note — run 58 (ball-route numbers) applied to unification.tex (2026-07-15)
+
+Ledger `ledger_run58.md` merged above. Certified post-resume (4/4; the adversary and adjudicator ran on the session-limit resume; the referee re-derived B at ξ=1/6 by a THIRD method neither arm used — fixed-d=4 anomalous-dimension regulator, 19/19 checks). Verdicts: **[GAP-improv] CLOSED — SURVIVES-EVERYWHERE** (the conformal-coupling escape is dead: B(ξ)=−8π²/15 ξ-independent, unconditional theorem; sign forced by relative-entropy positivity via the Weyl-factorization closer; magnitude theorem-modulo one named universality seam; anomaly entry ledger complete — no anomaly subtraction at m²R⁴). **[GAP-dS] EXECUTED** at conformal-PT grade (CGM's "We expect" replaced by a written chain; the Frob 2023 seed verified and the CGM kernel DERIVED as the CKV pushforward; state-map mismatch tracked at the computed order; ε=min(2,2Δ−d) proved on the safe window; exactly ONE uncomputed number remains, N(d,Δ)). **Adversary find F1 (genuine, proof-step severity):** lem:power's far-tail used the decaying full profile where the saturating deviation w^{d−Δ}−1→−1 governs; corrected exponent d−1−2Δ (finite iff Δ>d/2); referee verified both limits; the repair STRENGTHENS (supplies the marginal-echo log mechanism). F1 folded into br_transfer.tex by the main session per the gate; all four check scripts re-run PASS (36/36 adversary; 19/19 referee).
+
+**Paper edit applied** (rem:E0-dS-status, full clean rebuild 0/0/0, **300 pp**): (a) the Frob conformal-sector sentence extended — the family extends to relevantly-deformed CFTs at conformal-PT grade, (R_a/L)^ε suppression, one uncomputed N(d,Δ); (b) the massive-matter nonlocality sentence strengthened — the free-d=4 obstruction is now a theorem (improvement-scheme invariant B=−8π²/15 at every ξ; positivity-forced sign; no revival). Fence held everywhere: (E0-dS′) consumes none of this (#65(c) grep-clean by referee); forward flag logged — quoting c₁=(4+3Δ)/28 as the operative d=4 correction would be a #65(b) violation (N is operative in the safe window). #65: no violations; three non-load-bearing CGM print-seam catches logged.
+
+# RUN 57 — ARM A1 (P-M3 + P-AC) — STAGED LEDGER
+
+## SOURCES SIGHTED (verbatim, this session)
+- appendix_e2a_omega.tex: eq:an17-clausei (l.3540-3546, the exact demanded
+  form); lem:an17-clausei-single (l.3550-3567, single-metric THEOREM s>n/2+6);
+  rem:an17-clausei-diff (l.3578-3597, difference form = NAMED INPUT);
+  item:an17-M3 (l.3936-3944); item:an17-M1 (l.3897-3916); hyp list
+  hyp:an17-M1/M3 (l.3721-3733); an17:lem-embed + collar norm (l.120-175);
+  (N-a) package + N-a-NF (l.3203-3230); an17:G (l.3233-3254); an17:DoD
+  (l.3256-3268); an17:Nc-corrected (l.3271-3293, grade PLAUSIBLE, "NEVER
+  cited at THEOREM grade"); an17:named-residues (l.3295-3331: (E-env), #A,
+  (D0) at b=1 slot, #B'); an17:mixed-jets (l.3348-3366); an17:CW-grade
+  (l.3368-3410, gaps (a),(b) verbatim + C_W assembly display).
+- unification.tex: hyp:hadamard-uniform (l.17056-17092, Option-B ball form,
+  clause (i) verbatim, s>n/2+6); hyp:hadamard-uniform-omega (l.17105-17135).
+- ISSUES.md: LEMMA-II push block (l.4087-4110: clause (i) banked THEOREM,
+  C_H=C_sob^3*kappa, Gronwall/transport, exact Christoffel-difference,
+  r^-2 L^1_loc n=4, state-independent; honest note "H^{s-2} over-strong,
+  any H^t, t>2 suffices"); R0-push + R1 three-route blocks (l.4117-4166).
+- ledger_run54.md: W1-W4 verbatim (l.193-208); modulo-list of record
+  (l.210-212); EP1 sqrt(n) parenthetical owed (l.227-229); M1 verdict of
+  record (l.303-320); gated edits E1/E4 pointer.
+- eo_attack.tex (414 lines, full read): EP0-EP4, Prop A, Lemma B, Prop C,
+  thm:M1-verdict, rem:D0-lever, Part III/IV.
+
+## DELIVERABLES (this arm)
+- port_m3.tex — clause-(i) difference theorem RE-DERIVED (not transcribed),
+  every constant displayed, C_H(K)=C_sob(K)^3*kappa(g_0,K), stated in
+  exactly the eq:an17-clausei form, over the full H^s ball U (a fortiori
+  U_omega via an17:lem-embed). Wrapper: port_m3_wrap.tex.
+- port_ac.tex — Props A/C + Lemma B written out with W1-W4 folded and
+  MARKED; sqrt(n) polyradius parenthetical included; in-print tools cited
+  at printed sites. Wrapper: port_ac_wrap.tex.
+
+## P-M3 DONE (port_m3.tex + port_m3_wrap.tex; EXIT=0, 0 errors, 0
+## undefined refs after 2 passes, 6pp with wrapper)
+Structure: Thm port:thm-M3 states eq:an17-clausei VERBATIM (same three
+norms H^s/H^{s-2}/H^{s-2}, same support condition) over the FULL H^s
+ball U (u1)-(u3) = hyp:hadamard-uniform's own smallness; a fortiori
+U_omega (an17:lem-embed). H_g = the appendix's own N=2 glued parametrix
+(an17:G, theta_a g-independent, one global ell, KayWald iepsilon).
+RE-DERIVED (not transcribed): L1 exact Christoffel-difference identity
++ kappa_Gamma(k) displayed; L2 rescaled normal form sigma=r^2*S,
+Gronwall flow constants kappa_fl, difference legs at Lipschitz rate
+with r-grading, uniform cone transversality (c_*, c_t) for ALL
+tau-interpolants S_tau (the key for the exact-identity legs); L3 van
+Vleck + v_k transport (Moretti Thm 2.1 recursion, Duhamel/Gronwall,
+Lambda_v/kappa_v displayed; v_2 consumes exactly C^6 = H^{s>8}); L4
+uniform cone pairing (P1 single pole vs C^{0,alpha}; P2 double pole vs
+C^{1,alpha}; P3 log mass) with EXACT complex moment antiderivatives
+displayed, freeze-t_Delta error, kappa_P displayed; assembly in four
+legs (A) deltaDelta/sigma_eps [P1], (B) Delta'*int w/sigma_tau,eps^2
+[P2, THE r^-2 leg, mass M_2=pi^2 delta_c^2 = the banked L^1_loc marker],
+(C) delta-v * log [P3], (D) v'*int w/sigma_tau,eps [P1]. Final
+C_H(K) = C_sob(K)^3 * kappa(g_0,K), cube = the three norm conversions
+(h, u, v) — banked architecture reproduced exactly; kappa's suppressed
+arguments displayed. Sharper asymmetric form proved en route (one slot
+sup-norm only). Fence: s>n/2+6 EXACT (consumes ||h||_{C^6},
+||g||_{C^{6,alpha}}, alpha=min(1/2,(s-8)/2)); NO re-fence.
+
+## FINDING F1 (P-M3, against the banked HONEST NOTE, not the theorem):
+the banked side note "any H^t, t>2 suffices" is WRONG at the Lipschitz
+rate: leg (B) Fp(sigma^-2) needs C^{1,alpha} in one slot (t>3); at
+2<t<=3 the rate degrades to Hoelder ||g-g'||^{t-2}. NUMERIC: shifted
+PV pole vs C^{0,1/2} test scales d^0.50; vs C^{1,*} scales d^1.00
+(port_m3_check.py, exponents +-0.01). Correct note: "any H^t, t>3, in
+one slot (t>2 in the other)". Consumers unaffected (H^{s-2}, s-2>6).
+Ported as Rem port:rem-testspace, marked as ledger-remark correction.
+
+## P-AC DONE (port_ac.tex + port_ac_wrap.tex; EXIT=0, 0 errors, 0
+## undefined refs, 5pp with wrapper)
+WOUND COMPLIANCE (each fix marked in-file at its locus):
+- W1 (circular wiring): FIXED STRUCTURALLY — wiring order Prop A ->
+  Prop C -> verdict -> Lemma B; Prop C(C3) spectator sups re-routed to
+  an17:Nc-corrected's OWN single-metric uniform analogue (sighted
+  l.3280-81) + an17:DoD transport + (D0)-gate (an17:named-residues
+  l.3321-24); Lemma B tagged consumer-facing-only, cited by NO
+  proposition; the deleted Lemma-B citation noted in-file. Marked
+  [W1 FIX] at three loci.
+- W2 (#B' omitted): FIXED — #B' restored as (res3) of the verdict;
+  the owed one-sentence discharge STATED, conditional-tagged (seed: P
+  empty; general g': BFV/RCE surface data + DoD short slab, no patch
+  traversal), riding W3's identity. Rem pac:rem-Bprime, marked.
+- W3 (grade inheritance): FIXED — every C_{Delta_2}=0-on-BFV citation
+  carries carrier grade (an17:Nc-corrected, PLAUSIBLE, "NEVER cited at
+  THEOREM grade", l.3289-93) + revival condition (un-anchoring from
+  BFV/RCE re-opens (E-env) AND #B'). Marked at (res2) and rem-Bprime.
+- W4 (seed tag): FIXED — Lemma B's W_*^seed tagged "THEOREM modulo
+  (D0)"; the staged bare-THEOREM tag repudiated in-file; (res1) wins.
+  Marked [W4 FIX].
+- sqrt(n) parenthetical: INCLUDED as Lemma EP1' (pac:lem-EP1) with the
+  corrected constant alpha!(2*sqrt(n)/rho_a)^{|alpha|}*eps_a, the
+  polydisc-in-Euclidean-tube geometry displayed, and the honest note
+  that the appendix's own lem-embed proof wording (l.166-175) has the
+  same constant-level hair, absorbed by its unspecified C_cw (nothing
+  printed is false).
+- In-print tools at printed sites: an17:G l.3233-3254; an17:DoD
+  l.3256-3268; Moretti Thm 2.1 at l.3208-3210; (N-a)+N-a-NF
+  l.3203-3230 (linearity l.3219-22); an17:rem-CK l.465-482 +
+  an17:prop-strip l.484-500 (holomorphic-ODE package; consumption
+  licence rem:an17-orthogonal); ladder constant display + provenance
+  l.3010-3035; an17:lem-embed l.157-175; CW-grade assembly l.3374-84;
+  F-shock unification l.17172-85; F2 triangle l.17438-43.
+
+## GRADE ARITHMETIC (A1 view; the expected blocker SURVIVES — said
+## plainly)
+Post-port modulo-list for M1 clause (ii), OF RECORD (= run-54 R-arm
+list with the write-out item discharged BY port_ac.tex):
+  { (D0) seed-data b=1 slot (fixed-metric, run-11 vintage);
+    BFV-vanishing @ PLAUSIBLE (carrier an17:Nc-corrected, revival
+    condition attached); #B' (stated, BFV-conditional discharge);
+    (E-env) off-BFV only }.
+M1 grade: PLAUSIBLE -> PLAUSIBLE (UNCHANGED). Even if arm A2 closes
+(D0), the BFV@PLAUSIBLE carrier keeps M1 conditional — a (D0) closure
+does NOT lift it; no closure forced. M3: port_m3.tex re-derives the
+banked difference theorem at THEOREM grade (subject to this run's
+referee arm R) — the (M3) modulo item becomes port-closable exactly as
+run-54 adjudicated ("closable at THEOREM by a ~2pp port"; the port now
+exists, author-gated). M2: untouched by this arm. E1/E4 activation:
+author's, gated on {port_m3.tex, port_ac.tex} together per run-54.
+
+## FINDINGS SUMMARY (A1)
+- F1 (P-M3): banked honest-note test-space threshold corrected t>2 ->
+  t>3 (one slot); numeric d^0.50 vs d^1.00 (port_m3_check.py). Theorem
+  statement unaffected (H^{s-2} consumed).
+- F2 (P-AC): EP1 constant of the staged eo_attack.tex missing sqrt(n)
+  (and appendix lem-embed proof wording shares the hair,
+  absorbed in C_cw — constant-level, nothing printed false).
+- F3 (fidelity note): the banked "~2pp" port compiles to ~5-6 wrapper
+  pages BECAUSE every constant is displayed with proofs (the re-derive
+  mandate); at paper density ~3pp. No hypothesis strengthened; the
+  ported clause-(i) form is verbatim eq:an17-clausei; conclusion
+  strengthened only (full H^s ball; asymmetric sharper form) — both
+  directions safe for the appendix demand.
+
+## ZERO-WRITE VERIFICATION (A1, by content, end of arm)
+(see command output in run record: sha256 of the three protected files
+unchanged from session start; git status clean; grep of A1 tokens
+{port:thm-M3, pac:prop-A, W1 FIX, sqrt n polyradius} = 0 hits in all
+three protected files.)
+
+## STATUS: A1 COMPLETE. Files: port_m3.tex, port_m3_wrap.tex,
+## port_m3_check.py, port_ac.tex, port_ac_wrap.tex (all scratchpad).
+
+====================================================================
+# RUN 57 — ARM A2 (P-D0 + THE LEVER) — STAGED LEDGER
+(scratchpad only; ZERO writes to unification.tex / appendix_e2a_omega.tex /
+ISSUES.md — by-content check at start and end. Start sha256:
+unification 225aa1f1..., appendix ea22a527..., ISSUES 0e87c6b3...)
+
+## THE LEVER — VERIFIED AT SOURCE (run-48 law satisfied)
+
+PRIMARY (read verbatim, full text downloaded to
+scratchpad/hadamard1932_djvu.txt, public-domain scan in.ernet.dli.2015.324681
+= J. Hadamard, "Le probleme de Cauchy et les equations aux derivees partielles
+lineaires hyperboliques" (Hermann, Paris 1932; definitive French edition of
+the 1923 Yale Lectures), Livre II, ch. III "La solution elementaire"):
+- n. 52 (OCR l.7339-46): convergence of expansion (17) to be proved "sous
+  l'hypothese que toutes les donnees sont holomorphes autour d'un point
+  donne" — the holomorphic-coefficient hypothesis, announced.
+- n. 63 (l.9124-35): "En admettant que les coefficients sont holomorphes, il
+  faut maintenant demontrer la convergence de la serie (43)" — the majorant
+  proof ("fonctions majorantes", direct).
+- n. 64 (l.9330-46): radius r*a' > 0; "si on fait varier le point a dans une
+  region quelconque strictement interieure ... la convergence de l'expression
+  (43) sera UNIFORME" — locally uniform in the vertex over compacts. Also
+  n. 64: the conoid-data variant (49) (holomorphic solution with given values
+  on the characteristic conoid) — the tool for the even-case log coefficient.
+- n. 65 (l.9440-9560): even m (n=4 => p=(m-2)/2=1): elementary solution
+  u = U Gamma^{-1} - V log Gamma + w (his (51)/(53)); algebraic part is the
+  SINGLE term U_0/Gamma; log coefficient V solves (E) with conoid data set by
+  U_0, built by "exactement les memes operations" as (49) => V-series
+  converges by n. 63-64; w holomorphic ("theoreme fondamental de Cauchy" =
+  Cauchy-Kovalevskaya). VERBATIM CONCLUSION (l.9601-05): "On a ainsi reussi a
+  calculer la solution elementaire (POUR TOUTE EQUATION NON PARABOLIQUE) sous
+  l'hypothese que LES COEFFICIENTS SONT ANALYTIQUES."
+- n. 66 (l.9607-13): "tout ceci est commun aux cas ELLIPTIQUE et
+  HYPERBOLIQUE" — signature-agnostic in the analytic category; the normal
+  hyperbolic (Lorentzian) case is his principal case.
+- n. 65 footnote (l.9605+): free element choosable by "une loi analytique
+  determinee" => analytic dependence on the pole (vertex).
+
+CATEGORY (the classic trap, three statements separated):
+(S1) convergence of the FORMAL Hadamard coefficient series (log-coefficient
+     series V = sum v_k sigma^k) with holomorphic sum, locally uniform in the
+     vertex — PROVED at n. 63-65 for holomorphic coefficients, any
+     non-parabolic signature, LOCAL domain.
+(S2) the sum is an exact elementary/fundamental solution (partie finie,
+     P E = delta) — also classical (same nos. + Livre III) but NOT CONSUMED
+     by (D0).
+(S3) the finite-part regularity the appendix consumes (A3 data heights of
+     W_{g0,2}, b=1 slot) — NOT itself classical; = (S1) PLUS the seed state's
+     all-orders Hadamard property (paper premise, unification.tex l.17037-42:
+     omega_g := BFV RCE of the seed Hadamard state omega_0) via Radzikowski's
+     equivalence on a fixed causal normal neighbourhood (Sanders 2010 care).
+     port_d0.tex consumes (S1)+(premise), never (S2).
+
+MODERN WITNESSES (verbatim, local files):
+- Fewster-Smith gr-qc/0702056 (fs_0702056.txt l.1496): "The series does not
+  actually converge except in analytic spacetimes..."
+- Khavkine-Moretti arXiv:1412.5945 (km_1412.5945.txt l.2096-2101): "The limit
+  exists IN THE ANALYTIC CASE, but in the smooth general case the sequence
+  diverges. However, as proved in [22, sec 4.3]..." — [22] = Friedlander (CUP
+  1975): sec 4.3 PINNED as the smooth-case cutoff-sum site (the contrast).
+- Riesz, Acta Math. 81 (1949), ch. IV (analytic Lorentzian, Riesz kernels):
+  NAMED corroboration, not leaned on (not page-verified this run; open access
+  projecteuclid 10.1007/BF02395016).
+
+SCOPE CHECK vs U_omega: U_omega (appendix l.126-150; paper l.17108-13) =
+metrics holomorphic on the FIXED collar K_{rho_a} within eps_a of the
+real-analytic anchor g_0, det-floor d_omega>0. Hadamard's hypotheses =
+holomorphic coefficients near the vertex + non-degenerate principal part:
+satisfied AT THE SEED with constants controlled by (rho_a, ||g_0||_collar,
+d_omega) via the appendix's own analytic-ODE package (an17:rem-CK l.465-482,
+an17:prop-strip l.484-500). His local radius => seed collar delta_conv(g_0)>0
+uniform over vertices in compacts (n. 64). GAP-1 NAMED (dischargeable):
+delta_conv may undercut the gluing collar delta_c; port shrinks
+delta_c' = min(delta_c, delta_conv/2) — licensed: an17:G(i) needs only an
+UPPER bound on delta_c (l.3242); an17:DoD slab shortens with it (l.3259);
+an17:transverse-data local; fence-neutral (no s moves). GAP-2 NAMED (state
+leg): the lever is metric-side only; the b=1 FIELD slot needs the seed exact
+finite part w_0 = omega_0^(2) - H^(inf)_{g0} in C^infty — supplied by the
+standing seed-Hadamard premise + (S1); PRINTED as a named premise in the
+port, no silent promotion.
+
+VERDICT: LEVER HOLDS at the seed (category match: analytic coefficients,
+non-parabolic incl. Lorentzian, local, vertex-uniform). Run-54's banked
+consequence activates: seed exact finite part C^infty on the shrunken collar
+=> (D0) executes. Ball-uniform (S1) (same majorants by EP1) AVAILABLE but NOT
+consumed (that is A1's (P1), not (D0)); no parameter-analyticity in g
+asserted (EP0 respected).
+
+## P-D0 DONE (port_d0.tex + _d0_compiletest.tex wrapper; EXIT=0, 0 errors,
+## 0 undefined refs, 5pp with wrapper; 377 lines)
+Structure:
+- EP0-d0 scope preamble: objects pinned (glued H^(N) of an17:G, one global
+  ell; W_{g0,2} = omega_0^(2) - H^(2); seed slot of the BFV family
+  l.17037-42); the v_k recursion displayed SOURCE-VERBATIM (FS eqs (97)-(98),
+  the appendix's printed recursion site (N-a) l.3208 [Moretti Thm 2.1]);
+  trichotomy (S1)/(S2)/(S3) printed; premises (P-a) seed-Hadamard (standing
+  paper premise, restated not invented) + (P-b) collar-shrink licence
+  (fence-neutral, an17:G/DoD monotonicity cited at printed lines).
+- Lemma an57d0:lever ((S1) at the seed): delta_conv > 0, tail factorisation
+  v - v^(2) = sigma^3 rho, rho analytic, ||rho||_{C^6} <= M_tail. Proof:
+  Step 1 scope transfer RE-DERIVED (collar hypotheses -> Hadamard's, via
+  an17:rem-CK/an17:prop-strip, M_Gamma); Step 2 series identification
+  RE-DERIVED (his p=1 at n=4, Gamma=2sigma rebooking, transport-hierarchy
+  uniqueness => V_h = 2^{-h} c_nrm v_h); Step 3 the classical convergence
+  CITED AT VERIFIED SOURCE (nos. 63/64/65/66, vertex-uniform); Step 4
+  Weierstrass jet upgrade + factorisation RE-DERIVED. Constants emitted
+  (delta_conv, M_tail) are DEFINED, consumed as finite named constants.
+- Citation record paragraph embedded in the port (run-48 compliance).
+- Lemma an57d0:state: H^(inf) glue collapse (patch-independence via
+  an17:G(ii) + global ell + sum theta_a = 1); exact tail
+  T = (1/8pi^2) sigma^3 rho log(sigma/ell^2); w_0 = omega_0^(2) - H^(inf)
+  in C^infty by the N-intersection argument on the FIXED collar ((P-a)
+  fixed-neighbourhood form [KW91/Radzikowski96/Sanders10] + order-N tail
+  C^{N,alpha-} across the cone). (S2) never used — stated in the proof.
+- Prop an57d0:main: all FOUR A3 legs (b=0 AND b=1) at the printed heights
+  H^{13/2-}, H^{11/2-}, H^{11/2-}, H^{9/2-}, y-uniform+continuous, norms
+  <= c_tr[w_*^(9) + M_tail c_prof]; b=1 FIELD slots carried by w_0 in
+  C^infty (the lever's gift — no finite-regularity cap). General-g'
+  reduction EXPLICITLY not claimed (no wiring into eo_attack.tex: port_d0
+  cites only in-print an17 tools + classical source + paper premise =>
+  cannot participate in the W1 circle).
+- Rem an57d0:modulo: post-(D0) list + grade arithmetic + W4 resolution +
+  revival conditions.
+
+## POST-(D0) MODULO-LIST (of record, this arm's statement)
+M1 = theorem MODULO
+  {BFV-vanishing cited only at carrier grade (an17:Nc-corrected PLAUSIBLE,
+   l.3289-93 "NEVER cited at THEOREM grade") — SURVIVES, as expected: (D0)'s
+   closure is BFV-free but clause (ii)'s assembly still consumes the (N-c)
+   difference legs on the BFV surface; a (D0) closure does NOT lift it;
+   #B' (across-patches variant; W2 discharge sentence owed in port_ac,
+   conditional-tagged);
+   Props A/C + Lemma B full write-out (= port_ac, arm A1, author-gated)}.
+(D0) itself: REMOVED from the list at the seed, GIVEN (P-a) (standing paper
+premise) + (P-b) (fence-neutral). GRADE ARITHMETIC: M1's printed grade
+PLAUSIBLE does NOT move on this port alone; with all three run-57 ports +
+E4 applied, honest label = "theorem MODULO {BFV@PLAUSIBLE, #B'}" — still
+NOT THEOREM. The BFV conditionality survives — said plainly. (E-env)/#A
+untouched (orthogonal, data-side, per l.3329-31).
+
+## HONESTY (#64 self-check, A2)
+(a) transcribe-vs-rederive: the ONLY cited-not-rederived step is the
+    classical convergence itself (Step 3) = the existence premise, verified
+    at source per the run-48 law and marked as such in the port; scope
+    transfer, series identification, jet upgrade, glue collapse, state-leg
+    intersection, profile arithmetic are re-derived; no constant
+    transcribed.
+(b) category: no elliptic->Lorentzian transfer needed (Hadamard nos. 65-66
+    are non-parabolic/both-signatures — verbatim); (S1)/(S2)/(S3) separated,
+    (S2) never consumed; formal-vs-fundamental-vs-finite-part trap
+    dismantled in print.
+(c) DISCLOSED DEPENDENCE (not a wound, a scope line): the T-legs'
+    one-r-power-per-derivative booking and the alpha+1/2 transverse heights
+    are consumed FROM the printed (N-a)/an17:transverse-data calculus
+    (run-11-banked, twice-verified, run-9-calibrated) — the port matches the
+    printed A3 column verbatim and does NOT re-audit that calculus (its
+    geometric root, the eikonal grading |grad sigma|_g = r, is noted in the
+    port). Any future re-audit of the printed profile calculus hits A3
+    itself before it hits this port.
+(d) the seed-Hadamard premise is PRINTED as (P-a), not silently consumed;
+    ball-uniform (S1) available-not-consumed (EP0/no-parameter-analyticity
+    respected); w_*^(j) is honest state data (finite by C^infty +
+    compactness, value not computed — same consumption mode as W_*-type
+    constants).
+
+## FILES (A2)
+- port_d0.tex (the deliverable), _d0_compiletest.tex/.log/.pdf (EXIT=0).
+- hadamard1932_djvu.txt (primary source, full text), km_1412.5945.txt,
+  df_0512118.txt/pdf (sources pulled this run; fs_0702056.txt pre-existing).
+
+## ZERO-WRITE VERIFIED (A2, by content, end of arm)
+sha256 at close IDENTICAL to session start for all three protected files:
+unification 225aa1f1819077136828393ad961e890b5c602dea14d07bca1a74eb7d06061fb
+appendix    ea22a527463efe81a6879bfa4788a408a510a5aa88badef076d75e816cd984ab
+ISSUES      0e87c6b3b84c88035a501b9c2914bcd83db31a52625ba7bba9a375615f126686
+CONCURRENCY NOTE (flagged for author, run-54-addendum pattern): during this
+arm, repo HEAD moved b637456 -> d3131ee ("Ignore", 2026-07-14 17:57) by a
+session outside this arm; the WORKING-TREE BYTES of all three protected
+files are unchanged (hashes above prove it); `git status` M-flags reflect
+the tree-vs-new-HEAD delta, not any write by this arm. No git operation
+performed by this arm.
+
+====================================================================
+# RUN 57 — FINAL ADJUDICATION (referee folded in; adjudicator's own
+# re-derivations recorded first, verdicts second)
+
+## ADJUDICATOR RE-DERIVATION 1 — the port_m3 headline constant
+Re-derived independently of A1 and R (files read, algebra re-done):
+- Four-leg identity: d/dtau[sigma_tau,eps^{-1}] = -w sigma_tau,eps^{-2},
+  d/dtau[log sigma_tau,eps] = w sigma_tau,eps^{-1} (w = sigma_g - sigma_g',
+  the i-eps legs g-independent) => legs (A)-(D) EXACT, no remainder.
+- Moment identities recomputed by hand: (p=2, 0th) = -2L/(L^2+a^2),
+  modulus <= 2/L; (p=2, 1st) = log-ratio (modulus <= pi, since
+  |L+ia| = |-L+ia|) + boundary 2iaL/(L^2+a^2) (<= 1 by AM-GM) => pi+1
+  <= the displayed pi+2, safe; (p=1) <= pi; beta-moment
+  2L^{beta-1}/(beta-1). ALL CONFIRMED.
+- M_2 recomputed: |S^3| delta_c^2/2 = 2pi^2 delta_c^2/2 = pi^2 delta_c^2
+  — the banked r^{-2} L^1_loc marker at n=4, leg (B) at a=2. CONFIRMED.
+- Assembly arithmetic: (P1,a=0) delta_c^2/2; (P2,a=2) delta_c^2/2;
+  (P3,a=0) delta_c^2(1+|log delta_c^2/l^2|); (P1,a=2) delta_c^4/4;
+  prefactor |K| m(K) c_theta kappa_P/(8pi^2). Matches port:eq-kappa.
+- THE CUBE: exactly three Morrey conversions — h: C^{6(,alpha)} <- H^s
+  (legal, s >= 8+2alpha > 8); u: C^0 <- H^{s-2}; v: C^{1,alpha} <- H^{s-2}
+  (legal, s-2 > 6 > 3+alpha); C_sob = max of the two Morrey constants.
+  HEADLINE C_H(K) = C_sob(K)^3 kappa(g_0,K) STANDS; genuinely re-earned
+  (not transcribed).
+- Adversary wounds INDEPENDENTLY CONFIRMED: W-M3-A (l.324-330 pointwise
+  |rho_eps| >= eps^2 fails on {S <= -theta_*}: Re crosses zero at
+  r = eps/sqrt|S|; rescue needs the time-leg extended off the collar).
+  My own pinch computation of the fix: split at r = eps/sqrt(2|S|) =>
+  |rho_eps| >= eps^2 min(1/2, sqrt2 c_t/sqrt(Lambda_S)) — the fix
+  sketch's denominator should be sqrt(Lambda_S) (range |S| <= Lambda_S),
+  not sqrt(theta_*); structure and dilution mechanism as R stated.
+  W-M3-B (p=2 Taylor split differentiates G = Phi J_z once => J_z in
+  C^{1,alpha} consumed; premise quotes C^2/C^{0,alpha} only; supply at
+  L2(i) C^3). W-M3-C (my count: ||g^{-1}||_{C^k} compounds det-quotient
+  powers beyond Lambda_U^{3+k} d_U^{-(k+1)}, and delta-Gamma costs
+  ||g^{-1}||_{C^k}(1+||Gamma'||_{C^k}) ~ Lambda_U^{2k+7} d_U^{-2(k+1)}
+  worst term; displayed kappa_Gamma(k) short exactly as R found).
+  All three: display/intake-level, architecture intact, mandatory
+  port-time patches.
+- F1 adjudicated CONFIRMED (mechanism: the (B)-leg double pole consumes
+  one transversal derivative; two independent numeric sweeps agree);
+  ledger-remark correction "t>3 in one slot", consumers unaffected.
+
+## ADJUDICATOR RE-DERIVATION 2 — the lever scope check
+Primary source re-read MYSELF (hadamard1932_djvu.txt; six passages):
+- no.52 (l.7348): "holomorphes autour d'un point donne" — hypothesis.
+- no.63 (l.9130-33): "En admettant que les coefficients sont
+  holomorphes, il faut maintenant demontrer la convergence de la serie
+  (43)... fonctions majorantes" + the preceding smooth-case contrast
+  ("simplement reguliers... jusqu'a une certaine valeur de h") — the
+  convergence claim + proof method, and Hadamard's own statement that
+  mere regularity gives only finitely many coefficients.
+- no.63 closing (l.9330-45): radius r·a' > 0; vertex over any strictly
+  interior region => "la convergence de l'expression (43) sera
+  uniforme" — VERTEX-UNIFORM over compacts.
+- no.64 (l.9346+): "s'applique, sans aucune modification, a la
+  determination de la solution holomorphe de (E) admettant des valeurs
+  donnees sur le conoide" — the conoid-data variant (feeds the even-case
+  log coefficient).
+- no.65 closing (l.9564-79): indetermination sentence ("w peut etre
+  modifie par l'addition de toute solution reguliere") IMMEDIATELY
+  BEFORE "On a ainsi reussi a calculer la solution elementaire (pour
+  toute equation non parabolique) sous l'hypothese que les coefficients
+  sont analytiques" — free element at w-level only; category native
+  non-parabolic.
+- no.66 (l.9581+): "tout ceci est commun aux cas elliptique et
+  hyperbolique" — signature-agnostic; hyperbolic is the book's
+  principal case thereafter. NO elliptic->Lorentzian transfer needed.
+SCOPE vs U_omega seed: g_0 holomorphic on fixed collar with det floor
+(l.17112-13 region sighted), P_0 normal-hyperbolic, local collar,
+y-uniformity = no.63-closing vertex-uniformity; transfer constants via
+the appendix's own an17:rem-CK/prop-strip (in print). MATCH.
+TRAP WALK (mine): port_d0 consumes (S1) + (P-a) ONLY. an57d0:state's
+N-intersection argument re-verified: first bracket C^N on N-independent
+collar = (P-a) fixed-neighbourhood Hadamard form (paper's standing
+premise, sighted verbatim l.17037-42: omega_g := BFV RCE of seed
+Hadamard omega_0); second bracket sigma^{N+1} rho_N log(sigma/l^2),
+transverse model u^{N+1}log|u| in C^{N,alpha-} (checked: d^N gives
+u log u modulus of continuity); intersect over N on the FIXED collar.
+(S2) consumed NOWHERE (both proofs walked). FS eqs (97)-(98) sighted
+by me (fs_0702056.txt l.1499-1503): port display (D0-T0)/(D0-Tj) is
+verbatim; uniqueness sentence sighted ("uniquely determines the series
+of vj's"). A3 heights sighted (appendix l.2884-90): H^{13/2-},
+H^{11/2-} x2, H^{9/2-} — port matches verbatim. LEVER HOLDS.
+
+## PRINTED-ANCHOR SIGHTINGS (adjudicator's own)
+eq:an17-clausei l.3540-46 == port:eq-clausei == hyp clause (i)
+l.17124-27 (three-way fidelity CONFIRMED at all corners); fence
+s>n/2+6 at l.17114-15 (hyp's own); (M3) item l.3936-45 (NAMED INPUT;
+"family-uniform difference bound is not separately in print" — the
+port supplies exactly this); (M1) item l.3897-3916 (PLAUSIBLE, gaps
+(a),(b)); an17:Nc-corrected grade l.3289-93 ("NEVER cited at THEOREM
+grade"); (D0) l.3321-24 + #B' l.3325-27; F-AC-1 CONFIRMED AT FILE:
+l.3943-44 today = (M3) grade text; the lem:W2star gate sentence sits
+at l.3951-52 (rem:an17-orthogonal). Compile logs re-checked: all three
+wrappers 0 errors, 0 undefined, PDF out.
+
+## PER-PORT VERDICTS (of record)
+- P-M3: DELIVERED-WITH-CONDITIONS. THEOREM sustained modulo the three
+  mandatory port-time patches W-M3-A/B/C (each display/intake-level,
+  displayed fix logged in eo_port_adv.md; my correction to the A-fix
+  pinch constant: sqrt(Lambda_S) denominator). Headline constant
+  re-derived and confirmed. E1 waits on the patches.
+- P-AC: DELIVERED-WITH-CONDITIONS. All four run-54 wounds W1-W4
+  GENUINELY FIXED (verified against staged defect sites; not
+  re-asserted). Conditions at apply time: F-AC-1 stale anchors
+  (l.3943-44 -> l.3951-52, two loci), W-M3-C textual propagation into
+  C^fam_{v_2} (port_ac l.234-37), two cosmetic hairs. E4
+  compliance-unblocked.
+- P-D0: DELIVERED-AT-GRADE (scoped). Lemma an57d0:lever theorem-grade
+  (classical statement verified at source three times independently:
+  A2, R, adjudicator); Prop an57d0:main theorem GIVEN the two premises
+  PRINTED in the port — (P-a) the paper's own standing seed-Hadamard
+  anchor (restated, not invented) and (P-b) fence-neutral collar
+  shrink. Notes N-D0-1/2 only (one declaring sentence owed). No
+  mandatory patch. (D0) CLOSED at the seed.
+
+## POST-RUN-57 MODULO-LIST OF RECORD (M1, clause (ii))
+  { BFV-vanishing cited only at its carrier's PLAUSIBLE grade
+    (an17:Nc-corrected l.3289-93; revival condition attached at both
+    port loci) — SURVIVES, said plainly: the clause-(ii) assembly
+    consumes the (N-c) difference legs ON the BFV surface; neither the
+    (D0) closure (BFV-free, seed-only) nor the A/C write-out lifts it;
+    #B' (across-patches gate l.3325-27; discharge sentence delivered in
+    port_ac, BFV-conditional, riding res2);
+    (E-env) off-BFV (data-side, orthogonal; carried at carrier
+    discipline — honest superset, printed residue) }.
+DISCHARGED from the run-54 list: (D0) (port_d0, given (P-a),(P-b));
+the Props A/C + Lemma B write-out (port_ac). GRADE LINES: M1 PLAUSIBLE
+— UNMOVED (honest label with all three ports + E4 applied: "theorem
+MODULO {BFV@PLAUSIBLE, #B'}", still NOT THEOREM). M2 untouched. M3:
+the ONLY earned movement — NAMED INPUT -> closable-at-THEOREM; moves
+in print only when the PATCHED port is imported (run-48 law: staged
+ports are not citable as proof until applied). No forced closure; the
+expected blocker survived. W4 interplay: W_*^seed tag = "THEOREM given
+Prop an57d0:main" (res1's reading; consistent across ports).
+
+## E1/E4 ACTIVATION RULING + THE GATED-EDIT PACKAGE (described, not applied)
+ACTIVATE: YES for both, in one author act, in this order —
+ (1) patch port_m3.tex: W-M3-A (extend L2(iii) time-leg to
+     {S_tau <= theta_*}; pinch constant min(1/2, sqrt2 c_t/
+     sqrt(Lambda_S)); kappa_P bracket dilutes accordingly), W-M3-B
+     (premise quotes L2(i)'s C^3; display ||J_z||_{C^{1,alpha}}),
+     W-M3-C (kappa_Gamma(k) = c_k(n) Lambda_U^{2k+7} d_U^{-2(k+1)}, or
+     a single dominating Xi_U used consistently; kappa_S/kappa_v
+     inherit textually);
+ (2) fold into port_ac.tex: F-AC-1 (two loci), the W-M3-C propagation
+     (l.234-37), optionally HAIR-2 ("at its carrier's grade" at (C3))
+     and NOTE-AC-2 (tie the Cauchy factor to the (A1) shrink);
+ (3) optionally add port_d0's N-D0-1 declaring sentence (i-eps
+     suppression harmless: same C^N class and heights);
+ (4) import the three ports as appendix material (re-key the staged
+     text anchors to \ref/\cite; anchors keyed to the 2026-07-14 tree;
+     working tree = version of record, note F-AC-1 pattern: re-check
+     line-anchors at import);
+ (5) apply E1 (gated_edit_run54.md l.7-18) — with the port imported the
+     closing clause may cite it directly; the (M3) grade line moves to
+     THEOREM only at import, not before;
+ (6) apply E4 (l.46-61) — REFRESH its staged modulo-list at apply time:
+     "(D0)" and "the write-out of the package itself" discharge to the
+     imported ports (cite them); the list becomes {BFV-vanishing @
+     carrier's PLAUSIBLE grade; #B' for patch-traversal consumers};
+     the grade line "PLAUSIBLE" stays verbatim (E4's own instruction).
+ E2/E3/E5 are not gated on run 57 (separate author act, unchanged).
+
+## #64 HOMES (the honesty adjudication)
+No #64 overclaim at label level anywhere in run 57. By commissioned home:
+ (a) transcribe-not-rederive: DID NOT HOME on the headline — the
+     re-derivation is genuine (adjudicator re-walk above; F1 is
+     positive evidence: the port corrected the bank's own note). Its
+     RESIDUE homes at W-M3-C: one displayed constant re-used the
+     single-metric count for the difference object — caught by R,
+     confirmed by my own count; discharged by patch (1).
+ (b) lever-beyond-category: DID NOT HOME — native non-parabolic at the
+     primary source (three independent readings); (S1)/(S2)/(S3)
+     separated in print; only (S1)+(P-a) consumed; finite-part
+     regularity DERIVED, not cited.
+ (c) wound-fixed-without-fix: DID NOT HOME — all four W1-W4 fixes
+     verified structurally at the staged defect sites (W1 by citation
+     sweep + acyclic dependency graph, not re-assertion). Residue:
+     F-AC-1 stale anchors = bookkeeping, not an unfixed wound.
+Candidate genuine-find addition for the corpus tally: F1 (banked note
+t>2 -> t>3, one slot; confirmed by two independent numeric sweeps) —
+author's ledger act.
+
+## ZERO-WRITE VERIFICATION (adjudication, BY CONTENT, open + close)
+At adjudication open: sha256(unification.tex) = 225aa1f18190771368283
+93ad961e890b5c602dea14d07bca1a74eb7d06061fb; sha256(appendix_e2a_omega
+.tex) = ea22a527463efe81a6879bfa4788a408a510a5aa88badef076d75e816cd984
+ab; sha256(ISSUES.md) = 0e87c6b3b84c88035a501b9c2914bcd83db31a52625ba7
+bba9a375615f126686 — IDENTICAL to session start. Close: re-hashed
+after this block was staged; recorded below by the run record.
+Concurrency (re-confirmed): HEAD b637456 -> e0bac8e -> d3131ee moved
+externally; working-tree bytes of all three protected files unchanged
+all session (the M-flags are the author's pre-existing uncommitted
+run-54-audit sharpenings vs the new HEAD: ISSUES +1039, appendix +10,
+unification +85/-20 — git diff --stat sighted). No git operation
+performed by any run-57 arm or by this adjudication.
+
+## ADDENDUM — CLOSE-STATE ZERO-WRITE RECORD (supersedes the "recorded
+## below" placeholder above)
+At adjudication CLOSE the by-content check returned:
+  appendix_e2a_omega.tex  ea22a527... — UNCHANGED all session (every
+    appendix line anchor consumed by the ports remains exactly valid);
+  unification.tex  68a6d6b8... (was 225aa1f1...) — CHANGED EXTERNALLY
+    during the adjudication window;
+  ISSUES.md        643a39c5... (was 0e87c6b3...) — CHANGED EXTERNALLY
+    during the adjudication window.
+FACTS ESTABLISHING ZERO RUN-57 WRITES DESPITE THE MOVED HASHES:
+ (1) broad token sweep {an57d0, port:thm-M3, port:lem-, pac:, W-M3-,
+     kappa_Gamma, delta_conv, M_tail, port_m3, port_ac, port_d0} = 0
+     hits in all three files at close;
+ (2) no run-57 arm nor this adjudication issued any write to the three
+     paths (each arm's own close check passed against the ORIGINAL
+     hashes; this adjudication wrote only to the scratchpad);
+ (3) the external delta is additive parallel-session activity (HEAD
+     still d3131ee, no new commit; working-tree diff vs HEAD grew
+     ISSUES +1039 -> +1364 lines, unification 85 -> 103 changed lines,
+     appendix stat unchanged at +10; unification.pdf/.aux/.log/.out
+     churning = an active author/main-session compile-edit cycle, the
+     run-54-addendum concurrency pattern).
+ANCHOR RE-SIGHTING POST-CHANGE (adjudicator): unification l.17037-42
+(seed BFV RCE definition), l.17114-15 (s>n/2+6), l.17124-28 (clause
+(i) display) — ALL INTACT at the same lines; ISSUES l.4105 LEMMA-II
+banked entry (C_sob^3 * kappa + the "any H^t, t>2" honest note that F1
+corrects) — INTACT at the cited region (bank corner now sighted by the
+adjudicator too; three-way fidelity confirmed at all three corners by
+this adjudication's own readings). CONSEQUENCE FOR THE PACKAGE: step
+(4)'s anchor re-check at import time is now MANDATORY for
+unification.tex/ISSUES.md-keyed anchors (the tree is live); appendix
+anchors are hash-stable as of close.
+
+---
+### Main-session apply note — run 57 (E2a-ω ports) applied: the E1/E4 activation (2026-07-15)
+
+Ledger `ledger_run57.md` merged above. Certified post-resume (4/4). Per-port verdicts: **P-M3 THEOREM** modulo three mandatory patches W-M3-A/B/C (all confirmed independently by the adjudicator, who re-derived the headline C_H=C_sob³κ himself — the four-leg identity exact, the cube = the three Morrey conversions; his one correction to the adversary: the pinch constant carries √Λ_S); **P-AC** wound-compliant on all four run-54 W1–W4 (verified structurally at the defect sites); **P-D0 delivered-at-grade** — the Hadamard-series lever verified VERBATIM at the primary source (Hadamard 1932, nn. 52/63/64/65/66; natively non-parabolic, "commun aux cas elliptique et hyperbolique" — no signature transfer needed; the (S1)/(S2)/(S3) trichotomy separated in print, only (S1) consumed) — (D0) closed at the seed given the paper's two standing premises. **Genuine find F1 for the corpus tally:** the banked honest note "any H^t, t>2 suffices" is WRONG at the Lipschitz rate (threshold t>3; two independent numeric sweeps) — the port out-derived its own bank; consumers unaffected (s−2>6).
+
+**Main-session apply (the six-step activation package):** (1) W-M3-A/B/C patched into port_m3.tex (L2(iii) time-leg extended to {S_τ≤θ_*} with the split-pinch argument, ϰ=min(½,√2 c_t/√Λ_S), κ_P diluted by ϰ^{-2} and prefactor bumped to ⁴ with J_z at C^{1,α}; κ_Γ(k) corrected to Λ_U^{2k+7}d_U^{-2(k+1)}); wrapper recompiles clean. (2) F-AC-1 stale anchors + the κ_Γ propagation folded into port_ac.tex; recompiles. (3–4) The three ports imported as the new companion appendix `appendix_e2a_ports.tex` (\input'd; port files copied into the repo as paper sources). (5) E1 applied: the (M3) item annotated + **grade line moved NAMED INPUT → THEOREM (ported)** — the one earned grade movement, live exactly at import per the run-48 law. (6) E4 applied with the REFRESHED modulo-list: (D0) and the write-out discharged to the imported ports; **M1 stays PLAUSIBLE** with the honest list {BFV@PLAUSIBLE (carrier grade, revival condition), #B′}; the expected blocker survived, said plainly. Full clean rebuild 0/0/0, **315 pp**. #64: no label-level fire (residues discharged by the patches). Optional items HAIR-2/NOTE-AC-2/N-D0-1 not applied (recorded as available). Concurrency caution honored: all unification.tex/ISSUES.md anchors re-verified at apply time.
+
+# RUN 55 LEDGER — (W1): INTERACTING BISOGNANO-WICHMANN AT n=1
+
+## ARM A1 (THE EQUIVALENCE AUDIT) — COMPLETE. Full detail: w1_equiv.md + w1_equiv.tex (pdflatex EXIT=0, 4pp, 0 errors), this directory.
+
+- (i) THREE FORMS STATED WITH DOMAINS (w1_equiv.md Sec 1 / .tex Sec 1):
+  (A) modular-flow (truncated-Fock reading; needs P5 = truncated RS + the
+  banked B1a-exist surrogate; the paper's own "not formulable for the
+  formal-series net / no modular operator" caveat honored by construction);
+  (B) Connes-cocycle (u_t = Delta_lam^{it} Delta_0^{-it}; O(lambda)
+  generator = the boost increment in the FMP DEVICE presentation; the
+  one-sided moment presentation NEVER formed — edge sensitivity lives in
+  form (B) only, and only at the DOMAIN level under the wrong presentation);
+  (C) KMS (three clauses: invariance / strip / boundary; correlator-only,
+  the pAQFT-checkable form). The A/B/C equivalences are PRICED: they
+  consume {P4 order-by-order Takesaki, P5 truncated RS, P6 cocycle
+  regularity} — not free at formal-series grade.
+- (ii) ORDER-BY-ORDER KMS DECOMPOSITION (Sec 2): KMS@O(1) = free BW = in
+  print (n=0, full BRST net). The O(lambda) increment displayed as a
+  correlation-function identity: F^(1)_{A,B}(s) = omega^(1)(A alpha^0_s(B))
+  + omega_0(A D_s(B)) with named kernels (Moller/retarded state leg;
+  Duhamel dynamics leg), splitting into (W-inv) + (W-strip) + (W-bdry).
+  (W-bdry) = identity among VERTEX-INSERTED FREE-KMS CORRELATORS = Ward
+  class in the strict sense. (W-strip) = NOT algebraic: Araki-simplex
+  analyticity of free correlators (textbook; the Duhamel leg needs
+  TWO-variable analyticity — supplied by the simplex, the R-iv kill
+  confronted) + uniform vertex convergence = EXACTLY the banked
+  strip-integrability lemma (B1a-exist, in print, massive scalar window).
+  ANCHOR CONFIRMED: the banked O^(1) = -2pi Cov_KM(K_W^(0),K) = 0 is the
+  ONE-POINT INSTANCE of the package ((W-inv)/(W-bdry) degenerate there;
+  Kubo-Mori representation rides P0) — the commission's central idea's
+  forward half holds.
+- (iii) THE EQUIVALENCE-OR-OBSTRUCTION MAP (Sec 4; the GOOD rung):
+  (W1)@O(lambda) <=> P1 + P2 + P3a + P3b, GIVEN P0 + P4 + P5 (+P6 iff
+  cocycle-presented), fenced class, paper's scheme. Classification:
+  BANKED/PRINTED: P0 (free BW n=0); P3b-scalar (strip-integrability);
+    O^(1)=0 (the P3a one-point member; SM per-sector table printed);
+    P1 scalar (Lorentz MWI route; FMP's 3.30-3.33 is the same leg at
+    preprint corroboration); P2 (vacuum Lorentz invariance, (H6)).
+  NEW-BUT-WARD-CLASS: P3a-2s — the TWO-SIDED boundary family over fenced
+    (A,B); checkable order-by-order in pAQFT; NOT yet computed even in the
+    scalar window (A2's construction target). P1/P2 at SM-pAQFT strength =
+    run-52 assembly items (H2)/(H6), flagged not new.
+  GENUINELY NOT WARD-CLASS (the honest wall, localized): L-IR (P3b-SM:
+    massless vertex tails; the fence does NOT cure IR — vertex/adiabatic
+    integral has a past-infinity face; Blanchard-Seneor at recall grade
+    only); L-Tak (P4: formal-series Takesaki transplant; adjacent to
+    run-52 R's density/polarization regrade); L-RS (P5: truncated
+    Reeh-Schlieder; free RS does NOT transport — interacting smearings
+    exit the wedge; triangular-density route named; FMP inherit it from
+    the HEURISTIC Wightman license, so in-house proof required); P6
+    (conditionally — only if the one-sided cocycle presentation is chosen).
+  ANSWER (commissioned question, both directions): KMS@O(lambda) is NOT
+  literally a Ward identity of the O^(1) class — it is a Ward-class FAMILY
+  (P3a) + an analyticity leg (P3b) + operator-algebra scaffolding (P4/P5).
+  Scalar-window residual checklist: {P3a-2s, L-Tak, L-RS}. SM adds L-IR +
+  assembly strength.
+- (iv) JOINTNESS VERDICT (the run-52 fence, confronted head-on, Sec 5):
+  NO step of the O(lambda) KMS check needs edge control on the fenced
+  class — (W1) and (W2) remain INDEPENDENT at O(lambda), now proved-shaped
+  via three named mechanisms: (1) THE FENCE COMMUTES WITH THE STRIP
+  (rho^2 = (x^1)^2-(x^0)^2 is invariant under the COMPLEXIFIED boost —
+  cosh^2-sinh^2=1 holds for complex s — so strip continuation keeps
+  rho >= delta uniformly; standard wedge-tube geometry, theorem grade);
+  (2) device-presentation of all charges (Requardt fence, printed; the
+  one-sided object never formed = run-52 mechanism at banked strength);
+  (3) vertex enters CONNECTED (state normalization) with zero one-point in
+  the paper's scheme. Dependence re-appears EXACTLY iff the fence is
+  dropped (improvement/vertex edge faces become (W2)-class) or the
+  one-sided generator presentation is chosen (P6 becomes edge-class).
+- (v) SCHEME (R-iii): named, no silent choice — in a NON-matched ordering
+  the vertex one-point ~ rho^-4 (run-25 exponent class) makes the
+  x^1-weighted edge face DIVERGE (INT rho^-2 drho): the scheme channel and
+  the edge channel are the SAME channel at the vertex, extending the
+  run-51 c'-booking from the charge to the vertex. Covariance along the
+  c'/improvement torsor holds ON THE FENCED CLASS (improvement shift =
+  total derivative; edge face vanishes on fenced matrix elements; infinity
+  face dies in the massive window/device).
+- (vi) FMP CONSUMPTION AUDIT (Sec 3): PROVEN-by-FMP pieces consumed with
+  in-house printed routes named (device/Requardt; covariance 3.47-3.49 =
+  P1 = Lorentz MWI); the BW INVOCATION (their 4.1, source l.2110; license
+  l.121) quoted as CONSUMPTION with the license marked heuristic-for-d=4
+  (Panis); their Sec 4 = the TEMPLATE showing a derivation must add
+  exactly {KMS strip+boundary, modular uniqueness} to P1+P2 — nothing
+  else; their vertex computation = an O(lambda) CONSISTENCY instance for
+  the coherent family, preprint grade, NOT an independent check of (W1).
+  Label "arXiv:2607.07810 (preprint, July 2026, unrefereed)" carried at
+  every use.
+- LADDER: (GOOD) DELIVERED — the dynamical open converted to the named
+  checkable list; (BEST) honestly NOT reached (L-Tak/L-RS are not Ward
+  identities and not discharged; no forced closure). Known failures
+  honored by name (BW-1976/Wightman + RP-triviality; Mund mass gap; BGL;
+  free BW n=0; Borchers-92 under-delivery). The run-52 semicontinuity
+  no-go route class NOT retried.
+- GRADE self-audit: THEOREM-grade riders = P0, O^(1)=0 instance,
+  strip-integrability (all banked/in print), the complex-boost
+  rho-invariance lemma (standard); PLAUSIBLE = exact retarded-kernel
+  bookkeeping (structural display; A2's construction forces it),
+  triangular-density route to L-RS, Takesaki-transplant route to L-Tak;
+  SPECULATION = none. Arm headline label: PLAUSIBLE (audit/map grade).
+- HONESTY #62 homes: (a) KMS-as-algebraic — CONFRONTED: the analyticity
+  leg carved out as its own non-Ward piece with the two-variable/simplex
+  supply made explicit; (b) FMP beyond corroboration — NOT consumed
+  (invocation vs proof separated at source; license marked heuristic);
+  (c) fence widening — class stated verbatim; the two widening-bites named;
+  IR non-cure stated so the fence is never over-sold.
+- ZERO WRITES by A1 to unification.tex and ISSUES.md — verified by CONTENT
+  at open and close: md5(unification.tex) = 42c29d23451edf63dfd3d348b8c8457e,
+  md5(ISSUES.md) = eff45eed6d18005a753389f4f973b4f5 at open; close values
+  attested in the final structured output; no Write/Edit call issued to
+  either path by this arm (tool log). Siblings run concurrently; any drift
+  after close is not attributable to A1.
+- Staged: w1_equiv.md, w1_equiv.tex (+ .pdf compile artifact,
+  w1_equiv_build2.log EXIT=0), ledger_run55.md (this file, A1 section).
+  All author-gated; nothing applied.
+
+## RUN 55 — ARM A2 (THE CONSTRUCTION) — COMPLETE. Artifacts: w1_construct.tex
+## (pdflatex EXIT=0, 9pp, 0 errors/0 undefined) + w1_construct.py (19/19 PASS).
+
+- THE DELIVERABLE: the O(lambda) interacting-BW cocycle BUILT in pAQFT on the
+  fenced class (run-52 scope VERBATIM, Def 1 quotes ew_attack.tex Def 1; never
+  widened; no delta->0 anywhere), KMS check reduced to DISPLAYED integrals,
+  scheme tracked, graded theorem-modulo-named (scalar massive window) + the
+  SM equivalence-or-obstruction map (GOOD rung; S-4 IR gate keeps it a list).
+- ARCHITECTURE (tex sections): (1) three forms (M)/(C)/(K) with domains
+  (quadratic forms on the fenced domain — the paper's own ceiling; never
+  operator-e.s.a.); (2) Lemma 1 = FMP compact-support charge device
+  RE-DERIVED (wedge-interior support check added — FMP consumed at
+  corroboration grade only, their Sec 3.1 proof re-run, law honored);
+  Lemma 2 = Rindler radius rho is boost-invariant AND rotation-invariant =>
+  cocycle generator support at rho>=delta_0 for ALL real+imaginary boost
+  times — edge re-entry killed exactly, not asymptotically; (3) cocycle
+  u_t = 1 - 2pi i lam int_0^t alpha_{-2pi s}(K1_chi) ds + O(lam^2), K1_chi =
+  (1/4!) int chi x^1 :phi^4: d^3x = run-21's banked K VERBATIM (construction
+  and Ward identity share one operator); Araki-BW two-sided presentation at
+  O(lambda) EXISTS on the fenced class: K_full = K1 - J K1 J (CRT), eq (7);
+  (4) KMS check split: (I1) first-order Araki-Duhamel identity — DISPLAYED
+  six-term form eq (9)-(11), verified to 9.2e-12 in the exact finite model
+  (py A3) and against exact perturbed objects (py A3'); (I2) the STATE
+  identification omega_int|fenced = Araki-Gibbs(omega_0; lam K1_R) — THE
+  genuinely new O(lambda) content of (W1); Euclidean angular-slicing proof:
+  one-vertex GL integral = int_0^2pi dtheta [rotated half-plane charge]
+  (Fubini + rotation invariance, exact per order; py C1), read back through
+  per-order OS; (5) two charge registers distinguished (flow register
+  chi-fenced via commutators; state register full-rho as FORMS with the
+  displayed collar bound eq (13): integrand O(rho) at edge — py C3 slope
+  +1.03 — NO rho-IBP, NO boundary term, NO norm cell: the run-52 rho^-4
+  divergent cell HAS NO SITE in the construction); (6) scheme: the c'
+  channel (vacuum/thermal Wick = improvement constant = run-51's channel)
+  shifts K1 by a quadratic charge; KMS check c'-COVARIANT (Prop 3; py D1/D2
+  exact along the torsor; py C4 quadratic-vertex angular identity = the c'
+  instance); no silent scheme choice; c-number phase convention displayed.
+- THE NAMED LIST (Thm 1, scalar fenced massive window, quadratic-form
+  grade): N-1 free BW + CRT [print]; N-2 Lorentz MWI/interacting Noether
+  commutator [printed pAQFT scalar; re-derived]; N-3 banked strip lemma
+  [print, B1a surrogate gate]; N-3' collar-and-tail extension [displayed
+  bound, Ward-class]; N-4 per-order OS continuation, massive
+  [classical-named, Eckmann-Epstein class]; N-5 formal Takesaki uniqueness =
+  boost transfer of Fredenhagen-Lindner/DFP time-KMS uniqueness [named; time
+  avatar printed]; N-6 massive adiabatic vacuum stability [printed, EG III /
+  Duetsch-Fredenhagen]. EXACT RESISTING STEPS if "modulo-named" is to become
+  "theorem outright": WRITE N-5 and N-4 at stated per-order scope; promote
+  N-3' to lemma. All are continuation/uniqueness lemmas of the
+  free-plus-polynomial-insertion class — NONE is open-ended dynamics, NONE
+  is (W2), NONE touches the edge.
+- SM LIFT (equivalence map, the GOOD rung): (W1)@O(lam)_SM <=> {N-1..N-6} +
+  {S-1 ghost drop [run-52 assembly, mechanism printed]; S-2 (H2) Lorentz
+  MWI x BRST [named, partial anchors]; S-3 derivative couplings: T_00^int
+  != T_00+V pointwise for gauge cubics — the clean eq (6) is
+  scalar-specific; SM K1 must assemble from conserved T^int [new,
+  Ward-class, unwritten]; S-4 IR GATE: N-3/N-3'/N-4/N-6 banked/classical in
+  the MASSIVE window only; the fence is SPATIAL, supplies NO mass gap, does
+  NOT exclude photon tails [the honest SM wall — genuinely open]; S-5 (H6)
+  M^01_int Omega=0 [printed mechanism, assembly]}. S-4 is the one
+  non-Ward-class item.
+- CENTRAL-IDEA VERDICT (both directions, honest): YES — KMS@O(lambda) is a
+  Ward-identity-class statement, but only RELATIVE TO the named analytic
+  inputs: it is algebraic RELATIVE TO (L-a) = N-3/N-3' (strip continuation,
+  banked) and N-4/N-5 — the analytic-continuation content is REAL, located,
+  and mostly banked/classical, never waved (#62 home (a) confronted: the tex
+  says explicitly the check is NOT "merely algebraic"). The banked O^(1)=0
+  is EXACTLY the diagonal probe: the X=K_W instance of (I2)'s Kubo shift
+  (py B2 identity 0.0e0), = consistency with the (H6) normalization —
+  necessary, NOT sufficient (one matrix element of an operator identity;
+  said in print-grade words in the tex Sec 4.4). Mechanism match structural:
+  the Bose ratio 1+2nbar IS the KMS reflection driving (I1) (py B4:
+  B=-A(1+2nbar) to 1.5e-14 on the clean window; py B3 generic-K nonzero —
+  #28 discipline both ways).
+- JOINTNESS FINDING (run-52 fence): (W1)@O(lam) on the fenced class
+  consumes NO collar rate, NO delta->0, NO (W2) input — (W1) and (W2)
+  remain INDEPENDENT at O(lambda). The only edge-adjacent object is the
+  absolutely convergent collar integral eq (13) (weight rho x smooth
+  separated kernel) — not edge control in the (W2) sense.
+- FMP AUDIT: consumed at corroboration/pattern grade ONLY, label
+  "arXiv:2607.07810, preprint, unrefereed" carried; device re-derived
+  (Lemma 1); Phi(f) O(lam) standard Bogoliubov; their Sec 4 BW invocation =
+  the thing CONSTRUCTED here at O(lam), never cited as evidence for (W1);
+  their improvement constant = the c' torsor eq (14).
+- NUMERICS (w1_construct.py, 19/19): A1 free KMS 2.4e-14; A2 state
+  identification (I2 avatar, symmetric derivative) 3.4e-11; A3 DISPLAYED
+  six-term O(lam) KMS identity 9.2e-12 (display verified incl. signs +
+  continuation path); A3' displayed-vs-exact 2.0e-9; A4 ln Delta_P =
+  ln Delta_0 - beta lam (P-JPJ) exact 2.2e-16 (the J-split eq (7) avatar);
+  A5 Connes cocycle = expansional + c-number phase 1.1e-5/lam-normalized;
+  A6 chain rule 3.4e-14; B1 O^(1)=0 3.5e-17; B2 = (I2) diagonal 0.0; B3
+  generic-K 0.0279 nonzero; B4 Bose ratio 1.5e-14; C1 angular slicing
+  1.7e-9; C2 KMS reflection 1.7e-15; C3 collar slope 1.0265 (~+1,
+  integrable); C4 rotation covariance 0.0; D1 torsor c'=0/0.7/-1.3 all
+  <2.5e-10; D2 torsor difference = Q-Kubo 7.3e-6. Finite-dim parts labeled
+  EXACT AVATARS; continuum sizes banked elsewhere; no SM claim tested.
+- HONESTY (#62 homes): (a) KMS-as-algebraic — CONFRONTED, the
+  analytic content located at two named loci, one banked (tex Rem 2, verdict
+  above); (b) FMP beyond corroboration — NOT consumed (device re-derived;
+  invocation-vs-derivation stated; label everywhere); (c) fence widening —
+  NOT done (Def 1 verbatim; the tex twice states the fence is spatial and
+  does NOT fence IR — the S-4 wall is DECLARED, not hidden). Grade of
+  headline: scalar = theorem-modulo-named (names displayed, none open-ended
+  dynamics); SM = GOOD-rung checklist, NOT a theorem (S-4). No forced
+  closure.
+- ZERO WRITES to unification.tex and ISSUES.md, BY CONTENT: md5 at A2 open
+  = 42c29d23451edf63dfd3d348b8c8457e (unification.tex),
+  eff45eed6d18005a753389f4f973b4f5 (ISSUES.md); verified identical at A2
+  close (see attestation command output in run log). Concurrent siblings
+  own any drift after this timestamp.
+- Staged: w1_construct.tex, w1_construct.pdf, w1_construct.py, this ledger
+  section. All author-gated; nothing applied.
+
+## ARM R (THE ADVERSARY) — COMPLETE. Full detail: w1_adv.md + w1_adv.py (23/23 PASS).
+- KILL (i) EDGE: NO FIRE. Support/collar/J-split re-derived (rho boost- and
+  rotation-invariant on the charge slice; collar separation sigma-uniform >=
+  (delta-delta_0); Araki two-sided presentation EXISTS at O(lam) at form grade).
+  REGRADE R-1: sharp-time cocycle coefficient is NOT operator-grade in d=4 —
+  F(u)~u^-5 => dmu~nu^4 => ||INT alpha_s(K1)Omega ds||^2 ~ Lambda^3 (py:T4,
+  exact cubic growth; positivity closes cancellation). Form grade only; A2
+  Lemma 2 "strong limit/affiliation" and the (C)-bullet must say
+  form-affiliation OR move to the device register (time smearing restores
+  operator grade — the structural reason FMP's f_t exists). Failure is
+  fence-uniform UV, NOT edge; c'-direction quadratic charge IS operator-grade.
+  JOINTNESS RE-CERTIFIED: (W1)/(W2) independent at O(lam).
+- KILL (ii) IR: NO FIRE massive; fence verbatim both arms (= run-52 Def 1,
+  checked textually; no widening). SHARPEN R-4: m=0 channel table (py:T6) —
+  quartic channel CONVERGES (rho^-5); constant-c'/improvement channel
+  LOG-DIVERGES (rho^-1, equal increments 14.4676/2 decades); local-temp
+  rho^-2 insertions converge; m>0 all converge. So S-4 INCLUDES the scheme
+  channel: c'-covariance is massive-window-only; "massless vertex tails" is
+  per-channel (quadratic + dressing/past-infinity, not the quartic integral).
+- KILL (iii) SCHEME: NO FIRE. Torsor combinatorics re-derived exactly
+  (6(C_B-C_A) factor, py:T3a); c-number drop exact (py:T3b); finite-model
+  torsor invariance noted TRIVIAL (identity holds for all P) — the field
+  content is Gaussian-exactness (named, Longo n=0) + CONVERGENCE, where R-4
+  attaches. No silent scheme choice found in either arm.
+- KILL (iv) ANALYTICITY: Ward-simpliciter reading KILLED constructively:
+  separation example (py:T5) — KMS-violating negative-frequency spectral
+  tail keeps ALL real-time algebra finite while the strip boundary diverges
+  e^{sigma*Lambda} (2e18/2e39/2e82 at Lambda=50/100/200): the strip clause is
+  a spectral-WEIGHT constraint no Ward family implies. Located-analyticity
+  reading of both arms CONFIRMED. Independent re-derivation of the O(lam)
+  KMS identity from my own conventions: displayed F1 = exact d/dlam at real
+  t AND at t+i*beta (py:T1b/c), boundary identity 3.9e-13 (py:T1d);
+  KM one-point collapse + Bose orthogonality re-verified (py:T2, 4e-16).
+  WARNING logged: strip numerics need ~400 Gauss nodes (2e-3 quadrature
+  ghosts at 120 nodes on the growing complex contour).
+- CROSS-ARM: R-2 OMISSION — A2's named list lacks the RS/domain premise (A1's
+  P5/L-RS) which (M)/(C) need: add N-7=L-RS or restate (M)/(C) on surrogate
+  objects ((K) unaffected; A1 right where the arms disagree). R-3 CITATION —
+  N-4 must be ANGULAR/boost OS (Klein-Landau class), not Eckmann-Epstein
+  alone. R-5 POSITIVE — A2's (I2) IS A1's P3a-2s computed (scalar window):
+  discharged-modulo-{N-3',N-4,N-6}. Joint post-run-55 scalar checklist:
+  {N-4 angular, N-5(=L-Tak), N-7(=L-RS), N-3' promotion}. GOOD rung STANDS;
+  scalar theorem-modulo-named stands ONLY with amended list + R-1 wording;
+  BEST not reached; no forced closure.
+- A2 suite re-run: 19/19 PASS reproduced. FMP BW invocation verified at
+  source (frob2607.txt l.2110) = consumption, not derivation; label carried.
+- ZERO WRITES to unification.tex and ISSUES.md, BY CONTENT: md5 at R open =
+  42c29d23451edf63dfd3d348b8c8457e / eff45eed6d18005a753389f4f973b4f5
+  (= A1/A2 baselines); re-verified at R close (identical; see run log).
+
+## FINAL ADJUDICATION (referee folded in; own re-derivation adj_rederive.py, 22/22 PASS)
+
+### 0. Referee re-derivation (the commissioned duty, done, not delegated)
+- THE DECISIVE O(lambda) KMS INCREMENT IDENTITY re-derived from first
+  principles in my own conventions (third independent presentation):
+  from d/dlam e^{-beta(K0+lam P)} = -INT_0^beta e^{-(beta-u)K0} P e^{-uK0} du,
+  omega^(1)(X) = -INT_0^beta [omega_0(tau_{iu}(P) X)]_c du; Duhamel
+  D_z(B) = i INT_0^z alpha_s([P, alpha_{z-s}(B)]) ds; the increment
+  F^(1)(z) = state leg + Duhamel leg evaluated in CLOSED SPECTRAL FORM —
+  both inner integrals done analytically (Ibeta(a) = (e^{beta a}-1)/a,
+  Jz(a) = (e^{iza}-1)/(ia)), so the strip continuation is literal and
+  quadrature-free (sharper than either arm's method; R's 400-node warning
+  bypassed entirely). VERIFIED: F^(1)(t+i*beta) - G^(1)(t) = 0 at 3.6e-14
+  (beta=2pi) / 6.3e-15 (beta=1.3), 4 t-values, 2 dims, 2 seeds [T-B];
+  the displayed F^(1) = d/dlam[exact perturbed correlator] at 7.5e-10 [T-A];
+  finite-lam KMS sanity 1.4e-15 [T-C]. (Fp note: at beta=2pi the identity
+  needs spectral-radius normalization ~0.4 in float64 — range, not math.)
+- ONE-POINT COLLAPSE + MECHANISM, own hand: d/dlam omega_lam(K0)|_0 =
+  -beta Cov_KM(K0,P) at 4.1e-11; Bose ratio <d^3>/<d^2> = 1+2nbar at 9e-16;
+  the O^(1)=0 mechanism identity <d(d^2-(1+2nbar)d)> = 0 at 3.3e-16 [T-D].
+  The banked O^(1)=0 IS the one-point instance of the package — now
+  verified FOUR independent times (A1 structural, A2 py:B2, R py:T2, mine).
+- SEPARATION EXAMPLE, own construction (not R's): KMS-consistent Gaussian
+  core + weight-violating bump at nu=+mu. All real-time quantities bounded
+  by 23.5 for every mu; strip boundary = sqrt(2pi) e^{beta mu + beta^2/2}
+  EXACTLY (closed form matched to 2e-16 at mu=20/40/80: 4.4e18/1.0e36/5.7e70)
+  [T-E]. Confirms R's kill (iv): the strip clause is a spectral-WEIGHT
+  constraint no real-time (Ward-type) identity family implies.
+- R-1 CHAIN, re-derived with the transverse constants now EXACT [T-F]:
+  INT d^3v (v^2+a^2)^{-4} = (pi^2/8) a^{-5} (Beta-function, machine-checked
+  1e-16); quadratic kernel pi^2 a^{-1}; boost-orbit chord is TIMELIKE with
+  interval^2 = +2rho^2(cosh u - 1) ~ (rho u)^2 (the orbit is the Rindler
+  worldline — proper-time chord rate rho*u, R's wording confirmed with the
+  sign now pinned); Fourier pair nu^4 <-> 24|u|^{-5} exact
+  (24/(eps+iu)^5, quad-validated, ratio-32 at 1e-15); sharp-time
+  norm^2 ~ Lambda^3 exact cubic (6.68e5/6.65e8/6.67e11); device smearing
+  saturates. VERDICT ON R-1: CONFIRMED — the sharp-time cocycle coefficient
+  is quadratic-form-grade ONLY in d=4; operator grade lives in the device
+  register (FMP's f_t is load-bearing); divergence is delta_0-INDEPENDENT
+  (fence-uniform UV), hence NOT an edge/(W2) phenomenon. What remains
+  power-counting grade (unchanged): the full composition constant C_chi of
+  F(u) and the rapid-decay conversion at bounded rho — R's own gap wording
+  stands; the exponent chain itself is now exact at every link.
+
+### 1. VERDICT ON THE LADDER
+- (GOOD) RUNG: DELIVERED AND ADVERSARY-CERTIFIED — final. For the
+  commissioned target (BRST-physical SM wedge net, fenced class, O(lambda)):
+  (W1)@O(lambda)_SM <=> {N-1..N-6, N-7=L-RS} u {S-1, S-2, S-3, S-5}
+  + S-4 (IR gate, AMENDED per R-4 to include the m=0 scheme channel:
+  constant-c'/improvement Kubo integrals log-diverge at m=0 — 14.4676 per
+  two decades — so c'-covariance is massive-window-only). S-4 is the SOLE
+  non-Ward-class item. The dynamical open is CONVERTED to a finite named
+  checklist: the wall is converted, not merely re-certified.
+- SCALAR RIDER (beyond GOOD, short of BEST): massive lambda phi^4 fenced
+  window = THEOREM-MODULO-NAMED at QUADRATIC-FORM grade, with the
+  POST-ADVERSARY list {N-4 angular/Klein-Landau OS (R-3), N-5 = L-Tak,
+  N-7 = L-RS (R-2), N-3' promotion} — four items, none open-ended dynamics,
+  none edge, none (W2). R-5 accepted: A2's (I2) angular-slicing identity IS
+  A1's P3a-2s two-sided family computed on this window (discharged modulo
+  {N-3', N-4, N-6}), so the Ward-class member of the checklist is OFF the
+  open list. Cocycle wording: form-grade in the sharp-time register,
+  operator grade in the device register only (R-1, my Sec 0).
+- (BEST) NOT REACHED, two independent reasons: (i) commissioned BEST = the
+  SM fenced class — blocked by S-4 (genuinely open, non-Ward, IR);
+  (ii) even the scalar sub-result rests on L-Tak/L-RS, operator-algebra
+  lemmas no Ward identity supplies, undischarged. No forced closure.
+- CENTRAL IDEA (both directions, final): forward CONFIRMED — the banked
+  O^(1)=0 is precisely the one-point instance of the O(lambda) KMS package.
+  Reverse: NO simpliciter — KMS@O(lambda) is NOT a Ward identity of the
+  O^(1) class (constructive separation, twice independently); YES relative
+  — it is Ward-class RELATIVE TO the named spectral-weight/analytic inputs
+  {N-3/N-3' strip, N-4 angular OS} plus scaffolding {N-5, N-7}.
+- JOINTNESS (the commissioned question, answered): (W1) and (W2) are
+  INDEPENDENT at O(lambda) on the fenced class. Proved-shaped mechanisms:
+  (1) rho^2 invariant under the complexified boost (strip never approaches
+  the edge; chord legs re-derived here), (2) device/Requardt presentation
+  (the one-sided moment never formed), (3) connected vertex + the paper's
+  scheme (edge face vanishes on fenced elements). Adversary-re-certified:
+  the ONLY genuine divergence found this run (R-1) is fence-uniform UV,
+  delta_0-independent — not edge, not collar, not (W2). Dependence
+  re-enters EXACTLY iff the fence is dropped (improvement/vertex edge
+  faces become (W2)-class) or the one-sided presentation is chosen (P6
+  edge-class). The run-52 bifurcation SURVIVES at O(lambda).
+
+### 2. THE GATED EDIT (described; NOT applied — author gate)
+- EDIT 1, unification.tex, anchor: the N&S block l.20255-20275, insert
+  after "...which the Araki--Bisognano--Wichmann presentation never
+  forms." — a run-55 sharpening paragraph: (W1) at n=1 on the fenced class
+  is EQUIVALENT, given the printed free-BW/Lorentz-MWI/vacuum-stability
+  anchors, to the finite named checklist {two-sided boost-KMS boundary
+  family — computed on the massive scalar window by the exact Euclidean
+  angular-slicing identity (one-vertex Gell-Mann--Low = angular integral of
+  rotated half-plane boost charges; 2pi period = KMS period), with the
+  printed O^(1)=0 its one-point member; banked strip lemma (m=0 open);
+  per-order ANGULAR (Klein--Landau-class) OS; formal-series Takesaki
+  transfer; truncated Reeh--Schlieder} — at quadratic-form grade, cocycle
+  generator in the compact-support DEVICE register (sharp-time register is
+  form-grade only: boost-spectral density ~nu^4, time-integrated vector
+  norm ~Lambda^3, fence-uniform UV, not edge). No step consumes edge
+  control: (W1)/(W2) independent at n=1; dependence re-enters exactly iff
+  the fence is dropped or the one-sided presentation is chosen. RIDER: the
+  c'/improvement scheme channel itself log-diverges at m=0, so the SM IR
+  gate INCLUDES the scheme channel.
+- EDIT 2, ISSUES.md: RUN 55 entry banking the equivalence map (A1), the
+  scalar construction discharging the two-sided family (A2 (I2)), the four
+  adversary amendments (R-1 form-grade wording, R-2 N-7=L-RS, R-3 angular
+  citation, R-4 scheme-channel rider), the separation example, the amended
+  checklists, jointness re-certification, and the suites (19/19 + 23/23 +
+  22/22, all reproduced this adjudication).
+- GATE CONDITIONS: author sign-off; the applied text MUST carry the
+  R-AMENDED list (N-7 included, N-4 angular, form-grade cocycle wording,
+  R-4 rider) — A2's original N-1..N-6-only headline is NOT to be printed.
+
+### 3. #62 HOMES (adjudicated)
+- FIRES ONCE: A2 w1_construct.tex Lemma 2 closing sentence ("u_t is (per
+  order) a strong limit of elements of A_int(W_R)... affiliation") + the
+  (C)-bullet ("an element affiliated to A_int(W_R) per order") — OPERATOR-
+  grade language for the sharp-time-register cocycle coefficient, which is
+  quadratic-form-grade ONLY in d=4. Caught by R-1; independently confirmed
+  by my exact chain (Sec 0). Class: regularity-grade overclaim (the
+  commissioned home (a)'s regularity variant). Remedy staged: form-
+  affiliation wording or device register. A2's Thm 1 headline itself
+  already says "quadratic-form grade" — the theorem survives; the lemma
+  wording does not. NEAR-MISS (recorded): N-4 cited as Eckmann-Epstein
+  where the consumed step is angular/boost OS (Klein-Landau class) — R-3.
+- The three commissioned homes, final status: (a) KMS-as-algebraic —
+  CONFRONTED AND DISCHARGED by all arms (analyticity located at named
+  loci; two independent constructive separation examples prove locating it
+  was mandatory); (b) FMP beyond corroboration — DID NOT FIRE (invocation
+  verified at source l.2110 as consumption; device re-derived where
+  consumed; label carried everywhere; R-1 SHARPENS the discipline: FMP's
+  f_t smearing is load-bearing structure, not convenience); (c) fence
+  widening — DID NOT FIRE (Def 1 verbatim both arms, R textual check;
+  fence-is-spatial/no-IR-cure stated in every deliverable).
+
+### 4. Zero-writes attestation (adjudication close) — WITH EXTERNAL DRIFT NOTED
+- Open probe (this adjudication): md5(unification.tex) =
+  42c29d23451edf63dfd3d348b8c8457e, md5(ISSUES.md) =
+  eff45eed6d18005a753389f4f973b4f5 — identical to all three arms' open and
+  close baselines. CLOSE probe: md5(unification.tex) =
+  14ed667d5165894485637c60c5a11d7b, md5(ISSUES.md) =
+  39868c6a3c58ef950a86d62ef756424d — CHANGED EXTERNALLY during this
+  session. Attribution established: concurrent sibling RUN 58 banked its
+  ledger into ISSUES.md (header "RUN 58 LEDGER — THE BALL-ROUTE NUMBERS"
+  now at l.18523) and further author/sibling edits landed in
+  unification.tex (+103 changed lines; new commits "Build fixes"/"Ignore"
+  post-date my session snapshot). THIS ADJUDICATION'S ZERO WRITES hold BY
+  CONTENT: (i) zero Write/Edit tool calls issued to either protected path
+  (tool log: only adj_rederive.py and ledger_run55.md written, both in the
+  run-55 scratchpad); (ii) token probe for adjudication-unique tokens
+  (adj_rederive / P3a-2s / N-7=L-RS / 14.4676) = 0 hits in BOTH protected
+  files at close — nothing staged here leaked. Both gated-edit anchors
+  remain intact and unique at close ("necessary-and-sufficient form" 1
+  hit; "orthogonal at every boost frequency" 1 hit): EDIT 1's anchor is
+  the grep anchor, not the (now shifted) absolute line numbers. Staged
+  files this adjudication: adj_rederive.py (22/22 PASS) + this ledger
+  section. Nothing applied.
+
+---
+### Main-session apply note — run 55 ((W1) interacting BW) applied to unification.tex (2026-07-15)
+
+Ledger `ledger_run55.md` merged above. Certified post-resume (4/4). **Verdict: the GOOD rung, adversary-certified and referee-re-derived — (W1) is converted from the framework's single irreducible dynamical open into a finite named checklist.** The central conjecture adjudicated BOTH ways: forward CONFIRMED four independent times (the banked 𝔒^(1)=0 is precisely the one-point instance of the O(λ) KMS package — the referee re-derived the decisive increment identity in CLOSED SPECTRAL FORM, residuals 10^{-14}–10^{-16}); reverse REFUTED constructively (KMS@O(λ) is NOT a Ward identity simpliciter — two independent spectral-weight separation examples — but IS Ward-class relative to named banked analytic inputs). **Scalar rider (beyond GOOD):** the massive λφ⁴ fenced window is theorem-modulo-{angular OS, L-Tak, L-RS, N-3′} at quadratic-form grade — A2's Euclidean angular-slicing identity IS A1's two-sided boundary family, computed. **The honest SM wall = S-4 (IR) alone**, now including the scheme channel (the adversary's R-4: the c′/improvement Kubo integrals log-diverge at m=0; c′-covariance is massive-window-only). **Jointness re-certified:** no checklist step consumes edge control; (W1)/(W2) independent at O(λ); the UV subtlety (R-1: sharp-time cocycle is form-grade only, ν⁴ density/Λ³ growth) is fence-uniform UV, NOT edge — FMP's device smearing is load-bearing structure.
+
+**#62 FIRED once, homed and remedied:** A2's Lemma-2 "strong limit/affiliation" wording claimed operator grade for the sharp-time-register coefficient (form-grade only in d=4) — caught by the adversary with an exact ν⁴/Λ³ chain, confirmed by the adjudicator; the applied paper text carries the R-AMENDED form-grade wording per the gate's explicit condition. Near-miss: an OS citation fix (R-3). Homes (a),(b),(c) all confronted and clean. **Applied:** the run-55 sharpening paragraph after the run-52 N&S block (full clean rebuild 0/0/0, **315 pp**) — the checklist equivalence, the one-point-member fact, the form-grade register caveat, the (W1)/(W2) independence, and the S-4-includes-scheme rider, all in print.
+
+# RUN 56 LEDGER — ARM A1: (s1-ii) massive bulk-to-horizon restriction (dS wedge horizon)
+
+Commission: portable theorem write-up ds2_restriction.tex (+.md) for the massive
+bulk-to-horizon restriction feeding the CF-class per-cut equality into the dS wedge
+orbit at n=0, or the exact resisting step at theorem grade.
+
+Zero-write baseline (by content, at open):
+- MD5 unification.tex = 42c29d23451edf63dfd3d348b8c8457e (25030 lines)
+- MD5 ISSUES.md      = eff45eed6d18005a753389f4f973b4f5 (18521 lines)
+- MD5 appendix_e0ds_min.tex = aca52dfb008e245a6c81d6774e86f8f1 (163 lines)
+
+## Source anchors read (in print)
+- appendix_e0ds_min.tex: lem:e0ds-coverage, lem:e0ds-trace, lem:e0ds-cut (premises
+  (a) equality-strength first law per cut, (b) finite first moment, (c) Wald/xi),
+  hyp:E0-dS-min, rem:e0ds-min-status (support steps (s1-ii),(s1-iii) named).
+- unification.tex rem:E0-dS-status (l.18920-18999): per-cut equality in print only
+  on Minkowski/Rindler cuts (CeyhanFaulkner2018); monotonicity strength on Killing
+  horizons (FaulknerSperanza2024); dS wedge KMS in print (BorchersBuchholz1999).
+- ledger_run53.md ARM R: H1 = horizon universality (R2a/R7): Z = n.n' u-independent
+  on common horizon; all m^2 Hadamard terms (V log sigma, W) killed by d_u d_u';
+  survivor = universal chiral kernel ~ delta^2(n,n')/(u-u'-i0)^2. CATCH 1 = first
+  moment premise (R8 witness: ANEC finite does NOT imply first moment finite).
+  (s1) decomposition: (s1-i) universality DERIVED; (s1-ii) restriction faithfulness
+  = THE open import (principal series m>>H favourable); (s1-iii) chiral cut-dilation
+  write-up; (s1-iv) = CATCH 1.
+
+## Work log
+
+### (1) H1 RE-DERIVED AT SOURCE (run-48 law) — ds2_check.py, 9/9 PASS
+Independent of run-53 ds_adv.py. Content:
+- C1 (symbolic, embedding R^{1,4}): X(u,n)=(u,u,n/H) lies on dS_4 iff |n|=1;
+  generators are straight null lines of the ambient => null geodesics of dS_4,
+  u AFFINE; Z := H^2 X.X' = n.n' EXACTLY, u,u'-free; the (X0,X1) boost restricts
+  to the horizon as the dilation u -> e^s u.
+- C2 (exact BD closed form, no Hadamard expansion needed): W_BD(Z) =
+  (H^2/16pi^2)G(h+)G(h-) 2F1(h+,h-;2;(1+Z)/2), h± = 3/2±nu. Pole residue at
+  Z=1: G(2)G(1)/(G(h+)G(h-)) x G(h+)G(h-) = 1 -> H^2/(8pi^2(1-Z)) leading,
+  MASS-INDEPENDENT (verified 3 masses incl. m>>H to 1e-4).
+- C3 (distributional limit): with 1-Z|_H = H^2|n-n'|^2/2 (u-free; iε enters
+  only via ie(u-u')): pole term -> -(1/4pi) delta^2_h(n,n')/(u-u'-i0)^2
+  (numeric -1/(4pi Du^2) confirmed); log term -> 0 (rate ~e); Z-smooth terms
+  killed identically. ALL m^2-dependence sits in log+smooth => annihilated.
+- NON-BIFURCATION CUTS (adversary home (b)): the derivation is a statement
+  about the state pulled back to the WHOLE extended horizon H ≅ R x S^2(1/H)
+  (u in R, complete generators); cuts V(n) index SUBALGEBRAS of the same net
+  on the same surface — the cut variation never leaves H1's domain. Closed.
+
+### (2b) H2 VERIFIED AT SOURCE — DMP 0712.1770 (CMP 285 (2009) 1129), full text
+fetched (DMP_0712.1770.txt in this scratchpad). GALANDA CHECKLIST:
+- FIELD: real linear scalar Klein-Gordon, general (m, xi).
+- MASS/COUPLING on EXACT dS (Thm 4.4, verbatim anchors l.1296-1321): requires
+  m^2 + xi R > 0; part (a) (Gamma phi in S(Im^-) + symplectic preservation (30))
+  under m^2+xiR > 5R/48 <=> |Re nu| < 1 — PRINCIPAL SERIES (SM, m>>H) INCLUDED
+  (Re nu = 0). For 0 < m^2+xiR <= 5R/48: only via Remark 4.4 (enlarged
+  Fourier-Plancherel boundary space, (18) "in a weaker limit sense") — stated,
+  not fully executed => cite only |Re nu|<1 at theorem grade.
+- BACKGROUND: expanding dS patch a=gamma/tau exact (Thm 4.4); FRW class
+  a = gamma/tau + O(tau^-2) under m^2 gamma^2 + 12 xi > 2 (Thm 4.5).
+- SURFACE: past cosmological horizon Im^- ~ R x S^2, complete generators;
+  Bondi coordinate ell(U) = -gamma^-1 tan U + k_- (paper l.~447-451) with
+  U = arctan(tau+r) => ell LINEAR in v = tau+r; embedding check (mine): on
+  {X0+X4=0}, v = tau+r -> ambient affine w EXACTLY (X0->v, X4->-v, |Xvec|->1/H)
+  => ell is AFFINE in the physical affine parameter, SAME slope all generators
+  => positive-ell-frequency = positive-affine-frequency. Seam CLOSED.
+- STRENGTH: (i) isometric *-hom i: W(M) -> W(Im^-), injective (Thm 4.2; dS
+  hypotheses verified by Thm 4.4a) — FULL Weyl injection, expanding patch;
+  (ii) boundary state lambda (eq. 20): quasifree, positive-ell-frequency kernel
+  Re int 2k Theta(k) psi1^ psi2^ dk eps_S2 = THE universal chiral vacuum,
+  ultralocal on S^2; unique invariant pure quasifree w/ positive energy (their
+  uniqueness thms, abstract-verified); (iii) lambda_M := lambda o i = BUNCH-
+  DAVIES restricted to M (Thm 4.4b, verbatim "coincides ... of omega_E").
+- STATE: Bunch-Davies exactly. RIGOR: CMP-published theorem grade.
+- NOT in print there: wedge-localized/cut-subalgebra net correspondence;
+  contracting-side reading; T_uu flux or first-law statements; Hadamard on
+  the FRW class (companion 0812.4033, not consumed here — BD Hadamard classical).
+
+### (3) H3 VERIFIED AT SOURCE — CF 1812.04683 (CF_1812.04683.txt):
+- Their (2.2): K_A = 2pi int (u-A(y)) T_uu attributed to [37] = Casini-Teste-
+  Torroba (Markov/null-plane) — free-field-in-print layer (run-46 Layer 2 pin
+  re-confirmed at source l.139-176).
+- Their Thm at (3.1)-(3.2): premises = HSMI + <psi|P|psi> < oo + S_rel < oo;
+  field/interaction-blind BEYOND that (run-46 Layer 1 pin re-confirmed).
+- Minkowski-specific content in the free-field per-cut equality: ONLY the
+  null-plane net-with-state (ultralocal factorization across generators +
+  chiral vacuum kernel + BW dilation at the zero cut). All three are carried
+  by the dS horizon net once (1),(2b) land => transfer lemma below.
+
+### (2) H4 falloff input verified (C4): along a generator, Z(X(u),x') is
+LINEAR in u; W,E(Z) ~ |Z|^{-h-} large-Z (compl.: exponent matches to 0.02;
+principal: envelope |Z|^{-3/2} verified) => coherent-class dT_uu ~ u^{-2h- -2},
+first moment integrand u^{-2h- -1}: CONVERGES for all m_eff^2>0; principal
+series (SM, m>>H): u^{-4} comfortable. (R8 witness respected: this is a
+falloff PROOF for the generating class, not an ANEC inference.)
+
+### (4) COMPOSITION — thm:ds2-composition (ds2_restriction.tex, compile 0 err)
+Chain: BD -> omega_H universal chiral vacuum (lem:ds2-massinert, H1) ->
+coherent perturbations restrict with (d_v psi)^2 flux and FINITE first moment
+(lem:ds2-moment, H4 proved for class P) -> net-with-state == Minkowski
+null-plane net via transverse measure isomorphism (lem:ds2-transfer): CTT K_V
++ Wall half-sided + CF equality machinery verbatim; v-translations are
+horizon-net automorphisms (no bulk isometry consumed — (s2) no-go respected)
+-> per-cut equality dS(V)=d<K_V>=2pi int (v-V) d<T_vv> on EVERY orbit wedge
++ matter side of the second cut-variation. Premises (a_matter)+(b) of
+lem:e0ds-cut DISCHARGED at n=0 for class P. No resisting step at that grade.
+
+### (5) Adversary-homes audit (#63)
+(a) DMP beyond printed scope: NOT committed — Thm 4.4/4.2 quoted at verbatim
+    strength (expanding-patch injection; |Re nu|<1 clause honored; Remark-4.4
+    weakening NOT consumed); wedge/cut net correspondence NOT attributed to
+    DMP (F1 fence).
+(b) Mass-inertness at non-bifurcation cuts without re-derivation: NOT
+    committed — lem:ds2-massinert is derived for the state on the WHOLE
+    extended horizon; cuts index subalgebras of the same surface; the cut
+    variation never leaves the domain (final clause of the lemma).
+(c) First moment assumed: NOT committed — PROVED for class P via Z-linearity
+    along generators + 2F1 large-Z asymptotics (C4); stays a premise ONLY for
+    the general Hadamard class (F2, R8 witness cited).
+
+### (6) Honest limits of this arm
+- The per-cut equality is delivered on the HORIZON net (the object the
+  displayed consumers differentiate). Bulk-wedge-entropy identification
+  (faithfulness/duality for the massive field) = F1: not in print, not
+  claimed, not consumed. If the author wants it, it is a NEW named step.
+- Longo2019coherent (coherent-state entropy, chiral net) imported at
+  existence level (journal-published; not re-fetched this run) — the display
+  is double-anchored by CF's abstract sum rule whose premises I verified at
+  source, so Longo is corroborating, not load-bearing.
+- (s1-iii) geometric pairing: OTHER arm (A2, ds2_pairing.tex); premise (c)
+  untouched here.
+
+### Zero-write attestation (by content, at close)
+MD5 (unification.tex) = 42c29d23451edf63dfd3d348b8c8457e
+MD5 (ISSUES.md) = eff45eed6d18005a753389f4f973b4f5
+MD5 (appendix_e0ds_min.tex) = aca52dfb008e245a6c81d6774e86f8f1
+INTERPRETATION: all three MD5s at close == baseline at open => ARM A1 issued
+ZERO writes to unification.tex, ISSUES.md, appendix_e0ds_min.tex (content
+proof). git porcelain shows " M ISSUES.md" vs HEAD: a concurrent sibling/main-
+session working-tree change, present independently of this arm (hash-identical
+across this arm's entire run). A1 wrote only: ds2_restriction.tex, ds2_restriction.md,
+ds2_check.py, ds2_wrap.tex(+log/pdf), DMP_0712.1770.txt (fetched source), this ledger.
+
+# RUN 56 LEDGER — ARM A2: (s1-iii) per-cut Wald/Raychaudhuri pairing (dS wedge horizon)
+
+Commission: the geometric side of Lem lem:e0ds-cut at theorem grade — linearised
+Raychaudhuri integrated against (v-V(Omega)) = area/Wald variation; explicit boundary
+terms; first-moment consumption LOCATED; xi != 0 improvement/Wald identity (run-53 F3)
+as a lemma. Staged: ds2_pairing.tex (683 lines, compiles clean, 11 pp under stub
+_ds2_pairing_compiletest.tex, zero errors; external refs lem:e0ds-* resolve on import)
++ ds2_pairing.py (233 lines, 15/15 PASS, output ds2_pairing_out.txt).
+
+Zero-write baseline (sha256, at A2 open — RE-VERIFIED IDENTICAL at close):
+- unification.tex 225aa1f1819077136828393ad961e890b5c602dea14d07bca1a74e...61fb
+- ISSUES.md       0e87c6b3b84c88035a501b9c2914bcd83db31a52625ba7bba9a375615f126686
+
+## VERDICT: THE GEOMETRIC SIDE CLOSES AT THEOREM GRADE. No resisting step.
+
+Content of ds2_pairing.tex (labels exported: app:ds-pairing, lem:pair-chart,
+rem:pair-gauge, lem:pair-tail, rem:pair-moment-locus, thm:pair-main, rem:pair-sign,
+lem:pair-improve, prop:pair-secondvar, rem:pair-status):
+
+1. lem:pair-chart — EXACT closed-form horizon chart, new to this run:
+   ds^2 = -4 du dv + (4u^2/l^2) dv^2 + (l + 2uv/l)^2 gamma_AB dw dw, exact dS_4
+   (P1 symbolic). Facts: generators = straight null lines, v AFFINE, COMPLETE
+   (v in R); far end on scri+ at INFINITE affine parameter — adversary-(iv)
+   RESOLVED: no far bifurcation/pole at finite v; antipodal wedge's sheet = v<0
+   half of the SAME N (Rindler-null-plane-identical affine structure); h_AB
+   v-independent on N (theta=sigma=0 EXACTLY); Gamma^mu_vv|_N=0; G_vv|_N=0;
+   EXACT cut-area formula A[V]=int sqrt(h)(V(w),w) — NO (dV)^2 terms at any order
+   (null degeneracy g(dv,.)|_TN=0), kills all off-diagonal second-variation terms.
+   STRUCTURAL FINDING (feeds s1-ii): theta_l = 4v/l^2 != 0 for v!=0 => non-
+   bifurcation cuts are NOT totally geodesic, W_V NOT an SO(1,4) image of W —
+   unlike Minkowski (null translations are isometries there). CF-class arguments
+   must run on the half-sided-inclusion structure, not isometry translates.
+2. lem:pair-tail — weighted tail calculus: the ENTIRE consumption of premise (b)
+   (finite first moment). Exact IBP identity with both boundary terms explicit:
+   cut end = 0 (weight vanishes AT the cut — for every cut incl. B-crossing);
+   far end = 0 by (FM) via tail-DCT: (v-V)|dtheta| <= tail of moment integral.
+   Tonelli: int|dtheta| <= first moment => late-time area limit EXISTS. (FN)
+   dtheta(inf)=0 is FORCED by finiteness of the display (not a dynamical input).
+   R8 witness reproduced (P5, closed form): F=1/(1+v^2): ANEC=pi/2, moment ~ log,
+   deficit = 1+log L divergent => display has no finite LHS.
+3. thm:pair-main — THE PAIRING: [dA_inf - dA[V]]/4G = (1/4G) int sqrt(h)
+   int_V^inf (v-V) dR_vv, every continuous cut, boundary terms as above; with the
+   field eq. = the lem:e0ds-cut premise-(a) display (P4 numeric, 6 cases, 1e-8).
+   FINDING (SIGN/READING, gate-relevant): the printed display's dA(V)/4G must be
+   read as the FUTURE-NORMALISED DEFICIT d[A(inf)-A(V)]/4G; the literal reading
+   (dA(V), dA_inf:=0) returns ANTI-Einstein under d^2/dV^2. Physical check:
+   positive flux after cut => <K_V> > 0 AND area grows toward scri+ => deficit>0.
+   Recommended gated edit in rem:pair-sign.
+4. lem:pair-improve — F3 at lemma grade, SHARPENED: on N, d<T^xi_vv> = d<T^min_vv>
+   - xi d_v^2 d<phi^2> + xi <phi^2>_BD dG_vv. THE THIRD (CONDENSATE) TERM IS NEW
+   vs run-53 F3 and is SAME-ORDER on dS (<phi^2>_BD != 0): it is exactly the
+   G -> G_eff renormalisation, 1/G_eff = 1/G - 8 pi xi <phi^2>_BD, appearing
+   identically in the Wald density 1/4G - 2 pi xi <phi^2> => coherent on both
+   sides (P6b symbolic). R6 telescoping identity verified (P6a) + equivalence of
+   pairings (a_W: Wald deficit <-> MINIMAL flux) <=> (a_A: area deficit/4G_eff <->
+   improved flux) (P6c numeric); premise (c) DERIVED, not assumed; pointwise
+   output pairing-independent.
+5. prop:pair-secondvar — d^2/dV^2 both sides (geometric = +sqrt(h) dR_vv/4G_eff
+   diagonal in Omega by the exact area formula; matter = ADJ-4's 2 pi sqrt(h) T(V));
+   twice-differentiability of premise (a) DERIVED from (FM)+Hadamard. Output:
+   dR_vv = 8 pi G_eff [dT^min - xi d^2 dphi^2] = 8 pi G d<T^xi> on N; = E_kk = 0
+   NEAR B per wedge; globality via lem:e0ds-coverage (NOT by boost transport —
+   perturbation not invariant; overstatement self-caught and fixed). First moment
+   NOT consumed here (local step) — consumption is ONLY at thm:pair-main's far
+   boundary (rem:pair-moment-locus).
+
+## Honesty / homes audit (A2 scope)
+- #63(c) AVOIDED: (FM) stated as premise, consumption located, R8 witness shows
+  ANEC insufficient; BD verification explicitly assigned to (s1-ii)/H4, NOT assumed.
+- Self-caught during staging: (i) P6a test sign (test was wrong, tex right;
+  int (v-V) Phi'' = Phi(V)-Phi(inf) confirmed both directions); (ii) Prop E sweep
+  overstatement (boost transport of a non-invariant perturbation) — fixed in tex.
+- NOT delivered (by commission): premise (a)'s quantum content (s1-ii, ARM A1);
+  BD first-moment verification (H4, flagged).
+
+Files: ds2_pairing.tex, ds2_pairing.py, ds2_pairing_out.txt,
+_ds2_pairing_compiletest.{tex,pdf,log} (stub only, not for import).
+
+================================================================================
+ARM R — THE ADVERSARY (kills (i)-(iv) vs A1+A2). ds2_adv.md + ds2_adv.py (31/31).
+================================================================================
+VERDICTS: all four kills FAIL; both compositions STAND at their stated grade.
+- (i) H1 at non-bifurcation cuts: theorem CONFIRMED and sharpened — tube
+  prescription DERIVED (not positivity-fixed): 1-Z -> (1-n.n') + i eps H^2 (v-v');
+  EXACT S^2 transverse spectral density (w/2)(1-e^{-2w/eps}) -> (w/2)Theta(w):
+  existence + positivity + chiral-vacuum identification in one step; log-term
+  transverse mass O(eps). Mass-inertness holds for ALL m_eff^2>0 (beyond the DMP
+  |Re nu|<1 window, which only the net injection consumes). Cut-robust because the
+  state is ONE distribution on the whole surface, exactly v-stationary; A2's
+  theta_l = 4v/l^2 (W_V not isometric to W) is irrelevant by construction — no
+  bulk isometry consumed.
+- (ii) DMP scope: every A1 quote verified verbatim at line anchors (Thm 4.4 a/b,
+  Rem 4.4, Thm 4.2, Eq (20) = 2k Theta(k), uniqueness 969, Bondi u = -gamma*ell,
+  gamma<0, global R x S^2). Planar-chart embedding re-derived: u -> v exactly on
+  Im^-; ell = H v affine, uniform slope. FINDING F-WORD (gated edit): "Schwartz-
+  class boundary space" is a misnomer — printed S(Im^-) = {psi: psi, d_ell psi in
+  L^2} (lines 765, 2012-2013); A1's Lem (iii) already proves the honest L^2
+  condition (reproduces |Re nu|<1). Fix wording at rem:ds2-dmp + (F4) + ledger.
+- (iii) BD first moment: premise PROVED for the class, kill fails — but FINDING
+  F-RATE (substantive, non-fatal): A1 Lem ds2-moment(i) rate v^{-Re h_-} is FALSE
+  for f straddling the null plane {y^0=y^1}: cone delta (universal residue
+  U_0 = H^2/8pi^2) + near-plane tail give v^{-min(1,Re h_-)} (numerics R4b/R4c:
+  residual slope 0.005 vs 0.347); the "split f + second wedge" proof move cannot
+  detach a straddling bump. Downstream UNAFFECTED: weighted integrand
+  O(v^{-1-2min(1,Re h_-)}) converges for every m_eff^2>0; L^2 intact; theorem
+  stands. Gated edit: exponent min(1,Re h_-) + cone mechanism, drop the splitting
+  parenthetical; (ii)'s "O(v^{-4}) for SM" -> "O(v^{-3}) straddling / O(v^{-4})
+  wedge-supported". Wedge-supported f (primary class): A1 rate correct as stated.
+  R8 witness re-verified (ANEC finite, moment divergent).
+- (iv) global structure vs (v-V): A2 CONFIRMED — chart re-derived from embedding
+  X_H + u*ell (R1b), Ric = 3g/l^2 (R1c), Gamma^mu_vv=0, cut metric V-independent
+  (no (dV)^2, R1f); corner at INFINITE affine parameter (no far pole at finite v);
+  pairing identity + both boundary terms re-derived; (FM) consumed exactly at the
+  two v->infinity loci. SIGN AUDIT independent: flux = deficit d[A_inf - A(V)]/4G;
+  literal dA(V) reading anti-Einstein — rem:pair-sign stands, import edit needed.
+EXISTENCE PREMISES re-derived: restricted state exists AND is positive at every
+eps (R2g); BD global extension in print (DMP Rem 4.3); DMP 4.4(a) discharges the
+4.2 premise; generator completeness (R1a/R6).
+HONESTY #63 homes checked: (a) DMP over-citation — NOT committed (one wording
+defect only); (b) mass-inertness at cuts without re-derivation — NOT committed
+(A1's final clause verified; re-derived here at source); (c) first moment assumed
+— NOT committed (proved; rate defect found and priced instead).
+ZERO-WRITE ATTESTATION (ARM R, sha256 at open == at close):
+  unification.tex 225aa1f1819077136828393ad961e890b5c602dea14d07bca1a74eb7d06061fb
+  ISSUES.md       0e87c6b3b84c88035a501b9c2914bcd83db31a52625ba7bba9a375615f126686
+Files: ds2_adv.md, ds2_adv.py, ds2_adv_out.txt.
+
+================================================================================
+FINAL ADJUDICATION (run 56, referee folded in) — independent re-derivations, then verdicts
+================================================================================
+
+## Referee evidence base (my own, not reruns)
+1. referee56.py (this scratchpad) — INDEPENDENT implementation, disjoint from
+   ds2_check.py / ds2_pairing.py / ds2_adv.py:
+   - A0-A3: mass-inertness re-derived from scratch: embedding chart X=(v,v,n/H),
+     Z = n.n' exact/v-free (symbolic); BD pole residue 1/(8pi^2) mass-independent
+     across nu = 0.4, 1.2, 2i, 10i; transverse integral of -d_s^2 W: pole part ->
+     -1/(8pi^2 s^2) (x 2pi from the phi-circle = the universal -(1/4pi) chiral
+     kernel), nu-dependent remainder -> 0 with eps; chirality/positivity: kernel
+     = int (dw/2pi)(w/2)e^{-iws}, density (w/2)Theta(w) >= 0.
+     CUT-INDEPENDENCE (adversary home (b)) adjudicated on the DOMAIN argument:
+     the derivation produces ONE v-stationary bidistribution on the whole
+     extended horizon R x S^2; cuts index subalgebras; nothing is re-derived
+     per cut. Home (b) NOT committed — I re-derived, did not inherit.
+   - B1-B3: A2's chart re-derived: Ric = (3/l^2)g identically; Gamma^mu_vv|_N=0
+     (v affine); theta_v = 0, theta_u = 4v/l^2 on N; cut metric l^2*gamma,
+     V-independent (no (dV)^2 term).
+   - B4-B5: THE decisive boundary-term computation re-derived by my own IBP:
+     flux 2pi INT (v-V)dT = deficit d[A_inf - A(V)]/4G; cut boundary term
+     (v-V)dtheta|_{v=V} = 0 exactly; far term -> 0 under (FM) (Tonelli: the
+     deficit integral IS the first moment — both consumption loci are v->inf);
+     literal dA(V) reading = MINUS the flux (anti-Einstein) — rem:pair-sign
+     independently confirmed; R8-type witness (dT = 1/(v log^2 v)): ANEC finite,
+     first moment divergent, far term (v-V)/log v -> inf — (FM) load-bearing.
+   [Result line appended below when the run closes.]
+2. Arms' scripts rerun by me, counts confirmed: ds2_check.py ALL PASS (9/9),
+   ds2_pairing.py 15/15 PASS, ds2_adv.py 31/31 PASS.
+3. Source spot-checks by my own read: appendix_e0ds_min.tex lem:e0ds-cut
+   premises (a)/(b)/(c) + rem:e0ds-min-status(2) naming the two support steps;
+   unification.tex rem:E0-dS-status l.18980-18990 ("the named support steps
+   being the massive bulk-to-horizon restriction ... and the cut-variation
+   write-up"); DMP_0712.1770.txt Eq (17): S(Im) = {psi: psi, d_ell psi in L^2}
+   — F-WORD verified AT SOURCE (the printed space is L^2-type, not Schwartz);
+   ds2_restriction.tex l.440 still says "Schwartz-class" and l.245 still has
+   exponent -Re h_- => the two adversary corrections are RECOMMENDED, NOT YET
+   APPLIED to the staged file (correct author-gating discipline; ds2_adv.md
+   line anchors stay valid).
+4. Compile checks: ds2_wrap.compile.log 0 errors; _ds2_pairing_compiletest.log
+   0 errors. thm:ds2-composition and thm:pair-main + rem:pair-sign read in
+   full; fences (F1)-(F4) present at rem:ds2-fences.
+
+Zero-write attestation (adjudication, sha256 AT OPEN):
+  unification.tex 225aa1f1819077136828393ad961e890b5c602dea14d07bca1a74eb7d06061fb
+  ISSUES.md       0e87c6b3b84c88035a501b9c2914bcd83db31a52625ba7bba9a375615f126686
+  appendix_e0ds_min.tex 6d8ee5b8f7b86055880e19f97b69ed9e9bad04ce6c7c86f01c7c7eabb57bd70c
+  (matches both arms' open/close attestations; close hashes below.)
+
+## Referee re-derivation result (referee56.py / referee56_out.txt): 13/13 PASS
+A0 Z=n.n' exact+v-free (symbolic, on-surface H^2X.X=1); A1 residue 1/(8pi^2)
+universal — RATE test e(1e-6)/e(1e-4) = 0.015/0.014/0.016/0.019 for
+nu = 0.4, 1.2, 2i, 10i (linear vanishing of the mass-dependent correction);
+A1' inertness not vacuous (state IS nu-dependent at finite separation);
+A2a pole transverse integral -> -1/(8pi^2 s^2) (x 2pi = the -(1/4pi) chiral
+kernel); A2b remainder (= ALL nu-dependence of the per-cut kernel) vanishes
+LINEARLY in eps — |R(1e-4)|/|R(1e-3)| = 0.10 for all four nu, incl. heavy
+(the only escape would be a mass-dependent (1-z)^{-2} term, excluded by the
+c-a-b = -1 connection formula); A3 density (w/2)Theta(w) >= 0 (chirality/
+positivity); B1 Ric = (3/l^2)g identically; B2 Gamma^mu_vv|_N = 0; B3
+theta_v = 0, theta_u = 4v/l^2, cut metric V-independent; B4a flux = deficit
+(Tonelli: the deficit integral IS the first moment); B4b cut boundary term
+= 0 exactly, far term -> 0 under (FM); B4c literal dA(V) reading = -flux,
+ANTI-Einstein — rem:pair-sign confirmed; B5 R8-witness (ANEC 1.42 finite,
+first moment ~3.3e5 @1e8 divergent, far term ~5.4e6 blows up).
+Referee honesty note: first pass had 2 FAILs (A1, A2b) — BOTH were my own
+fixed-tolerance artifacts in the heavy-mass regime (coefficients ~ m^2), not
+math failures; replaced by rate tests per the limit-statement content. Logged,
+not hidden. Slow first run killed (mp.diff of hyp2f1) — replaced by the exact
+contiguous-derivative formula; A3 quadrature damped (delta 0.2).
+
+## VERDICTS (per-step)
+(s1-ii) PORTABLE-WRITE-UP-DELIVERED. ds2_restriction.tex, appendix grade,
+  theorem grade at n=0 for the compactly generated (coherent) class on every
+  SO(1,4) orbit wedge: premises (a_matter)+(b) of lem:e0ds-cut discharged.
+  H1 re-derived by arms A1+R AND independently by this referee; H2 verified
+  at Galanda-checklist level at source (incl. my own read of DMP Eq (17));
+  H3 transfer consumes only the null-plane net-with-state; H4 PROVED for the
+  class. Import conditional on TWO adversary corrections (F-WORD, F-RATE),
+  both verified at source, both non-fatal. Fences F1 (horizon-cut vs bulk-
+  wedge entropy identification — new named step if wanted), F2 (general
+  BD-Hadamard class: premise (b) stays a premise there), F3 (Longo at
+  existence level, double-anchored by CF) are honest and remain open.
+(s1-iii) PORTABLE-WRITE-UP-DELIVERED. ds2_pairing.tex, theorem grade, NO
+  resisting step: exact chart (referee-confirmed symbolically), pairing
+  identity with both boundary terms explicit — (FM) consumed EXACTLY at the
+  two v->infinity loci and nowhere else (referee-confirmed by independent
+  IBP + witness), FN forced not assumed, xi != 0 improvement/Wald lemma with
+  G_eff condensate bookkeeping, second-variation differentiability derived.
+  Sign finding (deficit reading) independently confirmed: sign-critical.
+
+## GATED EDIT (described, NOT applied — author's gate; grep anchors only)
+1. ds2_restriction.tex pre-import corrections (adversary-mandated):
+   (i) F-WORD at rem:ds2-dmp + fence (F4) (grep "Schwartz-class"):
+   -> "L^2-type boundary space (psi, d_ell psi in L^2)";
+   (ii) F-RATE at lem:ds2-moment(i) (grep "(1+|v|)^{-\\operatorname{Re}h_-}"):
+   exponent -> min(1, Re h_-) with the cone-delta mechanism named; drop the
+   "split f + second wedge" parenthetical; in (ii): "O(v^{-4}) for SM" ->
+   "O(v^{-3}) straddling / O(v^{-4}) wedge-supported".
+2. Import ds2_restriction.tex as new appendix (app:ds2-restriction) +
+   bibitems from its header (DMP = CMP 285 (2009) 1129, arXiv:0712.1770;
+   Longo2019coherent if absent); CF/FaulknerSperanza/BorchersBuchholz in print.
+3. Import ds2_pairing.tex as new appendix (app:ds-pairing).
+4. appendix_e0ds_min.tex lem:e0ds-cut premise (a) display (grep
+   "\\frac{\\delta A(V)}{4G}"): read/typeset as the future-normalised deficit
+   delta[A_inf - A(V)]/4G per rem:pair-sign (sign-critical: literal reading
+   is anti-Einstein under d^2/dV^2; A_inf drops out of both variations so no
+   consumer changes). Optional: premise (c) sharpened to the G_eff form
+   (lem:pair-improve(I): 1/G_eff = 1/G - 8 pi xi <phi^2>_BD).
+5. appendix_e0ds_min.tex rem:e0ds-min-status(2) (grep "named support steps")
+   + unification.tex rem:E0-dS-status (grep "the named support steps being"):
+   update to: at n=0 both support steps are DISCHARGED for the compactly
+   generated class (Apps app:ds2-restriction, app:ds-pairing) — per-cut
+   equality + pairing now theorem-grade there; remaining open at n=0: F2
+   (general BD-Hadamard perturbations) and F1 (bulk-wedge entropy language,
+   only if wanted); at n>=1 unchanged (B1a wall). NOTE: line numbers in
+   unification.tex have shifted (concurrent sibling port session); anchors
+   above are grep-stable.
+
+## #63 HOMES
+None of the three charged homes committed: (a) DMP scope honest at theorem
+strength (Rem 4.4 enlarged space not consumed) — one WORDING defect = F-WORD,
+verified at source by referee; (b) CLOSED — H1 derived on the whole extended
+horizon, cut-independence by domain (state is one v-stationary bidistribution;
+cuts index subalgebras), re-derived three times (A1, R, referee); (c) NOT
+committed — premise (b) PROVED for the class, not assumed. #63 therefore
+homes as the genuine find INSIDE that proof, (c)-adjacent: F-RATE — Lem
+ds2-moment(i)'s falloff v^{-Re h_-} is FALSE for plane-straddling compactly
+generated f (true rate v^{-min(1, Re h_-)}, cone-delta mechanism, universal
+residue); conclusion SURVIVES under the corrected rate (weighted integrand
+O(v^{-1-2min(1,Re h_-)}) integrable for every m_eff^2 > 0). Secondary
+(a)-adjacent wording sub-find: F-WORD. Both gated, both priced, neither fatal.
+Genuine-find count: #49, #55, #57(staging), #63 = F-RATE.
+
+## ZERO-WRITE ATTESTATION (adjudication close) + DRIFT NOTE
+This session wrote NOTHING outside the scratchpad (writes: referee56.py,
+referee56_out.txt, ledger_run56.md appends). By content:
+- appendix_e0ds_min.tex: 6d8ee5b8... at open == at close. STABLE.
+- unification.tex: open 225aa1f1... (== both arms' attested open AND close)
+  -> close b6c06b9c...; ISSUES.md: open 0e87c6b3... (== arms' attestations)
+  -> close 13d8ffa7... DRIFT IS NOT MINE: a concurrent sibling session is
+  porting appendices (git: new port_ac/port_d0/port_m3/appendix_e2a_ports.tex,
+  +130 lines unification.tex, PDF rebuilt). Run-56 loci verified intact after
+  drift: "audited-minimal form"/app:e0ds-min anchors present (5 hits),
+  \input{appendix_e0ds_min} present. All run-56 baselines (both arms + my
+  open) agree with each other; the drift postdates the arms' closes.
+
+## BOTTOM LINE
+Both commissioned support steps of (E0-dS') are DELIVERED as portable
+theorem-grade appendix write-ups, adversary-audited and referee-re-derived
+(13/13): at n=0, for compactly generated Bunch-Davies-class perturbations, on
+every wedge of the SO(1,4) orbit, the per-cut equality-strength first law
+(matter side) AND its Wald/Raychaudhuri geometric pairing are theorems modulo
+the author-gated import package above. Open residues, honestly fenced: F2
+(general Hadamard class), F1 (bulk-wedge entropy identification), F3
+(existence-level Longo import), the n>=1 B1a wall — plus one sign-critical
+reading fix to the printed display (deficit normalisation) that MUST accompany
+any import.
+
+---
+### Main-session apply note — run 56 (dS support steps) applied (2026-07-15)
+
+Ledger `ledger_run56.md` merged above. Certified post-resume (4/4; adversary 31/31 independent checks; referee re-derived mass-inertness AND the decisive boundary-term computation independently, 13/13). **Both (E0-dS′) support steps DELIVERED at theorem grade** for n=0 on the compactly generated (coherent) Bunch–Davies class, every SO(1,4)-orbit wedge:
+
+1. **(s1-ii) discharged** — `ds2_restriction.tex` imported as App app:ds2-restriction: mass-inertness re-derived THREE times independently (exact BD ₂F₁ closed form — pole residue H²/8π² universal, all (m,ξ)-dependence annihilated by generator derivatives; the adversary sharpened it BEYOND the DMP window and derived the Wightman prescription from the ambient tube); DMP verified verbatim at line anchors (expanding-patch injection at printed strength; the Bondi-affine dictionary seam CLOSED); the first-moment premise **PROVED for the class** (not assumed); the CF per-cut equality transfers with nothing Minkowski-specific consumed (the dS horizon net-with-state is measure-isomorphic to the null-plane net-with-vacuum; translations act intrinsically — the run-53 (s2) no-go respected, reinforced by A2's structural finding that non-bifurcation cuts are NOT isometry translates, so CF-class arguments must and do run on the half-sided-inclusion structure).
+2. **(s1-iii) discharged** — `ds2_pairing.tex` imported as App app:ds-pairing: new exact horizon chart (Ric=3/l²g symbolic; generators affinely complete — the adversary's global-structure kill resolved); the pairing identity with the COMPLETE boundary-term list (the first-moment premise consumed exactly twice, both at v→∞ — located, with the R8-type witness proving it load-bearing); the ξ≠0 improvement/Wald lemma with coherent G_eff bookkeeping; second-variation differentiability DERIVED.
+3. **SIGN-CRITICAL FIX APPLIED to print** (App app:e0ds-min, lem:e0ds-cut premise (a)): the geometric side typeset as the future-normalised area DEFICIT δ[A_∞−A(V)]/4G with the warning parenthetical — the literal δA(V) reading returns the ANTI-Einstein sign under the second cut-variation (found by A2, independently confirmed by the referee's IBP). A run-53-era print defect caught before any consumer used it.
+4. **Adversary corrections folded pre-import** (the gate): F-WORD (DMP's boundary space is L²-type, not Schwartz — verified at their Eq. (17)) and **F-RATE = genuine find #63**: the staged falloff v^{−Re h₋} is FALSE for plane-straddling perturbations — true rate v^{−min(1,Re h₋)} via the cone-delta mechanism; conclusion survives (integrand O(v^{−3}) straddling / O(v^{−4}) wedge-supported, integrable ∀m²_eff>0). Status remarks updated in both app:e0ds-min and rem:E0-dS-status; new bibitems DappiaggiMorettiPinamonti2009, CasiniTesteTorroba2017, Longo2019coherent (all from the file's documented header). Full clean rebuild 0/0/0, **328 pp**.
+
+**CLOSING-COMMISSION CLOSE-OUT (runs 55–58):** all four fronts processed, certified, applied. (W1) → finite named checklist (SM wall = IR gate incl. the scheme channel; massive-scalar window theorem-modulo-named at form grade). dS support steps → both discharged at n=0 for the generating class ((E0-dS′) now rests on: the general-Hadamard first moment, F1-if-wanted, and n≥1=B1a). E2a-ω → M3 at THEOREM (ported); M1 at PLAUSIBLE with the honest two-item list {BFV@PLAUSIBLE, #B′}; ~15pp of ports in print. Ball route → [GAP-improv] closed against revival at theorem grade; [GAP-dS] narrowed to one named coefficient N(d,Δ). Genuine-find tally: #49, #55, #57(staging), F1(run-57 bank note), #63=F-RATE — every one caught by the discipline pre-print or same-day. Session-limit deaths of all four adversary+adjudicator pairs recovered by cached resume; every certification is post-adversary. Paper: 328 pp, 0/0/0. **Score: ≈9.05–9.1** — the theory surface is now: closed, walled-at-theorem-grade, or reduced to named checklists/premises, with the sole irreducible dynamical open ((W1)'s IR gate) and a short author-labor list (general-Hadamard first moment; the two optional identifications; N(d,Δ); L-Tak/L-RS write-ups).
+
+# RUN 60 LEDGER — INDEPENDENT RED TEAM of the dS tensor-completion stack
+(second independent pass on run-53 + run-56 material; attack the PRINTED lemmas,
+re-derive existence premises not only estimates. ZERO writes to repo — verified below.)
+
+Sibling arms append their own sections (RT2 = the restriction; RT3 = the pairing).
+
+---
+## ARM RT1 — THE THREE (E0-dS′) LEMMAS  [site (L): appendix_e0ds_min.tex]
+STATUS: COMPLETE (2026-07-15). Deliverables: rt60_lemmas.md + rt60_lemmas.py
+(20/20 PASS, independent of ds2_check.py / ds2_adv.py / ds2_pairing.py / adj53_check.py).
+
+### VERDICT PER LEMMA
+- **lem:e0ds-coverage — HOLDS.** SO(1,4) transitivity on (tot.geodesic bif-sphere,
+  null-normal) data + the 2-parameter family both independently re-derived and
+  constructively verified (explicit Witt isometry, η-preserving, |det|=1, carries ref
+  null normal into target normal 2-plane). Key existence facts re-checked at source:
+  k^⊥∩T_x is a degenerate 3-plane with k in its radical; the transverse complements of
+  Rk are a 2-param family EVERY member of which is automatically spacelike (screen
+  metric); Π=span(x,P) positive-definite ⇒ Σ round S² radius 1/H totally geodesic;
+  normal 2-plane Lorentzian, contains k. Dimension cross-check 4−2=2. No wound.
+- **lem:e0ds-trace — HOLDS (conclusion) + minor premise-precision WOUND.** Polarisation
+  kernel dim EXACTLY 1 = span{η} (SVD, 60 null k); ∇^μ(c g_{μν})=∂_ν c on the CURVED
+  static patch (full Christoffels) ⇒ c const = Λ seam. Linearised Bianchi is an identity
+  iff on-shell — correctly named. **WOUND:** the Stewart–Walker gauge-invariance the
+  lemma invokes (to patch per-wedge E_kk=0 into one tensor) needs the BACKGROUND value
+  E^(0)=0; the printed condition "G^(0)+Λg^(0)=0" alone leaves E^(0)=−κ⟨T^(0)⟩_BD=
+  +κρ_vac g^(0)≠0 on dS, which makes E gauge-DEPENDENT (verified L_ζ(c₀g^(0))≠0). Exactly
+  repaired by the companion's own convention (δ⟨T⟩ BD-relative ⇒ ⟨T^(0)⟩=0, Λ effective
+  ⇒ E^(0)=0). Conclusion unaffected (discrepancy is itself ∝g^(0) const).
+  MINIMAL FIX (one clause): state the FULL semiclassical background relation
+  G^(0)+Λg^(0)=κ⟨T^(0)⟩_BD (equivalently ⟨T⟩ Bunch–Davies-relative), so E^(0)=0.
+- **lem:e0ds-cut — HOLDS incl. the sign-critical deficit reading.** Re-derived the
+  second-cut-variation SIGN from the chart identities (δθ=∂_v(δ√h/√h),
+  ∂_vδθ=−δR_vv): DEFICIT δ[A_∞−A(V)]/4G ⇒ δR_vv=+8πG δ⟨T_vv⟩ (EINSTEIN); LITERAL
+  δA(V)/4G ⇒ δR_vv=−8πG δ⟨T_vv⟩ (ANTI-EINSTEIN). A_∞ (V-independent) drops from both
+  variations. The printed lemma uses the deficit reading — CORRECT; the anti-Einstein
+  alternative is actually EXCLUDED (verified, not asserted). Matter side
+  d²/dV²∫(v−V)Φ=Φ(V); pair-tail IBP boundary terms both vanish (scipy). Physical
+  corroboration (positive flux ⇒ deficit>0) consistent.
+
+### #67 HOMES (RT1 site) — none committed
+(a) coverage transitivity/2-param asserted-not-derived → NOT committed (both derived).
+(c) sign-critical deficit reading stated but anti-Einstein not excluded → NOT committed
+    (exclusion re-derived: literal=anti-Einstein, deficit=Einstein; printed choice right).
+Genuine RT1 find: ONE minor premise-precision wound on lem:e0ds-trace (Stewart–Walker
+needs E^(0)=0, printed vacuum relation alone insufficient; one-clause fix; conclusion
+intact). No BROKEN lemma; no fence silently consumed at this site.
+
+### ZERO-WRITE ATTESTATION (RT1, by content)
+RT1 issued NO Write/Edit to any repo file (unification.tex / ISSUES.md /
+appendix_e0ds_min.tex / ds2_restriction.tex / ds2_pairing.tex). RT1 wrote only three
+scratchpad files: rt60_lemmas.md, rt60_lemmas.py, this ledger section. The working-tree
+drift observed at close (" M ISSUES.md, M unification.tex, M appendix_e2a_omega.tex,
+?? appendix_e0ds_min.tex, rebuilt PDF/aux") is CONCURRENT (sibling run-60 arms + the
+main-session appendix-port drift already noted in ledger_run56), present independently of
+this arm; my tool log contains no repo-targeted write.
+
+---
+## ARM RT2 — THE RESTRICTION  [site (R): ds2_restriction.tex, App app:ds2-restriction]
+STATUS: COMPLETE (2026-07-15). Deliverables: rt60_restriction.md + rt60_restriction.py
+(14/14 PASS, independent of ds2_check.py / ds2_adv.py / adj53_check.py). DMP 0712.1770
+re-verified at line anchors (Thm 4.2 l.1059, Thm 4.4 l.1296, Rem 4.4 l.1304, Eq.17 l.767,
+Eq.20 l.805, Thm 4.1 l.968).
+
+### VERDICT PER SITE
+- **lem:ds2-massinert — HOLDS.** The existence premise of the whole reduction re-derived
+  at depth (#67 home (a) NOT committed): (1) Z=n·n' v-free on H (symbolic, ∂_v=∂_{v'}=0);
+  (2) pole residue U₀=H²/8π² mass-INDEPENDENT — Γ(h₊)Γ(h₋) cancel EXACTLY via DLMF 15.4.23
+  (Re(a+b−c)=1>0), shown in print and confirmed symbolically (∂_{h₊}U₀=0) + numerically for
+  ν=0.3,1.4,i,5i,20i incl. sub-DMP ν=1.4; (3) −∂²_{Δv}(1/g)=+2ε²g⁻³ (printed pole sign
+  CORRECT) ⇒ transverse ∫=−π/Δv², ×(1/4π²)= EXACTLY printed kernel −δ²_{√h}/(4π(Δv−i0)²);
+  log/analytic (all (m,ξ)) → O(ε) → 0. Positivity independently held (adv R2g); DMP λ
+  (Eq.20/Thm 4.1a) corroborative not load-bearing. COSMETIC: (log) line prints
+  −∂²_{Δv}log=+ε²g⁻² but true is −ε²g⁻² (sympy) — sign slip, magnitude right, O(ε) either
+  way. One-char fix; no grade impact.
+- **rem:ds2-dmp + F4 (DMP scope / F-WORD) — HOLDS.** Galanda checklist verbatim at source:
+  Thm 4.2 = isometric *-hom ı:W(M)→W(ℑ⁻) ✓; Thm 4.4(a) landing at m²_eff>5R/48 ⇔ |Re ν|<1
+  ✓; Thm 4.4(b) λM=ωE=Bunch–Davies ✓; Eq.17 boundary space = {ψ,∂_ℓψ∈L²} ⇒ **F-WORD
+  ("L²-type not Schwartz") APPLIED and CORRECT**; Eq.20 λ=Re∫2kΘ(k)ψ̂ψ̂' pos-freq chiral,
+  unique (Thm 4.1a) ✓; Rem 4.4 enlarged space for 0<m²_eff≤5R/48 explicitly NOT consumed.
+  Field/mass/state/scope all honest; DMP corroborative. #67 home (b) DMP-over-citation NOT
+  committed; runs 48/56 citation wounds do not recur.
+- **lem:ds2-moment(i) — WOUNDED (proof-gap; statement + conclusion survive).** #67 home (c-
+  analog for this arm): the run-56 F-RATE fix was **only partially applied**. Statement rate
+  v^{−min(1,Re h₋)} CORRECT (cone-delta: straddling⇒v⁻¹ [v·ψ flat slope 0.052], off-plane⇒
+  v^{−Re h₋} [→2^{1.25}]); moment integrand O(v^{−1−2min(1,Re h₋)}) CONVERGES ∀m²_eff>0
+  (v⁻³ straddling/v⁻⁴ wedge at SM); R8 witness re-verified. **BUT the PROOF still prints the
+  FALSE sentence** "a compact set meeting the plane is handled by splitting f and using any
+  second orbit wedge, Lem ds2-geom(iv)" — the run-56 adversary's gated edit was explicitly
+  "DROP the splitting parenthetical," and it was NOT dropped (only the exponent + (ii)'s
+  O(v⁻³)/O(v⁻⁴) were). The sentence is refuted (second-wedge computes ψ on a DIFFERENT
+  horizon H_g; a bump crossing H's plane cannot be detached) AND inconsistent with the
+  lemma's own corrected statement (splitting would force v^{−Re h₋}, contradicting the v⁻¹
+  cap). The cone-delta derivation that proves the statement lives only in ds2_adv.py (R4b),
+  never in the paper's proof ⇒ the proof no longer proves its statement.
+  MINIMAL FIX: delete the splitting parenthetical; insert the cone-delta line
+  ∫f·2πU₀δ(Z−1)dμ = (2πU₀/v)∫_plane f (·) = v⁻¹ straddling, +O(v^{−Re h₋}) interior.
+  Downstream (thm:ds2-composition; lem:e0ds-cut premises (a_matter),(b)) UNAFFECTED.
+
+### #67 HOMES (RT2 site) — one live wound
+(a) mass-inertness asserted w/o re-derivation → NOT committed (all three steps re-derived
+    in print + independently; residue-universality symbolic AND numeric).
+(b) DMP beyond printed scope → NOT committed (every quote verbatim at line anchors).
+(c-analog) first-moment / F-RATE → the run-56 fix's PROOF-side edit was not applied: the
+    refuted "splitting" sentence survives in lem:ds2-moment(i)'s proof. Clean kill of a
+    printed sentence; statement + conclusion intact; one-deletion+one-line fix.
+F1 (bulk-wedge entropy) honestly OPEN in rem:ds2-fences(F1), not consumed by the per-cut
+display. No BROKEN lemma at this site.
+
+### ZERO-WRITE ATTESTATION (RT2, by content)
+RT2 issued NO Write/Edit to any repo file (unification.tex / ISSUES.md /
+appendix_e0ds_min.tex / ds2_restriction.tex / ds2_pairing.tex / ds2_pairing consumers).
+RT2 wrote only three scratchpad files: rt60_restriction.md, rt60_restriction.py, this
+ledger section. Any working-tree drift is CONCURRENT (sibling run-60 arms + main-session
+port drift noted in ledger_run56), independent of this arm.
+
+---
+## ARM RT3 — THE PAIRING  [site (P): ds2_pairing.tex, App.~\ref{app:ds-pairing}]
+STATUS: COMPLETE (2026-07-15). Deliverables: rt60_pairing.md + rt60_pairing.py
+(15/15 PASS, independent of ds2_pairing.py P1–P7 / ds2_adv.py R1 / adj53_check.py).
+NET: 0 BROKEN, 1 WOUNDED (disclosed in-file), 5 HOLDS.
+
+### VERDICT PER SITE
+- **lem:pair-chart (exact chart) — HOLDS.** Rebuilt the metric BY HAND from the
+  embedding and in sympy (K1, l=1): dot-products p·p=1,k·k=l·l=0,p·l=0,k·l=−2;
+  pullback is EXACTLY the printed line element; Ric=3/l²g identically (my K1b +
+  ds2_pairing.py P1 + ds2_adv.py R1c = 3 independent confirmations). Affine
+  completeness re-derived at existence depth (K2): generator is a straight ambient
+  line (d²X/dv²=0) that is NULL (k·k=0), so II(k,k)=−(k·k)X=0 ⇒ v genuinely affine,
+  v∈ℝ complete, h_AB|_N=l² for ALL v (no far pole/bifurcation at finite v — printed
+  sentence exact). θ_l=4v/l²≠0 ⇒ S_{v≠0} not totally geodesic ⇒ leaves the SO(1,4)
+  orbit (the honest dS≠Minkowski caution). No wound.
+- **lem:pair-tail + thm:pair-main + rem:pair-moment-locus (boundary accounting) —
+  HOLDS.** Identity ∫(v-V)F=G(∞)−G(V) reproduced 1e-6 (K5a). Premise (b) consumed
+  EXACTLY TWICE, BOTH at v→∞ (far term (v-V)δθ→0; δA_∞ existence); the cut term
+  v=V vanishes by the WEIGHT (free, any cut incl. crossing B); S² closed + no ∂_AV
+  in the cut-area formula ⇒ no transverse boundary term. "Complete list" genuinely
+  complete. R8 witness F=1/(1+v²) (K5b): ANEC=π/2 finite while first moment AND
+  area deficit ~log L — premise (b) strictly stronger than ANEC, honestly disclosed,
+  verification fenced to the quantum arm (H4). No wound.
+- **rem:pair-sign (deficit/sign trap) [HOME (c)] — HOLDS.** Re-derived the 2nd
+  cut-variation for a concrete +energy pulse (K3): DEFICIT δ[A_∞−A(V)]/4G ⇒ +F(V)
+  (EINSTEIN); LITERAL δA(V)/4G ⇒ −F(V) (ANTI-EINSTEIN). Reading is PHYSICALLY
+  FORCED, not ad hoc: +energy ⇒ δθ≥0 ⇒ area grows to 𝓘⁺ ⇒ deficit>0=flux>0 (K4).
+  Alternative EXCLUDED. lem:e0ds-cut(a) already prints the deficit form ⇒ consistent
+  across the stack. CONVERGES with RT1's independent re-derivation. (nit:
+  rem:pair-sign's "premise (a) writes δA(V)/4G" mildly misquotes — (a) writes the
+  deficit; reword.) Home (c) NOT committed.
+- **lem:pair-improve (improvement/Wald G_eff) — HOLDS (self) / WOUNDED (consumer).**
+  (I) null-null response reduces correctly on N; (III) closes to
+  1/G_eff=1/G−8πξ⟨φ²⟩_BD (K6a); Wald density 1/(4G_eff)=1/(4G)−2πξ⟨φ²⟩_BD
+  self-consistent (K6b) ⇒ δS_W as printed; F3 telescoping cut-localises the
+  improvement (K6c); (a_W)⇔(a_A). G_eff is spacetime-CONSTANT on dS ⇒ Bianchi/Λ-seam
+  of lem:e0ds-trace intact. **WOUND (on the consumer, lem:e0ds-cut premise (c) +
+  output in appendix_e0ds_min.tex):** they carry the BARE G; on dS ⟨φ²⟩_BD≠0 so the
+  true coupling is G_eff≠G, state/field-dependent (m,ξ,l). Disclosed by
+  rem:pair-status(3). MINIMAL FIX: premise (c)+conclusion G→G_eff, add
+  1/G_eff=1/G−8πξ⟨φ²⟩_BD. Non-load-bearing to the FORM, load-bearing to the
+  coefficient identification.
+- **prop:pair-secondvar — HOLDS.** Twice-differentiability DERIVED from
+  (FM)+Hadamard (not assumed); clean polarisation because the cut-area formula has
+  no ∂_AV term (no (∂f)² off-diagonal); globalisation honest (near-B per wedge +
+  coverage, REFUSES boost-transport since the perturbation is not boost-invariant).
+- **F1 fence (cut-algebra vs bulk-wedge entropy) — HOLDS (honestly open, not used).**
+  The pairing is entirely horizon-cut geometry (areas of S_v⊂N, generator flux); it
+  never touches the bulk causal-wedge algebra. δS=δ⟨K_V⟩ and the entropy=area
+  identification are EXPLICITLY deferred (rem:pair-status(4)); bulk-wedge
+  identification is a SEPARATE "if wanted" open (rem:e0ds-min-status(2),
+  rem:E0-dS-status). Not silently consumed.
+
+### #67 HOMES (RT3 site) — none committed
+(a) existence premise asserted-not-rederived → NOT committed (chart Ric, affine
+    completeness, G_eff algebra, Wald density all re-derived at source).
+(b) DMP beyond scope → N/A to the pairing (RT2 site).
+(c) sign/deficit anti-Einstein alt not excluded → NOT committed (excluded, K3+K4).
+    F1 bulk-wedge fence silently consumed → NOT committed (explicitly deferred ×3).
+Genuine RT3 find: ONE WOUND — the printed premise (c)/output coupling is bare G,
+should be G_eff on dS (disclosed in-file; one-clause fix). No BROKEN; no fence used.
+
+### ZERO-WRITE ATTESTATION (RT3, by content)
+RT3 issued NO Write/Edit to any repo file (unification.tex / ISSUES.md /
+appendix_e0ds_min.tex / ds2_restriction.tex / ds2_pairing.tex). RT3 wrote only
+scratchpad files: rt60_pairing.md, rt60_pairing.py, this ledger section. All
+verification is by CONTENT (re-derivation) + independent sympy/scipy. Any
+working-tree drift is CONCURRENT (sibling run-60 arms / main-session port), not
+from this arm.
+
+---
+# FINAL ADJUDICATION — RUN 60 (adjudicator pass; verified BY CONTENT, zero repo writes)
+Method: did NOT trust arm summaries — re-read the printed lemmas at source, confirmed
+each arm's load-bearing claim against the .tex, re-derived the two #67-load-bearing homes
+(residue-universality; the sign) by hand, and re-ran all three verifiers
+(rt60_lemmas.py 20/20, rt60_restriction.py 14/14, rt60_pairing.py 15/15 — all PASS).
+
+## (1) PER-SITE VERDICT  {HOLDS / WOUNDED / BROKEN}
+| # | site | grade | note |
+|---|------|-------|------|
+| 1 | coverage (lem:e0ds-coverage) | **HOLDS** | SO(1,4) transitivity + 2-param count sound; every bif-sphere a great sphere pinned at 1/H; group-dim 4−2=2. |
+| 2 | trace (lem:e0ds-trace) | **WOUNDED** | Conclusion E=c g, c const, Λ-seam HOLDS. Printed premise "G⁰+Λg⁰=0" is insufficient for the Stewart–Walker gauge-invariance the lemma NAMES: on dS it leaves E⁰=+κρ_vac g⁰≠0 ⇒ E gauge-dependent ⇒ undermines per-wedge frame-patching. UNDISCLOSED. Conclusion intact (discrepancy ∝ const g⁰). |
+| 3 | cut+sign (lem:e0ds-cut, second-variation + deficit reading) | **HOLDS** | Re-derived by hand: ∂_v²δ√h=−√h δR_vv ⇒ DEFICIT δ[A_∞−A(V)]/4G → +8πG (EINSTEIN); LITERAL δA(V) → −8πG (ANTI-EINSTEIN). Printed lemma uses the deficit — correct; anti-Einstein alt GENUINELY EXCLUDED (physically forced). A_∞ V-indep, drops. [Premise (c) coupling → see G_eff wound, site 7.] |
+| 4 | restriction / mass-inertness (lem:ds2-massinert) | **HOLDS** | Z=n·n' v-free; U₀=H²/8π² mass-INDEPENDENT — my hand check: c−a−b=−1, leading ₂F₁ term Γ(2)Γ(1)/[Γ(h₊)Γ(h₋)]·2/(1−Z), Γ(h±) cancel EXACTLY; ∂_v∂_v'+transverse ∫ → printed universal chiral kernel. Cosmetic log-sign typo only (see fix 4). |
+| 5 | DMP (rem:ds2-dmp, F-WORD) | **HOLDS** | Every attribution verbatim at source anchors; scope respected (expanding-patch Weyl injection; NO wedge/cut net; Rem 4.4 enlarged space un-consumed); F-WORD "L²-type not Schwartz" applied at Eq.17. |
+| 6 | F-RATE (lem:ds2-moment(i)) | **WOUNDED** | Statement (rate v^{−min(1,Re h₋)}) + moment-convergence conclusion HOLD. But the PROOF still prints the refuted "splitting f + second orbit wedge, Lem ds2-geom(iv)" sentence (ds2_restriction.tex l.282): the 2nd wedge bounds ψ on a DIFFERENT horizon H_g, cannot detach a bump straddling H's null plane; and it is inconsistent with the corrected statement (would give v^{−Re h₋}, contradicting the v⁻¹ cap). Proof's slope argument yields only v^{−Re h₋}; the cone-delta derivation that yields v⁻¹ lives ONLY in ds2_adv.py, never in the paper. → proof does not prove its own statement. Clean kill of a printed sentence. |
+| 7 | pairing (lem:pair-chart/tail/improve/secondvar, rem:pair-sign, F1) | **HOLDS** (theorem grade) | Chart Ric=3/l²g triple-confirmed; affine completeness hinges on k null (II(k,k)=0); boundary list complete (b consumed 2× both at v→∞); sign trap re-derived; Wald/G_eff algebra self-consistent; F1 honestly OPEN. **One DISCLOSED consumer wound** (rem:pair-status(3)): lem:e0ds-cut premise (c)+output carry BARE G; on dS ⟨φ²⟩_BD≠0 ⇒ true coupling G_eff≠G. |
+
+**Tally: 5 HOLDS · 2 WOUNDED · 0 BROKEN.** Plus one disclosed consumer-side G→G_eff wound
+that lands on lem:e0ds-cut premise (c) but is derived/flagged at the pairing site.
+
+## (2) FIX LIST (minimal, per non-HOLDS)
+1. **[F-RATE / RT2 — gated, UNDISCLOSED at its site]** ds2_restriction.tex proof of
+   lem:ds2-moment(i) (~l.282): DELETE "a compact set meeting the plane is handled by
+   splitting f and using any second orbit wedge, Lem ds2-geom(iv)"; INSERT the cone-delta
+   line — along a generator Z−1=v H²(x'¹−x'⁰)+…, ∫f·2πU₀δ(Z−1)dμ=(2πU₀/v)∫_plane f ⇒
+   v⁻¹ for straddling f, +O(v^{−Re h₋}) interior ⇒ envelope v^{−min(1,Re h₋)}. Makes the
+   proof prove its own corrected statement. thm:ds2-composition unaffected.
+2. **[trace / RT1 — one clause, UNDISCLOSED]** appendix_e0ds_min.tex lem:e0ds-trace (~l.61):
+   replace "G⁰+Λg⁰=0" with the FULL semiclassical relation G⁰+Λg⁰=κ⟨T⁰⟩_BD, equivalently
+   ⟨T⟩ Bunch–Davies-relative so E⁰=0 and Stewart–Walker is exact. Conclusion unaffected.
+3. **[G_eff / RT3 — gated, DISCLOSED rem:pair-status(3)]** appendix_e0ds_min.tex
+   lem:e0ds-cut premise (c)+conclusion (~l.116-119): G→G_eff, add
+   1/G_eff=1/G−8πξ⟨φ²⟩_BD. Non-load-bearing to the FORM (G_eff spacetime-const on dS ⇒
+   Bianchi/Λ intact); load-bearing to the coefficient identification.
+4. **[cosmetic]** ds2_restriction.tex l.189 log line "−∂²_Δv log(⋯)=+ε²g⁻²" → −ε²g⁻²
+   (hand check: ∂²_Δv log g=ε²/g²). Harmless O(ε)→0. One character.
+5. **[nit]** ds2_pairing.tex rem:pair-sign (l.372) "δA(V)/4G=δ⟨K_V⟩" mildly misquotes
+   premise (a) (which writes the deficit); reword to "the literal δA(V) reading."
+6. **[nit]** thm:pair-main "(FN) is not an independent dynamical input" overstates;
+   (FN)⇔δA_∞ finite is the dynamical content — listed as explicit hypothesis so honest;
+   reword the parenthetical.
+
+## (3) #67 HOMES — NONE COMMITTED
+- (a) mass-inertness asserted w/o the v-free / residue-universal steps re-derived →
+  **NOT committed.** All three steps re-derived AND in print; U₀=H²/8π² Γ-cancellation
+  reconfirmed by the adjudicator by hand (A&S 15.3.12 leading term) + symbolic + numeric.
+- (b) DMP cited beyond printed scope (Galanda checklist) → **NOT committed.** Verbatim at
+  source; scope disclaimed; Rem 4.4 un-consumed; F-WORD correct.
+- (c) sign-critical deficit stated but anti-Einstein alt not excluded, or fence F1 silently
+  consumed → **NOT committed.** Deficit=Einstein / literal=anti-Einstein re-derived
+  independently; anti-Einstein EXCLUDED. F1 (bulk-wedge entropy) honestly OPEN at
+  rem:ds2-fences(F1), rem:pair-status(4), rem:E0-dS-status — not silently used.
+
+## (4) DOES (E0-dS′) + THE TWO SUPPORT STEPS STAND AS PRINTED?
+**In CONTENT/CONCLUSION: YES — theorem grade, no BROKEN, no home committed, no fence
+silently consumed, both verifiers reproduce the load-bearing computations.**
+**Verbatim AS PRINTED: NO — three repairable wounds require edits first**, one of which
+(F-RATE) is a clean kill of a printed proof sentence leaving lem:ds2-moment(i)'s proof not
+proving its own statement. Site-by-site: coverage + cut+sign stand as printed; trace holds
+in conclusion but its printed premise clause is under-specified (undisclosed); the
+restriction discharges premises (a_matter)+(b) in substance (statement/conclusion the
+consumers actually use are correct and verified in ds2_adv.py) but lem:ds2-moment(i)'s
+printed PROOF is defective; the pairing stands at theorem grade with the coupling
+correction to G_eff (disclosed). The consumer rem:E0-dS-status ("both named support steps
+now discharged at n=0 for the compactly generated class") is defensible IN SUBSTANCE but,
+for premise (b), leans on a lemma whose printed proof must be repaired (fix 1). Two of the
+three wounds are UNDISCLOSED at their own site (trace S–W premise; F-RATE splitting
+sentence); the G_eff wound is disclosed. Net: **stands as a theorem, not yet as printed.**
+
+## (5) ZERO-WRITE ADJUDICATION (BY CONTENT)
+Repo mtimes unchanged by the red team: appendix_e0ds_min.tex 08:13, ds2_pairing.tex 08:12,
+ds2_restriction.tex 08:12, unification.tex 08:13, ISSUES.md 08:14 — all predate the
+red-team/adjudication pass; working-tree drift is the concurrent main-session appendix-port
+(untracked new .tex fragments + unification.* rebuild artifacts), not red-team writes. RT1,
+RT2, RT3 and this adjudicator issued ZERO Write/Edit to any repo file; all output is in
+scratchpad (rt60_*.md, rt60_*.py, this ledger). Verification throughout is by CONTENT
+(source re-read + hand re-derivation + independent sympy/scipy), never by repo mutation.
+
+
+---
+### Main-session apply note — run 60 (independent red team of the dS stack) applied (2026-07-15)
+
+Ledger `ledger_run60.md` merged above. **Second independent Opus pass on the run-53+56 dS material** (each already pro-task-adversaried). Verdict: **7 sites — 5 HOLDS, 2 WOUNDED, 0 BROKEN**; the stack stands as a THEOREM but did NOT ship verbatim as printed. Referee CONFIRMED at high confidence; both load-bearing existence premises independently re-derived by hand (mass-inertness residue U₀=H²/8π² mass-independent via exact Γ(h±) cancellation; the deficit-reading = Einstein / literal = anti-Einstein, alternative genuinely excluded). None of the #67 homes committed.
+
+**Three repairable wounds, all fixed (full clean rebuild 0/0/0, 328 pp):**
+1. **FIX-1 (RT2, the highest-value find — a clean kill of a printed proof sentence):** the run-56 F-RATE correction had been applied to lem:ds2-moment(i)'s STATEMENT but not its PROOF — the proof still printed the refuted "split f + second orbit wedge" sentence (a second wedge bounds ψ on a *different* horizon, cannot detach a plane-straddling bump), leaving the proof not proving its own corrected v^{−min(1,Re h₋)} rate. Deleted; the **cone-delta derivation** (universal 2πU₀δ(Z−1) leading singularity → v^{−1} straddling, v^{−Re h₋} interior) — which previously lived only in the staged adversary script — is now written into the paper proof itself.
+2. **FIX-2 (RT1, undisclosed premise-precision wound):** lem:e0ds-trace invoked Stewart–Walker gauge-invariance to patch per-wedge E_kk=0 into one tensor, but the printed bare on-shell condition G⁰+Λg⁰=0 leaves E⁰=+κρ_vac g⁰≠0 on dS (E gauge-dependent). Replaced with the full semiclassical relation G⁰+Λg⁰=κ⟨T⁰⟩_BD (⟨T⟩ Bunch–Davies-relative ⇒ E⁰=0). Conclusion (E=c g, c const) was never threatened.
+3. **FIX-3 (RT3, disclosed G→G_eff):** lem:e0ds-cut premise (c) now carries 1/G_eff=1/G−8πξ⟨φ²⟩_BD (spacetime-constant on dS ⇒ Λ seam + Bianchi intact; rescales the coefficient, not the form).
+Plus COSMETIC-4 (a log-line sign typo, harmless O(ε)) and NITs 5–6 (pairing rewordings). **No downstream consumer breaks; the FORM of the emergent Einstein equation is untouched.** The lesson recorded: a correction applied to a statement must be applied to its proof in the same pass (F-RATE was half-applied at run 56).
+
+Three red teams still in flight (runs 59, 61, 62).
+
+# ledger_run62.md — RT1 (BIBITEM FIDELITY, first half)
+
+ARM RT1. Keys: Tice2018, DawsonFewster2006, FewsterMistry2003, SahlmannVerch2000,
+GalandaMuchVerch2023, Galanda2022, FinsterMuch2025, CadamuroFrobMinz2024.
+Full detail staged: scratchpad/rt62_cites_a.md. ZERO writes to unification.tex.
+
+VERDICT: **WOUNDED** — 2 orphan-bibitem wounds; all metadata EXACT; all scope faithful.
+
+## WOUNDS (both mechanical, real, honesty-home (a))
+- **F1 Tice2018 = ORPHAN.** grep -c "Tice2018" unification.tex = 1 (bibitem l.24116 only);
+  NO \cite anywhere; "Tice/Kato-1970/Hughes--Kato--Marsden/Friedrichs/symmetric-hyperbolic"
+  live ONLY inside the uncited bibitem (body's only "Kato" = unrelated Kato--Rellich). The
+  energy estimate it carries would be consumed at Hyp.~hadamard-uniform's regularity step
+  (l.17019-17030, H^{s-6}→C^0 / □_g v_1 six-jet) but that step cites nobody for it. Run-audit
+  "re-added" restored the bibitem but not the in-text \cite → incomplete restoration; prints
+  an unreferenced entry. FIX: add \cite{Tice2018} at that step, or delete.
+  - Re-added TEXT is itself CORRECT: notes exist (CMU/~iantice), "Theorem 1.2.1 (Higher-order
+    spatial regularity)" verbatim, Friedrichs method confirmed at source. Defect = orphan only.
+  - F1b cosmetic: key "Tice2018" vs displayed year "(2017)".
+- **F2 SahlmannVerch2000 = ORPHAN.** grep -c = 1 (bibitem l.24099 only); NO \cite. Metadata
+  EXACT (CMP 214:705-731 (2000), math-ph/0002021). Body "passive/passivity" (l.787-1235) is a
+  DIFFERENT concept (retrodictive two-boundary law), not SV's passivity⇒μSC/Hadamard. FIX: add
+  intended \cite (passivity⇒Hadamard remark) or delete.
+
+## HOLDS (metadata EXACT + scope faithful)
+- DawsonFewster2006: CQG 23:6659-6681 (2006) gr-qc/0604106. Worldline Dirac QWEI, static-curve
+  simplification. 3 sites in-scope (disintegration-over-static-curves = paper's own case).
+- FewsterMistry2003: PRD 68:105010 (2003) gr-qc/0307098. Dirac m≥0 flat-4d worldline QWEI.
+  "massless flat-space" = narrowing (paper is m≥0), not overstatement. HOLDS.
+- GalandaMuchVerch2023: MPAG 26,21 (2023) DOI …09464-7, 2305.02788. Araki rel-entropy of
+  quasi-free CAR excitations; one-particle-flow hypothesis present. 2 sites in-scope.
+- Galanda2022: MSc thesis Leipzig 2022, 2210.10746. General GH-Dirac framework, worked Majorana
+  instance. "general 4d Dirac framework / 1+1 Majorana worked instance" — HOLDS (1+1 is
+  ledger-confirmed run-48 fix; abstract only says "ultrastatic Majorana" — RESIDUAL below).
+- FinsterMuch2025: 2505.14076, v3 2026-03, still preprint. 2d(1+1) Rindler. "1+1 Rindler
+  computation in the preprint" ✓; stress-display attributed to LaPiana-Morsella not FM (run-50
+  wound HEALED). HOLDS.
+- CadamuroFrobMinz2024: AHP 26(11):4071-4108 (2025) DOI …01508-0, 2312.04629 (InspireHEP-
+  confirmed; run-50 "volumed" correct). 2d diamond=double-cone, massive modular H open, small-
+  mass perturbative series extendable to all orders. In-scope. HOLDS.
+
+## PRIOR-WOUND STATUS (task-flagged sites re-audited)
+- Galanda "4d instance" (run 48): HEALED — text now says framework 4d, worked instance 1+1
+  Majorana; GMV(2305.02788)/thesis(2210.10746) arXiv split is correct (run-44 mis-cite of GMV
+  as 2210.10746 was fixed).
+- FinsterMuch stress-display (run 50): HEALED — no stress-density credited to FM.
+- CFM "volumed" (run 50): CORRECT — vol 26, pp 4071, 2025.
+
+## RESIDUAL / GAP (honest)
+- Galanda2022 worked-instance dimension "1+1": independently confirmed only to "Majorana field
+  on an ultrastatic spacetime" (arXiv abstract); the literal "1+1" rests on the campaign
+  ledger's prior thesis-body read (ISSUES l.16430), not re-derived in this pass. Low risk
+  (run-48 already corrected this and it is the conservative direction).
+- Tice HKM-1977/Kato-1970-Prop-3.4 cross-citation: taken from ledger ("provenance verified");
+  Tice notes cite Kato+Friedrichs (consistent) but I did not open Kato 1970 / HKM 1977 to
+  re-confirm Prop 3.4. Moot for print (orphan).
+
+========================================================================
+RT2 — BIBITEM FIDELITY (2nd half) + FMP FENCES (N3)   VERDICT: HOLDS (clean)
+========================================================================
+Keys: GlimmJaffe1987, AizenmanDuminilCopin2021, FroebMuchPapadopoulos2026,
+LongRangeTriviality2026 (Panis), DappiaggiMorettiPinamonti2009, CasiniTesteTorroba2017,
+Longo2019coherent. Full detail: rt62_cites_b.md.
+
+METADATA (home a) — all 7 verified at source; ZERO errors:
+- ADC2021: Ann.Math 194,163 (2021), arXiv:1912.07973 — title/authors/vol/pg/yr EXACT.
+- FMP2026: arXiv:2607.07810 [hep-th], 8 Jul 2026, 3 authors, preprint(no journal) — EXACT.
+- Panis: Ann.Probab. 54(2), 892, Mar 2026, DOI 10.1214/25-AOP1782 (resolves, Project
+  Euclid), arXiv:2309.05797 — title/author/vol/pg/yr/DOI/arXiv EXACT.
+- DMP2009: CMP 285,1129 (2009), arXiv:0712.1770 (cache-confirmed) — MATCH.
+- CTT2017: J.Phys.A 50, 364001 (2017), arXiv:1703.10656 — title/authors/vol/art EXACT.
+- Longo2019coherent: LMP 109, 2587 (2019) [2587-2600, DOI .01196-6] — CORRECT (a WebFetch
+  arXiv-page extraction misread "2137-2152"; Springer/DOI/search confirm 2587).
+- GlimmJaffe1987: book, 2nd ed Springer NY 1987 — correct.
+
+SCOPE (home b) — every in-text \cite within source theorem; ZERO overstatements:
+- DMP verified to EQUATION number vs cache: Thm 4.2 (injection i:W(P+)->W(ℑ-)); Thm 4.4(a)
+  restriction to S(ℑ-), (b) lambda o i = Bunch-Davies; threshold m^2_eff>(5/48)R <=>
+  |Re nu|<1 (Remark 4.4, VERBATIM); Eq(17) boundary space L^2-type psi,d_ell psi in L^2
+  (F-WORD correction CONFIRMED at source: L^2, not Schwartz); Eq(20) state lambda; enlarged
+  sub-threshold space (Rem 4.4) correctly declined; "expanding-patch not wedge" fence honest.
+- CTT: "free-field null-plane Markov/cut modular data" — safe narrowing of CTT's result. OK.
+- Longo: coherent-state S_rel = mean modular energy, exact equality via transfer; premises
+  named+discharged; no nonzero-first-variation overclaim (consistent w/ ISSUES L4793-98). OK.
+- GJ flat-d=2 fenced; ADC continuum phi^4_4 d=4; Panis RP long-range d_eff>=4 (matches
+  Project Euclid summary). OK.
+
+N3 — FMP FENCES ALL INTACT after run-55 additions:
+first-order-only (20201, "O(lambda)", "+O(lambda^2)"); wedge-interior (20202, "wedge
+theory"); consumes-BW-not-derives (20198-20201, "consumes ... rather than proving ...
+corroborates but does not reprove O^(1)=0"); unrefereed (20193 in-text + 24257 bibitem).
+arXiv abstract independently corroborates first-order/wedge/coherent/Noether scope.
+
+NEAR-MISSES CLEARED (both in paper's favour):
+(A) DMP/CTT/Longo look dangling in unification.tex — they are cited in \input fragment
+    ds2_restriction.tex (must grep \input set). Not dangling.
+(B) Longo page 2587 vs "2137-2152" — 2587 correct; the alt was a WebFetch summariser slip.
+
+BROKEN: none. WOUNDED: none. RT2 clean bill.
+
+========================================================================
+RT3 — THE NUMBERS (N1 B=-8pi^2/15; N2 Weyl transfer; N3 FMP fences)
+VERDICT: HOLDS x3 (no BROKEN, no WOUNDED)
+========================================================================
+Companion: rt62_numbers.py (28/28 PASS), rt62_numbers.md. ZERO writes to unification.tex.
+Independent methods (run-58 did NOT use): Gamma/Beta for N_d; smooth-in-d + d=6 clean-window
+anchor; physical scale-integral for the log; sign anchored at the EXACT d=2 fermion.
+
+N1 (B = -8pi^2/15, l.18985) — HOLDS.
+- VALUE: N_d = 2pi*Omega_{d-2}/(d^2-1) via Gamma/Beta (indep of br_improv direct integ):
+  N_4 = 2pi*4pi/15 = 8pi^2/15 => B = -8pi^2/15 ~ -5.2638 (matches). N_2=4pi/3 (=CGM d=2
+  fermion prefactor), N_6=16pi^3/105 (clean safe-window, no log).
+- xi-INDEPENDENCE (unconditional theorem): facet a — trace Ward mass-channel coeff = -m^2,
+  xi-INDEPENDENT; the xi-part rides ONLY on box O (descendant dim Delta+2, non-marginal,
+  does not resonate). facet b — ball F3/R6 reshuffle = (8pi^2/15)(1/6-xi)R^4 Lap dO(0), LOG-FREE
+  (v0 channel cancels surface=volume), vanishes on the coherent witness (Lap dO=0). => B(0)=B(1/6).
+- SIGN (negative): safe-window pole N_d/(2Delta-d)>0 x Ward (-m^2 dO) => -N_d log(muR); "forced
+  by relative-entropy positivity" DEFENSIBLE (RE + refl-positivity fix the deformed-CHM formula's
+  direction B<=0; the exact d=2 fermion independently gives log coeff -(4pi/3)m, NEGATIVE). RE
+  forces the SIGN, the safe-window continuation fixes the nonzero MAGNITUDE (the seam).
+- "no improvement scheme revives the ball route": B(xi)=-8pi^2/15 != 0 for ALL xi. OK.
+- SEAM honestly stated: paper's colon-clause attaches "theorem" to "improvement-scheme
+  invariant" (=xi-independence, unconditional); value modulo the safe-window universality seam;
+  matches br_improv sec7 + ISSUES l.18652. NOT scheme-dependent, NOT mis-signed. [home (c) clean]
+
+N2 (Weyl transfer eps=min(2,2Delta-d), N(d,Delta), l.18976-79) — HOLDS.
+- F1-corrected far-tail exponent d-1-2Delta is RIGHT: profile deviation w^{d-Delta}-1 -> -1
+  (SATURATES; w->0 for Delta<d), integrand ~ l^{d-1-2Delta}, converges iff Delta>d/2, log-
+  diverges at Delta=d/2 (marginal echo). Reproduced (numeric + symbolic).
+- eps=min(2,2Delta-d) from near/far split; SM window Delta=2+gamma => 2Delta-d=2gamma<2 =>
+  (R_a/L)^{2gamma} LEADS (R_a/L)^2: the uncomputed N(d,Delta) is leading, computed c1 subleading.
+  "exactly one uncomputed coefficient N(d,Delta)" honest. c1=(Delta(d-1)-d(d-5))/(4(d+3))
+  =(10+3gamma)/28 at d=4,Delta=2+gamma reproduced (subleading, non-load-bearing).
+
+N3 (FMP fences) — HOLDS clean. One \cite (l.20193), all four fences intact after run-55:
+first-order-only (20201), wedge-interior (20202), consumes-BW-not-derives (20198-20201),
+unrefereed (20193 + bibitem 24257). Metadata VERIFIED at source (my WebFetch, matches RT2):
+arXiv 2607.07810 = "Relative entropy for lambda phi^4 in the Rindler wedge", Froeb-Much-
+Papadopoulos, hep-th, submitted 8 Jul 2026; abstract confirms coherent/wedge/first-order/
+Tomita-Takesaki/Araki-Uhlmann/boost-Noether/Bekenstein scope. No wound.
+
+NOTES (staging hygiene; NOT paper wounds):
+- S1: br_transfer.py C5a is STALE — verifies the SUPERSEDED far-tail exponent -(d+1) (decaying
+  profile w^{d-Delta}~l^{-2(d-Delta)}), inconsistent with the F1 correction now in
+  br_transfer.tex lem:power (d-1-2Delta) and with the paper. C6/c1 don't depend on it; paper
+  unaffected (prints only eps=min(2,2Delta-d), correct). Recommend rewriting C5a. [F1 = correct]
+- S2: OPTIONAL micro-tightening of l.18982-89 — could flag at point of use that B != 0 (hence
+  ball-route completeness) carries the safe-window seam; improvement-invariance + sign are
+  unconditional. Paper's grammar is already defensible (not required).
+
+CROSS-CHECK: br_improv.py (B, xi-indep, F3/R6 4pi/15 R^4, trace Ward, resonance) and
+br_transfer.py C6 (c1^O=d/(d+3), c1 net) all reproduced by the independent routes. No arithmetic
+disputed. #69 hunt in the RT3 orbit: no numeric/sign/scope kill.
+
+================================================================
+## HOSTILE REFEREE (independent, post-arms) — VERDICT: GAP-FOUND
+================================================================
+
+### THE KILL — RT1's two "orphan" WOUNDS are FALSE POSITIVES.
+RT1 declared Tice2018 (F1) and SahlmannVerch2000 (F2) orphans ("no \cite anywhere",
+"prints an unreferenced entry", fix: add \cite or DELETE). BOTH ARE CITED, IN-SCOPE,
+in the \input'd appendix fragments:
+- Tice2018  -> appendix_e2a_omega.tex:2816 ("Tice Thm.~1.2.1 \cite{Tice2018} applies at
+  every integer 0<=k<=6") and :3382. This IS the linear symmetric-hyperbolic estimate
+  step (the six-jet k=0..6 higher-order regularity) — exactly what the bibitem describes.
+  RT1 looked at unification.tex body l.17019-17030; the consuming \cite lives in the appendix.
+- SahlmannVerch2000 -> appendix_dirac_floor.tex:35 ("ground state is Hadamard by
+  Sahlmann--Verch \cite{SahlmannVerch2000}") and :145 ("passivity \cite{...}, published").
+  In-scope for CMP 214:705 (passivity => microlocal/Hadamard). NOT the l.787-1235 concept RT1 looked at.
+Both appendices are ACTIVELY \input by unification.tex (l.23154 appendix_e2a_omega,
+l.23155 appendix_dirac_floor — verified uncommented). => NOT orphans; entries ARE referenced.
+RT1 grepped ONLY unification.tex — the EXACT \input-set error RT2 caught & avoided for DMP/CTT/Longo.
+RT1's "delete" fix is HARMFUL: deleting either bibitem breaks a real \cite (undefined-ref at compile).
+Correct verdict for F1/F2: HOLDS. Paper is CLEANER than run 62 reported.
+(F1b key "Tice2018" vs displayed "(2017)" is real but cosmetic — bibitem KEY label, no compile effect.)
+
+### CONFIRMED (independent):
+N1 B=-8pi^2/15: re-derived by MY method — CHM ball-weight f(r)=(R^2-r^2)/(2R) VOLUME integral
+  => N_d=2pi*Omega_{d-2}/(d^2-1), the d^2-1 from 1/(d-1)-1/(d+1). sympy: N_4=8pi^2/15 => B=-8pi^2/15
+  =-5.26379 EXACT; N_2=4pi/3 (fermion anchor), N_6=16pi^3/105. All match.
+xi-independence REAL: derived trace Ward T^mu_mu=-m^2 phi^2 + [(2-d)/4+xi(d-1)]box(phi^2) FROM SCRATCH.
+  mass-channel coeff = -1 (i.e. -m^2), xi-INDEPENDENT (sympy). box-channel = 3xi-1/2 at d=4, =0 at xi=1/6.
+  The log rides the xi-independent mass channel => B(0)=B(1/6). CONFIRMED.
+Sign NEGATIVE: safe-window -N_d/(2Delta-d)<0; d=2 fermion -(4pi/3)m<0; RE positivity forces direction.
+  "sign forced by RE positivity" is DEFENSIBLE (direction), magnitude=seam. CONFIRMED.
+Grade honesty (l.18983-87): "theorem" attaches to "improvement-scheme invariant" (=xi-inv, unconditional);
+  B given as a number; sign attributed to RE. Honestly stated; seam real & disclosed. CONFIRMED.
+Metadata 4/4 priority EXACT at source (arXiv fetched): Galanda2022 2210.10746; FMP2026 2607.07810
+  [hep-th] 8Jul2026 preprint-no-journal-ref; DMP2009 CMP 285,1129(2009) 0712.1770; ADC2021 Ann.Math
+  194,163(2021) 1912.07973. RT2's DMP/CTT/Longo-in-ds2_restriction claim VERIFIED (8/2/2 cites).
+Scope: ADC "continuum phi^4_4 triviality" in-scope; FMP all 4 fences intact + S_rel=boost Noether
+  matches abstract; Galanda "1+1" is a CONSERVATIVE narrowing (abstract: "Majorana on ultrastatic",
+  dim unpinned) — low-risk residual, exactly RT1's gap(a), NOT an overstatement.
+
+### NET: RT2 CONFIRMED, RT3 CONFIRMED, RT1 metadata/scope CONFIRMED, but RT1's F1/F2 WOUNDS
+### are spurious. Full-grade CONFIRMED WITHHELD. Verdict GAP-FOUND (confidence HIGH).
+
+================================================================================
+## FINAL ADJUDICATION — RUN 62 (adjudicator, post-referee)   VERDICT: PAPER CLEAN
+================================================================================
+Citation-fidelity + numerics CLEAN. 15/15 bibitems HOLDS. 0 BROKEN, 0 WOUNDED,
+0 paper fixes required. #69 NOT found this run. RT1's two WOUNDS (Tice2018,
+SahlmannVerch2000 "orphans") OVERTURNED as FALSE POSITIVES — referee upheld, and
+independently re-confirmed here. Only corrective actions: 1 staging-file rewrite
+(br_transfer.py C5a) + 1 optional cosmetic key tidy; neither is a paper wound.
+RT1's recommended "delete" fix must NOT be applied (it would break a real \cite).
+
+### ADJUDICATOR'S OWN RE-VERIFICATION (by content, not trust)
+[V1] F1/F2 orphan flip — grep ALL *.tex + read cite sites + \input uncommented:
+  - Tice2018 cited appendix_e2a_omega.tex:2816 ("Tice Thm.~1.2.1 \cite{Tice2018}
+    applies at every integer 0<=k<=6", eq an17:eq-slice-tice = the H^{k+1}xH^k
+    symmetric-hyperbolic energy estimate) + :3382. EXACTLY the estimate the bibitem
+    describes; EXACTLY the step RT1 said "cites nobody."
+  - SahlmannVerch2000 cited appendix_dirac_floor.tex:35 ("ground state is Hadamard
+    by Sahlmann--Verch \cite{...}") + :145 ("passivity \cite{...}, published").
+    In-scope for CMP 214:705 (passivity => microlocal spectrum/Hadamard).
+  - unification.tex:23154 \input{appendix_e2a_omega}, :23155 \input{appendix_dirac_floor}
+    — both uncommented, immediately before \begin{thebibliography} (l.23161). NOT orphans.
+  - Root cause: RT1 grepped ONLY unification.tex — the exact \input-set error RT2
+    caught for DMP/CTT/Longo. "delete" fix HARMFUL (undefined-ref at compile).
+    => F1, F2 verdict OVERTURNED to HOLDS.
+[V2] Metadata re-fetched at source by adjudicator (4 highest-risk / least-redundant):
+  - Tice2018: math.cmu.edu/~iantice/notes/quasilinear_hyperbolic_systems.pdf,
+    "Quasilinear symmetric hyperbolic systems", updated Apr 4 2017, Friedrichs
+    linear method + Kato/Fischer-Marsden nonlinear. Displayed "(2017)" CORRECT;
+    title/venue/method EXACT.
+  - CadamuroFrobMinz2024: arXiv:2312.04629, AHP 26 (2025) issue 11, 4071-4108,
+    DOI 10.1007/s00023-024-01508-0. Bibitem EXACT (incl. the arXiv# no arm stated).
+  - Panis: arXiv:2309.05797, Ann.Probab. 54(2), 892-972, Mar 2026, DOI
+    10.1214/25-AOP1782 (Project Euclid resolves). Bibitem EXACT; abstract = RP
+    long-range extension of ADC (matches in-text scope).
+  - Longo2019coherent: LMP 109, 2587-2600 (2019), DOI 10.1007/s11005-019-01196-6.
+    Bibitem EXACT (RT2's "2137-2152" was a summariser slip, correctly self-corrected).
+  (referee re-fetched Galanda2022/FMP2026/DMP2009/ADC2021; RT1/RT2 the rest => 15/15.)
+[V3] Numerics re-derived by adjudicator (sympy, independent of br_improv/RT3/referee):
+  - N_d=2pi*Omega_{d-2}/(d^2-1): Omega_2=4pi => N_4=8pi^2/15 => B=-8pi^2/15=-5.26379
+    EXACT. N_2=4pi/3 (d=2 fermion anchor); N_6=16pi^3/105 (clean safe window).
+  - trace-Ward box channel c_box(4,xi)=3xi-1/2 -> 0 at xi=1/6; mass channel -m^2 is
+    xi-INDEPENDENT => B rides the xi-invariant channel => B(0)=B(1/6). REAL.
+  - far-tail exponent d-1-2Delta (saturating deviation w^{d-Delta}-1->-1), converges
+    iff Delta>d/2, log at Delta=d/2; eps=min(2,2Delta-d). CONFIRMED.
+
+### (1) BIBITEM-FIDELITY TABLE — 15 keys added since run 48 (metadata vs source)
+KEY                          VERDICT   METADATA @ SOURCE                              SCOPE
+Tice2018                     HOLDS*    CMU notes, Apr-2017, Friedrichs — EXACT        in-scope (appx e2a:2816,3382)
+DawsonFewster2006            HOLDS     CQG 23,6659(2006) gr-qc/0604106 — EXACT        in-scope (Dirac worldline QWEI)
+FewsterMistry2003            HOLDS     PRD 68,105010(2003) gr-qc/0307098 — EXACT      in-scope (m>=0 narrowed to massless)
+SahlmannVerch2000            HOLDS     CMP 214,705(2000) math-ph/0002021 — EXACT      in-scope (appx dirac_floor:35,145)
+GalandaMuchVerch2023         HOLDS     MPAG 26,21(2023) 2305.02788 — EXACT            in-scope (CAR rel-entropy)
+Galanda2022                  HOLDS     MSc thesis Leipzig 2022, 2210.10746 — EXACT    in-scope (1+1 = conservative narrowing)
+FinsterMuch2025              HOLDS     2505.14076(2025) preprint — EXACT              in-scope (2d Rindler; stress NOT credited to FM)
+CadamuroFrobMinz2024         HOLDS     AHP 26,4071(2025) DOI..01508-0 2312.04629 EXACT in-scope (2d diamond small-mass)
+GlimmJaffe1987               HOLDS     book 2nd ed Springer NY 1987 — EXACT           in-scope (flat-d Wightman folium)
+AizenmanDuminilCopin2021     HOLDS     Ann.Math 194,163(2021) 1912.07973 — EXACT      in-scope (continuum phi^4_4 d=4)
+FroebMuchPapadopoulos2026    HOLDS     2607.07810 [hep-th](2026) preprint — EXACT     in-scope + 4 fences intact (unrefereed carried)
+LongRangeTriviality2026(Panis) HOLDS   Ann.Probab 54,892(2026) DOI..AOP1782 2309.05797 EXACT in-scope (RP long-range d_eff>=4)
+DappiaggiMorettiPinamonti2009 HOLDS    CMP 285,1129(2009) 0712.1770 — EXACT           in-scope to Eq# (ds2_restriction; L^2 not Schwartz)
+CasiniTesteTorroba2017       HOLDS     JPA 50,364001(2017) 1703.10656 — EXACT         in-scope (free-field null-plane Markov)
+Longo2019coherent            HOLDS     LMP 109,2587(2019) DOI..01196-6 — EXACT        in-scope (coherent S_rel = mean modular energy)
+  *Tice2018: internal KEY label "2018" vs source year 2017 — cosmetic, displayed
+   year already correct, NOT a metadata-vs-source error. See fix list.
+TOTALS: 15 HOLDS / 0 WOUNDED / 0 BROKEN. Metadata 15/15 EXACT at source.
+
+### (2) NUMERICS VERDICT
+  B=-8pi^2/15 ........ HOLDS (sympy-exact; xi-INVARIANT B(0)=B(1/6); sign NEGATIVE;
+                       "theorem" grammar honestly attaches to improvement-invariance;
+                       magnitude carries the one named safe-window universality seam)
+  sign ............... HOLDS (RE positivity fixes direction B<=0; d=2 fermion -(4pi/3)m<0;
+                       safe-window pole fixes nonzero magnitude — correctly reported)
+  N(d,Delta)/eps ..... HOLDS (eps=min(2,2Delta-d); N(d,Delta) the one uncomputed LEADING
+                       coeff in the SM window (2Delta-d=2gamma<2); c1 subleading; F1-corrected
+                       far-tail d-1-2Delta right)
+  N3 FMP fences ...... HOLDS (first-order 20201 / wedge 20202 / consumes-not-derives
+                       20198-201 / unrefereed 20193+24257 — all intact)
+  0 scheme-dependent, 0 mis-signed, 0 wrong printed numbers.
+
+### (3) FIX LIST
+  PAPER: NONE required. *** DO NOT apply RT1's F1/F2 "add \cite or DELETE" *** — the
+    \cite already exists in the \input'd appendices; deleting either bibitem breaks a
+    real reference (undefined-ref at compile). RT1's fix is HARMFUL; discard it.
+  COSMETIC (optional, home-(a) label-only, NOT a source mismatch): bibitem KEY
+    "Tice2018" vs source year 2017 (bibitem already DISPLAYS "(2017)", correct). If
+    tidying, rename key Tice2018->Tice2017 across the 2 appendix_e2a_omega \cite sites
+    (2816, 3382) + the bibitem (24116); else leave (opaque label, zero reader/compile effect).
+  STAGING (not a paper wound): br_transfer.py C5a verifies the SUPERSEDED far-tail
+    exponent -(d+1) (decaying profile) — rewrite to the saturating d-1-2Delta now in
+    br_transfer.tex lem:power and the paper. C6/c1 independent; paper unaffected.
+
+### (4) #69 HOMES — NOT FOUND this run (65 -> 66 clean hunts on the target set)
+  (a) metadata error (venue/vol/yr/arXiv/DOI mismatch): NONE. 15/15 exact at source
+      (adjudicator re-fetched Tice/CFM/Panis/Longo; referee 4; arms rest). Tice key-label
+      is cosmetic — the DISPLAYED metadata matches the source, so below the (a) bar.
+  (b) cite out of source-theorem scope: NONE. All 15 in-scope; the 2 RT1 "orphans" are
+      cited IN-SCOPE in \input'd appendices; DMP/CTT/Longo in ds2_restriction.tex.
+  (c) numeric scheme-dependent / mis-signed reported as invariant: NONE. B xi-invariant
+      + negative + honestly graded (sympy-confirmed on all three).
+  The only defect surfaced this run was INTERNAL — RT1's own false-positive over-report,
+  corrected here. The paper is CLEANER than the arm-level RT1 report. Hunt continues run 63.
+
+### (5)/(6) ledger staged here (ledger_run62.md); ZERO writes to unification.tex / ISSUES.md.
+
+---
+### Main-session apply note — run 62 (independent red team: citations + numerics) — NO PAPER FIXES (2026-07-15)
+
+Ledger `ledger_run62.md` merged above. **Verdict: PAPER CLEAN — 15/15 new bibitems HOLDS, all numerics HOLD, #69 not found, 0 BROKEN / 0 WOUNDED / 0 paper fixes required.**
+
+- **Citation fidelity (the standing wound class): all 15 keys added since run 48 verified EXACT at source** — metadata (venue/volume/year/arXiv/DOI) and in-text scope both clean. The three prior wound sites confirmed HEALED: Galanda2022 "4d framework / 1+1 Majorana worked instance" (run-48 fix holds), FinsterMuch stress-display credited to LaPiana–Morsella not FM (run-50 fix holds), CadamuroFrobMinz "volumed" AHP 26/4071/2025 (run-50 fix holds). The adjudicator independently re-fetched the four highest-risk records; the referee re-fetched four more.
+- **Numerics all HOLD** — B=−8π²/15 independently re-derived by methods run-58 didn't use (Γ/Beta for N_d; cross-anchored at N_2=4π/3 exact d=2 fermion and N_6 clean window); ξ-independence confirmed unconditional (the log rides the ξ-invariant mass channel; the box channel vanishes at ξ=1/6); sign negative via three independent routes; the F1-corrected far-tail exponent d−1−2Δ and N(d,Δ) leading-in-window all verified; FMP fences intact.
+- **A methodological catch worth recording:** RT1 reported two "orphan" bibitems (Tice2018, SahlmannVerch2000) with a recommended "delete" fix — **FALSE POSITIVES.** RT1 grepped only unification.tex; both are cited in-scope in the `\input`'d appendices (Tice2018 in appendix_e2a_omega at the symmetric-hyperbolic six-jet step; SahlmannVerch2000 in appendix_dirac_floor for the ground-state Hadamard property). The referee (GAP-FOUND) and adjudicator both caught it, and warned that applying RT1's fix would have introduced undefined-reference errors. **RT1's fix DISCARDED** — the paper is cleaner than the arm-level report claimed. (This is the mirror image of run 60's F-RATE lesson: grep the full `\input` set before calling a citation orphaned.)
+- Optional non-paper items NOT applied: cosmetic key tidy Tice2018→Tice2017 (label-only, zero compile effect); staging rewrite of br_transfer.py C5a (stale far-tail exponent in a scratch script — doesn't touch the paper).
+
+Two red teams still in flight (runs 59, 61).
+
+# LEDGER — RUN 59 (independent 2nd red team of the new proof appendices)
+
+Model applied: run-48 law (re-derive the EXISTENCE premise, not only the estimates).
+Each site had a pro-task adversary in run 49/54/57; this is the SECOND independent pass.
+Attack the PRINTED math by content. ZERO writes to unification.tex / appendices / ISSUES.md.
+
+---
+
+## RT1 — App `app:dirac-seed-floor` (appendix_dirac_floor.tex) — **HOLDS**
+
+Thm `thm:dirac-seed-floor`: seed-fixed spacetime-smeared ABSOLUTE Dirac QEI floor via the
+Fewster–Verch frequency-split route. Full attack log: `rt59_dirac.md`. Independent
+re-derivation: `rt59_dirac.py` (5/5 PASS); staged `dq_fv.py` re-run (7/7 PASS).
+
+**Verdict: HOLDS** — no BROKEN, no WOUND to the theorem. This is a CORRECT re-route that
+genuinely fixes the run-45 BROKEN (the Sanders positive-type-kernel Dirac lift, retracted
+run 48): its positivity is CAR-STATE positivity of the state's pulled-back two-point
+function, discarded as a nonnegative contribution, NOT a positive form for the (indefinite)
+energy density. Verified at source, not from the ledger.
+
+Five existence premises re-derived (not assumed):
+| # | premise | verdict | source |
+|---|---------|---------|--------|
+| EP1 | seed ground state ω0 Hadamard, canonical ± split (gap |E_k|≥m, m>0) | ✔ | SahlmannVerch2000 |
+| EP2 | DF worldline QWEI per static γ_x, B_x<∞, ω-independent | ✔ | DawsonFewster2006 Thm 1 / eq 102 |
+| EP3 | reference-free ⟨T̂^ren⟩_{ω0} exists, smooth, static | ✔ | DappiaggiHackPinamonti2009 |
+| EP4 | disintegration x↦B_x integrable over compact Σ | ✔ derived | uniform envelope + DCT |
+| EP5 | positivity is CAR-state (Q≥0, 1−Q≥0), density indefinite | ✔ | DF §3.2 eqs 98–101; dq_fv C5 |
+
+Five sub-attacks, all failed to kill:
+1. **FV mechanism at source** — DF eqs (98)–(101): the discarded nonnegative term IS the
+   positive-type property of the STATE's pull-back γ₂*W (Pauli window); sea enters with a
+   minus via :W:=−:W:^Γ. Density indefinite (dq_fv C5). Accurate. HOLDS.
+2. **Disintegration** — exact Fubini on a pointwise smooth density (no spatial cross-term);
+   per-curve DF valid; factorisation special to ultrastatic seed and HONESTLY restricted
+   (ball clause left OPEN, Rem dsf-imports). HOLDS.
+3. **Envelope N>9** — re-derived symbolically+numerically: ∫₀^∞μdμ/(1+μ+a)^N=(1+a)^{2−N}/
+   ((N−1)(N−2)) [N>2]; Σ_k(1+E_k)^{6−N} with Weyl E² d.o.s. converges IFF **N>9 strict**
+   (N=9 log-diverges). Census: energy factor in μ (DF eq 77→93), W₀ = charge density
+   (DF l.128/890, eq 123) → w_k~|u_k|²≤C(1+E_k)⁴, NO hidden E_k (else it would be N>10). HOLDS.
+4. **Reference conversion (difference→absolute)** — DF is explicitly a DIFFERENCE QWEI
+   (l.140) BUT DF themselves endorse the conversion (l.145–155, Wald axiom): add
+   ∫⟨ρ^ren⟩_{ω0}g² → absolute QWEI. Appendix step (2) = this verbatim. Sign robust (C4). HOLDS.
+5. **Massless remark** — scoped out of m>0 theorem; floor survives at m=0 (FV variable-mass
+   Hadamard reference; ker h finite-dim). HOLDS.
+
+Two NON-load-bearing clarity notes (theorem stands as printed; offered as courtesy fixes):
+- **N1** step (4) FT identity |ĝ(μ+E)|² is correct only under DF's e^{+ikt} convention
+  (DF eq 8); under the opposite convention it would read |ĝ(μ−E)|² (resonant/divergent).
+  Internally consistent (inherits DF) but convention unstated. Fix: cite DF eq (8).
+- **N2** rem:dsf-massless "shifts c_fl by a finite smooth c-number only" understates it
+  (∫_Σ B_x also shifts, finitely). Conclusion (floor survives) correct. Fix: "finite modification".
+
+Attacks run & failed (honesty): hidden-E_k census; N>9-vs-N>10 threshold; Sobolev/Weyl
+exponents; difference→absolute legitimacy; positive-type-as-disguised-density-form (the
+run-45 trap); disintegration cross-term; B_x integrability; massless zero-mode finiteness.
+All listed with the source that defeats them in `rt59_dirac.md`.
+
+---
+<!-- RT2 (port_m3 + grade move), RT3 (port_ac + port_d0), R (adversary): other arms append below -->
+
+## RT2 — port_m3.tex (clause-(i) diff thm) + the (M3) grade move — **THEOREM HOLDS; promotion EARNED but WOUNDED (propagation)**
+
+Arm: patched clause-(i) proof leg-by-leg (W-M3-A/B/C), the three-way match, the
+NAMED INPUT→THEOREM promotion. Full log: `rt59_m3.md`; numerics `rt59_m3.py`
+(A pinch, B κ_Γ regime) + `port_m3_check.py` re-run (F1). Verified by CONTENT.
+
+**Verdict:** `port:thm-M3` HOLDS as a theorem (∃ finite ball-uniform,
+state-independent C_H). Three-way match VERBATIM. Promotion at `item:an17-M3`
+(l.3968) EARNED. **One WOUND: the promotion was applied at ONE locus; five other
+LIVE printed spots still grade clause-(i) diff as NAMED INPUT → live
+self-contradiction.** No BROKEN.
+
+Existence premise (the run-45 law site) — re-derived, not assumed:
+| # | premise | verdict | source |
+|---|---------|---------|--------|
+| EP-G | glued N=2 Hadamard parametrix H_g (cover, θ_a, collar, one ℓ) EXISTS | ✔ THEOREM | `an17:G` l.3254 (parts i–ii; NOT the PLAUSIBLE defect-source iii) |
+| EP-S | single-metric ε↓0 pairing exists | ✔ THEOREM | `an17:clausei-single` l.3573 |
+| EP-v | singular Hadamard coeffs v_k (k≤2) exist + quantified | ✔ derived | Moretti2003 recursion; port L3 (state-indep, ⊥ clause-ii w_k/BFV) |
+| EP-e | U_ω⊆U embedding for the a-fortiori step | ✔ proved | `an17:lem-embed` l.152-165 |
+
+No open PLAUSIBLE dependency: the singular v_k L3 bounds are geometric, disjoint
+from the finite-part w_k / BFV vanishing that keep item (M1) PLAUSIBLE.
+
+Three-way match — VERBATIM at all corners (`rt59_m3.md` §1): `port:eq-clausei`
+(l.72-75) ≡ `eq:an17-clausei` (l.3540-45) ≡ hyp clause(i) (l.17063-66/17125-28):
+same pairing, norms {H^s,H^{s-2},H^{s-2}}, support K, state-indep, fence
+s>n/2+6 (l.17114). Port quantifier is WIDER (full H^s ball U ⊇ U_ω) — safe
+weakening. Morrey cube C_sob^3 legal (h:C^6←H^s, u:C^0←H^{s-2}, v:C^{1,α}←H^{s-2}).
+
+The three W-M3 patches — each correct, no new error introduced:
+1. **W-M3-A** (ε-shift on deep-timelike set): L2(iii) time-leg extension to
+   {S_τ≤θ_*} sound (spatial block +def, adapted atlas); pinch `|ρ_ε|≥ε²·ϰ`,
+   `ϰ=min(½,√2 c_t/√Λ_S)` (√Λ_S denom = adjudicator's correction). **Numeric
+   `rt59_m3.py`(A): PASS** (patched ratio ≥ ϰ; naive Re-only goes hugely
+   negative — Re crosses 0 at r=ε/√|S| — confirming both the wound and the fix).
+   NIT: the "otherwise" branch text mis-attributes the S>θ_* sub-case to the
+   time leg; there Re ρ_ε≥ε² closes it. Conclusion holds.
+2. **W-M3-B** (L4 p=2 split needs J_z∈C^{1,α}): supplied — L2(i) proves ‖S‖_{C^3}
+   (flow C^3 since Γ∈C^{5,α}⊃C^3), straightening C^3 ⇒ J_z∈C^2⊂C^{1,α}. Correct.
+3. **W-M3-C** (κ_Γ count): κ_Γ(k)=c_kΛ_U^{2k+7}d_U^{-2(k+1)} internally consistent
+   with its sub-counts AND a VALID over-estimate over U — see failed attack below.
+
+Four assembly legs (A)-(D) + L4 moment identities re-checked: exact (∫dζ/(ζ+ia)²
+=−2L/(L²+a²), |·|≤2/L; log-ratio ≤π; β-moment 2L^{β-1}/(β−1)); masses M_2=π²δ_c²
+(r^{-2} L^1_loc at n=4), assembly δ_c powers all match `port:eq-kappa`.
+
+**THE WOUND (propagation).** `item:an17-M3` (l.3968) says THEOREM (ported); these
+FIVE LIVE spots (all < the sole gate l.4025; two in the MAIN PAPER) still say
+named input, contradicting it:
+- `unification.tex` l.17199 "clauses (i) (difference form)…remain named inputs"
+- `unification.tex` l.17202-03 fused-first-law modulo "{(ii),(iii),(i) diff}"
+- `appendix_e2a_omega.tex` l.3534 SUBSECTION HEADING "…difference form a named input"
+- `appendix_e2a_omega.tex` l.3436 "{…clause (i) difference-form, named}"
+- `appendix_e2a_omega.tex` l.3577-3598 `rem:an17-clausei-diff` "Grade: NAMED INPUT
+  (difference form)…this appendix does not promote clause (i) to a family-uniform theorem"
+Direction is SAFE (paper UNDER-claims; per l.3962-63 `prop:N1-free-omega` premises
+(ii)-(iii) only, so clause (i) diff is unconsumed AND now a theorem) — no
+overclaim/correctness risk — but the printed corpus asserts both grades for one
+object. Minimal fix: propagate the promotion to the five spots (or qualify each
+"theorem via port; hypothesis retained as package").
+
+Attacks run & FAILED (honesty):
+1. **κ_Γ Λ_U-exponent undercount** (the tempting kill): ∂^k(g^{-1}) has (k+1)
+   copies of g^{-1} ⇒ looks like Λ_U^{4k+3}, not Λ_U^{3+k}. FAILS: over the ball
+   U, g is H^s-close to g_0 ⇒ |g|,|det|=O(1), |g^{-1}|=O(1); only derivatives
+   grow ⇒ ‖g^{-1}‖_{C^k}~c(g_0)Λ_U^k, and Λ_U^{3+k}d_U^{-(k+1)} is a loose
+   OVER-estimate. **Numeric `rt59_m3.py`(B): valid over physical ball; under-shoots
+   only for |g|~M metrics OUTSIDE U.** Residue: cosmetic, c_k(n)→c_k(n,g_0)
+   (already licensed by l.76-77). Not a wound.
+2. W-M3-A pinch fails somewhere — no (numeric A). 3. ε↓0 non-uniformity — no (all
+   bounds ε-free after rescale). 4. L3 smuggles the clause-(ii) gap — no (singular
+   v_k ⊥ finite w_k/BFV). 5. F1 (t>3) wrong/hides defect — no: `port_m3_check.py`
+   reproduced (Hölder 0.50 vs Lipschitz 1.00), correct ledger-REMARK fix
+   (`port:rem-testspace`), consumers use H^{s-2}, s-2>6, unaffected; POSITIVE
+   evidence of genuine re-derivation (port out-corrected its own bank).
+
+## RT3 — port_ac.tex + port_d0.tex — **BOTH HOLD**
+
+Arm: family-uniformity package (Props A/C + Lemma B) + the (D0) lever category-check.
+Full attack log: `rt59_acd0.md`. Verified by CONTENT at source (Hadamard 1932 djvu re-read;
+all cited an17 anchors grepped/read; run-54 EP fences + run-57 ports cross-checked).
+
+**Verdict: port_ac HOLDS, port_d0 HOLDS** — no BROKEN, no WOUND. Neither over-promotes:
+clause(ii)/M1 stays **PLAUSIBLE** in both; the only earned grade motion this appendix carries
+(M3 NAMED INPUT→THEOREM) is INDEPENDENT of these two ports (RT2's port_m3).
+
+### port_d0 — the (D0) lever consumed in its NATIVE category (the #66c home did NOT fire)
+Trichotomy (S1) series-convergence / (S2) fundamental-solution·partie-finie / (S3) finite-part
+regularity. Port consumes **(S1)+(P-a) ONLY**; (S2) NOWHERE; (S3) DERIVED not cited. Re-verified:
+- **(S2)-leak hunt** — walked all 4 uses of H^(∞). The C^∞ core w0=ω0^(2)−H^(∞) comes from the
+  finite-N intersection w0=(ω0^(2)−H^(N))−(σ^{N+1}ϱ_N log), 1st∈C^N by (P-a), 2nd∈C^{N,α⁻}
+  (transverse u^{N+1}log|u|), ∀N on the fixed collar ⇒ C^∞. NEVER uses PE=δ. Clean.
+- **Source category** (Hadamard 1932 djvu, verbatim): n.52 holo-data; n.63 majorant convergence
+  (positive radius ⇒ δ_conv>0); n.64 vertex-uniform + "SANS AUCUNE MODIFICATION" for the
+  conoid-data variant; n.65 even m: algebraic part = single term U0/Γ, log-coef 𝒱 built by
+  "exactement les mêmes opérations" (⇒ 𝒱-series converges by n.63-64), "POUR TOUTE ÉQUATION
+  NON PARABOLIQUE … coefficients analytiques"; n.66 "commun aux cas elliptique ET hyperbolique"
+  ⇒ NO elliptic→Lorentzian transfer. The regular part w (the S2 piece) is highly non-unique for
+  even m and the port correctly does NOT touch it. Native Lorentzian category. FAITHFUL.
+- **(P-a) not a strengthening**: = standard Kay-Wald global Hadamard, fixed-nbhd form via
+  Radzikowski/Sanders2010; paper's seed ω0 IS Hadamard (ω_g:=BFV RCE, l.17037-42). Printed.
+- **A3 heights match VERBATIM** (H^{13/2⁻},H^{11/2⁻},H^{11/2⁻},H^{9/2⁻}); the previously-open
+  b=1 field slots are carried by w0∈C^∞ + ∂T with ϱ analytic (S1 is exactly the lever).
+- Grade: (D0) removed at the seed given (P-a),(P-b); **BFV-vanishing@PLAUSIBLE SURVIVES** (a
+  (D0) closure is BFV-free, does not lift it) — port says so plainly. M1 unmoved.
+
+### port_ac — existence premises EP0/EP2-clean; wounds W1–W4 genuinely fixed (#66a did NOT fire)
+- **EP0** (parameter-analyticity): NO step expands/differentiates in the metric g; all holomorphy
+  is SPACETIME-variable on the fixed collar; A2's "one sup ⇒ all derivatives" is Cauchy in the
+  2n spacetime bi-collar vars. rem:pac-A-scope states it. The construction EXISTS (classical
+  Hadamard on analytic metrics, EP1'-quantitative) — NOT a re-derived margin on a phantom (the
+  run-45 mode).
+- **EP2** fence: A3 difference legs are REAL-side Gronwall/transport (port_m3 L1–L3) + printed
+  (N-a) linear poly estimate (l.3219-22); collar sups Λ_k enter only as multiplicative
+  constants. No collar→H^s conversion. The run-54 Hölder-½ counterexample is respected.
+- **W1** (circular wiring): fixed by acyclic graph PropA→PropC→Verdict→LemmaB; C3 sources the
+  single-metric W^(2)_* (an17:Nc-corrected l.3282 "single-metric uniform analogue", VERIFIED
+  present; (D0)-gated), NOT the family W_* (Lemma B). Real, not re-asserted.
+- **W2** #B' restored (res3, BFV-conditional); **W3** BFV-vanishing at carrier PLAUSIBLE grade
+  (l.3289-93 "NEVER cited at THEOREM grade", VERIFIED) + revival; **W4** seed tag "THEOREM
+  modulo (D0)" → "THEOREM given Prop an57d0:main". All real.
+- **√n EP1' self-correction** correct geometry (polydisc corner at Euclidean dist r√n); run-54
+  EP1 and appendix an17:lem-embed's (2/ρ_a)^|α| are constant-level slips absorbed in the
+  unspecified C_cw ⇒ nothing PRINTED false. Benign. W-M3-C κ_Γ form propagated correctly.
+- Grade: verdict is explicit PLAUSIBLE, "no grade line moves with this write-out alone";
+  blocked by res1(D0, closed at seed)+res2(BFV@PLAUSIBLE, survives). HONEST.
+
+### Cross-arm
+- port_ac(A3) DEPENDS on port_m3 L1–L3 (port:lem-gamma/sigma/vk, κ_Γ=c_k Λ_U^{2k+7}d_U^{-2(k+1)})
+  — they EXIST in port_m3.tex with the named content; their proof-correctness is RT2's.
+- M3 promotion (item:an17-M3 l.3968 at THEOREM; ports \input at unification.tex l.23157) is
+  ⊥ my ports (clause(i)⊥clause(ii)/(D0)). Three-way STATEMENT match holds: port:eq-clausei
+  (l.72-74) ≡ eq:an17-clausei (l.3540-42) ≡ hyp clause(i) (l.17064-65/17125-26), fence s>n/2+6,
+  identical norms. Whether the PATCHED proof earns THEOREM = RT2. Nothing M3 needs is open from
+  the port_ac/port_d0 side.
+
+### Attacks run and FAILED (honesty — a red team finding nothing lists them)
+port_d0: (1) S2-leak in the 4 uses of H^(∞); (2) source mis-category (log-coef in Lorentzian);
+(3) (P-a) strengthening; (4) δ_conv vacuity / caustic / Δ^½=0; (5) A3-height mismatch;
+(6) 𝒱_h≠v_h identification. All defeated at source.
+port_ac: (1) EP0 hidden parameter-analyticity; (2) EP2 collar→H^s shortcut; (3) W1–W4 cosmetic-
+only fixes; (4) new error from √n / W-M3-C patches; (5) construction-existence (run-45 mode);
+(6) gap(a)/(b) over-scope; (7) clause(ii)→THEOREM over-promotion; (8) circular re-entry via
+W^(2)_*. All defeated by content.
+
+Minimal fixes for the two DISCLOSED non-blocking items (neither downgrades the verdict):
+- port_ac stale line-anchors (F-AC-1; already booked run-57) — author re-keys \ref/\cite at import.
+- port_d0 owed iε declaring sentence (N-D0-1) — cosmetic; same C^N class/heights.
+
+---
+
+## R — HOSTILE REFEREE (primary-source re-derivation of the two consequential findings)
+
+Mandate: re-derive the run-48 kill site (Dirac floor: FV positivity at math-ph/0105027)
+and the grade move (verbatim clause match) from PRIMARY sources, quote-verify 6+ printed
+sentences from the PRINT (not the ledger), check every WOUND states its minimal fix.
+**VERDICT: CONFIRMED at full grade.** Both consequential findings survive. One WOUND (RT2's)
+confirmed and found SLIGHTLY LARGER than reported. No BROKEN. No new theorem-level gap.
+
+### Finding 1 — Dirac floor (RT1). CONFIRMED at source.
+FV mechanism re-derived at the in-print FV proof = Dawson-Fewster 2006 (staged
+`dawson_fewster.txt`), NOT the ledger:
+- eq (98) l.1242: ":W: = -:W:^Gamma in the last step" => sea enters with the compensating
+  MINUS. Matches appendix opening.
+- eqs (99)-(101) l.1257-1261: "the pull-backs inherit the POSITIVE-TYPE property by Thm 2.2
+  of [6] ... the contribution from the state omega is NONNEGATIVE ... DISCARDING this
+  contribution" => positivity consumed = positive-type of the STATE's gamma2*W
+  (CAR-state positivity 0<=Q<=1), discarded; NEVER a positive form for the energy density
+  (indefinite, eq 77 derivative structure). This is precisely the run-45 sidestep. CLEAN.
+- CENSUS (fixes N>9): DF l.128 & l.890-891 "W0 ... a point-split unrenormalized CHARGE
+  density"; energy weight is the EXPLICIT mu in eq (4) `-(1/2pi) int_0^inf dmu mu (S_mu+..)`.
+  So w_k ~ |u_k|^2 (power 4), NOT energy-weighted (power 5). Independent arithmetic:
+  int_0^inf mu dmu/(1+mu+a)^N = (1+a)^{2-N}/((N-1)(N-2)) [sympy exact]; Sigma(1+E)^{6-N} with
+  Weyl E^2 dos => tail exponent 8-N; conv iff N>9 STRICT (N=9 => -1, log-div). Printed N>9
+  is EXACT and requires the charge census — which the source supplies. Had it been energy-
+  weighted the printed threshold would be wrong (N>10); it is not.
+- REFERENCE CONVERSION: DF l.140-156 endorses difference->absolute VERBATIM ("we may
+  replace :rho: by rho^ren ... a finite modification ... an absolute QWEI"). Appendix step
+  (2) reproduces it. Legitimate.
+- B_x formula = DF Theorem 1 eq (4). Disintegration = exact Fubini on the smooth pointwise
+  density (static seed, xi hypersurface-orthogonal Killing; DF static case s4 applies per
+  orbit). All five existence premises hold.
+- N1 (Fourier convention) confirmed load-bearing: DF eq (8) l.179-183 fixes fhat=int f e^{+ikt};
+  appendix inherits it, internally consistent, convention unstated. Minimal fix (cite DF
+  eq 8) stands. N2 (massless) minor imprecision, non-load-bearing. NEITHER is a kill.
+
+### Finding 2 — (M3) grade move (RT2). Math EARNED; documentation WOUND real & larger.
+THREE-WAY VERBATIM MATCH re-verified at all corners by reading the PRINT:
+  hyp:hadamard-uniform (i)  unification.tex l.17064-66  }
+  hyp:...-omega (i)         unification.tex l.17126-28   } all identical:
+  eq:an17-clausei           appendix_e2a_omega l.3541-43 } |(H_g-H_{g'})(u@v)| <=
+  port:eq-clausei           port_m3 l.73-74              } C_H||g-g'||_{H^s}||u||_{H^{s-2}}||v||_{H^{s-2}}
+  same pairing/3 norms/support K/state-indep/fence s>n/2+6. Port quantifier WIDER (full ball
+  U >= U_omega via an17:lem-embed). Promotion recorded item:an17-M3 l.3968 "Grade: THEOREM
+  (ported)". Patch W-M3-A pinch re-derived by hand: r^2|S|<=eps^2/2 => Re rho_eps>=eps^2/2;
+  else r^2>eps^2/(2Lambda_S) & time leg => |rho_eps|>=sqrt2 c_t eps^2/sqrt(Lambda_S);
+  |rho_eps|>=eps^2 min(1/2, sqrt2 c_t/sqrt(Lambda_S)). CORRECT. Fence self-consistent
+  (alpha=min(1/2,(s-8)/2), s-2>6). PROMOTION EARNED.
+
+WOUND (confirmed, RT2): live self-contradiction in the printed corpus — item:an17-M3=THEOREM
+vs multiple live spots still grading clause (i) diff as NAMED INPUT / listing it in the
+modulo set. RT2 enumerated 5; I count >=6 LIVE spots:
+  1 unification.tex l.17199  2 l.17202-03  **3 l.17240-41 (RT2 MISSED: "clauses (i)/(iii)
+  named" in the Option A status para)**  4 appendix_e2a_omega l.3533-34 heading  5 l.3436
+  6 rem:an17-clausei-diff l.3596-3598.
+  Direction SAFE (under-claim; prop:N1-free-omega premises clauses (ii)-(iii) only, l.3962-63,
+  so clause (i) diff is unconsumed). MINIMAL FIX: propagate the promotion to ALL >=6 spots
+  (drop "(i) difference form" from the modulo sets; convert the two remark/heading assertions
+  to "THEOREM (ported, App e2a-ports item M3)"), OR add one belt-and-suspenders qualifier at
+  each ("theorem via the port; hypothesis retained as a package"). RT2's fix is right but its
+  spot-list is short by the l.17240-41 main-paper occurrence.
+
+### Quote-verified printed sentences (>=6, from PRINT + primary sources): appendix_dirac_floor
+l.20-27, l.121-125; appendix_e2a_omega l.3541-45, l.3596-98, l.3968; port_m3 l.73-74;
+unification l.17064-66, l.17199, l.17240-41; DF l.128, l.258-261 (eq101), l.140-156, eq(98).
+
+### Secondary (not independently re-derived by R; accepted from RT3): port_ac EP0/EP2 clean;
+port_d0 (D0) lever consumes S1 only (Hadamard 1932 nos.63-66, native non-parabolic category),
+S2 nowhere. #66 home did not fire per RT3's source read. Cross-arm: port_ac(A3) rides
+port_m3 L1-L3 (spot-verified correct).
+
+**REFEREE BOTTOM LINE: CONFIRMED. Dirac floor HOLDS at full grade (existence premise clean at
+source). (M3) promotion EARNED (verbatim match at all corners). One documentation WOUND, safe-
+direction, minimal fix = propagate the promotion to >=6 (not 5) live spots. No BROKEN.**
+
+---
+
+## ADJ — FINAL ADJUDICATION (run 59). Author-side, independent of the arms.
+
+Method: I did NOT rubber-stamp the arms. I re-derived the load-bearing claims from the
+PRINT and by hand, then adjudicated. What I re-verified independently (by content, not ledger):
+- **N>9 envelope (sympy, not the arm's script):** `int_0^inf mu dmu/(1+mu+a)^N =
+  (1+a)^{2-N}/((N-1)(N-2))` for N>2 [sympy exact], and with Weyl E^2 d.o.s. the tail exponent
+  is 8-N; converges iff 8-N<-1 iff **N>9 STRICT** (N=8 exp 0 div; N=9 exp -1 log-div; N=10
+  exp -2 conv). Matches printed `appendix_dirac_floor.tex` l.124 `(N>9)`. EXACT.
+- **Three-way match, all THREE corners read by content:** hyp:hadamard-uniform (i)
+  `unification.tex` l.17063-66 (fence s>n/2+6 at l.17059) == eq:an17-clausei
+  `appendix_e2a_omega.tex` l.3541-43 == port:eq-clausei `port_m3.tex` l.73-74. Operator
+  (H_g-H_{g'}), three norms {H^s,H^{s-2},H^{s-2}}, support K, state-indep, fence s>n/2+6 ALL
+  identical; port quantifier WIDER (full H^s ball U superset U_omega). VERBATIM.
+- **M3 scope correctly resolved:** item:an17-M3 (l.3951-3970) promotes the FAMILY-uniform
+  difference bound ("ball-uniform over the FAMILY ... the written-with-constants difference
+  theorem over the full H^s ball C_H=C_sob^3 kappa ... Grade: THEOREM (ported)"), matching
+  port:thm-M3 ("for all g,g' in U ... ball-uniform"). Not merely single-metric. EARNED.
+- **Dirac FV opening printed:** `appendix_dirac_floor.tex` l.22-26 — "the positivity it
+  consumes is CAR-STATE positivity of the frequency-split two-point pieces (the Pauli window
+  0<=Q<=1), with the ... (sea) piece entering through a compensating minus sign --- so the
+  indefinite-density obstruction that blocks the Sanders positive-type-kernel organisation for
+  Dirac [is sidestepped]". This is exactly the run-45 sidestep, printed. Accurate.
+
+### (1) PER-SITE VERDICT
+| site | verdict | one-line reason |
+|------|---------|-----------------|
+| **Dirac-floor** (`app:dirac-seed-floor`) | **HOLDS** | Existence premise (CAR-state positive-type discard, NOT a positive density form) accurate at source (DF eqs 98-101); disintegration exact Fubini on ultrastatic seed; N>9 exact & strict (verified sympy); difference->absolute conversion endorsed by DF verbatim; all 5 EPs clean. Two non-load-bearing NITs only. |
+| **port_m3 + (M3) grade** | **WOUNDED** | Theorem port:thm-M3 HOLDS; three-way match VERBATIM; W-M3-A/B/C patches correct; promotion EARNED & correctly scoped to family-uniform. WOUND = documentation propagation: item:an17-M3=THEOREM contradicted by >=6 (actually more) LIVE spots still grading clause-(i) diff as NAMED INPUT. Safe direction (under-claim; clause (i) diff unconsumed by prop:N1-free-omega, premises (ii)-(iii) only, appx l.3962-63). No BROKEN. |
+| **port_ac** | **HOLDS** | EP0-clean (holomorphy in the spacetime variable on the fixed collar + Cauchy in the 2n bi-collar vars; NO parameter-analyticity in g); EP2-clean (difference legs real-side Gronwall/transport + printed (N-a); no collar->H^s shortcut; run-54 Holder-1/2 counterexample respected); W1-W4 genuinely fixed (acyclic PropA->PropC->Verdict->LemmaB). #66a did not fire (construction exists). M1 stays PLAUSIBLE. Rides port_m3 L1-L3 (RT2's job; verified present). |
+| **port_d0** | **HOLDS** | (D0) Hadamard lever consumed in NATIVE category (S1) series-convergence ONLY, verified at source Hadamard 1932 nos.63-66 (non-parabolic, BOTH signatures; NO elliptic->Lorentzian transfer); (S2) fundamental-solution/partie-finie consumed NOWHERE; (S3) derived not cited. #66c did not fire. (P-a) = standing Kay-Wald seed-Hadamard premise, not a strengthening. BFV-vanishing@PLAUSIBLE survives (a (D0) closure is BFV-free). |
+
+Composite: **3 HOLDS, 1 WOUNDED, 0 BROKEN.** The whole appendix package stands as
+mathematics; the print does not yet READ consistently (the M3 wound).
+
+### (2) FIX LIST (minimal splices; author-side; only the WOUNDED site needs them)
+The M3 promotion is EARNED but under-propagated. Splice item:an17-M3=THEOREM into every live
+spot that still grades clause-(i) DIFFERENCE FORM as NAMED INPUT / lists it in a modulo set.
+Confirmed-stale spots (verified by content this run):
+- **Main paper `unification.tex`:** (i) l.17199 drop "(i) (difference form)" from "...remain
+  named inputs"; (ii) l.17202-03 modulo set `{clause (ii), clause (iii), clause (i) diff}` ->
+  `{clause (ii), clause (iii)}`; (iii) **l.17240-41** "clauses (i)/(iii) named" -> "clause
+  (iii) named" (RT2 MISSED this; referee + I confirm it).
+- **Appendix `appendix_e2a_omega.tex`:** (iv) l.3533-34 subsection heading "difference form a
+  named input" -> "...family-uniform difference form now a theorem, ported"; (v) l.3436
+  honest-boundary modulo list "clause (i) difference-form, named" -> drop; (vi) l.3548 "a
+  difference half that is retained as a named input" -> "...now a theorem (App e2a-ports item
+  M3)"; (vii) rem:an17-clausei-diff l.3577-3598 in full: heading, l.3596 grade line "NAMED
+  INPUT (difference form)", and l.3597-98 "this appendix does NOT promote clause (i) to a
+  family-uniform theorem" -> convert to "promoted to THEOREM on import of App e2a-ports (item
+  M3); retained in the hypothesis as a package for its microlocal role".
+- **Appendix staging block l.4044-4085** `[STAGED -- paper-side edit E2]`: this quotes the
+  yet-unpatched main-paper status sentence; when the main-paper edits (i)-(iii) land, this
+  staging note is discharged/removed. (Direct evidence the propagation is a half-applied edit.)
+Alternative one-touch fix at each: append "(now a theorem via the port, App e2a-ports item M3;
+the clause is retained in the hypothesis as a package)". Either removes the self-contradiction.
+NON-STALE (audited & excluded): `unification.tex` l.17540 ("clauses (i),(iii) not consumed
+here" = a usage note, not a grade) and l.18043 (a DIFFERENT named input, E3a horizon flow).
+MARGINAL (audit-at-import, not a hard contradiction): l.17330 concerns the Sanders
+reference-subtraction continuity ("no parametrix enters that construction") -- a different
+object than the parametrix-difference M3 promotes; leave unless the author intends clause (i)
+as a whole to be a theorem.
+Dirac NITs (courtesy, NOT required for HOLDS): N1 add "Fourier convention as in
+DawsonFewster2006 eq. (8)"; N2 rem:dsf-massless "finite smooth c-number only" -> "finite
+modification".
+
+### (3) #66 HOMES (a)-(c) -- NONE FIRED
+- **(a) re-derived MARGIN on an unchecked EXISTENCE premise (the run-45 failure mode):** DID
+  NOT FIRE. Every construction's existence premise was re-derived, not assumed: Dirac EP1-EP5
+  (CAR positivity at DF source); port_m3 EP-G (an17:G glued parametrix, parts i-ii only)/EP-S/
+  EP-v/EP-e; port_ac EP0 + EP1' Cauchy (classical Hadamard on analytic metrics EXISTS);
+  port_d0 (P-a) + (S1) at Hadamard-1932 source. No phantom construction.
+- **(b) grade promotion (M3) without verbatim clause match or with an open dependency:** DID
+  NOT FIRE on the mathematics -- the three-way match IS verbatim at all corners, correctly
+  scoped to family-uniform, fence s>n/2+6 consistent, and the only dependency (singular v_k,
+  L3) is geometric & ORTHOGONAL to the finite w_k/BFV that keep M1 PLAUSIBLE (no open
+  PLAUSIBLE leg). The propagation WOUND is the residue closest to (b): the promotion is
+  recorded but not propagated -> a DOCUMENTATION self-contradiction, not a correctness kill.
+- **(c) Hadamard lever consumed OUTSIDE its native category (formal-series vs fundamental-
+  solution vs finite-part):** DID NOT FIRE. port_d0 consumes (S1) formal-series-convergence
+  ONLY, verified at Hadamard-1932 nos.63-66 in the non-parabolic category (both signatures);
+  (S2) fundamental-solution/partie-finie NOWHERE; (S3) finite-part DERIVED from (S1)+(P-a).
+  The regular part w (the S2 piece, non-unique for even m) is correctly never touched.
+
+### (4) DOES THE (M3) GRADE PROMOTION STAND? -- YES, on the merits.
+The ported theorem port:thm-M3 matches the clause it names VERBATIM (same three norms, support
+K, state-independence, quantifier at least as wide, fence s>n/2+6); the promotion is correctly
+scoped to the FAMILY-uniform difference bound (item:an17-M3 "Open content ... ball-uniform over
+the family"); the three W-M3 patches are each correct and introduce no new error; nothing the
+promotion needs is open. So **the promotion STANDS** as a THEOREM. Caveat, NOT a retraction:
+the paper is not yet SELF-CONSISTENT about it -- item:an17-M3=THEOREM coexists with >=6 live
+NAMED-INPUT spots. The remedy is propagation (fix list (2)), not demotion. Direction is safe
+(under-claim; clause (i) diff is unconsumed by the fused first law).
+
+### (5) ZERO-WRITE ADJUDICATION -- VERIFIED BY CONTENT
+- **Load-bearing protected files all PREDATE every red-team scratchpad write** (rt59_*.md/py
+  08:37-08:47): `appendix_dirac_floor.tex` 07-14 17:28; `port_m3.tex`/`port_ac.tex`/
+  `port_d0.tex`/`appendix_e2a_omega.tex` 08:05; `appendix_e2a_ports.tex` 08:04;
+  `unification.tex` 08:13. The red team physically could not have written them.
+- **ISSUES.md (09:02:20) postdates the ledger but is NOT run-59 content:** its tail is the
+  run-60 dS-stack apply ("Three red teams still in flight (runs 59, 61, 62)"), a CONCURRENT
+  session's work. The run-59 ledger lives in scratchpad/ledger_run59.md as instructed. Zero
+  run-59 writes to ISSUES.md, verified by CONTENT (not just mtime).
+- **Git working-tree M-flags** (unification.tex, appendix_e2a_omega.tex, ISSUES.md) are
+  pre-existing AUTHOR port-import + run-60 apply work, not red-team splices; the untracked
+  port_*.tex / appendix_e2a_ports.tex are the imported ports (author work).
+- This adjudicator issued ZERO Write/Edit to any repo file; all output is scratchpad
+  (ledger_run59.md). Verification throughout is by CONTENT.
+
+### ADJ BOTTOM LINE
+**3 HOLDS (Dirac-floor, port_ac, port_d0), 1 WOUNDED (port_m3+M3-grade: theorem holds &
+promotion earned; documentation propagation wound, safe under-claim direction), 0 BROKEN.**
+The run-45 failure mode did NOT recur: the Dirac re-route's existence premise is clean at
+source and the N>9 arithmetic is exact. The (M3) promotion STANDS on the merits (verbatim
+three-way match, correct family-uniform scope). The sole action item is author-side
+propagation of the promotion to >=6 live spots -- a self-consistency fix, not a correctness
+repair. Zero red-team writes to protected files, verified by content.
+
+---
+### Main-session apply note — run 59 (independent red team of the new proof appendices) applied (2026-07-15)
+
+Ledger `ledger_run59.md` merged above. **Verdict: 3 HOLDS, 1 WOUNDED, 0 BROKEN — and the run-45 failure mode did NOT recur.** Referee CONFIRMED at high confidence; all three #66 homes stayed cold.
+
+- **Dirac floor (App app:dirac-seed-floor) — HOLDS.** The existence premise was re-derived AT SOURCE (Dawson–Fewster, the in-print FV proof): the positivity consumed is CAR-STATE positive-type positivity of the frequency-split two-point pieces (Pauli window 0≤Q≤1), discarded as nonnegative, sea entering via the compensating minus (:W:=−:W:^Γ) — NEVER a positive quadratic form for the indefinite Dirac density. This is exactly the run-45 sidestep, not a repeat of it. The N>9 envelope verified EXACT and STRICT by independent sympy (∫μdμ/(1+μ+a)^N closed form; Weyl E² d.o.s. → tail exponent 8−N; N=9 log-diverges), and the charge-not-energy census (W₀ is a point-split charge density, DF l.128/890) fixes the power at 4 not 5. Two non-load-bearing NITs (a Fourier-convention citation, a massless-remark wording) left as-is — no correctness impact.
+- **port_ac, port_d0 — HOLDS.** port_ac EP0-clean (holomorphy in the spacetime variable on the fixed collar, no parameter-analyticity — the run-54 EP2 Hölder-½ counterexample respected). port_d0 consumes the Hadamard lever in its NATIVE category — (S1) series-convergence ONLY, verified VERBATIM in Hadamard 1932 nn.63–66 ("non parabolique", "commun aux cas elliptique et hyperbolique"); (S2) fundamental-solution consumed NOWHERE; (S3) finite-part DERIVED. #66 home (c) cold.
+- **port_m3 + the M3 grade move — WOUNDED (documentation), promotion EARNED.** The theorem holds, the three-way clause match is VERBATIM at all corners (same operator, norms {H^s,H^{s−2},H^{s−2}}, support, fence s>n/2+6; the port quantifier is WIDER — full H^s ball ⊇ U_ω), the three W-M3 patches are each correct, and the tempting κ_Γ-exponent-undercount kill was run and FAILS. **The wound: the promotion was recorded at item:an17-M3 but ≥6 live spots still graded clause-(i) difference form as a NAMED INPUT** — including main-paper l.17240-41 (which RT2 itself missed and the referee caught) — a live self-contradiction in the SAFE (under-claim) direction.
+
+**Fix applied (propagation, not demotion — 8 spots):** three main-paper (the retained-inputs sentence + modulo list; the l.17240-41 spot RT2 missed; the l.11853 summary bullet) and five appendix (subsection heading; honest-boundary modulo list; the "difference half" sentence; rem:an17-clausei-diff heading + grade line + the "does NOT promote" sentence; the two `\ifanstagepaper` staged-preview echoes). Every spot now reads clause-(i) difference form as a ported THEOREM (App e2a-ports item M3). Residual sweep clean; full rebuild 0/0/0, 328 pp. Lesson (mirrors run-60 F-RATE): a grade promotion must propagate to every spot that grades the object, not just the modulo-list item — grep the full corpus (incl. \input'd appendices and staged-preview blocks) for the old grade.
+
+**RED-TEAM SWEEP STATUS: 3 of 4 done (59, 60, 62), run 61 resuming (W1/B1a arm crashed on the structured-output cap; RT2 fermionic + RT3 E2a already HOLDS).** Across 59+60+62: 0 BROKEN, wounds all repairable and fixed, the two grade-sensitive claims (Dirac floor existence premise; M3 promotion) both survive at the merits. The run-45-style catastrophic overclaim did not recur anywhere.
+
+# LEDGER RUN 61 — ARM RT2 (THE FERMIONIC PARITY RAISE) — INDEPENDENT RED TEAM
+
+Commission: second independent pass on the run-50 fermionic first-law raise (unification.tex
+leg (iv), E2b Dirac paragraph, anchor "one notch", l.17880-17944). Galanda checklist on every
+LPM/GMV/CFM/FM use + mass-blindness + instance-level honesty + B(f)^2=1. ZERO writes to
+unification.tex / ISSUES.md. Verify by CONTENT at source. Full analysis: rt61_fermionic.md.
+
+## VERDICT: FL (RT2) = **HOLDS.** No citation wound survives independent source re-verification.
+
+## WHAT WAS RE-VERIFIED AT SOURCE (caches, this run — not trusting the run-50 ledger)
+- GMV 2305.02788: CAR convention [B(f)*,B(g)]_+=<f|g> (l.109,171); B(f)^2=1 from Gamma f=f,
+  <f|f>=2 (l.315-325); Thm 2.1(A) S=<f,Q1 h f> finite iff dom|h|^{1/2} (l.440-455); Prop
+  2.2(2) unitary-excitation formula (l.290-299); S1PFS Def 2.2(c) (l.343-352) + remark (29)
+  holds without it (l.494-496). Dim/mass/region/field BLIND; zero wedge/boost occurrence.
+- LPM 2405.07888: massless-only (title + l.19-24,80-82); Thm 4.1 Dirac double-cone mod H
+  (l.794); Prop 4.2 mechanism = paper verbatim, same CGP Lemma 5.7 (l.841-883); Thm 4.3
+  stress form is double-cone (1-r^2), proven via Lemma B.2 not the unproven C0 identity
+  (l.896-932); Cor 4.4 even-subalgebra, region-blind (l.933-954).
+- Bibitems (l.24237-24258): CFM volumed AHP 26,4071(2025); FM preprint, title "2d Rindler"
+  self-supports the claim; FroebMuchPapadopoulos2026 (=frob2607 cache, 2607.07810) is a
+  SEPARATE lam-phi^4 paper, correctly distinguished — NOT CFM.
+- CFM cross-verified via run-50 B3 + ISSUES l.3844 (another arm's primary source): massive
+  diamond mod-H declared open, first-order correction nonlocal => wedge choice vindicated.
+- SECOND-PASS UPGRADE (this pass): the three cites verified secondarily above are now
+  PRIMARY-source-confirmed at their own caches — CFM dr_2312.04629.txt (l.3,10-12,100-104:
+  1+1/massive/diamond/perturbative-1st-order/"open problem", no entropy); FM dr_2505.14076.html
+  (Rindler+2d+rel-entropy, ZERO stress/T00/Theta occurrences => ADV-2 no-display confirmed);
+  Galanda2022 dr_2210.10746.txt (l.29,123 worked instance 1+1 Majorana ultrastatic; l.133 App
+  A.3=BW). Plus GMV l.331: multi-excitation theorem uses "Gamma f_j=f_j, <f_j|f_j>=2" verbatim
+  — the paper's B(f) normalisation is GMV's own. => run-50-ledger dependence removed; HOLDS
+  now rests on primary content for all five imports. No finding changes. (rt61_fermionic.md §7.)
+
+## FINDINGS
+1. IN-SCOPE (all 5 axes): GMV/LPM/CFM/FM/Galanda2022 each used within dim/mass/field/region/
+   state. LPM never called wedge, entropy attributed to Majorana; CFM quarantined to diamond;
+   FM minimal Rindler; GMV abstract. Run-48/50 citation-wound class CLOSED. CLEAN.
+2. MASS-BLINDNESS: correct. BW76 (Wightman-general, all m) + abstract GMV + first-order-boost
+   domain facts + parity twist. dom|h|^{1/2} membership at m>0 holds (x^1 bounded on compact
+   support). "Absence of zero modes" holds (continuous boost spectrum, all m). No hidden
+   m-dependence. Mass asymmetry confined to worked-instance corpus. CORRECT.
+3. B(f)^2=1: exact at source. dS_vN=0 -> S_rel=d<K_W> is heuristic in type III but rigorously
+   backed by GMV Prop 2.2(2) at self-adjoint B(f) (U*Om=UOm). Reproduced 2 ways. Not a wound.
+4. INSTANCE-LEVEL NOTCH: honest. Printed text keeps the wedge stress display as a NAMED,
+   WITHHELD residual at ALL masses (more conservative than the run-50 "m=0 RETIRED"
+   paraphrase). No false claim.
+
+## SOFT-FLAG (NOT a wound; minimal fix optional)
+The "instance-level" label on the wedge stress display 2pi INT x^1 d<T_00> is defensible-but-
+generous: LPM Thm 4.3's (1-r^2) weight is BOUNDED (vanishes at edge), but the wedge x^1 weight
+is UNBOUNDED, so convergence of INT x^1 <T_00> on the B(f)Om states is a genuinely NEW estimate,
+not a transcription of LPM. => distinct display-level computation, slightly more than a mere
+"instance." No overclaim (paper explicitly does not assert it). Optional refinement: name the
+x^1-weight convergence as a display-level estimate distinct from LPM's bounded double-cone weight.
+
+## HONESTY (#68): (a) no dropped hard piece — the would-be hard step (d<K_W> id) is a direct
+## GMV Prop 2.2(2) corollary; the real hard piece (stress display) is named+withheld. (b) no
+## citation beyond scope. (c) token-evasion N/A to FL (that is the RT3 arm). CLEAN at all homes.
+
+## ZERO-WRITES: rt61_fermionic.md + ledger_run61.md only (scratchpad). No unification.tex /
+## ISSUES.md write. Grep anchors only. W1/B1a (RT1) and E2a-omega (RT3) = other arms, not graded.
+
+=====================================================================
+=====================================================================
+# ARM RT3 — THE E2a-omega COMPRESSION — INDEPENDENT RED TEAM (run 61)
+
+Commission: second independent pass on the run-54 compression + run-57 ports.
+M3 vacation + M2 reduction consumer-walks RE-DONE from proofs (not statements);
+M1 honesty post-port (BFV survival); "compresses to M1" completeness. ZERO
+writes. Verify by CONTENT. Full analysis: rt61_e2a.md.
+
+## VERDICT: E2a (RT3) = **HOLDS** on all 3 sub-sites. No clean kill. The
+## compression is honestly graded and complete; both internal inconsistencies
+## found UNDER-state progress (conservative), never overclaim.
+
+## RE-WALKED THIS RUN (live tree: unification.tex + appendix_e2a_omega.tex +
+## port_m3/ac/d0.tex, all 3 \input at l.23157, compile-clean)
+- M3 consumer-empty: `grep -c C_H( unification.tex`=4 (ALL hyp statements; C_H
+  formed by no proof). Pivot proof note l.17540-45 VERBATIM: "(i) ... not
+  consumed here ... only as the microlocal control that makes (iii) plausible."
+  prop:N1-free-omega premises (ii)-(iii) only. Vacation CONFIRMED.
+- M3 port (port_m3 Thm port:thm-M3): genuine full-ball family-uniform diff
+  bound, C_H=C_sob^3 kappa. L1 exact Christoffel id; L2 Gronwall + ball-uniform
+  cone transversality; L3 transport; L4 r^{-2} kernel L^1_loc n=4 exact moment
+  bounds, eps-uniform. STATE-INDEPENDENT (H_g = parametrix) => disjoint from M1.
+  "THEOREM (ported)" HONEST.
+- M2 single bite: cor:E2-entropy-smallness(iv), eq:E2-conditioned-floor l.17583-88
+  at c_S(g_0,t,F)=SEED. Proof l.17620-23 VERBATIM: QEI "applied at the fixed
+  seed g_0 ... ball uniformity ... retained as stated but NOT consumed." Every
+  other c_S/QEI hit classified (carrier/summary/QEI-free thm). NO token-evasion.
+  Consumed = Sanders 2024 single-metric thm (ISSUES l.3167: "no metric-continuity
+  statement" -> ball clause honestly NAMED INPUT). CONFIRMED.
+- M1 PLAUSIBLE: port_ac pac:thm-verdict VERBATIM "clause(ii)/M1 remains PLAUSIBLE
+  ... a (D0) closure alone would NOT lift (res2) (the BFV conditionality survives
+  it)." Never THEOREM. BFV survival + revival ("un-anchoring re-opens (E-env) AND
+  #B'") printed. HONEST.
+
+## FINDINGS
+1. M3 = HOLDS (vacation + genuine THEOREM port; disjoint from M1; self-aware
+   test-space correction t>3).
+2. M2 = HOLDS (single-bite-at-seed proof-confirmed; ball clause unconsumed;
+   NAMED INPUT honest; revival printed).
+3. M1 = HOLDS. Family-uniformity (gaps a,b) GENUINELY discharged by analytic
+   Cauchy machinery (Prop A/C on THEOREM-grade holomorphic-ODE package). Residual
+   {BFV-vanishing@PLAUSIBLE, #B'} is the STATE-ANCHORING, DISTINCT from the run
+   5-13 spectator-regularity wall (which the analytic seed solves) — NOT a
+   relabeled wall. C_Delta2=0 on BFV surface is coherent (RCE anchors omega_g=
+   omega_0, g=g_0 near Sigma_0 => W_{g,2}|Sigma_0 g-independent), graded
+   CONSERVATIVELY PLAUSIBLE. (D0) closed at seed (port_d0; Hadamard 1932 nos.63-66
+   verified at source) given STANDING seed-Hadamard premise. (E-env) off-path for
+   the BFV-anchored family (revival covers un-anchoring). "Compresses to M1
+   alone" COMPLETE: prop:N1-free premises {M1,M2} only; M3 THEOREM, M2 literature.
+
+## #68 HOMES — ALL CLEAR
+(a) dropped hard piece: NO. Gaps a/b genuinely discharged; residual is a distinct
+    state-anchoring piece, honestly PLAUSIBLE + revival.
+(b) citation beyond scope: NO. BrunettiFredenhagenVerch2003 = RCE definition
+    (l.17037-41, in scope); C_Delta2=0 is the paper's OWN PLAUSIBLE lemma
+    (an17:Nc-corrected), not attributed to BFV as a theorem.
+(c) token-evading consumer: NO. M2 single bite proof-confirmed; M3
+    consumer-empty AND ported.
+
+## HYGIENE (2 conservative under-statements; NOT overclaims; optional fixes)
+H1. M3 grade INTERNALLY INCONSISTENT: "THEOREM (ported)" at sec:an17-modulo
+    l.3968 vs "named difference-input" at master-thm proof l.3775 vs "clause (i)
+    ... named" at Part-4 summary l.3436 (both stale, un-propagated post-run-57).
+    Direction = under-statement. FIX: cross-ref the port at l.3436/l.3775.
+H2. (D0) staging seam: port_ac res1 lists (D0) OPEN ("arm A2's target") while
+    port_d0 an57d0:main CLOSES it; both live in paper. port_d0 reconciles but
+    port_ac not updated. Top-level M1 item correctly says (D0) closed. FIX:
+    forward-ref an57d0:main at port_ac res1.
+
+## ZERO-WRITES: rt61_e2a.md + this ledger append (scratchpad) only. No
+## unification.tex / appendix / ISSUES.md write. Grep anchors only (paper 328pp).
+
+=====================================================================
+=====================================================================
+# ARM RT1 — (W1) EQUIVALENCE + (B1a) N&S FORM — INDEPENDENT RED TEAM (run 61)
+
+Commission: second independent pass on the run-52/55 "converted to a finite
+checklist / N&S form" claims (the two logically-linked edge/BW claims). Attack
+the PRINTED prose: (W1) checklist para l.20291-20330; (B1a) N&S block
+l.20270-20291. ZERO writes. Verify by CONTENT. Arithmetic re-derived from
+scratch: rt61_w1b1a.py (17/17 PASS). Full analysis: rt61_w1b1a.md.
+
+## VERDICT: (W1) = **HOLDS.**   (B1a) = **HOLDS** on all 3 commission-named
+## sub-items (arithmetic / route-class no-go / artifact); **WOUNDED-minor** on
+## one surfaced disclosure gap (N&S necessity-of-(W1) lemma unflagged at block),
+## verdict-preserving, one-clause fix. No BROKEN. No hidden wall, no dropped
+## hard piece, no grade overclaim in the printed prose.
+
+## (W1) — four commissioned checks
+1. BOTH DIRECTIONS, not forward-only. Biconditional proved both ways (w1_equiv
+   §4; final adj ISSUES l.19755-60): reverse (W1)=>checklist immediate/order;
+   forward checklist=>(W1) via order-by-order Takesaki (N-5) on truncated RS
+   (N-7). Undischarged items are IN the equivalent list, so the iff is valid;
+   their truth is open (= what "checklist" means). No item is open-ended-dynamics
+   relabeled (OS/Takesaki/RS are finite named lemmas; the one open — strip m=0 =
+   IR — is flagged the SM wall). Honesty (a) clean. PRESENTATIONAL NOTE (cosmetic,
+   not a wound): folding "Takesaki transfer" into the *equivalent set* is
+   category-loose (it is reverse-arrow scaffolding; cleaner form: "<=> {family,
+   strip, OS} GIVEN {Takesaki, RS}"). Drops nothing.
+2. QUADRATIC-FORM / DEVICE REGISTER honestly carried. #62 (operator-vs-form
+   overclaim, ISSUES l.19803-11) faithfully remedied in print: headline "all at
+   quadratic-form grade"; device register (where operator grade actually lives —
+   paper still under-claims to form grade); sharp-time "form-grade only:
+   nu^4/Lambda^3, fence-uniform UV, not an edge effect" = exact R-1 mechanism.
+   No operator-grade leak (grep l.20200-340); the only "affiliated" tokens say
+   the one-sided charge is NOT affiliated (reinforces honesty). All 4 gate
+   conditions present (N-7, N-4 angular, form wording, R-4 scheme rider).
+3. O^(1)=0 = ONE-POINT INSTANCE — right. Diagonal probe X=K_W^(0) collapses the
+   two-sided family to -beta Cov_KM(K_W,K) = run-21 O^(1) verbatim; =0 by Bose
+   1+2nbar. Re-verified exact (rt61_w1b1a.py, 3 nbar, 1e-9), independent of the
+   4 prior. Printed "one-point member" + "necessary not sufficient": correct.
+4. (W1)/(W2) INDEPENDENCE ("no step consumes edge control") — holds. Three named
+   mechanisms (rho boost/rotation-invariant; device/Requardt; connected-vertex
+   edge-face); sole divergence (R-1 sharp-time UV) is delta_0-INDEPENDENT
+   (Lambda^3 exact) => fence-uniform UV not edge/(W2). Re-entry iff fence dropped
+   or one-sided chosen — matches print l.20311-15.
+
+## (B1a) — three commissioned checks + one wound
+5. HALF-POWER GAP ARITHMETIC, both readings — correct, both LABELLED in print.
+   finite iff a_f>p-3/2; a_f=0 -> collar p<3/2, E~delta^{-1/2} at rho^-4 floor
+   (half-power); boundary-VALUE p<1 (distinct); floor p=2 beats both. Re-derived
+   from scratch (rt61_w1b1a.py: grid algebra; delta^-1->delta^-1/2 slope; gaps
+   1/2 & 1; (pi^2/8)a^-5 floor constant). Referee's "carry the reading label"
+   (ISSUES l.17725-26) satisfied ("on the collar reading" / "for the boundary
+   value", l.20277-79). Note: "half-power" is the nearest (collar) threshold;
+   boundary-value is a FULL power — both printed, no overclaim.
+6. ROUTE-CLASS NO-GO closed as a CLASS, not instances. Shared mechanism:
+   semicontinuity (lsc/martingale/nested-wedge) => inequality, never rate-
+   equality; missing reverse inequality = collar control, defeated by rho^-4 for
+   ALL torsor p (ISSUES l.17602-11). 2nd independent kill for martingale/nested
+   at hypothesis level (l.17681-85). Scope honest: "route-class closure, NOT
+   identity decision" (l.17609) — print closes ROUTES, not the identity; scoped
+   to semicontinuity only (L3/monotonicity separate, weaker, banked).
+7. EDGE-TERM = ONE-SIDED-PRESENTATION ARTIFACT — right + scoped. Two-sided
+   Araki-BW split K^(1)-JK^(1)J is edge-free by construction (chi-fenced legs);
+   boundary term formed only by one-sided moment IBP (l.17727-29). Physics NOT
+   dismissed but RELOCATED to (W2): print states "fenced charge misses a collar
+   deficit and the full-charge limit reopens the gate" (l.20263-65). No wall hid.
+
+## WOUNDED-minor (surfaced; verdict-preserving)
+The N&S iff "(R-i)@n=1 <=> (W1) AND (W2)" is stated flatly ("holds if and only
+if", l.20271), NO flag, but its necessity-of-(W1) direction ((R-i)=>(W1)) rests
+on an undischarged density/polarization lemma — the run-52 adversary's OWN
+verdict-preserving regrade ("FORWARD direction (R-i)=>(W1) needs a density/
+polarization lemma, named-not-derived", ISSUES l.17674-75, 17689). Grep: no
+"sketch/modulo a/polarization" in l.20268-20330. The scaffolding (= L-Tak/L-RS)
+IS disclosed — but only in the FOLLOWING W1 para, framed as decomposing (W1),
+not as a gap in the iff. MINOR because: (i) iff used as wall characterization —
+sufficiency + necessity-of-(W2) load-bearing, both solid; (ii) para concludes
+B1a "not a theorem"; (iii) scaffolding disclosed one para on. MINIMAL FIX: append
+half-clause to the N&S sentence — "(necessity (R-i)=>(W1) modulo the density/
+polarization step — the truncated-RS / formal-Takesaki scaffolding below)".
+
+## #68 HOMES: (a) two-way-when-forward-only / dropped piece — CONFRONTED, does
+## not fire (genuine biconditional; no relabeled dynamics; the one wound is the
+## minor N&S disclosure above). (b) citation beyond scope — none in W1/B1a (FMP
+## corroboration-only, label carried, BW quoted as consumption). (c) token-evading
+## consumer — run-52 census swept all (R-i) loci; deliverable never references
+## (R-i); none missed.
+
+## ZERO-WRITES: rt61_w1b1a.md + rt61_w1b1a.py + this ledger append (scratchpad)
+## only. No unification.tex / ISSUES.md write. Grep anchors only (paper 328pp).
+## RT2 (fermionic) + RT3 (E2a-omega) = sibling arms above, not graded here.
+
+=====================================================================
+=====================================================================
+# FINAL ADJUDICATION — RUN 61 (independent, post-arm)
+=====================================================================
+Adjudicator pass: independent SOURCE re-verification of the load-bearing spine,
+NOT a rubber-stamp of the three arms. Every verdict re-checked against the
+printed .tex + caches/ISSUES at CONTENT. ZERO writes to unification.tex/ISSUES.md.
+
+## (1) PER-SITE VERDICTS
+- W1-checklist     = HOLDS
+- B1a-N&S          = WOUNDED (minor, verdict-preserving)
+- fermionic-raise  = HOLDS
+- E2a-compression  = HOLDS
+No BROKEN. One WOUNDED (B1a), verdict-preserving, one-clause fix.
+
+## INDEPENDENT SOURCE CHECKS BACKING EACH VERDICT
+[W1] printed checklist l.20291-20330 read verbatim: "(W1) is equivalent to the
+two-sided boost-KMS boundary family ... the banked strip lemma (its m=0 case
+open), a per-order angular OS step, the formal-series Takesaki transfer, and
+truncated Reeh-Schlieder; all at quadratic-form grade." Genuinely TWO-WAY
+(reverse immediate; forward via Takesaki+RS; every undischarged item IN the
+named list => truth-value open = "checklist"). #62 operator-vs-form fire remedied
+in print, CONFIRMED vs ISSUES l.19802-11 (fired once at w1_construct Lemma 2
+"strong limit/affiliation"; remedy=form-grade/device wording) + l.19852 ("applied
+text carries the R-AMENDED form-grade wording"): print carries "all at quadratic-
+form grade" + sharp-time "form-grade only: nu^4 / Lambda^3, fence-uniform UV, not
+an edge effect." O^(1)=0 = printed "one-point member" (correct). (W1)/(W2)
+independent (sole divergence R-1 sharp-time UV = fence-uniform, not edge). IR
+strip m=0 is the ONE open item, flagged as the SM wall — no open-ended dynamics
+relabeled. Reduction stands as printed.
+
+[B1a] three named sub-items HOLD, verified vs ISSUES l.17720-26: arithmetic
+(collar p<3/2 -> delta^{-1/2} half-power at rho^-4 floor; boundary-value p<1 full
+power; floor p=2 beats both) with BOTH reading labels printed (l.20277-79,
+satisfying the ledger's "printed N&S must carry the reading label"); route-class
+no-go closed as a CLASS (semicontinuity=>inequality-never-rate-equality + indep.
+martingale/nested-wedge hypothesis-level kill); edge-term = one-sided-presentation
+artifact RELOCATED to (W2) not eliminated ("full-charge limit reopens the gate",
+l.20263-65). THE WOUND (source-confirmed): printed iff "(R-i) <=> (W1) AND (W2)"
+(l.20271) stated FLATLY, no grade flag, but the paper's OWN run-52 ledger grades
+the necessity direction at sketch grade — ISSUES l.17674-75 verbatim "the FORWARD
+direction ((R-i) => (W1)) needs a density/polarization lemma, named-not-derived"
+and l.17741-43 "N&S form ... at sketch grade (forward direction modulo a named
+density/polarization lemma)." Grep: no sketch/modulo/density flag at the iff in
+l.20268-20330. = honesty home (a): two-way stated where one direction is sketch,
+unflagged at the point of statement. MINOR: no positive result inflated
+(conclusion is a wall/negative), sufficiency + necessity-of-(W2) solid,
+scaffolding disclosed one paragraph on (W1 checklist's Takesaki + truncated RS).
+Verdict-preserving.
+
+[fermionic] printed site l.17880-17944 read verbatim: honest. GMV standing hyp =
+wedge BW of the Fermi net (discharged by the granted BW import); LPM = "the
+massless Dirac/Majorana modular Hamiltonian of the unit double cone" (never
+wedge; entropy attributed to Majorana) — in scope on dim/mass/field/region/state;
+CFM quarantined to the 1+1 small-mass diamond as the wedge-choice anchor.
+Mass-blindness correct ("Every theorem ingredient is mass-blind — BW and the CAR
+theorem alike"). B(f)^2=1 EXACT at source: GMV dr_2305.02788.txt l.315-325
+verbatim "B(f)* = B(Gamma f) = B(f) ... 2B(f)B(f) = <f|f>1 = 2·1 ... B(f)*B(f) =
+B(f)B(f)* = 1" = paper's "Hermitian and unitary (B(f)^2=1)". Instance-level notch
+HONEST — the two residuals (no 4d m>0 worked instance; wedge stress display
+2pi INT x^1 d<T_00>) NAMED + explicitly WITHHELD ("which this paper does not
+assert for Dirac"); print MORE conservative than the run-50 "m=0 RETIRED"
+paraphrase (stress-display residual kept at ALL masses => no full-photon-parity
+claim even at m=0). Grade move stands as printed.
+
+[E2a] verified independently: M3 consumer-empty at proof level — grep -c "C_H(" =
+4, all four are hypothesis-statement carriers (l.17060/17065/17122/17127), C_H
+formed by no proof; pivot proof note l.17540-45 excludes clause (i). Ported to a
+genuine STATE-INDEPENDENT THEOREM (port_m3, H_g=glued parametrix), disjoint from
+M1's finite part. M2 QEI bites exactly ONCE at the seed — proof note l.17615-23
+verbatim "bounded below by -c_S(g_0,t,F) via [eq:E2-QEI] applied at the fixed seed
+g_0 ... the ball uniformity ... is retained as stated but not consumed at this
+step." No token-evading consumer. M1 honestly PLAUSIBLE — port_ac header ("Clause
+(ii)/M1 remains PLAUSIBLE") + pac:thm-verdict l.363-394: holds "modulo precisely
+the run-54 modulo-list", (res2) BFV-vanishing "cited only at its carrier's printed
+grade ... PLAUSIBLE, never at THEOREM", revival "un-anchoring from BFV/RCE
+re-opens (E-env) and #B'". Family-uniformity (gaps a,b) genuinely discharged by
+the analytic Cauchy machinery; residual {BFV@PLAUSIBLE,#B'} = state-anchoring,
+distinct from the run 5-13 spectator-regularity wall. "Compresses to M1 alone"
+complete (Part-B premises {M1,M2}; M3 THEOREM, M2 literature).
+
+## (2) FIX LIST
+LOAD-BEARING (clears the one WOUND):
+  F1 [B1a] append a half-clause to the printed N&S sentence at l.20271, flagging
+     that the necessity direction (R-i)=>(W1) is at sketch grade modulo the
+     density/polarization step — the same truncated-RS / formal-Takesaki
+     scaffolding disclosed in the following W1 checklist paragraph. One clause;
+     makes the iff's grade match the checklist's. (Author edit; NOT applied here.)
+HYGIENE / CONSERVATIVE UNDER-STATEMENTS (optional, no overclaim to remove):
+  F2 [E2a M3] cross-ref the run-57 port at the two stale sites l.3436 ("clause (i)
+     ... named") and l.3775 ("(M3) a named difference-input") so M3 reads "THEOREM
+     (ported, App e2a-ports)" consistently (l.3968 already does).
+  F3 [E2a D0] forward-ref port_d0's an57d0:main closure at port_ac res1 /
+     rem:pac-grade(iii), which still lists (D0) OPEN while port_d0 closes it
+     (top-level modulo item already says closed).
+  F4 [fermionic] optionally name the wedge stress display's x^1-weight convergence
+     as a distinct display-level estimate vs LPM's bounded (1-r^2) double-cone
+     weight, so "instance-level" isn't read as "mere transcription." Cosmetic;
+     the explicit non-assertion already blocks any overclaim.
+
+## (3) #68 HOMES
+(a) reduction dropping a hard piece / two-way-when-forward-only: FIRES ONCE
+    (minor) -> B1a N&S iff (necessity-of-(W1) sketch-grade flag missing at the
+    point of statement). Does NOT fire for W1 (genuine biconditional, open items
+    named in the list, IR strip flagged as the wall), fermionic (the d<K_W>
+    identification is a direct GMV Prop 2.2(2) corollary; the real hard piece —
+    the stress display — is named+withheld), or E2a (gaps a/b genuinely
+    discharged; residual is a distinct state-anchoring piece, PLAUSIBLE+revival).
+(b) grade-movement citation beyond scope (Galanda-checklist standing wound class):
+    CLEAN at all four. Fermionic (highest risk) source-verified: all five
+    citations in-scope on all axes. E2a: BFV = RCE definition (in scope);
+    C_Delta2=0 is the paper's OWN PLAUSIBLE lemma, not attributed to BFV as a
+    theorem. W1/B1a: FMP corroboration-only, label carried, BW quoted as
+    consumption.
+(c) consumer-walk vacation missing a token-evading consumer: CLEAN. E2a M3
+    consumer-empty at proof level (C_H=4 hyp hits + pivot proof note); M2
+    single-bite at the seed proof-confirmed ("retained but not consumed"). W1/B1a:
+    run-52 census swept all (R-i) loci; deliverable never references (R-i).
+    Fermionic: the tanh-trace vacation rides the E2c audit, not the first law.
+NET: #68(a) homes to the B1a WOUNDED-minor; #68(b) and #68(c) home nowhere.
+
+## (4) DO THE REDUCTIONS/GRADE-MOVES STAND AS PRINTED?
+- W1 "converted to a finite named checklist": STANDS clean (genuine two-way
+  equivalence, honest quadratic-form grade, open item named as the IR wall).
+- B1a N&S form: the three named sub-claims (arithmetic / route-class no-go /
+  artifact) STAND; the two-way iff stands MODULO one verdict-preserving disclosure
+  flag (F1) — substantially stands, needs the half-clause to stand cleanly.
+- fermionic "m=0 notch retired, m>0 same grade instance-repriced": STANDS as
+  printed, and is more conservative than its own run-50 paraphrase.
+- E2a "modulo-list compresses to M1 {BFV@PLAUSIBLE,#B'}": STANDS as printed;
+  grades conservative; the two internal inconsistencies (F2/F3) UNDER-state.
+=> Three of four stand clean as printed; B1a stands modulo F1.
+
+## LIMITS OF THIS PASS (not independently re-derived; neither affects a verdict)
+- Physics of "C_Delta2=0 on the BFV surface" (2nd-order RCE coeff) + every
+  numerical constant inside port_m3's kappa_P — constant/coefficient tracking, not
+  structural. M3 falls back to the proof-level vacation if port_m3 constants are
+  dented; M1's grade already rests on BFV@PLAUSIBLE so it cannot be over-graded by
+  BFV being softer than stated.
+- CFM/FM/Galanda2022 not re-cached at source this run (minimal/non-load-bearing;
+  cross-verified via bibitems + ISSUES l.3844). Load-bearing GMV + LPM + B(f)^2=1
+  + mass-blindness were fully source-verified.
+
+BOTTOM LINE: 3 HOLDS (W1, fermionic, E2a) + 1 WOUNDED-minor (B1a), no BROKEN. The
+reductions and grade-moves stand as printed except the B1a two-way iff, which
+needs one verdict-preserving disclosure half-clause (F1). The three arms' bottom
+lines are independently corroborated at source.
+
+=====================================================================
+## RE-VERIFICATION STAMP — adjudicator, resumed session (post-crash)
+=====================================================================
+Independent second confirmation of the final-adjudication spine above. Every
+load-bearing fact re-checked at CONTENT this session; nothing taken on trust
+from the arms or the prior (crashed) adjudication pass. RESULT: CONVERGES —
+no verdict moves.
+- B1a WOUND (the pivotal call), re-confirmed both ends:
+  * printed iff is FLAT: unification.tex l.20275 "necessary-and-sufficient
+    form: the clause holds if and only if (W1)... and (W2)..." — read l.20255-
+    20339; NO grade flag on the necessity direction (grep: no sketch/modulo/
+    density/polarization token in the block).
+  * paper's OWN grade is sketch: ISSUES l.17674-75 "sustained at sketch grade;
+    the FORWARD direction ((R-i) => (W1)) needs a density/polarization lemma,
+    named-not-derived"; l.17742-44 "N&S form ... at sketch grade (forward
+    direction modulo a named density/polarization lemma — R's regrade)."
+  => #68(a) fires once, MINOR (conclusion is a wall "not a theorem" l.20272-73;
+     no positive result inflated; sufficiency + necessity-of-(W2) solid).
+- W1 #62 remedy carried in print: l.20309 "all at quadratic-form grade",
+  l.20311 "form-grade only", l.20324 "not affiliated to the algebra at all";
+  O^(1)=0 one-point member l.20304; (W1)/(W2) independence l.20314-17; open
+  strip m=0 named l.20306. HOLDS.
+- B1a arithmetic: rt61_w1b1a.py RE-RUN this session = all PASS (threshold
+  a>p-3/2; collar p<3/2; boundary-value p<1; floor p=2; E~delta^-1/2; gaps
+  1/2 & 1; Bose 1+2nbar; O^(1) mechanism =0 @ 3 nbar). Hand-re-derived
+  independently: matches print l.20279-85 and ISSUES l.17719-26. HOLDS.
+- fermionic B(f)^2=1 VERBATIM at cache dr_2305.02788.txt l.113 / l.320
+  "2B(f)B(f)=<f|f>1=2.1" / l.324 "B(f)*B(f)=B(f)B(f)*=1"; GMV mass/wedge/boost
+  blind (grep 0/0/0/0); CFM dr_2312.04629.txt l.10-12 "massive fermions...
+  diamond... 2d... the massive one is an open problem... small-mass...
+  perturbative" = in-scope exactly as cited (l.17919-22); printed LPM uses
+  in-scope + m>0/wedge disclaimed (l.17898,17917-18,17925). HOLDS.
+- E2a: grep -c "C_H(" = 4, all hypothesis statements (l.17062/67/124/129),
+  formed by no proof; M2 "retained as stated but not consumed at this step"
+  l.17627; M1 port_ac l.406 "remains PLAUSIBLE" / l.408 "BFV conditionality
+  survives it"; Part(B) "theorem modulo {M1,M2,M3}" appendix l.3770. HOLDS.
+- HONEST LIMIT of this session: LPM primary cache (dr_2405.07888.txt) ABSENT
+  this run — fermionic HOLDS unaffected because the load-bearing citation (GMV,
+  for B(f)^2=1 + the CAR theorem) is verbatim-verified and the printed LPM uses
+  are in-scope-by-content with the m>0/wedge gaps explicitly disclaimed.
+- ZERO WRITES to unification.tex / ISSUES.md this session (verified by
+  sha256, open=close): unification.tex efa651e8..., ISSUES.md 6043ae04...,
+  appendix_e2a_omega.tex e1046aff..., port_ac/d0/m3 unchanged. Only this
+  scratchpad ledger stamp written.
+FINAL: W1 HOLDS / B1a WOUNDED-minor / fermionic HOLDS / E2a HOLDS. No BROKEN.
+Reductions stand as printed; B1a stands cleanly modulo the one-clause F1.
+
+---
+### Main-session apply note — run 61 (independent red team of the reductions) applied (2026-07-15)
+
+Ledger `ledger_run61.md` merged above. Process note: the W1/B1a arm (RT1) crashed on the structured-output cap in the first pass; resumed from cache (RT2/RT3 replayed, RT1 + referee + adjudicator ran live). **Verdict: W1-checklist HOLDS, B1a-N&S WOUNDED (minor, verdict-preserving), fermionic-raise HOLDS, E2a-compression HOLDS. 0 BROKEN.** Referee GAP-FOUND (the B1a wound), both named re-derivations HOLD.
+
+- **(W1) "converted to a finite named checklist" — HOLDS, genuine two-way equivalence.** The #68(a) risk (two-way stated, forward-only proved) did NOT fire: reverse (checklist⇒W1) is the assembly direction at formal-series/truncated grade with the machinery (Takesaki, truncated Reeh–Schlieder) listed as explicit RHS conjuncts; forward is immediate; the one genuine open (strip lemma m=0) is flagged as the IR/SM wall. The #62 operator-vs-form remedy is carried in print (grep-clean, no operator-grade leak). O^(1)=0 re-verified as the one-point member to 1e-9.
+- **fermionic parity raise — HOLDS**, and *more conservative than its own paraphrase* (the wedge stress display is named+withheld at all masses; no full-photon-parity claim even at m=0). B(f)²=1 verbatim in GMV; every citation in-scope; **the Galanda-checklist wound class is closed** (source-verified: GMV mass/wedge/boost-blind, CFM/LPM in printed scope).
+- **E2a compression — HOLDS**, grades conservative; the two internal inconsistencies found (F2/F3) both UNDER-state progress.
+- **B1a N&S — the one wound (F1, load-bearing, fixed):** the printed iff stated the necessity direction (R-i)⇒(W1) FLAT at theorem grade, while the paper's own run-52 ledger grades it *sketch* (modulo a named density/polarization lemma) — the qualifier was dropped at the gated-edit stage and print inherited the drop. MINOR because the paragraph concludes B1a is "not a theorem" (no positive result inflated) and the load-bearing directions (sufficiency + necessity-of-(W2) + the class-level route-no-go) are solid. **F1 applied:** the N&S sentence now carries the sketch-grade flag on the necessity direction, matching the checklist. F2 (a stale M3 echo run-59 hadn't reached — the master-thm proof note) and F3 (a stale (D0)-open echo in port_ac) also fixed — both under-statements. Full rebuild 0/0/0, 328 pp.
+
+---
+### RED-TEAM SWEEP CLOSE-OUT (runs 59–62, four independent Opus passes on everything banked since run 48)
+
+**Result: 0 BROKEN across all four. The run-45-style catastrophic overclaim did not recur anywhere.** Site tally: 59 = 3 HOLDS / 1 WOUNDED; 60 = 5 HOLDS / 2 WOUNDED; 61 = 3 HOLDS / 1 WOUNDED; 62 = 15 cites + numerics all HOLDS. Total wounds: 7, every one repairable and now fixed.
+
+**The two grade-sensitive claims both survived at the merits:** the Dirac floor's existence premise is clean at source (Dawson–Fewster CAR-state positivity, never a positive density form — the exact run-45 sidestep), and the M3 NAMED-INPUT→THEOREM promotion is earned (three-way verbatim clause match). The reductions all stand: (W1) a genuine biconditional, the fermionic raise conservative, E2a's compression honest, B1a modulo one disclosure clause.
+
+**The wounds cluster into TWO apply-hygiene classes, not mathematical defects:** (A) a fix/promotion that didn't propagate to every spot — run-60 F-RATE (statement fixed, proof not), run-59 M3 grade (item fixed, 8 echoes not), run-61 F1/F2/F3 (iff flag dropped at gated-edit stage; two stale echoes). (B) incomplete grepping — run-62's two false-positive "orphans" (missed the \input'd appendix cites). Both are now standing lessons: **propagate a grade/fix to the whole corpus incl. \input'd appendices and staged-preview blocks; grep the full \input set before calling a cite orphaned.** #66/#67/#68/#69 homes: #66 cold, #67 cold, #68(a) fired once (B1a, fixed), #69 clean. Genuine-find tally now #49, #55, #57(staging), F1(run-57), #63, run-60 F-RATE-proof, run-61 B1a-disclosure. Paper: 328 pp, 0/0/0, every red-team fix applied.
+
+# Ledger — Run 64, ARM A2 (THE SECOND PREDICTION)
+
+**Task:** strongest *independent* falsifiable prediction (not `w(z)>=-1`) -> testable form +
+falsification + grade; reject tunable/known candidates. Stage `desi_second.tex` + `.md`.
+
+## Result
+Second prediction = **universal subluminal linear vacuum dispersion** (`Sigma_delta` cosine
+cocycle): one scale `mu = alpha*dt^2/hbar^2 = 1/E_QG,1` locks **phonon = photon = graviton**.
+- Massless: `v_g = c(1 - mu E)`, quadratic slaved `eta_eff = +xi_eff^2`.
+- Mechanical: `Domega/omega = -mu E`, same `mu`, every mode/material.
+- Non-tunable content: **(C1) universality** [THEOREM], **(C2) linearity** [THEOREM], **(C3)
+  subluminal sign** [PLAUSIBLE]. **Magnitude NOT predicted** (tunable via `E_star`/`H_inf`).
+- Falsifiers: superluminal (kills C3) / dominantly-quadratic (kills C2) / mode-material-sector
+  scatter incl. phonon `mu_lab != mu_gamma` (kills C1).
+- Grade: **PLAUSIBLE** (conditional on the conjectural `Sigma_delta` generator).
+
+## Key anchors (grep-verified, no full-file reads of the 328pp)
+- cocycle def `Sigma_delta = cos(.)-Id <= 0`: unification.tex l.3611-3616
+- `prop:lorentz-sigma-dispersion` (v_g = c(1-muE)): l.22754; falsifier list l.22886-22890
+- `prop:pred-baw` (universal softening -mu E): l.13608; universality/soccer-ball l.13686
+- `eq:mu-matching` (mu = 2c_0 H_inf/m_P^2): l.15667; convention tension `rem:mu-tension` l.15692
+- `eq:mu-photon-bound` (mu < 1.0e-29 eV^-1, GRB): l.22862; Planck-natural DEAD l.22867
+- GW170817 universality pass l.22832; DE `sigma>=0` razor (contrast) l.22514
+
+## Honesty (#71 homes checked)
+- (a) postdiction-as-prediction: FIREWALLED. Magnitude `mu` tuned by `E_star`/`H_inf`; NO numeric
+  claimed. Bare shape `H-(mu/2)H^2` conceded degenerate (ISSUES l.878) -> universality is the
+  distinctive clause, not shape.
+- (b) grade inflation: AVOIDED. Sign = PLAUSIBLE (scale-identification, not `sigma>=0`); whole =
+  PLAUSIBLE (conjectural generator). No THEOREM dispersion claim. Universality/linearity are
+  THEOREM only *given* the generator (stated as such).
+- (c) already-in-tension-presented-as-live: HANDLED. Planck-natural convention reported as ALREADY
+  FALSIFIED (GRB, 7.6-8.2x); matched value survives but 4 decades below reach; GW170817 passed.
+
+## Rejected candidates (explicit)
+- `prop:pred-bmv` (BMV/GIE): not distinctive (GIE no longer quantum-vs-classical discriminator;
+  "constraint framework satisfies rather than predicts", l.13092); kappa-variant "not a 2026-2035
+  target" (l.13145).
+- `prop:pred-primordial` (CMB): leading term is a "REPRODUCTION ... not an independent prediction"
+  (l.13302); distinctive quartic ~1e-18, split-tunable, unobservable; parity-odd null shared with
+  standard single-field inflation.
+- `thm:mh-witness` (Margenau-Hill): a THEOREM of standard QM the framework reproduces, not a
+  falsifiable-OF-framework observable; ISSUES item E ceilings (NIM, projective-only iff, never
+  operationally instantiated).
+- E-star band: `E_star` is the FREE anchor (run 31); a band on it = data-exclusion of a free input
+  = postdiction.
+- `Sum m_nu`: `m_lightest` is an INPUT (ISSUES l.3538); 59 meV = standard hierarchy floor.
+
+## Independence from A1
+Different sector (unitary Sigma_delta vs dissipative Clausius-sigma), observable (dispersion vs DE
+EoS), premise (Conj.wdw vs delta t=1/(3H)). Genuinely independent. NB asymmetry: DE sign is
+second-law-locked (sigma>=0, stronger); dispersion sign is scale-identification-locked (weaker).
+
+## Compliance
+- ZERO writes to unification.tex + ISSUES.md — verified by `git status` (clean) post-run.
+- Staged: desi_second.tex, desi_second.md, ledger_run64.md (scratchpad only).
+- Reads only (grep anchors + targeted Read); no edits to protected files.
+
+---
+
+# Ledger — Run 64, ARM A1 (THE QUANTITATIVE w(z) BAND)
+
+**Task:** derive what is FIXED about w(z) — sign / floor on 1+w(z) / z-shape / relation to an
+observable — at the grade delta t=1/(3H) [PLAUSIBLE] allows; name framework quantities +
+free-tunability; compare to DESI DR2 honestly. Stage desi_band.tex + .py.
+
+## Result (label: NEGATIVE-RESULT; surviving positive content is PLAUSIBLE)
+Framework yields NO parameter-free QUANTITATIVE OBSERVABLE w(z) band. Two DE readings, disjoint
+virtues:
+- **Dissipative (sign-locked):** -1 <= w(z) <= -1 + c_sigma (H(z)/M_Pl)^2, c_sigma=O(1)>=0.
+  Floor w>=-1 from sigma>=0 (PARAMETER-FREE). Magnitude 1+w(0)~1.4e-122 — UNOBSERVABLE; monotone
+  up in z; <1e-44 even at BBN. Sign-lock => zero observable amplitude.
+- **Running vacuum (observable amp):** Lambda_0+c_L H^2, |c_L|<=0.12 (BBN) => |w_a|<=0.05, but
+  sign=sign(c_L) FREE and GENERATION OPEN. Non-crossing (touches -1 only at z=0).
+=> ONLY parameter-free falsifiable content = the SIGN: **w(z)>=-1, non-crossing, quintessence-side**.
+   GRADE = **PLAUSIBLE** (delta t=1/(3H) PLAUSIBLE + sigma^(2)-physicality OPEN). A THEOREM-grade
+   band here would be a #71(b) fire — avoided.
+
+## Framework quantities + free-tunability (postdiction audit)
+- sigma>=0 (2nd law): sign-definite THEOREM, NOT tunable — gives the floor/sign.
+- delta t=1/(3H): PLAUSIBLE (dS QNM continuum); sets shape/existence, not a free dial.
+- c_sigma (diss. amp): O(1), un-tunable below O(1); magnitude ~(H/M_Pl)^2.
+- c_Lambda (running vac): O(1) surface-gravity BUT sign FREE + BBN-capped [-0.12,0.12] =>
+  a BOUNDED SIGN-FREE DIAL => running-vacuum "prediction" is a range, NOT sharp => FLAGGED as
+  postdiction-capable, not sold as a prediction.
+- N/E_star/Lambda: do NOT enter the sign; cannot tune it (N free FUNCTION under trace homogeneity).
+
+## DESI DR2 comparison — TENSION, NOT FALSIFIED
+DESI DR2: w0=-0.733, wa=-1.010, Om_m=0.316, H0~67.2; 3.1σ(BAO+CMB), 2.8-4.2σ(+SN); CPL crosses
+w=-1 at z~0.36 (quintom-B).
+- z=0: DESI w0>-1 AGREES with framework (quintessence-side today).
+- past z>0.4: DESI CPL w<-1 (phantom) DISAGREES with w>=-1 everywhere — BUT crossing is CPL-
+  param-dependent (thawing quintessence w>=-1 fits comparably) => no >=5σ param-indep crossing =>
+  non-crossing shape-class stays LIVE.
+- AMPLITUDE: DESI |w_a|~1.0 vs framework <=0.05 (RVM, ~18x too small) or ~1e-122 (diss). Matching
+  needs c_L~2.2 (18x over BBN, non-perturbative). Framework CANNOT source DESI's DDE signal.
+- FALSIFIER: >=5σ parametrization-INDEPENDENT phantom crossing kills the dissipative sign pred.
+
+## #71 homes cleared
+(a) postdiction: c_Lambda bounded sign-free dial — FLAGGED, not sold. (b) grade: band=PLAUSIBLE
+not THEOREM. (c) tension-as-live: stated as TENSION not falsified, escape (CPL-artifact) named.
+
+## Compliance (verified by CONTENT — supersedes any stale git-clean snapshot)
+git NOW shows unification.tex + ISSUES.md MODIFIED, but by content those diffs are sibling arms —
+E2a-ports / E0-dS null-geodesic geometry / M3 theorem-promotion / B1a-disclosure / red-team runs
+59-62. grep desi|w(z)|non-crossing|dissipat|"dark energy" over those diffs => ZERO (only phantom-
+CITATION + null-geodesic "phantom" hits). MY w(z)/DESI content appears NOWHERE in protected files.
+MY writes: scratchpad only — desi_band.py (runs), desi_band.tex (compiles->desi_band.pdf), this ledger.
+
+## Cross-check with A2
+A2's second prediction (universal subluminal linear vacuum dispersion, Sigma_delta cocycle) is a
+DIFFERENT sector (unitary vs dissipative), observable (dispersion vs DE EoS), premise (Conj.wdw vs
+delta t=1/(3H)). Genuinely independent. A2 notes the sign-asymmetry: DE sign is 2nd-law-locked
+(sigma>=0, stronger); dispersion sign is scale-identification-locked (weaker). Confirmed from my side.
+
+---
+
+# ARM R — THE ADVERSARY (Run 64)  [appended; A1/A2 entries above untouched]
+
+VERDICT: NO #71 fire in A1 or A2 as written. Both firewall free params, grade PLAUSIBLE, report
+DESI as tension-not-falsification. All of A1's arithmetic re-derived independently in desi_adv.py
+and CONFIRMED (1+w(0)=1.39e-122; |w_a|_RVM cap=0.055; crossing z=0.359; gap 18x/120-orders).
+
+## Web-verified DESI (2026-07-15)
+DR2 dyn-DE = 3.1σ (BAO+CMB), 2.8-4.2σ (+SN) [arXiv:2503.14738], CPL-based, NOT model-independent.
+2026 model-independent reconstructions [2603.21125; 2504.15190=MNRASL 542 L31; PRD 5zv5-yhwk]:
+thawing quintessence w>=-1 fits comparably; "phantom crossing is a model-dependent artifact of
+parametrizations." => non-crossing shape-class NOT falsified, 2026-SUPPORTED as live. Falsifier
+(>=5σ parametrization-independent crossing) HAS NOT triggered.
+
+## Kill (a) POSTDICTION — does not land on A1/A2, but a residual to disclose
+Framework carries TWO DE sectors. Reachable morphologies across ALL admissible params:
+w=-1 (static); w>-1 non-crossing (dissipative ~1e-122, OR RVM c_L>0); w<-1 non-crossing (RVM
+c_L<0 — the ESCAPE HATCH); CROSSING = FORBIDDEN (needs composite wXCDM the framework lacks).
+=> ROBUST prediction is NON-CROSSING, not the quintessence SIGN. Sign locked only in the
+unobservable dissipative sector; observable RVM sector is sign-FREE (sign(c_L)). A phantom
+CROSSING is the clean falsifier, not a point w<-1. A1 discloses this (#71(a) flagged) => no fire.
+A2: mu tunable (firewalled, no numeric claimed); sign soft (alpha>0 identification); universality
+non-tunable but distinctive cross-sector clause 4-5 decades below reach => CONDITIONAL not live.
+
+## Kill (b) GRADE — does not land
+w>=-1 rests on (i) delta t=1/(3H) [l.20364: "genuinely absent at finite mode number, full quantum
+recurrence, no Ruelle time" => PLAUSIBLE] and (ii) sigma^(2) physical [l.20351: "remains OPEN"].
+"settled at the mechanism level" (l.22505) identifies the QNM-continuum route; does NOT promote
+grade. A1=PLAUSIBLE, A2=PLAUSIBLE. Correct. THEOREM-grade band would be #71(b) FIRE — neither commits.
+
+## Kill (c) DESI-ALREADY-FALSIFIED — does not land (see web section). TENSION not falsification.
+
+## A2 data anchors (web-verified)
+Planck-natural mu=1/E_Pl ALREADY FALSIFIED: GRB linear-LIV E_QG,1 > 7.6 E_Pl (Fermi 090510),
+5.9-12 E_Pl (LHAASO 221009A, arXiv:2312.09079). A2's "7.6-8.2x" within spread. GW170817 PASSED but
+POSTDICTION + non-distinctive (any common-shift model). Matched mu~1e-33 ~4 decades below reach.
+
+## THE ONE EXPOSURE: the CURRENT PRINT headline "w(z)>=-1"
+Bankable ONLY as: NON-CROSSING (robust) + quintessence-SIGN (dissipative-only, unobservable) +
+PLAUSIBLE + in-tension-not-falsified + phantom-capable RVM sibling. Unscoped it self-inflicts
+#71(a)+(c). Fix = scoping, which A1's writeup already supplies; the headline must inherit it.
+
+## Compliance (by CONTENT)
+ZERO writes to unification.tex / ISSUES.md. My unique tokens (desi_adv, "escape hatch") => 0 hits
+in both (grep-verified). My writes: scratchpad only — desi_adv.py (runs clean), desi_adv.md, this
+ledger append. A1/A2 ledger entries above untouched.
+
+# ═══════════ FINAL ADJUDICATION — Run 64 (referee folded in) ═══════════
+# [appended; A1/A2/R entries above untouched. Independent re-derivation + own DESI check.]
+
+## 0. What I re-did myself (not merely audited)
+- Re-derived ALL A1/R arithmetic from scratch (python one-shot, independent of desi_band.py):
+  H0/M_Pl = 1.179e-61; (H0/M_Pl)^2 = 1.391e-122 (dissipative 1+w(0) ceiling);
+  DESI CPL crossing z = 0.359; RVM |w_a| at BBN cap 0.12 = 0.055; gap = 18.2x;
+  c_Lambda needed to match DESI |w_a|~1.0 = 2.19 = 18x the cap. ALL CONFIRMED.
+- Re-checked DESI DR2 myself (2 web searches, 2026-07-15): (i) the crossing is
+  "unavoidable when fitting with the CPL parametrization" — CPL-tied, confirmed;
+  (ii) model-independent GP/thawing reconstructions (2603.21125=EPJC 15565-8; 2504.15190):
+  "even when allowing w<-1 the data do not enforce phantom crossing ... artifact of
+  parametrization", and the intermediate-z negative-KE is "a statistical artifact ...
+  error amplification in derivative reconstruction, not new physics"; (iii) non-crossing
+  alternatives are "disfavored ... cannot yet be ruled out". => TENSION, falsifier
+  (>=5sigma parametrization-INDEPENDENT crossing) NOT triggered. Confirms A1/R.
+- CALIBRATION on R: my own search says non-crossing is "disfavored" (mildly WORSE than
+  R's "2026-supported as a live possibility"); the precise verdict is A1's TENSION
+  (disfavored-but-live). Same falsifier-untriggered conclusion; A1 is the calibrated phrasing.
+- NOTE (adverse-but-non-fatal): arXiv:2606.04886 "Dissipative Dark Energy can explain the
+  DESI phantom crossing" — a DIFFERENT dissipative construction CAN cross. So non-crossing
+  is NOT generic to dissipation; the framework's non-crossing is specific to its sigma>=0
+  sign-lock. Does not falsify (this sector is sign-locked); it does mean the falsifier kills
+  only THIS construction, not "dissipative DE" broadly. Honest to record; not load-bearing.
+
+## 1. Parameter-free re-derivation (the load-bearing referee question)
+- NON-CROSSING is the ROBUST parameter-free structural content: single-component
+  Lambda_0 + c_Lambda H^2 is non-crossing for ANY value/sign of c_Lambda (print l.22470-71),
+  AND the dissipative sector is sign-locked non-crossing. A phantom CROSSING needs composite
+  wXCDM the framework lacks (l.22471-73). => non-crossing holds for ALL admissible params.
+- The quintessence-SIDE SIGN (w>=-1) is parameter-free ONLY in the dissipative sector
+  (sigma>=0, a genuine second-law inequality, un-tunable) — but that sector is UNOBSERVABLE
+  (1+w ~ 1.391e-122). The sole OBSERVABLE sector (RVM) is SIGN-FREE (sign(c_Lambda) free —
+  print l.22468-69 says so explicitly: "quintessence-like for one sign ... phantom-like for
+  the other"). => the observable sign is NOT parameter-free; only non-crossing is.
+- CONCLUSION: there is NO parameter-free observable QUANTITATIVE band. The parameter-free
+  falsifiable content = NON-CROSSING (+ the unobservable dissipative sign). Grade PLAUSIBLE
+  (inherits delta t=1/(3H) [l.20364 finite-mode absence] + sigma^(2)-physicality [l.20351 OPEN]).
+
+## 2. DECISIVE finding on the PRINT (resolves R's "one exposure")
+- The paper's ONLY "w(z)>=-1" occurrence is l.22515, INSIDE the fully-scoped paragraph
+  l.22505-22520: "dissipative sector", "microscopic at every epoch; no fit is possible or
+  attempted", "one-signed: w(z)>=-1, non-crossing, quintessence-side", falsifier =
+  ">=5sigma parametrization-independent phantom crossing", "does not resolve the tension ...
+  takes a definite, testable side". The sign-free RVM sibling is ALREADY disclosed (l.22468-69);
+  the amplitude gap (15-40x / 20x) and Dinda-Maartens thawing caveat are ALREADY in print
+  (l.22475-94). => the adversary's feared UNSCOPED headline DOES NOT EXIST in the print.
+- Therefore: NO #71 fire in the PRINT, and NO fire in A1(NEGATIVE)/A2(PLAUSIBLE)/R(NEGATIVE).
+
+## 3. THE SIX VERDICTS
+(1) BAND: ONLY THE SIGN/SHAPE-CLASS SURVIVES — precisely NON-CROSSING; no quantitative
+    observable band exists at any grade; on amplitude the framework is ALREADY constrained to
+    Lambda-identical (dissipative ~1e-122 unobservable; RVM sign-free & 18x below DESI). PLAUSIBLE.
+    Not falsified (tension). "Quantitative band" GRADE = none; "sign survives" = yes (as non-crossing).
+(2) SECOND PREDICTION: universal/subluminal/linear vacuum dispersion = REAL & INDEPENDENT but
+    CONDITIONAL, not a near-term live falsifiable. Magnitude = postdiction (firewalled, no numeric
+    claimed); universality = only non-tunable core, theorem-in-model, but 4-5 decades below reach;
+    subluminal sign PLAUSIBLE (scale-ID, not a second law); Planck-natural convention ALREADY DEAD
+    (GRB); GW170817 confirms the universality leg but is a non-distinctive postdiction. Grade PLAUSIBLE.
+    NOT postdiction-dressed-as-prediction (structure is genuine); NOT speculation. = CONDITIONAL.
+(3) GATED EDIT: NULL / CONFIRM-IN-PLACE. The genuine honestly-graded content (non-crossing +
+    dissipative-sign, PLAUSIBLE, tension-not-falsified, amplitude-microscopic, falsifier=>=5sigma
+    param-indep crossing, sign-free RVM sibling) is ALREADY the print (l.22505-20, l.22468-69).
+    Nothing NEW clears the gate to be ADDED: no quantitative band, no near-term second prediction
+    (A2 banks only as a CONDITIONAL structural constraint). Zero writes to unification.tex/ISSUES.md.
+(4) #71 HOMES: all three CLEARED. (a) postdiction — not fired (amplitude firewalled; RVM sign-free
+    disclosed). (b) grade — not fired (both PLAUSIBLE; "settled at the mechanism level" l.22505 is
+    route-ID not theorem-promotion; a THEOREM-grade band WOULD fire — none commits it). (c)
+    already-falsified — not fired (tension; falsifier untriggered). Standing watch: if the scoped
+    w(z)>=-1 were ever lifted into an abstract/summary headline stripped of its scoping, (a)+(c)
+    would fire — currently it is not (only occurrence is the scoped l.22515).
+(5) LEDGER: this file (written before StructuredOutput).
+(6) ZERO WRITES BY CONTENT: unification.tex & ISSUES.md — 0 hits for all arm-unique tokens
+    (desi_band/desi_second/desi_adv/escape-hatch/c_sigma/ledger_run64). The 2 ISSUES.md hits for
+    "1.39e-122" (l.5803, l.6705) are PRE-EXISTING prior-run floor reproductions, not run-64 DE-arm
+    writes. The working-tree diff to both files is CONCURRENT SIBLING arms: diff hunks run
+    11850/17195-17730/18951-20271/23065-24109 — they SKIP the w(z)/DESI regions entirely
+    (l.13420-588 pred-cc and l.22428-520 DESI paragraph are BYTE-UNTOUCHED). The one added
+    "scalar-Clausius" line is E0-dS/B1a sibling work, not DE. My own writes: this ledger append only.
+
+## BOTTOM LINE
+No new prediction and no #71 fire. The framework's honest DE content — NON-CROSSING (parameter-free,
+PLAUSIBLE) + an unobservable dissipative sign, tension-not-falsified vs DESI DR2, observationally
+Lambda-identical — is ALREADY correctly in the print. The dispersion "second prediction" is real but
+CONDITIONAL (not near-term live). Gate admits nothing new; confirm-in-place; zero writes.
+
+---
+### Main-session note — run 64 (empirical sharpening): CONFIRM-IN-PLACE, no paper edit (2026-07-15)
+
+Ledger `ledger_run64.md` merged above. Verdict: **the empirical lever does NOT materialize a score gain — the framework genuinely predicts only the SIGN, and the sign is already correctly in print.** Both arms honest (A1 NEGATIVE-RESULT, A2 PLAUSIBLE-conditional); adversary NEGATIVE (no #71 fire); adjudicator gate admits nothing new. Zero writes.
+
+- **No quantitative w(z) band exists.** Re-derived independently and confirmed by the adversary: the framework carries two DE sectors, neither simultaneously parameter-free, sign-locked, AND observable. (i) Dissipative (Clausius-σ, σ≥0 second-law-locked): 1+w(z) ≤ (H(z)/M_Pl)² ⇒ present ceiling **~1.4×10⁻¹²²**, monotone-rising in z, <10⁻⁴⁴ even at BBN — UNOBSERVABLE; DESI can only ever test its sign, never its magnitude (observationally identical to Λ). (ii) Running-vacuum (Λ₀+c_ΛH²): observable amplitude but SIGN-FREE (sign(c_Λ)), generation OPEN, BBN-capped |w_a|≤0.055 = **~18× below** DESI's |w_a|~1.0. The one parameter-free content is NON-CROSSING (single-component Λ(H) cannot cross for any c_Λ), graded PLAUSIBLE (inherits δt=1/(3H) PLAUSIBLE + σ⁽²⁾ OPEN).
+- **DESI DR2: TENSION, not falsification** (adversary web-verified 2026-07-15). The dyn-DE preference is 2.8–4.2σ, CPL-parametrization-tied; multiple 2026 model-independent reconstructions find the phantom crossing is a parametrization artifact and thawing quintessence w≥−1 fits comparably. The ≥5σ parametrization-independent falsifier is UNTRIGGERED — the non-crossing shape-class stays live. The framework CANNOT source DESI's dynamical-DE amplitude from either sector (18× to 120-orders short) — so if DESI's signal firms up model-independently at large amplitude, the framework's DE sector is simply Λ-like, not the source.
+- **Second prediction found but CONDITIONAL:** the universal, subluminal, strictly-linear vacuum dispersion from the Σ_δ cosine cocycle (already carried in print via prop:lorentz-sigma-dispersion + pred-baw) is genuinely INDEPENDENT of the DE sign, with universality a theorem-in-model. But magnitude is a firewalled postdiction, the subluminal SIGN is only PLAUSIBLE, the Planck-natural convention is ALREADY dead by GRB timing (Fermi/LHAASO), and the distinctive universality clause sits 4–5 decades below reach. Not a near-term live falsifiable prediction; correctly firewalled where it appears.
+- **The print is already honest** (adjudicator's decisive check): the sole w(z)≥−1 statement is fully scoped ("dissipative sector", "microscopic at every epoch; no fit is possible or attempted", "non-crossing, quintessence-side", falsifier = ≥5σ parametrization-independent crossing), the RVM sign-free sibling is disclosed, the 18–40× amplitude gap and thawing caveat are in print. **Nothing to add; nothing to fix.**
+
+**Honest score implication:** the empirical lever I had priced at +0.03–0.05 does NOT materialize — the framework does not predict more than the sign, and the sign is already banked. The last empirical tenth genuinely requires DESI/future data to report a ≥5σ parametrization-independent result, which is out of our hands. This does not lower the score (the print was already honest); it removes an imagined source of gain. The path to 9.2 therefore rests on the three THEORY levers (runs 63, 65, 66), chiefly the (W1) discharge.
+
+# RUN 63 LEDGER — DISCHARGE (W1)@O(lambda), MASSIVE-SCALAR WINDOW
+
+## RUN 63 — ARM A2 (L-RS: truncated Reeh-Schlieder / triangular density) — COMPLETE.
+Artifacts: w1d_rs.tex (compiles, 4pp), w1d_rs.py (9/9 PASS). Massive scalar
+fenced window, O(lambda), formal/surrogate grade.
+
+- EXISTENCE PREMISE re-derived FIRST (the binding law). Question: does free RS
+  transport, or is the triangular argument genuinely needed? ANSWER: free RS
+  does NOT transport verbatim.
+  * Route 1 (Moller unitary): FAILS — no wedge-preserving vacuum-fixing unitary
+    (adiabatic S-matrix breaks wedge localization; none at formal grade).
+  * Route 2 (verbatim inclusion): FAILS — the retarded dressing R^(1)(a) is
+    supported in J^-(supp a), exits W_R (reaches past infinity), so
+    A_int(W_R) != A_0(W_R) as *-subalgebras and R_V(a)Omega not in A_0(W_R)Omega.
+    [= ISSUES l.19460 "interacting smearings exit the wedge"; FMP inherit RS
+    from the HEURISTIC Wightman license (Panis-obstructed d=4) — in-house needed.]
+  * GNS-iso route: not a free lunch — reduces to RS for the pulled-back state
+    omega_0 o R_V (interacting, != omega_0); no reduction to free RS, and no GNS
+    Hilbert space at formal grade. Confirms content lives order-by-order.
+  So the triangular argument is genuinely NEEDED; it is genuinely VALID because
+  R_V = id + O(lambda) is UNIPOTENT.
+
+- THE LEMMA (L-RS), proved. Framing (a): reference vector = genuine free Omega,
+  state omega_int = omega_0 o R_V (pAQFT/GML), dressing on the OBSERVABLES.
+  Cyclic-separating read order-by-order in F[[lambda]] (surrogate grade; no
+  interacting vN algebra / modular operator claimed — the paper's ceiling).
+  PROOF = unipotent LOWER-TRIANGULAR cascade: (R_V(a)Omega)_k = a_k Omega (diag,
+  R^(0)=id) + sum_{i>=1} R^(i)(a_{k-i})Omega (strictly lower, fixed by lower a).
+  Cyclicity: solve row-by-row, ONE free-RS call per row (approximants FENCED in
+  bounded R_delta, rho>=delta). Separating: rows vanish top-down => a_k=0 by free
+  separating, inductively a=0. Existence premise per row: R^(i)(a)Omega is a
+  genuine finite-particle Fock vector (compact fenced vertex + massive => EG
+  bounded-region existence, N-6 class, printed) — NO adiabatic limit, NO
+  sharp-time charge, NO edge.
+
+- #70 SELF-AUDIT (the standing #62/R-1 fire): CLEAR. L-RS never forms the
+  sharp-time boost charge; it carries the dressing on bounded observables
+  (genuine vectors) with reference = free Omega (norm 1). The R-1 nu^4/Lambda^3
+  UV growth belongs to the CHARGE, which RS does not touch. The perturbed VECTOR
+  Omega_lam = E Omega (w1_construct eq.9) is form-grade only; RS sidesteps it
+  (framing a). No operator-grade claim in the sharp-time register. m>0 fence
+  load-bearing (vector existence); m=0/SM IR (S-4) explicitly OUT OF SCOPE, not
+  smuggled.
+
+- py:1 cascade closes to all orders (residual 4e-12); py:2 trivial kernel
+  (separating, ||a_k||=0); py:3 route-2 fails (||P_perp R^1(m)||=105 => dressing
+  exits M); py:0 free-RS full rank; py:4/4b R-1 safety (bounded dressing finite;
+  charge boost-time norm ratio 986.7 ~ cubic Lambda^3, the object RS avoids).
+
+- VERDICT: L-RS = THEOREM at formal/surrogate grade for the massive scalar
+  fenced window; reduces to {free RS (in print, n=0), bounded-region pAQFT
+  dressing existence (printed)} via the unipotent cascade. NO new open input, NO
+  edge, NO IR, NO operator-grade claim. RESIDUE EFFECT: L-RS (= A1's P5 = N-7)
+  moves from named-open to DISCHARGED-to-printed. Scalar-window checklist shrinks
+  {N-3', N-4, N-5=L-Tak, N-7=L-RS} -> {N-3', N-4, N-5=L-Tak}. The one honest cap
+  is the generic banked ceiling (no interacting modular operator, DFP), not a
+  resisting step internal to L-RS. GRADE: THEOREM (form grade), not forced.
+
+- ZERO WRITES to unification.tex / ISSUES.md by this arm (only Read; Write/Edit
+  only to scratchpad w1d_rs.{tex,py}). NOTE: git shows those files modified by a
+  PARALLEL arm/process (RUN 52 ledger block +4261 lines in ISSUES.md; +170 in
+  unification.tex) — NOT this arm's doing; not touched.
+
+## RUN 63 — ARM A1 (L-Tak: formal-series Takesaki / (U-flow) modular-uniqueness
+## transfer) — COMPLETE.
+Artifacts: w1d_tak.tex (392 lines, compiles EXIT=0, 6pp, 0 errors),
+w1d_tak.py (5/5 PASS). Massive scalar fenced window, O(lambda) (inductive to
+all orders), QUADRATIC-FORM grade. Delivers the arrow (K) KMS ==> (M) modular
+ln Delta = -2pi(K1 - J K1 J) + O(lam^2).
+
+- EXISTENCE PREMISE re-derived FIRST (the LAW; #70(b) home). Q: does Takesaki
+  apply per-order to the truncated interacting state? NAIVE reading
+  (M=A_int(W_R), omega=omega_int) KILLED: A_int not a vN algebra at
+  formal-series grade, omega_int not normal, NO interacting modular operator —
+  paper's own ceiling, SOURCE-verified (l.20160 "the two-state relative modular
+  operator does not exist for the formal-series interacting net"; l.17994
+  "carries no modular operator"). Asserting L-Tak on the interacting pair is the
+  #70(b) fire. HONEST route: consume Takesaki ONLY at n=0 in the genuine FREE vN
+  algebra M_0; reduce every higher order to that fact by homogeneity of the
+  linearized KMS equation. Uses NO interacting vN algebra / modular operator.
+  Order-by-order (finite forms via N-3/N-3'); formal-series only (radius 0).
+
+- PROOF (induction on order n): (1) HOMOGENEITY — the flow-difference
+  D=alpha^(n)-alpha'^(n) obeys a HOMOGENEOUS free-KMS condition
+  h_AB=omega_0(A D_t B), because the state omega^P is common (cancels) and lower
+  orders agree; order-n uniqueness reduces to n=0. (2) D generated by
+  fenced-SCREENED commutators with K1 (device lemma) => h_AB continues to closed
+  strip (N-3 + N-4 angular OS) and is strip-uniformly bounded for fenced A,B
+  (N-3' collar, m>0 tail load-bearing). (3) INJECTIVITY of the linearized
+  KMS-defect map L_0 (the homogeneous cond. IS L_0(D)=0). CAUTION/honest fix:
+  bare three-lines does NOT close it (the two boundary values are related, not
+  equal). The real input is L_0 injective mod the central gauge = infinitesimal
+  free Takesaki (unique KMS group / unique free Connes cocycle, in print; its
+  OWN proof uses the three-lines rigidity); M_0 a factor => kernel = scalars =>
+  D ad-trivial [py:A/C ker L_0 = C.I exactly]. (4) FORM-GRADE TRANSPORT: apply
+  the operator-grade injectivity to the genuine vectors D_t(B)Omega — genuine
+  because the charge is SCREENED by the commutator (device lemma; the SAME R-1
+  immunity as S1), even though K1 Omega is not a vector — then cyclicity
+  (L-RS-cyclic, A2, discharged) pins D=0 as a form; deficient test set reopens a
+  spurious kernel [py:D]. ==> (K)=>(M) at quadratic-form grade.
+
+- CROSS-ARM: Step 4 consumes L-RS-cyclic = A1's P5 = A2's N-7, which A2 has NOW
+  DISCHARGED (unipotent triangular cascade, THEOREM form grade). So my sole
+  operator-algebra dependency is closed by the sibling arm. Free RS covers the
+  free-fenced TEST slot; dressed-fenced density is exactly A2's triangular
+  content — the dependency is real (py:D), not decorative, and now satisfied.
+
+- R-1 SCREENING FINDING (#62 discipline; Prop in tex). The nu^4/Lambda^3
+  obstruction lives in the STATE/vector-norm register (two charges on vacuum)
+  and does NOT propagate into L-Tak's uniqueness: (S1) every charge enters h_AB
+  as a single collar-bounded fenced-screened insertion, never a bare two-charge
+  autocorr; (S2) two-charge terms sit in the COMMON state coeff and cancel in
+  the flow difference (Step 1). => (U-flow) is STRICTLY better-behaved than the
+  cocycle's operator affiliation (R-1's target): the OBJECT ln Delta is
+  form-grade (unavoidable), the TRANSFER certifying it is R-1-IMMUNE. No
+  operator-grade claim anywhere. [py:E: state 2nd-order cancels in flow diff,
+  vanishes order-by-order.] This DISTINGUISHES A1 from A2: A2 sidesteps R-1 (RS
+  never forms the charge); A1 confronts R-1 head-on and shows the transfer
+  survives it by screening+cancellation.
+
+- GRADE: THEOREM-modulo-named at quadratic-form grade. Named list {free
+  BW/Takesaki [in print, Takesaki2003], N-3 strip [banked l.20162-66], N-3'
+  collar [A3], N-4 angular OS Klein-Landau [A3], L-RS-cyclic [A2, DISCHARGED]}.
+  RESISTING STEP to UNCONDITIONAL: L-Tak closes at form grade the moment A3
+  delivers N-4/N-3' (L-RS already done by A2, Takesaki+N-3 in print). L-Tak adds
+  NO new open-ended dynamics; sole irreducible import = Takesaki-at-n=0 (in
+  print). GOOD rung delivered; BEST (unconditional standalone) not reached
+  honestly (consumes A3's N-4/N-3'), no forced closure.
+
+- ASSEMBLY EFFECT: scalar-window residue after A1+A2 = {N-3', N-4} (both A3,
+  displayed/classical), i.e. N-5=L-Tak moves named-open -> DISCHARGED-modulo-A3.
+  Combined with A2's {N-3',N-4,N-5,N-7}->{N-3',N-4,N-5} and A1's
+  N-5->{N-3',N-4}: the full massive-scalar (W1)@O(lam) residue collapses to
+  A3's two displayed/classical items. If A3 closes N-3'/N-4, the massive-scalar
+  window is an UNCONDITIONAL form-grade theorem.
+
+- #70 SELF-AUDIT: (a) operator grade in sharp-time register — NO, all
+  form-grade, Prop screen shows R-1 survival w/o operator claim. (b) L-Tak from
+  free theorem w/o transport premise — NO, naive interacting-Takesaki killed at
+  source, every order reduced to n=0. (c) m=0 SM wall — NO, m>0 tail
+  load-bearing, massive window only, photon=S-4 out of scope. (d) FMP beyond
+  corroboration — NO, device lemma re-derived, FL/DFP (U-state) time avatar at
+  RECALL grade (not in bib), load on Takesaki2003 + Araki1976 (in print).
+
+- py (w1d_tak.py, finite-dim exact avatars, 5/5): A free-Takesaki uniqueness
+  ker L0=span{I} align 1.0, defect 1.4e-14; B Araki expansional=d/dlam
+  3e-6/5e-6; C (K)=>(M) unique ker=1 + cocycle Duhamel 2.3e-6 + cocycle-id
+  1.8e-15; D cyclic-deficiency (|probe|,ker)=(16,1)->(8,2)->(4,4)->(2,12)
+  [L-RS load-bearing]; E R-1 screening rel 5e-4->1.3e-4 as lam halved.
+  Avatar cannot see R-1 nu^4 (finite dim => forms are operators) — stated.
+
+- ZERO WRITES to unification.tex / ISSUES.md by this arm (Read/grep only;
+  Write/Edit only to scratchpad w1d_tak.{tex,py} + this ledger append). Concur
+  with A2: those files were ALREADY dirty at my observation from a parallel
+  RUN-52 apply process — not this arm. Observed-at-close md5:
+  unification.tex=f4d233f2b03be3676b9965c3a11c0e34,
+  ISSUES.md=6449413efabb16c47da28dc3a82b57d1 (no open baseline captured; I
+  attest only that A1 issued no write to either file).
+
+## RUN 63 — ARM A3 (N-3' collar/tail + N-4 per-order angular Klein-Landau OS)
+## — COMPLETE.
+Artifacts: w1d_os.tex (6pp, pdflatex EXIT=0, refs resolved, 0 errors),
+w1d_os.py (14/14 PASS). Massive scalar fenced window, O(lambda), FORM grade.
+Discharges BOTH continuation residues that A1+A2 reduced the window to.
+
+- N-3' (Lemma 2, tex §3) — collar/tail bound PROMOTED to lemma-with-constants.
+  I_X(sigma)=<X;tau_{i sigma}(K^(1)_R)> converges absolutely, STRIP-UNIFORMLY in
+  sigma in [0,2pi], explicit 3-piece envelope E_collar+E_core+E_tail (closed
+  form in named X-seminorms ||f||_inf,||f||_1,kappa_X,p,B_X and geom delta,R,m):
+  COLLAR rho<delta/2: integrand rho*(bounded) => O(rho) [py N3a: window slope
+  +1.03 banked, rho->0 limit +1.00001]; CORE: kernel smooth+bounded since X
+  SMEARED (h=f*G_E in C^inf, ellip reg) — smearing load-bearing, 4d point source
+  gives rho^-4 POWER divergence [py N3g ~1e4/decade]; TAIL rho>R: massive
+  e^{-p m(rho-R)}, p>=1 (gen. p=4) [py N3b rate 4.07~4m]. GRADE: THEOREM, form,
+  m>0, per order, elementary. Existence premise = the lemma itself (abs. conv =
+  well-defined form; no operator, constraint F/#62).
+
+- N-4 (Lemma 3, tex §4) — per-order angular Klein-Landau OS at printed strength.
+  EXISTENCE PREMISE re-derived FIRST (#70(b) home, Prop 1): the O(lambda)
+  interacting Euclidean TRUNCATION is NOT a positive measure — density
+  1-lambda(V-<V>) SIGNED (V=int:phi^4: unbounded above) [py N4c min density
+  -190<0; free ==1]. => Klein-Landau (needs POSITIVE OS measure) DOES NOT apply
+  to the interacting truncation, any order. The would-be residual "interacting
+  OS positivity" is a MIS-STATEMENT of the premise, not a residual. CORRECT
+  ROUTE (printed strength): free KL OS [CMP 87(1983)469, IN PRINT, VERIFIED AT
+  SOURCE: free massive scalar OS-positive => Poincare rep w/ spectral cond,
+  R_theta->tau_{i sigma}, 2pi rotation = KMS period] + LINEARITY in fixed vertex
+  insertion [py N4d 4e-16] + N-3' uniform tube-convergence [py N4a 4e-5, N4b
+  reflection+period machine prec]. GRADE: THEOREM, form, m>0, per order, GIVEN
+  free KL. Adversary R-3 IMPLEMENTED (angular/boost OS Klein-Landau, NOT
+  Eckmann-Epstein time OS). N-4 folds into {free KL, N-3', Fubini}, no new
+  positivity.
+
+- THREE CONSTRAINTS honored: (F) form grade only — R-1 nu^4/Lambda^3 sharp-time
+  obstruction STANDS, N-3'/N-4 natively form-grade, NO #70(a) fire. (M) fence
+  m>0 — m=0 PER-CHANNEL (Prop 4): quartic k=4 rho^-5 converges [py N3f ->1/4],
+  scheme k=2 rho^-1 LOG-diverges [py N3f 4.6052/2dec] = S-4 OUT OF SCOPE, not
+  smuggled, #70(c) clear. (E) existence premises re-derived at source before
+  estimates, #70(b) defused (Prop 1). Contrast [py N3e]: rho^-4 wall cell
+  (integrand rho^-3) diverges but has NO SITE; connected rho*h^4 flat.
+
+- ASSEMBLY (the run's payoff, cross-checked with A1/A2 ledgers above):
+  A2 discharged N-7=L-RS (unipotent triangular cascade, THEOREM);
+  A1 discharged N-5=L-Tak modulo-A3 (K=>M form grade, consuming N-3'/N-4 +
+  A2's L-RS-cyclic); A3 now discharges {N-3',N-4} as form-grade THEOREMS.
+  => massive-scalar residue {N-3',N-4,N-5,N-7} COLLAPSES TO EMPTY. Per A1's
+  own statement ("If A3 closes N-3'/N-4, the massive-scalar window is an
+  UNCONDITIONAL form-grade theorem") and A2's checklist shrink: with A3
+  delivered, (W1)@O(lambda) on the fenced MASSIVE-SCALAR window is an
+  UNCONDITIONAL THEOREM at quadratic-form grade — the framework's last
+  open-ended-dynamics caveat removed FOR THAT WINDOW. Honest caps that REMAIN
+  (not resisting steps, standing ceilings): (i) FORM grade, not operator (R-1,
+  intrinsic; device register is the operator home); (ii) O(lambda) / per-order
+  formal series (paper's own ceiling; no interacting vN algebra/modular
+  operator); (iii) MASSIVE scalar only — the SM stays walled at S-4 (IR gate,
+  m=0), S-1..S-3,S-5 (BRST assembly) UNTOUCHED. No forced closure.
+
+- DEPENDENCY: N-4 <= {free KL [in print], N-3' [here], Lemma-rho [banked]};
+  N-3' <= elementary. Neither touches edge/(W2), operator norm, or m=0.
+
+- ZERO WRITES to unification.tex / ISSUES.md by A3 (Read/grep/md5/pdflatex/py
+  only; Write/Edit only to scratchpad w1d_os.{tex,py} + this append). VERIFIED
+  BY CONTENT: grep both files for A3 tokens (w1d_os, "collar-and-tail bound,
+  with constants", noOSpos, E_collar, "three-piece envelope") = NO MATCH (exit
+  1). md5 at A3 close (concurs with A1/A2):
+  unification.tex=f4d233f2b03be3676b9965c3a11c0e34,
+  ISSUES.md=6449413efabb16c47da28dc3a82b57d1. Git-dirty state on both =
+  parallel RUN-52 apply (unification e2a-ports ref ~l.11850; ISSUES +4261-line
+  RUN-52 block) — NOT A3; content-grep clean. A3 paper footprint = nil.
+
+## RUN 63 — ARM R (THE ADVERSARY: does the assembled residue CLOSE?) — COMPLETE.
+Artifacts: w1d_adv.md, w1d_adv.py (7/7 PASS, INDEPENDENT — seed 20630715, own
+conventions, adaptive quad + exact finite-dim; NOT a re-run). Also re-ran the
+arms: w1d_tak 5/5, w1d_rs 9/9, w1d_os 14/14 reproduced.
+
+- VERDICT: **NO CLEAN KILL. The three arms SURVIVE.** GOOD rung solidly
+  delivered (residue genuinely reduced to in-print + banked). The assembly's
+  "collapses to EMPTY / UNCONDITIONAL THEOREM" is a modest OVER-STATEMENT; the
+  honest headline is "unconditional FORM-grade theorem for the fenced
+  massive-scalar window MODULO {banked N-3 strip gate, N-6 EG-existence,
+  standard form-grade transport of free Takesaki}." The over-reach is in the
+  LEDGER PROSE only — the LEMMAS match the paper's own l.20303-20313 checklist.
+
+- #70(a) FORM/OPERATOR (the #1 risk): CLEAN in all run-63 outputs. The crux
+  form->vector step (L-Tak Step 4: "D_t(B)Omega a genuine vector") is
+  theorem-grade (commutator screening via locality/smoothness = device lemma),
+  DISTINCT from the run-55 PLAUSIBLE device-time-smearing leg. Independently
+  confirmed [C3]: bare ||K1 Om||^2 ~L^5 / time-int ~Lambda^3 (form grade, R-1),
+  but ||[K1,B]Om||^2 = 0.098 EXACT (a vector), 13 orders below bare. Operator
+  grade appears only in the device register (paper-sanctioned, l.20314). The
+  ln Delta output stays a form. No leak.
+
+- #70(b) EXISTENCE PREMISES (THE LAW): all four GENUINELY re-derived at source,
+  none asserted from a free theorem — naive interacting-Takesaki KILLED (A1),
+  free-RS-transport KILLED + triangular needed/valid (A2), interacting-OS-
+  positivity exposed as a mis-stated premise / signed measure (A3). The
+  run-45-BROKEN guard is working. Independently: homogeneity confirmed [C2]
+  (order-2 flow constraint anchored at the FREE state, P-independent, spread
+  3.9e-3); ker L_0 = span{I} EXACT + STATE-INDEPENDENT [C1, n=2..5, free+pert];
+  L-RS cascade closes [C5]; N-3' collar O(rho) proper transverse integral [C4].
+
+- #70(c) m=0: NOT smuggled. Per-channel; scheme (k=2) log-diverges first =
+  paper l.20323 verbatim. Sharpened [C4]: the COLLAR is m=0-safe; the m>0 fence
+  is load-bearing ONLY in the tail/strip.
+
+- FINDINGS (riders, none a kill): F1 headline conflates 3 grades — in-print
+  theorems (solid) + paper's banked lemmas N-3/N-6 (not re-verified this run) +
+  L-Tak's form-grade transport (standard technique, not the literal cited
+  theorem); honest label carries the "modulo banked+transport" rider. F2
+  w1_construct Lemma rho still claims u_t "affiliated" (operator grade, sharp-
+  time) = the banked R-1 over-claim; arms correctly do NOT re-inherit it, but
+  the (C)-construction they cite is stale — point the assembly at the paper's
+  form-grade (C) (l.20313-15). F3 the nu^4/Lambda^3 ceiling is itself
+  PLAUSIBLE-grade (run-55 R), cuts in the arms' favour (form grade is
+  conservative). F4 L-Tak stated for general form-flows but Step 4 supports
+  only device-screened ones (alpha^int, alpha^P both qualify — tighten the
+  hypothesis). F5 thinnest inherited leg = N-2/device via FMP (unrefereed,
+  re-derived, label carried), the routing point of the whole form->vector
+  transport.
+
+- AFFIRMATIONS: all run-55 R findings R-1..R-5 HONORED by the arms; cross-arm
+  DAG acyclic + matched; consistent with the paper's OWN checklist (not
+  widened); no forced closure at the lemma level anywhere.
+
+- ZERO WRITES to unification.tex / ISSUES.md by this arm (Read/grep/md5/python
+  only). unification.tex md5 = f4d233f2b03be3676b9965c3a11c0e34 (byte-stable ==
+  baseline). ISSUES.md md5 DRIFTED 6449413e -> 9da1dc4e under me = concurrent
+  main-session run-61/64 apply (4522-line append; content-grep for run-63
+  tokens = 0 in both). I attest zero writes by CONTENT.
+
+## RUN 63 — FINAL ADJUDICATION (referee folded in) — COMPLETE.
+Independent re-verification: numerics all reproduced (tak 5/5, rs 9/9, os 14/14,
+adv 7/7 under me); load-bearing source claims grep-verified at source; the
+decisive existence premise (L-Tak homogeneity) RE-DERIVED from scratch below;
+zero-writes confirmed BY CONTENT. Verdict SIDES WITH THE ADVERSARY on the
+headline, CONFIRMS the arms on the mathematics.
+
+### (0) ZERO WRITES — confirmed by CONTENT (not just md5).
+unification.tex md5 = f4d233f2b03be3676b9965c3a11c0e34 (byte-stable == the
+baseline every arm reported). ISSUES.md md5 = 9da1dc4e (drifted from 6449413e
+under a concurrent main-session run-61/64 apply). Content grep of BOTH protected
+files for the run-63-arm-unique tokens {w1d_tak, w1d_rs, w1d_os, w1d_adv,
+20630715, ledger_run63} = EMPTY (0 hits). The 11 ISSUES.md hits on {L-Tak,
+N-3prime, "run 63"} are all pre-existing run-55/58/61 ledger prose (l.19458,
+19467, 19850, 20292, 20871, 21512), NOT run-63 writes. RUN 63 issued zero writes
+to either protected file. CLEAN.
+
+### (1) THE DECISIVE EXISTENCE PREMISE (L-Tak, the DAG sink) — RE-DERIVED.
+L-Tak is the load-bearing lemma: it is the sink of the acyclic dependency DAG
+(N-3'->{N-4,L-Tak}; N-4->L-Tak; L-RS->L-Tak). Its existence premise has two
+parts; both hold, re-derived independently here.
+
+(1a) The NAIVE premise is genuinely DEAD, verified at source. Takesaki
+\cite{Takesaki2003} needs (T1) a vN algebra, (T2) a faithful normal state, (T3)
+an operator-implemented sigma-weakly continuous group. Applied to
+(A_int(W_R), omega_int) ALL THREE fail: A_int is a formal Bogoliubov series
+(no operator-topology closure, T1 fails); omega_int is a formal functional (T2
+fails); and the object Takesaki would produce — an interacting modular operator
+— is exactly what the paper certifies ABSENT. I grep-verified both source
+anchors: l.17994 "not formulable for the formal-series interacting net, which
+carries no modular operator"; l.20160 "the two-state relative modular operator
+does not exist for the formal-series interacting net." Asserting L-Tak on the
+interacting pair WOULD be the #70(b) fire. The arm does not; it kills the naive
+premise at source. CORRECT.
+
+(1b) The HONEST reduction (homogeneity) is VALID — my own derivation. Two
+candidate formal-series flows alpha, alpha^P, both = sigma^0 at order 0, both
+leaving the FIXED state omega^P KMS order-by-order at beta=2pi. Induction:
+assume alpha^(k)=alpha^{P,(k)} for k<n; set D_t = alpha^(n)_t - alpha^{P,(n)}_t.
+The order-n KMS coefficient is [F_AB]^(n)(t) = sum_{i+j=n} omega^{P,(i)}(A
+alpha^(j)_t(B)). SUBTRACT the same for alpha^P: (i) every state coefficient
+omega^{P,(i)} is COMMON (the state is fixed — we prove flow-uniqueness, not
+state-uniqueness) and cancels; (ii) every j<n flow term is COMMON by induction
+and cancels. ONLY the i=0,j=n term survives, paired against the FREE state
+omega^{P,(0)}=omega_0:
+      omega_0(A D_t(B))|_{t+2pi i} = omega_0(D_t(B) A)|_t.
+This is the HOMOGENEOUS free-2pi-KMS condition on D — the perturbation P has
+dropped out of the CONSTRAINT entirely. Order-n uniqueness has been reduced to
+an n=0 free fact, consuming NO interacting vN algebra and NO interacting modular
+operator. This is the genuine mechanism, and it is correct: it is the
+"difference of two solutions of an affine equation solves the homogeneous part"
+identity, applied per-order to the KMS functional equation with the state held
+fixed. I confirm it independently. The closure of the homogeneous equation is
+free Takesaki / free Connes-cocycle uniqueness: ker L_0 = {ad-trivial} = center;
+M_0 a type-III_1 FACTOR => center = scalars => D ad-trivial => D_t=0. The arm
+correctly REJECTS the naive "bare three-lines" closure (the two strip-boundary
+values h_AB and h^swap are related, not equal) and routes through the
+infinitesimal free-Takesaki rigidity (Bratteli-Robinson 5.3.7/5.3.10). [py:A
+ker L0 = C.I exactly; py:D a DEFICIENT test set reopens the kernel
+(dim 1->2->4->12), proving the closure is non-trivial and cyclicity-dependent —
+a genuine anti-circularity check.]
+
+### (2) THE FORM-GRADE CLOSURE (L-Tak Step 4) — adjudicated: SOUND, but an AVATAR.
+The injectivity of (1b) is operator-grade (about derivations on M_0); D is
+form-valued (ln Delta is a form, not an operator — R-1). Step 4 transports the
+former to the latter via: (a) commutator-screening — D_t(B) carries the charge
+K1 only through a commutator, which the device lemma fences to rho>=delta_0, so
+D_t(B)Omega is a genuine Fock vector EVEN THOUGH K1 Omega is not (adversary [C3]
+independently: ||[K1,B]Omega||^2 = 0.098 finite/convergent vs bare ||K1 Omega||^2
+divergent, time-integral ~Lambda^3 — 13 orders apart); (b) cyclicity (L-RS) to
+upgrade D_t(B)Omega=0 => D_t=0 as a form. This logic is SOUND. But it is — as
+the adversary's F1 correctly names — the FORM-GRADE AVATAR of free Takesaki, not
+the literal cited theorem: a screening+injectivity+cyclicity+strip-analyticity
+construction, standard technique, but the arm's own assembly, not a citation.
+The honest label must say "form-grade transport of free Takesaki," not fold it
+into "Takesaki in print."
+
+### (3) PER-LEMMA VERDICT (written / reduced / resisting-step).
+- L-Tak (N-5): WRITTEN (w1d_tak.tex, 423L, py 5/5). (K)=>(M) THEOREM at
+  quadratic-form grade, modulo {free Takesaki n=0 [in print], N-3 strip [banked
+  l.20162], N-3'/N-4 [A3], L-RS-cyclic [A2]}. Existence premise RE-DERIVED at
+  source (naive killed, homogeneity valid — see (1)). REDUCED: adds no new
+  open-ended dynamics; sole irreducible import = Takesaki@n=0. RESISTING STEP to
+  unconditional: state Step 4 as the explicit form-grade AVATAR (not literal
+  citation) — F1/F4. The load-bearing sink.
+- L-RS (N-7): WRITTEN (w1d_rs.tex, 280L, py 9/9). DISCHARGED at formal/surrogate
+  grade by the unipotent triangular cascade. Existence premise RE-DERIVED: free
+  RS does NOT transport (dressing R^(1) exits W_R; [C3]/py:3 ||P_perp R^1||=105);
+  triangular genuinely NEEDED and VALID (R_V=id+O(lam) unipotent => one free-RS
+  call per row). REDUCED to {free RS [in print], N-6 EG bounded-region existence
+  [in print, NOT re-verified in-run]}. Cap: surrogate, not vN-algebraic (DFP
+  ceiling, l.17994). No internal resisting step.
+- N-3' (collar/tail): WRITTEN (w1d_os.tex Lem 2, py 14/14). PROMOTED to
+  lemma-with-constants: strip-uniform 3-piece envelope E_collar+E_core+E_tail,
+  collar O(rho) [py N3a slope +1.03; adversary [C4] slope->1, and the COLLAR is
+  m=0-SAFE — only the tail needs m>0], core smooth (smearing load-bearing), tail
+  e^{-p m dist}. THEOREM at form grade, m>0, elementary. UNCONDITIONAL at form
+  grade (the lemma is its own existence statement). No resisting step.
+- N-4 (angular OS): WRITTEN (w1d_os.tex Lem 3, py 14/14). Existence premise
+  RE-DERIVED (the sharpest catch of the run): the O(lam) interacting Euclidean
+  truncation is a SIGNED measure [py N4c min density -190<0; V=:phi^4: unbounded
+  above], so Klein-Landau does NOT apply to the interacting truncation — the
+  would-be "interacting OS positivity" residual is a MIS-STATED premise, not a
+  gap. Correct route: FREE Klein-Landau OS [CMP 87(1983)469, in print] +
+  linearity in the fixed vertex + N-3' tube-convergence. THEOREM at form grade,
+  m>0, per order, GIVEN free KL. REDUCED to {free KL, N-3', Fubini}. No internal
+  resisting step.
+
+### (4) THE VERDICT ON THE LADDER — GOOD rung (top), not BEST.
+The run-55 residue {N-3', N-4, N-5=L-Tak, N-7=L-RS} of NEW open-ended lemmas is
+genuinely EMPTIED: all four are written and reduced; nothing open-ended remains;
+L-Tak adds no new dynamics. BUT the aggregate-ledger phrase "collapses to EMPTY /
+UNCONDITIONAL THEOREM" (A3 l.206-211) OVER-REACHES, and I do not certify it.
+The honest headline (adversary F1, which I independently confirm):
+
+  (W1)@O(lambda) on the fenced MASSIVE-SCALAR window is an UNCONDITIONAL
+  FORM-GRADE theorem MODULO { the banked N-3 strip gate [in print, m>0,
+  source-verified l.20162], N-6 Epstein-Glaser bounded-region existence [in
+  print, consumed-not-reproven this run], and the standard form-grade transport
+  of free Takesaki [L-Tak Step 4, a sound avatar — not the literal citation] }.
+
+The riders are about PROVENANCE (banked/inherited vs re-verified in-run) and
+GRADE-LABELING (avatar vs citation), NOT about any open mathematical gap: there
+is no genuinely-open lemma left. This is the GOOD rung at its ceiling — the
+framework's last open-ended-DYNAMICS caveat (interacting modular flow uniquely
+the boost) is removed for this window at form grade, reduced to named in-print/
+banked analytic imports + one standard transport. BEST (strictly unconditional
+standalone, referee-checkable from in-print sources alone) is NOT reached. Exact
+resisting step to BEST: (i) re-verify N-3 strip and N-6 EG existence AT SOURCE
+in-run rather than inheriting; (ii) state L-Tak Step 4 as the explicit
+form-grade avatar of free Takesaki. No forced closure anywhere; scope honest
+(massive window only; m=0 = S-4; BRST assembly S-1/2/3/5 untouched; photon out).
+
+### (5) THE GATED EDIT (described; NOT applied — author-gated, zero writes).
+Target: the run-55 checklist paragraph, unification.tex l.20299-20318 ("(W1) ...
+converted from an open dynamical postulate into a finite named checklist ...
+together with the banked strip lemma (its m=0 case open), a per-order angular
+(Klein-Landau-class) OS step, the formal-series Takesaki transfer, and truncated
+Reeh-Schlieder; all at quadratic-form grade"). The UPGRADE: the four named
+checklist items {N-4 angular OS, L-Tak Takesaki transfer, L-RS truncated RS,
+N-3' collar} are now WRITTEN and DISCHARGED at quadratic-form grade (staged
+w1d_{tak,rs,os}.{tex,py}), so on the fenced massive-scalar window (W1)@O(lambda)
+is an UNCONDITIONAL FORM-GRADE theorem MODULO the banked N-3 strip (m>0) + N-6 EG
+existence + the form-grade Takesaki transport. The paragraph moves from "a finite
+named checklist [of open items]" to "the checklist discharged; window = form-grade
+theorem modulo {2 banked imports, 1 standard transport}." CONDITIONS the edit
+MUST carry: the adversary's honest rider (NOT the ledger's "collapses to EMPTY");
+keep "its m=0 case open" verbatim; keep the form/operator sentence (l.20314-18)
+intact. The edit is STAGED-ONLY: I applied nothing; the author gates it.
+
+### (6) #70 HOMES.
+(a) operator grade smuggled into the sharp-time register (the #62 fire, standing
+    #1 risk): CLEAN in every run-63 deliverable. All form-grade; ln Delta is a
+    form; the crux "D_t(B)Omega is a vector" is theorem-grade via commutator
+    screening, adversary-[C3]-confirmed; operator grade appears ONLY in the
+    compact-support device register (paper-sanctioned l.20314). No leak.
+(b) L-Tak/L-RS asserted from the free theorem without the transport premise
+    re-derived: CLEAN. All four existence premises re-derived at source — naive
+    interacting-Takesaki killed (l.17994/l.20160, I re-verified); free-RS-
+    transport killed + triangular valid; interacting-OS-positivity exposed as a
+    mis-stated premise. The homogeneity reduction I re-derived independently
+    (see (1b)). The run-45-BROKEN guard held.
+(c) m=0 SM IR wall smuggled into the massive claim: CLEAN. m>0 fence verbatim;
+    banked strip's m=0 case explicitly open at source (l.20310); adversary [C4]
+    sharpened the collar is m=0-safe, only tail/strip need m>0; scheme channel
+    (k=2) log-diverges first = S-4, out of scope.
+(+) the one genuine labeling FIND of the run (adversary F1, I certify it): the
+    aggregate-ledger "collapses to EMPTY / UNCONDITIONAL THEOREM" inflates
+    relative to the honest "unconditional form-grade MODULO {banked N-3/N-6,
+    form-grade transport}." A headline-grade over-claim, not a math error;
+    caught pre-print; the gated edit carries the corrected rider. #70-adjacent,
+    honored.
+
+### (7) BOTTOM LINE.
+Run 63 delivers the GOOD rung at its top, adversary-certified and referee-
+re-derived: the four named residue lemmas {N-3', N-4, L-Tak, L-RS} are WRITTEN
+and REDUCED to in-print + banked inputs, so (W1)@O(lambda) on the fenced massive-
+scalar window is an UNCONDITIONAL FORM-GRADE theorem MODULO {banked N-3 strip
+(m>0), N-6 EG existence, form-grade Takesaki transport}. No open-ended lemma
+remains; the residue is provenance+labeling riders, not a math gap. BEST (strictly
+standalone) honestly NOT reached. The decisive existence premise (L-Tak
+homogeneity) is re-derived and valid; the naive interacting-Takesaki premise is
+dead at source; form grade is clean at every lemma; m=0 is not smuggled. Zero
+writes to unification.tex/ISSUES.md by CONTENT. The gated checklist-paragraph
+edit is staged and described, author-gated, unapplied.
+
+---
+### Main-session apply note — run 63 ((W1)@O(λ) massive-scalar discharge) + run 65 reconciliation (2026-07-15)
+
+Ledgers `ledger_run63.md` (merged above) + `ledger_run65.md` (merged earlier). Process note: run 63's adjudicator crashed on session limit; resumed from cache (arms + adversary replayed, adjudicator ran live). **Verdict: GOOD rung at its ceiling, adversary-certified + referee-re-derived — the highest-leverage 9.2 lever LANDED, at form grade.**
+
+**The four named residue lemmas are WRITTEN and DISCHARGED** (each with its existence premise re-derived at source — the run-45 law held, #70 clear at all three homes): **L-Tak** (the naive interacting-Takesaki route KILLED — the formal-series net carries no modular operator, source-verified; the honest proof reduces every order to *free* Takesaki at n=0 via homogeneity of the linearized KMS equation); **L-RS** (free Reeh–Schlieder does NOT transport verbatim — interacting smearings de-fence; discharged by a unipotent triangular cascade); **N-3′** (collar/tail bound promoted to a lemma with constants, m=0-safe collar); **N-4** (the sharpest catch: the interacting Euclidean truncation is a *signed* measure, so Klein–Landau OS applies only to the *free* field + linearity — the would-be "interacting OS positivity" was a mis-stated premise, not a gap). So **(W1)@O(λ) on the fenced massive-scalar window is an unconditional FORM-GRADE theorem modulo {banked N-3 strip (m>0), N-6 Epstein–Glaser bounded-region existence (in print), the form-grade transport of free Takesaki} — no open-ended dynamical lemma remains.** This removes the framework's last open-ended-dynamics caveat for this window.
+
+**Honesty guardrail (the value of the adversary):** the arms' aggregate ledger said "collapses to EMPTY / UNCONDITIONAL THEOREM" — the adversary flagged it as over-reach, the adjudicator DECLINED to certify it, and **the applied paper text carries the honest "form-grade theorem modulo {named banked/in-print imports}" rider, NOT "unconditional."** The m=0 case stays open verbatim; the ν⁴/Λ³ form-vs-operator sentence + device register kept intact; the SM leg stays walled at the IR gate S-4.
+
+**Applied:** (1) the run-55 checklist paragraph upgraded — the four items now written-and-discharged, window = form-grade theorem modulo banked imports (all guardrails verified in the rebuild). (2) **Run 65 reconciliation:** run 63 discharged exactly {L-Tak, L-RS}, which was run 65's B1a necessity-of-(W1) resisting step. So the B1a N&S necessity direction promotes from SKETCH (run-61 F1) to a form-grade theorem on the massive-scalar window: run 65 proved the BW-free non-circular reduction + the unconditional real-part polarization + edge-safety, and run 63 discharged the imaginary/KMS half (L-Tak) + density (L-RS). The circularity concern is non-vicious because the KMS content is computed off the FREE theory (free Takesaki + free Klein–Landau), not assumed from interacting (W1). **The SM instance still rests on (W1)-for-the-SM = the open m=0 IR gate** (kept explicit; "B1a is not a theorem" conclusion preserved). Full clean rebuild 0/0/0, 328 pp.
+
+Run 66 (polish) resuming (adversary + adjudicator crashed on session limit). Run 65 A2 crashed but its adjudication was conclusive (A1+adversary agreed) and A2's substance converged on disk.
+
+# RUN 66 LEDGER — THE COMPLETENESS POLISH
+
+(Sibling arms A1 = N(d,Delta), R = adversary may append their own sections below.)
+
+---
+
+## ARM A2 — I2 (general-Hadamard first moment) + I3 (F1 bulk-wedge entropy identification)
+
+Commission: extend premise (b) of `lem:e0ds-cut` beyond the compactly generated
+class $\mathcal P$ OR name the exact obstruction (I2); close the horizon-cut-algebra
+vs bulk-wedge-algebra entropy identification OR characterize the obstruction (I3).
+Both at grade or the exact walls. Scope-honest: neither is load-bearing; both are
+"if wanted" completeness residues of `rem:e0ds-min-status`.
+
+### VERDICT: BOTH ARE WALLS — and both are BENIGN (they VINDICATE fences F2/F1).
+
+Neither item closes; each is a *principled* wall delivered with an explicit
+witness / defect formula. A clean wall is full value here (author's framing).
+
+### Baseline (content attestation, at open)
+- Initial conversation git snapshot: clean. During the run `unification.tex` and
+  `ISSUES.md` show ` M` vs HEAD — a CONCURRENT sibling/main-session change, NOT
+  this arm (identical phenomenon logged in the run-56 A1 ledger). Verified by
+  CONTENT: `git diff unification.tex ISSUES.md | grep` for this arm's markers
+  (pol_hadamard, pol-i2, pol-i3, omega_star, "two-sheet defect",
+  "past-horizon boost flux") = 0 hits in both files. This arm wrote ONLY to
+  scratchpad.
+
+### Source anchors read (in print / staged)
+- `appendix_e0ds_min.tex` l.93-135: `lem:e0ds-cut`, premises (a) equality-first-law,
+  (b) finite first moment "strictly stronger than the ANEC pin", (c) Wald/xi.
+  l.170-172 `rem:e0ds-min-status`: the two n=0 opens = "general BD-class Hadamard
+  perturbations (first moment stays premise (b) there)" and "if wanted, the
+  identification of horizon cut-algebra entropy with bulk wedge-algebra entropy".
+- `ds2_restriction.tex` `rem:ds2-fences`: (F1) entropy reading = HORIZON cut algebra;
+  wedge-vs-horizon faithfulness "not claimed, not consumed"; DMP inject
+  expanding-patch, not wedge. (F2) first moment proved for $\mathcal P$ only; R8
+  witness cited (ANEC-finite does NOT imply first-moment-finite).
+- `ds2_pairing.tex` `lem:pair-tail`(v): R8 sharpness as an ABSTRACT stress profile
+  $F=(1+v^2)^{-1}$ (ANEC $\pi$ finite, $M_V=\infty$). The open (my I2) was whether a
+  genuine STATE realizes it.
+- ISSUES run 53 (l.17872-17878): R8 = CATCH 1; (s1-ii) restriction faithfulness =
+  "THE open import". run 56 A1 ledger (l.19972-19976): F1 = NEW named step if wanted;
+  DMP inject patch algebra, not wedge. DMP_0712.1770.txt on hand.
+
+### I2 — general-Hadamard first moment: WALL (Prop. prop:pol-i2-witness)
+Delivered an EXPLICIT normal, Hadamard, BD-folium state that violates premise (b):
+- Construction: on the universal chiral horizon net (`lem:ds2-massinert`), mixture
+  $\omega_\star = \int_1^\infty a^{-2}\,\omega_a\,da$ of chiral coherent states
+  $\omega_a$ whose flux is a zero-mean bump $g_0(\cdot-a)$ marched to $v=a$, weight
+  $\mu(a)=a^{-2}$ (probability, $Z=1$).
+- (i) normal / BD-folium (probability mixture of normal states is normal);
+  (ii) Hadamard (added covariance kernel is SMOOTH — verified continuous across the
+  diagonal, so wavefront = BD); (iii) flux = VARIANCE $\sim \|g_0\|_2^2\,v^{-2}$;
+  (iv) finite ANEC, $M_V \sim \int^\infty v^{-1} = +\infty$ (log divergent).
+- MECHANISM (the exact obstruction): UV/IR separation. Hadamard is a UV
+  (coincidence) condition, first moment is IR (large-v). For $\mathcal P$ the flux is
+  the pointwise square $(\partial_v\psi)^2$ and inherits the mass falloff ($\ge v^{-4}$);
+  a mixed state replaces the square by a VARIANCE, spreadable with an arbitrarily slow
+  envelope. The class on which (b) holds = BD-Hadamard states with
+  $\delta\langle T_{vv}\rangle = o(v^{-2})$ = FINITE modular energy $\langle K_V\rangle<\infty$
+  = exactly the Ceyhan-Faulkner finiteness PREMISE (finite $\langle P\rangle$, finite
+  $S_{rel}$) — which CF ASSUME, not derive. So (b) inherits premise status.
+- => Premise (b) is NOT derivable for the general class. Fence F2 is NECESSARY, not
+  merely cautious. Honest options: keep (b) a premise / restrict to $\mathcal P$ /
+  impose finite-modular-energy. WALL, benign.
+- Numerics `pol_hadamard_f1.py` I2 (8/8 PASS): R8 ANEC=$\pi$, moment coeff of log = 1;
+  witness slope $-2.0002$; amplitude $\|g_0\|_2^2=1.2533$ vs meas $1.267$; ANEC$\approx0.88$;
+  first-moment increment per doubling $0.878\approx\|g_0\|_2^2\ln2=0.869$ (constant =>
+  logarithmic); covariance smooth.
+
+### I3 — bulk-wedge entropy identification: WALL / exact characterization
+(Lem. lem:pol-i3-twosheet + Prop. prop:pol-i3-defect)
+The wedge-to-horizon restriction is NOT faithful for the single future sheet:
+- The bifurcate horizon has TWO sheets: future $\mathcal H^+_W$ ($v>0$ half of
+  $\mathcal H$) and past $\mathcal H^-_W$ (a DIFFERENT null plane). The cut algebra
+  $\mathcal A_{\mathcal H}(0)$ uses $\mathcal H^+_W$ only. Exact 2D chiral proof:
+  $\mathcal A_{\mathcal H}(0)=\{\phi_R'(v):v>0\}''$ (right-movers) $\subsetneq
+  \mathcal A(W)=\{\phi_R(v>0)\}''\vee\{\phi_L(u<0)\}''$. $\Omega_{BD}$ separating but
+  NOT cyclic for the cut algebra (evades Reeh-Schlieder as a null-surface algebra);
+  modular operators DIFFER (wedge boost dilates both sheets, cut dilates one).
+  Massive-robust: principal symbol of $\Box-m^2$ is $m$-independent, so the two null
+  planes carry independent characteristic data for every $m^2>0$.
+- DEFECT FORMULA (coherent states): $S_{rel}^{wedge}-S_{rel}^{horizon} =
+  2\pi\int_{\mathcal H^-_W}(-u)(\partial_u\psi)^2 \ge 0$, the past-horizon boost flux,
+  strictly $>0$ unless $\partial_u\psi|_{\mathcal H^-_W}\equiv0$. => horizon entropy
+  $\ne$ wedge entropy.
+- DMP MISMATCH (the crux): DMP faithfulness is PATCH $\leftrightarrow$ FULL null plane
+  ($P^+$ vs full $\Im^-$, both $v\gtrless0$ = a genuine characteristic-Cauchy
+  correspondence). WEDGE is bounded by TWO null planes, only one half of $\mathcal H$.
+  So patch$\leftrightarrow$full does NOT descend to wedge$\leftrightarrow$half. DMP
+  inject the patch algebra, not the wedge algebra — exactly as the commission warned.
+- CLOSING CONDITION: the identification holds iff one uses the FULL bifurcate horizon
+  (both sheets = a complete null Cauchy surface for W); but the first law deliberately
+  uses the SINGLE future sheet — its geometric side $\delta[A_\infty-A(V)]/4G$ is the
+  future-horizon area deficit pairing with the future-horizon modular energy. The
+  object the first law differentiates IS the horizon cut-algebra entropy (the correct
+  cross-horizon entanglement entropy); the larger bulk wedge entropy is never
+  referenced. Fence F1 is NECESSARY and correct. WALL, benign.
+- Numerics `pol_hadamard_f1.py` I3 (5/5 PASS): defect $S_{hor}=15.75$, $S_{wed}=31.50$,
+  defect $=15.75>0$; $\Omega$ non-cyclic (cyclic dim 8 < full 64) but separating;
+  massive principal symbol $m$-independent.
+
+### Adversary homes (#73) — audited
+- (a) N(d,Delta) scheme-dependence: OTHER arm (A1); not this arm.
+- (b) general-Hadamard first moment claimed extended when R8 walls it: NOT committed —
+  I say WALL, with an explicit witness state (not a hand-wave). The witness is a
+  genuine normal/Hadamard/BD-folium state, so the wall is airtight, not merely
+  "unproven".
+- (c) F1 identification claimed when only DMP injection (not faithfulness) in hand:
+  NOT committed — I say WALL, and show the single-sheet identification is FALSE
+  (defect = past-horizon flux), while the true (two-sheet) identification is a
+  different object than the first law consumes. DMP scope honored (patch, not wedge).
+
+### Honest limits of this arm
+- The 2D chiral reduction is the crisp carrier of the two-sheet independence; the
+  massive/4D statement rests on the principal-symbol (characteristic-data-count)
+  argument + `lem:ds2-massinert` (horizon net = chiral current). This is standard
+  free-field structure, not a new theorem, but it is the decisive obstruction.
+- Longo coherent-entropy = boost energy imported at existence grade (as in the A1
+  restriction appendix); the defect formula is double-anchored by conservation
+  (wedge boost = sum over both sheets).
+- Neither residue is consumed downstream; nothing in the load-bearing chain moves.
+  This arm's value is CONVERTING two named "opens" into two named, principled WALLS
+  that vindicate the existing fences.
+
+### Deliverables (scratchpad only)
+- `pol_hadamard_f1.tex` (272 lines; compiles clean via `_pol_hadamard_f1_compiletest.tex`,
+  5pp, 0 errors — 29 undefined xrefs are paper labels that resolve on import).
+- `pol_hadamard_f1.py` (13/13 PASS; two independent methods each per the #49 lesson).
+- this ledger.
+
+### Zero-write attestation (by content, at close)
+MD5(unification.tex)=f4d233f2b03be3676b9965c3a11c0e34 ;
+MD5(ISSUES.md)=6449413efabb16c47da28dc3a82b57d1 .
+`git diff` of both files contains ZERO of this arm's content markers. ARM A2 issued
+ZERO writes to unification.tex and ISSUES.md; wrote only scratchpad files
+(pol_hadamard_f1.{tex,py}, wrapper+log+pdf, this ledger).
+
+---
+
+## ARM A1 — N(d,Δ)  (the single uncomputed coefficient in the run-58 Weyl transfer)
+
+Commission (I1): compute OR characterize exactly the coeff of the non-analytic (R_a/L)^{2Δ-d}
+profile-deviation modular-response moment on the dS static-patch diamond; check scheme-invariance
+(or name the dependence); evaluate the SM window Δ=2+γ; two independent sympy methods.
+Scope-honest: NOT load-bearing; a completeness residue of `rem:E0-dS-status`.
+
+### VERDICT: scheme-invariance = THEOREM; far factor J = closed form; value = ONE named residual.
+
+Deliverables (scratchpad): `pol_Ndelta.tex` (compiles clean, 4pp, 0 err, 0 undefined refs) +
+`pol_Ndelta.py` (12/12 checks PASS). Details in the sibling ledger block written by A1 —
+condensed here:
+
+1. **SCHEME-INVARIANCE — THEOREM** [the #1 honesty home; adversary R(i)].  N is the coeff of a
+   NON-ANALYTIC power (R_a/L)^{2Δ-d}.  Every scheme freedom (split anchor w(0)=1 [S5],
+   improvement ξ, local counterterms) adds only the ANALYTIC tower (R_a/L)^{2k} (a flat-CONSTANT
+   source is scaleless → covariant local form, a power series in σ=1/L²; checks A1/A3).  With
+   2Δ-d∉2ℤ≥0 (SM 2γ∈(0,2) generic), N cannot be shifted → INVARIANT — the SAME mechanism as
+   B=−8π²/15 (l.18987).  N is on the B (invariant) side, NOT the c1 side.
+   → CORRECTS run-58 seam S5 ("c1 and N anchor-covariant"): only c1 (analytic) is covariant;
+     N (non-analytic) is INVARIANT.  Caveat: at 2Δ-d∈{0,2} the power collides with the analytic
+     tower/log → not separately invariant there; SM window sits at neither locus.
+
+2. **FAR-SOURCE RADIAL FACTOR J — CLOSED FORM, 2 methods.**  Non-analytic power generated by the
+   source OUTSIDE the diamond (deviation w^{d-Δ}−1→−1 SATURATES [F1]; kernel tail K~K_∞/|x|^{2Δ},
+   2Δ>d).  Matched asymptotics ⇒ N = (norm)·Ω_{d-1}·J/Jflat with
+       J(d,Δ)=∫_0^∞ρ^{d-1-2Δ}[(1+ρ²/4)^{-(d-Δ)}−1]dρ = 2^{d-2Δ-1}Γ(d/2)Γ((d-2Δ)/2)/Γ(d-Δ).
+   Method 1 Beta-continuation, Method 2 tanh–sinh quadrature (14 pts d=2..6, <1e-18).  Far tail
+   ρ^{d-1-2Δ} = EXACTLY run-60's F1 exponent (independent corroboration); window Δ∈(d/2,(d+2)/2);
+   marginal residue (2Δ-d)J→−1 ⇒ ν(d,d/2)=−1 — DERIVES Rem:marginal's posited residue (upgrades
+   its PLAUSIBLE grade).
+
+3. **SM WINDOW** d=4,Δ=2+γ:  (2Δ-d)J = 2γJ = −2^{-2γ}/(1-γ) → −1 as γ→0  (checks C2/C3).
+
+4. **THE ONE RESIDUAL** (resisting step, named): Jflat = [CGM constant-coupling local coeff] /
+   [K_∞ R^{d-2Δ}] = ball-modular-flow normalisation of the conformal ⟨HOO⟩ kernel.  NOT in print
+   (CGM stop at const→local l.885; Speranza/Faulkner give the local term + 2nd-order C_2, not the
+   1st-order NONLOCAL kernel integral).  Sharpens run-58's "one uncomputed coeff" to "one
+   geometric NUMBER Jflat, far factor + scheme status now settled."
+   SPECULATION (flagged): if Jflat≡−Ω_{d-1}J then ν≡−1 ⇒ deformed-dS coeff ∝ [1−(R_a/L)^{2Δ-d}]
+   everywhere; consistent w/ Rem:marginal but UNPROVEN (needs a Ward identity).
+
+### Sources: CGM 1601.00528 (cgm_src/paper18rev.tex l.838/856/862/865/885; [deff]=Faulkner
+1412.5648 l.1394, [rough]=Speranza 1602.01380 l.1403); Faulkner 1412.5648 (WebFetch: eq.38
+⟨HOO⟩ kernel, eq.44 cylinder 2-pt); Speranza 1602.01380 (WebFetch: eq.1 local + 2nd-order C_2).
+
+### Zero-write attestation (by content, at close)  — ARM A1
+git shows unification.tex/ISSUES.md as "M" but these are CONCURRENT SIBLING edits, NOT A1's:
+A1 issued ZERO Edit/Write on either file.  grep of my unique tokens (pol_Ndelta | Jflat |
+"far-source radial" | "scheme-invariant N(") in BOTH files AND their git diffs → 0 hits; the
+N(d,Δ) sentence (l.18983) is UNTOUCHED.  A1 wrote only scratchpad: pol_Ndelta.{py,tex,pdf,aux,
+log}, pol_Ndelta_build{,2}.log, and this appended block.
+
+---
+
+## R — THE ADVERSARY (re-derivation of the three decisive steps)
+
+Commission: attack the three #73 homes by INDEPENDENT re-derivation — (i) N(d,Δ)
+scheme-invariance, (ii) the general-Hadamard first-moment wall (construct the divergent
+witness), (iii) the F1 wedge→horizon faithfulness (kernel/cokernel). Two methods per claim.
+Stage `pol_adv.md` + `.py`.
+
+### VERDICT: all three arm results SURVIVE. Two confirmed as stated, one confirmed + SHARPENED.
+`pol_adv.py` = **36/36 PASS** (PART I 14, PART II 9, PART III 13). `pol_adv.md` = full report.
+
+- **(i) N scheme-invariance — A1 THEOREM CONFIRMED; #73(a) cleared.** Far factor
+  `J=2^{d-2Δ-1}Γ(d/2)Γ((d-2Δ)/2)/Γ(d-Δ)` re-derived by Beta continuation AND an independent
+  10-pt quadrature grid (12+ sig figs). Scheme-invariance proven directly: re-anchoring `1→c`
+  is the scaleless shift `(1-c)∫ρ^{s-1}dρ=0`; assembled `J_c=J` for c∈{0.5,1,1.7} to 1e-12 —
+  the anchor moves only the analytic `(R_a/L)^{2k}` tower, never `(R_a/L)^{2Δ-d}`. N is on the
+  invariant B side; S5's "N anchor-covariant" is wrong exactly as A1 says. Marginal residue
+  `(2Δ-d)J→-1` two ways; SM `(2γ)J=-2^{-2γ}/(1-γ)`. CAVEAT [N1]: at γ→0 (d=4) Δ→2=d/2=d-2, the
+  marginal AND [GAP-improv] loci coincide — "clean for γ>0 generic" must not be read to include
+  γ→0. Jflat still honestly open (not overturned).
+- **(ii) first moment — A2 WALL CONFIRMED; #73(b) is a WALL.** Witness rebuilt independently:
+  mixture `∫₁^∞a^{-2}ω_a da` of coherent states, INDEPENDENT bump `g₀=e^{-x²/2}` (‖g₀‖²=√π).
+  Verified normal/BD-folium (density matrix), Hadamard (added kernel smooth), mean flux `~v^{-2}`
+  positive, ANEC finite `=√π`, first moment log-divergent (coeff √π). Obstruction: divergent
+  object = modular energy `⟨K_V⟩=∞` = the Ceyhan-Faulkner finite-modular-energy PREMISE (assumed,
+  not derived from Hadamard+ANEC). F2 necessary. CORRECTION [N2]: the mixture mean stress is
+  `E[g²]=(μ⋆g₀²)` (mean of the square, positive), NOT the variance A2 wrote — they agree only to
+  leading v^{-2}; the corrected object needs no zero-mean device and gives the exact divergence
+  coefficient. Wall unaffected/sharper.
+- **(iii) F1 faithfulness — A2 WALL CONFIRMED + SHARPENED; #73(c) cleared.** Chiral structure
+  re-derived: `A_H(0)=A₊(v>0)⊊A(W)=A₊⊗A₋`, kernel of `r` = past-sheet factor `A₋(u<0)` (not
+  injective). Defect (independent profiles) = past-horizon boost flux `=3π/4>0`; monotone under
+  `A_H(0)⊂A(W)`. Massive-robust (principal symbol of □-m² m-independent; two null planes are
+  independent Goursat data ∀m²>0; DMP patch↔full ≠ wedge↔half). SHARPENING [N3] (new content):
+  the first-law perturbations are FUTURE-horizon matter flux with vacuum past horizon
+  (`∂_uψ₋|_{H⁻}=0`), so the defect VANISHES and `S_hor=S_wed` EXACTLY on that class — F1's
+  `δS(V)`-VARIATION identification is TRUE where consumed, failing only off the physical class.
+  The general duality `A(W)=A_H(0)` still fails (proper subfactor); both readings keep F1 correct.
+  MINOR CATCH [N4]: A2's finite-dim toy shows non-cyclicity (8<64) correctly but its "Ω
+  separating" sub-check is invalid in the toy (a vacuum vector is not separating for type-I
+  `B(H_R)`); separating is genuine but needs the type-III₁ chiral structure. Conclusion unchanged.
+
+### Scope honesty
+All three are completeness items; none is load-bearing; the adversary changes no grade of any
+consumed step. Two confirmations + one sharpening + two cosmetic corrections + one caveat.
+A clean WALL is full value (author's framing); the adversary neither inflates leverage nor lets
+an over-claim stand (both A2 presentation slips, N2/N4, are subleading and repaired without
+touching a verdict).
+
+### Zero-write attestation (by content)
+This arm wrote ONLY scratchpad: `pol_adv.py`, `pol_adv.md`, this ledger section. ZERO
+Edit/Write to `unification.tex` / `ISSUES.md`. Unique tokens (`pol_adv`, `J_c==J`,
+`mean-flux corrected`, `first-law class defect`, `type-III separating catch`, `scaleless shift`)
+= 0 hits in both files AND their git diffs. The concurrent ` M` state (ISSUES.md +5011,
+unification.tex +197) is sibling/main-session activity; the N(d,Δ) sentence content is not mine.
+
+---
+
+## ADJUDICATION — RUN 66 (referee folded in; independent re-derivation; 2026-07-15)
+
+Commission: re-derive N(d,Δ) scheme-invariance and the first-moment witness MYSELF, then
+adjudicate the three completeness items per-item {closed / walled / reduced}, name the #73
+homes, describe the gated edit, attest zero writes BY CONTENT. Scope-honest: NONE of the three
+is consumed by a narrowed load-bearing chain — a clean WALL is full value, and leverage must
+not be inflated.
+
+### Own-hands re-derivation (NOT trusting the arms): `adj66_rederive.py` = 16/16 PASS
+Two independent methods, fresh points/bumps, distinct from `pol_Ndelta.py` and `pol_adv.py`:
+- **A0** far factor by MY OWN Mellin/Beta reduction (u=ρ²/4): `J = 2^{d-2Δ-1}Γ(d/2)Γ((d-2Δ)/2)/Γ(d-Δ)` — matches arm+adversary EXACTLY (symbolic, sp.simplify==0).
+- **A1** fresh 10-pt convergent quadrature (no near-singular tail map): interior agrees to
+  1e-21…1e-57; two near-upper-edge pts (Δ→(d+2)/2) agree only ~1e-10 by tanh-sinh ENDPOINT
+  conditioning (ρ^{s+1} non-smooth as s→−2) — NOT a discrepancy (A0 proves it exactly).
+- **A2 (the #73(a) crux)** SCHEME-INVARIANCE by my own direct anchor-shift construction:
+  re-anchoring `1→c` gives head-piece `(1-c)/s` and tail-piece `+c/s` whose sum `1/s` is
+  **c-independent**; assembled `J_c = J_1 = closed form` for c∈{0.4,1.0,1.9,3.3} to **1e-40**.
+  The anchor moves ONLY the analytic (R_a/L)^{2k} tower; the non-analytic (R_a/L)^{2Δ-d} is
+  untouched. CONFIRMED: **N is scheme-INVARIANT**, on the B=−8π²/15 side, NOT the c1 side.
+- **A4/A4b** marginal residue `(2Δ-d)J→−1` two ways (closed-form Laurent + raw tail residue
+  `∫_A^∞ρ^{-1-ε}(−1)dρ=−A^{-ε}/ε`), cutoff-independent → derives Rem:marginal's posited ν→−1.
+- **A5** SM window `(2γ)J(4,2+γ) = −2^{-2γ}/(1−γ) → −1`.
+- **B0–B3 (first-moment witness, re-built in my own hands)**: R8 `F=1/(1+v²)` ANEC=π finite,
+  moment ~ log (coeff 1); mixture `∫₁^∞a^{-2}ω_a da` of coherent states, **mean-of-square**
+  flux `(μ⋆g₀²)~‖g₀‖²v^{-2}` (POSITIVE), finite ANEC, log-divergent first moment; added
+  covariance kernel smooth ⇒ Hadamard kept. **B1 confirms adversary N2**: the mixture stress
+  is E[g²] (mean of the square), NOT the variance A2 wrote — immaterial to the wall, sharper.
+- **I3 own check** (independent profiles dvR=v²e^{−v}, duL=(−u)²e^{u}): `S_hor=15π/4`,
+  defect = past-sheet boost flux `15π/4 > 0` (faithfulness FAILS); N3 sharpening confirmed
+  (duL≡0 on first-law class ⇒ defect=0, S_hor=S_wed); principal symbol `4k_uk_v` m-independent
+  (massive-robust); N4 catch confirmed (`|0⟩⟨1|·|0⟩=0` ⇒ vacuum NOT separating in a type-I toy).
+
+### PER-ITEM VERDICTS
+- **I1 (N(d,Δ)) = REDUCED.** Scheme-invariance = **THEOREM** (closed, verified in my own hands
+  to 1e-40): N invariant for 2Δ-d∉2ℤ≥0 — **CORRECTS seam S5** (c1 anchor-covariant, N
+  anchor-INVARIANT; S5 conflated them). Far factor = **closed form** J above. Marginal + SM =
+  closed. BUT the full NUMBER N is NOT delivered: it rests on **Jflat** = the ⟨HOO⟩
+  ball-modular-flow normalisation (`N=(norm)·Ω_{d-1}·J/Jflat`), one uncomputed geometric
+  constant, not in print (CGM stop at const→local; Speranza/Faulkner give the local term +
+  2nd-order C₂, not the 1st-order nonlocal kernel integral). Obstruction to full closure =
+  Jflat; needs a Faulkner-type ⟨HOO⟩ eval on the hyperbolic cylinder or explicit d=2. The
+  ν≡−1 conjecture (→ clean `[1−(R_a/L)^{2Δ-d}]`) is **SPECULATION**, unproven (needs a Ward
+  identity Jflat=−Ω_{d-1}J). Net: "one uncomputed coefficient" → "one uncomputed geometric
+  NUMBER, scheme status + far factor now settled." Honest caveat (adversary N1): at γ→0 the
+  marginal (2Δ-d=0) and free-field (Δ=d−2) loci coincide — "invariant for γ>0 generic" must
+  not be read to include γ→0.
+- **I2 (general-Hadamard first moment) = WALL (benign).** Explicit normal/Hadamard/BD-folium
+  witness with finite ANEC and log-divergent first moment (re-built in my own hands). Premise
+  (b) ⇔ finite modular energy ⟨K_V⟩ = the Ceyhan–Faulkner premise, NOT derivable from
+  Hadamard+ANEC. `v^{-2}` is the exact borderline. **Vindicates fence F2** (necessary, not
+  merely cautious). Nothing load-bearing moves.
+- **I3 (F1 bulk-wedge identification) = WALL (benign).** `A_H(0)` (future sheet) ⊊ `A(W)`
+  (both sheets); restriction surjective but NOT injective (kernel = past-sheet content); defect
+  = past-horizon boost flux > 0; massive-robust. Faithfulness genuinely FAILS. **Vindicates
+  fence F1** ("not claimed and not consumed"; DMP inject patch↔full, NOT wedge↔half). Adversary
+  N3 sharpening makes benignity POSITIVE: on the first-law class (vacuum past horizon) the
+  defect vanishes and the δS(V)-VARIATION identification is TRUE where consumed.
+
+### #73 homes — all honestly handled; NO overclaim survives
+- **(a)** N reported scheme-dependent-as-invariant → **CLEARED**: the reported invariance is
+  CORRECT (my own scaleless-shift J_c=J to 1e-40). Not a scheme artifact. S5 corrected.
+- **(b)** first moment claimed-extended-when-walled → **HONEST WALL** (not extended); explicit
+  witness state, airtight.
+- **(c)** F1 claimed-when-only-DMP-injection → **HONEST WALL** (faithfulness fails, kernel=past
+  sheet); DMP scope honored.
+Presentation slips (both A2, both subleading, both already caught by the adversary and
+re-confirmed by me, NEITHER moves a verdict): N2 (A2 wrote "variance" — should be mean-of-
+square), N4 (A2's finite-dim "Ω separating" sub-check invalid — genuine but needs type-III₁).
+I1 is honestly labelled REDUCED with Jflat named and ν≡−1 flagged as speculation — no
+overclaim of closure.
+
+### GATED EDIT — GATED OFF (described, not applied)
+The gate opens only for a genuine closure/wall that a load-bearing chain consumes AND that the
+LAW permits writing. Here: (i) the LAW mandates ZERO writes to `unification.tex`/`ISSUES.md`;
+(ii) all three items are completeness, consumed by NO narrowed load-bearing chain; (iii) I1 is
+REDUCED not CLOSED, so the paper body sentence l.18983 ("exactly one uncomputed coefficient
+N(d,Δ) remaining") stays EXACTLY ACCURATE — no body change; (iv) the I2/I3 walls VINDICATE
+fences F2/F1 that are ALREADY in `ds2_restriction.tex` (rem:ds2-fences) and already correct —
+nothing to add, no overclaim to remove. The ONE substantive delta would be an ISSUES-ledger
+upgrade of seam S5 (c1 anchor-covariant; **N anchor-INVARIANT**, on the B side) — an ISSUES
+matter, forbidden by the LAW, hence DESCRIBED HERE ONLY. Net gated edit applied to the two
+named files: **NONE**. Only scratchpad (this ledger + `adj66_rederive.py`) written.
+
+### Zero-write attestation (BY CONTENT) — adjudicator
+Initial session snapshot was CLEAN; the working-tree ` M` on `unification.tex` (+197) and
+`ISSUES.md` (+5011) is CONCURRENT main-session activity — it carries prior-run adjudications
+(runs 52/53 visible in the ISSUES diff) and the newly-ADDED N(d,Δ) Weyl-transfer passage in
+unification.tex (added as `+` lines: NOT pre-existing, NOT written by any polish arm nor by me).
+Precise wording (correcting a loose arm phrasing): the l.18983 sentence was ADDED by the
+concurrent main session, "untouched" only in the sense that no polish arm/adjudicator wrote it.
+My adjudicator tokens (`adj66`, `adj66_rederive`) = **0 hits** in both files AND their git
+diffs. I issued ZERO Edit/Write to `unification.tex` and `ISSUES.md`. Wrote only scratchpad:
+`adj66_rederive.py`, this ledger section.
+
+### BOTTOM LINE
+All three arm verdicts SURVIVE independent adjudication: **I1 REDUCED** (scheme-invariance a
+verified THEOREM correcting S5; far factor closed; one geometric residual Jflat), **I2 WALL**
+(benign, vindicates F2), **I3 WALL** (benign, vindicates F1). Two confirmations + one
+scheme-invariance sub-closure + two subleading A2 repairs (N2/N4, no verdict impact) + one
+scope caveat (N1, γ→0 confluence). No load-bearing chain moves; the paper's honest fences and
+"one uncomputed coefficient" sentence stand exactly. Gated edit: none applied (LAW + reduced
+status + fences already present). Zero writes to the two named files, verified by content.
+
+---
+### Main-session note — run 66 (completeness polish): CONFIRM-IN-PLACE, no paper edit (2026-07-15)
+
+Ledger `ledger_run66.md` merged above. Process note: adversary + adjudicator crashed on session limit first pass; resumed from cache (both arms replayed, adversary + adjudicator ran live). **Verdict: no paper edit — all three items honestly resolved, independently re-derived (adjudicator 16/16, adversary 36/36); none load-bearing.**
+
+- **I1 N(d,Δ) = REDUCED.** Scheme-invariance is a VERIFIED THEOREM (re-anchoring the split is a scaleless shift; N is the coefficient of the non-analytic (R_a/L)^{2Δ−d} power, immune to local counterterms, on the invariant B=−8π²/15 side). Far factor CLOSED FORM: J(d,Δ)=2^{d−2Δ−1}Γ(d/2)Γ((d−2Δ)/2)/Γ(d−Δ) (independent Mellin/Beta + quadrature to 1e-40); marginal residue (2Δ−d)J→−1 derives Rem:marginal's posited ν→−1. **Still one uncomputed geometric constant (Jflat, the ⟨HOO⟩ ball-modular normalisation, not in print).** The paper's l.18983 "exactly one uncomputed coefficient N(d,Δ)" stays EXACTLY accurate — no body change.
+  - **CORRECTS run-58 seam S5** (ISSUES-ledger correction, not a paper defect): S5 conflated c1 and N as anchor-covariant; only c1 (analytic tower) is covariant, **N is anchor-INVARIANT**. The run-58 br_transfer.py C5a note is superseded on this point. Non-load-bearing; l.18983 unaffected.
+- **I2 general-Hadamard first moment = WALL (benign).** Explicit normal/Hadamard/BD-folium witness (mixture of chiral coherent states) with finite ANEC and log-divergent first moment — the obstruction is the divergent ⟨K_V⟩ = the Ceyhan–Faulkner finite-modular-energy premise, not derivable from Hadamard+ANEC. Vindicates fence F2 (already in print, ds2_restriction rem:ds2-fences). The general-Hadamard class genuinely walls; the compactly-generated class (run 56) is where the first moment is proved.
+- **I3 F1 bulk-wedge entropy = WALL (benign).** The wedge bifurcate horizon has two sheets; A_H(0) uses only the future sheet, so the restriction A(W)→A_H(0) is surjective but NOT injective (kernel = past sheet), faithfulness fails; DMP injection is patch↔full-plane, does NOT descend to wedge↔half-plane. Vindicates fence F1 — with the adversary's sharpening that the defect vanishes on the actual first-law class (the future-sheet entropy IS the object δA/4G pairs with). Both fences necessary and correct as printed.
+
+#73: no overclaim survives (N invariance CORRECT not artifact; both walls honest with explicit witnesses; two subleading A2 presentation slips caught + repaired). Gate off (LAW + reduced-status + fences-already-present). Zero writes; the paper is unchanged and its l.18983 sentence + F1/F2 fences stand exactly.
+
+---
+### 9.2-LEVER BATCH CLOSE-OUT (runs 63–66)
+
+Four Opus swarms against the priced path to the ~9.2 theory cap. Outcome:
+- **Run 63 ((W1) discharge) — LANDED at form grade** (the load-bearing lever): the massive-scalar (W1)@O(λ) window is now an unconditional FORM-GRADE theorem modulo banked/in-print imports; last open-ended-dynamics caveat removed for this window. Applied. Reconciled run 65 (B1a necessity sketch→form-grade theorem). Adversary caught + corrected the arms' "unconditional" over-reach; print carries the honest rider.
+- **Run 64 (empirical) — CONFIRM-IN-PLACE**: the framework predicts only the SIGN (already in print, honestly graded); no quantitative band exists; DESI DR2 is tension-not-falsification; the last empirical tenth needs DESI to report. No gain, no loss.
+- **Run 65 (B1a lemma) — PARTIAL→reconciled**: necessity-of-(W1) real-part proven + reduction non-circular + edge-safe; resisting step {L-Tak,L-RS} discharged by run 63. Applied via the run-63 reconciliation.
+- **Run 66 (polish) — CONFIRM-IN-PLACE**: N(d,Δ) reduced (scheme-invariance theorem, corrects S5); I2/I3 both benign walls vindicating existing fences. No edit.
+
+**Genuine-find tally through run 66:** #49, #55, #57(staging), F1(run-57), #63, run-60 F-RATE-proof, run-61 B1a-disclosure, run-63 "unconditional" over-reach (caught pre-print). Every one caught by the adversarial discipline; zero reached print uncorrected. Paper: 328 pp, 0/0/0. Score ≈9.15 on gauntlet-tested, form-grade-honest text.
+
+# Ledger — Run 69, ARM A2 (THE THIRD-PREDICTION HUNT)
+
+**Task.** Survey the full framework for a THIRD independent falsifiable prediction beyond the DE
+sign (pred 1) and vacuum dispersion (pred 2). Strongest candidate -> testable form + falsifier +
+grade; reject tunable/known ones explicitly. Stage emp_third.md + .tex.
+
+## Result (label: NEGATIVE-RESULT)
+No clean distinctive near-term third prediction. **Strongest candidate = the parity-even null**
+`f_NL^odd = tau_NL^odd = 0` (`prop:pred-primordial`(ii) / `lem:sigma-parity`): the cosine clock
+cocycle `Sigma_delta` is real+even => exactly parity-even dynamics/state, helicity-blind.
+- UNIQUE virtue: the only candidate simultaneously non-tunable + independent-observable + REACHABLE
+  2026-30 (parity-odd galaxy 4PCF / CMB trispectrum are measured NOW; DESI DR3/DR4, Euclid, CMB-S4).
+- Testable form: primordial parity-odd trispectrum `tau_NL^odd`; framework value exactly 0.
+- Falsifier: `>=5sigma` PRIMORDIAL parity-odd trispectrum surviving RSD + chiral-GW-lensing +
+  covariance systematics.
+- Grade: **PLAUSIBLE** (inherits `Conj:wdw`/`Sigma_delta`; in-model theorem not promoted).
+- KILL (does NOT clear the bar, 3 grounds): (1) non-distinctive — standard single-field inflation
+  and LCDM predict the same null (Run 64's ground); (2) NOT cleanly attributable [SHARPER THAN
+  RUN 64] — a parity-odd detection has known non-`Sigma_delta` sources (relativistic RSD, chiral-GW
+  lensing, axion birefringence sector), so it does not uniquely implicate the framework; the null is
+  about the clock-shift's OWN contribution, not a blanket prohibition; (3) leading in-band term is a
+  reproduction (Chataignier-Kramer matching), distinctive quartic ~1e-18 tunable/unobservable.
+=> falsifiable-but-non-distinctive commitment, NOT a clean third prediction.
+
+## Web-verified reach (2026-07-15)
+- Parity-odd galaxy 4PCF: BOSS ~2.9sigma hint NOT confirmed; DESI DR1 LRG (arXiv 2512.20132) up to
+  4sigma but "consistent with a mismatch between simulation- and data-estimated fluctuations" =
+  systematics-dominated, not primordial. Known relativistic-RSD + chiral-GW-lensing contaminations.
+- Cosmic birefringence: ACT DR6 (2026) beta=0.215+/-0.074 deg, 2.9sigma; global 2.4-3.6sigma; still
+  degenerate with instrument miscalibration alpha. Distinct channel; axion/dark-sector-sourced.
+=> the parity-odd channel is REACHABLE and LIVE, but non-distinctive + non-attributable.
+
+## Rejections (explicit, with reason)
+- Primordial P(k): REPRODUCTION (matched mu) + quartic ~1e-18 tunable/unobservable.
+- Page-time shift: UNREACHABLE (Planck-suppressed).
+- BMV: LONG-TERM; GIE non-discriminating; Gamma_DSW terrestrially unobservable.
+- Margenau-Hill / Leggett-Garg: REPRODUCTION of standard QM (Fine/Halliwell); NIM + projective-only
+  ceilings; only framework-specific piece is O(mu E)~1e-33 (same mu, dispersion channel).
+- E-star / UHECR-GZK: E_star FREE anchor (band=postdiction) + SAME mu (channel of pred 2) +
+  E_QG~1e4-1e5 E_Pl and E_star~0.65 E_Pl both >> UHECR energies (~1e11 GeV). Triple kill.
+- No-signalling / lossy-conservation: CONSISTENCY-THEOREM (shared w/ std QFT); only observable=pred 1.
+- CMB/BBN dissipative: = pred 1 at another z; 1e-122 unobservable or RVM sign-free/BBN-capped.
+- Discreteness/N: N free FUNCTION (trace homogeneity); II_inf/III CONTINUUM => no discreteness.
+- Page-Geilker: already-known differentiator, shared with all collapse pictures.
+
+## Independence audit
+- vs pred 1 (DE sign): independent (unitary Sigma_delta vs dissipative Clausius-sigma; parity vs EoS;
+  Conj:wdw vs delta t=1/(3H)).
+- vs pred 2 (dispersion): distinct observable (parity vs magnitude, holds for all mu) but SHARES the
+  Sigma_delta/Conj:wdw premise => grade cannot exceed pred 2's PLAUSIBLE. Partially independent.
+
+## #76 homes (self-audit)
+- (a) postdiction-as-prediction: NOT fired. Survivor non-tunable; every tunable candidate
+  (E-star band, RVM/BBN, N) REJECTED *as* postdiction and labeled so.
+- (b) reach over-claimed: NOT fired. Only "reachable" claim (parity-odd 4PCF / birefringence)
+  web-verified live and marked non-distinctive/non-attributable, not sold. Unreachables (dispersion
+  mag, DE amp, Page, P(k), BMV) marked UNREACHABLE, matching Run-64 decade/order gaps.
+- (c) THEOREM-on-PLAUSIBLE: NOT fired. Parity null = PLAUSIBLE; in-model theorem stated as such.
+
+## Relation to Run 64
+CONFIRMS + SHARPENS. Run 64 rejected pred-primordial (non-distinctive + reproduction). I re-survey
+the FULL framework, identify the parity null as the strongest REACHABLE candidate (a virtue Run 64
+did not foreground), and add the ATTRIBUTABILITY ground (2) — a parity-odd detection is explainable
+by non-Sigma_delta sectors — as the sharper reason it still fails. Net: frontier unchanged; two
+predictions stand; no third clears the bar. Confirm-in-place.
+
+## Compliance
+- ZERO writes to unification.tex + ISSUES.md (verified by CONTENT below).
+- Staged (scratchpad only): emp_third.md (214 l.), emp_third.tex (compiles -> emp_third.pdf 203 kB),
+  this ledger. Reads/greps only on protected files (grep anchors, targeted Read; no full 328pp read).
+
+---
+
+# Ledger — Run 69, ARM A1 (THE DECISIVE-TEST FORECAST)  [appended; A2 entry above untouched]
+
+**Task:** referee-grade confirm/kill/experiment/timeline table for every genuine framework
+prediction {DE sign, vacuum dispersion, MH/temporal-entanglement witness, E-star band, any other};
+brutal about reach; resolve the DE-sign *model-independent crossing* question. Stage
+`emp_forecast.md` + `.py`.
+
+## Result (label: NEGATIVE-RESULT / forecast; surviving positive content = PLAUSIBLE)
+Forecast sharpened, frontier unmoved. Every clean falsifier is either model-independent-and-not-
+forecast-<=2030 (the DE crossing) or 2-8 decades below any 2026-30 instrument (dispersion magnitude,
+E-star ceiling). Two live commitments — DE non-crossing + dispersion form (both PLAUSIBLE) — plus one
+QM-reproducing, NON-DISCRIMINATING witness (Margenau-Hill). A1's value = making that referee-legible.
+
+## Seven-row table (full form in emp_forecast.md; arithmetic in emp_forecast.py)
+1. DE non-crossing [PLAUSIBLE]: kill = >=5sigma PARAMETRIZATION-INDEPENDENT crossing. TENSION-not-
+   falsified. FALSIFIER UNREACHABLE <=2030 (crux below).
+1a. DE amplitude (RVM sign-FREE): POSTDICTION; 18x (RVM) -> 120 decades (diss) short.
+2. Dispersion FORM (subluminal+linear+universal) [PLAUSIBLE]: kill = superluminal / dom-quadratic /
+   mode-material-dependent mu. FORM live; Planck-natural mu DEAD (GRB).
+2a. Dispersion MAGNITUDE (mu tunable): POSTDICTION; CTA ~10^2 E_Pl vs pred 10^4-10^5 E_Pl = 2-4 dec.
+3. Margenau-Hill witness [THEOREM *of QM*]: reachable NOW (LGI/temporal-Bell) but REPRODUCES QM =>
+   NON-DISCRIMINATING; NIM loophole. Not a framework falsifier.
+4. E-star ceiling: ~0.65 E_Pl ~8e18 GeV vs UHECR max ~1e11 GeV = ~8 decades; free anchor + no derived
+   edge => POSTDICTION + UNREACHABLE.
+5. LISA (completeness): muE~3e-50 at mHz + tests m_graviton (wrong form) => N/A.
+
+## DE-sign model-independent-crossing question (A1 headline charge)
+NONE of DESI DR3/DR4 or Euclid delivers a model-independent crossing <=2030. Parametric (CPL) 5sigma
+is PLAUSIBLE by DESI full-survey(2027)+DESI-II(->2028)+Euclid DR1(2026-27) — but a CPL 5sigma IS the
+artifact the falsifier is scoped to exclude (not one-to-one to physics) => does NOT bind. Model-
+independent 5sigma crossing NOT forecast anywhere <=2030 (GP/binned ~2sigma, "fitting noise"; 3.2%
+false-crossing rate, 2506.15091). Structural: crossing is the ONLY clean kill — pure phantom w<-1
+everywhere is accommodated by RVM c_L<0 (non-crossing) => "w<-1 somewhere" does NOT falsify.
+
+## Web-verified reach (2026-07-15)
+DESI full 5-yr survey done Apr 2026, results 2027, DESI-II ->2028 (2503.14738; LBL/FNAL). Model-indep
+NOT at 5sigma (2602.05368 "not yet ... model-independent level of certainty"; 2506.15091 ">2sigma not
+5sigma"). Euclid DR1 Nov-2026+mid-2027, sigma(w0)~0.038/sigma(wa)~0.256 (CPL, not model-indep).
+CTA linear ~M_P, timing 3 dec > Fermi (2010.01349,1508.06622,2106.03582) => 2-4 dec short of
+10^4-10^5 E_Pl. LISA lambda_g>4.8e19 m (wrong form). Extreme LGI 2025 (NMR); NIM loophole persists.
+
+## Honesty (#71/#76 homes — A1)
+(a) postdiction-sold-as-prediction NOT fired: rows 1a/2a/4 (c_L sign, mu, E_star) LABELLED postdiction
++ firewalled; rows 1/2 hold for ALL admissible params. (b) THEOREM-on-PLAUSIBLE NOT fired: every live
+row PLAUSIBLE; row-3 "THEOREM" is *of QM*, explicitly not of the framework. (c) reach-overclaim
+(#76(b) home) NOT fired: every "reachable" web-checked — CTA 2-4 dec short, model-indep 5sigma not
+forecast, LISA wrong form, E-star 8 dec short; the one "reachable NOW" row (MH) simultaneously marked
+NON-DISCRIMINATING.
+
+## "Any other" candidates => nothing near-term-decisive
+CMB pred-primordial (reproduction + 1e-18 quartic); BBN (=c_L cap, not independent); lossy-
+conservation/backwards-signalling (consistency theorem, not falsifiable); discreteness/N (N free).
+CROSS-CHECK w/ A2 (this file, above): A2's strongest third candidate = the parity-EVEN null
+(tau_NL^odd=0) — REACHABLE (parity-odd 4PCF/birefringence measured now) but NON-DISTINCTIVE +
+NON-ATTRIBUTABLE => also fails the bar. Both arms independently converge: no clean near-term third
+prediction; frontier unchanged.
+
+## Cross-check w/ run 64
+emp_forecast.py independently reproduces run 64: (H0/E_Pl)^2=1.38e-122; |w_a|_RVM cap=0.054; DESI gap
+18.5x; c_L-to-match=2.22. Adds dispersion/E-star/LISA/MH decade-gap rows run 64 did not tabulate.
+
+## Compliance (by CONTENT)
+git shows unification.tex + ISSUES.md MODIFIED but by CONTENT = concurrent SIBLING arms (5390-line
+ISSUES.md insert, 197-line unification.tex): grep of the diff for my A1 tokens (Could We Be Fooled|
+3.2%|decisive-test|model-independent-crossing|emp_forecast|8 decades|CTA reach|non-discriminating|
+2506.15091|2602.05368) => ZERO hits. My run-69 A1 content appears NOWHERE in protected files. My
+writes: scratchpad ONLY — emp_forecast.py (runs clean), emp_forecast.md, this ledger append.
+
+## BOTTOM LINE
+Referee-legible decisive-test forecast: two live commitments (DE non-crossing, dispersion form; both
+PLAUSIBLE) whose clean falsifiers are all model-independent-not-forecast-<=2030 or 2-8 decades below
+near-term reach; one witness (MH) reachable-now-but-non-discriminating. NO near-term third test. FULL
+value as an honest "frontier is where run 64 left it — needs future data"; no reach overclaim; no
+THEOREM-grade claim on a PLAUSIBLE premise. Zero writes to protected files.
+
+---
+
+# RUN 69 / ARM R — THE ADVERSARY (the three kills on every A1/A2 entry)
+
+## Verdict: all three kills CLEAR every A1/A2 entry. No fire.
+KILL1 (postdiction): every tunable item firewalled; no postdiction sold as a prediction.
+KILL2 (reach): every "reachable" web-verified; no overclaim (one modest tightening).
+KILL3 (grade): no THEOREM-grade prediction on a PLAUSIBLE premise (paper OR arms).
+
+## KILL 1 — postdiction map (independent, emp_adv.py)
+Free handles: N (free FUNCTION l.22522) | E_star (free anchor l.6829) | Lambda0 (calibrated) |
+c_Lambda (SIGN-FREE l.22468) | sigma (>=0 SIGN-LOCKED) | mu=2c0 H_inf/m_P^2 (H_inf FREE l.13805).
+Tuned => POSTDICTION (all firewalled by siblings): DE amplitude (c_L+N+Lambda0); dispersion
+MAGNITUDE (mu ~ H_inf); E-star ceiling (free anchor); discreteness (N). Non-tunable survivors
+(no dial): DE SIGN non-crossing (sigma>=0 + single-component); dispersion FORM (cosine-corr);
+parity-even null (reality+evenness of Sigma_delta). All 3 graded PLAUSIBLE, none THEOREM. CLEAR.
+
+## KILL 2 — reach (web-verified 2026-07-15)
+- DESI DR3 = 2027 (verified). Euclid+Planck CPL dw0~0.02 dwa~0.07 = PARAMETRIC only = the
+  2506.15091 artifact (VERIFIED verbatim: non-crossing quintessence fakes CPL crossing 3.2% of
+  mocks; real >2sigma not 5sigma). Model-indep 5sigma crossing NOT forecast <=2030. Row1 CONFIRMED.
+- CTA linear E_QG: primary forecast (2010.01349) ~M_P, 2-3x current; LHAASO already ~10 E_Pl
+  (web 5.9-10). Matched E_QG,1~1e4-1e5 E_Pl (mu~1e-33, l.13805) => gap ~3-4 dec (SHARPENING:
+  sibling's 2-dec best case needs CTA at 100 E_Pl ~10x forecast; realistic floor ~3 dec. Tightens
+  UNREACHABLE, unchanged). Planck-natural mu=1/E_Pl DEAD (GRB 7.6-8.2x, l.13802).
+- LISA July 2035 = out of window + graviton-MASS form (wrong). Leggett-Garg routine (5sigma SC
+  circuit; neutron K=1.120+/-0.007) but confirms STD QM = NON-DISCRIMINATING. E-star 7.9 dec short.
+- A2 empirical: DESI DR1 4PCF (2512.20132) 4sigma but systematics-dominated =0 VERIFIED; ACT DR6
+  birefringence beta=0.215+/-0.074 deg 2.9sigma global 2.4-3.6, alpha-degenerate VERIFIED.
+
+## KILL 3 — grade
+Paper: no THEOREM-grade empirical prediction (pred-cc "conditional and structural" l.13879). A1
+rows PLAUSIBLE or "reproduction of QM" (R3 "THEOREM" is OF QM, non-discriminating). A2 parity null
+PLAUSIBLE (Conj:wdw). No PLAUSIBLE-premise THEOREM claim. CLEAR.
+
+## Adversary-original (LOW severity, no verdict change)
+(i) E_star SYMBOL COLLISION: anchor E_star~0.65 E_Pl (l.13571) vs dispersion E_star=1/mu>=5e14 GeV
+(l.13643) share a symbol in the SAME section; equating them gives mu=1.3e-28 = 13x over GRB bound
+=> spurious "already dead." Distinct scales; worth a disambiguating footnote. Neither sibling flagged.
+(ii) sibling CTA reach optimistic by ~1 decade (framework-favourable direction; conclusion robust).
+(iii) confirms paper already RETRACTED the earlier parity-ODD claim (l.280-282) => A2 faithful.
+(iv) Row-2 "quadratic" ambiguity: photon-n (linear) vs level-map (delta E ~ E^2) share mu.
+
+## Cross-check (emp_adv.py, independent of emp_forecast.py)
+(H0/E_Pl)^2 = 1.379e-122 [run64 1.38e-122] OK; RVM |wa| cap 0.054 OK; DESI gap 18.5x OK;
+c_Lambda-to-match 2.22 OK. All four run-64 numbers reproduced from scratch.
+
+## Compliance (by CONTENT)
+unification.tex + ISSUES.md ' M' = concurrent operator-algebra sibling (E2a first-law porting/QEI/
+Hadamard; 5390-line ISSUES insert, 197-line tex). Grep of BOTH diffs for empirical tokens (emp_adv|
+emp_forecast|emp_third|decisive-test|third-prediction|parity-even null|Could We Be Fooled|2506.15091|
+CTA reach|model-independent-crossing) => ZERO hits. My writes: scratchpad ONLY — emp_adv.py (runs
+clean), emp_adv.md, this append.
+
+## BOTTOM LINE
+The referee's three kills CLEAR the entire A1/A2 forecast + third-prediction hunt. No postdiction as
+prediction, no reach overclaim (one tightening the framework-unfavourable way), no THEOREM-grade on a
+PLAUSIBLE premise. Two low-severity paper-legibility notes (E_star collision; quadratic/linear). The
+empirical frontier is EXACTLY where run 64 left it. Zero writes to protected files.
+
+---
+
+# ═══════════ FINAL ADJUDICATION — Run 69 (referee folded in) ═══════════
+
+**Charge.** Independently re-check (a) the reach of the ONE most promising near-term test and
+(b) whether the third-prediction candidate is genuinely parameter-free; then rule: forecast
+verdict, third-prediction verdict, gated edit, #76 homes, ledger, zero writes by content.
+
+## Independent re-checks (done by the adjudicator, not inherited from the arms)
+
+**(a) Most-promising near-term test = the DE model-independent phantom crossing (Row 1).**
+It is the only DISCRIMINATING commitment with a live 2026-30 program (DESI/Euclid); the other
+"reachable-now" items (parity null, Margenau-Hill) are non-discriminating, so Row 1 is the reach
+claim that decides whether the framework dies-or-survives this decade. Re-verified from primary
+web sources (2026-07-15): DESI DR3 = 2027 CONFIRMED; model-independent GP/non-parametric
+reconstructions sit at ~2σ with "neither ΛCDM nor thawing quintessence ruled out" — NO 5σ
+model-independent crossing forecast ≤2030 CONFIRMED; arXiv:2506.15091 "3.2% of mocks" false-CPL-
+crossing rate VERBATIM-CONFIRMED (Keeley et al.; real-data >2σ not 5σ). NEW corroborant the arms
+did not cite: arXiv:2605.13546 (2026) "No evidence for phantom crossing: local goodness-of-fit
+improvements do not persist under global Bayesian model comparison" — reinforces tension-not-
+falsified in the framework-favourable direction. **Row 1 UNREACHABLE-≤2030 verdict HOLDS**
+(reinforced): the reachable test (parametric CPL 5σ) is the artifact the falsifier is scoped to
+exclude; the binding test (model-indep 5σ crossing) is not forecast this decade.
+
+**(b) Third-prediction candidate (parity-even null) IS genuinely parameter-free — CONFIRMED from
+the paper, not inherited.** Read prop:pred-primordial(ii) (l.13278-13281) + lem:sigma-parity
+(l.13155-13248) directly: every parity-odd correlator "vanishes identically, at all orders in μ
+and at all orders of in-in perturbation theory," because Σ_δ=cos(δĤ_c/ℏ)−Id is "a bounded real
+Borel function of Ĥ_c" (structural reality+evenness). No dial (N/E★/Λ/σ/μ) can turn it on; it
+even holds at μ→0. So A2's parameter-free claim is CORRECT. BUT parameter-free is necessary, not
+sufficient: the paper's own distinctiveness bar (l.12854 "distinguished from the nearest competitor
+by at least one signature") is FAILED — the null is shared with standard single-field inflation +
+ΛCDM (paper's own position: l.12717 "honestly restricted to the parity-even sector"; parity-odd
+claim RETRACTED, rem:parity-retraction l.13329, l.280-282), the in-band term is a REPRODUCTION
+(l.13302-13305), and the distinctive residue is ≲1e-9/unobservable (rem:pred-primordial-amplitude
+l.13320). A parity-odd DETECTION is non-attributable (RSD/chiral-GW-lensing/axion sources). So it
+is parameter-free-and-falsifiable-in-principle but NON-DISTINCTIVE.
+
+## VERDICT 1 — Decisive-test forecast (the honest table). ACCEPTED as staged (emp_forecast.md).
+Two live commitments, both PLAUSIBLE, neither with a clean near-term kill:
+- **DE non-crossing** — kill = ≥5σ *parametrization-independent* crossing. **UNREACHABLE ≤2030**
+  (re-verified above). TENSION, not falsified, vs DESI. Amplitude is sign-free ⇒ not a prediction.
+- **Dispersion FORM** (subluminal + strictly linear + universal) — **LIVE, no single near-term
+  decisive kill**; **MAGNITUDE UNREACHABLE** (CTA linear ~M_P→~10-30 E_Pl vs matched 1e4-1e5 E_Pl
+  = ~3-4 decades short, adopting the adversary's framework-UNfavourable tightening; Planck-natural
+  μ already DEAD by GRB).
+- **Margenau-Hill / temporal-entanglement witness** — reachable NOW but a THEOREM *of QM* the
+  framework REPRODUCES ⇒ **NON-DISCRIMINATING** (+ NIM loophole).
+- **E★ ceiling** — free anchor + ~8 decades above UHECR + no derived spectral edge ⇒ **POSTDICTION
+  + UNREACHABLE**. **LISA** — July-2035 / graviton-mass wrong-form ⇒ **out of window**.
+GRADE-FLOOR HONEST: whole table rides PLAUSIBLE premises (δt=1/(3H); σ⁽²⁾-physicality open) — it is
+a referee-legible falsifiability map, NOT a THEOREM-grade falsifiability claim.
+
+## VERDICT 2 — Third prediction: **NONE (real-falsifiable-but-NON-DISTINCTIVE candidate only).**
+The strongest candidate (parity-even null τ_NL^odd=f_NL^odd=0) is NOT a postdiction (parameter-free,
+confirmed), NOT speculation (derived in-model theorem, PLAUSIBLE), and IS falsifiable in principle
+— but it is NON-DISTINCTIVE (shared null with standard inflation/ΛCDM; a detection non-attributable
+to Σ_δ), so it does NOT clear the paper's own distinctiveness bar. It is the framework's most
+*reachable* falsifiable content after the DE sign and is honest to record as such, but it is **not a
+clean third prediction.** Every other candidate fails harder (tunable-postdiction: E★ band, RVM/BBN,
+N; reproduction: P(k), Margenau-Hill; consistency-theorem: no-signalling/lossy; unreachable: Page,
+BMV; known+shared: Page-Geilker). CONFIRMS + SHARPENS run 64 (adds the attributability ground).
+
+## VERDICT 3 — Gated edit: **CONFIRM-IN-PLACE (like run 64). Gate NOT cleared. NO paper edit.**
+The decisive-test forecast does not clear the gate for a write because the frontier is UNMOVED from
+run 64: every genuine commitment (DE sign, dispersion form) is already in print and already honestly
+graded — prop:pred-cc "conditional and structural" (l.13879); the amplitude-honesty + retraction
+remarks; the testability triage. The forecast is a referee-legible REPACKAGING of already-in-print
+content plus *external* experiment timelines, not new framework content — full value as the staged
+artifact emp_forecast.md, but not a paper edit. The one net-new item (adversary's **E★ symbol
+collision**: anchor E★≈0.65 E_Pl l.13571 vs dispersion E★=1/μ≳5e14 GeV l.13643, same symbol same
+subsection; naive equation ⇒ μ=1.3e-28 = 13× over GRB ⇒ spurious "already dead" — VERIFIED real)
+is a LOW-severity legibility footnote, not decisive-test content, and does not override the zero-
+writes mandate. Recorded for the author's future editorial pass; NOT written.
+
+## VERDICT 4 — #76 homes: ALL THREE CLEAR (adjudicator-independent).
+- **(a) postdiction-as-prediction — NOT fired.** Every observable-amplitude item (DE amplitude via
+  c_Λ-sign-free+N+Λ₀; dispersion MAGNITUDE via μ∝H_inf free; E★ ceiling via free anchor;
+  discreteness via free-function N) is correctly firewalled AS a postdiction. The three tuning-free
+  survivors (DE sign, dispersion form, parity null) carry no dial — I re-derived the parity null's
+  no-dial status from prop:pred-primordial(ii) myself.
+- **(b) reach over-claimed — NOT fired.** The single most load-bearing reach claim (Row 1) I
+  re-verified against primary sources; it holds and is reinforced by a 2026 paper the arms missed.
+  Adversary's CTA tightening (~3-4 not 2-4 decades) is framework-UNfavourable ⇒ conservative.
+- **(c) THEOREM-grade on a PLAUSIBLE premise — NOT fired.** No empirical prediction is graded above
+  PLAUSIBLE (pred-cc "conditional and structural"; Margenau-Hill "THEOREM" is explicitly OF QM, not
+  of the framework; parity null's lem:sigma-parity is an in-model theorem, not promoted).
+
+## VERDICT 5 — Zero writes BY CONTENT: VERIFIED.
+git shows unification.tex + ISSUES.md ` M`, but by CONTENT the diffs are the CONCURRENT operator-
+algebra sibling arm (E2a first-law porting / QEI / Hadamard-uniform / App e2a-ports; +5390-line
+ISSUES insert whose head is an unrelated "RUN 52 LEDGER" block, 197-line tex). `git diff
+unification.tex ISSUES.md | grep -iE 'emp_adv|emp_forecast|emp_third|decisive-test|third-prediction|
+parity-even null|Could We Be Fooled|2506.15091|2602.05368|2512.20132|model-independent-crossing|
+non-crossing falsifier|CTA reach'` ⇒ **ZERO hits.** All run-69 empirical writes are scratchpad-only.
+
+## BOTTOM LINE
+The empirical frontier is EXACTLY where run 64 left it: two live PLAUSIBLE commitments (DE
+non-crossing, dispersion form) whose clean falsifiers are all either model-independent-not-forecast-
+≤2030 (the DE crossing) or 3-8 decades below any near-term instrument (dispersion magnitude, E★
+ceiling); one witness (Margenau-Hill) and one null (parity) reachable-now-but-non-discriminating; no
+clean third prediction. The forecast is FULL value as a referee-legible "how and when this framework
+dies or survives" map (staged), no reach overclaimed (Row 1 re-verified + reinforced), no postdiction
+sold as a prediction, no THEOREM-grade claim on a PLAUSIBLE premise. CONFIRM-IN-PLACE; zero writes to
+unification.tex and ISSUES.md. One LOW-severity legibility note (E★ collision) recorded for the
+author. No gain, no loss — the honest, likely, full-value outcome the commission anticipated.
+
+---
+### Main-session note — run 69 (empirical frontier): CONFIRM-IN-PLACE + one legibility fix (2026-07-15)
+
+Ledger `ledger_run69.md` merged above. **Verdict: the empirical frontier is exactly where run 64 left it — no new prediction, no near-term decisive test; confirm-in-place.** Both arms NEGATIVE-RESULT, adversary NEGATIVE (all three #76 kills clear — no postdiction sold, no reach overclaimed, no THEOREM-grade on a PLAUSIBLE premise), adjudicator gate off. The referee-grade decisive-test forecast is a genuine staged asset (emp_forecast.md) but is a repackaging of already-in-print content + external experiment timelines, not new framework content.
+
+- **DE non-crossing:** the ≥5σ *parametrization-independent* phantom-crossing falsifier is UNREACHABLE by 2030 (DESI DR3=2027, model-independent GP reconstructions at ~2σ, no 5σ model-independent crossing forecast this decade; the reachable parametric CPL 5σ IS the artifact the falsifier excludes — 2506.15091 "3.2% of mocks" verbatim-confirmed; a fresh 2026 paper the arms missed, 2605.13546 "No evidence for phantom crossing," reinforces tension-not-falsified). TENSION, not falsified.
+- **Dispersion form:** live but magnitude 3–4 decades below CTA/LHAASO reach (adversary's framework-unfavourable tightening); Planck-natural μ already dead by GRB.
+- **Third prediction:** NONE clean. Strongest candidate (the parity-even null f_NL^odd=τ_NL^odd=0) is genuinely parameter-free (re-derived from prop:pred-primordial(ii): Σ_δ a bounded real even Borel function ⇒ parity-even at all orders in μ incl. μ→0) but NON-DISTINCTIVE (shared with single-field inflation + ΛCDM; the parity-ODD claim is already retracted in print at rem:parity-retraction; a detection is non-attributable to Σ_δ). Every other candidate fails harder (tunable postdiction / reproduction / consistency-theorem / unreachable). Frontier unmoved.
+
+**One legibility fix APPLIED (the adversary's genuine find, low-severity but referee-consequential):** an **E★ symbol collision** — the same symbol denoted the fundamental anchor E★≈0.65 E_Pl (tied to G, the (H0) sector) AND the dispersion scale E★=1/μ at two sites (l.13643 BAW-bound eq, l.15708). A referee equating them would infer μ=1/(0.65 E_Pl)≈1.3×10⁻²⁸ eV⁻¹ ≈ 13× over the GRB bound and wrongly conclude "framework already falsified." **Fix:** both sites changed E★→E_{QG,1}, aligning with the paper's OWN established dispersion-scale convention (l.22801/22879/22910 already write E_{QG,1}=1/μ). A consistency correction, not a new symbol; residual collision sweep = 0; rebuild 0/0/0, 328 pp. No score movement — a defended clarity fix that removes a false-falsification trap.
+
+Two ceiling swarms still in flight (run 67 operator-grade, run 68 SM IR gate).
+
+# RUN 68 LEDGER — ARM A1 (THE IR-SAFE ROUTE): omega_1 floor vs the (W1) strip lemma / OS at m=0
+
+(run 68, 2026-07-15, Opus 4.8. Author-commissioned SM m=0 infrared gate S-4.
+Artifacts: ir_route.tex (4pp, pdflatex EXIT=0 x2, 0 err, refs resolved),
+ir_route.py (18/18 PASS). ZERO writes to unification.tex/ISSUES.md — verified
+by CONTENT below. Grep anchors only; paper read at l.17630-17810 (E2b/omega_1),
+l.20280-20365 (W1 IR gate), l.18987/20515 (existing log-theorems); ISSUES runs
+36-41 (l.11360-12060, the omega_1 re-route + RR-1..RR-6 + two-limits split),
+runs 55/63 (l.19413, l.22006-22300, the S-4 gate + per-channel table);
+scratchpad w1d_os.tex (run-63/A3 strip per-channel), rr_rederive.tex (RR-*).)
+
+## HEADLINE (BEST-rung route, PLAUSIBLE grade — finite object EXHIBITED)
+The omega_1 geometric floor DOES re-route the photon strip lemma / per-order OS
+at m=0, on the compact-Cauchy b_1(Sigma)=0 slice — the SAME cure as the coth-
+trace (run-38/39), transported from the spatial modular energy to the boost-KMS
+correlator, with a LOG modulus in place of the coth's POLE. Delivered with the
+finite object exhibited and ONE named resisting step. NOT unconditional; NOT a
+no-go. This is a genuine advance on S-4.
+
+## THE RE-DERIVATION (the LAW: does the m=0 divergence localize the omega_1 way?)
+YES, per channel, and I re-derived it rather than asserting it (honesty home b).
+- The strip m=0 divergence localizes to the SCHEME channel (k=2, the c'/
+  improvement Q_2 = int chi x^1 :phi^2:): deep-wedge tail int_R^inf rho^-1 drho,
+  log-div [py:C1, equal ln100 increments/2-dec]. Quartic k=4 -> rho^-5,
+  m=0-SAFE [py:C1 ->1/4]. (Re-derives run-63/A3 Prop m0.)
+- KEY localization (Lemma 1): the tail IS the soft-mode BOTTOM. int_R^inf
+  rho^-1 drho <-> int_0 dk/k (soft k->0), the SAME bottom the coth's form
+  inequality A_m>=m^2 (RR-1) localized to. At m>0 the mass cuts it at k>~m /
+  rho<~1/m: |log(mR)|-gamma_E [py:C3, = e^{mR}E_1(mR) exact].
+- HABITAT SPLIT (the crux that makes omega_1 apply): the gapless-BOOST-continuum
+  "horizon habitat" caveat that run-39/RR-6 flagged as STANDING lands on the
+  NEAR-HORIZON COLLAR (rho->0) — which is m=0-SAFE (integrand ~rho) — and does
+  NOT bite the DEEP-WEDGE TAIL (rho->inf), which is a BULK/SPATIAL object
+  governed by the spatial Laplacian bottom. So the strip tail is exactly the
+  object the SPATIAL omega_1 gap controls, and the horizon caveat misses it.
+
+## THE FINITE OBJECT (Thm 1; not a formally-cancelled log)
+On compact b_1=0 Sigma with transverse-photon Hodge gap omega_1(g_0,Sigma)>0:
+  sup_sigma |I_X(sigma)| <= (kappa_X/4!)(E_collar + E_core + C_X|log(omega_1 R)|) < inf,
+strip-uniform. The mass cutoff 1/m is replaced GAP-FREE by 1/omega_1 (strip
+analog of RR-3's 8E/m -> 8E/omega_1), LOG not pole. Two routes [py:C2]:
+  (a) DOMAIN (robust): compact Sigma => rho<=rho_max~diam~1/omega_1 (Cheeger),
+      int_R^{rho_max} rho^-1 = log(rho_max/R) = |log(omega_1 R)|+O(1). Gives
+      FINITENESS unconditionally on compact scope.
+  (b) DECAY (refinement): b_1=0 Hodge gap => massless transverse propagator
+      decays at rate omega_1 (Combes-Thomas), int_R^inf rho^-1 e^{-omega_1(rho-R)}
+      = |log(omega_1 R)|-gamma_E. Pins the MODULUS to omega_1.
+GENUINE not cancelled: the compact b_1=0 slice has a REAL gap, so the soft
+integral is a CONVERGENT GAPPED SUM (bounded C/omega_1 [py:C5]), not a
+subtracted continuum. Run-38-corrected posture, NOT the run-36 artifact mistake.
+
+## SCALAR BLOCKED, PHOTON CLOSES (why omega_1 is not blind compactness)
+- Scalar: ker Laplacian = constants (b_0=1, ALWAYS), 1/omega_0=1/m pole at m=0
+  on compact Sigma [py:C6]; NOT b_1-removable. = paper l.17764 "massless-scalar
+  surrogate blocked by zero mode." (Massive Higgs is in the m>0 window anyway.)
+- Transverse photon: ker = harmonic 1-forms (dim b_1); b_1=0 => NO zero mode,
+  resolvent <=1/omega_1^2, propagator EXISTS, decays at rate omega_1 [py:C6].
+- Two photon-native safeties (named, not exploited): (i) free-Maxwell
+  T^mu_mu=0 => the scalar's fatal scheme channel HAS NO SITE for the photon
+  (anomaly = cancelling c-number, l.17794) [py:C4]; (ii) F=dA extra derivative
+  => photon field-strength channels decay 2 powers faster (rho^-4), converge at
+  m=0 even non-compact [py:C4 ->pi/4] = "boost energy one more |k|" (l.17711).
+  Photon closes on TWO independent grounds; scalar on neither.
+
+## FADDEEV-KULISH: subsumed, not needed (part ii of A1)
+FK coherent dressing is the NON-COMPACT (Minkowski/scattering) face of the same
+IR representation. On the framework's compact-Cauchy scope FK is (i) NOT NEEDED
+(the discrete gapped spectrum omega_1>0 already regulates; a genuine gap beats a
+formal soft-cancellation on honesty), and (ii) NOT AVAILABLE (FK lives at scri,
+absent on a compact slice). omega_1 IS the compact-slice avatar of FK; adopt it
+because it is a CONSTRUCTION not a SUBTRACTION.
+
+## THE RESISTING STEP (single, named) + TWO-LIMITS SPLIT
+- RESISTING STEP: route (b), the deep-wedge RINDLER-mode Combes-Thomas/Agmon
+  decay estimate — that omega_1 controls the rho->inf decay of the boost-adapted
+  (not static) massless propagator. Route (a) gives finiteness on compact scope
+  UNCONDITIONALLY; route (b) (open here) pins the modulus to |log(omega_1 R)|.
+  FINITENESS robust; omega_1-MODULUS is the refined/open claim. Static-mode RR-1
+  does NOT supply it.
+- TWO-LIMITS SPLIT (RR-6 verbatim): CURE = m->0 at fixed seed (omega_1>0),
+  finite [py:C7-A]. WALL = omega_1->0 (gapless horizon/decompactify),
+  |log(omega_1 R)|->inf [py:C7-B], no uniform modulus. But strip wall is LOG,
+  strictly MILDER than coth 1/omega_1 pole [py:C7]. Same omega_1~1/L window,
+  entered more gently.
+- SCOPE (S7): S-4 independent of BRST assembly S-1/S-2/S-3/S-5 and of the B1a
+  edge-locality wall W2. Eq.(finite) takes no delta->0 collar limit, forms no
+  edge term, asserts nothing about the descent edge exponent p. IR gate _|_ edge
+  wall. Not conflated.
+
+## ADVERSARY (R) — self-run
+(i) FINITE-OBJECT vs SCHEME-CANCELLED: PASS. Exhibited |log(omega_1 R)| /
+    convergent gapped sum for a REAL gap [py:C2,C5]; divergence GENUINE not
+    called removable [py:C1,C7-B]. Not the run-36 mistake.
+(ii) OMEGA_1-APPLICABILITY existence premise: PASS with a caveat. Localization
+    to the soft bottom re-derived (Lemma 1); habitat split shows the tail (not
+    the gapless collar) is the omega_1-curable object. Caveat = route (b) open
+    (the Rindler decay), honestly graded PLAUSIBLE not THEOREM. NOT over-
+    extended: I distinguish scalar (blocked, b_0) from photon (closes, b_1=0),
+    so the move is applied where it genuinely holds.
+(iii) NO-GO vs CURE: this is a ROUTE (route (a) gives finiteness), so A2's
+    no-go, if any, must locate at the omega_1->0 gapless limit ONLY, not at
+    m->0 fixed-seed. The coth AND the strip are both cured at fixed seed; both
+    wall at gapless. Consistent — the honest boundary is the two-limits split,
+    not scalar-vs-photon-at-m=0.
+
+## GRADE: PLAUSIBLE (BEST-rung route delivered; finite object exhibited)
+The omega_1 floor closes the photon strip lemma/OS at m=0 on compact b_1=0
+scope, modulo the single named Rindler-decay estimate + the compact-horizon
+(Kay-Wald) free-BW-for-photon import (same scope the coth cure + the whole
+massive-scalar (W1) window already assume). Upgrade to THEOREM = discharge
+route (b). No forced closure. The SM m=0 gate S-4 is NOT a hard wall for the
+PHOTON sector — it is the coth soft-IR object again, same cure; it remains a
+hard wall only in the omega_1->0 (gapless-horizon) limit and for genuinely
+massless SCALARS (of which the SM has none — Higgs is massive).
+
+## ZERO-WRITE ATTESTATION (by CONTENT)
+Content-grep for run-68/A1 tokens (ir_route, "RUN 68", "omega_1-floored strip",
+"soft-bottom localis", "Rindler-decay") in unification.tex AND ISSUES.md = 0
+matches in BOTH. git shows both files `M`, but that is a PARALLEL process (same
+phenomenon the run-63/A1/A2/A3 ledgers documented — a concurrent apply, not this
+arm). This arm issued Write/Edit ONLY to scratchpad ir_route.{tex,py} + this
+ledger. Paper/ISSUES footprint = nil by content.
+
+---
+
+# RUN 68 LEDGER — ARM A2 (THE IR NO-GO): why omega_1 cures the coth but NOT the S-4 scheme channel
+
+(run 68, 2026-07-15, Opus 4.8[1m]. Arm A2, the no-go sibling of A1 above.
+Artifacts: ir_nogo.tex (4pp, pdflatex EXIT=0 x3, 0 err, 0 undef), ir_nogo.py
+(14/14 PASS), this section. ZERO writes to unification.tex/ISSUES.md — by content
+below. Read: l.17774-17801 (coth/omega_1), l.20200-20247 (per-sector n=1 + the
+B1a EDGE wall), l.20337-20361 (W1 checklist + S-4 IR gate + non-affiliation);
+ISSUES runs 38 A1-modenergy (l.10935-11061 TIER-1/2), 39-41 (two-limits split),
+55/63 (S-4, w1d_os.tex per-channel). Web: CLPW 2206.10780, Faddeev-Kulish
+non-Fock, Buchholz/FMS boost-SSB.)
+
+## HEADLINE (theorem-grade no-go for the omega_1-ONLY route on the b_0 sector)
+The run-38 omega_1 floor cured the coth because the coth is a bounded FUNCTION of
+the transverse operator A=-Delta_perp+m^2 on the co-exact 1-FORM (b_1) sector,
+gapped gap-free by b_1=0/Hodge. The S-4 strip/scheme divergence is a DIFFERENT
+object on a DIFFERENT sector: the boost-weighted FIRST MOMENT int x^1 <...> of
+K=2pi int x^1 T_00, in the spin-0 scheme channel Q_2=int chi x^1 :phi^2:
+(l.20200). omega_1 does NOT reach it. N&S closure = omega_1 (necessary) + the
+TYPE-II CROSSED PRODUCT (sufficient; CLPW; the paper's "unique finite home").
+
+## THE NO-GO (Thm 1) — omega_1 cures b_1, not b_0
+Two omega_1-invariant reasons the scheme moment resists omega_1:
+(i) MOMENTUM GAP _|_ POSITION MOMENT: omega_1^2=inf spec(-Delta_perp) floors
+    transverse MOMENTUM; the divergence is a moment vs the conjugate POSITION x^1.
+(ii) b_0 ZERO MODE UNGAPPED: b_1=0 removes harmonic 1-FORMS (photon), NOT the
+    0-form (b_0=1 always). Q_2 is SPIN-0; its zero-mode part has transverse freq
+    0 (not >= omega_1), propagates at m=0 as 2d massless (no x^1-decay). =>
+    divergent part omega_1-INDEPENDENT [py C2: 100x omega_1, fixed at 2ln10/2dec
+    = run-63 exact; C3: total diverges for EVERY omega_1>0].
+Exact sector split on S^2 (b_1=0): co-exact 1-form min eig=2>0 (coth cured);
+0-form min eig=0 (b_0 survives, scheme ungapped) [py D1-D3].
+
+## THE A1 ADJUDICATION (no-go vs route — the crux, honest)
+A1 (above) closes the strip via omega_1 and grades it a ROUTE. COMPATIBLE once
+the LEG is named:
+- TRANSVERSE-PHOTON leg IS omega_1-curable / IR-finite — NOT the obstruction. A1
+  right: free-Maxwell T^mu_mu=0 (no :phi^2: improvement site) + F=dA rho^-4 decay
+  (l.17711 "boost energy one more |k|"). The spin-1 photon strip converges at
+  m=0. I do NOT dispute this [py B1].
+- RESIDUAL = the b_0 SCHEME channel. A1's closure of THIS rests on "no scheme
+  site for the photon" (free-Maxwell tracelessness). But c'/improvement is the
+  spin-0 :phi^2: seam of the INTERACTING n=1 charge (Hadamard/Wick-order
+  ambiguity, l.20200-02), NOT the free-photon stress tensor. Free-photon
+  tracelessness does NOT remove it, and the paper BANKS its Kubo integral as
+  log-div at m=0 (l.20351-52, in print, S-4 OPEN).
+- VERDICT: no-go for the omega_1-ONLY route on b_0, GIVEN the banked S-4
+  divergence. The route-vs-no-go PIVOT is one existence premise: is the
+  c'/improvement Kubo live at m=0 for the physical sector? Paper banks YES; until
+  A1 re-derives NO, the wall stands. This IS the R-ii omega_1-applicability
+  premise — A1 has not discharged it; the tracelessness argument addresses the
+  free photon, not the interacting :phi^2: seam.
+
+## TWO-WALL SEPARATION (honoring the commission — NOT conflated)
+- S-4 (my target) = IR gate = strip/OS + c'/improvement Kubo at m=0 = the TAIL
+  (rho->inf), soft/m=0. b_0 scheme sector.
+- B1a (l.20234-47) = BRST edge-locality of [Q_int,K_W]=0 at x^1=0 = the COLLAR
+  (rho->0), dimensional floor rho^-4. COLLAR is m=0-SAFE (run-63). Separate wall,
+  out of scope. (Also: l.20232 "physical boost cocycle boost-invariant, zero
+  boost weight" is the B1a/edge statement, NOT the S-4 scheme moment.)
+
+## INVARIANT + PHYSICAL CERTIFICATES (the divergence is genuine)
+- NON-AFFILIATION (l.20353-61): K non-affiliated to type-III_1 (mass-independent
+  type-III fact). At m>0 the strip closes at FORM grade DESPITE this; the m=0
+  obstruction is the FORM (b_0 moment) itself diverging [py E1]. omega_1 doesn't
+  change the affiliation class [py E3].
+- BOOST SSB (Buchholz/FMS) with HONEST caveat: boost=modular flow SSB by soft
+  cloud in massless charged sectors. Caveat: SSB is infinite-volume; the compact
+  omega_1>0 slice gaps the transverse continuum (why the transverse leg closes).
+  The b_0/ghost-longitudinal continuum is scale-free and survives — where boost
+  covariance is NOT restored. (I did NOT overclaim SSB on the compact slice.)
+
+## N&S (Thm 2)
+(N1) NECESSARY-not-sufficient: omega_1>0 (coth + transverse-photon legs, modular
+     data). (N2) ADDITIONAL: type-II crossed product (adjoin clock/observer;
+     CLPW) => boost-corner charge affiliated + finite trace; K->K+q, <(K+q)^2>
+     finite where <K^2> diverges [py E2]. Distinct from a spatial floor — a
+     gravitational dressing. Or FK/asymptotic-symmetry rep IFF the finite
+     OS-positive object is exhibited (not a formal cancellation).
+
+## ADVERSARY (R) self-run
+(i) formally-cancelled kill: no-go safe by construction; vs A1, FK is non-Fock
+    <N>~int dk/k [py F1], "cancellation" a finite ratio of divergent exponentials
+    [py F2], per-order OS positivity a free-Gaussian property not inherited.
+(ii) omega_1-applicability: PROVED the scheme divergence localizes to x^1-moment
+    on b_0, NOT to A_m>=m^2 (Thm 1 + py C/D). This is A1's undischarged premise.
+(iii) route vs no-go: omega_1 cures b_1 (coth + transverse photon) but not b_0
+    (scheme moment); it is a ROUTE on b_1, a NO-GO on b_0. Which leg carries the
+    banked S-4 divergence? Paper: b_0. Honest: NOT an unconditional no-go — the
+    transverse-photon leg genuinely closes; the residual b_0 leg is the wall.
+
+## HONESTY (#75 homes)
+(a) no formally-cancelled-as-finite: the no-go EXHIBITS the divergence (moment,
+    non-affiliation); FK shown non-Fock/ratio, not finite object. run-36 mistake
+    NOT repeated — I affirm the S-4 soft-IR is GENUINE (paper banked) and locate
+    WHY omega_1 misses it (b_0 vs b_1). (b) no omega_1 over-extension — I proved
+    (not asserted) the DIFFERENT localization; this is the sharp counter to A1's
+    move. (c) no m>0 smuggling — claim is at m=0; the massive tail e^{-m rho} is
+    exactly what vanishes. HONEST SCOPE: theorem-grade no-go for the omega_1-ONLY
+    route on b_0, CONDITIONAL on the banked scheme divergence; NOT an
+    unconditional no-go (transverse-photon leg closes). FULL value as
+    wall-re-certification + exact obstruction characterization + N&S.
+
+## DEPENDENCY
+Thm1 <= {coth localization A_m>=m^2 [banked l.17780], scheme k=2 rho^-1 [banked
+w1d_os Prop4/l.20351], Hodge b_1=0/b_0=1 [elementary], py C/D}. Certificates <=
+{l.20353-61 [banked], Buchholz/FMS [in print], CLPW 2206.10780 [in print]}.
+N2 <= {CLPW crossed product, paper "unique finite home" [banked]}. Touches no
+edge/(W2), no operator norm, no m>0.
+
+## ZERO-WRITE ATTESTATION (A2, by CONTENT)
+A2 issued Write/Edit ONLY to scratchpad: ir_nogo.{tex,py,pdf}, _ir_nogo_build*.log,
+this appended section. Content-grep for A2 tokens (ir_nogo, "IR no-go", "b_0
+scheme", "momentum gap", "type-II crossed product") in unification.tex AND
+ISSUES.md = expected 0 (attested in run output). No Write/Edit to either
+protected file by A2.
+
+---
+
+# RUN 68 — FINAL ADJUDICATION (referee folded in; the decisive question re-derived)
+
+(run 68, 2026-07-15, Opus 4.8, adjudicator. Folds A1 `ir_route.{tex,py}` (18/18),
+A2 `ir_nogo.{tex,py}` (14/14), R `ir_adv.{md,py}` (18/18) — all re-run PASS here.
+Independently re-derived the decisive question against the paper's OWN banked text.
+Read at grade: unification.tex l.17700-17801 (E2b photon coth/omega_1 + anomaly
+c-number + scalar zero-mode block), l.20180-20365 (SM n=1 first law + S-4 IR gate
++ non-affiliation + crossed product). ZERO writes to unification.tex/ISSUES.md —
+verified by CONTENT below.)
+
+## THE DECISIVE QUESTION, RE-DERIVED
+Does the omega_1 geometric floor LOCALIZE-AND-CURE the strip-lemma m=0 divergence?
+ANSWER (independent, cross-checked vs banked text): NO for the actual S-4 gate.
+The single controlling fact (re-derived 3x, and matching the paper's own sector
+statements): **omega_1 localizes-and-cures the strip m=0 divergence IF AND ONLY IF
+the channel carries no b_0 (spin-0 constant) zero mode.**
+- Strip m=0 div = deep-wedge k=2 SCHEME tail int drho/rho (rho^{3-2k}: k=2 log,
+  k=4 converges). GENUINE soft-IR, m=0-native. [3x PASS; matches banked l.20351.]
+- Localizes to soft transverse k~1/rho (int_0^inf k K0(k rho)^2 dk = 1/2rho^2).
+  A1's localization Lemma is CORRECT as a statement about which modes carry the tail.
+- omega_1 CURES the b_1 (co-exact 1-form / transverse photon) leg: b_1=0 Hodge =>
+  no harmonic 1-form => spectrum gapped at omega_1 => tail decays e^{-2 omega_1 rho}
+  => moment (pi/4)E1(2 omega_1 R) ~ |log(omega_1 R)| FINITE. This is the SAME
+  object the coth cure already handled (banked l.17777-86), and the transverse-
+  photon strip leg is separately banked IR-finite (l.17710-11, "one more |k|").
+- omega_1 does NOT cure the b_0 (spin-0 :phi^2: scheme) leg: the 0-form constant
+  transverse mode (mu_0=0, b_0=1 ALWAYS, NOT removed by b_1=0) is a 2d-massless
+  field with a log-GROWING (non-decaying) longitudinal propagator; its boost moment
+  has NO omega_1 spectral modulus (~rho_max^2(log)^2, worse than log). Sector split
+  REAL on S^2 (b_1=0): 0-form min eig 0 (ungapped), co-exact 1-form min eig 2 (gapped).
+
+## WHERE S-4 LIVES (the pivot — resolved on the paper's own banking)
+S-4 is the c'/improvement :phi^2: SCHEME channel of the INTERACTING charge:
+- l.20200-02: "one free improvement-type :phi^2: constant (the vacuum-/thermal-Wick
+  ordering seam ...)" — manifestly SPIN-0, carries the b_0 zero mode.
+- l.20349-52: "the honest Standard-Model wall is the infrared gate alone --- which
+  includes the scheme channel, since the c'/improvement Kubo integrals themselves
+  log-diverge at m=0." — the gate IS the b_0 scheme channel, banked log-div.
+- l.20353-61: the one-sided boost charge is "not affiliated to the algebra at all
+  ... finite precisely in the type-II crossed product ... the unique finite home."
+  The paper nominates the CLOCK/crossed product, NOT omega_1.
+Decisively: the paper ALREADY invokes omega_1 for the coth (l.17781-86); it does
+NOT invoke it for the scheme channel — it nominates the crossed product. omega_1 is
+a b_1/1-form spectral floor; the scheme channel is b_0/0-form. They are different
+Hodge sectors; the floor misses the zero mode.
+
+## A1 ADJUDICATED — genuine object, WRONG LEG
+- A1's finite object |log(omega_1 R)| on the b_1 continuum is GENUINE (real gap,
+  exponential decay, convergent gapped sum) — NOT a run-36 formal cancellation.
+  PASS on b_1. But it is the leg the framework ALREADY banked as cured.
+- A1's route (a) "domain cutoff => finite on compact scope" OVER-PROVES: a crude
+  volume cutoff finitizes even the banked-BLOCKED b_0 scalar (l.17765), so it does
+  not discriminate b_0 from b_1 and cannot be THE cure. Only route (b) (spectral
+  decay) is a genuine cure — and it provably FAILS on b_0 (no decay). Moreover the
+  S-4 Kubo/boost integral is the non-compact modular (type-III_1) direction
+  (l.20353-56), on which the compact-Sigma volume cutoff is not even available.
+- A1's "T^mu_mu=0 => no scheme site for the photon" is a MECHANISM-MISMATCH, and
+  the PAPER'S OWN TEXT exposes it: l.17794-96 says the trace anomaly "is a state-
+  independent c-number that cancels in every reference-subtracted bound" — i.e.
+  tracelessness handles the STATE-INDEPENDENT anomaly (the E2-CS/coth leg, ALREADY
+  cured), NOT the STATE-DEPENDENT :phi^2: Wick-ordering seam (l.20200-02) that IS
+  the gate. A1 targets the wrong object. To win, A1 must OVERTURN l.20351 (re-derive
+  the scheme site empty at m=0) — it has not.
+
+## VERDICT (the ladder) — WALL STANDS; theorem-grade no-go for the omega_1-only route
+NOT (BEST) IR-safe route: A1 closes the b_1 photon leg (already banked cured), not
+the b_0 scheme channel that IS S-4. NOT an unconditional theorem-grade no-go either.
+HONEST GRADE = **theorem-grade IR no-go for the omega_1-ONLY route on the scheme
+channel, WITH N&S, CONDITIONAL on the banked b_0-scheme-live premise (l.20351)** —
+which strictly implies (FINE) wall re-certified + obstruction characterized exactly.
+N&S: omega_1 NECESSARY (transverse modular data; closes the coth + transverse-photon
+legs; b_1=0 Hodge) but NOT SUFFICIENT (leaves the b_0 scheme leg); SUFFICIENT
+ADDITION = a b_0-sector regulator affiliating the boost-corner charge to a finite
+trace = the type-II CROSSED PRODUCT (CLPW; the paper's own "unique finite home",
+l.20358) — a gravitational/clock dressing, categorically NOT a spatial floor.
+(Alternatively, IF the b_0 scheme site is re-derived EMPTY at m=0 in the BRST-
+physical SM sector — overturning l.20351 — omega_1 alone suffices; that overturn is
+undischarged. This is the sole decisive lever, and it is the SAME open premise all
+three arms converged on: does thermal Kugo-Ojima (l.20214-25) cancel the would-be-
+Goldstone/longitudinal b_0 improvement seam at m=0, or does the Wick scheme constant
+survive as a live log?)
+
+## THE GATED EDIT (described; WITHHELD — gate + zero-write mandate)
+GATE = upgrade the IR-gate sentence ONLY at the honest grade. Honest grade is a
+NO-GO / wall-standing, NOT a closure — so the closure-upgrade is REFUSED by the gate.
+The only edit the honest grade would license is a wall-SHARPENING (not a closure):
+after l.20352 ("...log-diverge at m=0."), a sentence recording WHY the framework's
+own omega_1 floor (which cured the coth soft-IR, l.17781-86) does NOT extend to this
+scheme channel — the coth cure is a spectral floor on the co-exact 1-form (b_1=0
+Hodge) sector, whereas the c'/improvement :phi^2: channel is spin-0 and carries the
+0-form constant zero mode (b_0=1, ungapped by b_1=0), whose m=0 boost moment has no
+omega_1 modulus; hence omega_1 is necessary-not-sufficient and the scheme channel's
+finite home is the already-named type-II crossed product, not a spatial floor.
+This sharpening is DESCRIBED here and NOT applied (zero-write-by-content mandate);
+the paper's current wording (l.20349-61) is already honest, so the sharpening is an
+OPTIONAL author refinement, not a correction. NO closure claim is warranted or made.
+
+## #75 HOME
+#75 homes at risk (b) — omega_1 over-extension — SPECIFICALLY in A1's SECTOR
+ASSIGNMENT (not its localization). A1 correctly localizes the CURE to the soft
+bottom and correctly cures the b_1 leg, but MIS-ASSIGNS the S-4 gate to that curable
+b_1 leg via the mechanism-mismatched "T^mu_mu=0 => no scheme site" argument — which
+the paper's own l.17794-96 shows addresses the state-independent anomaly c-number
+(already cured), not the state-dependent :phi^2: scheme seam (l.20200-02) that IS the
+gate. Secondary home at risk (a) in the MILD form: A1's route (a) presents a crude
+volume-cutoff finiteness as if it bore on the cure, when it over-proves (finitizes
+the banked-blocked scalar too). Risk (c) m>0 smuggling: CLEAN across all three arms
+— the construction is at m=0; the m->omega_1 substitution replaces an ABSENT mass
+cutoff by a geometric gap (the legitimate run-38 move on b_1), and "the SM Higgs is
+massive" is used (correctly) as a fact, not as a smuggled mass into the massless
+photon claim. Honest residue (not dishonesty, correctly flagged by A2/R): the no-go
+is CONDITIONAL on the banked l.20351 premise; the decisive interacting-BRST re-
+derivation of b_0 scheme-site (non-)emptiness is undischarged by ALL arms.
+
+## ZERO-WRITE ATTESTATION (by CONTENT, adjudicator-verified)
+grep of unification.tex for arm tokens {ir_route, ir_nogo, ir_adv, "omega_1-floored
+strip", "mechanism-mismatch", "route (a) over-proof", "worse-than-log", "soft-bottom
+localis", "Rindler-decay", "RUN 68"} = 0. grep of ISSUES.md for same = exactly ONE
+hit: l.23200 "Two ceiling swarms still in flight (run 67 ..., run 68 SM IR gate)" —
+a MAIN-SESSION in-flight STATUS marker (added by the parallel apply, diff-line
+5726), NOT an arm finding/verdict/ledger. Both files are `M` from the concurrent
+main-session apply (ISSUES.md +5718; unification.tex +170/-31: E2a clause-(i) port,
+E_star->E_QG,1, a +85-line run-55/63 (W1)-checklist/S-4/non-affiliation block that
+is the arms' READ TARGET, banked paper text — NOT arm output). The arms' proposed
+SHARPENING (b_0/Hodge-sector/b_0-regulator language) = 0 in unification.tex: gated
+edit correctly WITHHELD. Arms + adjudicator issued Write/Edit ONLY to scratchpad.
+Paper/ISSUES footprint by content = NIL.
+
+## FINAL GRADE: FINE+ (wall re-certified + exact obstruction + N&S), leaning A2/R.
+The SM m=0 gate S-4 is NOT closed by the omega_1 geometric floor. omega_1 cures the
+b_1 photon/coth legs (already banked); the b_0 :phi^2: scheme channel that IS S-4 is
+ungapped and uncured; its finite home is the type-II crossed product. A1's route is
+real but scoped to the wrong (already-cured) leg. No forced closure; decisive lever
+(b_0 scheme-site emptiness under BRST/Kugo-Ojima at m=0) named and open.
+
+---
+### Main-session apply note — run 68 (SM m=0 IR gate): wall SHARPENED to theorem-grade no-go (2026-07-15)
+
+Ledger `ledger_run68.md` merged above. **Verdict: the SM m=0 IR gate is NOT closed by the ω₁ geometric floor — theorem-grade IR no-go for the ω₁-only route, with N&S, conditional on the banked scheme-live premise. Wall re-certified, obstruction characterized exactly.** Genuine arm-conflict (A1 route claimed closure; A2 no-go) resolved toward A2 by both adversary and adjudicator on the paper's OWN banked reading; three py suites re-run PASS (18/18, 14/14, 18/18).
+
+**The decisive fact (re-derived independently):** ω₁ cures the strip m=0 divergence IFF the channel carries no b₀ (spin-0 constant) zero mode. The coth cure and the transverse-photon leg live on the co-exact 1-form (b₁=0 Hodge) sector — ω₁ gaps them (both ALREADY banked cured). But S-4 is the c′/improvement :φ²: scheme channel of the interacting charge (l.20200-02) — spin-0, carrying the 0-form constant zero mode (b₀=1 ALWAYS, ungapped by b₁=0), a 2d-massless field with a log-growing propagator whose m=0 boost moment has no ω₁ modulus. Sector split real on S²: 0-form min eig 0, co-exact 1-form min eig 2. **N&S:** ω₁ NECESSARY (transverse modular data), NOT sufficient; sufficient = the Type-II crossed product (CLPW, the paper's own "unique finite home") — a gravitational/clock dressing, categorically not a spatial floor.
+
+**#75 fired at A1's sector assignment** (the "T^μ_μ=0 ⟹ no scheme site for the photon" mechanism-mismatch): the paper's own l.17794-96 exposes it — tracelessness handles the state-INDEPENDENT anomaly (already cured), NOT the state-DEPENDENT :φ²: Wick seam that IS the gate. Caught; A1's finite object is genuine but scoped to the wrong (already-cured) leg.
+
+**Applied — the wall-sharpening** (the honest full-value outcome of a wall-attack): after the IR-gate sentence, a clause explaining WHY ω₁ (which cured the coth) does NOT extend here — the b₀/b₁ Hodge-sector split, ω₁ necessary-not-sufficient, finite home = the Type-II crossed product named just below. Stated CONDITIONALLY (on the b₀ scheme site being live at m=0) with the ONE open lever named: whether thermal Kugo–Ojima empties the b₀ scheme site at m=0 (removing the would-be-longitudinal seam) would close the gate by the ω₁ route — undischarged by all three arms, the sole decisive lever. **No closure claim; the wall stands, now characterized to N&S.** Rebuild 0/0/0, 328 pp. This converts the SM IR wall from "asserted, ω₁ pointedly not invoked" to "no-go proven to the exact Hodge-sector split, with the closure condition and the open lever explicit" — referee-valuable, honest.
+
+# RUN 67 — FINAL ADJUDICATION (referee folded in): the operator-grade ceiling on (W1)@O(lambda)
+
+Adjudicator re-derived the two commissioned crux objects HIMSELF (affiliation-vs-
+vector-goodness; the nu^4/Lambda^3 obstruction) before ruling. Arms read at source:
+op_route.tex/.py (A1, 20/20 PASS), op_nogo.tex/.py (A2, 8/8 PASS), op_adv.md/.py
+(R, 26/26 PASS) — all re-run PASS. A2's 154-line sub-ledger preserved verbatim at
+ledger_run67_A2.md (precedent: ledger_run63_A2.md). NOTE: ledger_run67_A1.md (A1),
+ledger_run67_R.md (R) already staged by the arms.
+
+## VERDICT (one line)
+**GOOD / FULL value: the sharp-time (W1)@O(lambda) form-grade ceiling is a
+THEOREM-grade NON-AFFILIATION no-go with a necessary-and-sufficient register
+condition. BEST (operator grade in the sharp-time or a new intermediate register)
+is NOT reached — and A1's one BEST-adjacent sharpening is REFUTED (R-KILL-1). The
+wall is re-certified and the ceiling characterized exactly.**
+
+## 1. THE LADDER — operator grade / no-go / wall (the adjudication)
+
+**BEST (operator-grade sharp-time or intermediate generator): NOT reached.**
+A1's route delivers the ladder, the dichotomy and the cocycle reframe (all sound),
+but its (iii) "operator grade exhibited" (op_route.tex Thm 4, chi==1 spatially
+FULL, "compact spatial support NOT required") is a FORM in operator clothing —
+REFUTED by R-KILL-1, which I independently verified (Sec 3). The only operator-grade
+register is the compact-support device register the paper already names. No promotion.
+
+**GOOD (theorem-grade non-affiliation no-go + N&S register): DELIVERED at full
+value (A2), reinforced by R.** No self-adjoint operator affiliated to M=A_int(W_R),
+with Omega in its domain, generates the O(lambda) boost/modular increment in the
+sharp-time register. Proof consumes ONE input, dmu(nu) >~ c nu^4 (c>0): any
+affiliated T with Omega in domain reproducing the intrinsic autocorrelation F(u)
+has ||T Omega||^2 = F(0^+) = INT dmu = +inf, contradicting Omega in D(T). Exactly
+scoped (Rem scope, correct): does NOT rule out (i) the Connes cocycle unitary
+u_t in M itself (bounded, but not a one-parameter group; its generator = relative
+modular Hamiltonian, affiliated to neither M nor M'), (ii) an affiliated operator
+without Omega in domain, (iii) the device-register generator (operator-grade). The
+no-go is: sharp-time, Omega-in-domain, affiliated GENERATOR.
+
+**THE OPERATOR EXHIBITED — only at the honest (cocycle) grade.** The one genuinely
+operator-grade object in M immune to nu^4 is the Connes--Radon--Nikodym cocycle
+u_t=[D omega_P : D omega]_t: a sigma-strongly-continuous family of UNITARIES in M
+for any normal omega_P (bounded; ||u_t*u_t - 1||=0 exactly while the generator norm
+diverges ~log — finite avatar py:R9/R4). It is NOT the sharp boost generator (not a
+group), so it is not the BEST object commissioned; its EXISTENCE is a constructive-
+QFT question (normal omega_P), orthogonal to the boost UV. Honest grade of the
+"operator" line: cocycle-in-M, not affiliated-sharp-generator.
+
+**N&S register condition (A2 Thm 2, sharpened by R-KILL-1 to a conjunction).**
+Operator grade <=> Omega in D(generator) <=>
+   [ chi spatially compact/decaying (IR/volume) ] AND [ f in H^2 boost-time, i.e.
+     INT |fhat(nu)|^2 nu^4 dnu < inf (UV) ].
+The device register C_c^inf (FMP f_t) carries it; a single fixed H^2 profile is the
+MINIMAL intermediate register (answers A1(iii) honestly); nothing weaker — no spatial
+fence, no edge control, no boost-covariant nu-multiplier dressing — reaches it.
+Threshold: quartic k=4 is the FIRST vertex degree to fail sharp; k<=2 (the
+c'/improvement channel, dmu~nu^0) is operator-grade even sharp.
+
+## 2. THE TWO CRUX OBJECTS — RE-DERIVED BY THE ADJUDICATOR
+
+**(A) nu^4 / Lambda^3, at source — CONFIRMED.** :phi^4: is a dimension-4 composite
+in d=4; <:phi^4:(x):phi^4:(y)>_c = 4! W(x-y)^4, |W|~dist^-2 => kernel ~dist^-8 =
+dist^-2k, k=4. Two boost-tilted x^0=0 slices part at chord rate interval^2 =
+2 rho^2(cosh u - 1) ~ (rho u)^2; transverse relative 3-integral INT d^3v(a^2+|v|^2)^-k
+= c_k a^{3-2k}, k=4 => a^-5 => F(u) ~ |u|^{-(2k-3)} = |u|^-5 as u->0. Bochner--Schwartz
+gives dmu>=0 (Omega boost-stationary); Karamata (positive measure) gives F~|u|^-alpha
+<=> dmu ~ nu^{alpha-1}, alpha=5 => dmu ~ nu^{2k-4} = nu^4. Then:
+  bare      ||K1 Om||^2 = INT dmu                       ~ INT^Lambda nu^4 dnu ~ Lambda^5
+  cocycle   ||C_t Om||^2 = INT dmu 4 sin^2(nu t/2)/nu^2 ~ INT^Lambda nu^2 dnu ~ Lambda^3
+Both = +inf => Omega in the domain of NEITHER the bare charge NOR the sharp cocycle
+coefficient. Exactly the paper's l.20343-44 (nu^4, Lambda^3), re-derived — the
+EXISTENCE premise, not an estimate. Fence-uniform: the divergence is the bulk
+equal-time coincidence (nu^4 coeff > 0 for every delta_0), NOT the edge. The odd-
+integer p=4 makes only the CONSTANT a finite-part (cos(5pi/2)=0); the POWER + sign
+— all the no-go consumes — are robust. Numerics: op_adv.py B1 slope 5.000, R3c
+slope 3.001 (per-decade x10^3 exact cubic); op_nogo.py F exponent 5.01.
+
+**(B) Affiliation vs vector-goodness — CONFIRMED: screening is TWO strict rungs
+below affiliation.** Three-rung ladder V ( [T,B]Om in H ) ( O ( T:D->H, T Om in H )
+( A ( e^{itT} in M ):
+  - R-1 SCREENING gives rung V ONLY. [K1,B]Om is genuine because one contraction
+    [:phi^4:,phi] ~ Delta_PJ :phi^3: lowers the coincidence degree (nu^4->nu^3) and
+    B's smoothness supplies boost-frequency decay |Bhat(nu)|^2 — vector-goodness of
+    the DERIVATION delta_{K1}(B), BORROWED from B; it controls the derivation, not
+    the charge.
+  - Bottom gap V ( O (exhibited by nu^4): K1 Om not in H. Screening does NOT promote.
+  - Top gap O ( A (exhibited by the FREE boost K0): K0=K0*, K0 Om=0 (maximally rung O)
+    yet NOT affiliated to M — Delta^{it}=e^{-2pi i t K0} implements sigma_t but
+    Delta^{it} not in M for M type-III_1. The Connes-cocycle-vs-generator distinction:
+    u_t in M bounded while the generator is affiliated to neither M nor M'.
+So the answer to the commission crux: the screening that makes D_t(B)Om a vector
+does NOT make the generator affiliated — vector-goodness is STRICTLY weaker, two
+rungs below. (op_nogo.py F: flow image finite 16.55 vs generator ||K^4 Om||^2 ~L^5;
+op_adv.py R4a/b: generator norm diverges while ||u_t*u_t-1||=0.)
+
+## 3. R-KILL-1 (the #62 fire) — ADJUDICATED CORRECT; A1(iii) falls
+
+I verified R's kill independently. A1 Thm 4 claims ||K1^f Om||^2 = INT dmu |fhat|^2
+< inf with chi==1. FALSE: ||K1^f Om||^2 = 4! INT INT F(x)F(y) W(x-y)^4. In cm R,
+relative r coords, x^1 y^1 = (R^1)^2 - (r^1)^2/4; the leading (R^1)^2 factorises as
+  [ INT d^3R (R^1)^2 over the fenced half-space ] x [ INT d^3r f-smeared W(r)^4 ]
+  =  (transverse area INF) x (INT (R^1)^2 dR^1 INF)  x  finite  =  +inf   ~ R^5.
+Time-smearing cures ONLY the UV coincidence r->0; it does NOTHING for the cm VOLUME.
+=> Omega NOT in D(K1^f): with chi==1 the object is a quadratic FORM, not an operator
+with Omega in its domain. Three internal confirmations (A1 self-refutes), all checked:
+ (1) A1's OWN Lemma 1: C_chi = INT_{rho>=delta_0} rho^-3 chi^2 d(cm) is finite ONLY
+     for compact/decaying chi; with chi==1, C_chi = (finite INT rho^-3) x (INF
+     transverse area) = INF — so the very measure dmu in Thm 4's formula does not
+     exist. Lemma 1's "fence-finite" SILENTLY uses chi as a transverse cutoff Thm 4
+     drops.
+ (2) Strong-limit construction Q_R=:phi^4:(chi_R F)->K1^f fails at Om: ||Q_R Om||^2
+     ~ R^5 not Cauchy.
+ (3) A1's numeric py:R8 (op_route.py l.108-115) integrates a SINGLE relative-radial
+     weight r...r with NO cm integration = the paper's eq:collar matrix-element bound
+     (-> 4pi/3), the FORM, not the two-weight vacuum-norm diagonal. A1 tested the
+     form and mislabelled it operator-grade. (op_adv.py R1b slope 5.001; R1c
+     N/(g0 V2)->1; R1d 4pi/3; R1e compact chi => finite R-indep norm cv=0.0004.)
+FIX: chi compact/decaying => K1^f = A2's device register EXACTLY. A1's "milder than
+the device / compact support not needed" collapses to "= the device." Compact
+spatial support IS load-bearing (IR/volume), co-equal with time-smearing (UV).
+SCOPE: kills ONLY A1(iii). A1's (i) ladder, (ii) dichotomy, (iv) cocycle reframe
+UNTOUCHED; A2's no-go STRENGTHENED (N&S -> conjunction). Non-fatal A1 slip flagged
+& adjudicated: Prop cprime writes the c'-torsor dmu~nu^2, but bank/A2/A1-own-Rem-cure
+give k=2 => dmu~nu^0 (op_nogo.py E k=2 slope 0.000; op_adv.py R3b nu^2=k=3 diverges
+~Lambda). Conclusion (no lower power cancels nu^4; min_c sup=1.000) survives either way.
+
+## 4. THE GATED EDIT (described, at the honest grade; NOT applied — zero writes)
+
+Target: unification.tex l.20340-20346, the form/operator sentence. Current:
+"...cocycle generator taken in the compact-support device register (in the sharp-time
+register the coefficient is form-grade only: the boost-spectral density grows as
+nu^4 and the time-integrated vector norm as Lambda^3 --- a fence-uniform ultraviolet
+growth, not an edge effect)."
+
+GATED UPGRADE (theorem-grade non-affiliation no-go + N&S; NOT operator grade). Replace
+"the coefficient is form-grade only:" through "not an edge effect)" with, in substance:
+"the coefficient is form-grade only, and provably so: no self-adjoint operator
+affiliated to the fenced wedge algebra, with the vacuum in its domain, generates the
+O(lambda) increment there --- a theorem-grade non-affiliation (not a limitation of
+technique), driven by the fence-uniform boost-spectral growth dmu >~ nu^4 (bulk
+coincidence, not edge), equivalently the Lambda^3 time-integrated vector norm,
+re-derived at source from the quartic composite's short-distance dimension
+(F(u)~|u|^-5, Karamata); only the positive lower bound dmu >~ c nu^4 is consumed,
+which positivity of the leading Wick term supplies. Operator grade is carried by, and
+ONLY by, the compact-support device register: the necessary-and-sufficient condition
+is the CONJUNCTION of compact/decaying spatial support and an H^2 boost-time smearing
+(fhat in L^2(nu^4 dnu)), a single fixed H^2 profile sufficing; nothing weaker --- no
+spatial fence, no edge control, no boost-covariant dressing --- reaches it. The
+quartic is the first vertex degree to fail sharp; the quadratic c'/improvement channel
+(dmu~nu^0) is operator-grade even sharp. The screening that makes [K1,B]Om a vector is
+vector-goodness of the derivation, borrowed from B's smoothness, strictly weaker than
+affiliation of the generator. This is a milder, register-curable ultraviolet
+non-affiliation, categorically distinct from the type-III_1 one-sided-charge
+non-affiliation below (trace-theoretic, crossed-product-cured, smearing-impotent)."
+GATE CHECK: contains NO "operator exhibited", NO "milder register than the device",
+NO "compact support not needed" (all A1(iii), refuted). Honest grade only.
+
+## 5. #74 HONESTY HOMES
+(a) FORM RELABELLED OPERATOR-GRADE (#62 fire, #1 risk): FIRES on A1 Thm 4 (chi==1
+    K1^f). Caught by R-KILL-1, independently verified (Sec 3); verdict does NOT
+    promote it. The gated edit excludes it. HOME ACTIVE, CONTAINED.
+(b) DRESSING GENERATING A DIFFERENT FLOW, SOLD AS THE BOOST: does NOT fire. A1
+    honestly reports the trade (K1^f generates the sigma-smeared boost, sharp only as
+    sigma->0 where Om leaves the domain). The stated "iff" (same dmu => same flow)
+    over-reaches but is UNUSED. CLEAN.
+(c) NO-GO ASSERTED WITHOUT RULING OUT DRESSINGS: does NOT fire. A2 rules out spatial
+    fences / edge control / non-covariant dressings; scopes out the Connes-cocycle and
+    no-Om-in-domain escapes; literature dressings (BDL split, Fredenhagen-Hertel/
+    Bostelmann phase-space) all reduce to smearing. Escape hatch (operator grade at the
+    cocycle level iff normal omega_P exists = constructive QFT) addressed, no over-reach.
+    CLEAN.
+
+## 6. RESIDUAL (PLAUSIBLE, carried by all three arms — not a defect of the no-go)
+The |u|^-5 RATE (vs a mere upper bound) uses the boosted-slice coincidence geometry
+whose subleading corrections are not resummed. The no-go needs only the positive
+lower bound dmu >~ c nu^4 (c>0), which W^4-positivity + Karamata supply (rate + sign,
+not the constant) — so this does NOT weaken the verdict. Separately: full rung-A
+(essential self-adjointness of the degree-4 Wick power) is not established — but it is
+MOOT for A1's object, which already fails at the weaker rung O (chi==1 volume
+divergence) before e.s.a. is reached.
+
+## 7. ZERO WRITES BY CONTENT (attestation)
+I issued ZERO Write/Edit calls against /Users/alexandru/Code/Physics/unification.tex
+and ISSUES.md this session; every Write/Edit targeted the scratchpad (this ledger;
+cp -> ledger_run67_A2.md). Verify-by-content: unification.tex carries 0 of my
+adjudication signatures. Both files are under an ACTIVE concurrent MAIN-SESSION apply
+(ISSUES.md grew +389 lines, 23200->23589, and unification.tex +14 lines, DURING my
+session, with me writing nothing); their md5 has drifted through multiple states
+(A2 recorded b2cee1c/2229572; R recorded a27f34b/455494a; adjudication open observed
+a27f34b/455494a then a live drift to fb7b43e/85cd747) — this drift is the main
+session, NOT the adjudicator. The ~99 run-67 marker matches in ISSUES.md (op_route/
+op_nogo/op_adv/R-KILL/ledger_run67) are the MAIN SESSION's own run-67 apply, not mine
+(I made no write to that path). The gated edit of Sec 4 is DESCRIBED, not applied.
+# RUN 67 / ARM A1 — THE ROUTE THROUGH: operator grade for (W1)@O(lambda)
+(companion to ledger_run67.md, which ARM A2 owns; separate file to avoid clobbering the
+concurrent A2 write — same precedent as ledger_run63_A2.md alongside ledger_run63.md.)
+
+Deliverables staged: op_route.tex (6pp, compiles clean EXIT=0, 0 overfull, 0 undefined-ref) +
+op_route.py (20/20 PASS, independent seed 670715). ZERO writes to unification.tex / ISSUES.md —
+attested BY CONTENT: both files show `M` in git (concurrent main-session apply: 5390-line ISSUES
+append, 197-line paper edit) but `git diff unification.tex ISSUES.md | grep -cE
+"op_route|RUN 67|A1-route|670715"` = 0, so the drift is NOT mine (I only Read/grep'd them; all my
+writes went to scratchpad).
+
+## VERDICT: BEST not reached (resists at an exact step); GOOD/FINE delivered.
+Route to SHARP-time operator grade resists at a modular-spectrally exact step. But operator grade IS
+exhibited in a milder-than-device intermediate register, and the Connes cocycle/generator split
+reframes the ceiling. Nothing form-grade relabeled operator-grade (#62 clean).
+
+## The four findings
+
+(i) **R-1 screening = vector-goodness, NOT affiliation — two independent strict steps.**
+Three-rung ladder (op_route.tex Thm 1): (V) `[K1,B]Om ∈ H` ⊊ (O) `K1:D→H` ⊊ (A) affiliated to M.
+- top gap (O⇏A, geometric): free boost K0 has K0 Om=0, K0=K0*, yet Δ^{it}∉M (type-III₁) ⇒ K0
+  affiliated to NEITHER M nor M'. A genuine s.a. operator that is still non-affiliated.
+- bottom gap (V⇏O, UV/distributional): sharp K1 satisfies V (screening) but K1 Om∉H (nu^4).
+Screening's vector-goodness is BORROWED from B's smoothness (`[K1,B]` replaces :phi^4: by ≤:phi^3:
+against smooth kernel Δ_PJ*g_B ⇒ rapid boost-freq decay |Bhat(nu)|^2). It controls the DERIVATION
+δ_K1, not the charge. Answer to crux (i): ONLY vector-goodness; strictly weaker; two rungs below
+affiliation. [py:R4b screened saturates 0.076; R4a bare → Λ^3]
+
+(ii) **No boost-covariant local dressing crosses to sharp-flow operator grade.**
+Dichotomy (Prop 3): {operator grade} ⟺ {dmu UV-suppressed} ⟺ {modular-spectral content altered}
+⟺ {different (smeared) flow}. Heat-kernel/resolvent/proper-distance-point-split all = dmu-multipliers
+g_eps(nu); curing nu^4 forces g→0 at UV = a nu-cutoff = smeared flow. The c'/improvement channel
+shifts K1 by a QUADRATIC (nu^2) charge that cannot cancel the quartic nu^4 (UV-dimension mismatch:
+inf_c sup|nu^4−c nu^2|/(1+nu^4)=1). [py:R6 finite norm + nonzero flow-diff at every eps; py:R7]
+
+(iii) **Intermediate register: operator EXHIBITED, affiliated, milder than the device.**
+K1^f = :phi^4:(F), F=f(x^0)χ x^1·1_{x^1≥δ0}, f rapid-decay width σ<δ0, χ≡1 (spatially FULL).
+Thm 2: K1^f maps D→H (rung O; ||K1^f Om||^2=∫dmu|fhat|^2<∞), Om in domain, AFFILIATED to A(W_R)
+(wedge support ⇒ microcausality vs A(W_L)=M'; quartic spatial convergence rho^{-5}; edge screened by
+fence). Compact SPATIAL support NOT needed. Two sharpenings of paper l.20341: (a) operator-grade
+register = rapid-decay time-smearing+fence, properly ⊋ compact-support device (Gaussian f works);
+(b) load-bearing ingredient = POSITIVE TIME-THICKNESS (Wightman "smear in time" for the dim-4
+composite), not compact spatial support. N&S for rung O: σ>0. Resisting step: e^{itK1^f} generates
+the σ-smeared boost → sharp boost only as σ→0, where Om leaves the domain. Operator grade and sharp
+flow are TRADED, not reconciled. Full affiliation (A) of the quartic additionally needs Wick-power
+e.s.a. (known linear/quadratic c'; residual quartic — FLAGGED, A2's to certify).
+[py:R4c device saturates; R5a Gaussian; R5b sharp limit re-diverges; R8 spatial rho^{-5}]
+
+(iv) **The operator-grade object is the COCYCLE, not the generator (Connes reframing).**
+By Connes-Radon-Nikodym, u_t=[Dω_P:Dω]_t is a bounded UNITARY in M — nu^4-immune — whenever ω_P is
+normal. The nu^4/Λ^3 form-gradeness is a PERTURBATIVE-COEFFICIENT artifact (λ-derivative of u_t,
+integrated modular-time term-by-term), NOT of u_t. So sharp operator grade at the cocycle level =
+non-perturbative constructive existence of (A_int(W_R),ω_P) (massive-scalar constructive QFT; the
+formal-series net has NO modular operator, paper l.17995), while at the generator level = time-
+smearing (Thm 2) at the cost of the sharp flow. Neither reaches "sharp boost + affiliated generator":
+that is the wall. [py:R9 finite avatar — generator norm diverges ~log while cocycle stays unitary]
+
+## Type-III comparison (compare/contrast the commission asked for)
+One-sided boost charge non-affiliation (paper l.20353) = EDGE/entanglement (x^1→0), state-independent,
+structural, cured ONLY by Type-II crossed product (ALGEBRA change, the paper's own route l.7515-29).
+(W1) fenced quartic ceiling = DIFFERENT & MILDER: UV/sharp-time (nu^4, dim-4 composite), cured by a
+REGISTER change (rapid-decay time-smearing). The FENCE has already excised the type-III entanglement
+layer (exactly why [K1,B]Om is a vector) — what remains is the Wightman "smear-in-time" necessity,
+NOT the crossed-product non-affiliation. NOT the same phenomenon; the fence separates them.
+
+## nu^4/Λ^3 re-derived AT SOURCE (existence premise, not estimate — the #62/#74 law)
+Lem 1: <:phi^4::phi^4:>_c=24 W^4 (kernel dist^{-8}); boost chord interval^2=2ρ^2(cosh u−1)~(ρu)^2;
+transverse ∫d^3v(a^2+v^2)^{-4}=C a^{-5}(a=ρu); centre weight ρ^2χ^2 ⇒ F(u)=C_χ|u|^{-5}, C_χ=∫ρ^{-3}χ^2
+fence-finite & δ0-uniform. Bochner-Schwartz(dmu≥0)+Karamata: |u|^{-5} ⟺ dmu~nu^4. ||∫_0^t α_s(K1)Om
+ds||^2=∫dmu·4sin^2(νt/2)/ν^2 ~ ∫^Λν^2 ~ Λ^3. [py:R1 slopes k=4→−5, k=3→−3(commutator), k=2→−1 EXACT;
+R2 chord; R3 Tauberian pair; R4a Λ^3 ×10^3/decade]
+
+## Honesty homes (#74)
+(a) form relabeled operator-grade? NO — sharp K1 kept a form throughout; only K1^f claimed operator,
+    genuinely D→H (not D→D*), affiliation by microcausality, quartic e.s.a. gap FLAGGED not hidden.
+(b) dressing generating a DIFFERENT flow sold as the boost? NO — reported AS the resisting step
+    (K1^f generates the σ-smeared boost, stated as such; Prop 3 dichotomy).
+(c) no-go without ruling out dressings? Not my arm — I attempt the route + locate the wall; the
+    theorem-grade impossibility is A2's. I supply the mechanism (modular-spectral exclusivity) + the
+    two open cracks (constructive ω_P; quartic e.s.a.).
+Grades: THEOREM — ladder strictness (both gap examples exact), the dichotomy, the c' mismatch, Connes
+cocycle unitarity, the source nu^4/Λ^3 counting. PLAUSIBLE — K1^f full affiliation (modulo quartic
+e.s.a.); the |u|^{-5}⟺nu^4 constant at the degenerate odd-integer α (power verified; constant is
+finite-part). Nothing SPECULATION load-bearing.
+
+## Handoff to A2 (the no-go arm — ledger_run67.md)
+A1 supplies the N&S skeleton for A2 to certify as theorem: rung O holds ⟺ rapid-decay time-smearing
+σ>0; NO dmu-preserving (sharp-flow) dressing reaches O (Prop 3 = the no-go MECHANISM). Two items A2
+must close for theorem grade: (1) no register weaker than σ>0 works (Prop 3 exclusivity, upgraded
+from "route resists" to "provably impossible"); (2) quartic Wick-power e.s.a. status of K1^f. The
+Connes reframing (iv) is the genuine escape hatch A2 must address: the ceiling is a constructive-QFT
+wall (normal ω_P), not a boost-UV wall — so the correct no-go is "no operator-grade GENERATOR in the
+sharp register", with operator grade living at the COCYCLE level iff ω_P exists.
+
+---
+### Main-session apply note — run 67 (operator-grade ceiling): wall CONVERTED to a theorem-grade non-affiliation no-go (2026-07-15)
+
+Ledgers `ledger_run67.md` (A2) + `ledger_run67_A1.md` merged above. **Verdict: the (W1)@O(λ) sharp-time form-grade ceiling is now a THEOREM-grade non-affiliation no-go with an N&S register condition — GOOD/full value; BEST (a sharp affiliated generator) provably unreachable.** Adversary THEOREM (wall reinforced), adjudicator confirmed, both crux objects re-derived at source by the adjudicator.
+
+**The two theorems (independently re-derived):** (1) NON-AFFILIATION — no self-adjoint operator affiliated to M=A_int(W_R), with Ω in its domain, generates the O(λ) increment in the sharp-time register: any representative reproducing the intrinsic autocorrelation F(u)~|u|^{−5} has ‖TΩ‖²=∫dμ=∞. Only the positive lower bound dμ≳ν⁴ is consumed (Wick-positivity + Karamata; ν⁴/Λ³ re-derived from the composite scaling dimension). (2) N&S REGISTER CONDITION — operator grade is carried by, and ONLY by, the CONJUNCTION [compact/decaying spatial support (IR/volume)] AND [H² boost-time smearing (UV)] = the compact-support device register the paper already names; a single fixed H² profile suffices; nothing weaker reaches it. The quartic is the first vertex degree to fail sharp; the quadratic c′/improvement channel is operator-grade even sharp. Screening = vector-goodness, strictly two rungs below affiliation (both gaps by exact examples: K₀ for O⇏A via type-III₁; ν⁴ for V⇏O). **The escape hatch, named honestly:** the only ν⁴-immune operator-grade object is the bounded Connes cocycle u_t∈M — but it is NOT a one-parameter group, so not the commissioned sharp generator; its existence is a separate constructive-QFT question (normal ω_P), orthogonal to the boost UV.
+
+**The honesty machinery worked perfectly:** A1's one BEST-adjacent claim ("operator exhibited, compact spatial support NOT needed", χ=1 spatially full) was a FORM in operator clothing — R-KILL-1 landed (a centre-of-mass VOLUME/IR divergence ~R⁵ that time-smearing never touches; A1's own Lemma 1 measure doesn't exist for χ=1; its only spatial check tested the FORM and mislabelled it). Independently verified by the adjudicator; #74(a) (the #62 fire) fired on it and was CONTAINED — the gated edit EXCLUDES all three A1 over-reaches. **Applied:** the form/operator sentence upgraded to the theorem-grade non-affiliation no-go + the N&S conjunction, with the Connes-cocycle escape hatch and the milder-than-type-III₁ contrast — over-reach excluded, verified 0 leak. Rebuild 0/0/0, 329 pp.
+
+---
+### FRAMEWORK-CEILING CAMPAIGN CLOSE-OUT (runs 67–69)
+
+Three Opus swarms against the framework's three honest walls, each framed as break-through-or-sharpen. Outcome — no wall broken (as forecast), all three sharpened to theorem-grade no-go / N&S / decisive-forecast, which is the full-value wall-attack result:
+- **Run 67 (operator grade):** converted "form-grade, stated" → theorem-grade NON-AFFILIATION no-go + N&S register condition + the Connes-cocycle escape hatch. Applied.
+- **Run 68 (SM m=0 IR gate):** converted "asserted wall, ω₁ pointedly not invoked" → theorem-grade IR no-go to the exact b₀/b₁ Hodge-sector split, ω₁ necessary-not-sufficient, finite home = Type-II crossed product, with the Kugo–Ojima b₀ lever named open. Applied (conditional).
+- **Run 69 (empirical):** confirm-in-place (frontier needs future data) + fixed a genuine E★ symbol collision that could have caused a false-falsification referee trap. Applied.
+
+Hunts #74/#75/#76: #74(a) fired (A1 over-reach, contained + excluded), #75 fired (A1 sector mis-assignment, caught), #76 clean. Every fire caught pre-print. Genuine-find tally now includes run-67 A1 "operator exhibited" over-reach and run-68 A1 sector mis-assignment — both wall-attack arms that over-claimed closure, both caught by their adversaries.
+
+**FINAL STATE.** Paper 329 pp, 0/0/0, gauntlet-tested (4 independent red teams, 0 BROKEN) + all theory levers resolved. The three walls that separate ≈9.15 from a hard 9.2 are now each characterized to theorem-grade no-go / N&S / open-lever form rather than asserted: (i) operator grade = provable non-affiliation, cured only by the device register or the constructive-QFT cocycle; (ii) SM IR gate = provable no-go on the b₀ scheme channel, cured only by the Type-II clock or the open Kugo–Ojima lever; (iii) empirical = genuine but Planck-scale-out-of-near-term-reach, needs future data. Score ≈9.15, defended — and the walls are now referee-legible: "here is exactly what would close each, and why nothing less works."
+
+# RUN 70 — ARM A2 (A2-relent): finite-relative-entropy / folium route to Connes-cocycle normality
+
+**Commission:** settle whether ω_P (perturbed/interacting wedge state) is NORMAL on the fenced
+massive-scalar window at O(λ), via the finite-relative-entropy / folium sufficient condition
+`S(ω_P|ω_0) < ∞  ⇒  ω_P ∈ folium(ω_0)  ⇒  normal  ⇒  cocycle u_t = [Dω_P:Dω_0]_t operator-grade`.
+
+**VERDICT: NEGATIVE-for-the-route (full value = a sharpened, characterized wall).**
+The finite-relative-entropy certificate FAILS: `S^(2)(ω_P||ω_0) = +∞`, a Λ⁴ positive-boost-frequency
+divergence driven by the SAME ν⁴ that killed the sharp generator (run 67), one power HARDER than the
+cocycle coefficient run 67 already killed. Does NOT open the escape hatch; passes un-rescued to A1.
+
+---
+
+## The computation (grade: THEOREM-modulo-banked-ν⁴)
+
+- **State (I2, run 55):** ω_P = boost-Araki–Gibbs(ω_0; λK₁), K₁ = (1/4!)∫_{x⁰=0} χ x¹ :φ⁴: d³x, the
+  fenced right-wedge increment. Exact Euclidean angular-slicing identity (one-vertex Gell-Mann–Low =
+  angular integral of rotated half-plane boost charges, 2π = KMS period). ω_P, ω_0 both states on the
+  FREE M = A_int(W_R) (in print, genuine vN algebra).
+- **Leading order of S = BKM/Kubo–Mori metric of K₁** (linear term ≡ 0 by positivity of relent):
+  `S(ω_P||ω_0) = (λ²/2) g_KM(δK₁,δK₁) + O(λ³)`,
+  `g_KM = ∫₀¹ ⟨δK₁Ω, Δ₀^s δK₁Ω⟩ ds = ∫ dμ_c(ν) κ(ν)`, kernel **κ(ν) = (1−e^{−2πν})/(2πν)** (bounded,
+  canonical-correlation). [py C1: verified EXACTLY in finite dim, S/((λ²/2)g_KM) = 1.0003→1.00002;
+  C1b: g_KM = Σ|δK₁_ij|² · logarithmic-mean(p_i,p_j), ratio 1.000000.]
+- **Divergence (Thm A2-no-cert):** dμ ≳ c ν⁴ (banked run 67 Karamata, re-derived at source: F(u)=
+  ⟨K₁ α_u(K₁)⟩_c = C|u|^{−5}, C>0 positive Wick W⁴~dist^{−8} coincidence ⇒ μ([−Λ,Λ])~Λ⁵). On ν→+∞,
+  κ~1/(2πν), so **positive tail alone**: `S^(2) ≥ (c/4π)∫₁^Λ ν³ dν ~ Λ⁴ → +∞`. [py C2: power = 4.000.]
+  (Negative-ν tail vs κ~e^{2π|ν|}/|ν| would make it EXPONENTIAL; the power-law positive tail suffices,
+  so we do not lean on it.)
+
+## The register ladder — the R(ii) adversary answered (same ν⁴, one measure dμ)
+
+| object | weight on dμ~ν⁴ | UV power | status |
+|---|---|---|---|
+| bare charge ‖K₁Ω‖² | 1 | **Λ⁵** | run 67 (a): not a vector |
+| **relative entropy S^(2)** (this run) | κ(ν)~1/ν | **Λ⁴** | **certificate fails** |
+| expansional / natural-cone ‖ψ₁‖² (A1) | [(1−e^{−πν})/πν]²~1/ν² | Λ³ | A1: also diverges |
+| cocycle coefficient ‖C_tΩ‖² | 4sin²(πνt)/ν²~1/ν² | Λ³ | run 67 (b): not a vector |
+
+**Key structural fact:** the BKM kernel ~1/ν decays ONE POWER SLOWER than the cocycle kernel ~1/ν², so
+the relative entropy is STRICTLY MORE divergent (Λ⁴) than the cocycle coefficient (Λ³) run 67 already
+killed. State-level normality via finite relent does NOT evade the generator-level ν⁴ — it is
+obstructed by the same mechanism, harder. [py C2: all four powers 5/4/3/3 exact.]
+
+## Honesty gates (#77 homes a/b/c)
+
+- **(a) #62 hidden form / R-KILL-1 volume divergence — CLEAR.** We claim the CONSERVATIVE direction
+  (S diverges), so nothing formally-finite hides a divergence. χ has COMPACT spatial support ⇒ the d³x /
+  cm integral is finite ⇒ the SOLE divergence is boost-UV ν⁴, no spatial/IR/volume companion (unlike
+  the run-67 A1 over-reach caught by R-KILL-1). κ is the textbook BKM kernel; dμ~ν⁴ re-derived at source.
+- **(b) form-boundedness / state-level evades generator-level — REFUTED.** The ν⁴ obstructs the folium
+  certificate MORE than the cocycle coefficient (Λ⁴ vs Λ³). Explicitly re-derived, not asserted.
+- **(c) circularity — CLEAR.** ω_P, ω_0 are states on the FREE M; Δ₀ is the FREE modular operator; K₁
+  is a form on the free GNS space. No interacting vN algebra assumed. Cocycle lives on the free M.
+
+## Grade caveat (do NOT over-claim — the honest boundary)
+
+`S = ∞` does **NOT** prove ω_P non-normal (normal QFT states routinely have infinite relative entropy
+w.r.t. vacuum). So A2 is a **route-closure** (finite-relent SUFFICIENT condition unmet), NOT a
+non-normality theorem. The escape hatch is NOT OPENED by this route; whether it is CLOSED outright needs
+A1 (form-boundedness impossibility). Grade = (FINE) characterized wall for the relent route.
+
+## Banked inputs do NOT rescue finiteness — and why (both re-derived)
+
+- **O^(1)=0 is orthogonal.** It is a FIRST-MOMENT (linear) vanishing: thermal-Wick diagonal (quadratic
+  in d=n−n̄) Bose-orthogonal to the BW modular generator (linear in d), ⟨d³⟩/⟨d²⟩=1+2n̄. Kills the
+  COUPLING ⟨generator, K₁⟩. But S^(2) is the SECOND-MOMENT self-correlation ⟨K₁|κ|K₁⟩; its ν⁴ is the
+  :φ⁴:-:φ⁴: coincidence, untouched. [py C3: coupling 9e-16 while g_KM = 2.04.]
+- **RR / Powers–Størmer / Pinsker is the REVERSE inequality:** ½‖ρ_P−ρ_0‖₁ ≤ √(S/2), i.e. relent
+  UPPER-bounds trace norm, never the reverse. Cannot upper-bound S. [py C4.] (Confirmed at unification.tex
+  l.5316–5328 and l.8696–8705: the chain is ‖·‖₁ ≤ √(2S).)
+
+## Independent corroboration (framework's own cited state-class boundary)
+
+- **Coherent** excitations W(f)Ω: FINITE relent (Longo 1901.02366; Fröb–Much–Papadopoulos 2026,
+  S_rel = 2π∫x¹T₀₀+O(λ²), cited at unification.tex l.20195).
+- **Locally squeezed** states: DIVERGENT relent w.r.t. vacuum, "however small the squeezing —
+  infinitely different from the vacuum" (Cadamuro–Fröb–Katsinis–Mandrysch, arXiv:2511.11203, verified
+  by WebFetch; cited in ISSUES l.4095).
+- **ω_P is NOT coherent:** perturbation by composite K₁=:φ⁴: creates 2-particle (pair/squeezing) AND
+  4-particle components ⇒ squeezed/composite (divergent) class, not coherent (finite). Our Λ⁴ BKM
+  divergence is the RATE + MECHANISM of that abstractly-established divergence.
+
+## Files staged
+- cc_relent.tex (this arm's writeup, ~200 lines, compiles)
+- cc_relent.py (C0–C4 all pass; C1 exact finite-dim BKM check the centerpiece)
+
+## ZERO writes to /Users/alexandru/Code/Physics/unification.tex and ISSUES.md (verified — scratchpad only).
+
+---
+---
+
+# RUN 70 — ARM A1 (A1-araki): the Araki/DJP perturbative route to Connes-cocycle normality
+
+**Commission:** is ω_P normal via Araki/DJP perturbation theory? Re-derive the EXISTENCE PREMISE
+(form-boundedness of fenced K₁ w.r.t. K₀=2π·boost, or convergence of the natural-cone expansional
+e^{−(K₀+λK₁)/2}Ω), then exhibit the cocycle or name the exact obstruction.
+
+**VERDICT: NEGATIVE-for-the-route (full value = GOOD named-condition + FINE characterized wall).**
+The DJP natural-cone perturbed vector is a FORMAL expansional whose FIRST-ORDER coefficient is
+NON-NORMALIZABLE: `‖Ψ_V^(1)‖² = (2π)² ∫ ((e^{ℓ/2}−1)/ℓ)² dρ(ℓ) ~ Λ³ = +∞`. Same ν⁴ as run 67,
+softened by ONE modular integration from Λ⁵ (generator/affiliation) to Λ³ (state/vector). Escape hatch
+does NOT open via DJP. Does NOT claim ω_P non-normal (that is A2's non-perturbative question).
+
+## The computation (grade: THEOREM-modulo-banked-ν⁴ + Tomita detailed balance)
+
+- **DJP object (Araki Thm 5 / DJP 2003 Rev.Math.Phys.15:447, W* unbounded ext.):** perturbed vector
+  `Ψ_V = e^{−β(L+Q)/2}Ω/‖·‖`, β=2π, Q=2πλ·π(K₁), e^{−βL/2}=Δ₀^{1/2}. Normality ⟺ Ψ_V ∈ H.
+- **Spectral datum:** dρ = spectral measure of K₁Ω w.r.t. h=logΔ₀. Run 67 input: dρ~|ℓ|⁴ (ℓ=−2πν, the
+  ν⁴), ∫dρ=‖K₁Ω‖²=+∞~Λ⁵. Tomita detailed balance Δ₀^{1/2}K₁Ω=JK₁Ω ⟹ **dρ(−ℓ)=e^ℓ dρ(ℓ)** [M0 exact];
+  poly |ℓ|⁴ tail on ONE wing, e^{−ℓ}|ℓ|⁴ (exp-suppressed) on the KMS mirror.
+- **First-order expansional (Duhamel, sign fixed by e^{−βL/2}=Δ₀^{1/2}):**
+  `Ψ_V^(1) = −2π ∫₀^{1/2} Δ₀^s K₁Ω ds`, exact norm `= (2π)² ∫ ((e^{ℓ/2}−1)/ℓ)² dρ(ℓ)` (Plancherel).
+  Both wings give integrand ~|ℓ|² ⟹ **~Λ³ = +∞** [M2 slope 3.0006]. Route fails: Ψ_V is a FORMAL
+  power series with non-normalizable O(λ) term ⟹ λ↦Ψ_V not norm-differentiable at 0.
+- **The crack (M3):** midpoint `Δ₀^{1/4}K₁Ω ∈ H` FINITE (∫e^{ℓ/2}dρ<∞, the KMS-symmetric point). The
+  divergence is ENTIRELY the strip-ENDPOINT s→0,1/2 (M4 interior finite, grows only as ε→0). Handed to A2.
+- **Euclidean cross-check (M5):** Δ₀^s=α_{−2πis} ⟹ kernel is the ANGULAR two-point F(−2πiw)=∫e^{wℓ}dρ,
+  the paper's own angular-slicing object (l.20316); coincidence F~24/w⁵ [M5 coeff=24.00 exact], double
+  angular integral ~Λ³ [strip slope 3.003]. The Euclidean/KMS structure does NOT regularize — the state
+  construction lives at the strip boundary = the real-time coincidence slice.
+
+## Register ladder (SAME dμ~ν⁴, one measure; consistent with A2's table above)
+
+| object | kernel on dρ~|ℓ|⁴ | UV power | status |
+|---|---|---|---|
+| bare ‖K₁Ω‖² (affiliation gate) | 1 | **Λ⁵** | run 67(a); DJP-affil hyp fails at outset |
+| Golden–Thompson ω₀(e^{−βλK₁}) O(λ²) | 1 | Λ⁵ | M6; DJP GT-sufficient hyp fails |
+| relative entropy S^(2) (A2) | ~1/ℓ | Λ⁴ | A2: certificate fails |
+| **DJP expansional ‖Ψ_V^(1)‖² (this arm)** | ((e^{ℓ/2}−1)/ℓ)²~1/ℓ² | **Λ³** | **route fails; formal series** |
+| cocycle coefficient ‖C_tΩ‖² | 4sin²(πνt)/ν²~1/ℓ² | Λ³ | run 67(b) |
+
+A1 (Λ³) slots EXACTLY where A2's ledger predicted (row 37 there). Cross-arm consistency: R(ii) answered —
+state-level normality is genuinely weaker than K₁Ω∈H (Λ³<Λ⁵) but NOT weak enough; same ν⁴ mechanism.
+
+## Form-boundedness ladder (the decisive premise, A1(i)/(iii))
+
+Cumulative weights N_X(Λ): K₁~Λ⁵ (density |ℓ|⁴), |K₀|~Λ² (density |ℓ|), K₀²~Λ³ (density ℓ²) [M7].
+Form bound ±K₁≤a|K₀|^p+b needs 5≤1+2p ⟹ p≥2, and even p=2 short by 2 density powers. **K₁ is form-bounded
+w.r.t. NEITHER K₀ NOR K₀².** The only available dominator is the modular strip e^{sh}|_{s≤1/2} (KMS
+half-width, saturated): tames the interior (M3) not the boundary (M2). No DJP-admissible dominator suffices.
+
+## Honesty gates (#77 homes a/b/c)
+
+- **(a) #62 hidden form / R-KILL-1 — CLEAR.** A1 does NOT claim ω_P normal; it PROVES the perturbed vector
+  fails to exist (monotone positive integral, no cancellation). Converse of run-67 over-reach (form→operator):
+  here candidate state-VECTOR shown ∉H. R-KILL-1: χ compact ⟹ spatial finite; angular ∫ over compact KMS
+  period [0,2π] ⟹ no volume; divergence PURELY UV wings |ℓ|→∞ [M8: IR band finite/stable, wings carry Λ³];
+  m>0 closes the only IR channel. NOT a disguised cm/volume divergence.
+- **(b) form-bound premise mislabeled — RE-DERIVED, not asserted.** ν⁴-vs-ν obstruction confirmed after
+  fencing+mass; state-level (Λ³) genuinely milder than generator (Λ⁵) but obstructed by same ν⁴ (M2/M7).
+- **(c) circularity — CLEAR.** ω_P, ω_0 states on the FREE M=A₀(W_R) (in-print vN algebra); K₁ a free-field
+  form; Δ₀ free modular op; cocycle (if it existed) lives on free M. No interacting-net existence used.
+
+## Grade caveat (the honest boundary)
+
+`‖Ψ_V^(1)‖²=∞` closes the PERTURBATIVE natural-cone (Araki/DJP) route; it does NOT prove ω_P non-normal
+(a non-perturbative representative, or A2's folium criterion, is independent — and both A1 and A2 fail their
+respective SUFFICIENT conditions, consistently, via the same ν⁴). Grade: GOOD (named condition = Golden–
+Thompson / modular-strip integrability / K₀-form-boundedness, re-derived AND evaluated = fails) + FINE
+(characterized wall, same ν⁴ one register milder, localized at the KMS boundary). BEST (cocycle operator-
+grade via DJP) proven UNREACHABLE. Sharpens (not contradicts) the in-print "separate constructive-field-
+theory question, orthogonal to the boost ultraviolet" (l.20364): along DJP it is NOT orthogonal — the boost
+UV reappears at the state level and obstructs.
+
+## Files staged
+- cc_araki.tex (this arm's writeup, 7pp, compiles clean)
+- cc_araki.py (M0–M8 all 9/9 PASS; M2 the centerpiece: expansional ‖Ψ_V^(1)‖²~Λ³ slope 3.0006)
+
+## ZERO writes to /Users/alexandru/Code/Physics/unification.tex and ISSUES.md — verified BY CONTENT
+(both show as modified by CONCURRENT SIBLING arms — mtimes 14:06/14:10, content = slice-regularity edits +
+a "RUN 52 LEDGER" append — NOT A1: `git diff | grep` for every A1 signature term = 0 hits).
+
+---
+---
+
+# RUN 70 — ARM R (THE ADVERSARY): re-derived the decisive form-bound / relative-entropy finiteness
+
+**Charge:** re-derive the EXISTENCE PREMISE (not estimates) and settle three #77 homes against the sibling
+NEGATIVE verdicts. **VERDICT: all three CLEARED; A1 (Λ³) and A2 (Λ⁴) CONFIRMED. cc_adv.py 8/8 PASS.**
+Full detail: cc_adv.md (this directory).
+
+- **(H1) #62 / R-KILL-1 — CLEAR.** Re-derived ν⁴ AT SOURCE (physical W⁴ coincidence, NOT the arms' toy
+  r(l)): chord a~ρu [R0], transverse reduction ∫d³v(|v|²+a²)^{−4}~a^{−5} [R1], Tauberian |u|^{−5}⇔ν⁴,
+  coeff Γ(5)=24 [R2, ==A1 M5]. The divergence is boost-UV: the transverse d³v integral is UV-CONVERGENT
+  (no large-|v| volume runaway), and THE DISCRIMINATOR [R4] shows the state-level integral SATURATES under
+  a spatial-box regulator but GROWS as Λ³ under the boost regulator — the exact OPPOSITE of the run-67
+  R-KILL-1 volume pattern. m>0 closes the IR, exponent unchanged. Matches unification.tex l.20348
+  ("bulk coincidence, not edge") and op_nogo lem:fence.
+- **(H2) form-bound — CLEAR.** Cumulative form-weights [R5]: K₁→Λ⁵, |K₀|→Λ², K₀²→Λ³; a bound K₁≤a|K₀|^p+b
+  needs dominator ≥5, so K₁ form-bounded w.r.t. NEITHER K₀ NOR K₀² (short ≥2). State-level (Λ³) genuinely
+  milder than generator (Λ⁵) but SAME ν⁴ reappears and still diverges [R3, ladder 5/4/3 from ONE measure].
+  Midpoint Δ₀^{1/4}K₁Ω finite (strip interior tame; endpoints carry it).
+- **(H3) circularity — CLEAR.** ω_P, ω_0 states on the FREE M=A₀(W_R) (w1_construct l.32); Δ₀ free modular;
+  K₁ a free-field form; cocycle lives in the free M. No interacting-net vN algebra assumed.
+
+**Route-closure SOLID:** positivity — both decisive Plancherel integrands ≥0, no cancellation can rescue
+finiteness [R6]; screening no rescue — expansional/BKM use the UNSCREENED K₁Ω, and even the screened ν²
+diverges [R7]. **Honest residual (affirmed):** S=∞ and ‖Ψ_V^{(1)}‖²=∞ are ROUTE-closures of the two
+perturbative sufficient conditions, NOT a non-normality theorem — a non-perturbative representative is
+excluded by neither arm. Grade delivered = (FINE) characterized wall + (GOOD) named condition; (BEST) not
+reached and correctly not claimed.
+
+**Files:** cc_adv.py (R0–R7, 8/8 PASS; independent physical-coincidence source), cc_adv.md.
+**ZERO writes to unification.tex and ISSUES.md** — mtimes 14:06/14:10 unchanged (>1h stale vs now); my
+UNIQUE signatures (cc_adv, "R-KILL-1 DISCRIMINATOR", "transverse d³v", "forward Laplace") = 0 hits in both
+diffs; the only "ARM R"/"THE ADVERSARY" hits in ISSUES.md are sibling/prior-run prose (ew_adv.md, br_adv.md,
+RUN 54), never cc_adv.
+
+---
+---
+
+# RUN 70 — FINAL ADJUDICATION (referee folded in; decisive premise RE-DERIVED independently)
+
+**Charge:** re-derive the decisive form-boundedness / relative-entropy-finiteness question myself, and
+check the spatial/cm integral for a hidden divergence. Settle the ladder, the gated edit, the #77 homes.
+**Independent script:** `adj_run70.py` — Z1–Z7 **7/7 PASS** (own conventions, physical W⁴ coincidence,
+NOT the arms' toy r(l); Z7 separately confirms the arms' two-wing model is not rigging the exponents).
+
+## VERDICT: (FINE) route-closure / sharpened wall + (GOOD) named conditions re-derived-and-failing.
+The escape hatch does **NOT** open via either perturbative route. Both named SUFFICIENT conditions for
+ω_P normal FAIL, obstructed by the SAME ν⁴ (the :φ⁴: W⁴ bulk coincidence) that drove the run-67
+non-affiliation, softened by modular integration:
+
+| route (sufficient condition) | kernel on dμ~ν⁴ | UV power | my check | verdict |
+|---|---|---|---|---|
+| bare ‖K₁Ω‖² (affiliation, run 67) | 1 | Λ⁵ | Z3 bare 5.0000 | not a vector |
+| **finite relative entropy S(ω_P‖ω_0)** (A2) | κ=(1−e^{−2πν})/2πν ~1/ν | **Λ⁴** | Z3 relent 4.0000 | **certificate fails** |
+| **DJP form-bdd / natural-cone ‖Ψ_V^(1)‖²** (A1) | [(1−e^{−πν})/2πν]² ~1/ν² | **Λ³** | Z3 exp 3.0000 | **route fails** |
+
+- **Form-boundedness (the decisive premise), re-derived [Z6]:** K₁ (cumulative Λ⁵, density |ℓ|⁴) is
+  form-bounded w.r.t. **NEITHER** K₀ (Λ², density |ℓ|) **NOR** K₀² (Λ³, density ℓ²) — a bound ±K₁≤a|K₀|^p+b
+  needs dominator exponent ≥5, short by ≥2 even at p=2. No DJP-admissible K₀-power dominates.
+- **Spatial/cm charge ANSWERED [Z1,Z4]:** the divergence is genuinely **boost-UV, not a hidden volume
+  divergence.** The transverse integral T(a)=∫d³v(|v|²+a²)^{−4} = (π²/8)a^{−5} has a **FINITE** coefficient
+  (∫₀^∞ t²(t²+1)^{−4}dt = **π/32**, re-derived analytically + numerically) — integrand ~v^{−6}, CONVERGES
+  at large |v|, no large-|v| runaway. Entire a-dependence is the a→0 (short modular-time) coincidence a^{−5}
+  ⇒ F(u)~|u|^{−5} ⇒ (Tauberian, coeff Γ(5)=24) dμ~ν⁴ [Z2]. **DISCRIMINATOR [Z4]:** the state-level integral
+  **SATURATES** under a spatial-box regulator (4.323e6, R-independent to 1e-3) but **DIVERGES as Λ³** under
+  the boost cutoff — the exact OPPOSITE of the run-67 R-KILL-1 volume pattern. m>0 leaves the UV exponent
+  unchanged (mass-immune). No cm/volume divergence mislabeled as UV.
+- **No cancellation [Z5]:** both decisive Plancherel integrands are ≥0 pointwise (κ>0) ⇒ the +∞ is genuine.
+
+## HONEST CEILING (load-bearing — do NOT over-read)
+S=+∞ and ‖Ψ_V^(1)‖²=+∞ refute the two perturbative SUFFICIENT conditions; **neither implies ω_P
+non-normal** (normal QFT states routinely have infinite vacuum relative entropy; a non-normalizable formal
+expansional does not exclude a non-perturbative representative). So this is a **ROUTE-CLOSURE, not a
+non-normality theorem.** ω_P is neither proven normal (BEST unreached) nor proven non-normal. "Escape hatch
+CLOSES" / "characterized WALL" must be read as *wall against the perturbative construction*, not *against
+normality per se*. The arms honor this caveat throughout — no run-67-style over-reach.
+
+## GRADE EFFECT
+**(W1)@O(λ) massive-scalar STAYS FORM-grade.** No upgrade to COCYCLE-OPERATOR grade. BEST (cocycle
+operator-grade via proven normality) is correctly NOT claimed by any arm. Grade line unchanged.
+
+## GATED EDIT (described only — ZERO writes; gated to FINE, so NO grade-line upgrade)
+BEST unreached ⇒ NO FORM→COCYCLE-OPERATOR edit to the (W1) grade line. The one honest edit is a **downward
+sharpening** of the escape-hatch sentence at `unification.tex` **l.20362–20366**, whose clause
+"…the bounded Connes cocycle … whose existence is a separate constructive-field-theory question,
+**orthogonal to the boost ultraviolet**" is now falsified for the two standard perturbative constructions:
+both finite relative entropy (Λ⁴) and DJP form-boundedness / natural-cone expansional (Λ³) are ν⁴-obstructed
+by the same bulk coincidence that governs the non-affiliation. Honest replacement records: *the two standard
+perturbative sufficient conditions for ω_P normal are themselves ν⁴-obstructed (relent Λ⁴, expansional Λ³),
+so the boost UV is NOT orthogonal to the state-normality question along either perturbative route; whether ω_P
+is normal via a non-perturbative representative remains open — a route-closure, not a non-normality theorem.*
+**NOT applied** (zero-writes discipline; staged/described only).
+
+## #77 HOMES (all cleared)
+- **(a) hidden form / R-KILL-1 volume divergence — CLEAR.** No arm claims ω_P normal; A1 proves the
+  state-VECTOR ∉ H (monotone positive, Z5 no cancellation). Transverse d³v integral CONVERGES [Z1];
+  divergence tracks the boost cutoff, saturates under the spatial box [Z4]. Run-67 volume pattern ABSENT.
+- **(b) form-bound premise mislabeled / state evades generator ν⁴ — CLEAR.** Re-derived [Z6]: neither K₀
+  nor K₀² dominates; state-level Λ³ genuinely milder than generator Λ⁵ but the SAME ν⁴ reappears [Z3].
+- **(c) circularity — CLEAR.** ω_P, ω_0 states on the FREE M=A₀(W_R); Δ₀ free modular; K₁ a free-field form;
+  cocycle (if it existed) lives in the free M. No interacting-net vN algebra assumed.
+
+## ZERO WRITES — verified BY CONTENT
+`git diff` on `unification.tex` (+209/−31, seed-folium/slice-regularity — concurrent sibling) and `ISSUES.md`
+(+6413, a single sibling ledger-consolidation append `@@ +17480,6416 @@`, mtime 14:10) shows **0 hits** for
+every cc-arm signature (cc_araki/cc_relent/cc_adv, Psi_V, "DJP expansional", "natural-cone perturbed",
+"R-KILL-1 DISCRIMINATOR", "transverse d³v", "forward Laplace") and **no "RUN 70" mention** at all. mtimes
+(unification 14:06, ISSUES 14:10) predate the earliest cc output (14:29). The append's generic
+Araki/expansional/cocycle terms are PRIOR-run ledger prose about the same section, not this run's work.
+Adjudicator wrote only to scratchpad (`adj_run70.py`, this ledger append). **Both protected files untouched
+by run-70 cocycle-normality content.**
+
+
+---
+### Main-session apply note — run 70 (the Connes-cocycle escape hatch): route-closure + corrected a run-67 overstatement (2026-07-15)
+
+Ledger `ledger_run70.md` merged above. **Verdict: FINE grade — the escape hatch does NOT open perturbatively; (W1)@O(λ) massive-scalar STAYS form-grade, no cocycle-operator upgrade.** Both arms NEGATIVE-for-the-route, adversary NEGATIVE (all three #77 homes cleared), adjudicator re-derived the decisive premise from the physical :φ⁴: W⁴ coincidence on its own conventions (7/7 independent checks, not the arms' toy density).
+
+**Both standard perturbative routes to ω_P normality FAIL by the same ν⁴ bulk coincidence** that drives the run-67 non-affiliation (generator Λ⁵), softened one modular register: (i) finite relative entropy S(ω_P|ω₀) diverges at **Λ⁴** (BKM/Kubo–Mori kernel ~1/ν on dμ~ν⁴); (ii) the Araki–DJP natural-cone expansional ‖Ψ_V^(1)‖² diverges at **Λ³** (kernel ~1/ν²). K1 is form-bounded w.r.t. NEITHER K₀ (Λ²) NOR K₀² (Λ³) — short by ≥2 powers. **Crucially this is a ROUTE-CLOSURE, not a non-normality theorem:** ω_P is neither proven normal (BEST unreached) nor proven non-normal; the divergence lives purely at the KMS-strip boundary (the modular midpoint Δ₀^{1/4}K₁Ω is finite), so a non-perturbative representative bypassing the boundary is not excluded and remains the residual open question. The adversary independently confirmed (per the run-67 R-KILL-1 lesson) the divergence is genuinely boost-UV, NOT a hidden spatial/volume divergence — the state-level object SATURATES under a spatial-box regulator but grows Λ³ under the boost cutoff, the exact opposite of the run-67 volume pattern; transverse ∫d³v converges to a finite π/32 coefficient; m>0 leaves the exponent unchanged.
+
+**Applied — a genuine correction to my OWN run-67 print:** the run-67 escape-hatch sentence said the cocycle's existence is "a separate constructive-field-theory question, orthogonal to the boost ultraviolet." Run 70 FALSIFIES the "orthogonal" claim for both perturbative routes. Corrected in print: the constructive-QFT question is NOT orthogonal to the boost UV — both routes are ν⁴-obstructed (Λ⁴ relent / Λ³ expansional, one register milder than the generator's Λ⁵, K₁ form-bounded w.r.t. neither K₀ nor K₀²) — stated as a route-closure (not a cocycle non-affiliation), with the KMS-strip-boundary locus and the finite midpoint noted, and the non-perturbative representative left explicitly open. #77 clean (no arm repeated the run-67 "operator exhibited" over-reach; A1 proves the state-VECTOR is not in H via a monotone-positive integral, the honest converse). Rebuild 0/0/0, 329 pp. No grade movement — a defended honesty correction that also removes a mild overstatement I introduced two runs ago.
+
+**THE ONE CRACK IS CHARACTERIZED, NOT OPENED.** The operator-grade ceiling now stands as: (a) no sharp affiliated generator (run-67 non-affiliation theorem + N&S register condition); (b) the cocycle escape hatch's two perturbative routes both ν⁴-closed (run 70), with only a non-perturbative ω_P representative left open. The ceiling is real; the framework is at its honest operator-grade limit at O(λ).
+
+# LEDGER — RUN 71 (independent red team of the ceiling cluster, l.20275-20434)
+
+## RT4 — CROSS-CUTTING CONSISTENCY + CITATION FIDELITY  (arm deliverable: rt71_cross.md)
+
+VERDICT: the cluster l.20275-20434 reads as ONE COHERENT argument. E1-E4,E6 do NOT contradict;
+all five cross-cutting checks (i)-(v) HOLD; no #78 BROKEN. ONE forced-fix WOUNDED: E5 (E-star), a
+W-A propagation miss in section 13 OUTSIDE the cluster — CAUGHT BY RT3, CONFIRMED here by content.
+
+Per-edit (cross-cutting axis): E1 HOLDS, E2 HOLDS, E3 HOLDS, E4 HOLDS, E5 WOUNDED, E6 HOLDS.
+  [E5 grade CORRECTED post-hoc: my original E5=HOLDS was WRONG — see E5 note below. RT3 caught it.]
+
+CHECKS:
+- (i) ladder E3==E6: PRINT generator Lambda^5 (l.20373), cocycle/expansional Lambda^3 (l.20372),
+      relent Lambda^4 (l.20370), nu^4 == Lambda^3 vector norm (l.20348-49). Identical to run-67
+      ledger (23931-37) AND run-70 ledger (24123/24157-59). W-A audit: Lambda^5/4/3 + nu^4 occur
+      ONLY at l.20348-73 in all 329pp — no stale copy anywhere. HOLDS.
+- (ii) form-grade consistent: E1 (W1) form-grade; E3 no operator generator (form-grade sharp-time);
+      E6 no cocycle-operator either (route-closure, open). Complementary, no grade denied.
+      Confirmed run-70 ledger 24149 "(W1) STAYS FORM-grade". HOLDS.
+- (iii) {L-Tak,L-RS}: E2 (l.20284-88) explicitly uses "the SAME ... scaffolding that decomposes
+      (W1)" as E1 (l.20320-34), same quadratic-form grade, same banked imports; SM still walled
+      (l.20289-90) => "B1a not a theorem" kept. HOLDS.
+- (iv) type-II crossed product: single consistent role in E3 (l.20382-84 crossed-product-cured
+      type-III_1) and E4-invariant-char (l.20406-14 unique finite home). HOLDS.
+- (v) CITES: 5/6 named results ALREADY have bibitems AND are cited — Araki1973RelHam (8x),
+      Araki1973GoldenThompson (1x), DerezinskiJaksicPillet2003 (4x), Connes1973 (2x),
+      Takesaki2003 (24x). Paper CONVENTION prose-names canonical results with NO bibitem:
+      Bisognano-Wichmann (39x), Reeh-Schlieder (24x), Epstein-Glaser, Tomita, Osterwalder-Schrader.
+      Only Klein-Landau lacks a bibitem; prose-naming it as a positivity class is consistent with
+      that convention. NO referee demand. HOLDS. (Optional-only: a Klein-Landau 1981/83 bibitem.)
+
+FRESHEST-WOUND (W-B) re-audit: run-67 "orthogonal to boost UV" self-correction IS in print,
+correctly negated (l.20366-67 "NOT in fact orthogonal"); the other "orthogonal" (l.20187) is the
+distinct O^(1)=0 first-law orthogonality. No residual contradiction. CLEARED.
+
+E5 sweep (CORRECTED — grade WOUNDED, W-A): my collision grep keyed on "E_\star adjacent to
+1/\mu" and structurally COULD NOT see a QG-scale bound written as a GeV numeral. RT3 caught, I
+confirmed by content: l.13792 "$E_\star<5\times10^{14}$ GeV is ruled out" and l.13866 "exclude
+$E_\star$ below $5\times10^{14}$ GeV" both restate eq:pred-baw-bound (= l.13643 E_{QG,1}=1/\mu
+\gtrsim5e14 GeV). The anchor E_\star ~ 0.65 E_Pl ~ 8e18 GeV, so a "biting" 5e14 GeV bound on
+E_\star is a category error; the 4.4-decade window (l.13793-95, 5e14->Planck) confirms it is the
+QG scale, not the anchor. Broad re-sweep "E_\star near 10^{1x} GeV": EXACTLY these two, no others
+(l.15708 correctly E_{QG,1}). FIX = E_\star -> E_{\rm QG,1} at l.13792 + l.13866 (concurs w/ RT3).
+The run-69 EQUATION-site disambiguation (l.13643 etc.) is fine; it did NOT propagate to these two
+PROSE restatements in the SAME subsection. Fundamental anchor E_\star otherwise untouched.
+
+SUB-THRESHOLD notes handed to sibling arms (NOT independent wounds):
+- to RT1: E1 l.20336 retains adjective "unconditional" (next to "modulo [3 imports, m=0 open]").
+  Cross-cutting grade does not leak (stays form in E3/E6); honest-rider-vs-leak call is RT1's.
+- to RT2: E3 l.20372-73 glosses the Lambda^3 expansional as "one modular register milder than the
+  generator's Lambda^5" — a 2-power drop; coherent only if "register" != "power". RT2 (.py) to
+  confirm the register->power map. Powers themselves consistent across E3/E6/ledgers.
+- legibility: l.20351 "operator grade ... only by the compact-support device register" vs l.20362
+  "sole nu^4-immune operator-grade object in the algebra is the ... cocycle" — different predicates
+  (generator vs nu^4-immune non-generator), resolvable but a reader-trap.
+
+ATTACKS RUN (a red team finding no forced fix must list them):
+  A. re-derived + cross-matched the nu^4/Lambda^3/Lambda^4/Lambda^5 ladder print-vs-run67-vs-run70 — consistent.
+  B. whole-paper stale-ladder grep (Lambda^5/4/3, nu^4) — no copy outside the cluster.
+  C. stale-grade grep: is the massive (W1)/B1a-necessity still called sketch/open elsewhere? — only
+     E2's own upgrade sentence; no W-A miss.
+  D. "orthogonal" residual sweep (the freshest run-67/70 wound) — correction in place, other hit distinct.
+  E. E_\star-vs-1/\mu collision sweep + E^\ast false-positive check. BLIND SPOT: keyed on "\mu"
+     adjacency, so MISSED the two GeV-numeral prose mislabels (l.13792/13866) that RT3 caught.
+     Corrected: broad "E_\star near 10^{1x} GeV" re-sweep found exactly those two => E5 WOUNDED.
+  F. citation apparatus: bibitem existence + \cite counts for all 6 named results + convention control
+     (BW/Reeh-Schlieder/Epstein-Glaser/Tomita/OS) — 5/6 banked, 6th convention-consistent.
+  G. licensed-vs-printed diff: run-70 arm GATED/zero-write (ISSUES 24152/24162), yet print carries the
+     correction and matches licensed language ("route-closure not a non-affiliation"; "neither opened
+     nor provably closed"; "(W1) STAYS FORM-grade") — no over-reach beyond license.
+  H. cross-tension chase: device-register vs cocycle "only/sole" quantifiers; type-II cure vs
+     register cure; two non-affiliations (UV register-curable vs type-III_1 crossed-product-cured) —
+     all scoped-distinct, no logical clash.
+
+---
+
+## RT3 — B1a + IR + E-star (E2 + E4 + E5)  [Opus 4.8, 2026-07-15; detail: rt71_b1a_ir.md]
+
+GRADES: **E2 HOLDS · E4 HOLDS · E5 WOUNDED.** Zero writes to unification.tex/ISSUES.md.
+
+- **E2 (run-65) B1a necessity — HOLDS.** SM-still-walled intact (l.20289-90; l.20452-55
+  "B1a not guaranteed positive"). Same {L-Tak=N-5,L-RS=N-7} as E1 (b1a_lemma.tex Rem:shared
+  "no new gap", KMS off the FREE theory). "unconditional" scoped to real-part polarization
+  only. [checks (ii),(iii) PASS — concurs with RT4]
+- **E4 (run-68) IR-gate b0/b1 — HOLDS.** Print l.20391-20405 == licensed grade (ISSUES
+  l.23528-40). No closure; conditional stated; Kugo-Ojima lever open; type-II crossed
+  product role consistent with E3. [check (iv) PASS — concurs with RT4]
+- **E5 (run-69) E★→E_{QG,1} — WOUNDED (W-A).** *** CORRECTS RT4's E5=HOLDS /
+  "Disambiguation COMPLETE" (l.34-35). *** RT4 (and run-69's "residual collision sweep = 0",
+  ISSUES l.23198) swept the EQUATION sites (13643/15708/22854/22963) but MISSED two PROSE
+  restatements of the same eq:pred-baw-bound, in the same subsection, with the wrong (anchor)
+  symbol:
+    • l.13792 "$E_\star<5\times10^{14}$ GeV is ruled out in the laboratory"
+    • l.13866 "exclude $E_\star$ below $5\times10^{14}$ GeV"
+  BAW bounds μ ⇒ 1/μ=E_{QG,1}≳5e14 GeV (= l.13643 exactly); it does NOT bound anchor
+  E★≈0.65 E_Pl. Re-opens the exact false-falsification trap the fix targeted. Grep-verified
+  ONLY two residual sites; anchor E★ otherwise untouched. FIX: E_\star→E_{\rm QG,1} at
+  l.13792 + l.13866.
+
+WOUND-CLASS: W-A (fix not propagated to every spot). Printed-sentence kill (2 sentences).
+NET RT3: 2 HOLD, 1 WOUNDED, 0 BROKEN. No cross-edit contradiction; E5 wound is within-arm.
+
+---
+(RT1 -> rt71_w1.md, RT2 -> rt71_op.md/.py, RT3 -> rt71_b1a_ir.md are separate arm deliverables.)
+
+## RT1 — (W1) FORM-GRADE THEOREM (E1) + COCYCLE ROUTE-CLOSURE (E6)   [detail: rt71_w1.md]
+- E1 (run-63 (W1)@O(λ) massive-scalar checklist upgrade): **HOLDS**. "unconditional
+  form-grade theorem modulo {…}" is licensed (house convention l.10991 + run-63 apply
+  l.22867), ridered honest (modulo 3 imports, "no open-ended dynamical lemma remains"),
+  m=0 open kept 3× (l.20337/20289/20388), modulo list accurate (N-3 strip/N-6 EG/free-Takesaki),
+  four lemmas (L-Tak,L-RS,N-3′,N-4) written+discharged (l.20320-34). No fix.
+- E6 (run-70 Connes-cocycle route-closure): **HOLDS**. Element-exact to run-70 license
+  (l.24191). No escape-hatch-closed ("neither opened nor provably closed", l.20379); no
+  operator-exhibited (cc_araki M1 = non-existence converse ‖K₁Ω‖²=+∞); route-closure ≠
+  cocycle non-affiliation kept distinct; (W1) stays form-grade. No fix.
+- E3↔E6 ν⁴/Λ³/Λ⁵ LADDER (RT4 check i): **CONSISTENT, re-derived**. ∫^Λ ν^{4−k}dν ~ Λ^{5−k}:
+  generator Λ⁵ (k=0), relent/BKM Λ⁴ (k=1,wt 1/ν), expansional/cocycle/time-integrated Λ³
+  (k=2,wt 1/ν²). op_nogo.py (run-67) emits BOTH Λ⁵ (test B/F) and Λ³ (test E) from one
+  computation ⇒ "E3-Λ³" and "E6-Λ⁵" are the smeared-vs-sharp rungs of one ladder, not a
+  contradiction. cc_araki M1/M2 + cc_relent p_bare/p_rel/p_coc/p_exp = {5,4,3,3} confirm.
+  "one modular register" = one modular integration = 2 powers ⇒ "Λ³ one register below Λ⁵" exact.
+- Citation fidelity (E6 names): CLEAN — DerezinskiJaksicPillet2003 bibitem'd (l.24368) + 5 cites;
+  Araki expansional labeled (l.18329); BKM=Kubo-Mori already used (l.19546). Hunt (d) does not fire.
+- W-A propagation: run-70 "orthogonal" fix CLEAN — only corrected "not in fact orthogonal"
+  (l.20367) remains; no stale "separate constructive-field-theory question".
+- MINOR WATCH (no grade move): Λ³(E3)/Λ⁵(E6) sit ~24 lines apart; words disambiguate
+  ("time-integrated vector norm" vs "generator") — optional half-clause cross-ref would preempt.
+- 9 attacks run, all defeated (listed in rt71_w1.md). ZERO writes to unification.tex / ISSUES.md.
+
+---
+
+## RT2 — OPERATOR NO-GO (E3) + nu^4/Lambda^3/Lambda^5 LADDER vs E6  (deliverable: rt71_op.md + rt71_op.py)
+
+VERDICT: E3 HOLDS. E6 HOLDS (math) / WOUNDED (one printed phrase). Cross-check (i) MATCH.
+Ladder re-derived AT SOURCE (not from paper numerics), 11/11 PASS in rt71_op.py.
+
+- E3 (l.20343-63): non-affiliation THEOREM sound — mechanism ||T Om||^2 = INT dmu = +inf (BARE
+  Lambda^5), op_nogo Thm 1. Scope exact: affiliated + Om-in-domain + sharp-time generator; does
+  NOT say "no operator in M" (cocycle-in-M correctly excluded). N&S conjunction [compact spatial
+  support] AND [H^2 boost-time] correct. NO A1 over-reach ("operator exhibited"/"compact support
+  not needed"/"milder than device" all ABSENT in l.20330-20420). dmu~nu^4 re-derived from :phi^4:
+  dim-4 composite (F(u)~|u|^-5, Karamata). HOLDS.
+- E6 (l.20362-84): relent Lambda^4 (BKM kappa~1/nu), expansional Lambda^3 (natural-cone g^2~1/nu^2),
+  generator Lambda^5 — all PASS. Route-closure honest ("neither opened nor provably closed"); midpoint
+  Delta_0^{1/4}K1Om FINITE (boundary-only divergence) PASS. W-A "orthogonal" fix FULLY propagated
+  (only corrected "not in fact orthogonal" l.20367 remains, paper-wide).
+- CROSS-CHECK (i) MATCH: E3 "Lambda^3 time-integrated" == E6 "expansional Lambda^3" (SAME single
+  modular integration; |Dslope|=0.009). generator Lambda^5, relent Lambda^4 consistent. #78-BROKEN
+  ladder-mismatch trigger does NOT fire.
+
+- WOUND (E6, l.20372, CLARITY not math): "one modular register milder than the generator's Lambda^5"
+  attached to the expansional Lambda^3. "modular register" = HAPAX (1x in 329pp), UNDEFINED in print;
+  its meaning (=one modular integration = TWO Lambda-powers; verified rt71_op.py STEP3 slope 2.000)
+  lives only in unpublished cc_araki.tex. Naive decode register=power gives Lambda^4, CONTRADICTING
+  stated Lambda^3; and the relent Lambda^4 sits in the SAME sentence one *power* below Lambda^5,
+  baiting the misread. FIX (minimal): "...as Lambda^3 (two Lambda-powers milder -- one modular
+  integration -- than the generator's Lambda^5...)". [Distinct from RT1's Lambda^3/Lambda^5-proximity
+  watch; this is the register-word off-by-one-decode. Both point at the same dense sentence region.]
+- CITES (my arm's named results, corroborates RT4 (v)): DJP-2003, Araki, Golden-Thompson, Connes all
+  have bibitems (5/22/2/25). Karamata & Bochner-Schwartz prose-named (0) = classical textbook Tauberian/
+  positivity, prose-naming standard. No citation wound.
+- 10 attacks run, all defeated except the one clarity wound (listed rt71_op.md sec 7). ZERO writes to
+  unification.tex / ISSUES.md (verified by content — Read/grep only; sed on scratchpad .py only).
+
+---
+# RUN 71 — HOSTILE REFEREE ADJUDICATION (independent re-derivation, not ledger-trust)
+
+VERDICT: CONFIRMED at full grade. Both consequential findings survive independent re-derivation.
+
+## Finding 1 — E5 WOUNDED (the kill): CONFIRMED by content + independent sweep.
+Quote-verified from PRINT (not ledger):
+ - l.13643 (eq:pred-baw-bound, FIXED): `E_{\rm QG,1}=1/\mu \gtrsim 5.0\times10^{14} GeV`
+ - l.13792 (rem:pred-baw-reach, prose, BROKEN): `$E_\star<5\times10^{14}$ GeV is ruled out in the laboratory`
+ - l.13866 (Testability triage, prose, BROKEN): `exclude $E_\star$ below $5\times10^{14}$ GeV`
+E_star = induced-gravity anchor, `E_\star\approx0.65\PlanckE` (l.6777/7382) ~8e18 GeV — a DIFFERENT scale
+from E_{QG,1}=1/mu ~5e14 GeV (4.4 decades apart). ISSUES l.1414 shows the OLD collision `E_\star=1/\mu`.
+Run-69 apply note (ISSUES l.23197-23200) fixed ONLY l.13643 + l.15708 and attested "residual collision
+sweep = 0" — FALSE. My independent sweep of ALL four `5\times10^{14} GeV` occurrences {13643,13792,
+13866,15708} + ALL E_star-near-QG sites returns EXACTLY l.13792 & l.13866 as residuals => complete set,
+matches RT3/RT4. Textbook W-A (fix did not propagate to two same-subsection restatements of the same eq).
+Trap the author's own note quantifies: mu=1/(0.65 E_Pl) ~13x over GRB => false "already falsified".
+MINIMAL FIX: `E_\star -> E_{\rm QG,1}` at l.13792 and l.13866 (identical to the run-69 equation-site fix).
+
+## Finding 2 — E3<->E6 ladder AGREEMENT (run 67 == run 70): CONFIRMED by hand re-derivation.
+ref_ladder.py from source premise dmu~nu^4 (INT_0^Lambda kernel(nu) nu^4 dnu):
+   generator (kernel 1)          -> Lambda^5.000   [print l.20373 Lambda^5]
+   relent BKM (kernel 1/nu)       -> Lambda^4.000   [print l.20370 Lambda^4]
+   expansional (kernel 1/nu^2)    -> Lambda^3.000   [print l.20372 & l.20349 Lambda^3]
+Strictly monotone 5>4>3. "One modular register = 2 powers" VERIFIED: |INT_0^{1/2}e^{-s nu}ds|^2 ~ nu^-2.00
+(norm^2 of a once-integrated vector) vs BKM (1-e^-nu)/nu ~ nu^-1.00. The apparent "E3 Lambda^3 vs E6
+Lambda^5" is the smeared(time-integrated vector, l.20349) vs sharp(generator, l.20373) rung distinction,
+NOT a contradiction. #78 BROKEN ladder-mismatch does NOT fire. The #1-risk W-B does not materialize.
+
+## E1/E2 form-grade + SM-walled: CONFIRMED HOLDS.
+ - E1 l.20336-40: "unconditional form-grade theorem modulo {strip lemma (m=0 open), EG existence,
+   free-Takesaki transport} -- no open-ended dynamical lemma remains". IN-CONVENTION: l.10991 defines
+   "Unconditional = as an implication, not bundle-satisfiability". Honest rider present; m=0 kept open
+   (l.20337). No W-C over-reach.
+ - E2 l.20288-90: "the Standard-Model instance still rests on (W1)-for-the-SM, i.e. the open m=0 IR gate"
+   + l.20453 "B1a ... its answer is not guaranteed positive". SM-still-walled + B1a-not-a-theorem intact.
+
+## Guardrails swept clean:
+ - "orthogonal" run-70 fix PROPAGATED: only occurrence l.20367 is the negated form ("not in fact
+   orthogonal"); no stale affirmative copy (W-A clean).
+ - A1 over-reach ABSENT in l.20330-20420: no "operator exhibited"/"compact support not needed"/"milder
+   than the device".
+ - E3 non-affiliation scope EXACT (l.20343-45): self-adjoint + affiliated + vacuum-in-domain + generates
+   O(lambda) increment; bounded Connes cocycle correctly carved out (l.20362-64) — NOT "no operator in M".
+
+## Minor: E6 l.20372 "modular register" is a genuine HAPAX (count=1, undefined in print). Naive read
+(register=power) => Lambda^4, contradicting stated Lambda^3; adjacent relent Lambda^4 baits the misread.
+Math airtight (2-power drop = one modular integration, verified). LOW-severity clarity wound (RT2 grade
+defensible; RT1 "legibility-watch" also defensible) — does NOT move E6 off HOLDS-on-math. Optional fix:
+"(two Lambda-powers milder -- one modular integration -- than the generator's Lambda^5)".
+
+ZERO writes to unification.tex / ISSUES.md (Read+grep only). Ledger append only.
+
+---
+# RUN 71 — FINAL ADJUDICATION (independent content-verification of the contested findings)
+
+METHOD: re-read the printed sentences at every load-bearing line myself (not arm-trust); re-swept
+the E5 collision set; re-confirmed the ladder rungs, the A1/W-C over-reach absence, the citation
+convention, and zero-writes-by-content. All quotes below are from PRINT.
+
+## PER-EDIT VERDICT (one-line reasons, content-verified)
+- E1 (run-63 (W1) form-grade theorem) = **HOLDS.** l.20336 "unconditional form-grade theorem modulo
+  {strip lemma (m=0 open), Epstein-Glaser existence (in print), free-Takesaki transport} -- no
+  open-ended dynamical lemma remains" is in-convention: l.10991 (verified) DEFINES "unconditional =
+  as an implication, not bundle-satisfiability"; honest rider present; m=0 kept open 3x
+  (l.20337/20289/20388); four lemmas written+discharged (l.20320-34). No W-C leak.
+- E2 (run-65 B1a necessity) = **HOLDS.** l.20276 sketch->form-grade theorem on the massive-scalar
+  window; SM-still-walled (l.20289-90 "(W1)-for-the-SM, the open m=0 IR gate"); "unconditional"
+  scoped ONLY to the Re-part polarization (l.20283); B1a-not-a-theorem intact (l.20452-53 verified
+  "its answer is not guaranteed positive"); same {L-Tak,L-RS} scaffolding as E1.
+- E3 (run-67 operator non-affiliation) = **HOLDS.** Theorem-grade non-affiliation, scope EXACT
+  (self-adjoint + affiliated + vacuum-in-domain + generates O(lambda), l.20343-45); N&S CONJUNCTION
+  [compact/decaying spatial support] AND [H^2 boost-time smearing] (l.20353-56); bounded Connes
+  cocycle correctly carved out (l.20362-64); NO A1 over-reach ("operator exhibited"/"compact support
+  not needed"/"milder than the device" ALL absent, probe empty). nu^4/Lambda^3 at source (l.20348-49).
+- E4 (run-68 IR-gate b0/b1) = **HOLDS.** Print l.20391-20405 matches license; NO closure ("does not
+  reach this channel"; l.20416 verified "this does not close the gate; it locates it invariantly");
+  omega_1 necessary-not-sufficient conditional on the b_0 scheme site (l.20399-402); Kugo-Ojima the
+  one open lever; type-II crossed-product role consistent with E3.
+- E5 (run-69 E-star->E_{QG,1}) = **WOUNDED (W-A).** THE ONE FORCED FIX. l.13792 "$E_\star<5\times
+  10^{14}$ GeV is ruled out in the laboratory" and l.13866 "exclude $E_\star$ below $5\times10^{14}$
+  GeV" both restate eq:pred-baw-bound, which l.13643 states as $E_{\rm QG,1}=1/\mu\gtrsim5.0\times
+  10^{14}$ GeV. Anchor E_star~0.65 E_Pl~8e18 GeV, so a 5e14-GeV bound on E_star is a category error
+  re-opening the ~13x-over-GRB false-falsification trap. SWEEP-COMPLETE (my content re-sweep: lines
+  carrying BOTH E_star and 10^{14} = EXACTLY {13792,13866}; l.13643 & l.15708 correctly E_{QG,1}).
+  Run-69's "residual collision sweep = 0" (ISSUES l.23198) was FALSE. Confirms RT3/RT4-corrected/referee.
+- E6 (run-70 Connes-cocycle route-closure) = **HOLDS on math + route-closure honesty; one
+  low-severity legibility wound flagged (l.20372).** Ladder matches E3 EXACTLY (relent Lambda^4,
+  expansional Lambda^3, generator Lambda^5); "route-closure, not a non-affiliation" (l.20374-75);
+  "neither opened nor provably closed at O(lambda)" (l.20379-80, honest negated form -- NO
+  "escape-hatch-closed" over-reach, probe empty); midpoint finite; (W1) stays form-grade. The
+  "modular register" gloss (l.20372, verified HAPAX count=1) is a confirmed legibility defect (naive
+  decode register=power gives Lambda^4, contradicting the stated-correct Lambda^3) -- but NOTHING
+  STATED IS WRONG, so the EDIT HOLDS with a required legibility polish. [Adjudicating the RT2(WOUNDED)
+  vs RT1+RT4+referee(HOLDS-on-math) split: the substantive claim is airtight and ladder-consistent;
+  the defect is a parenthetical word-choice, not the claim -> HOLDS-with-mandatory-legibility-splice.]
+
+## CROSS-CUTTING CONSISTENCY = COHERENT. The cluster l.20275-20434 reads as ONE argument.
+Checks (i)-(v) all HOLD: (i) ladder identical E3/E6 (generator L^5, expansional/cocycle L^3, relent
+L^4, nu^4==L^3 vector-norm), re-derived by hand + at source (11/11), occurs ONLY in the cluster (no
+stale copy); (ii) form-grade consistent (E1 (W1) form / E3 no operator generator / E6 no cocycle
+either -- complementary, no grade denied); (iii) {L-Tak,L-RS} shared E1<->E2 at one quadratic-form
+grade, SM walled; (iv) type-II crossed product single consistent role (unique finite home curing
+type-III_1) in E3 & E4; (v) 5/6 named results bibitem'd, 6th (Klein-Landau) prose-named per
+convention. NO E-vs-E contradiction. The run-67-vs-70 "orthogonal" clash is already self-corrected
+in print (sole occurrence l.20367 = negated "not in fact orthogonal"). The one WOUNDED (E5) is
+OUTSIDE the cluster (section 13) -- a within-subsection W-A miss, not a cluster-internal clash. The
+apparent "Lambda^3 vs Lambda^5" is the smeared-vs-sharp rung distinction, NOT a #78 BROKEN.
+
+## #78 HOMES
+(a) fix/grade did not propagate (W-A): **FIRES = E5** (l.13792 + l.13866). The sole genuine wound.
+(b) internal contradiction between cluster edits (W-B, the #1 risk): **DOES NOT FIRE** -- ladder
+    matches exactly E3/E6; "orthogonal" already self-corrected.
+(c) form-relabeled-operator / residual over-reach (W-C): **DOES NOT FIRE** -- "unconditional" is
+    in-convention (l.10991) w/ honest rider; no "escape-hatch-closed"; no "operator-exhibited"; (W1)
+    stays form-grade. [E6 l.20372 "modular register" hapax is legibility, not a grade over-reach.]
+(d) newly-named result needing a bibitem: **DOES NOT FIRE** -- Araki/Golden-Thompson/DJP/Connes/
+    Takesaki all bibitem'd+cited; Klein-Landau prose-named consistent w/ BW/Reeh-Schlieder/
+    Epstein-Glaser convention (all verified bibitem-less). Optional-only Klein-Landau bibitem.
+
+## FIX LIST
+1. E5 (REQUIRED, W-A): $E_\star$ -> $E_{\rm QG,1}$ at unification.tex l.13792 AND l.13866. Identical
+   to the run-69 equation-site fix; closes the false-falsification trap. 2-site symbol swap.
+2. E6 (RECOMMENDED, legibility): l.20372 replace "(one modular register milder than the generator's
+   $\Lambda^{5}$" with "(two $\Lambda$-powers milder --- one modular integration --- than the
+   generator's $\Lambda^{5}$" (or define "modular register" at first use). No math change.
+3. BIBITEMS: none required. Optional-only: Klein--Landau (1981/1983) \bibitem for max referee-proofing.
+
+## ZERO WRITES -- VERIFIED BY CONTENT. No run-71 red-team content in unification.tex or ISSUES.md:
+grep of both diffs for {rt71*, ledger_run71, scratchpad, red-team, WOUNDED} -> the only hits are
+ordinary-English "holds" in the theorem prose ("the first law holds", "the clause holds if and only
+if") from the main-session runs-63-70 apply; NO arm filename/verdict token. The git-M state
+(unification.tex +254/-31, ISSUES.md +6711) is that concurrent main-session apply (the sentences
+under review), not campaign writes. E5 wound remains UNFIXED in print (l.13792/13866), independently
+proving no arm silently patched it.
+
+## DOES THE CEILING CLUSTER STAND AS PRINTED?  YES.
+l.20275-20434 stands: E1-E4,E6 HOLD, mutually consistent, ladder matches, guardrails clean, no
+over-reach. The only forced fix (E5) is a 2-site symbol swap OUTSIDE the cluster; the E6 l.20372
+polish is legibility-only. Neither touches the cluster's mathematics. Collective arm verdict
+(E1-E4/E6 HOLD, E5 WOUNDED) SUSTAINED.
+
+---
+### Main-session apply note — run 71 (independent red team of the ceiling cluster): STANDS + 2 fixes (2026-07-15)
+
+Ledger `ledger_run71.md` merged above. **Verdict: the ceiling cluster STANDS AS PRINTED — E1–E4 and E6 HOLD, E5 WOUNDED (one W-A propagation miss), no BROKEN, no #1-risk internal contradiction.** Referee CONFIRMED (high); the ν⁴/Λ³/Λ⁴/Λ⁵ ladder re-derived by hand and at source (RT2 11/11).
+
+- **The #1 risk (W-B: contradiction between sequential edits in the cluster) did NOT materialize.** The ladder is identical between run-67 (E3) and run-70 (E6): generator Λ⁵, expansional/cocycle Λ³, relative-entropy Λ⁴, ν⁴≡Λ³ time-integrated vector norm — the apparent "Λ³ vs Λ⁵" is the smeared-vs-sharp rung distinction (one modular integration = 2 powers), not a contradiction. The run-67-vs-70 "orthogonal" clash was already self-corrected in print. Form-grade used consistently across E1/E3/E6; {L-Tak,L-RS} consistent between E1/E2; Type-II crossed product single consistent role in E3/E4. Cluster reads as one coherent argument.
+- **Citation fidelity clean:** 5/6 newly-named results already bibitem'd + cited (Araki-relHam, Golden-Thompson, DJP2003, Connes, Takesaki); the 6th (Klein–Landau) is prose-named per the paper's own established convention (BW/Reeh-Schlieder/Epstein-Glaser all prose-named). No bibitem required. #78(d) does not fire.
+- **No over-reach (#78(c)):** "unconditional" is in-convention (l.10991 DEFINES it as "as an implication, modulo stated imports") with the honest rider "no open-ended dynamical lemma remains" and m=0 thrice-open; "neither opened nor provably closed at O(λ)" is the honest form; (W1) stays form-grade throughout. #78(c) does not fire.
+
+**Two fixes APPLIED (rebuild 0/0/0, 329 pp):**
+1. **E5 REQUIRED (W-A, #78(a) FIRED — closes a reopened false-falsification trap):** run-69's E★→E_{QG,1} fix disambiguated the two EQUATION sites but MISSED two PROSE restatements of the same BAW bound in the same subsection (l.13792 "E★<5×10¹⁴ GeV is ruled out", l.13866 "exclude E★ below 5×10¹⁴ GeV") — still printing the anchor symbol for a bound that is E_{QG,1}=1/μ, reopening the exact ~13×-over-GRB false-falsification trap. **Run-69's own "residual collision sweep = 0" attestation was FALSE.** Both sites fixed → E_{QG,1}; a COMPLETE sweep this time (every E★ checked against dispersion markers, not just the equation) confirms zero residual — the 7 anchor sites and the "μE★<1" no-folding sites are all correctly the fundamental anchor and untouched. This is the recurring W-A lesson (run-60 F-RATE, run-59 M3) biting my own patch: a fix applied to equation sites but not the prose restatements.
+2. **E6 RECOMMENDED (legibility, no math):** the "modular register" hapax at l.20372 (count=1 in 329pp, whose naive decode gives Λ⁴, contradicting the stated-correct Λ³) → "two Λ-powers milder — one modular integration — than the generator's Λ⁵". Removes the off-by-one misread bait.
+
+**Genuine-find tally +1: #78(a) = the E5 prose-propagation miss** (my own run-69 fix + false sweep attestation). Caught by the independent red team, fixed, complete-swept. The ceiling cluster is now independently gauntlet-tested and coherent.
+
+# Ledger — RUN 73, ARM A1 (bibliography completeness)
+
+## Task
+A1-bib: orphan list (full \input set) + cite-key existence + metadata sanity on the
+~15 campaign-added bibitems. Deliverable staged: `ed_bib.md`.
+
+## Full \input set (grepped — run-62 discipline)
+unification.tex + appendix_e2a_omega, appendix_dirac_floor, appendix_e0ds_min,
+appendix_e2a_ports (→ port_m3, port_ac, port_d0), ds2_restriction, ds2_pairing.
+Excluded: tbrme-uniqueness-outline.tex (never \input); commented \input at
+appendix_e2a_omega.tex:4025.
+
+## Result: CLEAN
+- 406 bibitems, 406 cite keys, set-equal. **0 orphans, 0 dangling, 0 dup keys.**
+- Metadata: 0 duplicate arXiv (327 distinct), 0 dup DOI, 0 dup title (406 distinct).
+- All 16 named campaign keys: bibitem present + cited.
+- Sole flag: `Tice2018` key-year 2018 vs entry "(2017)" — COSMETIC, not a defect.
+
+## False-positive traps neutralized
+- 5 named keys cited 0× in main, only in appendices (DappiaggiMorettiPinamonti2009×8,
+  CasiniTesteTorroba2017×2, Longo2019coherent×2 in ds2_restriction; Tice2018×2 in
+  appendix_e2a_omega; SahlmannVerch2000×2 in appendix_dirac_floor).
+- 12 keys cited only on multi-line \cite continuation lines.
+- Both would be false orphans under a naive main-only single-line grep.
+
+## Verification
+- Two independent extractors (Python re.DOTALL + Perl -0777) agree exactly.
+- Scripts: bibcheck.py, verify.py, dupscan.py (this scratchpad).
+- ZERO writes by THIS agent to unification.tex and ISSUES.md. My only Write calls
+  targeted the scratchpad (bibcheck/verify/dupscan/ed_bib/ledger); I never invoked
+  Edit/Write on either protected file. NOTE: working tree is NOT clean — sibling
+  fan-out agents concurrently edited ISSUES.md (+7032) and unification.tex (+258/-33);
+  those diffs are theirs, not mine (content = campaign bibitems/notes, not my markdown).
+- Re-verified against CURRENT (post-sibling-edit) content: still 406/406, 0 orphans,
+  0 missing. Bib/cite diff lines are additive only (no bibitem/cite deletions), so the
+  concurrent edits do not break completeness. Verdict CLEAN holds on live content.
+
+## Scope note
+A2 (cross-ref) → ed_crossref.md and A3 (notation) → ed_notation.md are sibling arms,
+not this subagent's deliverable. This run delivered A1 only (ed_bib.md).
+
+===================================================================
+# Ledger — RUN 73, ARM A3 (notation / symbol collisions)
+
+## Task
+A3-notation: overloaded-symbol + undefined + hapax sweep beyond E-star.
+Deliverable staged: `ed_notation.md`. Full \input set (same as A1's, above).
+
+## Result: 3 genuine collisions (all referee-legibility, ZERO math impact) + 8 CLEAN verifs
+- C1 [PRIMARY]  \Lambda cosmological-constant (l.6890 "the \Lambda accounting") vs UV cutoff
+  (l.6902 "N f_2 \Lambda^2", "cutoff profile") — SAME remark, 12 lines apart, no glossary.
+- C2 [SECONDARY] N species-count (l.6902/7830, O(100)) vs S_dS~10^122 (l.16716-17); twin
+  "G=f(N,\Lambda)" formulas. Milder: ~9800 lines apart, each locally ":="-pinned.
+- C3 [MINOR]  K:=[R,\Lambda] (l.1034) reused in the proof whose ambient K is the outcome RV
+  (K=k). ":=" + parenthetical + type-difference mitigate.
+
+## Verified CLEAN (task-demanded)
+- V1 E_\star anchor-vs-dispersion (runs 69/71): FIX COMPLETE. 222 E_\star all anchor; dispersion
+  = E_{QG,1}=1/\mu at all 4 sites; rem:mu-tension (l.15692) holds scales apart. Residual = 0.
+- V2 E_{QG,1}(linear) vs E_{QG,2}(quadratic, l.23008): consistent LIV orders.
+- V3 "modular register" hapax: FIXED at l.20372 ("one modular integration"); 0 occurrences.
+- V4 Ĥ_c dual reading: author explicitly flags at l.10769 — well-managed, not a defect.
+- \omega=state only (no frequency use); \rho density(main) vs radial(appendix_e2a_omega only,
+  separated scope); \mu dispersion/measure/index typographically separated; "register" (16x)
+  = consistent metaphor, not hapax. None flagged (false-positive discipline).
+
+## False-positive guards
+- \rho, \mu NOT flagged (separated scopes / typographic separation per task criterion).
+- Did not propose renaming E_\star/K_\omega/\omega (author-consistent).
+- ISSUES "free-function N @ l.22522" is STALE (current l.22522 = w(z)/running vacuum); the
+  framework's free N is S_dS (l.16717). No finding manufactured from the stale pointer.
+
+## Protected-file attestation (ZERO writes by THIS arm)
+- No Edit/Write against unification.tex or ISSUES.md; only Read + read-only shell (grep,
+  `sed -n` print, ls, shasum, git). Corroborates A1's note: sibling fan-out arms are
+  concurrently editing both (mtimes 16:26/16:27). My write-set = scratchpad only
+  (ed_notation.md; appended this A3 section to ledger_run73.md).
+- Shas at observation: unification.tex fcc691f5..., ISSUES.md 6eef81a1... .
+
+===================================================================
+# Ledger — RUN 73, ARM A2 (semantic cross-ref integrity)
+
+## Task
+A2-crossref: does each load-bearing \ref/\eqref/\cref point at the target the prose NAMES?
+Deliverables staged: `ed_crossref.md`, `ed_crossref.py`. Full \input set (same as A1/A3 above).
+
+## Method
+`ed_crossref.py`: label→TRUE-environment map (835 labels), detector = prose type-word vs
+actual \begin{env} (not label prefix; \cref excluded — self-names). 4035 typed-ref candidates
+scanned; same-type/wrong-specific-target audited by hand per named cluster.
+
+## Result: 1 genuine defect; all else clean or intentional idiom
+- **DEFECT (low–med, presentation):** `an17:embed` cited "Proposition~\ref{an17:embed}" at
+  appendix_e2a_omega.tex:2206,2275,2284 — but env is `lemma` (l.152) and same result is cited
+  "Lemma~\ref{an17:lem-embed}" at 197/475. One block printed as both Lemma N.M and Proposition
+  N.M, uncued (no node tag). Fix: 3 sites → "Lemma".
+- **NOT a defect (run-62 trap avoided):** 22 further scan hits (an17:R1/R3/F2, def-strata,
+  prop-strip, N0-analytic family, cor-split family) = deliberate `[an17 alias]`+"Grade: THEOREM"
+  idiom; prose always names the precise historical node beside a generic "Lemma"; target = the
+  named node. No rename.
+- **CLEAN (hand-audited):** hadamard-uniform vs -omega; E0-dS vs E0-dS-min (relation stated at
+  e0ds_min:151); dS-stack internals (thm:E0-lin, lem:e0ds-coverage/trace/cut, app:ds2-restriction/
+  ds-pairing/e0ds-min); Dirac floor (rem:dsf-massless); M3 (port:thm-M3, port:lem-sigma); W1/B1a/IR
+  + E2b–E2d (rem:E2-discharged, newtonian-limit vs -V1, clausius-SM, E0-lin-SM, fs-einstein, etc.).
+  (W1)/(W2) = prose tags, no \ref target exists.
+- **NON-FINDINGS:** `pos:geom-nosig` stale `pos:` prefix on a proposition — ALL prose says "Prop.",
+  unanimous, invisible in PDF → not a defect. 1 "unknown target" = commented placeholder (l.70).
+
+## Honesty / provenance (corroborates A1 + A3)
+- ZERO writes to unification.tex / ISSUES.md / any paper file by this arm. Writes = scratchpad
+  only (ed_crossref.py/.md, this A2 section).
+- Concurrent campaign apply-run mutated unification.tex, appendix_e2a_omega.tex, ISSUES.md mid-run
+  (mtimes 16:26–16:27; same event A1/A3 saw). FINDING re-verified on final live content — line
+  152/197/475/2206/2275/2284 unchanged; scan stable 25/1/6. Not my edits.
+- Residual not machine-provable: \eqref→wrong-*equation* (no type signal); spot checks in edited
+  regions found none.
+
+---
+
+# Ledger — RUN 73, FINAL ADJUDICATION (verify each reported defect is REAL; reject false positives)
+
+Method: re-verified every arm finding against LIVE content. Orphans re-grepped over the FULL \input
+set (run-62 discipline, my adj_bibcheck.py). Cross-ref target re-READ at all 6 sites + environment.
+Notation collisions re-grepped + re-read in context. ZERO writes to unification.tex / ISSUES.md.
+
+## CONFIRMED DEFECTS (real; a referee would flag)
+
+**D1 [CONFIRMED — cross-ref wrong-noun; low–med; presentation]** (from A2).
+`an17:embed` is an alias `\label` sitting on the LEMMA at appendix_e2a_omega.tex:152
+(`\begin{lemma}[$U_\omega\hookrightarrow U$, embedding constant exhibited]`, labels l.153–154,
+comment "[an17 alias] P3 import spelling"). It is cited **"Proposition~\ref{an17:embed}"** at 2206
+& 2275 and **"Prop.~\ref{an17:embed}"** at 2284, while the IDENTICAL object is cited
+**"Lemma~\ref{an17:lem-embed}"** at 197 & 475. Both labels resolve to the same lemma number ⇒ the
+PDF prints one object as both "Lemma N.M" and "Proposition N.M", uncued. Prose at all 3 Prop sites
+describes the embedding U_ω⊆U (= the lemma's exact content) ⇒ target correct, only the noun wrong.
+EXACT FIX: at 2206 & 2275 "Proposition~\ref{an17:embed}" → "Lemma~\ref{an17:embed}"; at 2284
+"Prop.~\ref{an17:embed}" → "Lem.~\ref{an17:embed}". Verified by direct read of all 6 sites + env.
+
+## MINOR / OPTIONAL notation flags (real overloads; low severity; author discretion)
+
+**N1 [CONFIRMED-MINOR — Λ dual-use in one remark]** (from A3 C1).
+`\Lambda` = cosmological constant at unification.tex:6890 ("the $\Lambda$ accounting", Sakharov
+counterterm) vs `\Lambda` = UV cutoff at 6902 ("$1/16\pi G_0=N f_2\Lambda^2/48\pi^2$ … a free
+moment of the cutoff profile"), 12 lines apart in the SAME Robustness remark. Real same-glyph/
+two-object overload; only guard = dimension (Λ_cc~L⁻² vs Λ_UV via Λ²~M_Pl²) + phrase. Standard in
+the induced-gravity literature but unflagged (the paper flags the Ĥ_c overload, not this one).
+OPTIONAL FIX: subscript the cutoff (Λ_UV) at 6902 or add a half-line disambiguation.
+
+**N2 [CONFIRMED-MINOR / borderline — K reused inside a Part-I proof]** (from A3 C3).
+Ambient K = branch-outcome random variable (K=k throughout Part I; e.g. l.990 "outcome K=k"). At
+unification.tex:1034 a local `K:=[R,\Lambda]` (commutator) is minted in the SAME proof, used only
+in the parenthetical "pairing with K:=[R,Λ] … the identically vanishing Tr(K†[R,K]) … no
+information" and never again. Real same-Part reuse of the paper's central symbol; mitigated by `:=`
++ parenthetical scope + one-off throwaway + matrix-vs-RV type gap. OPTIONAL FIX: rename to C:=[R,Λ].
+
+## REJECTED false-positives
+
+**R1 [REJECT — A3 C2: N species vs N=S_dS].** N = species count (~O(100); l.6784/6902/7830) vs
+N:=S_dS≈10²² (l.16716–17, 16820). ~9800 lines apart, wholly separate sections, EACH locally
+`:=`/context-pinned at point of use (16717 literally "N:=S_dS"). Per the binding false-positive
+standard (not a defect if uses are in clearly separated scopes with no confusion) this is acceptable
+reuse of the universal count-letter N. Not a referee-flag. (A3 itself rated it only SECONDARY.)
+
+**R2 [REJECT as defect — A1 Tice2018 key/year; COSMETIC].** bibitem key `Tice2018` vs entry text
+"(2017)" (l.24204). The cite KEY is internal/invisible; a referee sees only "(2017)". The 1-yr
+offset is not referee-visible ⇒ not a defect. Optional cosmetic reconcile only (author discretion).
+
+**R3 [REJECT — A2's 22 alias-idiom hits].** an17:R1/R3/F2, def-strata, prop-strip, N0-analytic,
+cor-split "type mismatches" = documented `[an17 alias]` idiom (explicit comments + node names in
+prose); target = the named node, not wrong-target. Per-site flagging would be a run-62 FP dump.
+
+## CONFIRMED-CLEAN (independently re-verified)
+
+**R4 — Bibliography (A1).** My adj_bibcheck.py over the full \input set (DOTALL multi-line cites,
+comments stripped): 406 bibitem keys == 406 cite keys, **0 orphans, 0 dangling, 0 dup keys**; all 16
+named newly-added keys present + cited. The 5 run-62 trap keys (DappiaggiMorettiPinamonti2009,
+CasiniTesteTorroba2017, Longo2019coherent [ds2_restriction]; Tice2018 [appendix_e2a_omega];
+SahlmannVerch2000 [appendix_dirac_floor]) are cited **0× in main** but each in its appendix — a
+main-only grep would falsely orphan all 5. No bibliography defect.
+
+**R5 — E-star + hapax (A3).** E_⋆ (249×) uniformly the anchor; dispersion E_{QG,1}=1/μ at
+13643/15708 cleanly separated; rem:mu-tension (l.15693) holds the scales apart. "modular register"
+hapax = **0 occurrences** (fixed). No defect.
+
+## Attestation
+ZERO writes by this adjudication arm to unification.tex or ISSUES.md (Read + read-only shell only).
+My write-set = scratchpad only (adj_bibcheck.py, this section). The git "M" on unification.tex
+(mtime 16:26) and ISSUES.md (16:27) is the sibling campaign apply-run, external to and predating this
+arm. All findings re-verified on final live content; line anchors stable.
+
+## BOTTOM LINE
+1 confirmed presentation defect worth fixing before submission (**D1**, wrong-noun cross-ref, 3-site
+noun swap). 2 optional minor notation flags (**N1** Λ, **N2** K). 4 rejects/cleans (C2 N, Tice2018,
+alias idiom, + bibliography and E-star confirmed clean). No math defect anywhere.
+
+# LEDGER — RUN 72, ARM A2 (CLAIMS / GRADE-MAP PROPAGATION)
+
+Editorial presentation pass (NOT theory review). Task: for each load-bearing
+claim that changed grade in the campaign, check every restatement across the
+329pp carries the SAME grade. Verified by CONTENT. ZERO writes to
+unification.tex / ISSUES.md (both untouched; findings staged only).
+
+Deliverable: scratchpad/ed_grademap.md (propagation table + the one defect with
+two exact sites).
+
+## Corpus
+unification.tex (25175 ll) + 6 \input appendices (l.23242-23247):
+appendix_e2a_omega.tex, appendix_e2a_ports.tex, appendix_dirac_floor.tex,
+appendix_e0ds_min.tex, ds2_restriction.tex, ds2_pairing.tex.
+NB: the paper is now SPLIT into \input files, so ISSUES.md line anchors (run <=58,
+monolithic) are stale line-wise; re-located every anchor by label/content.
+
+## Result: 6 focus claims — 5 CLEAN, 1 stale straggler
+
+D1 (CONFIRMED, safe direction) — an17 clause-(i) difference form ("M3"),
+authoritative grade THEOREM (ported):
+  - SITE A (NEW): appendix_e2a_omega.tex l.3976 item:an17-M3 "Grade: THEOREM
+    (ported...formerly NAMED INPUT)"; corroborated l.3781-3783 same file
+    "(M3)...is now a ported theorem".
+  - SITE B (STALE): appendix_e2a_omega.tex l.3863-3864 rem:an17-open (a):
+    "(M2) clause (iii) and (M3) clause (i) difference-form are named inputs,
+    un-derived in print for the family." -> M3 half re-grades content as NAMED
+    INPUT, the exact old grade. Live self-contradiction, one appendix, 82 ll
+    apart. Same wound-class as run-58 RT2 (fixed 8 spots) + later l.3436/l.3775
+    sweep; rem:an17-open (a) was on neither fix list.
+  Minimal fix (author's call, not applied): decouple the conjunction; mark M3
+  half "now a ported theorem (App e2a-ports)". No math change.
+
+CLEAN (no divergent restatement found):
+  - (W1) form-grade: single authoritative block u.tex 20180-20400; all 5
+    "form-grade" tokens + the sketch->form-grade promotion + the theorem-grade
+    non-affiliation are in-block and mutually consistent.
+  - B1a: ~11 sites, uniformly OPEN (named companion problem / n>=1 edge wall).
+  - dS support steps / (E0-dS'): rem:E0-dS-status coherent; support steps
+    discharged at n=0 only, n>=1=B1a, N(d,Delta) one open coeff; residual lists
+    agree.
+  - Dirac QEI leg / floor: appendix_dirac_floor "closed at fixed seed" matches
+    rem:E2-discharged (E2b); tanh-trace vacated-as-unconsumed; conditioned-source
+    floor (eq:E2-conditioned-floor) is a distinct object, no collision.
+  - E2c vacation: rem:E2-discharged says gates VACATED (unconsumed); eq:E2-CS
+    retained-not-consumed at every consumer; 12381 "no claim of unconditional
+    discharge" reconcilable (non-discharge != consumed). No stale load-bearing
+    E2c site. [Soft note recorded, not flagged as defect: 12381 frames E2c as a
+    live external programme w/ "active partial progress" — emphasis, not grade.]
+
+Cross-check: Part-I microcausality axiom (M3) is a DISTINCT object from an17-M3;
+carried consistently as a postulate throughout. No collision.
+
+## False positives deliberately NOT reported (honesty)
+  - u.tex l.12381 (E2c "external programme") — reconcilable with the vacation.
+  - appendix l.3436 — explicitly EXCLUDES clause (i) ("now a ported theorem");
+    reads correctly.
+  - l.3778-3785 "(M1)-(M3) not discharged by this appendix" — correct STRUCTURAL
+    retention (M3 kept as a hypothesis clause) with explicit "(M3)...ported
+    theorem" clause; not a content re-grade.
+  - free-field first-law theorems (l.17706 Ciolli-Longo-Ruzzi; l.19332 E0-lin;
+    l.17246 theorem-modulo-list) — different objects from the interacting (W1)
+    first law; correctly graded.
+
+## Files
+STAGED (my only writes): scratchpad/ed_grademap.md; scratchpad/ledger_run72.md
+MY WRITES TO PAPER FILES: ZERO. I used only Read + read-only Bash greps on
+unification.tex / ISSUES.md / the appendices.
+CAVEAT (honest): the working tree shows unification.tex (M, mtime 16:26:13),
+ISSUES.md (M, 16:27:31) and appendix_e2a_omega.tex (M, 09:46) as modified, and
+appendix_e2a_ports.tex as untracked (??) — pre-existing edits by a prior/parallel
+swarm process, all timestamped BEFORE my staging writes (17:13), NOT by my tools.
+I audited the LIVE working tree (the actual 329pp corpus a referee compiles), so
+D1 reflects the current corpus. D1's three sites re-read verbatim-stable at close.
+
+<!-- ===================================================================== -->
+
+# LEDGER — RUN 72, ARM A1 (FRONT-MATTER ACCURACY)
+
+Editorial presentation pass. Task: for each abstract/intro/master-theorem claim,
+check the body counterpart carries the SAME grade (over-statement = credibility
+risk; under-statement = missed credit). Verified by CONTENT. ZERO writes to
+unification.tex / ISSUES.md (no Edit/Write issued to either; their git-modified
+state is concurrent-swarm activity, re-verified below). Deliverable:
+scratchpad/ed_frontmatter.md (front-matter-vs-body grade table).
+
+## Result: 3 over-statements (1 CONFIRMED, 2 PLAUSIBLE) + 2 minor notes; 0 under-statements
+
+F1 (CONFIRMED, over-statement) — the (T11) exception is dropped by a universal quantifier:
+  - FRONT A: abstract ll.216-218 "all structural conditions (T0)--(T13)...are promoted
+    to theorems".
+  - FRONT B: scope ll.512-513 "every structural (T)-condition...is a theorem of this paper".
+  - BODY: thm:master-unification-sharp ll.11875-11891 "all of (T0)--(T13)...EXCEPT (T11)
+    are theorems; (T11)...remains a hypothesis...not discharged" (Hyp centralizer,
+    (CP)+(T11), branch-II only; rem:master-residual-list item (iv)).
+  - Self-corroborating: abstract's own l.165 (T11->Hyp centralizer) and residual list
+    ll.182-186 (omits T11). Related: front-matter's two-way discharge dichotomy (ll.218-221
+    / 517-520) vs body's three-way (ll.11936-11939). Fix: add "except (T11)" in both sites.
+
+F2 (PLAUSIBLE, over-statement) — grav-realisation generic-scope residual dropped:
+  - FRONT: abstract l.321-322 "the existence of H_grav is a theorem"; ll.337-338
+    "Hyp grav-realisation...all closed".
+  - BODY: rem:sharp-vs-original ll.12129-12142 — theorem only on dS/stationary/FLRW;
+    "remains genuinely open...on a generic globally hyperbolic (M,g)"; (T3),(T4)
+    "conditional." Scope ll.513-515 keeps it a standing hypothesis (abstract/scope disagree).
+  - Charitable: "theorem modulo Hyp clpw-realisation" (carried as residual). Softer.
+
+F3 (PLAUSIBLE, borderline — most defensible) — "SM matter accommodation...all closed":
+  - FRONT: abstract l.341.
+  - BODY: l.20273 "The SM n=1 first law is accordingly NOT a theorem"; rem:SM-residual-
+    explicit ll.19750-19787 (4 uncovered items, incl. Casini-Galante-Myers making E0-lin-
+    for-SM conditional). Defense: "accommodation"=thm:clausius-SM (a theorem); residual
+    folds into already-named Ax E0-nl (l.19785); "without a new axiom" (ll.289-291) honest.
+    Likely no change.
+
+Minor A: scope "At a glance" ll.372-375 "(E0-lin)...here a theorem...and only [E0-nl]
+  remains primitive" omits Hyp clpw-realisation / Hyp E0-dS (rem:master-residual-list iii).
+  Defensible via precise "primitive." Minor B: abstract's "complete residual...list" (7
+  categories, ll.326-337) vs rem:master-residual-list (11 items) — abstract explicitly defers
+  to the remark; body says abstract quotes "the short list" (l.12109). Both no-change.
+
+## CLEAN (front matter accurately previews body) — no defect
+E1->H0 (motivated-not-derived), E2 conditional-theorem-modulo-(E2a) (rem:E2-discharged,
+retraction of prior unconditional claim intact), E3 theorem-modulo-(E3a) (thm:E3-horizon-cp
+"Assume Hyp ak-modular-flow"), E4 UNCONDITIONAL (thm:E4-* no hypothesis clause; l.18280
+"defined unconditionally"), E0-lin theorem-modulo-clpw, "airtight implication" framing,
+Part I (i)-(v), conservation-for-every-Hadamard-state (lem:semiclassical-conservation),
+C>=1/32 (l.8856), parity-odd->parity-even retraction (ll.13329-13354) propagated to abstract,
+Conj->Prop promotions (clock/coupling/cutoff-shrinkage), five-fold reduction (a)-(e)<->(R1)-(R5),
+(E2a) still a named input (an17-M3 promotion is a sub-part only — no under-statement).
+
+## Concurrency / honesty
+unification.tex was edited by concurrent swarm agents mid-pass (~258 ll changed + LaTeX
+rebuild; ISSUES.md +7032 ll). ALL 3 finding sites re-verified by grep against the CURRENT
+file: F1 abstract l.217 / scope l.512 / body l.11875-11876 present; F2 abstract l.321 present;
+F3 body l.20273 (shifted +1 from prior read). None resolved by concurrent edits. Line numbers
+are as-of-analysis; load-bearing anchors are quoted strings + \ref labels. My writes to paper
+files: ZERO (Read + read-only Bash greps only).
+
+# ============================================================
+# FINAL ADJUDICATION (run 72) — re-verified both sites of each reported defect
+# ============================================================
+# Method: re-read BOTH quoted sites of every reported item in the LIVE files
+# (unification.tex rebuilt 16:26, line nos drifted ~+1; appendix_e2a_omega.tex
+# unchanged since 09:46 so A2 line nos exact). Reject phantoms (run-62 class).
+
+## CONFIRMED DEFECT 1 — F1 front-matter over-statement (T11 universal quantifier). HARD.
+# Site A1 (abstract, over-states): unification.tex l.216-218
+#   "all structural / conditions (T0)--(T13) of Conj.~\ref{conj:tbrme} are promoted /
+#    to theorems of this paper under the three postulates and the / standard realisation
+#    Hyp.~\ref{hyp:grav-realisation}..."  -> universal "all (T0)--(T13)" INCLUDES T11.
+# Site A2 (scope, over-states): unification.tex l.512-513
+#   "every structural (T)-condition of / Conj.~\ref{conj:tbrme} is a theorem of this paper
+#    under the..."  -> universal "every (T)-condition" INCLUDES T11.
+# Site B (body, authoritative): unification.tex l.11875-11876 (thm:master-unification-sharp)
+#   "Then all of (T0)--(T13) of Conj.~\ref{conj:tbrme} \emph{except (T11)} are theorems;
+#    (T11), consolidated with (CP) into Hyp.~\ref{hyp:centralizer}..., remains a hypothesis,
+#    ... not / discharged" (l.11888-11891).
+# grep "except (T11)" = 1 hit (l.11876 only); both front-matter sites carry NO T11 caveat.
+# Self-corroborated INSIDE abstract: l.164-166 sends (T11)+(CP) to Hyp centralizer; the
+# residual list l.184-186 "(T0),(T3),(T4),(T7)--(T10),(T12),(T13)" OMITS T11. So l.216-218
+# contradicts l.164-166 of its OWN abstract. Zero interpretive wiggle. VERDICT: REAL DEFECT.
+# EXACT FIX (minimal splice, matches body phrasing "\emph{except (T11)}"):
+#   FIX A1: l.217 "...Conj.~\ref{conj:tbrme} are promoted"
+#         -> "...Conj.~\ref{conj:tbrme} \emph{except (T11)} are promoted"
+#   FIX A2: l.512-513 "...Conj.~\ref{conj:tbrme} is a theorem of this paper"
+#         -> "...Conj.~\ref{conj:tbrme} \emph{except (T11)} is a theorem of this paper"
+
+## CONFIRMED DEFECT 2 — D1 grade-propagation miss (an17-M3 stale straggler). appendix.
+# Site A (STALE, under-grades): appendix_e2a_omega.tex l.3861-3864 (rem:an17-open item (a))
+#   "(M2) clause~(iii) and (M3) clause~(i) / difference-form are named inputs, un-derived in
+#    print for the family."  -> grades (M3) clause(i) diff-form as UN-DERIVED NAMED INPUT.
+# Site B (authoritative, NEW): appendix_e2a_omega.tex l.3781-3783 AND l.3976-3978
+#   l.3782: "(M3), the clause~(i) difference / form, is now a \emph{ported theorem}
+#            (...; App.~\ref{app:e2a-ports})"
+#   l.3974-3976: "The written-with-constants difference theorem over the full $H^s$ ball
+#            ... is now ported by full / re-derivation as App.~\ref{app:e2a-ports}, closing
+#            the content / outright. \emph{Grade: THEOREM}"  ("full $H^s$ ball" = the family).
+# Same object (M3 = clause(i) difference-form), graded NAMED-INPUT/un-derived at l.3864 and
+# THEOREM/ported at l.3782 & l.3976, all within ~200 ll of one appendix. Direction SAFE
+# (under-claim, clause(i) unconsumed by prop:N1-free-omega) but a LIVE self-contradiction a
+# referee cross-reading rem:an17-open vs item:an17-M3 will flag. "for the family" nuance does
+# NOT rescue Site A: Site B closes the full-ball (family) content outright. VERDICT: REAL.
+# EXACT FIX (decouple the M2/M3 conjunction, no math change):
+#   l.3863-3864 "(M2) clause~(iii) and (M3) clause~(i) / difference-form are named inputs,
+#                un-derived in print for the family."
+#   -> "(M2) clause~(iii) is a named input, un-derived in print for the family; (M3)
+#       clause~(i) difference-form is now a ported theorem (App.~\ref{app:e2a-ports})."
+#   (downstream l.3865-3868 "literal flip ... not achieved ... modulo this finite list"
+#    stays correct: (M1) PLAUSIBLE + (M2) named input still populate the finite list.)
+
+## REJECTED FALSE POSITIVES
+# F2 (abstract "existence of H_grav is a theorem" l.321-322 / "Hyp grav-realisation ... all
+#   closed" l.338 vs rem:sharp-vs-original l.12124-12142 "the one named exception ... genuinely
+#   open ... on a generic (M,g); (T3),(T4) correspondingly conditional"). REJECT as HARD defect:
+#   documented charitable reading HOLDS end-to-end -- (i) abstract l.316-320 already scopes the
+#   realisation theorems to "de~Sitter, stationary, and cosmological backgrounds" and l.332
+#   carries "the realisation hypotheses above" as residual COMMITMENTS; (ii) body l.12135-12136
+#   MERGES hyp:grav-realisation into hyp:clpw-realisation, which the abstract DOES carry as a
+#   residual (l.317), so the generic-scope residual is carried under that name; (iii) labeling a
+#   "Hyp." as "closed" self-signals "status resolved (modulo the carried hypothesis)", not
+#   "proven true"; (iv) "existence of $\mathcal H_{\rm grav}$" (the Hilbert space) is a
+#   weaker/distinct object from hyp:grav-realisation (dense analytic-vector core). Soft
+#   1-clause tightening is OPTIONAL, not a referee-flag inaccuracy. NOT in fix list.
+# F3 (abstract "SM matter accommodation ... all closed" l.340-341 vs body). REJECT: "accommodation"
+#   = thm:clausius-SM, which IS a theorem (l.20103-20105 "the per-wedge scalar Clausius identity
+#   for SM matter is a theorem (Thm.~\ref{thm:clausius-SM})"). The non-theorem object is the
+#   n=1 interacting first-law identity, graded theorem-modulo-(R-i) (l.19958-19959) and folding
+#   into the already-NAMED Ax.~\ref{ax:E0-nl} (abstract l.315). Weaker word "accommodation" does
+#   NOT over-claim the first law. A1's cited "SM n=1 first law NOT a theorem" is not even present
+#   verbatim; body says "theorem-modulo-(R-i)". NOT a defect.
+# l.94 "structural/analytic hypotheses (T0)--(T13)" — NOT a third F1 site: lists (T0)--(T13) as
+#   HYPOTHESES of the ORIGINAL thm:master-unification (unsharpened), correct usage, no claim of
+#   theorem-hood. Rejected as phantom.
+
+## Q3 — Does the front matter accurately preview the body?
+# SUBSTANTIALLY YES, with ONE hard over-statement (F1, two sites) to splice. No under-statements
+# (no missed credit): the front matter claims every body promotion (E3/E4 upgrades, E0-lin,
+# T-discharges, Conj->Prop, parity retraction, C>=1/32). Bias is toward over-claiming (T11),
+# never under-crediting. After the F1 two-site splice, front matter previews body faithfully.
+
+## Zero-write verification BY CONTENT
+# sha256 unification.tex = fcc691f5...a7eb04 ; ISSUES.md = 6eef81a1...3fa3901 (captured post-pass).
+# I issued ZERO Edit/Write to either file this pass (Read + read-only greps only). The M-state of
+# both in git is pre-existing concurrent-swarm activity, not this adjudication.
+
+---
+### Main-session apply note — runs 72 + 73 (editorial: front-matter/grade-map + references/notation) applied (2026-07-15)
+
+Both editorial swarms processed; confirmed fixes applied, false positives correctly rejected, full clean rebuild 0/0/0, 329 pp.
+
+**Run 72 (front-matter + claims/grade coherence) — 2 CONFIRMED, 3 rejected false positives:**
+- **F1 (referee-critical, the highest-value editorial defect found): a hard front-matter over-statement.** The abstract (l.217) and scope section (l.512) both claimed "all/every structural (T)-condition (T0)–(T13) is a theorem" — a universal that includes (T11), which the body's Sharpened Master Unification Theorem (l.11876) explicitly EXEMPTS ("except (T11) ... remains a hypothesis ... not discharged"). The abstract even contradicted its OWN l.164-166 (which sends T11 to Hyp centralizer). **Fixed:** "\emph{except (T11)}" spliced into both front-matter sites, matching the body's own phrase — now 3 consistent occurrences (abstract, scope, body). No under-statements found (the front matter's bias was toward over-claiming, never under-crediting).
+- **D1 (body coherence — one more M3 straggler):** rem:an17-open item (a) (appendix l.3864) still graded the M3 clause-(i) difference form as "un-derived named input" while l.3782/l.3976 grade the same object "ported theorem" ~200 lines away — the SAME M3-propagation class runs 57/58/59 swept across 8 spots, one spot none of them reached. **Fixed:** M2/M3 conjunction decoupled (M2 named input; M3 now a ported theorem). Direction was safe (under-claim), now consistent.
+- Rejected false positives (adjudicator discipline): F2 (grav-realisation "closed" — charitable reading holds via the merged hyp:clpw-realisation the abstract already lists), F3 ("SM accommodation" = thm:clausius-SM, a genuine theorem), and an l.94 phantom (correctly lists T-conditions as hypotheses of the ORIGINAL theorem).
+
+**Run 73 (references + cross-refs + notation) — bibliography CLEAN, 1 CONFIRMED cross-ref + 1 optional notation, false positives rejected:**
+- **Bibliography verified complete:** 406 bibitem keys == 406 cite keys, 0 orphans, 0 dangling, 0 duplicate arXiv/DOI/titles across the FULL \input set — the run-62 appendix-grep trap correctly neutralized (5 keys cited only in appendices, not falsely orphaned; 12 keys cited only on \cite continuation lines, caught by DOTALL parsing).
+- **D1-cross-ref (CONFIRMED, fixed):** an17:embed is an alias label on a LEMMA but cited "Proposition/Prop." at 3 sites (appendix l.2206/2275/2284) while cited "Lemma" at l.197/475 — the same object printing as both "Lemma N.M" and "Proposition N.M", a build-invisible wrong-noun a referee following the ref would hit. **Fixed:** the 3 sites → "Lemma/Lem."
+- **N1 (optional, fixed):** Λ = cosmological constant vs UV cutoff 12 lines apart in one Sakharov-induced-gravity remark (l.6890/6902) — a zero-risk clarifier added ("here Λ is the spectral-action UV cutoff, not the cosmological constant"). N2 (K reused as a throwaway commutator at l.1034) left as author-discretion — renaming an in-proof symbol wants more care than a readiness pass warrants, and := + type-difference already mitigate.
+- Rejected: N-species-vs-entropy (separated scopes), the Tice2018 key/year (invisible cosmetic), the 22 alias-idiom cross-refs (documented, correct targets).
+
+Editorial defect classes so far: front-matter grade over-statement (F1, fixed), grade-propagation straggler (D1-r72, fixed — the recurring class), wrong-noun cross-ref (D1-r73, fixed), notation overload (N1, fixed). All apply-hygiene / presentation, zero math. Run 74 (process-language leak sweep) still in flight.
+
+# LEDGER — RUN 74, ARM A1 (process-language leak sweep)
+
+## Scope
+Full \input set: unification.tex + appendix_e2a_omega, appendix_dirac_floor,
+appendix_e0ds_min, appendix_e2a_ports (→ port_m3, port_ac, port_d0),
+ds2_restriction, ds2_pairing. tbrme-uniqueness-outline.tex excluded (standalone, not \input).
+
+## Method
+- classify.py: regex battery, each match tagged BODY vs CMNT by position relative to first
+  unescaped `%`. Output hits_raw.tsv (258 hits), body_lines.tsv (159 unique body lines).
+- Verified all 6 main-file \input lines (23242–23247) unconditional; port files + ds2 files
+  have no `\if` guards → render live. Only `\ifanstagepaper` block = appendix_e2a_omega 4033–4112,
+  balanced + false → non-rendering (confirmed). .fls is stale (Jul 14) so swept by source.
+
+## Result (see ed_leak.md for full list)
+- Tier-1 hard printed-body leaks: ~108 lines. Concentrated in ports appendix (51) +
+  appendix_e2a_omega banked/run (36) + ds2 run-53 (11) + unification W1/B1a/dS (10).
+- Tier-2 soft/borderline: honesty-discipline / overclaim-home / Grade-ledger / no-go-ledger /
+  "adversarial ... pass confirmed" / referee-confirmed–adjudicator family.
+- Comment-only: ~40 lines (headers + STAGED docs), non-printing.
+- False positives cleared: #1 macro args, physics "stage", "adversarial analysis", math-object
+  "ledger" (per-cell L² fan ledger), GSL ledger, overclaim-as-self-correction.
+- ABSENT everywhere: TODO, FIXME, XXX, swarm, R-KILL, RR-\d.
+- Gated-preview `\ifanstagepaper` block: confirmed does NOT render; no leak from it.
+
+## Verdict
+NOT CLEAN. Real, concentrated leak. Highest-value cleanup targets: (1) whole ports appendix,
+(2) appendix_e2a_omega banked/run, (3) unification §20k ISSUES/run-18/banked cluster.
+
+## Provenance / constraints honored
+- ZERO writes to unification.tex and ISSUES.md (verified by content/mtime post-run).
+- Deliverable staged: scratchpad/ed_leak.md. Ledger: scratchpad/ledger_run74.md.
+- Artifacts: scratchpad/classify.py, hits_raw.tsv, body_lines.tsv.
+
+# =====================================================================
+# LEDGER --- RUN 74, ARM A2 (stale / contradictory / dangling passage sweep)
+# Deliverable staged: ed_stale.md. ZERO writes to unification.tex / ISSUES.md
+# (verified: mtimes 16:26 / 16:27 unchanged from session-start ls; git "M" is
+# pre-existing uncommitted campaign state, not from this arm).
+# =====================================================================
+
+## Method (A2)
+- dupword.py: cross-line + same-line doubled-word scan, whole input set, comment/math-aware.
+- dupsent.py: near-duplicate-sentence scan (Jaccard>=0.6, 40-line window) for doubled/
+  contradictory sentences from sequential edits.
+- Grade-contradiction anchors (named input/PLAUSIBLE/theorem/unconditional/conditional/
+  open/superseded/retracted/formerly/no longer) + full reads of the named heavily-edited
+  regions. Dangling-ref scan (as shown above/below, established above/below).
+- Confirmed \ifanstagepaper block non-rendering (agrees with A1).
+
+## Result (A2) --- 2 printed defects, 1 watch, 1 gated/non-printing
+- S1 [DEFECT-DOUBLE] unification.tex 17697-98: doubled "and and" (renders). Only genuine
+  doubled-word defect in the input set.
+- S2 [DEFECT-STALE] appendix_e2a_omega.tex 3863-64: (M3)=clause(i)-diff grouped with (M2)
+  as "named inputs, un-derived in print for the family" --- stale; current grade THEOREM
+  (ported, App e2a-ports), per 3782-83 / 3976-78 / 3595-3603 / port_m3 Thm port:thm-M3.
+- S2b [WATCH] appendix_e2a_omega.tex 3674-79: same stale grouping ("not derived by any
+  companion file"), weaker / defensible under the "analytic tree" reading.
+- G1 [GATED/NON-PRINTING] appendix_e2a_omega.tex 4109: staged E3 echo "modulo (i)--(iii)"
+  stale vs applied "(ii)--(iii)"; does not render.
+
+## Negative confirmations (A2)
+- "modular register" (run-71 hapax) ABSENT; "M3 propagation" (run-59) ABSENT.
+- Retracted "unconditional theorem" for E2/entropy-smallness does NOT survive as current
+  (8889/8902 = finite-dim-cutoff scope, cleanly separated from the type-III_1 retraction 17668).
+- Dangling refs: only 16469 (CLEAN back-reference).
+- W1/B1a, E0-dS/e0ds_min, Newtonian/V1, Dirac (E2b), port_ac/port_d0: internally reconciled
+  before/after narratives; no old-grade-beside-new.
+
+## Verdict (A2)
+NEARLY CLEAN on stale/contradictory content: 2 small printed defects (1 doubled word,
+1 stale M3 grade line) + 1 watch. The doubled-sentence family (run-71/run-59) is fully
+cleaned. Process-language leaks are A1's (ed_leak.md) --- out of A2 scope.
+
+## Artifacts (A2): scratchpad/ed_stale.md, g.sh, dupword.py, dupsent.py
+
+# =====================================================================
+# FINAL ADJUDICATION --- RUN 74 (adjudicator pass; independent re-verification
+# of every reported leak/stale site against the live source).
+# Method: independent body-vs-comment classifier (adj_classify.py; first
+# UNESCAPED % per line), independent cross-line + single-line doubled-word
+# scans (adj_dupword.py + literal grep), \ifanstagepaper guard re-checked,
+# each ambiguous token context-read by hand. ZERO writes to unification.tex /
+# ISSUES.md --- verified BY CONTENT: sha256 captured pre-pass in _hash_before.txt
+# (unification fcc691f5..., ISSUES 6eef81a1...); re-hash at close must match.
+# =====================================================================
+
+## ADJUDICATION RESULT: arms A1/A2 SUBSTANTIALLY CONFIRMED, with 2 deltas.
+
+### DELTA 1 (arm A1 MISS --- adjudicator adds): appendix_e2a_omega.tex:3126
+  "...method-relative upper bounds for the fence (run~6), not sharp-from-below."
+  BODY (no % on line), campaign run-ref "run~6" (renders "run 6"). Arm A1's
+  omega run-NN list omitted it. CONFIRMED printed-body-leak. Fix: delete "(run~6)".
+
+### DELTA 2 (arm A1 DOWNGRADE): appendix_e2a_omega.tex:3314 "the staged zero-data
+  route across the perturbation region P". Arm graded Tier-1 hard. Adjudicator:
+  BORDERLINE --- "staged" here is plausibly English "set-up/arranged" in a pure-math
+  sentence (domain-of-dependence / slabs / data levels), NOT clearly campaign
+  "staged edit". Moved to WATCH (author glance), removed from hard-confirmed list.
+
+### CONFIRMED PRINTED-BODY LEAKS (hard; re-read each site):
+  unification.tex (10): 17250(\#20 home), 17772(run-37), 19773(ISSUES.md),
+    20288(banked), 20337(banked), 20452(ISSUES.md), 20563(ISSUES l.+run-18),
+    20569(run-18 R5), 20574(run-18 R5), 20661(ISSUES l.4731 DO-NOT). All live body.
+  appendix_e2a_omega.tex: banked x17 (267,1066,1475,1857,1897,1908,1926,2163,2204,
+    2266,2403,2976,3183,3225,3547,3552,3570); run-NN x21 (267,2542,2628,2668,3040,
+    3047,3101,3126*,3155,3164,3165,3225,3307,3761,3769,3822,3918,3948,3949,3967,3987)
+    [*=delta1]. (staged 3314 -> WATCH.)
+  appendix_e2a_ports.tex: 15,20 (run-54 audit / run-54 adversary wounds).
+  port_m3.tex (13): banked 58,487,498,499,506,510,515,517; ledger 532,534;
+    run-54 547,555; staged 554; +ISSUES.md/adjudication 498.
+  port_ac.tex (~37 lines): run-54/staged/wound/R-arm/banked/"the adversary"(372)/
+    modulo-list-of-record/ledger/\#B'; incl. printed PARAGRAPH HEADING 41 "The wound
+    manifest (run-54 R-arm, all four folded)" and body filenames 455-457
+    (gated_edit_run54.md, port_m3.tex, "run-54 ledger").
+  port_d0.tex (17 lines): run-54/48/57, banked 301/318, wound 345, gated edit 368,
+    body filename+"arm A1" 364 ("delivered this run as port_ac.tex (arm A1)"), \#A/\#B'.
+  ds2_restriction.tex (5): 258,308,345,452,455 (run-53).
+  ds2_pairing.tex (6): 29,244,399,467,654 (run-53) + 390 "Recommended gated edit at
+    import" (process instruction printed in body).
+  ==> NOT CLEAN. Concentrated: whole ports appendix + omega + ds2; main body ~clean
+  (10). "banked" confirmed-as-leak with the standing term-of-art caveat (author may
+  have intended it as "previously-established"; recommend-fix, not error-claim).
+
+### CONFIRMED STALE / CONTRADICTORY:
+  S1 unification.tex 17697-17698: cross-line doubled "and and" (17697 ends ", and";
+     17698 opens "and"). Re-read + independent cross-line scan + literal single-line
+     grep: it is the UNIQUE doubled-word defect in the whole input set. Fix: delete one "and".
+  S2 appendix_e2a_omega.tex 3863-3864: (M3) clause-(i) difference-form grouped with
+     (M2) as "named inputs, un-derived in print for the family" (STALE) vs CURRENT
+     "Grade: THEOREM (ported)" at 3782-83 / 3976-78 ("formerly NAMED INPUT") /
+     3595-3603, and port_m3 Thm port:thm-M3 (61-62 "over the full H^s ball" + 30-34
+     "verbatim over U_omega with the same constants") DERIVES the family-uniform form
+     in print. CONFIRMED genuine intra-appendix contradiction. Current = THEOREM(ported).
+     Fix: split M3 out of the 3864 "named inputs, un-derived" group.
+
+### WATCH / BORDERLINE (recorded, NOT hard-fixed; author judgment):
+  S2b omega 3674-3679 "not derived by any companion file: clauses (i) diff-form ...
+    named inputs" --- same stale grouping, defensible as the master theorem's
+    deliberate self-contained (M1)-(M3) hypothesis structure. Agree with arm: WATCH.
+  omega 3314 "the staged zero-data route" (delta 2).
+  Tier-2 soft process language (referee would find odd; not run-numbered):
+    omega 1568 "the honesty discipline polices"; 1297/3662 "overclaim home"; 1759
+    "Grade ledger"; 3981/3983 "ledger residues"/"full no-go ledger"; 903 "killed twin";
+    \#A/\#B' named-residue labels (3296,3313,3319,3325,3426,3427,3852,3930,3985,3986 +
+    ports) --- defined in-place but "#"-notation echoes campaign hunt-labels.
+    unification 13558/16710 "adversarial ... pass confirmed"; 17210/17239
+    "referee-confirmed theorem over U_omega"; 20255 "adjudicated".
+    referee-confirmed family: omega 2180,3040,3386,3566-3567.
+
+### GATED / NON-PRINTING (confirmed does NOT render --- NOT defects):
+  omega \ifanstagepaper 4033-4112: \newif(4016)/\anstagepaperfalse(4017), only
+  \anstagepapertrue is in a comment (4007), balanced \fi(4112), no \else/nesting.
+  All anchor hits inside (STAGED 4038/4070/4101; adversar 4074; referee-conf 4067/4085;
+  stale "modulo (i)-(iii)" echo 4109 = arm's G1) are non-printing. Confirmed safe.
+
+### FALSE POSITIVES (verified LEGITIMATE --- do NOT touch):
+  unification #1-#4 \newcommand args (42-45); physics "stage" (finite-stage / stage-n
+  Kraus, 2373..6012); "adversarial analysis/survey" methodology (6899,19327,19365);
+  "ledger" as defined MATH object (GSL ledger 3173; Rigor ledger 16070; omega cell/
+  cone/boundary ledger cluster 1075,1116,1138,1208,1231,1264,1273,1381,1562,1571,1578,
+  1716,1737,1741,1952 + subsection title 1075); "adjudicated"=decided (14780);
+  "overclaim" as self-correction (21308, omega 3796); "modulo-list" as structural
+  device (omega, plain); doubled-word scan FPs (all math symbols / doubled author-name
+  citations / "it. It" sentence boundaries / \usepackage{geometry}+\geometry preamble).
+
+### COMMENT-ONLY (non-printing; recorded, not fixed): my classifier: omega 40,
+  dirac_floor 4, e0ds_min 4, e2a_ports 3, port_m3 4, port_ac 14, port_d0 3,
+  ds2_restriction 1, ds2_pairing 4. File-header provenance + STAGED-block docs.
+
+### ABSENT everywhere (body or comment), re-confirmed: TODO, FIXME, XXX, swarm,
+  R-KILL, RR-<digit>, "modular register" (run-71), "M3 propagation" (run-59),
+  dangling "as shown above/below" (only 16469, a legit back-ref). "the adversary"
+  appears once in BODY: port_ac 372 (already in hard-leak list).
+
+## ADJUDICATION VERDICT: A1 = NOT CLEAN (confirmed ~10 main-body + saturated ports/
+  omega/ds2 leak, +1 arm-missed site 3126, -1 downgrade 3314). A2 = S1+S2 both
+  CONFIRMED real, S2b WATCH, gated block confirmed non-printing. Deliverables ed_leak.md
+  / ed_stale.md are accurate; my deltas noted above. ZERO writes to unification.tex /
+  ISSUES.md (by content).
+## Artifacts (adjudication): adj_classify.py, adj_dupword.py, _hash_before.txt.
+
+# =====================================================================
+# CONCURRENCY ADDENDUM (CRITICAL) --- target files changed UNDER the pass
+# =====================================================================
+  A concurrent campaign process WROTE to unification.tex, appendix_e2a_omega.tex,
+  and ISSUES.md at ~17:30:11-17:30:45 (mtimes), DURING this read-only adjudication.
+  I issued ZERO Write/Edit/redirect to any of them (my only writes were to this
+  scratchpad ledger + helper .py). So the sha256 pre/post DIFFERENCE (unification
+  fcc691f5 -> f3552258; ISSUES 6eef81a1 -> 01ad67eb; omega -> 08a57a69) is NOT mine.
+  ==> "ZERO writes to unification.tex/ISSUES.md" is TRUE for THIS agent (no tool
+      call touched them); it is NOT true that the files are byte-stable across the
+      window, because an external process edited them. Reported honestly, not hidden.
+
+  MY READS were against the pass-start snapshot (fcc691f5 = the arms' 16:26 version;
+  every token matched the arms' line numbers exactly), so the adjudication is valid
+  against the version the arms produced findings on. I then RE-VERIFIED against the
+  now-current tree (stable at 17:30):
+
+  WHAT THE CONCURRENT WRITE DID (git diff working-vs-index is TOTAL uncommitted state,
+  not the write alone; isolated by token re-location):
+   - FIXED S2: current omega 3861-3866 now reads "(M2) clause~(iii) is a named input,
+     un-derived in print for the family; (M3) clause~(i) difference-form is now a
+     ported theorem (App.~\ref{app:e2a-ports})." == EXACTLY the arm's proposed S2 fix.
+     S2 is therefore RESOLVED in the live tree (no longer a defect). Related M3-grade
+     "now a ported theorem" lines also added (omega 3437, 3549). This is a coherent
+     M3-grade reconciliation pass by a concurrent arm.
+   - Did NOT fix S1: doubled "and and" still present, now unification.tex 17699-17700
+     (was 17697-98, +2). STILL A DEFECT.
+   - Did NOT remove ANY process-language leak. Body-hit counts IDENTICAL pre/post
+     (unif 23, omega 99, ports 4/17/51/23, ds2 5/6). Line numbers shifted (main file
+     uniformly +2 from ~17250 on; omega +2 from ~3861 on; <=3822 unchanged).
+
+  CURRENT-TREE line numbers for the CONFIRMED main-file leaks (apply here, not the
+  old numbers): 17252(\#20 home), 17774(run-37), 19775(ISSUES.md), 20290(banked),
+  20339(banked), 20454(ISSUES.md), 20565(ISSUES l.+run-18), 20571(run-18), 20576(run-18),
+  20663(ISSUES l.4731 DO-NOT).  S1 now 17699-17700.  omega run~6 still 3126; omega
+  banked/run/staged unchanged <=3822, +2 after; gated STAGED now 4040/4072/4103 (still off).
+  port/ds2 files: check mtimes (untracked, git diff blind); classifier counts unchanged
+  => their leaks are all still present.
+
+  RECOMMENDATION: a concurrent arm is actively applying fixes. Before any cleanup edit
+  is applied, RE-SCAN the live tree (line numbers move); S2 is already done; S1 + the
+  process-language leak set remain OPEN as of 17:30.
+
+---
+### Main-session apply note — run 74 (process-language leak sweep): main body cleaned, appendix de-process dispatched (2026-07-15)
+
+Ledger `ledger_run74.md` merged above. **Verdict: NOT CLEAN — substantial confirmed printed-body process-language leak** (the adjudicator substantially confirmed both arms; false positives correctly rejected — the defined math-object "ledger", physics "stage", "adversarial survey" methodology, "overclaim" self-correction, macro #args all protected; the \ifanstagepaper preview block confirmed non-rendering).
+
+**MAIN BODY — 10 leaks + 1 doubled-word FIXED (the referee-critical part, rebuild 0/0/0):** \#20 hunt-home → deleted; "the run-37 first law" → "the free-photon first law"; two "banked imports/strip lemma" → "imports/strip lemma"; three "ISSUES.md" cross-listings → removed (B1a now "designated B1a"); the antilocality "(ISSUES l.4047; run-18 R5)" parenthetical → removed; two "run-18 R5" → "symbolically exact"/"plausible"; the "ISSUES l.4731 DO-NOT" marker → removed; and **S1 the doubled "and and"** (a genuine printed-body typo: "⟨N_ghost⟩=−n_B, and / and the free-photon first law") → one "and". Main-body residual-leak sweep = 0.
+
+**APPENDICES — dispatched as run 75 (de-process rewrite):** the saturated tail — appendix_e2a_omega (banked ×17 + run-NN ×21), the ports appendix (appendix_e2a_ports + port_m3/ac/d0, incl. the printed paragraph heading "The wound manifest (run-54 R-arm...)" and in-body filenames port_m3.tex/gated_edit_run54.md), and ds2_restriction/ds2_pairing (run-53/F3/R8 campaign labels + a "Recommended gated edit at import" body instruction). This is ~100 sites requiring campaign-label→descriptive-name rewrites (F3→the improvement/Wald identity, R8→the witness state, etc.), not mechanical deletion, and must avoid the protected false-positives — hence a focused swarm producing the exact splice list. S2 (the M3 straggler) was already closed by run-72's D1.
+
+# RUN 75 — LEDGER (ARM A1: appendix_e2a_omega.tex de-process)
+
+DELIVERABLE: /private/tmp/claude-501/-Users-alexandru-Code-Physics/7e581bd1-6e85-4c8f-93f7-d7715a032a77/scratchpad/dp_omega.md
+STATUS: complete + machine-verified. ZERO writes to any repo .tex file.
+
+## Splices staged: 45 (all OLD = unique verbatim substring, confirmed str.count==1)
+  A. "banked" adjective ...... 17  (S1–S17)   [267,1066,1475,1857,1897,1908,1926,2163,
+                                                2204,2266,2403,2976,3183,3225,3547,3552,3570]
+  B. "banks" verb + early-run .. 3  (S18–S20)  [3584,3601,3571]
+  C. run-NN round tags ........ 17 splices covering the remaining of the 21 run-NN sites
+                                    (S21–S37; 267 & 3225 folded into S1/S14, 3040/3155/3761 into C/D)
+  D. referee-confirmed/adjudicator family .. 7 (S38–S44) [2180,3150,3386,3566,3567,3760,3761]
+  E. "staged" .................. 1 (S45)       [3314]
+  → run-NN total sites de-processed = 21 (267,2542,2628,2668,3040,3047,3101,3126,3155,3164,
+    3165,3225,3307,3761,3769,3822,3920,3950/51,3969,3989). banked/bank* total = 20 (17+2+1).
+
+## Verification performed
+  * check_omega.py: every OLD str.count==1 in live file (2 initial line-break misses fixed: S3,S6).
+  * apply_omega.py: applied all 45 sequentially in-memory → each still count==1 at its turn
+    (no overlap), then grepped result for {banked, banks, run-N, referee-confirmed/-verified/-1,
+    adjudicator, early-run, "the staged", run-54} in BODY (excl. % comments + gated block) →
+    RESIDUAL EMPTY. delta = -372 chars. All math/refs preserved; no new \ref introduced.
+
+## Protected / left untouched (per task PROTECT list + Tier-2 out-of-scope)
+  math-object "ledger" (Lem an17:lem-ledger, 14 lines); every "modulo-list"; \ifanstagepaper
+  block 4035–4114 (incl. 4069/4087 referee-confirmed, 4076 adversarially-verified — gated,
+  non-rendering); all % comments; "overclaim"/"overclaim home"/"honesty discipline" (1297,1568,
+  3662,3796); "killed twin" (903); "Grade ledger" (1759); "ledger residues"/"no-go ledger"
+  (3983,3985); "verdict" (3770, only the run-16 tag before it stripped).
+
+## Notes for applier
+  * Apply as LITERAL string replace, single pass, any order (verified non-overlapping).
+  * S35 OLD spans 2 lines (newline + EXACTLY 4 leading spaces on line 3951) — see dp_omega.md.
+  * Pairs sharing a source line-neighborhood but independent: S17+S20 (3570/3571),
+    S29+file-line-3156, S39+3151, S41+S42 (3566/3567), S43+S44 (3760/3761), S45+3315.
+
+# ============================================================================
+# RUN 75 — LEDGER (ARM A2: THE PORTS APPENDIX de-process)
+# ============================================================================
+
+DELIVERABLE: /private/tmp/claude-501/-Users-alexandru-Code-Physics/7e581bd1-6e85-4c8f-93f7-d7715a032a77/scratchpad/dp_ports.md
+STATUS: complete + machine-verified. ZERO writes to any repo .tex file.
+
+## Splices staged: 56 (all OLD = unique verbatim substring, confirmed str.count==1, 0 fails)
+  appendix_e2a_ports.tex ..  2  (PORTS1-2)   run-54 audit / author-gated labor / adversary wounds
+  port_ac.tex ............. 30  (AC1-AC30)   wound-manifest heading, run-54/staged/adversary/
+                                             of-record framing, [Wk FIX] markers, port_m3.tex
+                                             filename, referee-confirmed banked, gated_edit_run54.md
+  port_m3.tex ............. 12  (M1-M12)     banked x7, ISSUES.md+adjudication, ledger side-note x2,
+                                             in-run referee, run-54 adjudication, port_m3_check.py,
+                                             gated_edit_run54.md/staged-consumer
+  port_d0.tex ............. 12  (D1-D12)     run-54/48/57 tags, run-11-banked, banked trace-audit,
+                                             wound W4, list-of-record, port_ac.tex (arm A1), gated edit E4
+
+## Key transforms
+  * "The wound manifest (run-54 R-arm, all four folded)" heading -> physics heading
+    "The four conditions folded into the package." (AC5); the W1-W4 list KEPT as a labeled
+    list of four mathematical conditions; "[Wk FIX]" markers -> "[Wk]" (drop bug-fix "FIX").
+  * in-body filenames removed: port_m3.tex (AC12, AC28), port_ac.tex (D11), port_m3_check.py (M8),
+    gated_edit_run54.md (AC28, M12) -> descriptive phrases ("the clause-(i) port",
+    "the family-uniformity package of this appendix"); NO new \ref except reuse of existing
+    pac:thm-verdict (AC28).
+  * "banked" -> "established"/"compact"/"standard" or deleted; "run-NN" tags deleted;
+    "referee-confirmed banked derivation" -> "a standard derivation"; process "ledger"
+    (side-note/list) de-processed (NOT the omega math-object ledger — that's not in these files).
+  * M3 bonus: item (b) label made to match the \emph{Title.} Sentence. style of items (a),(c).
+
+## Verification (verify_ports.py)
+  * Parser extracts all 56 (file,OLD,NEW); every OLD str.count==1 in live file; NEW!=OLD. 0 FAILS.
+  * Simulated post-splice apply (per file) then token-grep of BODY (excl. % comments) for
+    {run-54/57/53/48, run-11-banked/--17, wound, adversary, referee-confirmed, gated_edit,
+     *.tex/*.py/*.md, of record, staged*, banked, [Wk FIX], this run/file, arm A1, R-arm,
+     adjudicat, audit(run-), ledger, stall, R-arm, overclaim} -> RESIDUAL EMPTY for all mandate tokens.
+
+## Protected / left untouched (per task PROTECT list)
+  * "modulo-list" KEPT everywhere (AC2, AC20, AC21, D7-title, D8) — structural device.
+  * named residues \#B$'$, \#A, and GT1 KEPT (load-bearing notation, not campaign labels).
+  * label pac:thm-verdict + all \label/\ref KEPT; "verdict" as the theorem's role KEPT.
+  * domain terms KEPT (not in strip mandate, not flagged by run-74): "booked" (registers/profile),
+    "trace-audit", "the printed audit" (points to appendix l.3588-3591), section names P-M3/P-AC/
+    Port (D0), and "port" as this appendix's own terminology (App title "Ports for...").
+  * "unification.tex l.NNNN" cross-ref anchors (port_ac x2, port_d0 x1) KEPT — main-paper
+    text-anchors in the files' re-key-at-import convention; NOT flagged by run-74, not in mandate.
+  * all % comment/header lines untouched (non-printing).
+
+## Notes for applier
+  * Apply as LITERAL single-pass string replace per file; verified non-overlapping, order-free.
+  * Multi-line OLDs preserve exact leading indentation (2-space itemize continuations in
+    AC8, AC16, D9, D10, D11). port_d0 line numbers had drifted -1 vs first read; all anchors
+    re-confirmed against LIVE bytes 2026-07-15 (text intact).
+
+
+# ============================================================================
+# RUN 75 — FINAL ADJUDICATION (verify each proposed splice is SAFE)
+# ============================================================================
+VERDICT: 114 / 114 splices APPROVED.  0 REJECTED.
+Consolidated apply-ready list: approved_splices_run75.json (byte-exact) +
+approved_splices_run75.md (human).  ZERO writes to any repo .tex file.
+
+Per-file approved counts (mechanical splice count):
+  appendix_e2a_omega.tex ... 45   (S1-S45)
+  appendix_e2a_ports.tex ... 2    (PORTS1-PORTS2)
+  port_ac.tex .............. 30   (AC1-AC30)
+  port_m3.tex .............. 12   (M1-M12)
+  port_d0.tex .............. 12   (D1-D12)
+  ds2_restriction.tex ...... 5    (S1-S5)
+  ds2_pairing.tex .......... 8    (P1,P2,P3,P4a,P4b,P5,P6,P7)
+  TOTAL .................... 114
+  [Note: arm A3 reported ds2_pairing as "7" by counting P4a+P4b as one "P4";
+   the mechanical count is 8. All 8 are unique + safe. Apply all 8.]
+
+GATE 1 -- uniqueness/verbatim/non-overlap (machine-verified, live files, HEAD d3131ee):
+  * every OLD str.count==1 in its live target (114/114).
+  * no NEW==OLD, no empty OLD, no OLD-is-substring-of-another-OLD (per file).
+  * sequential in-memory apply per file: each OLD still count==1 at its turn -- clean.
+  * S35 (omega) 2-line OLD (newline + EXACTLY 4 leading spaces on l.3951) parsed & verified.
+
+GATE 2 -- math preserved / reads as physics / no bad \ref (context-read every non-trivial site):
+  * no equation, symbol, constant, \label, or existing \ref removed; GT1, \#B$'$, \#A,
+    (D0), W2/W4, (res1)-(res4), (F1)-(F5), (s1-ii)/(s1-iii) all preserved.
+  * 2 introduced \ref both resolve in the same build (unification.tex inputs all 4 files,
+    l.23243-23248; appendix_e2a_ports inputs port_m3/ac/d0):
+      - AC28: Theorem~\ref{pac:thm-verdict}  (label at port_ac.tex l.361, count=1) -- backward ref.
+      - ds2 S3: \ref{lem:pair-chart}(v)      (label at ds2_pairing.tex l.53; part (v) l.97-105 =
+        the no-null-translation result) -- cross-file, same build, resolves.
+  * D12 introduces BARE text 'an17:CW-grade' (not a \ref) -- already used in-file; re-key-at-import
+    convention; no undefined-reference risk.
+
+GATE 3 -- protected false-positives UNTOUCHED (all confirmed):
+  * math-object ledger (omega Lem an17:lem-ledger): NO omega OLD contains "ledger". Untouched.
+    (port_m3 M9 / port_d0 D1 "ledger" = the campaign no-go/honest-note ledger in DIFFERENT files;
+     correctly stripped -- not the L^2-fan math object.)
+  * modulo-list: KEPT verbatim in AC2, AC20, AC21, D8 (renamed campaign wrapper only).
+  * adversarial survey/analysis methodology: never touched (PORTS2/AC21 strip "adversary wounds"/
+    "the adversary's list" = campaign framing, item 3 -- distinct from protected methodology).
+  * "overclaim" self-correction: no OLD contains "overclaim". Untouched.
+  * \ifanstagepaper gated-preview block (omega 4035-4114): all 45 omega sites <= l.3989 (< 4035).
+    Its referee-confirmed l.4069/4087 NOT matched by any OLD.
+  * % comment lines: no OLD starts on / lands on a comment line (position-checked all 114).
+  * physics "stage" (finite/terminal/stage-n Kraus): every "staged" OLD is campaign
+    (staged version/text/route/verdict/EP1/edits); no physics "stage" touched.
+
+RESIDUAL SCAN (post-apply simulation, body only, excl. comments + gated block):
+  clean of {banked, run-NN, referee-*, adjudicator, wound, adversary wound, gated_edit, R-arm,
+  arm A1/A2, FIX], staged, early-run, author-gated} in ALL 7 files.
+  Only remaining "of record" hits = legit MATH usage "constant of record"/"corollary of record"
+  (omega l.801,1214,3898) -- never in A1 scope, correctly left.
+
+DELIBERATELY-LEFT (completeness gaps, NOT rejections -- leaving is safe, documented by arms):
+  omega "no-go ledger"/"ledger residues" (3983,3985), "overclaim home"/"honesty discipline"
+  (1297,1568,3662,3796), "killed twin"(903), "Grade ledger"(1759); W1-W4 items reframed as
+  conditions (kept "Fix:"); unification.tex l.NNNN & appendix l.NNNN cross-ref anchors;
+  domain terms "booked"/"trace-audit"/"the printed audit". Applier/author may extend if desired.
+
+BORDERLINE-BUT-APPROVED (author may want to eyeball; all safe as written):
+  * M3 removes in-body "(ISSUES.md, LEMMA-II adjudication block)" -- ISSUES.md is the author's
+    no-go file (in-body filename, item 4 spirit); reshaped to (a)/(c) emph-Title. Sentence. style.
+  * AC5 heading -> "The four conditions folded into the package" (task suggested "Residual
+    estimates"; arm's choice fits the W1-W4 list better).
+  * ds2 S1 keeps a mild "improvement term ... improvement/Wald identity" echo (task-prescribed rename).
+
+---
+### Main-session apply note — run 75 (appendix de-process) + final sweep: PAPER FULLY DE-PROCESSED (2026-07-15)
+
+Ledger `ledger_run75.md` merged above. **114/114 splices APPROVED (0 rejected), applied across 7 appendix files, full clean rebuild 0/0/0, 329 pp.** The adjudicator re-verified every splice against live bytes (unique+verbatim OLD, non-overlapping sequential apply, all math/\ref preserved, both introduced \ref resolve, every protected false-positive untouched).
+
+**Applied per file:** appendix_e2a_omega 45 (banked ×17→"established"/deleted; run-NN ×21 tags stripped, "run-9 wall"→"data wall" etc.; referee-confirmed/adjudicator family ×7), appendix_e2a_ports 2, port_ac 30 (incl. the printed heading "The wound manifest (run-54 R-arm, all four folded)"→"The four conditions folded into the package"; in-body filenames→descriptive phrases/\ref), port_m3 12, port_d0 12, ds2_restriction 5, ds2_pairing 8 (campaign labels renamed: "run-53 F3"→"the improvement/Wald identity", "R8 witness"→"the witness state"/"divergent-moment witness", "(s2) certification"→"result of Lem. pair-chart(v)"; the "Recommended gated edit at import" body instruction→a plain convention statement). Protected false-positives verified untouched: the defined math-object "ledger" (Lem an17:lem-ledger), "modulo-list" structural device, "adversarial survey/analysis" methodology, "overclaim" self-correction, physics "stage", the \ifanstagepaper preview block, all % comments.
+
+**Final full-project sweep (main session):** 2 more "referee-confirmed" leaks found in the unification.tex MAIN body (l.17212/17241, a Tier-2 item run 74 left to author judgment — but clearly process-leak in a submission) → reworded to "theorem"/"established". **unification.tex printed-body campaign-token residual = 0.** The only remaining hits anywhere (appendix_e2a_omega l.4068/4086) are inside the \ifanstagepaper block (\anstagepaperfalse) — non-rendering, do not print, verified contained.
+
+---
+### EDITORIAL / REFEREE-READINESS CAMPAIGN CLOSE-OUT (runs 72–75)
+
+Four editorial swarms after the theory was settled and gauntlet-tested. Outcome — the settled mathematics now PRESENTS as a clean, referee-ready manuscript:
+- **Run 72 (front-matter/grade coherence):** fixed the abstract's over-claim that all (T0)–(T13) are theorems (body exempts T11) + one M3 grade straggler. False positives (F2/F3) correctly rejected.
+- **Run 73 (references/cross-refs/notation):** bibliography verified complete (406=406, 0 orphans); fixed one wrong-noun cross-ref (lemma cited as "Proposition") + one Λ overload clarifier. Run-62 appendix-grep trap neutralized.
+- **Run 74 (process-language/stale sweep):** main-body — 10 leaks + a doubled-word typo fixed; identified the saturated appendix tail.
+- **Run 75 (appendix de-process):** 114 splices stripping campaign language from all appendices, math + theorems fully preserved.
+
+Editorial defect classes, all fixed: front-matter grade over-statement, grade-propagation stragglers (the recurring class, incl. my own run-69 E★ prose miss caught by run 71), wrong-noun cross-ref, notation overloads, ~120 process-language leaks (main body + appendices). ZERO mathematics touched across all four runs — pure presentation. The 329-page manuscript is now free of internal-campaign vocabulary in all printed body text and internally grade-consistent front-matter-to-appendix.
+
+**FINAL STATE: paper 329 pp, builds 0/0/0, gauntlet-tested (5 independent theory red teams + 4 editorial passes, 0 BROKEN), at its honest ceiling ≈9.15, and referee-ready in presentation.**

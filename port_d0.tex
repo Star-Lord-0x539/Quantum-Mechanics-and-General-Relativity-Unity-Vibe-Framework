@@ -1,0 +1,374 @@
+% ======================================================================
+% port_d0.tex — RUN 57, ARM A2: the (D0) seed-data write-out
+% Target site: appendix_e2a_omega.tex, an17:named-residues, item (D0)
+%   (l.3321-3324: "the seed-data input ... open at the b=1 field slot.
+%    It gates the single-metric write-out W^{(2)}_*"), consumed by
+%   Ladder A step A3 (l.2882-2900) of an17:slice-ladder.
+% Status: STAGED PORT (author-gated). Paper-preamble-compatible fragment;
+%   compile check via _d0_compiletest.tex wrapper. ZERO edits to the three
+%   protected files. All appendix/paper tools are named at their printed
+%   sites as text anchors (an17:xxx, line numbers of the 2026-07-14 tree);
+%   the author re-keys \ref/\cite at application time.
+% Grade discipline: this port closes (D0) AT THE SEED, GIVEN two printed
+%   premises (P-a),(P-b) below. It does NOT touch the BFV-vanishing item
+%   (carrier an17:Nc-corrected, PLAUSIBLE, "NEVER cited at THEOREM grade"),
+%   which SURVIVES in the post-(D0) modulo-list (Rem. an57d0:modulo).
+% ======================================================================
+
+\subsection*{Port (D0): the single-seed-metric Cauchy-data write-out at the
+$b=1$ slot, via the classical analytic-convergence lever}
+
+\paragraph{Scope and objects (EP0-d0).}
+Throughout, $g_0$ is the $U_\omega$ anchor: real-analytic on $K''$,
+holomorphic on the fixed complex collar $\mathcal K_{\rho_a}$ with
+$\|g_0\|_{\mathcal K_{\rho_a}}<\infty$ and $\inf_{\mathcal K_{\rho_a}}
+|\det g_0|\ge d_\omega>0$ (an17:sub-Uomega, l.126--150). The operator is
+$P_0=\square_{g_0}+m^2$. The state is the \emph{seed} $\omega_0$, the paper's
+standing Hadamard state at $g_0$ (unification.tex l.17037--17042: the family
+$\omega_g$ is \emph{defined} as the Brunetti--Fredenhagen--Verch relative
+Cauchy evolution of $\omega_0$; the seed slot is $g=g_0$, no transport).
+$H^{(N)}_{g_0}$ is the glued $N$-truncated Hadamard parametrix of Lem.\
+an17:G (l.3231--3254): $H^{(N)}_{g_0}=\sum_a\theta_aZ^{(N),a}_{g_0}$ with
+$Z^{(N),a}_{g_0}=\frac{1}{8\pi^2}\bigl[\Delta^{1/2}/\sigma
++\bigl(\sum_{k\le N}v_k\sigma^k\bigr)\log(\sigma/\ell^2)\bigr]$ chartwise on
+the convex-normal cover, one \emph{global} length scale $\ell$ (an17:G(ii)),
+and $W_{g_0,2}=\omega^{(2)}_0-H^{(2)}_{g_0}$ (the (N-a) package, l.3203--3229).
+The $v_k$ are the transport-recursion coefficients cited in print at (N-a)
+[Moretti 2003, Thm.~2.1]; in the source-verbatim normalisation of
+[Fewster--Smith, gr-qc/0702056, eqs.~(97)--(98)] ($n=4$, $\mu^2=m^2\ell^2$
+rescaled):
+\begin{align}
+ 0&=\ell^2(\square_{g}+m^2)\Delta^{1/2}
+    +2\nabla v_0\cdot\nabla\sigma+4v_0+v_0\,\square_g\sigma,
+    \tag{D0-T0}\label{an57d0:T0}\\
+ 0&=\ell^2(\square_{g}+m^2)v_j+2(j{+}1)\nabla v_{j+1}\cdot\nabla\sigma
+    -4j(j{+}1)v_{j+1}+(j{+}1)v_{j+1}\,\square_g\sigma ,
+    \tag{D0-Tj}\label{an57d0:Tj}
+\end{align}
+$j\ge0$: each $v_{j+1}$ is determined from $v_j$ by a linear transport ODE
+along the geodesics from the vertex, regular at the vertex. \emph{What this
+port consumes and what it does not:} of the three classically distinct
+statements --- (S1) convergence of the coefficient series
+$v=\sum_{k\ge0}v_k\sigma^k$ with analytic sum; (S2) the summed object being
+an exact elementary solution ($P_0E=\delta$, partie-finie bookkeeping);
+(S3) the finite-part data regularity consumed by Ladder A --- the port
+consumes \emph{only} (S1), plus the two printed premises:
+\begin{enumerate}[label=\textup{(P-\alph*)},leftmargin=*,nosep]
+\item \emph{(seed-Hadamard premise; paper-level, standing.)} $\omega_0$ is
+  Hadamard on the seed spacetime; equivalently (Radzikowski's theorem; the
+  fixed-neighbourhood form as in [Kay--Wald 1991; Radzikowski 1996; Sanders
+  2010]) there is a causal normal neighbourhood $\mathcal N\supset\Sigma_0$
+  and a diagonal collar $V_H\subset\mathcal N\times\mathcal N$, both
+  $N$-independent, with $\omega^{(2)}_0-H^{(N)}_{g_0}\in C^N(V_H)$ for every
+  $N$. This is the paper's own anchor hypothesis, restated --- \emph{not} a
+  new conditionality; it is printed here so nothing is promoted silently.
+\item \emph{(collar-shrink licence; fence-neutral.)} The gluing collar
+  $\delta_c$ of Lem.\ an17:G may be shrunk: an17:G(i) demands only the upper
+  bound $\delta_c\le(2m(K)^2L_\chi)^{-1}$ (l.3242); the short-slab length
+  $T_c=\delta_c/(4c_*)$ of Lem.\ an17:DoD shrinks with it (l.3259) and the
+  DoD truncation is stated for every such slab; Lem.\ an17:transverse-data
+  is local in the collar. No Sobolev fence moves ($s>11$ untouched).
+\end{enumerate}
+(S2) is \emph{never} used below; no partie-finie identity enters. The
+ball-uniform version of (S1) over all of $U_\omega$ (same majorants, by the
+uniform collar Cauchy estimates of an17:lem-embed/EP1) is \emph{available
+but not consumed}: (D0) is the single-seed-metric residue (res1), and no parameter-analyticity in $g$ is asserted anywhere (EP0).
+
+\begin{lemma}[The lever, (S1) at the seed: the Hadamard coefficient series
+converges on a uniform diagonal collar of the analytic anchor]
+\label{an57d0:lever}
+There exist $\delta_{\mathrm{conv}}=\delta_{\mathrm{conv}}(g_0,\rho_a,
+d_\omega,m^2,K'')>0$ and $M_{\mathrm{tail}}<\infty$ such that, on
+\[
+ V_{\mathrm{conv}}:=\{(x,y)\in K'\times K':\ d_{g_0}(x,y)<\delta_{\mathrm{conv}}\},
+\]
+the series $v(x,y)=\sum_{k\ge0}v_k(x,y)\,\sigma_{g_0}(x,y)^k$ of
+\eqref{an57d0:T0}--\eqref{an57d0:Tj} at $g=g_0$ converges absolutely and
+uniformly, together with all $(x,y)$-derivatives; its sum $v$ is
+real-analytic on $V_{\mathrm{conv}}$ (holomorphic on a complex neighbourhood
+thereof), uniformly in the vertex. In particular the $N{=}2$ tail factorises,
+\[
+ v-v^{(2)}\;=\;\sigma^3\,\varrho,\qquad v^{(2)}:={\textstyle\sum_{k\le2}}
+ v_k\sigma^k,\qquad \varrho:={\textstyle\sum_{k\ge3}}v_k\sigma^{k-3},
+\]
+with $\varrho$ analytic on $V_{\mathrm{conv}}$ and
+$\|\varrho\|_{C^6(\overline{V_{\mathrm{conv}}'})}\le M_{\mathrm{tail}}$ on
+the closed half-collar $V'_{\mathrm{conv}}$
+($\delta_{\mathrm{conv}}/2$-collar). \textup{[Classical: Hadamard 1932, nos.~52, 63--66;
+verified at source --- see the citation record below. The
+$U_\omega$-scope transfer and the jet upgrade are re-derived in the proof.]}
+\end{lemma}
+
+\begin{proof}
+\emph{Step 1 (reduction to the classical hypotheses; re-derived).} Hadamard's
+construction of the elementary solution requires: a linear second-order
+operator with coefficients holomorphic in a neighbourhood of the vertex, and
+a non-degenerate (non-parabolic) principal part there [Hadamard 1932,
+nos.~52, 63, 65]. At the seed both hold \emph{with quantitative collar
+data}: $g_0$ and $g_0^{-1}=(\det g_0)^{-1}\operatorname{adj}g_0$ are
+holomorphic on $\mathcal K_{\rho_a}$ with the sup bound
+$\|g_0\|_{\mathcal K_{\rho_a}}$ and the determinant floor $d_\omega$
+(an17:sub-Uomega l.148--150), $m^2$ is constant, and the normal
+(Lipschitz) variables he works in exist holomorphically at a uniform radius:
+the complex-time geodesic IVP is solved by the analytic-ODE package
+an17:rem-CK (l.465--482; Picard contraction on $\mathcal K_{\rho_a/4}$, field
+bound $M_\Gamma$ of eq.\ an17:eq-MGamma), so the exponential map, its
+inverse on the uniform convex-normal cover of Lem.\ an17:G, and hence
+$\sigma_{g_0}$ and $\Delta^{1/2}_{g_0}$ (Jacobian determinant of a
+holomorphic map; nonvanishing near the diagonal since $\Delta\to1$) are
+holomorphic on a complex diagonal collar whose radius depends only on
+$(\rho_a,\|g_0\|_{\mathcal K_{\rho_a}},d_\omega)$ through $M_\Gamma$. This
+is the same reduction the appendix already exercises for the phase
+(an17:prop-strip, l.484--500); nothing new is assumed.
+
+\emph{Step 2 (identification of the series; re-derived).} For $n=4$
+Hadamard's exponent is $p=(m_{\dim}-2)/2=1$: his elementary solution
+[1932, eq.~(51)/(53), no.~65] is $U_0\Gamma^{-1}-\mathcal V\log\Gamma+w$
+with the algebraic part the \emph{single} term $U_0\Gamma^{-1}$ and
+$\Gamma=2\sigma$ (his squared geodesic distance; the constant rebooking
+$\sigma^k\mapsto\Gamma^k$ multiplies $v_k$ by $2^{-k}$ and leaves every
+radius statement unchanged). His transport hierarchy for the log-coefficient
+expansion $\mathcal V=\sum_h\mathcal V_h\Gamma^h$ [1932, eqs.~(44$'$), (52),
+(49$'$)] is, term by term in $\Gamma^h$, the hierarchy
+\eqref{an57d0:T0}--\eqref{an57d0:Tj}: both are the unique regular-at-the-%
+vertex solutions of the same singular linear transport ODEs along the
+geodesics from $y$ (the appendix's printed recursion site: (N-a), l.3208,
+[Moretti 2003, Thm.~2.1]; the Fewster--Smith display above is that recursion
+verbatim at $n=4$). Uniqueness of regular solutions of the transport
+hierarchy identifies $\mathcal V_h=2^{-h}\,c_{\mathrm{nrm}}\,v_h$ with the
+single overall normalisation $c_{\mathrm{nrm}}$ fixed by
+$v_0$-vs-$U_0$ matching at the vertex ($\Delta^{1/2}(y,y)=1$).
+
+\emph{Step 3 (the classical convergence; cited at verified source).} Under
+Step 1's hypotheses, Hadamard proves: the series (43)-type expansions
+converge for $|\Gamma|$ small, by direct majorants [1932, no.~63], with
+radius \emph{uniform} as the vertex ranges over any compact strictly
+interior region [no.~64: ``la convergence \dots\ sera uniforme'']; the
+even-case log coefficient $\mathcal V$ is built by ``exactement les m\^emes
+op\'erations'' from conoid data [no.~65], hence its series converges with
+the same uniformity, and the whole elementary solution exists ``pour toute
+\'equation non parabolique \dots\ sous l'hypoth\`ese que les coefficients
+sont analytiques'' [no.~65, closing display; no.~66 extends verbatim to both
+elliptic and hyperbolic signatures]. Because his data are holomorphic
+(no.~52) the convergence is convergence of holomorphic functions on a
+complex collar, and the sum depends analytically on the vertex when the
+free element is chosen by an analytic law [no.~65, footnote]; the transport
+hierarchy makes no free choice below the $w$-level, and $\mathcal V$ involves
+none. Fix $\delta_{\mathrm{conv}}>0$ as (half) the resulting uniform radius
+over the compact $K'$.
+
+\emph{Step 4 (jets and the factorisation; re-derived).} A locally uniformly
+convergent series of holomorphic functions converges with all derivatives
+(Weierstrass), locally uniformly; restriction to the real collar gives the
+all-jet convergence and the analyticity of $v$ on $V_{\mathrm{conv}}$.
+Subtracting the polynomial-in-$\sigma$ part $v^{(2)}$ (analytic, finitely
+many terms of the same series) leaves $v-v^{(2)}=\sum_{k\ge3}v_k\sigma^k
+=\sigma^3\varrho$ with $\varrho=\sum_{k\ge3}v_k\sigma^{k-3}$ again a locally
+uniformly convergent series of holomorphic functions, hence analytic;
+$M_{\mathrm{tail}}:=\|\varrho\|_{C^6}$ on the closed half-collar is finite
+by compactness. \emph{Constants emitted:} $\delta_{\mathrm{conv}}$,
+$M_{\mathrm{tail}}$ --- both functions of
+$(g_0,\rho_a,d_\omega,m^2,K'')$ only, consumed downstream only as finite
+named constants (the same consumption mode as $W_*$-type constants in
+print).
+\end{proof}
+
+\paragraph{Citation record for Lemma \ref{an57d0:lever} (existence
+premise verified at source).}
+Primary, read verbatim (public-domain scan): J.~Hadamard, \emph{Le probl\`eme de Cauchy et les \'equations
+aux d\'eriv\'ees partielles lin\'eaires hyperboliques} (Hermann, Paris,
+1932; the definitive French edition of the 1923 Yale \emph{Lectures}),
+Livre~II, ch.~III: no.~52 (holomorphic-data hypothesis), no.~63 (majorant
+convergence proof), no.~64 (vertex-uniformity; conoid-data variant), no.~65
+(even $m$: log term; ``On a ainsi r\'eussi \`a calculer la solution
+\'el\'ementaire (pour toute \'equation non parabolique) sous l'hypoth\`ese
+que les coefficients sont analytiques''), no.~66 (elliptic and hyperbolic
+in common). Classical corroboration, named: M.~Riesz, Acta Math.\ 81 (1949)
+1--223, ch.~IV (analytic Lorentzian case). Modern witnesses, verbatim:
+Fewster--Smith [gr-qc/0702056, after eq.~(96)]: ``The series does not
+actually converge except in analytic spacetimes''; Khavkine--Moretti
+[arXiv:1412.5945, \S3.3]: ``The limit exists in the analytic case, but in
+the smooth general case the sequence diverges'', with the smooth-case
+cutoff-sum construction pinned at [Friedlander, \emph{The Wave Equation on
+a Curved Space-Time} (CUP 1975), \S4.3]. The Lorentzian-category check is
+Hadamard's own nos.~65--66 (non-parabolic; both signatures); no
+elliptic-to-Lorentzian transfer is needed.
+
+\begin{lemma}[the seed exact finite part is $C^\infty$ on the shrunken
+collar]\label{an57d0:state}
+Let $\delta_c':=\min(\delta_c,\delta_{\mathrm{conv}}/2,\delta_H)$, where
+$\delta_H$ is a collar radius with
+$V_{\delta_H}\subset V_H\cap V_{\mathrm{conv}}$ (premise (P-a) and Lemma
+\ref{an57d0:lever}), and let $H^{(\infty)}_{g_0}$ denote the glued
+parametrix of Lem.\ an17:G with the chartwise truncations $Z^{(N),a}_{g_0}$
+replaced by the convergent sums $Z^{(\infty),a}_{g_0}=\frac1{8\pi^2}
+[\Delta^{1/2}/\sigma+v\log(\sigma/\ell^2)]$. Then on the collar
+$V_{\delta_c'}=\{d_{g_0}(x,y)<\delta_c'\}$ (intersected with
+$\mathcal N\times\mathcal N$):
+\begin{enumerate}[label=\textup{(\roman*)},leftmargin=*,nosep]
+\item $Z^{(\infty),a}_{g_0}$ is patch-independent, so
+  $H^{(\infty)}_{g_0}=\frac1{8\pi^2}[\Delta^{1/2}/\sigma
+  +v\log(\sigma/\ell^2)]$ exactly ($\sum_a\theta_a\equiv1$, an17:G(i); the
+  members $\sigma,\Delta^{1/2},v_k$ are geometric biscalars and the length
+  scale $\ell$ is global, an17:G(ii));
+\item the $N{=}2$ tail is exact and analytic-profiled:
+  $T:=H^{(\infty)}_{g_0}-H^{(2)}_{g_0}
+  =\frac1{8\pi^2}\,\sigma^3\varrho\,\log(\sigma/\ell^2)$ with $\varrho$ as
+  in Lemma \ref{an57d0:lever} (chartwise, $Z^{(\infty),a}-Z^{(2),a}$ is the
+  \emph{same} series tail on every patch, so the gluing weights drop out);
+\item $w_0:=\omega^{(2)}_0-H^{(\infty)}_{g_0}\in C^\infty(V_{\delta_c'})$,
+  with all jet sup-norms
+  $w_*^{(j)}:=\|w_0\|_{C^j(\overline{V_{\delta_c''}})}<\infty$ on any
+  strictly smaller closed collar $\delta_c''<\delta_c'$.
+\end{enumerate}
+\end{lemma}
+\begin{proof}
+(i), (ii) are display arithmetic given an17:G(i)--(ii) and Lemma
+\ref{an57d0:lever}: on each patch overlap the chartwise members
+$\sigma,\Delta^{1/2},v_k$ agree (geometric biscalars; one global $\ell$
+kills the branch mismatch, an17:G(ii)), hence so do the convergent sums;
+$\sum_a\theta_a\equiv1$ collapses the gluing. For (iii): for every $N$,
+\[
+ w_0=\bigl(\omega^{(2)}_0-H^{(N)}_{g_0}\bigr)
+ -\bigl(H^{(\infty)}_{g_0}-H^{(N)}_{g_0}\bigr).
+\]
+The first bracket is $C^N(V_{\delta_c'})$ by premise (P-a) --- the
+$N$-independence of the neighbourhood is exactly the fixed-neighbourhood
+form of the Hadamard condition [Kay--Wald 1991; Radzikowski 1996; Sanders
+2010]. The second bracket is $\frac1{8\pi^2}\sigma^{N+1}\varrho_N
+\log(\sigma/\ell^2)$ with $\varrho_N$ analytic (Lemma \ref{an57d0:lever},
+same factorisation at order $N$): a function with an $(N{+}1)$-fold zero on
+the cone times $\log$, hence $C^{N,\alpha^-}$ across the cone (transverse
+model $u^{N+1}\log|u|$; radial model $r^{2N+2}\log r$ is better, exactly
+the two model heights of Lem.\ an17:transverse-data's proof), and analytic
+off it. So $w_0\in C^N$ on the \emph{fixed} collar $V_{\delta_c'}$ for
+every $N$, i.e.\ $w_0\in C^\infty$; the jet sups are finite on compact
+closures. \emph{No partie-finie identity, no fundamental-solution property
+of $H^{(\infty)}$, is used} --- only (S1) and (P-a).
+\end{proof}
+
+\begin{proposition}[(D0) executed: the Ladder-A seed Cauchy data at all
+four slots, $b=1$ included]\label{an57d0:main}
+Premises: (P-a), (P-b), Lemmas \ref{an57d0:lever}--\ref{an57d0:state}. Work
+on the shrunken collar $\delta_c''$ and the correspondingly shortened DoD
+slab (Lem.\ an17:DoD at $T_c''=\delta_c''/(4c_*)$). Then the four Ladder-A
+data legs of $W_{g_0,2}(\cdot,y)=w_0(\cdot,y)+T(\cdot,y)$ on $\Sigma_0$
+exist and are finite at exactly the availability heights printed at A3
+(l.2882--2900), uniformly and continuously in the spectator $y\in K_y$:
+\[
+ W_{g_0,2}|_{\Sigma_0}\in H^{13/2^-}(\Sigma_0),\quad
+ \partial_tW_{g_0,2}|_{\Sigma_0}\in H^{11/2^-},\quad
+ \partial_yW_{g_0,2}|_{\Sigma_0}\in H^{11/2^-},\quad
+ \partial_t\partial_yW_{g_0,2}|_{\Sigma_0}\in H^{9/2^-},
+\]
+with norms bounded by
+$c_{\mathrm{tr}}(K)\bigl[w_*^{(9)}+M_{\mathrm{tail}}\,
+c_{\mathrm{prof}}(K)\bigr]$ ($w_*^{(9)}$: two slot derivatives plus seven
+slice derivatives; any $w_*^{(j)}$, $j\ge9$, works), $c_{\mathrm{prof}}$ the
+transverse-restriction constant of Lem.\ an17:transverse-data at the four
+profile exponents. In
+particular the $b=1$ \emph{field} slots ($\partial_y$, $\partial_t\partial_y$)
+are supplied, and the (D0) residue of an17:named-residues (l.3321--3324) is
+CLOSED at the seed: the single-metric write-out $W^{(2)}_*$ is no longer
+(D0)-gated. \textup{(For general $g'\in U_\omega$ the spectator data reduce
+to seed data by the BFV/RCE surface anchoring at its carrier's grade; that
+reduction is \emph{not} part of (D0) and is not claimed here --- see
+Rem.~\ref{an57d0:modulo}.)}
+\end{proposition}
+\begin{proof}
+Split each leg as $w_0$-leg $+$ $T$-leg on the DoD-localised collar piece of
+$\Sigma_0$ (the cutoff $\psi$ of Lem.\ an17:DoD confines every consumed norm
+to $\{d_{g_0}(\cdot,y)\le\tfrac34\delta_c''\}$, compact).
+
+\emph{$w_0$-legs.} By Lemma \ref{an57d0:state}(iii) each of the four jets
+($\mathrm{id},\partial_t,\partial_y,\partial_t\partial_y$; at most two slot
+derivatives) is $C^\infty$ on the closed collar; a $C^k$ function on a
+compact three-dimensional slice piece lies in $H^t(\Sigma_0)$ for every
+$t\le k$, so all four demands ($t<\tfrac{13}2$) are met with norm
+$\le c(K)\,w_*^{(9)}$ (two slot derivatives $+$ seven slice derivatives;
+any $j\ge9$ works). Continuity and uniformity in $y\in K_y$: the jets are
+continuous in $(x,y)$ on a compact closure.
+
+\emph{$T$-legs (the tail is re-derived; its consumption is booked by the
+printed profile calculus).} $T=\frac1{8\pi^2}
+\sigma^3\varrho\log(\sigma/\ell^2)$ with $\|\varrho\|_{C^6}\le
+M_{\mathrm{tail}}$ (Lemma \ref{an57d0:lever}). In the profile coordinate of
+Lem.\ an17:transverse-data ($r^2\sim2|\sigma|$ near the cone, away from the
+vertex) the appendix's (N-a) profile calculus --- $\sigma^k\log\sigma$
+carries profile $r^{2k}\log r$, one $r$-power per derivative (the
+printed convention: S$'_2$'s $\sigma^2\log\sigma$ is booked
+$r^4\log r$ with ``$\partial^5\sim r^{-1}$'', l.2870--2871; its geometric
+root is the eikonal grading $|\nabla\sigma|_g=r$) --- books
+\[
+ T\sim r^6\log r,\qquad
+ \partial T=\bigl[3\sigma^2\varrho\,\partial\sigma
+   +\sigma^3\partial\varrho\bigr]\log(\sigma/\ell^2)
+   +\sigma^2\varrho\,\partial\sigma\ \sim\ r^5\log r,\qquad
+ \partial^2T\ \sim\ r^4\log r,
+\]
+each $\sim$ meaning: a finite sum of terms at profile exponent $\ge$ the
+displayed one, coefficients bounded by $M_{\mathrm{tail}}$ on the closed
+collar; the $\partial_y$ and $\partial_t$ slots grade identically ($\sigma$
+a symmetric analytic biscalar; the vertex-adjacent radial regime is
+\emph{better}, the $\rho^\alpha\log\rho\in H^{\alpha+3/2^-}$ model height
+inside Lem.\ an17:transverse-data's proof). These are \emph{verbatim} the
+profile assignments the printed A3 column gives the same four legs; no new
+grading convention is introduced, and the established trace-audit that underwrites
+the printed calculus is consumed, not re-derived. Lem.\
+an17:transverse-data (THEOREM, sharp, $y$-uniform; the ``times any factor
+smooth-modulo-$H^{s-2}$'' hypothesis is satisfied by the \emph{analytic}
+factors here, under the standing no-glancing hypotheses of Lem.\
+an17:no-glancing at the seed) applied at $\alpha=6,5,5,4$ gives restrictions
+in $H^{13/2^-},H^{11/2^-},H^{11/2^-},H^{9/2^-}$ respectively, norms
+$\le M_{\mathrm{tail}}\,c_{\mathrm{prof}}(K)$, uniformly and continuously
+in $y\in K_y$.
+
+Summing the two legs gives the display, which is verbatim the A3
+availability column (l.2886--2890: transverse heights $\rho^6\log\rho\in
+H^{13/2^-}$, $\rho^5\log\rho\in H^{11/2^-}$, $\rho^5\log\rho\in H^{11/2^-}$,
+$\rho^4\log\rho\in H^{9/2^-}$) --- now with the $b{=}1$ \emph{field} slots
+carried by $w_0\in C^\infty$ instead of a finite-regularity cap. The margins
+against Rung~2's demands are therefore $\ge$ the printed ones (at the
+analytic seed the ``conservative $H^s$-background coefficient ceilings'' of
+A3 are strict surplus), and Rung~2 of Lem.\ an17:slice-ladder consumes the
+column as printed; no step of the ladder is re-derived here.
+\end{proof}
+
+\begin{remark}[post-(D0) modulo-list, grade arithmetic, and what does NOT
+move]\label{an57d0:modulo}
+\emph{(a) What this port closes.} The (D0) entry of an17:named-residues
+(l.3321--3324) is discharged at the seed: the four A3 data legs exist at
+the printed heights, $b{=}1$ included, given (P-a) (the paper's standing
+seed-Hadamard premise) and (P-b) (fence-neutral collar shrink). The
+single-metric seed write-out $W^{(2)}_*$ loses its (D0) gate; condition~W4's internal contradiction resolves in res1's favour with the gate now
+\emph{closed}: Lemma~B's $W_*^{\mathrm{seed}}$ tag reads ``THEOREM given
+Prop.~\ref{an57d0:main}'' (not ``THEOREM modulo (D0)'').
+\emph{(b) What survives --- the post-(D0) M1 modulo-list.} Updating the
+modulo-list $\{$(D0); BFV-vanishing $@$ PLAUSIBLE; \#B$'$
+discharge sentence; Props~A/C write-out$\}$:
+\begin{itemize}[leftmargin=*,nosep]
+\item \textbf{BFV-vanishing $@$ PLAUSIBLE --- SURVIVES, expected.} (D0)'s
+  closure is BFV-free (the seed write-out consumes no difference data),
+  but clause (ii)'s assembly still consumes the (N-c) difference legs
+  \emph{on the BFV surface} at the carrier grade of Lem.\
+  an17:Nc-corrected (l.3289--3293: ``PLAUSIBLE \dots\ NEVER cited at
+  THEOREM grade''). A (D0) closure does NOT lift it; the resisting step for M1 remains
+  conditional on it, with the Props~A/C state-side difference estimate the
+  unconditional fallback.
+\item \textbf{\#B$'$ --- unchanged} (the across-patches variant; the
+  W2 discharge sentence is owed in the Props~A/C port, conditional-tagged).
+\item \textbf{Props~A/C $+$ Lemma~B full write-out} --- given in the
+  family-uniformity package of this appendix; not this port's claim.
+\end{itemize}
+\emph{(c) Grade arithmetic.} M1's printed grade (an17:CW-grade, PLAUSIBLE)
+does \emph{not} move on this port alone. With all three ports
+applied and the corresponding re-pointing of an17:CW-grade in place, the honest M1 label is
+``theorem MODULO $\{$BFV-vanishing $@$ PLAUSIBLE; \#B$'$ for
+patch-traversal consumers$\}$'' --- still \emph{not} THEOREM, and the
+printed grade line stays PLAUSIBLE. (E-env) and \#A are data-side residues
+orthogonal to this port (an17:named-residues l.3329--3331) and are not
+touched. \emph{(d) Revival conditions.} (D0) re-opens if: the seed anchor
+is taken non-analytic (the lever's hypothesis fails); or a consumer feeds
+seed data beyond the collar (then \#B$'$, not (D0)); or the seed state's
+Hadamard premise (P-a) is weakened below all-orders.
+\end{remark}

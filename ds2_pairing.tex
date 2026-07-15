@@ -1,0 +1,685 @@
+% ============================================================================
+% ds2_pairing.tex  (RUN 56, ARM A2 -- support step (s1-iii) of App. app:e0ds-min)
+% THE PER-CUT WALD/RAYCHAUDHURI PAIRING ON THE dS WEDGE HORIZON:
+% the geometric side of Lem. lem:e0ds-cut at theorem grade, with explicit
+% boundary terms, the located consumption of the finite-first-moment premise
+% (b), and the xi != 0 improvement/Wald identity (run-53 F3) as a lemma.
+% ONE \input fragment. ASSUMES the paper preamble (amsthm environments
+% lemma/theorem/proposition/remark; macros none). \ref{lem:e0ds-cut},
+% \ref{lem:e0ds-coverage}, \ref{hyp:E0-dS-min} resolve against the paper.
+% Companion checks: ds2_pairing.py (P1-P7; symbolic + numeric).
+% STAGED ONLY -- author-gated import; ZERO writes to unification.tex/ISSUES.md.
+% ============================================================================
+
+\section{The per-cut Wald/Raychaudhuri pairing on the de~Sitter wedge
+  horizon: the geometric side of Lem.~\ref{lem:e0ds-cut}}
+\label{app:ds-pairing}
+
+Premise (a) of Lem.~\ref{lem:e0ds-cut} equates a quantum object (the
+per-cut modular energy) to a geometric one (the cut-localised area/Wald
+variation). The quantum side is the support step (s1-ii). This appendix
+proves the \emph{geometric} side outright: an exact per-cut identity on
+the de~Sitter wedge horizon between the future-normalised area deficit
+and the linearised Raychaudhuri flux integrated against the modular
+weight $(v-V(\Omega))$, with every boundary term explicit
+(Thm.~\ref{thm:pair-main}); the finite-first-moment premise (b) of
+Lem.~\ref{lem:e0ds-cut} is consumed at the $v\to\infty$ boundary and
+\emph{only} there (Lem.~\ref{lem:pair-tail},
+Rem.~\ref{rem:pair-moment-locus}); the $\xi\neq0$ improvement/Wald
+identity (premise (c)) is proved as
+Lem.~\ref{lem:pair-improve}, including the de~Sitter condensate term
+$\xi\langle\phi^{2}\rangle_{\rm BD}\,\delta G_{vv}$ that renormalises
+$G\to G_{\rm eff}$ coherently on both sides; and the second
+cut-variation step that Lem.~\ref{lem:e0ds-cut} consumes is
+Prop.~\ref{prop:pair-secondvar}, with the twice-differentiability of
+premise (a) \emph{derived} rather than assumed. Everything here is
+classical Lorentzian geometry plus measure theory; no field content
+beyond a Hadamard-smooth linear perturbation enters.
+
+\emph{Conventions.} Signature $({-},{+},{+},{+})$;
+$R^{\rho}{}_{\sigma\mu\nu}
+=\partial_{\mu}\Gamma^{\rho}_{\nu\sigma}-\cdots$,
+$R_{\mu\nu}=R^{\rho}{}_{\mu\rho\nu}$; $\mathrm{dS}_{4}\subset
+\mathbb{R}^{1,4}$ is the hyperboloid $X\cdot X=\ell^{2}$, so
+$R_{\mu\nu}=3\ell^{-2}g_{\mu\nu}$, $R=12\ell^{-2}$,
+$\Lambda=3\ell^{-2}$ ($\ell=1$ reproduces the unit-hyperboloid
+normalisation of App.~\ref{app:e0ds-min}). $W$ denotes the wedge
+$\{X^{1}>|X^{0}|\}$, $\xi_{W}=X^{1}\partial_{0}+X^{0}\partial_{1}$ its
+boost. Capital indices $A,B$ run over the $S^{2}$ cross-sections,
+$\gamma_{AB}$ is the unit round metric, $\hat n(\omega)\in S^{2}
+\subset\mathbb{R}^{3}$ the unit embedding.
+
+\begin{lemma}[the wedge horizon in exact null-adapted coordinates]
+\label{lem:pair-chart}
+Let $N:=\{X^{0}=X^{1}\}\cap\mathrm{dS}_{4}$. Define
+\[
+X(u,v,\omega)\;=\;\bigl(v,\;v,\;\ell\,\hat n(\omega)\bigr)
+\;+\;u\,\Bigl(\tfrac{v^{2}}{\ell^{2}}+1,\;\tfrac{v^{2}}{\ell^{2}}-1,\;
+\tfrac{2v}{\ell}\,\hat n(\omega)\Bigr).
+\]
+Then:
+\begin{enumerate}
+\item[(i)] $X(u,v,\omega)\in\mathrm{dS}_{4}$ for all $(u,v,\omega)$,
+and in these coordinates the metric is \emph{exactly}
+\[
+ds^{2}\;=\;-4\,du\,dv\;+\;\frac{4u^{2}}{\ell^{2}}\,dv^{2}
+\;+\;\Bigl(\ell+\frac{2uv}{\ell}\Bigr)^{2}\gamma_{AB}\,
+d\omega^{A}d\omega^{B},
+\]
+an exact $\mathrm{dS}_{4}$ chart ($R_{\mu\nu}=3\ell^{-2}g_{\mu\nu}$
+identically) covering a neighbourhood of $N=\{u=0\}$.
+\item[(ii)] $N\cong\mathbb{R}_{v}\times S^{2}$; its generators
+$v\mapsto X(0,v,\omega)$ are straight null lines of $\mathbb{R}^{1,4}$
+lying in $\mathrm{dS}_{4}$, hence null geodesics of $\mathrm{dS}_{4}$
+with $v$ an \emph{affine} parameter, complete in both directions
+($v\in\mathbb{R}$). Equivalently: $\Gamma^{\mu}_{vv}|_{u=0}=0$ for all
+$\mu$. The bifurcation sphere of $W$ is $B=\{u=0,v=0\}$; the $v<0$
+half of $N$ is a horizon sheet of the antipodal wedge $W'$, exactly as
+the $v<0$ half of the Rindler null plane; the $v\to+\infty$ endpoint
+lies on $\mathscr{I}^{+}$ at \emph{infinite} affine parameter --- no
+far bifurcation surface or pole is met at finite $v$, and the second
+horizon sheet $\{X^{0}=-X^{1}\}$ meets $N$ only at $B$.
+\item[(iii)] On $N$ the induced (degenerate) metric is
+$h_{AB}=\ell^{2}\gamma_{AB}$, independent of $v$: every constant-$v$
+cross-section $S_{v}$ is a round sphere of radius $\ell$, and the
+background expansion, shear and twist of the generator congruence
+vanish identically on $N$, $\theta=\sigma_{AB}=\omega_{AB}\equiv0$;
+consequently $R_{vv}|_{N}=0=G_{vv}|_{N}$, and $g_{vv}=4u^{2}/\ell^{2}$
+vanishes \emph{quadratically} at $N$.
+\item[(iv)] (Exact cut-area formula.) For any cut, i.e.\ any
+continuous $V:S^{2}\to\mathbb{R}$ with graph
+$\mathcal{C}_{V}=\{(0,V(\omega),\omega)\}\subset N$, the induced area
+element of $\mathcal{C}_{V}$ at $\omega$ equals
+$\sqrt{h}\,(V(\omega),\omega)\,d^{2}\omega$ --- the cross-section area
+element evaluated along the graph, with \emph{no} $\partial_{A}V$
+contribution at any order. This holds for the exact perturbed metric
+as long as $N$ is null with generator $\partial_{v}$.
+\item[(v)] For $v\neq0$ the cut $S_{v}$ is extremal along the
+generator direction ($\theta_{k}=0$) but \emph{not} totally geodesic:
+its expansion along the second null normal $l$ (normalised
+$k\cdot l=-2$) is $\theta_{l}=4v/\ell^{2}\neq0$. Hence $S_{v\neq0}$ is
+the bifurcation surface of \emph{no} wedge in the $\mathrm{SO}(1,4)$
+orbit, and the cut-translated wedge $W_{V}$ is \emph{not} an isometric
+image of $W$ --- unlike Minkowski, where null translations are
+isometries. The cut-variation of Lem.~\ref{lem:e0ds-cut} genuinely
+leaves the orbit of Lem.~\ref{lem:e0ds-coverage} for every $V\neq0$.
+\end{enumerate}
+\end{lemma}
+
+\begin{proof}
+Write $p(v,\omega)=(v,v,\ell\hat n)$, $k=\partial_{v}p=(1,1,0)$,
+$l(v,\omega)=(\tfrac{v^{2}}{\ell^{2}}+1,\tfrac{v^{2}}{\ell^{2}}-1,
+\tfrac{2v}{\ell}\hat n)$. One checks $p\cdot p=\ell^{2}$, $k\cdot k=0$,
+$l\cdot l=0$, $p\cdot l=0$, $k\cdot l=-2$; hence $X\cdot X=\ell^{2}+
+2u\,p\cdot l+u^{2}\,l\cdot l=\ell^{2}$ exactly, giving (i) up to the
+metric components, which are the pullbacks $g_{uu}=l\cdot l=0$,
+$g_{uv}=l\cdot(k+u\partial_{v}l)=-2+\tfrac{u}{2}\partial_{v}(l\cdot
+l)=-2$, $g_{uA}=\tfrac{u}{2}\partial_{A}(l\cdot l)=0$,
+$g_{vv}=(k+u\partial_{v}l)^{2}=4u^{2}/\ell^{2}$,
+$g_{vA}=0$, $h_{AB}=(\ell+2uv/\ell)^{2}\gamma_{AB}$, each by the dot
+products of the displayed frame vectors ($k\cdot\partial_{v}l=0$,
+$(\partial_{v}l)^{2}=4/\ell^{2}$, etc.); $R_{\mu\nu}=3\ell^{-2}
+g_{\mu\nu}$ is verified symbolically from this line element
+(ds2\_pairing.py, P1). For (ii): a straight line of $\mathbb{R}^{1,4}$
+contained in the hyperboloid has vanishing ambient acceleration, hence
+vanishing tangential acceleration, and is an affinely parametrised
+geodesic of the induced metric; completeness is $v\in\mathbb{R}$ in
+the exact chart ($h_{AB}$ degenerates only at $u=-\ell^{2}/2v$, never
+on $N$); $\Gamma^{\mu}_{vv}|_{u=0}=0$ is checked symbolically (P2).
+The global statements are the elementary identifications
+$\{X^{0}=X^{1}\}\cap\{X^{0}=-X^{1}\}\cap\mathrm{dS}_{4}=B$ and
+$\partial W'\supset\{v<0\}$-half, from the definition of $W$, $W'$.
+(iii) is read off the line element at $u=0$; $R_{vv}|_{N}=0$ follows
+from $R_{\mu\nu}\propto g_{\mu\nu}$ and $g_{vv}|_{N}=0$. For (iv): the
+graph tangents are $e_{A}=\partial_{A}+\partial_{A}V\,\partial_{v}$,
+and since $N$ is null with normal-and-tangent generator
+$\partial_{v}$, the ambient metric restricted to $TN$ annihilates
+$\partial_{v}$: $g(\partial_{v},\cdot)|_{TN}=0$. Hence
+$g(e_{A},e_{B})=h_{AB}(V(\omega),\omega)$ exactly, for the
+\emph{perturbed} metric as well, which is (iv). For (v): the
+$l$-second fundamental form of $S_{v}$ is
+$\mathrm{II}^{(l)}_{AB}=-\partial_{A}\partial_{B}X\cdot l$ with
+$X=p(v,\cdot)$; using $\partial_{A}\partial_{B}(\ell\hat n)=
+-\ell^{-1}h_{AB}\hat n$ one gets $\theta_{l}=h^{AB}\mathrm{II}^{(l)}
+_{AB}=4v/\ell^{2}$, verified as $\partial_{u}\ln\sqrt{h}\,|_{u=0}
+=4v/\ell^{2}$ in the chart (P2). A totally geodesic $2$-sphere would
+have $\theta_{l}=\theta_{k}=0$; bifurcation surfaces of orbit wedges
+are totally geodesic (Lem.~\ref{lem:e0ds-coverage}), so
+$S_{v\neq0}$ is none such, and an isometry carrying $W$ to $W_{V}$
+would carry $B$ to a totally geodesic $S_{V}$, a contradiction.
+\end{proof}
+
+\begin{remark}[gauge, and what the display is a functional of]
+\label{rem:pair-gauge}
+Fix the linear perturbation $\delta g_{\mu\nu}$ (Hadamard-smooth; at
+$n{=}0$ it is the metric response sourced by the state perturbation)
+in \emph{horizon gauge}: $N$ remains a null hypersurface and
+$\delta g_{v\mu}|_{N}=0$, so $\partial_{v}$ remains an affinely
+parametrised null generator field on $N$. Such a gauge exists: put the
+perturbed metric in Gaussian null form about $N$ (the standard GNC
+construction applies to any smooth null hypersurface) and pull back;
+the residual freedom on $N$ is the per-generator affine group
+$v\mapsto a(\omega)\,v+b(\omega)$. Every object in the pairing below
+--- the cut, the weight $(v-V(\Omega))$, $\delta\theta$,
+$\delta R_{vv}$, the area elements --- transforms covariantly under
+this residual group, and the identity of Thm.~\ref{thm:pair-main} is
+verified to be form-invariant under it (the weight is degree $1$, $dv$
+degree $1$, $\delta R_{vv}$ degree $-2$). The pairing is thus a
+statement about the triple (perturbed horizon, affine structure, cut),
+not about a coordinate choice. In this gauge $g_{vv}|_{N}=0=\delta
+g_{vv}|_{N}$, so on $N$
+\[
+\delta G_{vv}=\delta R_{vv}
+-\tfrac12\,\delta(g_{vv}R)=\delta R_{vv},
+\qquad
+\Lambda\,\delta g_{vv}=0 :
+\]
+the null--null linearised Einstein--$\Lambda$ combination on $N$ is
+$\delta R_{vv}-8\pi G\,\delta\langle T_{vv}\rangle$, which is the
+$E_{kk}$ of Lem.~\ref{lem:e0ds-trace}. Extension off $N$ does not
+enter: $\delta R_{vv}|_{N}$ is fixed by the intrinsic data
+$\delta h_{AB}(v,\omega)$ through the exact congruence identity
+$R_{vv}=-\partial_{v}\theta-\tfrac12\theta^{2}
+-\sigma_{AB}\sigma^{AB}$ (affine, twist-free), whose linearisation
+about $\theta=\sigma=0$ (Lem.~\ref{lem:pair-chart}(iii)) is
+\[
+\partial_{v}\,\delta\theta=-\,\delta R_{vv}\ \text{on }N,
+\qquad
+\delta\theta=\partial_{v}\Bigl(\frac{\delta\sqrt h}{\sqrt h}\Bigr),
+\quad
+\delta\sqrt h:=\tfrac12\sqrt h\,h^{AB}\delta h_{AB},
+\]
+with no shear contribution at linear order ($\sigma^{AB}_{\rm bg}\,
+\delta\sigma_{AB}=0$). Both statements, and their independence of
+affine-preserving extensions of $\delta g$ off $N$, are verified
+symbolically (P3): a trace perturbation $\delta h_{AB}=f(v)h_{AB}$
+gives $\delta R_{vv}|_{N}=-f''(v)$; a transverse-traceless
+$\delta h_{AB}$ gives $\delta R_{vv}|_{N}=0$; adding
+$\delta g_{vv}=u^{2}q(v)$ changes neither.
+\end{remark}
+
+\begin{lemma}[weighted tail calculus: the entire consumption of the
+  finite-first-moment premise]
+\label{lem:pair-tail}
+Fix a generator $\omega$ and $V\in\mathbb{R}$, and let
+$F\in C^{0}([V,\infty))$ satisfy the \emph{finite first moment}
+\[
+\mathrm{(FM)}\qquad
+M_{V}(\omega):=\int_{V}^{\infty}(v-V)\,|F(v)|\,dv\;<\;\infty .
+\]
+Let $g\in C^{1}$ solve $g'=-F$ on $[V,\infty)$ and let $G\in C^{2}$
+solve $G'=g$. Then:
+\begin{enumerate}
+\item[(i)] $g(\infty):=\lim_{v\to\infty}g(v)$ exists (the tail
+$\int_{v}^{\infty}|F|\le (v-V)^{-1}M_{V}<\infty$ for $v>V$), and
+\[
+(v-V)\,\bigl|g(v)-g(\infty)\bigr|
+\;\le\;\int_{v}^{\infty}(s-V)\,|F(s)|\,ds\;\xrightarrow[v\to\infty]{}\;0 ,
+\]
+the tail of the convergent moment integral.
+\item[(ii)] (Tonelli.) $\displaystyle\int_{V}^{\infty}
+\bigl|g(v)-g(\infty)\bigr|\,dv\le\int_{V}^{\infty}\!\!\int_{v}^{\infty}
+|F(s)|\,ds\,dv=M_{V}(\omega)$.
+\item[(iii)] (Exact weighted identity; both boundary terms explicit.)
+\[
+\int_{V}^{\infty}(v-V)\,F(v)\,dv
+\;=\;\underbrace{\Bigl[-(v-V)\bigl(g(v)-g(\infty)\bigr)
+\Bigr]_{v=V}^{v\to\infty}}_{\;=\;0\;-\;0\;}
+\;+\;\int_{V}^{\infty}\bigl(g(v)-g(\infty)\bigr)\,dv ,
+\]
+where the term at $v=V$ vanishes because the \emph{weight} vanishes at
+the cut (this is the entire boundary contribution at the bifurcation
+cut, for every cut including $V=0$ and cuts crossing $B$), and the
+term at $v\to\infty$ vanishes by (i), i.e.\ by (FM) --- and by nothing
+else.
+\item[(iv)] If moreover $g(\infty)=0$, then $G(\infty):=\lim G(v)$
+exists (absolutely, by (ii)) and
+\[
+\int_{V}^{\infty}(v-V)\,F(v)\,dv\;=\;G(\infty)-G(V).
+\]
+If instead $g(\infty)\neq0$, then $G(v)=g(\infty)\,v+O(1)$ diverges
+linearly and no finite normalisation of $G$ at infinity exists.
+\item[(v)] Sharpness: (FM) is not implied by
+$\int_{V}^{\infty}|F|<\infty$. Witness $F(v)=(1+v^{2})^{-1}$ (the
+divergent-moment witness): the ANEC-type integral is finite ($\pi$ over the
+full line) while $M_{V}=\infty$ and $G$ diverges logarithmically ---
+the display in (iv) has no finite left-hand side.
+\end{enumerate}
+\end{lemma}
+
+\begin{proof}
+(i): $g(v)-g(w)=\int_{v}^{w}F$, and $\int_{v}^{\infty}|F|\le
+(v-V)^{-1}\int_{v}^{\infty}(s-V)|F|\to0$, so $g$ is Cauchy at
+$\infty$; the displayed bound is $(v-V)|\int_{v}^{\infty}F|\le
+\int_{v}^{\infty}(v-V)|F(s)|\,ds\le\int_{v}^{\infty}(s-V)|F(s)|\,ds$,
+whose $v\to\infty$ limit is $0$ by dominated convergence applied to
+the tails of the finite measure $(s-V)|F(s)|\,ds$. (ii) is Tonelli for
+$g(v)-g(\infty)=\int_{v}^{\infty}F(s)\,ds$. (iii): integrate by parts
+on $[V,R]$, $\int_{V}^{R}(v-V)F=-\int_{V}^{R}(v-V)\,d\bigl(g-
+g(\infty)\bigr)$, and send $R\to\infty$ using (i) at the upper end;
+at $v=V$ the weight $(v-V)$ vanishes and $g(V)-g(\infty)$ is finite,
+so the lower boundary term is exactly $0$. (iv): integrate (iii) once
+more, absolutely convergent by (ii); the divergence statement is
+immediate. (v): direct computation, reproduced numerically in P5.
+\end{proof}
+
+\begin{remark}[the located consumption]
+\label{rem:pair-moment-locus}
+Premise (b) of Lem.~\ref{lem:e0ds-cut} (finite first moment per
+complete generator) is consumed \emph{exactly twice}, both times at
+the $v\to\infty$ end of Lem.~\ref{lem:pair-tail} with
+$F=\delta R_{vv}(\cdot,\omega)$, $g=\delta\theta$,
+$G=\delta\sqrt h/\sqrt h$: once in (iii) to kill the far boundary term
+$(v-V)\,\delta\theta$, once in (iv)/(ii) to make the late-time area
+limit exist. It is \emph{not} consumed at the bifurcation cut (the
+weight vanishes there identically), and it is \emph{not} consumed in
+the second cut-variation (Prop.~\ref{prop:pair-secondvar}), which is
+local at the cut. Under the linearised field equation the two
+consumptions transfer verbatim to $F=8\pi G\,\delta\langle
+T_{vv}\rangle$, which is the form stated in print. The witness (v)
+shows the premise is genuinely stronger than the ANEC-type pin: it
+must be \emph{verified} for Bunch--Davies-class perturbations
+(falloff of $\delta\langle T_{vv}\rangle$ along the generators, affine
+parametrisation, weight linear in $v$); that verification is the
+(s1-ii)/H4 obligation, not part of this geometric arm.
+\end{remark}
+
+\begin{theorem}[per-cut Wald/Raychaudhuri pairing on the de~Sitter
+  wedge horizon]
+\label{thm:pair-main}
+Let $N$ be the wedge horizon of Lem.~\ref{lem:pair-chart}, $\delta g$
+a Hadamard-smooth linear perturbation in horizon gauge
+(Rem.~\ref{rem:pair-gauge}), and assume, per generator $\omega\in
+S^{2}$ and uniformly on $S^{2}$:
+\begin{itemize}
+\item[$\mathrm{(FM)}$] $\displaystyle\sup_{\omega}\int_{V_{0}}
+^{\infty}(1+|v|)\,\bigl|\delta R_{vv}(v,\omega)\bigr|\,dv<\infty$ for
+some $V_{0}\le\inf V$ (the finite first moment; under the linearised
+field equation this is premise (b) of Lem.~\ref{lem:e0ds-cut});
+\item[$\mathrm{(FN)}$] $\displaystyle\lim_{v\to\infty}\delta\theta(v,
+\omega)=0$ for every $\omega$ (\emph{future normalisation}: the
+perturbed horizon settles; by Lem.~\ref{lem:pair-tail}(i) the limit
+exists under (FM), and by (iv) it vanishes if and only if the
+late-time area variation is finite; (FN) is thus tied to the
+finiteness of the display and is carried as an explicit hypothesis
+rather than a separate dynamical assumption).
+\end{itemize}
+Then the late-time area variation
+$\delta A_{\infty}:=\lim_{w\to\infty}\int_{S^{2}}d^{2}\Omega\,\,\delta
+\sqrt h\,(w,\Omega)$ exists, and for \emph{every} continuous cut
+$V:S^{2}\to\mathbb{R}$,
+\[
+\boxed{\;
+\frac{1}{4G}\Bigl[\delta A_{\infty}-\delta A[V]\Bigr]
+\;=\;
+\frac{1}{4G}\int_{S^{2}}d^{2}\Omega\,\sqrt h
+\int_{V(\Omega)}^{\infty}dv\,\bigl(v-V(\Omega)\bigr)\,
+\delta R_{vv}(v,\Omega)
+\;}
+\]
+with $\delta A[V]=\int d^{2}\Omega\,\delta\sqrt h(V(\Omega),\Omega)$
+(exact, Lem.~\ref{lem:pair-chart}(iv)), and with the complete list of
+boundary terms: at $v=V(\Omega)$ the integration by parts produces
+$(v-V)\,\delta\theta|_{v=V}=0$ (weight vanishes at the cut; no
+contribution at or near the bifurcation cut for any cut); at
+$v\to\infty$ it produces $-\lim_{v}(v-V)\,\delta\theta(v,\Omega)=0$ by
+(FM)+(FN) via Lem.~\ref{lem:pair-tail}(i,iii). If in addition the
+linearised semiclassical field equation holds on $N$,
+$\delta R_{vv}=8\pi G\,\delta\langle T_{vv}\rangle$
+(Rem.~\ref{rem:pair-gauge}: on $N$ this \emph{is} the null--null
+Einstein--$\Lambda$ equation), the right-hand side equals
+\[
+2\pi\int_{S^{2}}d^{2}\Omega\,\sqrt h\int_{V(\Omega)}^{\infty}dv\,
+(v-V(\Omega))\,\delta\langle T_{vv}(v,\Omega)\rangle
+\;=\;\delta\langle K_{V}\rangle_{\rm flux},
+\]
+the geometric flux form of the modular energy in premise (a) of
+Lem.~\ref{lem:e0ds-cut}. Conversely --- the direction the framework
+consumes --- premise (a) as an identity in $V$ plus
+Prop.~\ref{prop:pair-secondvar} returns the pointwise equation.
+\end{theorem}
+
+\begin{proof}
+Fix $\omega$. In horizon gauge the congruence identity linearises to
+$\partial_{v}\delta\theta=-\delta R_{vv}$ on $N$
+(Rem.~\ref{rem:pair-gauge}, verified P3), so
+Lem.~\ref{lem:pair-tail} applies with $F=\delta R_{vv}$,
+$g=\delta\theta$, $G=\delta\sqrt h/\sqrt h$ (background $\sqrt h$ is
+$v$-independent, Lem.~\ref{lem:pair-chart}(iii), so
+$G'=\delta\theta$ integrates $\delta\theta=\partial_{v}(\delta\sqrt
+h/\sqrt h)$ exactly). Parts (iii)+(iv) with $g(\infty)=0$ (FN) give,
+per generator,
+\[
+\int_{V}^{\infty}(v-V)\,\delta R_{vv}\,dv
+=\frac{\delta\sqrt h(\infty,\omega)-\delta\sqrt h(V,\omega)}
+{\sqrt h}\,,
+\]
+absolutely convergent with both boundary terms as listed. Multiply by
+$\sqrt h/4G$ and integrate over $S^{2}$: the uniform bound in (FM)
+dominates the $\omega$-integral (compact $S^{2}$, continuous data), so
+Fubini applies, $\delta A_{\infty}$ exists, and the boxed display
+follows, using Lem.~\ref{lem:pair-chart}(iv) to identify
+$\int d^{2}\Omega\,\delta\sqrt h(V(\Omega),\Omega)$ with the area
+variation of the graph cut with no $\partial_{A}V$ correction. The
+field-equation substitution is pointwise on $N$. Numerical
+verification of the identity, of the boundary-term decay rates, and
+of the failure mode when (FM) is dropped: P4, P5.
+\end{proof}
+
+\begin{remark}[reading of the printed display: the deficit
+  normalisation, and a sign trap]
+\label{rem:pair-sign}
+Premise (a) of Lem.~\ref{lem:e0ds-cut} writes the
+\emph{deficit} pairing $\delta[A_{\infty}-A(V)]/4G
+=\delta\langle K_{V}\rangle$ with
+$\delta\langle K_{V}\rangle$ the \emph{positive}-weight flux
+displayed above. Thm.~\ref{thm:pair-main} shows the geometric object
+equal to that flux is the \emph{future-normalised area deficit}
+$\delta[A_{\infty}-A(V)]/4G$: for a positive-energy perturbation
+crossing the horizon after the cut, $\delta\langle K_{V}\rangle>0$
+and the area \emph{grows} from the cut to $\mathscr{I}^{+}$, so
+$\delta A(V)<\delta A_{\infty}$ and the deficit is positive. The
+literal reading ``$\delta A(V)$, normalised so that
+$\delta A_{\infty}=0$'' has the opposite sign, and matters: under the
+second cut-variation the literal reading returns
+$\delta R_{vv}=-8\pi G\,\delta\langle T_{vv}\rangle$
+(anti-Einstein), while the deficit reading returns the Einstein sign
+(Prop.~\ref{prop:pair-secondvar}; the $V$-independent constant
+$\delta A_{\infty}$ drops out of first \emph{and} second variations,
+so the consumption of Lem.~\ref{lem:e0ds-cut} is unaffected once the
+reading is fixed). The consistent display convention is to write
+$\delta A(V)$ as $\delta\bigl[A_{\infty}-A(V)\bigr]$ (equivalently,
+state the teleological normalisation together with the orientation
+``$\delta S(V)$ decreases toward the future equilibrium''), so that
+premise (a), the Ceyhan--Faulkner-normalised first law it imports,
+and the Raychaudhuri pairing carry one consistent sign.
+\end{remark}
+
+\begin{lemma}[the $\xi\neq0$ improvement/Wald identity, with the
+  de~Sitter condensate tracked]
+\label{lem:pair-improve}
+Let the matter sector contain a free scalar with nonminimal coupling,
+$L=-\tfrac12[(\nabla\phi)^{2}+m^{2}\phi^{2}+\xi R\phi^{2}]$, so that
+\[
+T^{(\xi)}_{\mu\nu}=T^{\rm min}_{\mu\nu}
++\xi\bigl[G_{\mu\nu}-\nabla_{\mu}\nabla_{\nu}
++g_{\mu\nu}\Box\bigr]\phi^{2},
+\]
+and let $\delta\langle\cdot\rangle$ denote the semiclassical linear
+response about $(\mathrm{dS}_{4},\omega_{\rm BD})$, with
+$\langle\phi^{2}\rangle_{\rm BD}$ the (renormalised, dS-invariant,
+hence constant) Bunch--Davies condensate. Assume, per generator and
+uniformly on $S^{2}$,
+$(\mathrm{FM}_{\phi})$
+$\int(1+|v|)\,|\partial_{v}^{2}\delta\langle\phi^{2}\rangle|\,dv
+<\infty$ and $(\mathrm{FN}_{\phi})$
+$\partial_{v}\delta\langle\phi^{2}\rangle\to0$ as $v\to\infty$ (again
+forced by finiteness, Lem.~\ref{lem:pair-tail}(i,iv), which also give
+existence of $\delta\langle\phi^{2}\rangle(\infty,\omega)$). Define
+\[
+\frac{1}{G_{\rm eff}}:=\frac{1}{G}
+-8\pi\xi\langle\phi^{2}\rangle_{\rm BD},
+\qquad
+\delta S_{\rm W}(V):=\frac{\delta A[V]}{4G_{\rm eff}}
+-2\pi\xi\int_{S^{2}}d^{2}\Omega\,\sqrt h\,
+\delta\langle\phi^{2}\rangle(V(\Omega),\Omega),
+\]
+the first-order variation of the Wald entropy
+$S_{\rm W}=\oint\sqrt h\,[\,1/4G-2\pi\xi\langle\phi^{2}\rangle\,]$ of
+the $R/16\pi G-\tfrac12\xi R\phi^{2}$ sector. Then:
+\begin{enumerate}
+\item[(I)] (Exact structure of the null--null response on $N$.) In
+horizon gauge, using $\Gamma^{\mu}_{vv}|_{N}=0$,
+$\nabla_{\mu}\langle\phi^{2}\rangle_{\rm BD}=0$,
+$g_{vv}|_{N}=\delta g_{vv}|_{N}=0$ and $G_{vv}|_{N}=0$
+(Lem.~\ref{lem:pair-chart}),
+\[
+\delta\langle T^{(\xi)}_{vv}\rangle\big|_{N}
+=\delta\langle T^{\rm min}_{vv}\rangle\big|_{N}
+-\xi\,\partial_{v}^{2}\,\delta\langle\phi^{2}\rangle
++\xi\,\langle\phi^{2}\rangle_{\rm BD}\,\delta G_{vv}\big|_{N},
+\]
+and the last (condensate) term is of the \emph{same} (first) order as
+the others; on $N$, $\delta G_{vv}=\delta R_{vv}$.
+\item[(II)] (The telescoping identity; boundary terms explicit.)
+Per generator, for every cut value $V$,
+\[
+\int_{V}^{\infty}(v-V)\,\bigl(-\partial_{v}^{2}
+\delta\langle\phi^{2}\rangle\bigr)\,dv
+=\delta\langle\phi^{2}\rangle(\infty,\omega)
+-\delta\langle\phi^{2}\rangle(V,\omega),
+\]
+by Lem.~\ref{lem:pair-tail} with
+$F=-\partial_{v}^{2}\delta\langle\phi^{2}\rangle$,
+$g=\partial_{v}\delta\langle\phi^{2}\rangle$,
+$G=\delta\langle\phi^{2}\rangle$: the cut boundary term carries the
+vanishing weight, the far term is killed by
+$(\mathrm{FM}_{\phi})+(\mathrm{FN}_{\phi})$. The improvement
+contribution to the weighted flux,
+$2\pi\xi\oint\sqrt h\,[\delta\langle\phi^{2}\rangle(\infty)
+-\delta\langle\phi^{2}\rangle(V)]$, is therefore cut-localised ---
+nothing is left on the horizon bulk --- and cancels \emph{exactly}
+against the $\xi$-piece of the Wald-entropy deficit,
+$\delta S^{(\xi)}(\infty)-\delta S^{(\xi)}(V)
+=2\pi\xi\oint\sqrt h\,[\delta\langle\phi^{2}\rangle(V)
+-\delta\langle\phi^{2}\rangle(\infty)]$ with
+$\delta S^{(\xi)}(V):=-2\pi\xi\oint\sqrt h\,\delta\langle\phi^{2}
+\rangle(V)$, when moved across the first law: this is the improvement-identity
+surface-term statement, made sign-explicit.
+\item[(III)] (Equivalence of pairings; no leakage.) Assume the
+linearised semiclassical equation on $N$ with the full nonminimal
+source, $\delta R_{vv}=8\pi G\,\delta\langle T^{(\xi)}_{vv}\rangle
+|_{N}$. By (I) this is equivalent to
+\[
+\delta R_{vv}
+=8\pi G_{\rm eff}\bigl[\delta\langle T^{\rm min}_{vv}\rangle
+-\xi\,\partial_{v}^{2}\delta\langle\phi^{2}\rangle\bigr]\quad
+\text{on }N,
+\]
+and under $(\mathrm{FM})+(\mathrm{FN})+(\mathrm{FM}_{\phi})
++(\mathrm{FN}_{\phi})$ --- which also give existence of
+$\delta S_{\rm W}^{\infty}:=\lim_{w\to\infty}\delta S_{\rm W}
+(V\equiv w)=\delta A_{\infty}/4G_{\rm eff}-2\pi\xi\oint\sqrt h\,
+\delta\langle\phi^{2}\rangle(\infty)$ --- the two per-cut first laws
+\[
+\text{(a$_{\rm W}$)}\quad
+\delta S_{\rm W}^{\infty}-\delta S_{\rm W}(V)
+=2\pi\!\int\!d^{2}\Omega\,\sqrt h\!\int_{V}^{\infty}\!\!dv\,(v-V)\,
+\delta\langle T^{\rm min}_{vv}\rangle,
+\]
+\[
+\text{(a$_{A}$)}\quad
+\frac{\delta A_{\infty}-\delta A[V]}{4G_{\rm eff}}
+=2\pi\!\int\!d^{2}\Omega\,\sqrt h\!\int_{V}^{\infty}\!\!dv\,(v-V)\,
+\bigl[\delta\langle T^{\rm min}_{vv}\rangle
+-\xi\partial_{v}^{2}\delta\langle\phi^{2}\rangle\bigr]
+\]
+are \emph{equivalent} --- their difference is the identity (II) ---
+and both hold, by Thm.~\ref{thm:pair-main} applied with
+$G\to G_{\rm eff}$. A constant renormalisation-scheme shift
+$\langle\phi^{2}\rangle_{\rm BD}\mapsto\langle\phi^{2}\rangle_{\rm BD}
++c$ moves $1/G_{\rm eff}$ and the condensate source term by the same
+combination, so the equivalence is scheme-covariant.
+\item[(IV)] (Pointwise output is pairing-independent.) The second
+cut-variation (Prop.~\ref{prop:pair-secondvar}) of (a$_{\rm W}$) and
+of (a$_{A}$) returns the \emph{same} pointwise equation, the display
+in (III): no improvement ambiguity reaches the equation of state.
+Premise (c) of Lem.~\ref{lem:e0ds-cut} is thereby \emph{derived}, in
+the sharpened form: the pairing is with Wald entropy and the
+\emph{minimal} (chiral) flux --- the flux the horizon net actually
+carries --- or equivalently with the area and the full improved flux,
+with $G_{\rm eff}$ carrying the condensate in either reading.
+\end{enumerate}
+\end{lemma}
+
+\begin{proof}
+(I): expand $\delta\langle\xi[G_{vv}-\nabla_{v}\nabla_{v}
++g_{vv}\Box]\phi^{2}\rangle$; the $\delta(g_{vv}\Box\phi^{2})$ term
+dies on $N$ by $g_{vv}=\delta g_{vv}=0$; $\delta(\nabla_{v}\nabla_{v}
+\phi^{2})=\partial_{v}^{2}\delta\langle\phi^{2}\rangle
+-\delta\Gamma^{\mu}_{vv}\partial_{\mu}\langle\phi^{2}\rangle_{\rm BD}
+=\partial_{v}^{2}\delta\langle\phi^{2}\rangle$ (constant condensate;
+background $\Gamma^{\mu}_{vv}|_{N}=0$ removes the
+$\Gamma\cdot\partial\delta\phi^{2}$ cross term as well);
+$\delta(G_{vv}\phi^{2})=\delta G_{vv}\,\langle\phi^{2}\rangle_{\rm
+BD}+G_{vv}\delta\langle\phi^{2}\rangle$ and $G_{vv}|_{N}=0$. The Wald
+density $1/4G-2\pi\xi\langle\phi^{2}\rangle$ is the standard
+$-2\pi\,\partial L/\partial R_{\mu\nu\rho\sigma}\,
+\epsilon_{\mu\nu}\epsilon_{\rho\sigma}$ evaluation for the two
+$R$-linear sectors, normalised so the Einstein sector returns
+$A/4G$; its first variation at the cut, using
+Lem.~\ref{lem:pair-chart}(iv) and the constancy of
+$\langle\phi^{2}\rangle_{\rm BD}$ (which pairs with
+$\delta\sqrt h$ to give the $G\to G_{\rm eff}$ shift of the area
+term), is the displayed $\delta S_{\rm W}(V)$. (II) is
+Lem.~\ref{lem:pair-tail}(iii,iv) under the stated mapping. (III):
+substitute (I) into the field equation and solve for
+$\delta R_{vv}$ (the condensate term is proportional to
+$\delta R_{vv}$ on $N$); apply Thm.~\ref{thm:pair-main} verbatim with
+the constant $1/4G_{\rm eff}$ in place of $1/4G$ and the equivalent
+source; then add/subtract (II) weighted by $2\pi\xi\sqrt h$ and
+integrate over $S^{2}$ to pass between (a$_{\rm W}$) and (a$_{A}$).
+(IV) is Prop.~\ref{prop:pair-secondvar} applied to both forms; the
+difference of the two second variations is the second cut-variation
+of the exact identity (II), which vanishes identically. Numerical
+check of (II), of the equivalence, and of the $G_{\rm eff}$ algebra:
+P6.
+\end{proof}
+
+\begin{proposition}[second cut-variation: the smeared-to-pointwise
+  step, with differentiability derived]
+\label{prop:pair-secondvar}
+Under the premises of Thm.~\ref{thm:pair-main} (and, if $\xi\neq0$,
+of Lem.~\ref{lem:pair-improve}), let $V\in C^{0}(S^{2})$, $f\in
+C^{0}(S^{2})$, and $V_{s}:=V+sf$. Then both sides of the per-cut
+first law --- in either reading (a$_{\rm W}$) or (a$_{A}$) --- are
+twice continuously differentiable in $s$, with
+\[
+\frac{d^{2}}{ds^{2}}\Big|_{0}\,
+\frac{\delta A_{\infty}-\delta A[V_{s}]}{4G_{\rm eff}}
+=\frac{1}{4G_{\rm eff}}\int_{S^{2}}d^{2}\Omega\,f(\Omega)^{2}\,
+\sqrt h\;\delta R_{vv}(V(\Omega),\Omega),
+\]
+\[
+\frac{d^{2}}{ds^{2}}\Big|_{0}\;
+2\pi\!\int\!d^{2}\Omega\sqrt h\!\int_{V_{s}}^{\infty}\!\!dv\,(v-V_{s})
+\,\Phi(v,\Omega)
+=2\pi\int_{S^{2}}d^{2}\Omega\,f(\Omega)^{2}\,\sqrt h\;
+\Phi(V(\Omega),\Omega)
+\]
+for $\Phi$ the relevant flux density ($\Phi=\delta\langle T^{\rm min}
+_{vv}\rangle-\xi\partial_{v}^{2}\delta\langle\phi^{2}\rangle$ in
+(a$_{A}$); $\Phi=\delta\langle T^{\rm min}_{vv}\rangle$ in
+(a$_{\rm W}$), whose extra Wald term contributes
+$+2\pi\xi\int f^{2}\sqrt h\,\partial_{v}^{2}\delta\langle\phi^{2}
+\rangle(V,\Omega)$ to the geometric side --- the same reshuffle).
+Consequently, if the per-cut first law holds as an identity for all
+cuts in a $C^{0}$ (a fortiori $C^{2}$) neighbourhood of the
+bifurcation cut, then for every $f$ the two displays agree, and since
+both densities are continuous, polarisation in $f$ gives the
+\emph{pointwise} null--null equation on $N$:
+\[
+\delta R_{vv}(x)\;=\;8\pi G_{\rm eff}\,
+\bigl[\delta\langle T^{\rm min}_{vv}\rangle
+-\xi\,\partial_{v}^{2}\delta\langle\phi^{2}\rangle\bigr](x)
+\;=\;8\pi G\,\delta\langle T^{(\xi)}_{vv}(x)\rangle ,
+\qquad x\in N,
+\]
+i.e.\ $E_{kk}(x)=0$ in the sense of Lem.~\ref{lem:e0ds-trace}
+(Rem.~\ref{rem:pair-gauge}: $\delta G_{vv}=\delta R_{vv}$ and
+$\Lambda\delta g_{vv}=0$ on $N$). Ranging over the wedge orbit
+(Lem.~\ref{lem:e0ds-coverage}) yields $E_{kk}=0$ at every null pair
+$(x,k)$, the input consumed by Lem.~\ref{lem:e0ds-trace}. The finite
+first moment is \emph{not} consumed in this step: the second
+variation is local at the cut; (FM) enters only through the
+integrated display it varies (Rem.~\ref{rem:pair-moment-locus}).
+\end{proposition}
+
+\begin{proof}
+Geometric side: by the exact cut-area formula
+(Lem.~\ref{lem:pair-chart}(iv)),
+$\delta A[V_{s}]=\int d^{2}\Omega\,\delta\sqrt h(V_{s}(\Omega),
+\Omega)$, and $\delta\sqrt h(\cdot,\Omega)\in C^{\infty}$ (Hadamard
+smoothness) with $\partial_{v}\delta\sqrt h=\sqrt h\,\delta\theta$,
+$\partial_{v}^{2}\delta\sqrt h=\sqrt h\,\partial_{v}\delta\theta
+=-\sqrt h\,\delta R_{vv}$ on $N$ (Rem.~\ref{rem:pair-gauge}).
+Differentiation under $\int d^{2}\Omega$ twice is dominated on the
+compact $S^{2}$ by continuity of these derivatives on the compact
+range of $V_{s}$, $|s|\le1$. Note the second variation is purely
+diagonal in $\Omega$ --- the exact area formula has no
+$\partial_{A}V$ terms to produce off-diagonal or $(\partial f)^{2}$
+contributions, at any order. Flux side: with
+$I(w,\Omega):=\int_{w}^{\infty}\Phi\,dv$ and $J(w,\Omega):=\int_{w}
+^{\infty}(v-w)\Phi\,dv$, (FM) gives absolute convergence of both and
+$\partial_{w}J=-I$, $\partial_{w}I=-\Phi(w,\Omega)$ (fundamental
+theorem of calculus; the boundary term of $\partial_{w}J$ carries the
+vanishing weight). Both are continuous in $(w,\Omega)$, and the
+uniform (FM) bound dominates the $\Omega$-integral, so
+$\frac{d}{ds}\int d^{2}\Omega\sqrt h\,J(V_{s},\Omega)
+=-\int d^{2}\Omega\sqrt h f I(V_{s},\Omega)$ and
+$\frac{d^{2}}{ds^{2}}=\int d^{2}\Omega\sqrt h f^{2}\Phi(V_{s},
+\Omega)$, continuous in $s$: premise (a)'s twice-differentiability is
+thereby derived from (FM) plus Hadamard smoothness. Pointwise step:
+the equality $\int f^{2}[\,\rho_{1}-\rho_{2}\,]d^{2}\Omega=0$ for all
+$f\in C^{0}(S^{2})$ with $\rho_{i}$ continuous forces
+$\rho_{1}=\rho_{2}$ (evaluate on peaked $f$). Applying it at every
+admissible $V$ delivers the pointwise equation at every point
+$(V(\Omega),\Omega)$ swept by the cut family: for the family of
+Lem.~\ref{lem:e0ds-cut} (all cuts in a $C^{2}$ neighbourhood of the
+bifurcation cut --- already the constant cuts $V\equiv c$,
+$|c|<\varepsilon$, suffice) this is a neighbourhood of $B$ in $N$,
+\emph{per wedge}. Globality is then supplied by
+Lem.~\ref{lem:e0ds-coverage}, not by sliding along a single horizon:
+every $(x,k)$ is bifurcation data of a $2$-parameter family of orbit
+wedges, and the near-$B$ output of each wedge covers it. (One cannot
+instead transport the equation along one $N$ with the boost of $W$:
+the boost is a background isometry but the perturbation carries no
+invariance.) The $\xi\neq0$ bookkeeping is
+Lem.~\ref{lem:pair-improve}(IV).
+Numerical check of both second variations against the pointwise
+density, including the $s$-family: P7.
+\end{proof}
+
+\begin{remark}[status: what is proved, what is consumed, what is not
+  delivered here]
+\label{rem:pair-status}
+(1) The geometric side of Lem.~\ref{lem:e0ds-cut} \emph{closes at
+theorem grade}: Thm.~\ref{thm:pair-main} (pairing, explicit boundary
+terms), Lem.~\ref{lem:pair-improve} (premise (c) derived, condensate
+tracked), Prop.~\ref{prop:pair-secondvar} (the
+$\delta^{2}/\delta V^{2}$ consumption, differentiability derived).
+No resisting step. (2) Premise (b) (finite first moment) is consumed
+exactly at the two $v\to\infty$ loci of Lem.~\ref{lem:pair-tail},
+transferred verbatim to $\delta\langle T_{vv}\rangle$ by the field
+equation; the divergent-moment witness shows it does not follow from the
+ANEC pin, and its verification for Bunch--Davies-class perturbations
+along the affinely complete generators (weight linear in affine $v$,
+far end on $\mathscr{I}^{+}$) is an obligation of the quantum arm
+(H4), not of this one. (3) Two items to note:
+the deficit reading of the printed display (Rem.~\ref{rem:pair-sign};
+sign-critical for the second variation), and the condensate term in
+Lem.~\ref{lem:pair-improve}(I) ($G\to G_{\rm eff}$ on de~Sitter,
+where $\langle\phi^{2}\rangle_{\rm BD}\neq0$; premise (c) as printed
+is correct for the $\partial_{v}^{2}$ piece and silently absorbs the
+condensate iff $G$ is read as $G_{\rm eff}$). (4) Not delivered here:
+premise (a)'s quantum content --- that the deformed-cut modular
+energy \emph{is} the displayed flux and that the per-cut
+\emph{equality} $\delta S=\delta\langle K_{V}\rangle$ holds on the dS
+wedge orbit (support step (s1-ii)); Lem.~\ref{lem:pair-chart}(v) is a
+structural caution for that arm: unlike Minkowski, the cut-translated
+wedges are not isometric images of $W$ (no null-translation isometry
+on $N$), so the Ceyhan--Faulkner-class argument must be run on the
+half-sided-inclusion/chiral structure of the horizon net itself
+\cite{CeyhanFaulkner2018,FaulknerSperanza2024}, as the printed status
+remark already frames it. (5) Relation to print: the boost weight and
+KMS structure of the dS wedge are as in \cite{BorchersBuchholz1999};
+the local-Rindler polarisation step consuming the output is
+Lem.~\ref{lem:e0ds-trace} \cite{Jacobson1995}; horizon-slice entropy
+bookkeeping at cuts follows the Killing-horizon conventions of
+\cite{Wall2012}.
+\end{remark}
+% ============================================================================
+% END ds2_pairing.tex. Labels exported: app:ds-pairing, lem:pair-chart,
+% rem:pair-gauge, lem:pair-tail, rem:pair-moment-locus, thm:pair-main,
+% rem:pair-sign, lem:pair-improve, prop:pair-secondvar, rem:pair-status.
+% ============================================================================
