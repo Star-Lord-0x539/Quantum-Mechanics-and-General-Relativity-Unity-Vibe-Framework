@@ -2506,13 +2506,25 @@ a naive-fallback input.
 %   * the trace-audit trio (lem:no-glancing / the refund identity / Fubini
 %     source consumption) -- Section A.7.1, THEOREM;
 %   * the transverse single-time restriction (an17:transverse-data) --
-%     THEOREM, sharp;
+%     THEOREM, sharp, AS CORRECTED: the honest transverse height
+%     of an alpha>0 tail leg is (alpha/2)+1/2, NOT alpha+1/2 (the printed
+%     alpha+1/2 stands only at alpha=0; alpha<0 instances underbook, the
+%     safe side; the radial alpha+3/2 clause is correct). Every profile-cap
+%     column derived from the old alpha>0 rule (A1/A2 sources + their
+%     eq-slice-fubini consumption, A3, A4, B2, B3/Nc-corrected, clause
+%     (i)/(ii) caps, locked-4d raised caps, N=1 calibration, the (D0) port
+%     display) is GATED, not deleted: it stands as printed MODULO the
+%     transverse re-derivation (Rem. an17:transverse-note, the two printed
+%     errors named there; Rem. an17:d0-record, the seed record);
 %   * the slice-register ladder an17:slice-ladder at s>11 over U_omega
 %     (Tice platform, Fubini sources, zero-slack top rung) -- THEOREM
 %     end-to-end over U_omega GIVEN the Part-1--3 analytic slice chain
-%     (which is itself THEOREM; the "given" is discharged);
+%     (which is itself THEOREM; the "given" is discharged) -- its
+%     profile/data-cap columns carried GATED per the transverse correction
+%     (coefficient columns and the s>11 commutator pin untouched);
 %   * the locked-4d variant an17:slice-ladder-4d at s>23/2 -- THEOREM
-%     end-to-end over U_omega GIVEN the same chain.
+%     end-to-end over U_omega GIVEN the same chain -- same gate on its
+%     raised profile caps.
 % It publishes, AT THEIR AUDITED SUB-THEOREM GRADES, cited as such and NEVER
 % promoted:
 %   * the N-a data-side residues (lem:G / lem:DoD are THEOREM; the long-slab
@@ -2521,9 +2533,10 @@ a naive-fallback input.
 %   * clause (ii) itself (C_W / W_* mixed-jet Lipschitz) -- Section A.8,
 %     graded PLAUSIBLE (REDUCED to s>11 modulo two named gaps), NEVER cited
 %     at THEOREM: it is the paper's named input (E2a), clause (ii).
-% The collar-margin attainment notes are PLAUSIBLE (rigorous sketch at the
-% grade of the banked N0 collar argument; not numerically certified, not
-% quoted downstream).
+% The collar-margin attainment note is THEOREM (Lem an17:attainment:
+% anchor floors d_00/theta_0^anch by finite-dim compactness at the
+% fixed g_0 + Weyl/collar-margin propagation; existence constants, not
+% numerically certified, not quoted downstream).
 %
 % This part assumes Parts 1--3 (the analytic device an17:Uomega /
 % an17:N0-analytic, the sliver an17:A1, and the cascade
@@ -2629,47 +2642,182 @@ is the trace-audit content, THEOREM.
 \end{remark}
 
 \begin{lemma}[Transverse restriction of cone profiles to a spacelike slice;
-sharp height $\alpha+\tfrac12$]\label{an17:transverse-data}
+honest sharp height $\tfrac\alpha2+\tfrac12$ at $\alpha>0$ (the transverse correction;
+the printed height $\alpha+\tfrac12$ stands only at $\alpha=0$)]
+\label{an17:transverse-data}
 Under the hypotheses of Lem.~\ref{an17:no-glancing}, let $y\in K_\Sigma$, let
 $r(\cdot)=r_g(\cdot,y)$ be the near-cone profile coordinate
 ($r^2\sim2|\sigma_g|$ near the light cone of $y$, away from the vertex), and
 let $\alpha\ge0$. Then the restriction to $\Sigma_0$ of $r^\alpha\log r$ (times
 any factor smooth-modulo-$H^{s-2}$) lies in $H^{t}(\Sigma_0)$ for every
-$t<\alpha+\tfrac12$, with constants uniform in $y\in K_\Sigma$ and
-$g\in U_\omega$; the exponent $\alpha+\tfrac12$ is \emph{sharp} for the
-codimension-one intersection geometry.
+$t<\tfrac\alpha2+\tfrac12$ when $\alpha>0$ (in the $\sigma$-grading:
+$\sigma^k\log\sigma$, $k=\alpha/2\ge1$, restricts at $H^{k+\frac12^-}$), and
+for every $t<\tfrac12$ when $\alpha=0$, with constants uniform in
+$y\in K_\Sigma$ and $g\in U_\omega$; both exponents are \emph{sharp} for the
+codimension-one intersection geometry. In the vertex-on-slice regime the
+radial model of Lem.~\ref{an17:no-glancing}(ii) gives the better height
+$\alpha+\tfrac32$ (correct as printed), and the $y$-uniform level over the
+collar is $\min(\tfrac\alpha2+\tfrac12,\,\alpha+\tfrac32)^-
+=(\tfrac\alpha2+\tfrac12)^-$. The previously printed transverse height
+$\alpha+\tfrac12$ is correct at $\alpha=0$, \emph{under}books (safe side) at
+the $\alpha<0$ singular legs, and \emph{over}books by exactly $\alpha/2$ at
+every $\alpha>0$: the two printed errors are named in
+Rem.~\ref{an17:transverse-note}, the sharp counterexample and the seed
+record in Rem.~\ref{an17:d0-record}. \emph{\underline{Grade}: THEOREM as
+corrected (sharp, $y$-uniform); the $\alpha=0$ instance of the old statement is
+unchanged THEOREM; the $\alpha<0$ (singular-leg) applications of the old rule
+\emph{under}book --- the safe side, untouched.}
 \end{lemma}
 \begin{proof}
 By Lem.~\ref{an17:no-glancing}(i) the cone of $y$ meets $\Sigma_0$
 transversally at angle $\ge c_0>0$ in a compact codimension-one submanifold
 $\mathcal S_y\subset\Sigma_0$ (a topological $2$-sphere, or the empty set, in
-which case there is nothing to prove); in $c_0$-uniform tubular coordinates
-$(u,\omega)\in(-u_0,u_0)\times\mathcal S_y$ the profile is $u^\alpha\log|u|$
-times a $C^1$-bounded factor. The one-dimensional model
-$\widehat{u^\alpha\log|u|\,\chi}(\xi)=O(|\xi|^{-\alpha-1}\log|\xi|)$ gives
-$\int(1+\xi^2)^{t}|\widehat{\cdot}|^2\,d\xi<\infty$ iff $2t-2\alpha-2<-1$ iff
-$t<\alpha+\tfrac12$ --- strict, open, no rounding; tangential smoothness
-contributes no loss (finite atlas on $\mathcal S_y$). Near the degenerate limit
-(the vertex approaching $\Sigma_0$, $\mathcal S_y$ shrinking) the profile tends
-to the radial model $\rho^\alpha\log\rho$ of Lem.~\ref{an17:no-glancing}(ii),
-which lies in $H^{t}$ for $t<\alpha+\tfrac32$ --- \emph{more} regular;
-monotonicity across the collar gives the $y$-uniform bound at the worse
-exponent $\alpha+\tfrac12$.
+which case there is nothing to prove). The same transversality forces
+$\sigma_g(\cdot,y)|_{\Sigma_0}$ to vanish \emph{simply} on $\mathcal S_y$: at
+$p\in\mathcal S_y$ the gradient of $\sigma_g$ is the nonzero null generator,
+and a nonzero null covector cannot annihilate the uniformly spacelike
+$T_p\Sigma_0$ (it would then be proportional to its timelike conormal), so
+$d(\sigma_g|_{\Sigma_0})(p)\neq0$, with slope bounded below by the
+$c_0,\delta_0$-data. Hence in $c_0$-uniform tubular coordinates
+$(u,\omega)\in(-u_0,u_0)\times\mathcal S_y$ one has
+$\sigma_g|_{\Sigma_0}=e(u,\omega)\,u$ with $e\neq0$, so
+$r|_{\Sigma_0}\sim(2|e|\,|u|)^{1/2}$ is H\"older-$\tfrac12$ in $u$ ---
+\emph{not} $C^1$-comparable to $u$ --- and the profile restricts as
+$|u|^{\alpha/2}\log|u|$ times a nonvanishing bounded factor. The
+one-dimensional model
+$\widehat{|u|^{\alpha/2}\log|u|\,\chi}(\xi)=O(|\xi|^{-\alpha/2-1}\log|\xi|)$
+gives $\int(1+\xi^2)^{t}|\widehat{\cdot}|^2\,d\xi<\infty$ iff
+$2t-\alpha-2<-1$ iff $t<\tfrac\alpha2+\tfrac12$ --- strict, open, no rounding
+(at $\alpha=6$ exactly: $(d/du)^3[u^3\log|u|]=6\log|u|+11$, so
+$|\widehat{u^3\log|u|}|=6\pi|\xi|^{-4}$ modulo a delta term, and $H^t$ iff
+$t<\tfrac72$); tangential smoothness contributes no loss (finite atlas on
+$\mathcal S_y$). At $\alpha=0$ the profile is
+$\log r=\tfrac12\log|\sigma_g|+O(1)\sim\log|u|$ and the printed height
+$\tfrac12^-$ is unchanged. Near the degenerate limit (the vertex approaching
+$\Sigma_0$, $\mathcal S_y$ shrinking) the profile tends to the radial model
+$\rho^\alpha\log\rho$ of Lem.~\ref{an17:no-glancing}(ii), which lies in
+$H^{t}$ for $t<\alpha+\tfrac32$ --- \emph{more} regular; two-zone patching
+across the collar gives the $y$-uniform bound at the worse exponent
+$\tfrac\alpha2+\tfrac12$ (the transverse slope factor shrinks the norm, not
+the level, as the vertex approaches the slice).
 \end{proof}
 
-\begin{remark}[The half-order correction; what it moves and what it does not]
+\begin{remark}[The transverse correction note: two printed errors, both named;
+what is gated and what is not]
 \label{an17:transverse-note}
-The transverse height $\alpha+\tfrac12$ of Lem.~\ref{an17:transverse-data} is
-the honest availability of a single-time cone-profile restriction for spectator
-points off the intersection surface; the na\"ive radial height $\alpha+\tfrac32$
-overstates it by one half-order. This matters for \emph{no} fence in either
-register --- the corrected columns are propagated through both ladders below,
-and it is precisely the transverse height that makes the $N{=}1$ calibration
-(Rem.~\ref{an17:calibration}) reproduce the data wall exactly --- but the
-$A4$-type equation-conversion tables of the two ladders should display the
-transverse heights $\alpha+\tfrac12$ wherever a single-time profile leg is
-booked. This is a fence-neutral bookkeeping tidy, not a proof gap; the
-underlying Lem.~\ref{an17:transverse-data} is THEOREM (sharp, $y$-uniform).
+The earlier form of this note took the transverse height $\alpha+\tfrac12$ of
+Lem.~\ref{an17:transverse-data} to be the honest availability of a single-time
+cone-profile restriction (the na\"ive radial $\alpha+\tfrac32$ overstates it
+by one half-order --- that direction was, and remains, correct) and called the
+correction fence-neutral. The present correction sharpened the count downward: the $\alpha>0$
+claim was itself false as previously printed, and the honest transverse height
+is $\tfrac\alpha2+\tfrac12$, as now stated. TWO distinct printed errors are
+corrected, and both are named:
+\begin{enumerate}[label=\textup{(\alph*)},leftmargin=*,nosep]
+\item \emph{The restriction rule at $r$-graded $\alpha>0$.} The old proof step
+  ``in tubular coordinates the profile is $u^\alpha\log|u|$ times a
+  $C^1$-bounded factor'' requires $r/u$ bounded, which is false:
+  $r|_{\Sigma_0}\sim(2\tau|u|)^{1/2}$ at spectator height $\tau$ is
+  H\"older-$\tfrac12$ in the tubular coordinate ($r/|u|^{1/2}$ is what is
+  bounded), and no $C^1$ tubular coordinate makes $\sqrt{\textup{linear}}$
+  linear. The no-glancing lemma itself forces $\sigma_g|_{\Sigma_0}$ to vanish
+  \emph{simply} on the crossing sphere, so one power of $\sigma$ is one power
+  of the slice coordinate but \emph{two} powers of the profile coordinate $r$:
+  the old rule double-counts the transverse vanishing by $\alpha/2$.
+\item \emph{The per-derivative eikonal grading.} The grading ``one $r$-power
+  per derivative'' on profile columns (geometric root: the eikonal identity
+  $|\nabla\sigma|_g=r$) confuses the Lorentzian $g$-norm with the coordinate
+  gradient: $|\nabla\sigma|_g\to0$ at the cone while the \emph{coordinate}
+  gradient is $O(1)$ there, so near the crossing each derivative on
+  $\sigma^k\log\sigma$ costs one $\sigma$-order, i.e.\ \emph{two} $r$-powers
+  (honest $r$-grading of the $N{=}2$ tail: $\partial T\sim r^4\log r$,
+  $\partial^2T\sim r^2\log r$ --- not $r^5\log r$, $r^4\log r$).
+\end{enumerate}
+Both errors push the same way (overbooking of $\alpha>0$ tail legs); the sharp
+in-scope counterexample and the honest seed column are recorded in
+Rem.~\ref{an17:d0-record}. \emph{Consequently the following printed sites are
+GATED --- each stands at its printed value MODULO the transverse
+re-derivation; the arithmetic is deliberately kept, not deleted:} the A1/A2
+source-rung slab profile bookings and their \eqref{an17:eq-slice-fubini}
+consumption, the A3 availability column, the A4 $\partial^2$-caps, the B2
+commutator consumption, the B3/Lem.~\ref{an17:Nc-corrected} slice caps, the
+clause (i)/(ii) profile caps of Lem.~\ref{an17:slice-ladder}, the raised caps
+of Lem.~\ref{an17:slice-ladder-4d}, the $N{=}1$ calibration numerology
+(Rem.~\ref{an17:calibration}; its DEATH verdict stands \emph{a fortiori}), and
+the (D0) port display (App.~\ref{app:e2a-ports}). \emph{Not} gated (untouched
+by the correction): the coefficient columns everywhere, including the $s>11$
+commutator pin; Thm.~\ref{an17:T1prime}; Lem.~\ref{an17:G},
+Lem.~\ref{an17:DoD}, Lem.~\ref{an17:no-glancing}; the refund identity
+Rem.~\ref{an17:refund}; every $\alpha\le0$ (singular-leg) booking (the old rule is exact at
+$\alpha=0$ and \emph{under}books the $\alpha<0$ legs --- the safe side); the diagonal coincidence values
+as objects; and the (D0) port's Hadamard-1932 lever and $w_0$-smoothness
+lemmas.
+\end{remark}
+
+\begin{remark}[The (D0) record at the seed: existence THEOREM, the honest
+column, the sharp counterexample, and the open repair]
+\label{an17:d0-record}
+Established by the seed re-derivation, at the fixed real-analytic seed
+$(g_0,\omega_0)$ on the seed-adjacent slice, collar-localized throughout (DoD
+cutoff of Lem.~\ref{an17:DoD}; no global-in-$x$ slice norm):
+\begin{enumerate}[label=\textup{(\roman*)},leftmargin=*,nosep]
+\item \emph{Existence of the slice restriction (THEOREM, unconditional).} For
+  every spectator $y$ in the short slab (the vertex-on-slice endpoint
+  included) and every jet leg
+  $L\in\{\mathrm{id},\partial_t,\partial_y,\partial_t\partial_y\}$, the
+  restriction $(L\,W_{g_0,2})(\cdot,y)|_{\Sigma_0}$ exists, classically and as
+  a distributional trace, uniformly and continuously in $y$: the wave front
+  set of the tail is null-conormal to the cone (null covectors over the
+  vertex), $N^*\Sigma_0$ is timelike, and the glancing set is empty
+  (Lem.~\ref{an17:no-glancing}(i)), so H\"ormander's restriction criterion
+  (\emph{The Analysis of Linear Partial Differential Operators~I},
+  Thm.~8.2.4) applies. Existence survives everything below --- the
+  obstruction is purely at the level count.
+\item \emph{The honest seed column (THEOREM given the paper's standing
+  seed-Hadamard premise --- (P-a) of the (D0) port, App.~\ref{app:e2a-ports};
+  sharp).} With the finite-order split $W_{g_0,2}=w_{N'}+T_{N'}$, $N'=9$, the
+  levels are decided by the $k{=}3$ tail $v_3\sigma^3\log\sigma$:
+  \[
+   W_{g_0,2}|_{\Sigma_0}\in H^{7/2^-},\quad
+   \partial_tW_{g_0,2}|_{\Sigma_0}\in H^{5/2^-},\quad
+   \partial_yW_{g_0,2}|_{\Sigma_0}\in H^{5/2^-},\quad
+   \partial_t\partial_yW_{g_0,2}|_{\Sigma_0}\in H^{3/2^-},
+  \]
+  each sharp --- versus the printed A3/port column $(13/2,11/2,11/2,9/2)^-$.
+\item \emph{The sharp counterexample (in scope: free massive scalar).} Flat
+  massive vacuum: $\sigma|_{\Sigma_0}$ vanishes simply on the crossing sphere
+  ($\sigma|_{t=0}=\tau u+u^2/2$ at spectator height $\tau$), and the log
+  coefficient has $v_3=m^8/(18432\pi^2)\neq0$ (all $v_k>0$), so
+  $W_{g_0,2}|_{\Sigma_0}=v_3\tau^3u^3\log|u|\times(\textup{nonvanishing
+  analytic})+(\textup{smoother})\in H^t$ iff $t<\tfrac72$. This refutes the
+  old $\alpha+\tfrac12$ rule at $\alpha=6,5,4$ and the printed column by three
+  full orders at the top leg. Compactness scope: the content is collar-local,
+  and the compact-slice setting is restored at zero cost on the flat cylinder
+  $\mathbb R\times\mathbb T^3$ (real-analytic, globally hyperbolic, massive
+  vacuum Hadamard; on a short collar the image sums are smooth and the
+  $v_3\sigma^3\log\sigma$ term is unchanged).
+\item \emph{Consequence for (D0) (NEGATIVE-RESULT, sharp).} The seed supplies
+  the $b{=}1$ field slot at $H^{5/2^-}$ sharp; the printed single-metric
+  ladder consumes it strictly above that under every reading
+  ($\sigma_1>\tfrac32$ strict at every $s>11$, so demand $>\tfrac52$: missed
+  by $0^+$ at the bare slot, by one order at the $\partial^2$-consumer, by
+  three versus the printed cap; the $b{=}0$ chain clears its bare slots for
+  $s<11.5$ and dies $0^+$ at its $\partial^2$-consumer). (D0) is OBSTRUCTED
+  on the printed route --- a real obstruction at the cone crossing, not a
+  write-out gap.
+\item \emph{Repair: OPEN.} Raising the truncation $N$ buys one transverse
+  order per unit $N$ on every data leg; the $k$-counts suggest $b{=}0$ heals
+  at $N{=}3$ and $b{=}1$ needs $N\ge4$, but the see-saw reused printed source
+  columns that are themselves gated (the slab register $p=\alpha+2$ is the
+  vertex-zone height; near the crossing the honest slab profile of the
+  $\sigma^2\log\sigma$ factor is $\tfrac52^-$, under which the $b{=}0$ source
+  rung survives only for $s<11.5$ --- spot-checked at $b{=}0$ only). The
+  $N\ge4$ see-saw is PROVISIONAL; no repaired fence value is derived or
+  quoted here, and the source columns must be re-derived before any is. The
+  alternative repair direction is a consumer rewiring that stops feeding
+  slice-Sobolev norms of the tail across crossing spheres. Neither is
+  executed here.
+\end{enumerate}
 \end{remark}
 
 \subsection{The slice-register ladder at \texorpdfstring{$s>11$}{s>11} over
@@ -2761,7 +2909,17 @@ chain.
 \emph{\underline{Grade}: THEOREM end-to-end over $U_\omega$, at $s>11$, GIVEN
 the analytic slice chain of Parts~1--3 (Thm.~\ref{an17:T1prime}), and consuming
 the parametrix package \textup{(N-a)} and difference data \textup{(N-c)} of
-\S\ref{an17:sec-data} at their audited grades.} The three scope pins are
+\S\ref{an17:sec-data} at their audited grades.} \textup{[Correction gate: the
+profile caps $\tfrac92^-,\tfrac72^-$ inside $\sigma_0,\sigma_1$ of clause (i),
+the clause-(ii) cap, the clause-(iii) $C^0$ extraction, and the single-metric
+sups $W^{(2)}_*$ consume the gated data-cap columns of Ladders~A/B below;
+they stand at the printed values MODULO the transverse re-derivation
+(Rem.~\ref{an17:transverse-note}). Under the honest crossing pricing the
+$b{=}1$ field slot is supplied at $H^{5/2^-}$ sharp versus demand
+$H^{\sigma_1+1}$ with $\sigma_1>\tfrac32$ strict --- missed at every $s>11$
+--- and the $b{=}0$ chain dies $0^+$ at its $\partial^2$-consumer
+(Rem.~\ref{an17:d0-record}); the coefficient columns and the $s>11$
+commutator pin are untouched.]} The three scope pins are
 enforced verbatim: minimally-coupled \emph{free massive} ($m>0$) scalar; the
 \emph{mixed} jet set $|a|+|b|\le1$ together with $|a|=|b|=1$ (the pure same-slot
 $(2,0),(0,2)$ jets are never formed and in fact diverge for the truncated
@@ -2774,8 +2932,14 @@ F-diff of Hyp.~\ref{hyp:hadamard-uniform-omega}), never an $H^s$-open property.
 \emph{Register conventions.} A \emph{slab pair} $(c,p)$ abbreviates membership
 in $H^{\min(s-c,\,p^-)}$ near the diagonal of the slab, $c$ the coefficient
 ceiling, $p$ the four-dimensional profile height ($r^\alpha\log r$ has $p=\alpha
-+2$ on $\mathbb R^4$; its single-time restriction has slice height
-$\alpha+\tfrac12$ by Lem.~\ref{an17:transverse-data}). A \emph{slice register}
++2$ on $\mathbb R^4$ \emph{in the vertex/diagonal zone} --- correction gate: off
+the diagonal, near the cone crossing, $\sigma$ vanishes simply in the slab
+too, so the honest slab height of $\sigma^k\log\sigma$ is $(k+\tfrac12)^-$,
+not $2k+2$; its single-time restriction has slice height
+$\tfrac\alpha2+\tfrac12$ at $\alpha>0$ and $\tfrac12$ at $\alpha=0$ by the
+corrected Lem.~\ref{an17:transverse-data}; the profile columns of this proof
+predate the correction and are carried GATED,
+Rem.~\ref{an17:transverse-note}). A \emph{slice register}
 is $L^\infty_t H^{\min(s-c,p^-)}(\Sigma_t)$, the same pair tagged $\mathrm{sl}$.
 The calculus is
 \[
@@ -2789,7 +2953,13 @@ books $(c{+}1,p)$ at register $\ge s-3$ (worst demand $s-\tfrac{17}2$: margin
 $\tfrac{11}2$, never binding). The wave solve is $+1$ on both columns over the
 consumed source register, capped by the data legs (Rung~2; the cap column is
 carried at every solve at the transverse heights). No $(c,p{-}1)$ booking on
-averaged coefficients occurs anywhere; no $+2$ gain anywhere.
+averaged coefficients occurs anywhere; no $+2$ gain anywhere. \textup{[Correction
+gate on the profile decrement: $p\mapsto p{-}1$ per derivative on profile
+factors is the vertex-zone/eikonal grading --- error (b) of
+Rem.~\ref{an17:transverse-note}; near the cone crossing the honest cost is
+one $\sigma$-order, i.e.\ two $r$-powers, per derivative. The profile columns
+derived below stand at their printed values MODULO the transverse
+re-derivation.]}
 
 \medskip\noindent
 \textbf{Rung 1 (first-order reduction; integer slice-energy estimate).} Write
@@ -2808,10 +2978,14 @@ closed-ball attainment clause is void): the anchor floor
 $\theta_0^{\mathrm{anch}}=\min_{K_\Sigma}\lambda_{\min}(a_{g_0})>0$ holds over
 the compact slab at the analytic $g_0$ (Chru\'sciel--Grant nondegeneracy
 \cite{ChruscielGrant2012}); $a^{jk}/a^{00}$ is algebraic in $g$ with
-$|a^{00}|\ge d_\omega$, hence $C_a$-Lipschitz in the collar $C^0$ norm (Weyl
-$1$-Lipschitz for $\lambda_{\min}$); the cap
-$\varepsilon_a\le\theta_0^{\mathrm{anch}}/(2C_a)$ of Part~1 gives
-$\lambda_{\min}(a_g)\ge\tfrac12\theta_0^{\mathrm{anch}}$ for all $g\in U_\omega$,
+$a^{00}\ge d_{00}>0$ (the scalar collar-margin floor of
+Lem.~\ref{an17:attainment}; the determinant floor $d_\omega$ alone does
+not floor $a^{00}$), hence $C_a$-Lipschitz in the collar $C^0$ norm (Weyl
+$1$-Lipschitz for $\lambda_{\min}$); the caps
+$\varepsilon_a\le d_{00}/C_{\mathrm{inv}}$ and
+$\varepsilon_a\le\theta_0^{\mathrm{anch}}/(2C_a)$, imposed with Part~1's,
+give $\lambda_{\min}(a_g)\ge\tfrac12\theta_0^{\mathrm{anch}}$ for all
+$g\in U_\omega$ (proved in Lem.~\ref{an17:attainment}),
 and only $1/\theta\le1/\theta_*$ is consumed downstream. Tice
 Thm.~1.2.1 \cite{Tice2018} applies at every integer $0\le k\le6$ (the demand
 $\|\nabla A^\mu\|_{L^\infty_t H^{k-1}(\Sigma_t)}$ needs $s\ge k+\tfrac12$; at
@@ -2879,6 +3053,16 @@ derivative, $\partial^6\sim r^{-2}$ never consumed).
   $\tfrac32+\delta$), plus $(\square_{g'}v'_2)(\partial_y\Pi)$ at $(8,5)$, plus
   bitensor/weight legs at register $\ge s-3$ and $R_{\mathrm{sm}}$-legs at
   $(8.5,\ge6)$. Sum: $(8.5,5)$; legality margin $\tfrac52+\delta$.
+  \textup{[Correction gate on A1/A2 and their \eqref{an17:eq-slice-fubini}
+  consumption: the slab profile columns $6$ resp.\ $5$ are vertex-zone
+  heights; near the cone crossing the honest slab profile of the
+  $\sigma^2\log\sigma$ factor is $\tfrac52^-$, under which the $b{=}0$ source
+  rung survives only for $s<11.5$ and the $b{=}1$ rung tightens
+  correspondingly (spot-checked at $b{=}0$; the dedicated re-derivation must
+  sweep every slab booking meeting the cone off-diagonal). The printed
+  bookings and legality margins stand MODULO the transverse re-derivation
+  (Rem.~\ref{an17:transverse-note}); the Fubini inequality
+  \eqref{an17:eq-slice-fubini} itself is untouched.]}
 \item[A3.] \emph{Solves with the data-cap column.} Availabilities on $\Sigma_0$
   (Lem.~\ref{an17:transverse-data}; on the BFV surface the legs are $g_0$-seed
   data, profile caps only; the conservative $H^s$-background coefficient
@@ -2886,7 +3070,13 @@ derivative, $\partial^6\sim r^{-2}$ never consumed).
   $\partial_t W'_2$, $\partial_y W'_2$, $\partial_t\partial_y W'_2$ restrict at
   transverse heights $\rho^6\log\rho\in H^{13/2^-}$, $\rho^5\log\rho\in
   H^{11/2^-}$, $\rho^5\log\rho\in H^{11/2^-}$, $\rho^4\log\rho\in H^{9/2^-}$
-  respectively (the $\partial_y$-slotted coefficient legs book $+\tfrac12$ in
+  respectively \textup{[Correction gate: this column was computed with the old
+  $\alpha+\tfrac12$ tail rule at the $r$-powers $\alpha=6,5,5,4$; the honest
+  crossing values under the corrected Lem.~\ref{an17:transverse-data} are
+  $(\tfrac72,\tfrac52,\tfrac52,\tfrac32)^-$, each sharp at the seed
+  (Rem.~\ref{an17:d0-record}); the printed column stands MODULO the
+  transverse re-derivation --- gated, not deleted]} (the $\partial_y$-slotted
+  coefficient legs book $+\tfrac12$ in
   the slab by Thm.~\ref{an17:T1prime} \emph{before} the $\tfrac12$ trace). Rung~2
   gives, uniformly and continuously in $y$,
   \[
@@ -2913,6 +3103,11 @@ derivative, $\partial^6\sim r^{-2}$ never consumed).
    (|b|{=}1),\qquad(9,\tfrac92)_{\mathrm{sl}}\ (b{=}0),\qquad|\alpha|\le2,
   \end{equation}
   uniformly/continuously in $y$, constants $\mathcal W^{(2)}_{\partial^2,b}$.
+  \textup{[Correction gate: the profile caps $\tfrac72$ ($|b|{=}1$), $\tfrac92$
+  ($b{=}0$) inherit the gated A3 column and the gated per-derivative grading;
+  the honest crossing profiles are $\tfrac12^-$ ($b{=}1$) and $\tfrac32^-$
+  ($b{=}0$). The display stands MODULO the transverse re-derivation
+  (Rem.~\ref{an17:transverse-note}).]}
 \end{itemize}
 
 \medskip\noindent
@@ -2949,7 +3144,13 @@ $\square_{g,x}$: $(\square_g+m^2)\partial_y^bD_2=\partial_y^bf_2$.
   the Christoffel leg softer by $(1,1)$. Branch~2 exceeds Branch~1 by
   $(1,\tfrac32)$ at $b=1$: \emph{the commutator pins under the slice calculus
   too}. Consumed as $L^2_t\le\sqrt T L^\infty_t$: the source never leaves slice
-  norms.
+  norms. \textup{[Correction gate: the profile branches $\tfrac72^-,\tfrac92^-$ of
+  $\kappa_1,\kappa_0$ consume the gated \eqref{an17:eq-slice-A4}; the honest
+  slice profile of $\partial^2\partial_y^bW'_2$ near the crossing is
+  $\tfrac12^-$ ($|b|{=}1$), $\tfrac32^-$ ($b{=}0$). The coefficient branches
+  $s-\tfrac{19}2$, $s-9$ --- the $s>11$ pin --- are untouched; the commutator
+  consumption stands MODULO the transverse re-derivation
+  (Rem.~\ref{an17:transverse-note}).]}
 \item[B3.] \emph{Data \textup{[(N-c) corrected, $\partial_y$-slotted, consumed
   transverse-weakened]}.} By \textup{(N-c)} of \S\ref{an17:sec-data}
   (Lem.~\ref{an17:Nc-corrected}, grade PLAUSIBLE) the difference data
@@ -2958,7 +3159,10 @@ $\square_{g,x}$: $(\square_g+m^2)\partial_y^bD_2=\partial_y^bf_2$.
   the demands $H^{\sigma_{|b|}+1}\times H^{\sigma_{|b|}}$; at $|b|=1$ the
   interface is consumed with margin $\ge1$ per slot (over-delivered under the
   corrected booking even after the transverse weakening). On the BFV splitting
-  surface $C_{\Delta_2}=0$.
+  surface $C_{\Delta_2}=0$. \textup{[Correction gate: the consumed caps and the
+  quoted margins ride the same $\alpha>0$ tail pricing
+  (Lem.~\ref{an17:Nc-corrected}) and stand MODULO the transverse
+  re-derivation (Rem.~\ref{an17:transverse-note}).]}
 \item[B4.] \emph{Solves.} Rung~2 at $\sigma_0=\min(s-9,\tfrac92^-)$,
   $\sigma_1=\min(s-\tfrac{19}2,\tfrac72^-)$ (legality margins $2+\delta$,
   $\tfrac32+\delta$) gives (i), with
@@ -3028,7 +3232,8 @@ $\theta,\Lambda_{U_\omega}$ (Rung~1); $Q_*,P_*,T$ (Tice); $C_E(\sigma)$
 (Rung~2); $c_{\mathrm{fol}}$ (Rung~3); $c_{\mathrm{mult}},c_{\mathrm{tr}},
 c_{\mathrm{alg}}$ (Rung~4/A4); $c_\Pi$ (explicit radial integrals);
 $C_{v_2},L^{(b)}_S$ and the data legs (\textup{(N-a)} +
-Lem.~\ref{an17:transverse-data}); $C_{\Delta_2}$ (\textup{(N-c)}, $=0$ on BFV);
+Lem.~\ref{an17:transverse-data}; data-leg heights GATED per
+Rem.~\ref{an17:transverse-note}); $C_{\Delta_2}$ (\textup{(N-c)}, $=0$ on BFV);
 $c^{\mathrm{Mor},3d}_{\sigma'}$ (Adams--Fournier, $\sigma'>\tfrac32$); the
 Thm.~\ref{an17:T1prime} envelope constant inside $L^{(1)}_S$ and the
 $C_{v_2}$-legs. Every factor is finite and ball-uniform at each fixed $s>11$;
@@ -3049,8 +3254,15 @@ healed profile $r^6\log r$ lifts every cap two orders; the caps clear all
 demands and the \emph{coefficient} column pins $s>11$. A ladder written with the
 radial data heights $\alpha+\tfrac32$ (Rem.~\ref{an17:transverse-note}) would
 overstate the $N{=}1$ profile columns by one and misplace the wall; the
-transverse height $\alpha+\tfrac12$ of Lem.~\ref{an17:transverse-data} is what
-makes the calibration exact.
+transverse height $\alpha+\tfrac12$ previously printed at
+Lem.~\ref{an17:transverse-data} is what made the calibration read as exact.
+\textup{[Correction gate: this remark's profile numbers are the old $\alpha>0$
+pricing --- the honest $N{=}1$ $\partial_y$-data leg is $H^{3/2^-}$, not
+$H^{7/2^-}$, so the ``reproduce the data wall exactly'' numerology dissolves,
+while the $N{=}1$ DEATH verdict stands \emph{a fortiori} (lower availability
+dies harder). The $N{=}2$ ``caps clear all demands'' clause is what
+Rem.~\ref{an17:d0-record} refutes at the cone crossing; it stands only MODULO
+the transverse re-derivation (Rem.~\ref{an17:transverse-note}).]}
 \end{remark}
 
 \subsection{The locked-4d variant at \texorpdfstring{$s>\tfrac{23}2$}{s>23/2}}
@@ -3083,7 +3295,12 @@ with the solve levels $\sigma_0=\min(s-9,5^-)$, $\sigma_1=\min(s-\tfrac{19}2,4^-
 the mixed $(1,1)$ package lands in $L^\infty_t H^{\min(s-19/2,\,4^-)}(\Sigma_t)$,
 and the fence is pinned by the commutator branch at $H^{\min(s-19/2,4^-)}$:
 $C^0(\Sigma)$ iff $s-\tfrac{19}2>2$ iff $s>\tfrac{23}2$, the profile column
-clearing by $2^-$.
+clearing by $2^-$. \textup{[Correction gate: the raised profile caps $5^-,4^-$
+and the ``clearing by $2^-$'' clause ride the same gated data-cap columns ---
+the slab-transverse count across the cone is the same $u^k\log|u|$ in one
+codimension --- and stand MODULO the transverse re-derivation
+(Rem.~\ref{an17:transverse-note}); the coefficient pin $s>\tfrac{23}2$ is
+untouched.]}
 
 \smallskip
 \emph{\underline{Grade}: THEOREM end-to-end over $U_\omega$, at $s>\tfrac{23}2$,
@@ -3138,8 +3355,9 @@ the promoted row. This subsection records their restated grades, distinguishing
 the \emph{unconditional} core (the $(T1)$-free anchors, THEOREM at $s>8$) from
 the anchors that revive at $s>11$ only \emph{with} the analyticity hypothesis
 (hence a class-narrowed THEOREM, not unconditional). It also records the
-coercivity-floor attainment note the two ladders' Rung~1 depends on, at its
-honest PLAUSIBLE grade.
+coercivity-floor attainment note the two ladders' Rung~1 depends on, now
+proved at THEOREM grade by the third run of the Part~1 collar-margin
+engine (Lem.~\ref{an17:attainment}).
 
 \begin{remark}[Anchor rows, restated]\label{an17:anchors}
 \begin{enumerate}[label=\textup{(\alph*)},leftmargin=*,nosep]
@@ -3167,25 +3385,126 @@ established $(T1)$-free at that time and are not modulo anything. No anchor is
 cited at an uncorrected strength anywhere in either ladder.
 \end{remark}
 
-\begin{remark}[Collar-margin coercivity floor: attainment note]
+\begin{lemma}[Collar-margin coercivity floor: the attainment note, proved]
 \label{an17:attainment}
-The Rung-1 ellipticity constant $\theta\ge\theta_*=\min(1,\tfrac12
-\theta_0^{\mathrm{anch}})>0$ of both ladders is ball-uniform \emph{by the collar
-margin, not by attainment on the ball}. This is the honest replacement of the
-false ``$H^s$-closed ball, infimum attained'' clause: $U_\omega$ is $H^s$-dense
-with empty $H^s$-interior, hence not $H^s$-closed, so no infimum over the ball
-is attained. Instead $\theta_0^{\mathrm{anch}}=\min_{K_\Sigma}\lambda_{\min}
-(a_{g_0})>0$ is the anchor floor at the compact slab of the fixed analytic
-$g_0$ (Chru\'sciel--Grant nondegeneracy \cite{ChruscielGrant2012}), and the
-$\varepsilon_a$-cap of Part~1 propagates it to all of $U_\omega$ by the Weyl
-$1$-Lipschitz continuity of $\lambda_{\min}$ in the collar $C^0$ norm; only
-$1/\theta\le1/\theta_*$ is consumed. \emph{Grade: PLAUSIBLE} --- a rigorous
-sketch at the same grade as the $N_0$ collar-margin argument of Part~1
-that it mirrors; $\theta_0^{\mathrm{anch}}$ and $C_a$ are existence constants,
-not numerically certified, and are \emph{not quoted downstream}. The
-collar-margin route is what keeps the coercivity floor honest on a class with
-empty interior.
-\end{remark}
+Fix the standing gauge data of the two ladders: the compact causal slab
+$K_\Sigma\subset K''$ foliated by $\{\Sigma_t\}_{t\in[0,T]}$ in the fixed
+finite atlas (Lem.~\ref{an17:slice-ladder}), with the anchor nondegeneracy
+that $dt$ and $\partial_t$ are both $g_0$-timelike on $K_\Sigma$
+(Chru\'sciel--Grant nondegeneracy of the anchor \cite{ChruscielGrant2012};
+equivalently $\theta(g_0)>0$, a one-point statement at the fixed $g_0$ ---
+the exact analogue of Thm.~\ref{an17:thm-N0}'s ``not everywhere
+$\phi''$-flat''). Let $d_\omega>0$ be the standing determinant floor of
+Part~1, normalize $\varepsilon_a\le1$, and write $a_g:=a^{jk}_g/a^{00}_g$
+for the Rung-1 quotient form, a real symmetric $(n{-}1)\times(n{-}1)$
+matrix at each real slab point. Then, with the existence constants (fixed
+by $(g_0,\rho_a,\text{atlas},n)$ alone)
+\[
+ 2d_{00}:=\min_{\mathrm{charts}}\min_{K_\Sigma}a^{00}_{g_0}>0,\qquad
+ \theta_0^{\mathrm{anch}}:=\min_{\mathrm{charts}}\min_{K_\Sigma}
+ \lambda_{\min}(a_{g_0})>0,
+\]
+\[
+ B_{\mathrm{inv}}:=\frac{n!\,\bigl(\|g_0\|_{\mathcal K_{\rho_a}}+1\bigr)^{n-1}}
+ {d_\omega},\qquad C_{\mathrm{inv}}:=n\,B_{\mathrm{inv}}^2,\qquad
+ R_a:=\max_{K_\Sigma}\|a^{jk}_{g_0}\|_{\mathrm{op}},\qquad
+ C_a:=\frac{C_{\mathrm{inv}}}{d_{00}}+\frac{R_a\,C_{\mathrm{inv}}}{2d_{00}^2},
+\]
+and under the two further caps $\varepsilon_a\le d_{00}/C_{\mathrm{inv}}$
+and $\varepsilon_a\le\theta_0^{\mathrm{anch}}/(2C_a)$ (imposed with
+Part~1's caps; harmless, since every export is a $\forall$-statement over
+$U_\omega$ and survives shrinking $\varepsilon_a$, and $g_0\in U_\omega$
+keeps the class nonempty), every $g\in U_\omega$ satisfies, at every point
+of the slab,
+\[
+ a^{00}_g\ \ge\ d_{00}\;>\;0,\qquad
+ \lambda_{\min}(a_g)\ \ge\ \theta_0^{\mathrm{anch}}-C_a\varepsilon_a\ \ge\
+ \tfrac12\,\theta_0^{\mathrm{anch}} .
+\]
+Consequently $\theta=\min\bigl(1,\inf_{K_\Sigma\times U_\omega}
+\lambda_{\min}(a_g)\bigr)\ge\theta_*:=\min\bigl(1,\tfrac12
+\theta_0^{\mathrm{anch}}\bigr)>0$: the Rung-1 floor is ball-uniform
+\emph{by the collar margin, not by attainment on the ball}. No infimum
+over the $H^s$-dense, $H^s$-interior-empty (hence non-$H^s$-closed)
+$U_\omega$ is attained or needed --- a lower bound on an infimum requires
+no minimiser; this is the honest replacement of the false ``$H^s$-closed
+ball, infimum attained'' clause. Only $1/\theta\le1/\theta_*$ is consumed
+downstream; $d_{00},\theta_0^{\mathrm{anch}},C_{\mathrm{inv}},C_a$ are
+existence constants, not numerically certified, and are \emph{not quoted
+downstream}. \textbf{Grade: THEOREM} over $U_\omega$, relative to the
+standing gauge data above and the Part~1 determinant floor --- the third
+run of the Part~1 engine (anchor floor by finite-dimensional compactness
+at the fixed $g_0$, collar-margin propagation), after $m_0^{\mathrm{anch}}$
+(Lem.~\ref{an17:lem-compact}) and $\delta_0$ (Lem.~\ref{an17:no-glancing}).
+\end{lemma}
+\begin{proof}
+\emph{Step 0 (algebraic coefficients; the cap controls the slab).}
+Chartwise the principal part of $\square_g$ is
+$g^{\mu\nu}\partial_\mu\partial_\nu$, so $a^{00}=-g^{00}$ and
+$a^{jk}=g^{jk}$ are entries of $g^{-1}=\operatorname{adj}(g)/\det g$ ---
+algebraic in the entries of $g$ with denominator floored by $d_\omega$.
+The slab lies in the collar, $K_\Sigma\subset K''\subset\mathcal
+K_{\rho_a}$, and $g$ is real at real points, so
+$\sup_{K_\Sigma}\max_{a,b}|g_{ab}-(g_0)_{ab}|\le
+\|g-g_0\|_{\mathcal K_{\rho_a}}<\varepsilon_a$: the $\varepsilon_a$-cap
+controls exactly the slab $C^0$ norm the coefficient map consumes.
+
+\emph{Step 1 (anchor floors at the fixed $g_0$; finite-dimensional
+Euclidean compactness only, as in Lem.~\ref{an17:lem-compact}).}
+$a^{00}_{g_0}$ is continuous and pointwise positive on the slab ($dt$
+$g_0$-timelike), so $2d_{00}>0$ on the compact $K_\Sigma$ per the finite
+atlas. In lapse/shift form $g_0=-N^2dt^2+h_{jk}(dx^j+\beta^jdt)
+(dx^k+\beta^kdt)$ the inverse identities give $a^{00}=N^{-2}$ and
+$a_{g_0}=N^2h^{jk}-\beta^j\beta^k$; for a spatial covector $\xi\ne0$,
+Cauchy--Schwarz in the $h^{-1}$ inner product gives
+$\xi\!\cdot\!a_{g_0}\xi\ge(N^2-|\beta|_h^2)|\xi|^2_{h^{-1}}>0$ pointwise,
+since $N^2-|\beta|_h^2=-g_0(\partial_t,\partial_t)>0$ ($\partial_t$
+$g_0$-timelike). The continuous positive function $(t,x,e)\mapsto
+e\!\cdot\!a_{g_0}(t,x)\,e$ on the compact $K_\Sigma\times S^{n-2}$ (slab
+$\times$ unit covector sphere, per chart, $g_0$ \emph{fixed}) attains a
+positive minimum: $\theta_0^{\mathrm{anch}}>0$. No function-space
+compactness is used, and --- unlike Lem.~\ref{an17:lem-compact} --- no
+degenerate stratum need be excised: the anchor nondegeneracy makes it
+empty on the slab.
+
+\emph{Step 2 (collar-Lipschitz propagation, non-circular).} For $g\in
+U_\omega$: $\|g\|_{C^0(K_\Sigma)}\le\|g_0\|_{\mathcal K_{\rho_a}}+1$ and
+$|\det g|\ge d_\omega$, so the adjugate bound gives
+$\|g^{-1}\|_{\mathrm{op}}\le B_{\mathrm{inv}}$, and the resolvent identity
+$g^{-1}-g_0^{-1}=-g^{-1}(g-g_0)\,g_0^{-1}$ gives
+$\|g^{-1}-g_0^{-1}\|_{\mathrm{op}}\le C_{\mathrm{inv}}\varepsilon_a$ on
+the slab. Hence first $a^{00}_g\ge2d_{00}-C_{\mathrm{inv}}\varepsilon_a
+\ge d_{00}$ under the first cap (a matrix entry is bounded by the operator
+norm); and second, since a principal-submatrix compression does not
+increase the operator norm,
+\[
+ a_g-a_{g_0}=\frac{a^{jk}_g-a^{jk}_{g_0}}{a^{00}_g}
+ +a^{jk}_{g_0}\,\frac{a^{00}_{g_0}-a^{00}_g}{a^{00}_g\,a^{00}_{g_0}},
+ \qquad
+ \|a_g-a_{g_0}\|_{\mathrm{op}}\le C_a\,\varepsilon_a .
+\]
+The constant chain $d_\omega\to B_{\mathrm{inv}}\to C_{\mathrm{inv}}\to
+d_{00}\to C_a$ is well founded in the fixed data; no cap's right-hand
+side depends on $\varepsilon_a$ (the normalization $\varepsilon_a\le1$
+breaks that loop).
+
+\emph{Step 3 (Weyl).} $a_g,a_{g_0}$ are real symmetric on the real slab,
+so Weyl's perturbation theorem ($\lambda_{\min}$ is $1$-Lipschitz in the
+operator norm; Bhatia, \emph{Matrix Analysis}, Cor.~III.2.6) gives
+$\lambda_{\min}(a_g)\ge\theta_0^{\mathrm{anch}}-C_a\varepsilon_a\ge
+\tfrac12\theta_0^{\mathrm{anch}}$ under the second cap, for every $g\in
+U_\omega$ at every slab point.
+
+\emph{Step 4 (the infimum, without attainment).} Every element of
+$\{\lambda_{\min}(a_g(t,x)):g\in U_\omega,\ (t,x)\in K_\Sigma\}$ is
+$\ge\tfrac12\theta_0^{\mathrm{anch}}$, so its infimum is too; hence
+$\theta\ge\theta_*$. The only minimum ever \emph{attained} is over the
+finite-dimensional compact $K_\Sigma\times S^{n-2}$ at the single fixed
+$g_0$ --- a one-point statement in function space. That $U_\omega$ has
+empty $H^s$-interior is irrelevant to a lower bound on an infimum;
+ball-uniformity is by the collar margin, never by ball compactness
+(Rem.~\ref{an17:rem-topology}).
+\end{proof}
 
 \subsection{The data legs: \textup{(N-a)}, \textup{(N-c)}, and the named
 residues}\label{an17:sec-data}
@@ -3216,12 +3535,14 @@ $\square_g v_2\sim\partial^8g\in H^{s-8}$, and the residual has the normal form
  +R_{\mathrm{sm}},
 \]
 $\square_{g'}v'_2$ transport-averaged of register $H^{s-8}$, profile $r^4\log r$
-(pair $(8,6)$), $R_{\mathrm{sm}}$ strictly softer. The transport average is
+(pair $(8,6)$; correction gate: the profile column $6$ is the vertex-zone height,
+Rem.~\ref{an17:transverse-note}), $R_{\mathrm{sm}}$ strictly softer. The transport average is
 \emph{linear} in its curvature-polynomial argument, so every estimate carries the
 Lipschitz rate $\|h_g-h_{g'}\|_{H^a}\le C_{\mathrm{poly}}\|g-g'\|_{H^s}$ with
 $C_{v_2}=\tfrac1{12}\kappa_\Delta C_{\mathrm{poly}}$; the single-metric data of
-$W_{g,2}$ on $\Sigma_0$ are finite at the transverse leg heights of
-Lem.~\ref{an17:transverse-data}. \emph{Grade: the transport core and its
+$W_{g,2}$ on $\Sigma_0$ are finite at the transverse leg heights of the
+corrected Lem.~\ref{an17:transverse-data} (honest seed column:
+Rem.~\ref{an17:d0-record}; the printed A3 column is gated). \emph{Grade: the transport core and its
 registers are the \textup{(N-a)} (twice-verified); the
 family-uniform finite-regularity \emph{construction} of $v_2$ over the ball is
 folklore-writable but not in print as a ball-uniform statement --- the same
@@ -3282,7 +3603,10 @@ ladders consume: for $j\in\{0,1\}$,
 together with the single-metric uniform analogue for $W_{g',2}$. The
 coefficient-difference legs (P1) and profile-difference legs (P2) are PROVED,
 with margins verified against both ladders' demands (traced $\partial_y$-slotted
-coefficient legs at exactly $\tfrac12$, profile legs $\ge\tfrac12$); on the BFV
+coefficient legs at exactly $\tfrac12$, profile legs $\ge\tfrac12$)
+\textup{[Correction gate: the slice caps $6^-,5^-$ and the profile-leg margins
+were priced with the old $\alpha>0$ tail rule and stand MODULO the transverse
+re-derivation, Rem.~\ref{an17:transverse-note}]}; on the BFV
 splitting surface $C_{\Delta_2}=0$ identically (RCE pullback for the states,
 local-geometry agreement for the glued parametrices; $N$-independent). The
 state-leg residue is REDUCED to the envelope \textup{(E-env)} below.
@@ -3321,7 +3645,16 @@ one is on notice.
 \item \textup{(D0)} --- \emph{the seed-data input.} The Cauchy-data levels the
   single-metric Ladder~A consumes on a seed-adjacent slice; open at the $b=1$
   field slot. It gates the single-metric write-out $W^{(2)}_*$. \emph{Grade:
-  named residue.}
+  named residue --- upgraded by the seed re-derivation to a confirmed OBSTRUCTION of the
+  printed route (NEGATIVE-RESULT, sharp): the seed supplies
+  $(\tfrac72,\tfrac52,\tfrac52,\tfrac32)^-$, the $b{=}1$ field slot
+  $H^{5/2^-}$ sharp versus consumed demand $>\tfrac52$ at every $s>11$
+  (Rem.~\ref{an17:d0-record}). The gate does NOT lift; repair is OPEN
+  ($N\ge4$ truncation see-saw, PROVISIONAL, source columns to be re-derived
+  --- no repaired fence value is quoted; or a consumer rewiring off
+  slice-Sobolev tails). The (D0) port's closure display
+  (App.~\ref{app:e2a-ports}) is gated accordingly; its lever and $w_0$
+  lemmas stand.}
 \item \#B' --- \emph{the off-collar single-metric variant.} The kernel variant
   needed to run the single-metric write-out \emph{across patches} $P$.
   \emph{Grade: named gate.}
@@ -3415,17 +3748,24 @@ appendix}\label{an17:sec-p4-summary}
 Part~4 publishes, at THEOREM grade over $U_\omega$: the trace-audit trio
 (Lem.~\ref{an17:no-glancing}, the refund identity Rem.~\ref{an17:refund}, the
 Fubini source consumption \eqref{an17:eq-slice-fubini}); the sharp transverse
-restriction Lem.~\ref{an17:transverse-data}; the slice-register ladder
+restriction Lem.~\ref{an17:transverse-data} \emph{as corrected}
+(honest $\alpha>0$ tail height $\tfrac\alpha2+\tfrac12$; both printed errors
+named in Rem.~\ref{an17:transverse-note}; the seed record ---
+existence THEOREM, honest column, sharp counterexample ---
+Rem.~\ref{an17:d0-record}); the slice-register ladder
 Lem.~\ref{an17:slice-ladder} at $s>11$; and the locked-4d variant
 Lem.~\ref{an17:slice-ladder-4d} at $s>\tfrac{23}2$ --- each a THEOREM end-to-end
 over $U_\omega$ \emph{given} the analytic slice chain of Parts~1--3
 (Thm.~\ref{an17:T1prime}), whose ``given'' is discharged because that chain is
-itself a THEOREM. It publishes, at their audited sub-theorem grades and never
+itself a THEOREM, and with the two ladders' profile/data-cap columns carried
+GATED per Rem.~\ref{an17:transverse-note} (coefficient columns and both fence
+pins untouched). It publishes, at their audited sub-theorem grades and never
 promoted: the gluing and short-slab truncation (Lem.~\ref{an17:G},
 Lem.~\ref{an17:DoD}, THEOREM); the difference-data interface
 (Lem.~\ref{an17:Nc-corrected}, PLAUSIBLE); the named residues (E-env)/\#A/(D0)/%
-\#B' (Rem.~\ref{an17:named-residues}); the collar-margin attainment note
-(Rem.~\ref{an17:attainment}, PLAUSIBLE); and clause (ii) itself
+\#B' (Rem.~\ref{an17:named-residues}); the collar-margin coercivity floor
+(Lem.~\ref{an17:attainment}, THEOREM --- the former attainment note,
+proved); and clause (ii) itself
 (Rem.~\ref{an17:CW-grade}, PLAUSIBLE --- the NAMED INPUT (E2a), clause (ii)).
 
 The one honest boundary this part draws, repeated so it cannot be missed: the
@@ -3926,7 +4266,18 @@ critical path; each is listed as \textbf{exact open content} -- its
     seed by the classical convergent-Hadamard-series lever, verified
     at the primary source in its native non-parabolic category
     (App.~\ref{app:e2a-ports}; given the paper's standing
-    seed-Hadamard premise). The honest modulo list is therefore: the
+    seed-Hadamard premise). \textup{[Correction gate: the ``(D0) is closed at the
+    seed'' clause just stated does not stand as printed --- the
+    convergent-Hadamard-series lever supplies the seed slice-restrictions at
+    existence grade only (Rem.~\ref{an17:d0-record}, item~(i): THEOREM,
+    unconditional), while the seed availability column is obstructed at the
+    honest heights $(\tfrac72,\tfrac52,\tfrac52,\tfrac32)^-$ (the two printed
+    errors named at Rem.~\ref{an17:transverse-note}; sharp flat-massive
+    counterexample $v_3=m^8/(18432\pi^2)\neq0$ at Rem.~\ref{an17:d0-record}),
+    so (D0) remains gated as a confirmed obstruction of the printed route.
+    The lever and the $w_0$-smoothness lemmas stand, and the discharge of
+    gaps (a),(b) for the finite-part family rests on the Cauchy-estimate
+    package, not on this (D0) closure.]} The honest modulo list is therefore: the
     state-leg envelope (E-env), to which the carrier
     Lem.~\ref{an17:Nc-corrected} reduces the difference data and which
     drives its PLAUSIBLE grade (the BFV-surface vanishing
@@ -3988,10 +4339,13 @@ orthogonal to the slice chain]\label{rem:an17-orthogonal}
 For the reader tracking the full no-go ledger: the further open items
 $(E$-$\mathrm{env})$ (the data-side kernel envelope, PLAUSIBLE), $(D0)$
 and \#B$'$ (the N-a data residues gating $\mathrm{lem:W2star}$ across
-patches), the \#A collar architecture (the long-slab restatement, a
-negative result, discharged iff $(E$-$\mathrm{env})$), the
-$\alpha+\tfrac12$ fence-neutral table repairs (bookkeeping over the
-theorem $\mathrm{lem:transverse\text{-}data}$), and the HB1/HB3 imports of
+patches; $(D0)$ is OBSTRUCTED on the printed route,
+Rem.~\ref{an17:d0-record}), the \#A collar architecture (the long-slab
+restatement, a negative result, discharged iff $(E$-$\mathrm{env})$), the
+transverse correction with its gated profile columns
+(Rem.~\ref{an17:transverse-note}, over the corrected
+$\mathrm{lem:transverse\text{-}data}$ --- no longer fence-neutral
+bookkeeping at the data-cap sites), and the HB1/HB3 imports of
 the bulk clause -- are \emph{not} on the critical path for
 Thm.~\ref{thm:an17:E2a-omega-main}.  Part~(A) cites none of them (it
 cites only $(R1),(R3),(R4),(R5),F2$ and the holomorphic-ODE package); they

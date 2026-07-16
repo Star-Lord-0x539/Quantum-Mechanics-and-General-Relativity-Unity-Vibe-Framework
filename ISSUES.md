@@ -27250,3 +27250,1665 @@ C3 (propagation): COMPLETE. "one open lever" appears once (closed-negative); "tr
 C4 (surviving overclaim / run-48 existence): NONE. R76 foregrounds only load-bearing legs (O(g⁰) witness, c′-unfixability, T-independence spine), existence structural; R77 evaluates no interacting modular operator, weight-not-state correct; R79 "discharged" correctly form-scoped, run-48(a) passes.
 
 HYGIENE independently verified by the adjudicator: appendix diff = exactly ONE R78 hunk ((E-env) definition byte-identical to HEAD); unification.tex = exactly THREE hunks (R76/R77/R79); no stray edit leaked. The banked cluster is referee-clean. Hunt tally through #84.
+
+# LEDGER — RUN 82 / HUNT #85 — ARM 1 (A1-decide): THE (E-env) DECISION
+
+**Grade: PLAUSIBLE (decision delivered decisively). Decision: D-TRUE-HARD. M1 UNMOVED (PLAUSIBLE). ZERO repo writes (git status clean; appendix mtime Jul 15 19:40 unchanged).**
+
+## DECISION
+The ball-uniform GOOD-RATE fan bound (the data-side twin of the T1' fold-count N_0)
+is **TRUE on the analytic ball U_omega, but its proof is the open research problem**
+=> **D-TRUE-HARD**, NOT D-NO-GO. M1 stays PLAUSIBLE.
+
+## THE DISCRIMINATOR — resolved AFFIRMATIVE (analyticity FORBIDS the fold-count blowup)
+The run-13d/e "refuted-as-ball-uniform" was a **finite-C^k** phenomenon. It does NOT
+transfer to U_omega. Three independent supports:
+1. **The appendix states it verbatim** (l.1052-1062): at finite C^k, N_0 ball-uniform
+   is "PLAUSIBLE, not proved" (Rolle recursion lacks a phi''' LOWER floor); "The entire
+   content of the analytic narrowing to U_omega is that (N0-an) supplies precisely this
+   ball-uniform N_0" — a repo THEOREM (thm-N0, l.682/894).
+2. **Runs 15/16 (adjudicated, both gates CONFIRMED)**: the fold-blowup ripple families
+   either EXIT U_omega (collar norm ~ a cosh(K rho_a) -> inf) or land in V_{m0}
+   (strip-sup -> 0, no genuine fold, count disclaimed); V_{m0} closes (D3) device-free
+   (run-16 A1 THEOREM). "exp beats poly, the C^k refuter cannot enter the analytic class."
+3. **dec_nogo.py (this run, from scratch)**: PART 1 Jensen count finite on the fold
+   stratum; PART 2 reproduces the run-15 gate (Z: 6->294 as a:1e-2->1e-100, real
+   sup|phi''| crosses below m_0 => V_{m0}); PART 3 the analytic collar constraint
+   explodes exp `m_0 cosh(K rho_a)` vs poly C^k `m_0 K^k`. (Single-mode PART-3 cap
+   understates the C^k ball; decisive weight is 1+2.)
+
+## THE DATA-SIDE TRANSFER
+- **Fold-count obstruction (shared): DISCHARGED.** Run 80's surviving object is the
+  L2(theta-fan) at rate r^{3-j}, slope -1/2 = the T1' geometry fan (adjudicated -0.496;
+  witness Lam^{1/2}||J||_2=2.50 stable). Same geodesic phase, same N_0 (THEOREM/U_omega).
+  Run 80 itself calls the data-side good rate "the data-side twin of ... N_0" — but
+  anchored on the OLD run-13d/e (finite-C^k) status and MISSED the run-15/16 analytic
+  recovery. Applying it: the twin inherits the discharge on U_omega.
+- **Displaced-cone wedge #A (data-specific, analyticity-immune): hits the WRONG jets.**
+  Kills only same-slot high jets d^{j>=3} (run-80 A2 TEST D' pointwise ceiling exactly
+  j<3). The consumer STRUCTURALLY EXCLUDES same-slot d^2 (diverges, never formed; appendix
+  l.3354-3359); it reads single-leg j<=1 and the mixed (1,1) coincidence only. No wedge
+  obstruction to the mixed (1,1) on U_omega has ever been exhibited.
+
+## WHY NOT D-NO-GO / WHY NOT THEOREM
+- NOT D-NO-GO: both no-go mechanisms fail on U_omega (fold-count forbidden by analyticity;
+  wedge hits excluded jets). Run 80's own finding #1: "the finite-regularity existence-
+  failure ... cannot occur on the analytic ball." No confirmed FALSE for the consumer object.
+- NOT THEOREM: M1 = clause (ii) PLAUSIBLE, gated on WRITABLE gaps only — (a) N=2 finite-reg
+  Hadamard construction family-uniform in g (folklore, not in print); (b) multi-index
+  constant-tracking (single-paper-sized); + data-side V_{m0}-analog closure (port run-16's
+  three-cell technique). Run 54 discharged (a),(b) as family-uniformity via EP1; run 79
+  grades clause (ii)/U_omega = THEOREM MODULO {(D0), (E-env) off-BFV, write-out}.
+
+## DELIVERABLE
+D-TRUE-HARD => STATUS NOTE ONLY, grade UNMOVED, NO splice, NO 13-site propagation
+(run-59 lesson). The appendix already carries the correct PLAUSIBLE grade + the
+finite-C^k-vs-analytic distinction (l.1052-1062). Nothing to correct. ZERO repo writes.
+
+## RESIDUAL (what would flip to D-NO-GO)
+An exhibited chart-invariant analyticity-immune obstruction to the mixed (1,1) coincidence
+value of D_2 specifically on U_omega. None exists; run 80 refuted only d_y^{>=3}. Honest
+weight: D-TRUE-HARD.
+
+## RELATION TO ARM 2 (bypass) — not my arm, but the decision interacts
+D-TRUE-HARD DEFEATS the D-NO-GO premise "bypass is the only route to M1". The good-rate
+route is not a wall; ARM 2's count-free vdC-II bypass is the *unconditional* fallback
+(if the author declines the analyticity hypothesis or the write-out), not the *only* route.
+The four-way adjudication: my ARM 1 rules OUT D-NO-GO and lands D-TRUE-HARD; ARM 2 decides
+D-BYPASS vs D-BYPASS-DIES independently.
+
+## FILES (scratchpad only)
+- dec_nogo.md — full ARM-1 decision analysis
+- dec_nogo.py — the discriminator fold-count computation (3 parts)
+- ledger_run82.md — this entry
+
+## COMPLIANCE
+Run-48 (object exists before rate: K_2 distribution, checked). Free massive scalar; mixed
+sub-clause only. No radial alpha+3/2; no global-off-collar slice; no zero-data long-slab;
+no conditionality drop; no M1 promotion. Grep-anchored throughout. ZERO writes to any repo
+file (git status clean; verified by content).
+
+================================================================================
+# ARM 2 (A2-bypass) — THE COUNT-FREE BYPASS — appended (converges with ARM 1)
+================================================================================
+**Grade: NEGATIVE-RESULT (D-BYPASS promotion refuted) + theorem-grade riders
+(D-BYPASS-DIES refuted; fence re-priced clean; state legs close count-free).
+M1 UNMOVED (PLAUSIBLE). ZERO repo writes.**
+
+## DECISION
+Neither D-BYPASS nor D-BYPASS-DIES. The count-free (vdC-II) bypass reaches a
+PHYSICALLY-FREE slice fence s>11.5 with the state legs closed, SURVIVES the b=1
+wall — but does NOT promote M1. Residual gate = good-rate-INDEPENDENT clause-(ii)
+C_W construction + constant-tracking (the SAME (a)/(b) ARM 1 names l.44-47).
+
+## FOUR CHECKS (dec_bypass.py all asserts pass)
+1. FENCE: degrade d_y (c+½,p-1)→(c+1,p-1), c₁ 19/2→10 ⇒ slice s>11→**s>11.5**,
+   locked-4d s>23/2→**s>12** (= R-iii = tex l.2230). Count-free = ball-uniform
+   THEOREM (run-13d S3c_m Route B).
+2. PHYS-FREE: run-12 T3 audited s>11.5 (6 consumers fire, all lower bounds, zero
+   upper-bound s-uses); s>12 slack +½>0. Both free, caveats c1–c3.
+3. b=1 WALL: "dies at s=12" = field demand H^{σ₁+1} meets FIXED transverse avail
+   7/2⁻ at σ₁=5/2. Fence at σ₁=3/2, death at σ₁=5/2=fence+1; BOTH track c₁ ⇒
+   degrade shifts both +½ ⇒ slice fence 11.5, death 12.5, window (11.5,12.5) len 1.
+   Slot ALIVE at fence. **D-BYPASS-DIES REFUTED.**
+4. STATE LEGS: run-80 PART C — count-free floored r^{(3−j)−½} still L¹_loc at j≤6
+   (margin ½; good-rate margin 1). Ball-uniform + Lipschitz. Close count-free.
+
+## WHY NOT D-BYPASS
+M1 = clause (ii) PLAUSIBLE (Rem an17:CW-grade l.3391/3408) gated on (a) family-
+uniform finite-reg Hadamard construction + (b) multi-index tracking — BOTH
+good-rate-INDEPENDENT (same at s>11 or s>11.5). Adversary rejects promotion. M1
+stays PLAUSIBLE.
+
+## CONVERGENCE WITH ARM 1 (D-TRUE-HARD)
+Both arms land M1 = PLAUSIBLE with the SAME residual (writable gaps a,b), NOT the
+good rate, NOT the b=1 wall. ARM 1: good rate TRUE-but-hard on U_ω (sharp fence
+s>11). ARM 2: even WITHOUT it, count-free bypass gives physically-free s>11.5,
+survives b=1. So the good rate is a FENCE-SHARPNESS question (11 vs 11.5), not an
+M1-grade question. **The "D-NO-GO+D-BYPASS-DIES = hard wall" scenario is doubly
+refuted** (ARM 1: not D-NO-GO; ARM 2: not D-BYPASS-DIES). Four-way adjudication:
+D-NO-GO out (ARM 1), D-BYPASS out (ARM 2), D-BYPASS-DIES out (ARM 2) ⇒ **land
+D-TRUE-HARD**, with ARM 2 certifying the count-free fallback as a live physically-
+free route. M1 PLAUSIBLE, capped by author-pays writable gaps — NOT a hard wall.
+
+## DELIVERABLE / FILES
+Grade unmoved ⇒ status note only, NO repo splices (run-59). Staged: dec_bypass.md,
+dec_bypass.py, ledger_run82.md (this append). ZERO repo writes.
+
+================================================================================
+# FINAL ADJUDICATION (run 82 / hunt #85) — weigh both arms vs adversary; default REFUTED
+================================================================================
+**LAND: D-TRUE-HARD. Grade: PLAUSIBLE (decision delivered at theorem-grade
+confidence on the four-way; underlying M1 object UNMOVED at PLAUSIBLE). The single
+most dangerous output — D-BYPASS (M1→THEOREM) — is correctly ABSENT. ZERO repo
+writes (git status --porcelain empty; appendix_e2a_omega.tex mtime Jul 15 19:40:23
++ ISSUES.md Jul 15 22:01:32 both unchanged, predate session).**
+
+## WHAT I INDEPENDENTLY VERIFIED (not a rubber-stamp of the arms/adversary)
+Both .py scripts re-run clean (dec_nogo.py, dec_bypass.py — all asserts/verdicts
+reproduce). Every load-bearing anchor confirmed VERBATIM against the live repo:
+- ARM 1 discriminator IS a repo theorem: appendix l.452 + l.1054 (Rolle recursion
+  needs a phi''' LOWER floor no (R)-item supplies) + l.1059-1060 ("The entire
+  content of the analytic narrowing to U_omega is that (N0-an) supplies precisely
+  this ball-uniform N_0") + l.769 ("A1 = THEOREM ... over U_omega"). CONFIRMED.
+- Consumer structural exclusion: l.3354-3359 / l.2766-2767 ("pure same-slot (2,0),
+  (0,2) jets never formed ... diverge ... Only the mixed diagonal jets remain
+  finite"). This is what makes the wedge (which hits same-slot d^{j>=3}) OFF-
+  consumer. CONFIRMED.
+- U_omega is a collar-SUP ball (global-on-strip, powers Jensen): l.128, l.132,
+  l.455 ("a uniform collar sup-bound caps the mode exponentially"), l.558. This
+  neutralizes the "analyticity bounds derivatives not fold count" worry — the
+  discriminator cuts FOR the bound. CONFIRMED.
+- ARM 2 fence +1/2: ISSUES l.4322 verbatim (naive d_y:(c,p)->(c+1,p-1), "single
+  +1/2 per register => SLICE s>11.5 / LOCKED-4D s>12") + appendix l.1844/2108/2182
+  (promoted (c+1/2,p-1) -> s>11). CONFIRMED.
+- b=1 datum verbatim: ISSUES l.4292(iii) "the b=1 field slot dies at s=12; covered
+  range 11<s<12; the fence question at s->11+ sits inside it." Death (>=12) sits
+  STRICTLY ABOVE the degraded slice fence s>11.5 => slot ALIVE at the fence,
+  independent of whether death is fixed-12 or tracked-12.5. D-BYPASS-DIES robustly
+  refuted on the PRIMARY slice register. CONFIRMED.
+- Physical-freeness: ISSUES l.4294/4324 "ZERO upper-bound uses of s ... consumer
+  safety extends monotonically to ANY fence >= 11.5, incl. the naive 11.5/12."
+  CONFIRMED.
+- Honest availability (smuggling check): l.2632-2639 transverse-data SHARP height
+  alpha+1/2 (=7/2^-), NOT radial alpha+3/2 (=11/2); ISSUES l.4292 j=1 avail 7/2^-.
+  No radial smuggle, no global-off-collar slice, no zero-data long-slab. CLEAN.
+- M1 NOT promotable (the worst-output guard): l.3342 ("clause (ii) constant-
+  tracking is not executed") + l.3391 ("Grade: PLAUSIBLE (clause (ii) is REDUCED,
+  not proved)") + l.3396/3399-3400 (gaps (a) folklore-not-in-print, (b) single-
+  paper-sized). Both good-rate-INDEPENDENT. CONFIRMED — D-BYPASS correctly withheld.
+
+## FOUR-WAY LANDING
+- D-NO-GO: OUT. Fold-count route to a no-go is CLOSED on U_omega (thm-N0, verbatim-
+  verified); no chart-invariant analyticity-immune obstruction to the CONSUMED
+  mixed (1,1) has ever been exhibited (run 80 refuted only d_y^{>=3} pointwise +
+  the off-limits long slab). And even counterfactually, a good-rate no-go would NOT
+  be a hard wall — ARM 2's bypass routes around it.
+- D-BYPASS: OUT. M1 cannot reach THEOREM: clause (ii) (a)+(b) are genuinely
+  unclosed, WRITABLE, author-pays, and good-rate-INDEPENDENT. Not promoted.
+- D-BYPASS-DIES: OUT. b=1 death (s>=12) is strictly above the degraded primary-
+  register slice fence (s>11.5); slot alive at the fence with margin >= 1/2.
+- => D-TRUE-HARD. M1 PLAUSIBLE, capped by writable author-pays gaps, NOT a hard
+  wall. The "D-NO-GO + D-BYPASS-DIES = hard wall" scenario is DOUBLY refuted.
+
+## HONEST CALIBRATION OF "TRUE" (adopting the adversary's precision caveat)
+"D-TRUE-HARD" means NO-WALL + WRITABLE-HARD-PROOF + NO-OBSTRUCTION-EXHIBITED, NOT
+"proven true." The two links under "TRUE" are strongly supported but not proved:
+(i) data-side reduction good-rate-fan -> geometry N_0 (numerical slope -0.496 both
+charts + shared geodesic phase, not a term-by-term identity); (ii) mixed-(1,1)
+wedge-immunity (TEST D' ceiling j<3 + structural same-slot exclusion, not a proof).
+Also sharpened by ISSUES l.4322 ("ABANDONING T1' STILL BUYS NO THEOREM ... (E-env)
+... remains load-bearing"): the honest M1 residual is {(E-env)-existence-at-finite-
+regularity, clause-(ii)(a), clause-(ii)(b)} — ARM 2 slightly overstates by naming
+(a)+(b) alone; (E-env)-existence is ARM 1's D-TRUE-HARD object. NONE of this moves
+the DECISION: M1 = PLAUSIBLE in every sub-case; the good rate is a FENCE-SHARPNESS
+question (s>11 vs s>11.5, both physically free), not an M1-grade question.
+
+## DELIVERABLE
+D-TRUE-HARD => STATUS NOTE ONLY. NO splice to appendix_e2a_omega.tex. NO 13-site
+propagation (run-59: sites move only if the grade moves; it does not). The appendix
+already carries (E-env)/M1 at PLAUSIBLE with the finite-C^k-vs-analytic distinction
+(l.1042-1062, l.3305-3312, l.3391-3400) and the b=1/naive-fallback arithmetic
+(l.2230) — nothing to correct. ZERO repo writes.
+
+## WHAT WOULD DECIDE THE REMAINING (sub-D-TRUE-HARD) UNCERTAINTY
+To flip to D-NO-GO: exhibit a chart-invariant, analyticity-immune obstruction to
+the mixed (1,1) coincidence value of D_2 specifically on U_omega (NOT the same-slot
+high-jet pointwise envelope — conceded dead, not consumed; NOT the long-slab route
+— off limits). None exists. To move M1 to THEOREM (beyond not-a-wall): the N=2
+family-uniform finite-regularity Hadamard construction + multi-index constant-
+tracking + a data-side V_{m0}-analog closure — writable/single-paper-sized, author-
+pays; the harness demonstrably could not produce even the geometry-side twin (run
+13: two max-effort runs, zero proof artifacts). M1 is unmovable by any swarm =>
+worth a dedicated human research effort.
+
+---
+### Main-session apply note — run 82 / hunt #85 ((E-env) DECISION swarm): D-TRUE-HARD, no splice, no repo write — and it CORRECTS the run-80 framing (2026-07-15)
+
+The decision swarm (NOT a fourth proof attempt) landed cleanly on D-TRUE-HARD, both arms adversary-CONFIRMED (adversary defaulting to REFUTED, the dangerous D-BYPASS/M1-promotion correctly absent — both arms declined it themselves). M1 stays PLAUSIBLE; grade unmoved; no 13-site propagation; zero repo writes.
+
+THE DECISION: the ball-uniform good-rate fan bound / (E-env) is NOT a wall on the analytic ball U_ω. Its proof is an open-but-WRITABLE research problem, not a no-go.
+  - ARM 1 (the discriminator run 80 surfaced but didn't resolve): analyticity FORBIDS the fold-count blowup, and this is a REPO THEOREM (thm-N0, appendix l.682-717/1042-1062), adjudicated at THEOREM grade back in runs 15/16 with both hostile gates confirmed. U_ω is a collar-SUP ball (not merely "H^s ∩ real-analytic"): the collar-sup is a global-on-strip quantity that caps ripple modes EXPONENTIALLY (a≤2ε_a e^{−Nρ_a}), so the fold count N_0 stays ball-uniform. The run-13d/e "refuted-as-ball-uniform" was a FINITE-C^k phenomenon (Rolle recursion lacks a φ‴ lower floor); the fold-blowup families either EXIT U_ω (exp collar norm) or land in V_{m0} (no genuine fold). The good rate SURVIVES the refutation on U_ω.
+  - ARM 2 (the bypass): the unconditional count-free vdC-II rate re-prices the fence +½ (slice s>11→11.5, locked-4d s>11.5→12), both PHYSICALLY FREE (run-12 T3: zero upper-bound uses of s), and SURVIVES the b=1 wall (the death at s=c₁+5/2 and the fence at s=c₁+3/2 both track c₁, so degrading shifts both +½ in lockstep — window (11,12)→(11.5,12.5), slot ALIVE at the fence with margin 1). So even a good-rate no-go would NOT be a hard wall — the bypass routes around it. D-BYPASS-DIES doubly refuted.
+
+**THE CORRECTION (honest):** run 80 anchored on the OLD finite-C^k "refuted-as-ball-uniform" status and MISSED the run-15/16 analytic recovery (thm-N0). My run-80-based characterization to the author — that (E-env)/its twin is "a hard, twice-terminated WALL" — was too pessimistic. The pointwise form IS dead-as-stated (run 80 correct there, and it's not consumed), but the OPERATIVE object (the mixed (1,1) coincidence, single-leg j≤1) has NO exhibited obstruction on U_ω, and analyticity gives the ball-uniform fold count as a banked theorem. So the honest status is: NOT a wall; TRUE-in-principle (no-obstruction-exhibited + writable-hard-proof); the one thing that would flip it to a no-go — a chart-invariant analyticity-immune obstruction to the mixed (1,1) on U_ω — does not exist.
+
+HONEST CALIBRATION (adversary + adjudicator): "TRUE" = no-wall + writable-hard + no-obstruction-exhibited, NOT proven-true. D-TRUE-HARD rests on two well-supported but not-formally-proved links both arms concede: (i) the data-side reduction good-rate-fan → geometry-side N_0 (identical slope −0.496 + identical geodesic phase, not a term-by-term identity); (ii) the wedge/displaced-cone biting only same-slot d^{j≥3} not the consumed mixed (1,1) (structural same-slot exclusion l.3354-3359, not a proof of (1,1) wedge-immunity). The true M1 residual = {(E-env)-existence-at-finite-reg, clause-(ii)(a) N=2 family-uniform finite-reg Hadamard construction, clause-(ii)(b) constant-tracking} — all PLAUSIBLE / author-pays / good-rate-INDEPENDENT.
+
+NO SPLICE: the appendix already carries thm-N0, the finite-C^k-vs-analytic distinction (l.1042-1062), (E-env)/M1 at PLAUSIBLE (l.3305-3312/3391-3400), and the b=1/naive fence arithmetic (l.2230) — nothing to correct in the paper. Score UNMOVED at ≈9.15. Hunt tally through #85.
+
+**FOR THE AUTHOR'S DECISION:** M1 is not swarmable (the harness could not produce even the geometry-side twin — run 13, two max-effort non-deliveries) but it is also NOT a wall. If M1 → THEOREM is wanted, the path is a dedicated human write-up of {family-uniform finite-reg N=2 Hadamard construction + mixed-(1,1) constant-tracking + a data-side V_{m0}-analog closure} — single-paper-sized, no known obstruction. That would take the framework's rigorous core past its current conditional at (T-something) — the first grade motion available since the ceiling was reached.
+
+# LEDGER — RUN 83 / HUNT #86 (decomposed M1 swarm)
+
+## ARM 1 (gap b, constant-tracking) — GAP (b) => THEOREM
+
+**Result.** The multi-index C_W/W_* mixed-(1,1) Lipschitz constant assembly is
+EXECUTED to a closed ball-uniform constant. The bookkeeping the appendix flags
+"not executed" (l.3345 "constant-tracking is not executed"; l.3399-3401 "the
+exact multi-index constant-tracking ... single-paper-sized, not executed here")
+is now executed and audited correct.
+
+**Closed constant** (per `an17:eq-slice-CW` l.3018 × `an17:G` globalization):
+```
+C_W(g_0,s,K_Sigma,atlas) = N_geo · c^{Mor,3d}_{sigma'(s)} · sqrt(Q_* e^{P_* T})
+    · [ sqrt(T)·c_alg·c_tr·c_mult·W^{(2)}_{d2} + sqrt(T)·c_fol·C_v2·c_Pi + C_Delta2 ]
+```
+finite ∀ fixed s>11, ball-uniform over U_ω at each fixed s; only s↓11 divergence
+is c^{Mor,3d} (honest zero-slack, disclosed l.3002-3004).
+
+**Every gap-(b)-owned factor is named/finite/ball-uniform:**
+- fixed-atlas Sobolev consts (c^Mor, c_alg, c_tr, c_mult, c_fol, C_E): g-independent
+- Tice sqrt(Q_* e^{P_* T}): ball-uniform via algebraic A^μ[g], det g≥d_ω,
+  analytic-collar C^k control ALL orders (l.167-169, 180-182), θ≥θ_*>0 (§3 m1_track)
+- N_geo≤c_n·N(K) (Lem an17:G, no Besicovitch); c_Pi (radial integrals); Λ_{U_ω}
+
+**Multi-index (c,p) arithmetic audited CORRECT** (§4 m1_track): commutator branch
+B2 traced (8,6)→[solve]→(7,13/2)→∂_y→(15/2,11/2)→2∂_x→(19/2,7/2)→[product with
+(g-g')_* at s-½]→source(19/2,7/2)→[solve+∂_x]→mixed jet(19/2,7/2)→3d Morrey needs
+s-19/2>3/2 ⟺ **s>11, zero slack, THE PIN**. All other margins strictly + at δ=s-11.
+Refund identity trace(½)+Morrey_3d(3/2)=2=Morrey_4d (THEOREM, l.2626) verified.
+
+**No open constant inside gap (b).** Leaf inputs enter LINEARLY (no cross-coupling,
+no circularity) ⇒ C_W ball-uniform ⟺ leaves ball-uniform. Residual = OTHER gaps:
+- {W^{(2)}_*, C_v2, (N-a) L^{(b)}_S} → **gap (a)** (family-uniform v_2)
+- C_Delta2 → **gap (E-env)** (=0 on BFV, else E-env-gated)
+
+**Own-referee adversarial pass survived** (§5 m1_track): 4 attacks refuted
+(leaf-not-uniform → gap (b) is composition-register by definition; Tice blowup →
+no degeneracy; Morrey divergence → part of the s-form, disclosed; slice-metric
+g-dependence → fixed-atlas norms). Ready for the separate adversary confirmation.
+
+**Effect on M1.** M1 UNAFFECTED by this arm alone → stays PLAUSIBLE. Modulo-list
+SHRINKS {(a),(b)} → {(a)} for the constant-tracking axis. Removes "gap (b) not
+executed" from the residual. Does NOT promote clause (ii) or M1 (needs gaps a +
+E-env + adversary; run-83 base case = gap (a) construction expected to block).
+
+**Staged.**
+- `m1_track.md` (197 ln) — full analysis, 6 sections
+- `m1_track_draft.tex` — GATED splice draft (new Lem `an17:CW-assembled` +
+  replacement gap list for `an17:CW-grade`); scratchpad only; grade lines UNCHANGED
+- ZERO repo writes.
+
+**Splice status.** GATED. The draft shrinks the two-item gap list of
+`an17:CW-grade` to one item. Since M1/clause(ii) grade does NOT move (only gap b
+of three closes), the splice is a status/gap-list edit, NOT a grade promotion —
+apply ONLY if the orchestrator + adversary confirm the shrink is worth writing.
+For the run-83 base case (gap a blocks) the honest edit is: gap-list {(a),(b)}→{(a)}
+in Rem an17:CW-grade, grade PLAUSIBLE unmoved.
+
+---
+
+## ARM 3 (gap a, Hadamard construction) — GAP (a): PLAUSIBLE (REDUCED). M1 UNMOVED.
+
+**Result.** The COEFFICIENT-level family-uniformity (v_0,v_1,v_2 and jets: sup + H^s-Lipschitz
+difference) ASSEMBLES on U_ω from exactly the collar-sup engine the task named — and is already
+realized at THEOREM-grade machinery (port_m3 L3 `port:lem-vk`, port_ac `pac:prop-A`). The task's
+conjectured mechanism ("Hadamard coeffs = universal polys in metric jets, U_ω bounds them
+uniformly") is CORRECT for the coefficients. What does NOT close is one level up: the finite PART
+W_{g,2} clause (ii) consumes. So gap (a) at the CONSUMED register does NOT close => PLAUSIBLE
+(REDUCED), NOT THEOREM. **M1 UNMOVED (PLAUSIBLE). No promotion.**
+
+**What assembles (Steps 1-4, all real-side / EP2-safe):**
+1. Collar-sup → polydisc Cauchy → ball-uniform metric jets ALL orders (EP1'/an17:lem-embed engine).
+2. thm-N0's own engine (M_Γ, an17:prop-strip holomorphic flow) → ball-uniform σ_g, Δ_g^{±1/2}.
+3. v_k solve a linear regular-singular transport ODE (indicial 4k>0, k≥1; massive term regular);
+   ONE Gronwall sup + iterated Cauchy → ALL derivative bounds (analyticity replaces the tape).
+4. v_k[g]−v_k[g'] REAL-SIDE: ‖·‖_{C^0} ≤ κ_v‖h‖_{C^6} ≤ C_sob κ_v‖h‖_{H^s} (Morrey s>11),
+   ball-uniform. Christoffel-difference identity, NOT collar conversion (EP2 respected).
+
+**The resisting step (precise, NOT the coefficient recursion):** the ladder source
+f_2 = −(S_{g,2}−S_{g',2}) − (□_g−□_{g'})W_{g',2} carries, in the commutator leg, the SINGLE-METRIC
+finite part W_{g',2} = (ladder solve, uniform via Steps 1-4) + (seed Cauchy data b=1 = (D0),
+fixed-metric) + (state anchoring = (E-env)/BFV). The coefficient construction furnishes NEITHER (D0)
+nor (E-env). The collar-sup→Cauchy engine closes the parametrix/coefficient question and stops
+exactly at the parametrix → finite-part hand-off.
+
+**Convergence with ARM 1.** ARM 1 hands {W^{(2)}_*, C_v2, (N-a) L_S} to gap (a) (ledger l.33). Of
+these: **C_v2 and L_S CLOSE at the coefficient level** (my Steps 1-4); **W^{(2)}_* does NOT close** —
+it IS the single-metric finite-part sup = the (D0)+(E-env) hand-off. So the ARM-1 → gap-(a) hand-off
+splits 2-close / 1-residual, and the 1 residual = (D0)+(E-env), already-named / ARM-2-tracked.
+
+**Effect on M1.** gap (a) contributes NO NEW independent obstruction: coefficient half CLOSES; residual
+= (D0)+(E-env)/BFV (already on the named-residue list). M1 residual after the swarm =
+{ (b) constant-tracking — CLOSED by ARM 1; (E-env) — ARM 2 + gap-(a) residual; (D0) fixed-metric seed }.
+The literal "gap (a) = family-uniform Hadamard construction" DISSOLVES into (closes)+(already-named).
+**M1 GRADE UNMOVED: PLAUSIBLE.** No splice, no 13-site propagation, STATUS-NOTE only.
+
+**Adversary (default REFUTED) — 4 attacks answered** (m1_hadamard.md): holomorphy across {σ=0}
+(log-branch explicit, v_k regular single-valued for analytic metrics); regular-singular difference at
+r=0 (indicial 4k>0 integrable); collar-constant not an H^s→collar conversion (number × H^s-diff);
+coefficient closure does NOT promote M1 (commutator leg reaches the state/seed). Correctly no promotion.
+
+**DO-NOT compliance:** no radial α+3/2; no global off-collar slice norm; no zero-data long-slab (D0
+named); free massive scalar (m>0, ξ=0); no collar→H^s shortcut; no Montel.
+
+**Staged.** `m1_hadamard.md` (full analysis). NO draft-that-lands (gap (a) does not close to THEOREM
+at the consumed register — a draft proof would be a manufactured promotion; correctly withheld).
+NO splice. ZERO repo writes by ARM 3 (appendix mtime 19:40:23 / port files 18:24:18 unchanged; the
+ISSUES.md diff shown by git is a parallel arm's, not ARM 3's).
+
+---
+
+## ARM 2 (gap E-env-fan, V_{m0}-port) — GAP (E-env)-fan => PLAUSIBLE (REDUCED). M1 UNMOVED.
+
+**Result.** The run-16 geometry-side device-free V_{m0} closure (`an17:thm-A1`,
+repo THEOREM/U_omega) PORTS verbatim onto the data-side (E-env) L2(theta-fan) of
+D_2. Near-flat sliver V_{m0} closes DEVICE-FREE (rides A1, D=1); fold stratum
+N_{m0} rides N_0 (`an17:thm-N0`). So (E-env)-fan's OSCILLATORY/fold content is
+discharged on U_omega (whole cone). M1 UNMOVED (PLAUSIBLE).
+
+**Run-48 existence (checked FIRST): PASS.** The data-side V_{m0} stratum is
+well-defined. Run-80 §3 (`eenv_construct.md`) identified the data-side fan
+EXPLICITLY: `J_Lam(theta)=int e^{iLam psi_theta}w_2 dt`, `psi_theta` = g/g'
+optical-length mismatch = the I_Lam family (`eq:an17-kdef`); `psi_theta''=phi''`
+(shared world-function fan-Hessian / van Vleck degeneracy). So the SAME `(x,y,e)`
+stratification (`an17:def-strata`) with the SAME positive anchor floor `m_0`
+(`an17:lem-compact`, collar-propagated) applies. NOT a category mismatch (first-
+pass worry, refuted). [Run-80 already banked K_2-exists + the fan-pairing; I add
+the stratum's well-definedness via the phase id.]
+
+**The port (A1 is data-agnostic).** `an17:thm-A1` (l.1517-1547) consumes ONLY:
+(P-flat) whole-cone UPPER bound `sup|phi''|<=M_phi''` (`an17:lem-flat`); (P-transv)
+the fold-BLIND fan-kernel `|d_n Phi|>=|t-s|/2` from `||dG_u-Id||<=1/2` R4
+(`an17:lem-kernel`, "NO dependence on the u-fold structure of phi''"); (P-meas) F2;
+(P-dev) D=1. All geometric/shared-geodesic-fan. Only data input = amplitude cap
+`|J_Lam|<=int|w_2|<=b_2` (the N=2-healed profile). => A1 applies verbatim with
+`phi:=psi_theta`; CONDITIONAL port = THEOREM-grade (three cells transfer: deep-core
+cap, fan-kernel band, rim IBP). Whole-cone data-side fan bound (cf `an17:cor-A1ledger`):
+`int_fan|J_Lam|^2 <= C_2(1+N_0)^2 Lam^{-1}rho^{-1} [N_{m0}] + C_A1^data b_2^2 ell_Lam
+Lam^{-1}rho^{-1} [V_{m0}, THIS PORT]`, ball-uniform.
+
+**Residual (named, precise).** Amplitude id E2, split by `W_{g,2}=omega^(2)_g -
+H^(2)_g`: geometric part (`H^(2)` diff, `v_k/sigma/Delta`) is **CLOSED by ARM 3's
+now-closed coefficient level** (`C_v2,L_S` ball-uniform; not circular — a-coeff is
+THEOREM-grade machinery); state part (`omega^(2)` diff) = 0 on BFV (`C_Delta2=0`,
+`an17:Nc-corrected`) / off-BFV = the pre-existing **(E-env) state-anchoring residue**
+(`an17:named-residues`, port_ac `pac:res4` "not on the Part-B consumer path"). So NO
+new obstruction; only the pre-existing off-BFV state residue survives.
+
+**Convergence (all three arms).** Arm1: gap (b) => THEOREM. Arm3: gap (a) coeff CLOSES,
+residual=(D0)+(E-env). Arm2: gap (E-env)-fan oscillatory CLOSES, geometric amplitude
+rides arm3, survivor=off-BFV state-anchoring. **Net: the literal three gaps
+(a),(b),(E-env-fan) ALL dissolve into the PRE-EXISTING named residues {(D0)
+fixed-metric seed; (E-env) off-BFV state-anchoring / `C_Delta2=0` carrier}** — both
+BFV-conditional, OFF the paper's Part-B consumer path. M1 PLAUSIBLE, residual SHRUNK
+to the known residues, NOT promoted. Doctrine base case, confirmed.
+
+**Effect on M1.** UNMOVED (PLAUSIBLE). Removes the "does the near-flat sliver need a
+fresh data-side device?" worry (it rides A1) and the fold worry (rides N_0). No
+promotion (no fresh THEOREM at the consumed register; the survivor is a pre-existing
+BFV-conditional residue off the consumer path).
+
+**Staged.** `m1_vm0.md` (full analysis: object id, run-48, port, ledger sum,
+residual, convergence, gated splice) + `m1_vm0_draft.tex` (GATED draft: Lem
+`vm0:lem-port` + Cor `vm0:cor-both`; grade lines UNCHANGED). ZERO repo writes.
+
+**Splice status.** GATED. Neither clause (ii) nor M1 moves => status/residual-map
+edit only (rider to `an17:named-residues`/`an17:CW-grade` recording the (E-env)-fan
+oscillatory closure + consolidation), NOT a grade promotion, NOT a 13-site
+propagation (run-59). Apply ONLY if orchestrator + adversary confirm.
+
+**DO-NOT compliance.** Re-derived at the CONSUMED L2(theta-fan) register (not the
+refuted pointwise (E-env)); run-57 port_m3 discipline honored; no radial alpha+3/2;
+no global-off-collar slice; no zero-data long-slab; free massive scalar; mixed-(1,1)
+only; no conditionality drop; NO M1 promotion; run-48 checked FIRST. ZERO writes to
+any repo file (verified by content: appendix/port files untouched).
+
+---
+
+## ADVERSARY (run 83, hunt #86) — verdict per gap. Default REFUTED.
+
+Full analysis: `m1_adversary.md`. Grep-anchored on the live appendix.
+
+**TOP LINE: the dangerous output (M1 promotion) is ABSENT — good. One closure
+claim (ARM 1) is OVERCLAIMED and DOWNGRADED. ARM 2/3 grades hold.**
+
+- **ARM 1 gap (b) => THEOREM: DOWNGRADE to PLAUSIBLE.** The (c,p) tracking is
+  FAITHFUL (B2 `kappa_1=min(s-19/2,7/2^-)` l.2946; pin `s>11` zero-slack l.3035;
+  chain l.3018 matches) — real progress. But THEOREM is overclaimed: the Tice
+  factor `sqrt(Q_* e^{P_*T})`, explicitly inside gap (b) ("the Tice estimate"
+  l.3400), consumes `1/theta_*`, the coercivity floor graded **PLAUSIBLE** by the
+  repo (Rem `an17:attainment` l.3182; l.2524 "collar-margin attainment notes are
+  PLAUSIBLE ... not quoted downstream"). ARM 1 §3 + draft assert `theta>=theta_*>0`
+  as established and DROP it from the residual. A THEOREM composition cannot
+  consume a standing-PLAUSIBLE input un-upgraded. The orchestrator's own charge
+  ("ellipticity lambda_g ... if a constant is genuinely open, name it") points at
+  theta_* — the named open constant ARM 1 missed. **`m1_track_draft.tex` MUST NOT
+  be spliced** (line 41 launders the attainment note into a THEOREM lemma; never
+  mentions `an17:attainment`; collapses {(a),(b)}->{(a)} dropping theta_*).
+  Corrected: {(a),(b)} does NOT collapse; constant-side residual = {(a),
+  attainment-note}.
+
+- **ARM 2 gap (E-env)-fan: PLAUSIBLE CONFIRMED (no closure), reduction overstated.**
+  No pointwise smuggle — stays on the L2(theta-fan) (run-80 §2 "never evaluates
+  pointwise"; A1 deep-core cap Lambda-indep, compatible with the fat-cone lower
+  floor). Difference-of-profiles worry ANSWERED by run-80 PART B (fold floor
+  driven by g0 curvature, persists as g->g' => single fold family `phi''`, diff in
+  amplitude). CAVEAT: E2 is bigger than "amplitude" — it bundles the R4 fan-kernel
+  port to the two-metric CONTACT geodesic (a structural port), so "conditional
+  port THEOREM-grade" is mildly circular and the run-48 existence PASS rides E2.
+  Grade holds; "oscillatory content fully discharged" overstates.
+
+- **ARM 3 gap (a): PLAUSIBLE CONFIRMED; block REAL.** Ladder source l.2707
+  `f_2=-(S_{g,2}-S_{g',2})-(box_g-box_{g'})W_{g',2}` carries single-metric
+  `W_{g',2}` (commutator leg l.2935-2937); reduces to {(D0),(E-env)} =
+  `an17:named-residues` l.3305-3324 = `port_ac pac:thm-verdict` res1/res4. Not a
+  strawman, not new, no promotion. Minor: coefficient level is PLAUSIBLE-package
+  (port_ac) not literally THEOREM — non-load-bearing.
+
+- **CONJUNCTION (M1): CONFIRMED PLAUSIBLE, not promoted.** (E-env)-EXISTENCE is
+  separate from the fan closure and UNCOVERED (l.3305-3309), correctly acknowledged.
+  Residual = {(D0); (E-env)-existence; theta_* (surfaced by the ARM-1 audit)} —
+  all pre-existing / standing-PLAUSIBLE. No new gap, no 13-site propagation, no
+  repo write.
+
+---
+
+## FINAL ADJUDICATION (run 83 / hunt #86) — weigh 3 arms vs adversary; default REFUTED
+
+Independently grep-verified every load-bearing anchor on the LIVE appendix (not
+the arms' line numbers). The one contested closure (ARM 1 gap b => THEOREM) is
+the crux; I verified it against the text and the adversary's DOWNGRADE HOLDS.
+
+**VERIFIED ANCHORS.**
+- Tice inside gap (b): l.3400 "the exact multi-index constant-tracking of every
+  product through the N=2 commutator source AND THE TICE ESTIMATE ... not
+  [executed here]." CONFIRMED.
+- Tice consumes 1/theta_*: l.2815 "only 1/theta<=1/theta_* is consumed
+  downstream. Tice Thm.~1.2.1 applies." CONFIRMED. C_W factor sqrt(Q_*e^{P_*T})
+  at l.3020; provenance l.3027 "theta,Lambda (Rung 1); Q_*,P_*,T (Tice)."
+- theta_* graded PLAUSIBLE: Rem an17:attainment l.3182 "\emph{Grade: PLAUSIBLE}
+  --- a rigorous sketch," "ball-uniform BY THE COLLAR MARGIN, NOT BY ATTAINMENT";
+  l.3184-85 "not numerically certified ... not quoted downstream." CONFIRMED. The
+  PLAUSIBLE grade attaches to the ball-uniform-POSITIVITY claim itself, not merely
+  a numerical value. Repo already grades C_W/W_* PLAUSIBLE (l.3435).
+- ARM 1 execution FAITHFUL: kappa_1=min(s-19/2,7/2^-) l.2946; s>11 zero-slack pin
+  l.3035 "the commutator the pin"; eq-slice-CW chain l.3018-3024 matches. Real.
+- ARM 3 block REAL: ladder source f_2 l.2706-2707 =-(S_{g,2}-S_{g',2})
+  -(box_g-box_{g'})W_{g',2} carries single-metric W_{g',2}; l.3282 "the
+  single-metric uniform analogue for W_{g',2}." Reduces to named residues
+  (E-env)/(D0) l.3305/3321. NOT a strawman.
+- ISSUES.md ' M' = a parallel arm's RUN-82 diff (first line "LEDGER — RUN 82 /
+  HUNT #85"; lands D-TRUE-HARD/M1 UNMOVED); NO run-83 line; not mine; untouched.
+
+**PER-GAP VERDICTS.**
+- gap (a) [Hadamard construction]: **BLOCKED-CHARACTERIZED** (PLAUSIBLE-REDUCED).
+  Coefficient-level family-uniformity assembles (collar-sup engine, Steps 1-4,
+  EP2-safe); the finite-part W_{g,2} clause (ii) consumes does NOT close — the
+  wall is the parametrix->finite-part hand-off (f_2 commutator leg carries
+  single-metric W_{g',2} needing (D0) seed + (E-env)/BFV state). Residual
+  {(D0),(E-env)} = appendix's own named residues = port_ac pac:thm-verdict
+  res1/res4. Adversary-CONFIRMED. No promotion.
+- gap (b) [constant-tracking]: **PLAUSIBLE-REDUCED**, NOT CLOSED. Register-
+  arithmetic EXECUTED & faithful (lifts the l.3345 "not executed" flag; shows C_W
+  reduces LINEARLY to its named inputs) — real, bankable. BUT the THEOREM grade is
+  OVERCLAIMED and DOWNGRADED: C_W carries sqrt(Q_*e^{P_*T}) ⊃ 1/theta_*, and
+  theta_*'s ball-uniform positivity is repo-PLAUSIBLE (Rem an17:attainment). ARM 1
+  folded theta>=theta_*>0 in as ESTABLISHED, dropped the attainment note, and
+  collapsed {(a),(b)}->{(a)}. A THEOREM composition cannot silently consume a
+  standing-PLAUSIBLE input; NO arm executed the attainment upgrade. Steelman
+  ("ball-uniformity ≠ numerical cert, so it's clean") FAILS twice: (i) the repo
+  grades the positivity itself PLAUSIBLE, and (ii) the upgrade was not executed —
+  under default-REFUTED both are fatal. Constant-side residual is {(a) leaves,
+  theta_* attainment-note (PLAUSIBLE), C_Delta2}, NOT {(a)}. Adversary DOWNGRADE
+  UPHELD.
+- gap (E-env)-fan [V_{m0} port]: **PORTED** (PLAUSIBLE, conditional-on-E2). A1
+  device-free V_{m0} closure transfers to the data-side L2(theta-fan); oscillatory/
+  fold content discharged CONDITIONALLY (V_{m0} rides A1 D=1, N_{m0} rides N_0). No
+  pointwise smuggle (L2-fan register, run-80-confirmed); psi_theta''=phi'' by
+  run-80 PART B. Adversary-CONFIRMED grade, with the caveat UPHELD: E2 > "amplitude"
+  — it bundles the contact-geodesic R4 fan-kernel STRUCTURAL port, and the run-48
+  existence PASS rides E2, so "fully discharged" overstates. (E-env)-EXISTENCE
+  (state-leg envelope, l.3305-3309) is SEPARATE from the fan closure and uncovered.
+
+**M1 VERDICT: UNMOVED (stays PLAUSIBLE).** Not PROMOTED — gap (a) blocks, gap (b)
+rides theta_*, (E-env)-existence uncovered; the dangerous output is correctly
+ABSENT. Not even strictly "SHRUNK residual": NO residual item is closed/removed.
+The net modulo-list is the PRE-EXISTING set {(D0) seed; (E-env)-existence +
+off-BFV state-anchoring; theta_* attainment-note (PLAUSIBLE); C_W/W_*
+constant-tracking (now EXECUTED but still PLAUSIBLE, reducing linearly to the
+others); clause (iii) Sanders (separate)} — exactly as pac:thm-verdict and
+an17:CW-grade already stand. The swarm's genuine value (STATUS NOTE, no grade
+moves): (1) gap-(b) tracking EXECUTED, lifting "not executed"; (2) gap-(a) wall
+sharply re-located to the parametrix->finite-part hand-off; (3) (E-env)-fan
+oscillatory content ported conditional-on-E2. The ARM-1 audit also RE-SURFACED
+theta_* as a constant-side item ARM 1 tried to drop — a net honesty correction,
+not a shrinkage.
+
+**GATED SPLICES: NONE.** No grade moves => no splice (rule: splice ONLY if a
+grade moves + adversary-confirmed; else status note). REJECTED:
+- m1_track_draft.tex (Lem an17:CW-assembled THEOREM + {(a),(b)}->{(a)}): launders
+  the PLAUSIBLE theta_* into a THEOREM lemma, never cites an17:attainment,
+  violates the appendix's "not quoted downstream" discipline. MUST NOT be applied.
+- m1_vm0_draft.tex (vm0:lem-port/cor-both): self-labeled "no grade line moves";
+  at most a rider modulo E2 — but no grade moves, so NOT spliced.
+- gap (a): no draft (correctly withheld; a proof would manufacture a promotion).
+Permissible OUTPUT = STATUS NOTE only, in this scratchpad ledger, ZERO repo writes.
+
+**ZERO REPO WRITES (verified by content).** appendix_e2a_omega.tex mtime
+19:40:23 unchanged; port_*.tex 18:24:18 unchanged; git shows only ' M ISSUES.md'
+= a parallel arm's run-82 diff (23:04:05), which I did not and will not touch.
+
+**BOTTOM LINE.** M1 UNMOVED / PLAUSIBLE. Two of three arms confirmed at their
+claimed PLAUSIBLE grade (a: BLOCKED-CHARACTERIZED, E-env-fan: PORTED-conditional);
+the one THEOREM claim (gap b) is DOWNGRADED to PLAUSIBLE-REDUCED. The doctrine
+base case is realized: partial progress (b executed, E-env-fan ported, a wall
+sharpened) with M1 still PLAUSIBLE — full value, no manufactured promotion, worst
+output (wrongly-confirmed promotion) avoided.
+
+---
+### Main-session apply note — run 83 / hunt #86 (DECOMPOSED M1 swarm): M1 UNMOVED, no splice, no repo write — the adversary caught an overclaim (2026-07-16)
+
+The decomposed swarm (three arms on run-82's three named gaps, NOT the monolithic estimate) delivered the honest doctrine base case: M1/clause (ii) stays PLAUSIBLE, no promotion, no grade line moves, ZERO repo writes. The worst output (a wrongly-confirmed M1 promotion) is correctly absent. Paper unchanged at 330 pp.
+
+PER-GAP:
+  - gap (a) [family-uniform N=2 Hadamard construction]: BLOCKED-CHARACTERIZED (PLAUSIBLE). The "distinct wall" DISSOLVES — the coefficient-level family-uniformity (v_0,v_1,v_2 + jets) assembles via the collar-sup engine (already repo THEOREM-machinery, port_m3/port_ac); what resists is the parametrix→finite-part hand-off (the ladder source carries the single-metric W_{g',2}), which reduces to the ALREADY-NAMED residues {(D0) fixed-metric seed, (E-env) state leg}. Not new, not a strawman. Wall precisely re-located: it is NOT the Hadamard coefficient recursion.
+  - gap (E-env)-fan [V_{m0} port]: PORTED (PLAUSIBLE, conditional-on-E2). The run-16 geometry-side device-free V_{m0} closure (Thm an17:thm-A1) transfers to the data-side L²-fan — A1's proof consumes only fold-BLIND geometric fan inputs + an amplitude cap, so it applies verbatim with φ:=ψ_θ (the g/g′ optical-length mismatch = the same oscillatory family, run-80 §3). The fold/oscillatory content of the fan is thus discharged on U_ω (fold stratum rides thm-N0's ball-uniform N_0; near-flat sliver device-free), CONDITIONAL on E2 = the amplitude + contact-geodesic fan-kernel identification.
+  - gap (b) [C_W constant-tracking]: PLAUSIBLE-REDUCED — **ARM 1's THEOREM claim DOWNGRADED by the adversary, upheld.** The multi-index register-arithmetic IS genuinely executed and faithful (the C_W assembly, zero-slack pin s>11, refund identity — real bankable progress that lifts the l.3345 "not executed" flag). BUT the assembled C_W rides √(Q_*e^{P_*T}) ⊃ 1/θ_*, and θ_*'s ball-uniform positivity is repo-graded PLAUSIBLE (Rem an17:attainment, "a rigorous sketch... not quoted downstream"). Arm 1 asserted θ≥θ_*>0 as established and dropped the attainment note, laundering a standing-PLAUSIBLE input into a THEOREM composition. A composition inherits the min grade of its inputs → gap (b) is at most PLAUSIBLE. m1_track_draft.tex REJECTED, MUST NOT be applied.
+
+M1 VERDICT: UNMOVED. My own predicted base case ("gaps b + E-env-fan close, gap a blocks, residual shrinks to {(a)}") was itself TOO OPTIMISTIC and was rejected — because gap (b) does NOT cleanly close (rides θ_*), the residual does NOT shrink to {(a)}. The net modulo-list is the PRE-EXISTING set {(D0) seed; (E-env)-existence + off-BFV state-anchoring; θ_* attainment-note (PLAUSIBLE); C_W/W_* tracking (now executed, still PLAUSIBLE); clause (iii) Sanders (separate)}. The ARM-1 audit in fact RE-SURFACED θ_* onto the residual — a net honesty correction, not a reduction.
+
+GENUINE VALUE (status-note-worthy, no grade line moves, no splice): (1) the gap-(b) constant-tracking is now executed (linear reduction to named leaves; the "not executed" flag is liftable — but not spliced, since the grade is unmoved); (2) gap-(a)'s wall is precisely re-located to the parametrix→finite-part hand-off, dissolving the "family-uniform construction" as a distinct obstruction; (3) the (E-env)-fan oscillatory/fold content ports to the data side conditional on E2. Score UNMOVED at ≈9.15. Hunt tally through #86.
+
+DIMINISHING RETURNS REACHED (honest): this round moved NO grade and did not even shrink the residual — it clarified and consolidated it. Combined with run 82 (D-TRUE-HARD: M1 is a writable-but-human problem, unmovable by swarm) and the runs 12/13/80 non-deliveries, the evidence is now conclusive: M1 → THEOREM is not swarmable. The remaining distance is a dedicated human write-up of the finite-part hand-off {(D0) seed data + (E-env) state-leg existence at finite regularity + E2 amplitude identification + θ_* attainment upgrade}, with no known obstruction — a single-paper research effort, not a compute problem.
+
+# Ledger — RUN 88 / HUNT #91 (A1-numbers): BAW phonon-cavity falsifier
+
+Date: 2026-07-16. Task: BASE (i)–(iv), empirical column only.
+
+## Actions
+1. Extracted prediction from unification.tex: eq:U5-expansion (l.15601,
+   mu = alpha dt^2/hbar^2) -> prop:tdse-effective (l.15520) ->
+   prop:pred-baw (l.13668) -> eq:pred-baw-softening (l.13678, dw/w = -muE)
+   -> eq:pred-baw-bound (l.13697, mu <~ 2.0e-24 1/eV). Chain printed:
+   run-48 gate PASS.
+2. Convention checks PASS: E_star (0.65 E_Pl anchor/cutoff) vs E_QG,1 =
+   1/mu separation intact (run-69/71 fix); n=1 Amelino-Camelia label
+   correct (linear-in-E observables from quadratic-in-E generator);
+   commutator(beta0)->Hamiltonian(mu) map exact at the fit-model level.
+3. Verified primary source from full text (pdftotext, arXiv:2304.00688 =
+   PRD 108, 102006 (2023)): beta0 < 62.4 (3sigma), B3,0,0, 5.505406 MHz,
+   m_eff 8.5 mg; fit model Eq.(4) matches paper transcription; hardening
+   sign + no anharmonicity subtraction confirmed (paper caveat accurate).
+   Table I secondary modes give weaker mu (2.2e-23, 4.1e-24): B3,0,0 is
+   the right choice.
+4. Staleness scan 2024–2026 (3 targeted WebSearches): NO published
+   mechanical/phonon bound stronger than beta0 < 62.4. PRL 135, 251402
+   (Dec 2025, Campbell-Mariani-Tobar-Goryachev) is MAGE (HFGW search, not
+   GUP). arXiv:2508.10389 / Commun. Phys. 2026 is a proposal. Pendulum
+   beta0 << 1 claims: metrologically disputed by the source itself, and
+   transcribe to mu ~ 4e-21 (kg mass) — weaker than BAW ceiling anyway.
+5. Photon-side anchor of the printed 5.3-decade claim: PRL 133, 071501
+   (2024) exists; abstract E_QG,1 > ~10 E_Pl consistent with (and less
+   conservative than) the paper's 8.2 E_Pl subluminal Table-I reading.
+6. baw_check.py: all printed numbers recomputed SI->eV, asserted within
+   0.2%; gaps 5.30 / 4.39 / 9.3 (8.6 at c0=1.5, H_inf=1e13 GeV) decades;
+   transcription identity mu-route vs beta0-route exact; unit-trap audit
+   (mode energy 31.7 GeV at 1 nm vs hbar*w = 2.3e-8 eV, n ~ 1.4e18).
+
+## Verdict
+CONFIRMED-CONSISTENT (THEOREM for arithmetic + citation facts). Printed
+ceiling eq:pred-baw-bound is correct and current; no supersession, no
+tension. No gated splice. Two flagged non-defects: LHAASO Table-I entry
+verified at abstract level only (paper reading is the conservative one);
+"35x" MICROSCOPE ratio computes 34.2x (2-sig-fig rounding).
+
+## Files staged (scratchpad only; ZERO repo writes — `git status` clean)
+- baw_numbers.md (deliverable)
+- baw_check.py (unit-tracked computation; ALL ASSERTIONS PASSED)
+- ledger_run88.md (this file)
+
+## ADVERSARY PASS (run 88, hunt #91) — VERDICT: CONFIRMED
+Attacks (i)-(iv) all fail to refute. Independent script baw_adversary_check.py
+(E_Pl from CODATA G; sympy secular re-derivation of source Eq.(4) and of the
+|mu| = beta0 m_eff c^2/E_Pl^2 match) — ALL ASSERTIONS PASSED. Campbell Table I
++ Eq.(3)/(4) verified verbatim from my own pdftotext; LHAASO Table I read
+directly (arm's gap CLOSED: 1.0e20 GeV = ML MINOS subluminal entry, exact);
+Vasileiou 7.6 E_Pl and MICROSCOPE eta verified. Staleness: nothing beats
+beta0<62.4 (MAGE = GW-only; 2508.10389 = proposal). Nits only: "35x" = 34.2x;
+"xi<0.1" rounds eta1-UL 0.11-0.12. No flip under any defensible re-reading
+(CCF-only still excludes Planck-natural x4.9 + Vasileiou x7.6). Zero repo
+writes re-verified (ISSUES.md diff = pre-existing RUN 82 block). Full report:
+baw_adversary.md.
+
+## FINAL ADJUDICATION (run 88 / hunt #91) — VERDICT: CEILING-CONSISTENT
+Adjudicator re-verified independently (2026-07-16):
+1. Tex spot-check: eq:pred-baw-bound (l.13697) prints |mu| <~ beta0_max
+   m_eff c^2/E_Pl^2 ~ 2.0e-24 1/eV, E_QG,1 >~ 5.0e14 GeV, citing
+   beta0 < 62.4 (3sigma, B3,0,0, 5.505 MHz, 8.5 mg) with the hardening-
+   sign/conservative-attribution caveats printed — exactly as both
+   agents transcribed. Run-48 chain anchors present (l.13665-13858).
+2. baw_check.py re-run: ALL ASSERTIONS PASSED (exit 0).
+3. baw_adversary_check.py re-run: ALL ADVERSARY ASSERTIONS PASSED
+   (exit 0; CODATA-G Planck scale, sympy secular derivation, stress
+   tests incl. weakest LHAASO CCF entry -> no conclusion flips).
+4. LHAASO closure verified at source: adv_2402.txt l.843 "EQG,1 >
+   1.0 x 10^20 GeV ... subluminal", l.731 "ML (MINOS)" — the tex's
+   8.2 E_Pl reading is exact and conservative. Arm's only gap CLOSED.
+5. Zero repo writes BY CONTENT: git diff ISSUES.md = RUN 82/HUNT #85
+   E-env block only; 0 hits for run-88/hunt-91/BAW/phonon/beta0/62.4.
+
+ADJUDICATED RECORD (per CEILING-CONSISTENT definition):
+- Printed bound STANDS: mu <~ 2.0e-24 1/eV (recomputed 1.996e-24,
+  0.2%), E_QG,1 >~ 5.0e14 GeV; current best published mechanical/
+  phonon bound, unsuperseded as of 2026-07 (two independent scans).
+- Verified gaps: 5.30 decades of beta0-class sensitivity to the
+  binding GRB-photon ceiling mu < 1.0e-29 (robust: 5.08 under the
+  weakest LHAASO entry); 4.39 decades to the Planck-natural point
+  (itself already photon-excluded x7.6-8.2); ~9.3 decades to the
+  surviving BO-matched anchor mu ~ 1e-33 1/eV (8.6-8.8 across
+  matched variants). No published bound reaches any surviving
+  anchor -> NO TENSION; paper's 5.3/4.4/"nine decades" honest.
+- Required improvement (m_eff = 8.5 mg platform): beta0 ~ 3.1e-4
+  (~2e5x) to match the photon ceiling; beta0 ~ 3.1e-8 (~2e9x) to
+  probe the matched anchor. Observable at ceiling: dw/w ~ 6.3e-14
+  at 1 nm drive (coherent mode energy 31.7 GeV, n ~ 1.4e18).
+GATED SPLICES: NONE (adversary-confirmed none needed; printed bound
+correct and current).
+REJECTED: (a) any splice for the two cosmetic nits — "35x" (computes
+34.2x, 2-sig-fig side remark) and "xi<0.1" (rounds eta1-UL 0.11-0.12);
+load-bearing values exact; (b) CEILING-STALE (no superseding bound
+found; MAGE PRL 135,251402 is GW-only, 2508.10389 a proposal);
+(c) TENSION (closest published reach 3.3-4.0 decades short of the
+surviving anchor).
+RESIDUALS (carried, non-blocking): search-completeness caveat on
+unindexed 2026 preprints; Campbell Table-I caption 3sigma/5sigma
+wobble is source-internal (numerical ceiling unchanged either way);
+LHAASO eta_1 cell alignment scrambled in pdftotext (E_QG rows
+unambiguous).
+GRADE: THEOREM (arithmetic/citation facts; staleness scan at
+no-counterexample level). Both agent labels THEOREM accepted.
+
+---
+### Main-session apply note — run 88 / hunt #91 (BAW phenomenology): CEILING-CONSISTENT, no splice (2026-07-16)
+
+The empirical column's laboratory channel is source-verified current and correct. The printed ceiling eq:pred-baw-bound (|μ| ≲ 2.0e-24 1/eV, E_QG,1 ≳ 5.0e14 GeV) is an exact transcription of the best published mechanical bound (Campbell–Tobar–Galliou–Goryachev PRD 108, 102006 (2023): β₀ < 62.4 at 3σ, B_{3,0,0} 5.505 MHz, 8.5 mg) — recomputed independently to 0.2%, β₀→μ mapping proved symbolically exact (sympy, zero residual), unsuperseded through 2026-07 (two independent staleness scans; the Dec-2025 MAGE PRL is GW-only). The 60-order unit trap resolved cleanly: the observable rides the coherent mode energy (~31.7 GeV at 1 nm drive), not per-phonon ħω. Conventions intact (E★ never enters sec:pred-baw; run-69/71 separation holds; n=1 Jacob–Piran label exact). The adversary CLOSED the arm's one gap by reading LHAASO Table I directly from source (tex's 8.2 E_Pl = the ML/MINOS entry, conservative). Verified gap statements: 5.30 decades to the binding GRB-photon ceiling; ~9.3 decades to the surviving matched anchor (needs ~2e9× improvement on the same platform; δω/ω ~ 6.3e-14 at the current bound) — all matching the printed 5.3/4.4/nine-decades text. NO tension, NO staleness, NO splice. Two cosmetic nits noted (35× computes 34.2×; ξ<0.1 rounds 0.11-0.12) — below splice threshold. Zero repo writes. Hunt #91 closed.
+
+# LEDGER — RUN 86 / HUNT #89 — ARM A2-nogo (type-II clock route for the m=0 IR gate)
+(2026-07-16, Claude Fable 5, arm A2-nogo. Deliverable: t2gate_nogo.md. ZERO repo writes.
+Sibling arms: A1-construct owns t2gate_construct.md; append below, do not edit this section.)
+
+## VERDICT: NEGATIVE-RESULT (theorem-grade on the three commissioned sub-questions,
+## model ceiling named). The register change LOSES what the gate consumers need.
+
+(i) n=1 clause consumes fixed background ESSENTIALLY — 4 independent joints:
+  (a) printed iff (l.20348-58): clause <=> (W1)+(W2); (W1)'s relata are the fixed-background
+      K_omega and the geometric boost; the BW witness boost is NOT affiliated to Ntilde
+      (run-77 adjudicated, ISSUES l.25984) => identity not transportable (one side leaves);
+  (b) flux form: consumer needs dQ = int_B <T_ab> chi dSigma (eq:clausius-SM-flux); run-34
+      lift split E_cp = E_bare + E_dress — dressing cures only O(G) E_dress; O(G^0) E_bare
+      (the consumed object) untouched, still divergent (ISSUES l.8454-59);
+  (c) wedge-scan quantifier: one identity PER WEDGE (l.20177) over the background's CHM
+      family; type-II is per-wedge/per-clock, no single algebra carries the scan;
+  (d) logical type (l.7085-91): Einstein = consistency condition ON the background; in
+      type-II the area and charge sectors are FUSED by construction (S_gen dictionary
+      consumes the constraint) => dressed first law is kinematic, constrains nothing.
+
+(ii) b_0/c' vs trace/c_0 — DISJOINT GAUGES, no double-fix, no cure:
+  - c' = state-dependent FIRST-ORDER operator-mixing channel (Kubo, log-div at m=0, b_0
+    zero mode); c_0 = state-independent ORDER-ZERO trace-scaling constant (cancels in all
+    delta^n, n>=1). Separating principle IN PRINT: rem:E0-nl-correction l.19549-67 ("no
+    state-independent constant can stand in for" state-dependent structure).
+  - CC mechanism (l.13607-09) spends the trace gauge ONCE, canonically, on the
+    Sakharov-counterterm accounting — orthogonal to c'; UNTHREATENED by the b_0 site
+    (small positive: no new tension). Same ambiguity fixed twice? NO — different
+    ambiguities; only c_0 fixed at all.
+  - In Ntilde the improvement re-enters as the FAMILY qhat_{c'} of equally-affiliated
+    charges: register cures EXISTENCE, gate is UNIQUENESS (no Ward id fixes c') +
+    DIVERGENCE (matter-sector Kubo, clock enters additively at O(1/N) — orthogonality
+    mechanism of prop:crossed-product-saturation-nogo l.19286-93 + run-34 S3). Both
+    survive verbatim; m=0 log-divergence is REGISTER-INVARIANT.
+  - Type-II trace does NOT revive Kugo-Ojima: P3 flips to pass but P2 (b_0 non-exact,
+    O(g^0), empty ghost sector) still fails — super-trace annihilates im Q only
+    (run-76 legs, ISSUES l.25506-09, 25527-30).
+
+(iii) affiliated corner charge does NOT generate the needed modular flow — 3 stacked:
+  (a) wrong generator: geometric boost not affiliated to Ntilde (run-77); does not commute
+      with cutoff/clock projections (printed disclaimer l.22225-37); e^{it qhat} = seed
+      modular flow on matter, = geometric boost ONLY IF (W1) — circular provenance
+      (Ntilde is built BY sigma^omega);
+  (b) wrong order: affiliation is O(G)~O(1/N), evaporates as G->0; clause object is
+      O(G^0) (run-34 S6 order-mismatch kill, ISSUES l.8355-68);
+  (c) wrong flow on trace side: sigma^tau = id in type II; dressed modular data need
+      Pi-compression (l.18530-32) which fails to commute with the boost; every route back
+      to the geometric flux passes through an object the register excludes by construction
+      — finiteness of the charge and flux form of the identity mutually exclusive.
+
+## TRAP COMPLIANCE: type-II availability GRANTED in full (paper constructs it; it IS the
+finite home of the charge — l.20497-501 correct as printed). No-go is strictly TRANSPORT.
+Positive arm's kinematic dressed identity CONCEDED as likely statable; it is a reframing.
+"Closed in native register" printable only as "statable and finite", never "clause
+discharged" (clause is iff-locked to (W1)+(W2), both fixed-background).
+
+## STAGED: t2gate_nogo.md (full analysis + gated splice candidate extending l.20502-05).
+## Grade: NEGATIVE-RESULT.
+
+## ZERO-WRITE ATTESTATION (ARM A2-nogo): unification.tex untouched (mtime Jul 15 19:38,
+pre-dates run). ISSUES.md shows ` M` in git — verified BY CONTENT to be the pre-existing
+RUN 82 / HUNT #85 ledger append (562 insertions, mtime Jul 16 00:05, before this arm's
+first activity 07:17). NONE of it is mine. This arm wrote ONLY t2gate_nogo.md and
+ledger_run86.md in the scratchpad.
+
+---
+
+# ARM A1-construct (append; 2026-07-16, Claude Fable 5). Deliverable: t2gate_construct.md.
+
+## VERDICT: POSITIVE — grade THEOREM as scoped (register change only; gate NOT closed).
+[T2-FL] the type-II-register m=0 first law, per BASE (i)-(iii):
+- (i) STATED: entropy = type-II trace entropy S = -Tr rho^ ln rho^ (= S_gen, CLPW additive
+  form l.19271, c_0 = trace normalization); charge = X^ = closure(K_omega + H^_cl), the
+  affiliated essentially-self-adjoint corner generator (thm:gravity-realisation(iii)
+  l.18691-704 = the printed corner charge l.20497-501); variation class = C^1 inner/coherent
+  normal-state families in the CLPW L^1 class through the dressed reference
+  (prop:step6-thermo(ii) pattern l.15904-15). Law: delta S_gen = delta<X^>.
+- (ii) PROVED-or-REDUCED: exact identity S = <X^> + ln Z - S_rel (4-line semifinite
+  algebra) + quadratic vanishing of S_rel (in print l.20508-10, thm:E0-lin). Tier L1 (free
+  m=0 dressed algebra, all normal-state variations): THEOREM, inputs all in print
+  {thm:gravity-realisation; CLPW/DEHK trace; BKM vanishing; omega_1 floor l.20462-72;
+  class-C witnesses l.17757-62}. Tier L2-strong (interacting n=1): REDUCED to the single
+  named open input omega_P-normality (l.20436-51) via App-E4 lift + Connes-cocycle
+  canonical iso (l.4676-78, l.4890) — register-agnostic constructive QFT, not a b_0 item.
+- (iii) b_0 AUDIT: HARMLESS IN-REGISTER, theorem-grade — c' multiplies an identically
+  conserved total derivative (printed l.20480-81) => NO register datum (Delta_omega, Tr,
+  omega^, rho^, X^) carries it; sole trace ambiguity = state-independent scaling gauge
+  = c_0, delta-invisible, canonically fixed by the CC mechanism (l.13609). NO re-entry
+  through trace normalization. RE-ENTERS exactly at the modular<->Noether dictionary
+  (R-i)/(W1) — every m=0-log locus in print is a boost-MOMENT object; [T2-FL] forms none.
+
+## COMPATIBILITY WITH A2-nogo (read after staging): NO CONTRADICTION — complementary.
+A2's transport no-go is about the CLAUSE/flux consumers (iff-locked to (W1)+(W2), fixed
+background); A1 never claims them (t2gate_construct.md §1 "deliberately NOT stated", §3C).
+A2's qhat_{c'} family point = the DICTIONARY ambiguity: which Noether-presented member
+equals X^'s matter leg IS (R-i)/(W1) — same re-entry locus as A1 §3(C). A1's canonical X^
+is torsor-free (modular+clock-defined); the c'-family lives only in the Noether
+presentation. Adjudication seam: the §4 splice phrase "closed in the framework's native
+register" vs A2's cap "statable and finite" — A1's claim is intermediate and precise:
+the FIRST LAW (identity-level, canonical charge, first-order state variations) is a
+theorem in-register; the CLAUSE (flux form, per-wedge scan, Einstein consumer) is not
+delivered — splice wording should say "the m=0 first law holds in the native register /
+the clause's identity remains open in the comparison register", never "clause discharged".
+
+## STAGED (A1): t2gate_construct.md (statement, proof/reduction, input table, b_0 audit,
+gated splice draft §4, self-audit §5). Grade: THEOREM (L1, L2-weak, b_0-in-register);
+REDUCED (L2-strong, one named open input).
+
+## ZERO-WRITE ATTESTATION (ARM A1-construct): this arm wrote ONLY
+scratchpad/t2gate_construct.md and this ledger append. git status re-checked: only the
+pre-existing ` M ISSUES.md` (RUN 82 append, verified by content/diff header — not mine);
+unification.tex clean.
+
+---
+
+# ADVERSARY (append; 2026-07-16, Claude Fable 5). Deliverable: t2gate_adversary.md.
+
+## VERDICTS (default-REFUTED prosecution; every anchor re-read in tex/ISSUES):
+- A1 [T2-FL]: CONFIRMED as scoped (THEOREM at the paper's own grading conventions).
+  Repairs (non-breaking): r1 reference-existence Z=Tr e^{-X^}<inf unstated (covered by
+  the imported CLPW package I2; add one line); r2 identity (a) II_infty needs difference
+  form (ln Z undefined there; first law (b) unaffected); r3 "dressed reference"/"=S_gen"
+  labels hold at the CLPW dictionary's printed precision (inherit with citation);
+  r4 state S_rel-differentiability as part of the class. Existence premises re-derived:
+  X^ consumed only as -ln(reference) + finite-expectation observable — no geometric flow
+  demanded, no (W1)/Noether object formed, NO fixed-background smuggle (I1-I7 audited;
+  omega_1 floor is modular-data, not BW). b_0 audit CONFIRMED all three channels; the
+  designated attack surface (c'-dependent register datum via wedge-edge dynamics) is
+  EMPTY — l.20288-20332 confines every printed c'-edge locus to the moment presentation.
+  No double-fix vs the CC mechanism (disjoint torsors; cross-confirmed by A2). Scope
+  discipline clean; wording hazards h1 ("an" not "the" first law + kinematic rider),
+  h2 (never cite conj:tomita as input — cite the Takesaki/E4 preamble theorems).
+- A2 [no-go]: CONFIRMED as NEGATIVE-RESULT. Downgrades: d1 "equally-affiliated
+  qhat_{c'} family" existence UNSUPPORTED (tension with own (i-b) E_bare-divergence and
+  A1's channel A; reword to presentation-torsor form — no-go gets STRONGER); d2 ISSUES
+  l.9498/10985 MISANCHORED for clock-projector non-commutation (lines carry M3/E2b
+  content; printed l.22225-37 covers P_{<=E*} only) — strike, rest (iii) on run-77
+  non-affiliation + circularity + run-34 order-mismatch (all verified). Scope the
+  (iii-a) coincidence claim to the interacting n=1 net (free BW is printed). Not a
+  strawman: register granted; obstruction specific at 4 joints; (i-d) STRENGTHENED by
+  bonus anchor l.19249-52 ("Einstein equations used as input").
+- BOTH: register bookkeeping explicit except A1's witness-lift step (name it) and A2's
+  d1 (the run's one genuine P3-style lapse). Partition clean after d1 reword. BOTH
+  SPLICES TARGET l.20502-05 — adjudicator must merge into ONE (A1 upgrade + A2 rigidity
+  + shared cap); neither apply-ready alone. Gate NOT closed, per both arms + this audit.
+
+## ZERO-WRITE ATTESTATION (ADVERSARY): wrote ONLY t2gate_adversary.md and this append.
+git status: only pre-existing ` M ISSUES.md` (RUN 82 append, re-verified via
+git diff --stat: 562 insertions at l.27250+, header RUN 82 / HUNT #85).
+
+---
+
+# FINAL ADJUDICATION (append; 2026-07-16, Claude Fable 5). RUN 86 / HUNT #89.
+
+## VERDICT: CLOSED-IN-REGISTER — type-II m=0 first law at THEOREM grade (as scoped),
+## gated splice upgrading the wall statement WITH the honest register scope; A2's
+## transport no-go is NOT displaced — it is co-printed as the rigidity clause of the
+## SAME splice. Gate NOT closed (all three parties + this adjudication).
+
+## WEIGHING (both arms vs the adversary; default-REFUTED prosecution survived)
+1. A1 [T2-FL construct] vs adversary: CONFIRMED as scoped. Repairs r1-r4 accepted as
+   non-breaking (r1 Z<inf line -> input table I2, splice says "in the CLPW class";
+   r2 II_infty difference form — splice states only the delta-form (b), ln Z-free;
+   r3 S_gen label inherited WITH CLPW citation; r4 class-differentiability explicit).
+   Wording hazards h1/h2 WIRED INTO the merged splice (h1: "an m=0 first law (the
+   register-native one)" + kinematic rider; h2: no conj:tomita citation — only
+   thm:gravity-realisation is cited). Grades stand: L1 + L2-weak THEOREM; L2-strong
+   REDUCED to the single named open input (omega_P normality, the printed hatch).
+2. A2 [transport no-go] vs adversary: CONFIRMED as NEGATIVE-RESULT. d1 accepted:
+   the qhat_{c'} "equally-affiliated family" existence claim is STRUCK, replaced by
+   the presentation-torsor form (no register datum selects a Noether representative;
+   each presentation's m=0 Kubo pathology persists) — no-go STRENGTHENED. d2 accepted:
+   ISSUES l.9498/10985 cites STRUCK; (iii-a) rests on run-77 non-affiliation +
+   circularity + run-34 order-mismatch (all adversary-verified); coincidence claim
+   scoped to the interacting n=1 net. Sub-grades stand: (i) THEOREM (printed iff +
+   run-77); (ii) THEOREM-grade separation + theorem-in-model persistence; (iii)
+   theorem-in-model + adjudicated; (i-c) stays structural, as self-labeled.
+3. Cross-arm: partition EXACT after d1 — A1's canonical X^ (=printed H^_grav) is
+   torsor-free; A2's uniqueness problem lives in the Noether PRESENTATION; both arms
+   independently locate the sole re-entry at the (R-i)/(W1) dictionary. Two-arm
+   positive: c'-vs-c_0 disjoint torsors, CC mechanism unthreatened.
+4. Why CLOSED-IN-REGISTER, not NO-GO: the menu's NO-GO is the verdict for A1 failing
+   with A2 standing. Here BOTH stand and are complementary by construction: the
+   CLOSED-IN-REGISTER verdict's binding "honest register scope" IS A2's content
+   (clause iff-locked to (W1)+(W2), fixed-background; dressed identity kinematic,
+   constrains nothing about g — bonus print anchor l.19249-52). Nothing is lost:
+   the no-go prints inside the same sentence as the upgrade.
+5. Not NARROWED/UNRESOLVED: no claim was left partially adjudicated; the adversary
+   broke nothing, and the one genuine P3-style lapse (d1) is repaired by reword.
+
+## GATED SPLICE: ONE merged splice (per adversary instruction — both arm drafts
+## target the same sentence and are superseded). Apply-ready verbatim OLD->NEW staged
+## at t2gate_splice_merged.md. AUTHOR-GATED: no repo write performed or scheduled.
+- Site: unification.tex l.20502-20505, the IR-gate cluster wall sentence
+  "The identity the paper's $n{=}1$ clause consumes lives in the fixed-background
+  algebra, so this does not close the gate; it locates it invariantly, and it is one
+  more instance of the type-II structure doing work the type-III$_{1}$ setting cannot."
+- Uniqueness VERIFIED: grep -c "locates it invariantly" = 1; "does not close the
+  gate" = 1 occurrence (l.20503). OLD block is unique verbatim.
+- NEW retains "does not close the gate; it locates it invariantly" VERBATIM, then:
+  (1) A1 identity-level upgrade [h1/h2, r1-r3 wording; printed notation
+  H^_grav / S_gen / CLPW class; omega_P caveat carried]; (2) A2 rigidity clause
+  [softened per A2-5: non-affiliation asserted ONLY for the geometric boost witness
+  (run-77 adjudicated); flux form + wedge scan = "not transportable"; torsor
+  orthogonality in presentation form per d1]; (3) shared cap [kinematic rider
+  "constrains nothing about g"; clause iff-locked to (W1)+(W2), fixed-background;
+  original closer preserved and extended].
+- RESTATEMENT-SITE AUDIT (wall framing: gate status UNCHANGED — no abstract/scope
+  edit required; all sites checked by grep + read):
+  * abstract (l.61-347): NO IR-gate/m=0 wall mention — clean, no edit.
+  * l.20332 "The SM n=1 first law is accordingly not a theorem at the present
+    ceiling": NO CONFLICT — that statement is about the (R-i)/flux form; the splice
+    itself carries the explicit distinction (register-native first law vs
+    boost--Noether presentation, which "remains open"). No edit.
+  * l.20459-60 ("honest SM wall is the infrared gate alone"), l.20473-76 ("one open
+    lever ... closed in the negative"), l.20491-92 ("finite home"): all remain true
+    verbatim; the splice strengthens, never contradicts.
+  * l.17848 (gapless omega_1->0 wall), l.19069/19859 (B1a edge wall), l.20688
+    (curved-rate wall), l.20922 (firewall): DIFFERENT walls — untouched.
+  * l.19073 "delivered by the crossed-product first law itself" (sole occurrence in
+    print): [T2-FL] formally supplies the invoked-but-never-stated object — the
+    splice is consistent and closes the adversary's structural finding.
+- Sanity: first-order-only discipline (printed second-order no-go l.20505-10
+  IMMEDIATELY follows the splice site and is untouched); "closed"/"discharged"
+  never used for the clause.
+
+## REJECTED (by this adjudication)
+- A1 standalone splice (t2gate_construct.md §4): superseded — h1 definite-article
+  overclaim; no kinematic rider; collides with A2's draft at the same sentence.
+- A2 standalone splice (t2gate_nogo.md end): superseded — "not affiliated to ---
+  not even statable in ---" overproven for the flux-form/wedge-scan relata (A2-5);
+  merged with softening.
+- A2 body claim "c'-parameterized FAMILY of equally-affiliated charges qhat_{c'},
+  each ... affiliated, self-adjoint, trace-finite": REJECTED as stated (d1);
+  presentation-torsor reword adopted (no-go unweakened — strengthened).
+- ISSUES l.9498 / l.10985 as anchors for clock-projector non-commutation: STRUCK
+  (d2; carry M3/E2b content). Printed l.22225-37 covers P_{<=E*} only; Pi-extension
+  remains plausible-but-uncited and is NOT consumed by the splice.
+- Any framing "gate closed" / "clause discharged" / "wall crossed": REJECTED by all
+  three parties and this adjudication; splice says "does not close the gate"
+  verbatim and "remains open precisely in the fixed-background comparison register".
+- Abstract/scope edits: NOT NEEDED (gate status unchanged; audit above).
+
+## STANDING ATTACK SURFACES (carried forward, from the adversary)
+- vs [T2-FL]: exhibit a c'-DEPENDENT register datum (foreclosed unless gravity is
+  switched on inside the fixed-background wedge net); or empty class C at m=0 in the
+  dressed algebra (foreclosed by scalar CLR witnesses + the named witness-lift step).
+- vs the no-go: a single type-II object carrying the per-wedge scanning family
+  (breaks (i-c), the only structural-grade joint); or omega_P-normality PLUS a
+  register-internal Noether presentation (would move the gate itself).
+
+## ZERO-WRITE ATTESTATION (ADJUDICATOR), verified BY CONTENT 2026-07-16:
+git status: ONLY ` M ISSUES.md`; git diff ISSUES.md = 674 insertions, ALL of them
+the RUN 82 / HUNT #85 + RUN 83 / HUNT #86 + RUN 88 / HUNT #91 ledger appends from
+OTHER sessions (diff headers listed; grep of the diff for "run 86|hunt #89|t2gate|
+type-II clock route" = ZERO hits). unification.tex: git diff = 0 lines, mtime
+Jul 15 19:38 (pre-run). This adjudication wrote ONLY this ledger append and
+t2gate_splice_merged.md in the scratchpad. The merged splice is STAGED, not applied.
+
+---
+### Main-session apply note — run 86 / hunt #89 (Type-II clock route): CLOSED-IN-REGISTER, merged splice applied (2026-07-16)
+
+The never-swarmed second lever of the m=0 IR gate resolved with BOTH arms landing compatibly, adversary-CONFIRMED after default-REFUTED prosecution, and the adjudicator's single MERGED splice applied at the l.20502-05 wall sentence. Rebuild clean 0/0/0, 330 pp.
+
+THE THEOREM [T2-FL]: on the clock-adjoined (type-II) algebra, the m=0 first law δS_gen = δ⟨Ĥ_grav⟩ is a THEOREM for first-order normal-state variations about the dressed reference in the CLPW class — charge = the affiliated corner generator of thm:gravity-realisation, entropy = the Type-II trace entropy in the CLPW additive form (up to c₀). Interacting n=1 strong form conditional ONLY on ω_P-normality (the paper's printed cocycle hatch, register-agnostic); state-variation form unconditional. b₀-harmlessness in-register at theorem grade: c′ multiplies a total derivative → enters no register datum; the sole trace freedom is the state-independent scaling gauge, spent once and orthogonally by the CC mechanism (no double-fix; the CC mechanism cross-confirmed unthreatened by both arms independently).
+
+THE CO-PRINTED NO-GO (A2, NEGATIVE-RESULT, four joints): the gate does NOT close — the n=1 clause is iff-locked to (W1)+(W2); the geometric boost witness is not affiliated to Ñ (run-77 adjudicated); the one-sided flux form and per-wedge scan are not transportable; the dressed identity is KINEMATIC (area+charge sectors fused by construction — constrains nothing about g; bonus print anchor l.19249-52 found by the adversary). The improvement re-entry locus is exactly the boost–Noether presentation (R-i) — both arms located it independently.
+
+ADVERSARY REPAIRS HONORED IN THE APPLIED TEXT: r1 (CLPW-class reference existence), r2 (only the ln Z-free variation form printed — valid II₁ and II_∞), r3 (CLPW additive form named, c₀ honest), h1 (indefinite article "an m=0 first law"), A2-5 (non-affiliation asserted only for the BW witness; "not even statable in" dropped), d1 (q̂_{c′}-family claim rejected → presentation-torsor phrasing, no-go STRENGTHENED), d2 (two misanchored ISSUES cites struck). Restatement audit: abstract clean; l.20459/20473/20491 remain true verbatim; l.19073's previously unbacked "crossed-product first law" invocation NOW FORMALLY BACKED by [T2-FL]; no other site edited.
+
+NET EFFECT: the IR-gate wall statement rises from object-level ("finite home named") to IDENTITY-level ("first law holds in the native register, kinematically; the clause open precisely in the fixed-background comparison register — with a precise statement of the work type-II cannot do"). The gate itself: UNCHANGED, open, honest. Remaining open at this wall: ω_P-normality (strong form) — the same constructive-QFT object as the operator-grade wall. Hunt #89 closed.
+
+# LEDGER — RUN 84 / HUNT #87 (A1-construct): theta_* attainment upgrade
+
+TARGET: Rem `an17:attainment` in appendix_e2a_omega.tex (grep "Collar-margin
+coercivity floor: attainment note"), graded PLAUSIBLE; upgrade to THEOREM over
+U_omega by the thm-N0 engine (anchor-floor finite-dim compactness at fixed g_0
++ collar-margin propagation + Weyl), handling the empty-H^s-interior subtlety.
+
+## Standing facts verified against the live file (grep anchors, verbatim)
+- Collar norm + membership: grep "eq-collarnorm" — ||F||_{K_rho_a} = sup over
+  the open collar of max entry; U_omega members "lie within eps_a of g_0
+  there"; real fields, holomorphic extension unique (grep "well posed").
+- Compacts: grep "Fix the atlas" — K_Sigma subset K' subset K''; collar
+  K_rho_a = {dist(z,K'') < rho_a}. Ladder re-fixes K_Sigma as "a compact
+  causal slab ... foliated by {Sigma_t}_{t in [0,T]} in a fixed finite atlas"
+  (grep "compact causal slab"). Hence slab C^0 <= collar sup. VERIFIED.
+- det floor d_omega: grep "d_\\omega>0" — standing, itself derived by
+  anchor-bound + collar-Lipschitz (the engine's in-file scalar precedent).
+- Rung-1 display: grep "a^{jk}/a^{00}" — theta = min(1, inf_{K_Sigma x
+  U_omega} lambda_min(a^{jk}/a^{00})) >= theta_* := min(1, theta_0^anch/2).
+- Consumption interface: grep "consumed downstream" — only 1/theta <=
+  1/theta_*; P_*, Q_* the Tice polynomials (grep "(Rung~1); $Q_*,P_*,T$").
+- Engine precedents at THEOREM in-file: thm-N0 (an17:lem-compact +
+  an17:rem-topology + collar transfer cap eps_a <= m_0^anch/(4C'_tr));
+  delta_0 (an17:no-glancing, uniform spacelikeness over the ball).
+
+## What was done
+1. Re-derived the existence premises per the RUN-48 LAW (see theta_proof.md
+   sec 0-2): the right compact set is slab x atlas x unit-covector sphere at
+   the FIXED g_0; the Weyl step is 1-Lipschitzness of lambda_min in the
+   OPERATOR norm on the real symmetric quotient matrix a^{jk}/a^{00} read on
+   the real slab; the eps_a collar cap controls exactly the slab C^0 norm the
+   algebraic coefficient map consumes (K_Sigma subset K'' subset K_rho_a).
+2. Found and fixed TWO precision slips in the live sketch (existence-constant
+   level, nothing downstream moves):
+   (i) l.2811 "|a^{00}| >= d_omega" conflates the det floor with the scalar
+   spacelikeness floor — d_omega floors det g only; a^{00} needs its OWN
+   anchor floor d_00 + collar propagation (same engine, scalar level).
+   (ii) l.2813 "the cap ... of Part 1" — Part 1's stated caps are
+   eps_0/C_emb and m_0^anch/(4 C'_tr); the two theta caps are imposed HERE,
+   harmlessly (all exports are forall-over-U_omega, monotone under shrinking
+   eps_a; g_0 in U_omega keeps it nonempty).
+3. Completed the proof (theta_proof.md): anchor floors d_00, theta_0^anch by
+   finite-dim Euclidean compactness at the single fixed g_0 (positive
+   continuous function on compact slab x sphere; degenerate stratum EMPTY on
+   the slab by anchor nondegeneracy — simpler than lem-compact's excision);
+   collar-Lipschitz C_inv (adjugate + resolvent identity) -> quotient
+   Lipschitz C_a; Weyl 1-Lipschitz; caps give lambda_min >= theta_0^anch/2
+   pointwise for every g in U_omega; inf of a set bounded below needs NO
+   attainment — the empty-interior subtlety is thereby handled (the only
+   attained minimum is finite-dimensional at g_0; mirrors an17:rem-topology).
+   Non-circular constant chain: d_omega -> R_omega -> B_inv -> C_inv -> d_00
+   -> C_a, all fixed by (g_0, rho_a, atlas, n); a-priori normalization
+   eps_a <= 1 breaks the R_omega(eps_a) circularity.
+4. Staged the GATED splice theta_draft.tex: 5 blocks (B = the remark -> lemma
+   + proof; A/C = the two grade-line consumers l.3141/l.3428; D = the Rung-1
+   body precision fix; E = the Part-4 header comment). All OLD blocks
+   verbatim-unique (verified by grep -c). NOT applied to the repo.
+
+## Verdict
+THEOREM over U_omega, relative to the standing gauge data (the fixed foliated
+compact causal slab with dt and partial_t both g_0-timelike — the anchor
+nondegeneracy, a one-point statement exactly parallel to thm-N0's "not
+everywhere phi''-flat") and the Part-1 det floor. theta_0^anch, d_00, C_inv,
+C_a are existence constants, not numerically certified, not quoted
+downstream; only 1/theta <= 1/theta_* is consumed.
+
+## Residual after the upgrade (honest; per task instruction)
+- theta_* LEAVES the M1 constant-side residual. Run-83's C_W tracking
+  assembly now stands at the grade of its remaining leaves.
+- It does NOT close gap (b) wholesale and does NOT move M1. Remaining
+  PLAUSIBLE leaves per the run-83 adjudication: {(a) BFV-quadrature bridge
+  premise; (E-env)-existence + off-BFV state-anchoring; C_Delta2}. Post-
+  upgrade M1 constant-side modulo-list: {(D0) seed; (E-env)-existence +
+  off-BFV state-anchoring; C_W/W_* tracking (executed, PLAUSIBLE via its
+  remaining leaves); clause (iii) Sanders}. (N-c) PLAUSIBLE and the named
+  residues (E-env)/#A/(D0)/#B' untouched.
+
+ZERO writes to any repo file this run (staged files live in scratchpad only).
+
+---
+
+## FINAL ADJUDICATION (run 84 / hunt #87) — arm vs adversary. VERDICT: UPGRADED.
+
+Weighed the arm (THEOREM claim) against the default-REFUTED adversary
+(CONFIRMED on all four fronts). Adjudicator re-executed every mechanical gate
+on the LIVE file and re-derived the load-bearing algebra independently;
+nothing rests on either agent's say-so.
+
+ADJUDICATOR'S OWN CHECKS (this session, all PASS):
+1. OLD-block uniqueness: python count=1 for each of A/B/C/D/E against the
+   live appendix_e2a_omega.tex (adjud_verify.py, this scratchpad).
+2. Labels/refs consumed by the NEW text each defined exactly once in the live
+   file (an17:slice-ladder, thm-N0, lem-compact, no-glancing, rem-topology,
+   attainment); bibitem ChruscielGrant2012 exists; NO new label/bibitem.
+3. Symbol collisions: d_{00}, B_inv, C_inv, R_a — zero pre-splice hits.
+4. Quotation discipline: theta_0^anch (7 hits) and C_a (3 hits) ALL inside
+   the two spliced loci (Rung-1 body l.2803-2815; remark l.3170-3188); the
+   only \ref{an17:attainment} is l.3428 = BLOCK C; cross-repo grep: no other
+   tex file references the label or the constants. "Not quoted downstream"
+   stays true post-splice.
+5. Restatement sweep, FULL input set: every grade-carrying site of the
+   theta_*/attainment grade is covered by exactly the five blocks (l.2524=E,
+   l.2804-2815=D, l.3141=A, l.3170-3188=B, l.3427-28=C). Grade-free mentions
+   (l.1826-27, 2391-92, 3132-33 subsection title, 3525, 3819-22) stay true
+   (stronger, post-upgrade). Zero "attainment" tokens in any other tex file;
+   port_m3.tex's theta_* is an UNRELATED transversality threshold; the
+   unification.tex "coercivity" hits are generic (S3)-(S4) assumptions.
+   ISSUES.md hits are historical run-15/16/16b/83 ledger records (Alex-owned,
+   correct as history, NOT splice targets).
+6. LaTeX mechanics of BLOCK B: lemma/proof envs balanced 1/1, displays 4/4,
+   $-parity even, brace balance 0. BLOCK D OLD/NEW both end at "consumed
+   downstream." preserving the " Tice Thm.~1.2.1" tail — replacement
+   well-defined at the mid-line boundary.
+7. Mathematics re-derived by the adjudicator: ADM inverse identities
+   (a^{00}=N^{-2}, M_0=N^2h^{jk}-beta^j beta^k), Cauchy-Schwarz floor
+   (N^2-|beta|_h^2 = -g_0(d_t,d_t)), adjugate bound B_inv, resolvent
+   identity, entry<=op-norm, principal-compression monotonicity, quotient
+   decomposition C_a, Weyl 1-Lipschitz lambda_min in the OPERATOR norm
+   (Bhatia Cor. III.2.6), cap arithmetic, frozen-d_omega non-circularity
+   (shrinking eps_a only raises the inf). ALL CORRECT.
+8. Run-83 concordance: pre-upgrade modulo-list read from ISSUES.md l.27770+
+   verbatim; the run-83 downgrade of gap (b) was SOLELY theta_* ("NO arm
+   executed the attainment upgrade" — this run is the sanctioned follow-up).
+
+VERDICT: **UPGRADED.** Rem an17:attainment: PLAUSIBLE -> **THEOREM over
+U_omega**, relative to the now-PRINTED standing gauge data (S5)=(P1)+(P2) at
+the fixed g_0 (one-point, decidable; (P2) IS theta(g_0)>0, always tacitly
+consumed by Rung 1's A^0>=theta I) and the Part-1 det floor d_omega — the
+thm-N0 house relativity convention, premise list strictly smaller. The two
+live-sketch precision slips (l.2811 d_omega/d_00 conflation; l.2813 cap
+attribution) are REAL and the splice is a net correctness gain independent
+of the upgrade. Existence constants only; nothing downstream moves (only
+1/theta<=1/theta_* consumed, Tice locus).
+
+GATED SPLICE: **AUTHORIZED** (adversary-confirmed + adjudicator-confirmed).
+theta_draft.tex, 5 blocks A-E, target appendix_e2a_omega.tex, ALL FIVE
+TOGETHER (B introduces the lemma A/C/D/E cite). Per house precedent (run 16:
+"the author applies ... via the main session") the swarm makes ZERO repo
+writes — the splice is apply-ready for the author/main session. Optional
+author polish at apply (cosmetic, non-blocking, adversary nits): (a) BLOCK B
+"fixed by $(g_0,\rho_a,\text{atlas},n)$ alone" — exact phrasing would be
+"fixed by the standing data" (B_inv rides d_omega, which rides Part 1's
+s-dependent cap choice); (b) proof-file-only informality "no cap's RHS
+depends on eps_a" reads correctly as d_omega-frozen-at-Part-1's-cap.
+
+REJECTED: nothing. (Contrast run 83: m1_track_draft.tex REJECTED for
+laundering theta_*; run 84's draft is the honest execution of exactly the
+upgrade run 83 demanded.) The three adversary nits recorded above are
+non-blocking; the arm's "(a) BFV-quadrature bridge premise" leaf-name is a
+paraphrase of run-83's "(a) leaves = {(D0),(E-env)}" — final modulo-list
+identical either way.
+
+RESIDUAL AFTER THE UPGRADE (exact, run-83 vocabulary): theta_* attainment-
+note is STRUCK from the constant-side list. Post-upgrade M1 constant-side
+modulo-list: **{(D0) seed; (E-env)-existence + off-BFV state-anchoring;
+C_W/W_* constant-tracking (EXECUTED run 83, still PLAUSIBLE, reducing
+linearly to the remaining leaves); clause (iii) Sanders (separate)}**.
+Gap-(b) constant-side residual: {gap-(a) leaves = {(D0),(E-env)}; C_Delta2}
+— theta_* no longer among them; the run-83 C_W assembly now stands at the
+grade of its remaining leaves. Gap (b) does NOT close wholesale; (N-c) stays
+PLAUSIBLE; named residues (E-env)/#A/(D0)/#B' untouched; **M1 UNMOVED**.
+
+ZERO REPO WRITES by this adjudication (verified by content below).
+
+---
+### Main-session apply note — run 84 / hunt #87 (θ_* attainment): UPGRADED to THEOREM, 5-block splice applied (2026-07-16)
+
+The batch favorite landed. Rem an17:attainment (the Rung-1 coercivity floor θ ≥ θ_* = min(1, θ_0^anch/2) > 0 over U_ω) upgraded PLAUSIBLE → THEOREM by the third in-file run of the Part-1 collar-margin engine (after m_0^anch and δ_0) — strictly simpler than both precedents (no degenerate-stratum excision, no holomorphic flow). Adversary CONFIRMED on all four fronts after independent re-derivation (ADM identities, adjugate/resolvent chain, Weyl 1-Lipschitz in the OPERATOR norm — the arm correctly used Bhatia Cor. III.2.6, not the collar norm; empty-H^s-interior handled by lower-bound-on-infimum, no attainment claimed; non-circular constant chain d_ω→B_inv→C_inv→d_00→C_a). The adjudicator independently re-executed the load-bearing algebra AND re-ran every mechanical gate (all 5 OLDs verbatim-unique; labels/bibitems resolved; new symbols collision-free; "not quoted downstream" preserved post-splice).
+
+APPLIED: all 5 blocks together (A intro grade sentence; B remark→lemma+proof, label an17:attainment kept; C Part-4 summary grade token; D Rung-1 body precision fix; E header comment). TWO REAL SKETCH DEFECTS corrected by the splice: l.2811 "|a^{00}| ≥ d_ω" conflated the det floor with the needed scalar spacelikeness floor d_00 (the det floor alone does not stop a^{00} vanishing on a null-going foliation); l.2813 cap misattribution to Part 1. Rebuild clean 0/0/0, 331 pp (the lemma+proof added a page). Restatement sweep: all grade-carrying sites covered by exactly the five blocks; grade-free mentions verified true post-upgrade; no other file carries the token.
+
+NET EFFECT: θ_* leaves the M1 constant-side list — the exact blocker the run-83 adversary identified ("no arm executed the attainment upgrade") is now executed. Post-upgrade M1 modulo-list: {(D0) seed; (E-env)-existence + off-BFV state-anchoring; C_W/W_* tracking (executed run 83, still PLAUSIBLE via its remaining leaves {(D0),(E-env)},C_Δ2); clause (iii) Sanders (separate)}. Honest scope: gap (b) does NOT close wholesale; M1 UNMOVED at PLAUSIBLE. The human-paper residual is now purely the (D0)/(E-env)/C_Δ2 core. Hunt #87 closed.
+
+# LEDGER — RUN 85 / HUNT #88 — A1-construct — (D0) seed-data residue at b=1
+
+TASK: derive the (D0) Cauchy-data levels at the b=1 field slot, FIXED seed metric,
+seed-adjacent slice; existence of the restriction first, then the level count at the
+cone crossing under honest transverse pricing.
+
+## COURSE OF THE RUN
+1. ISSUES.md sweep: found PRIOR ART the brief missed — run 57's port_d0.tex (in repo,
+   \input via appendix_e2a_ports.tex) closed (D0) at the seed given (P-a)+(P-b);
+   adversary HOLDS (ISSUES l.21204); run 83 still lists (D0) open (l.27573-27574).
+   The brief's "fixed-metric class never attacked" is stale.
+2. Read the load-bearing sites: an17:named-residues (l.3321-24), A3 (l.2882-2900),
+   slice-ladder demands (l.2714-2721), transverse-data (l.2631-2658), no-glancing
+   (l.2547-2590), (N-a) (l.3203-3229), port_d0.tex in full.
+3. BASE step 1 (existence): PASSES — all four legs continuous; WF of the tail is
+   null-conormal (vertex fiber null too), N*Sigma_0 timelike, empty glancing set =>
+   Hormander restriction. THEOREM, unconditional.
+4. BASE step 2 (level count): INVERSION FOUND. sigma|_slice vanishes SIMPLY on the
+   crossing sphere (slope ~ tau; forced by no-glancing itself) => sigma^k log sigma
+   restricts at transverse order k, i.e. H^{k+1/2^-}, NOT the r-graded alpha+1/2 = 2k+1/2.
+   Checks run: sympy (sigma|_slice = tau u + u^2/2; sigma^3 = u^3(2tau+u)^3/8);
+   FFT decay of u^3 log|u| = -4.000 (H^{7/2^-} sharp); flat massive vacuum Bessel
+   v_3 = m^8/(18432 pi^2) != 0 (counterexample coefficient nonzero).
+5. Result: honest seed data column (7/2^-, 5/2^-, 5/2^-, 3/2^-) vs printed A3
+   (13/2^-, 11/2^-, 11/2^-, 9/2^-). b=1 field slot 5/2^- SHARP vs demand
+   H^{sigma_1+1}, sigma_1 > 3/2 strictly: missed for EVERY s > 11 (0^+ at slot,
+   1 order at del^2-consumer, 3 orders vs printed cap).
+
+## VERDICT
+(D0): NEGATIVE-RESULT (sharp, in-scope counterexample: flat massive vacuum, free
+massive scalar). Existence half: THEOREM. Levels: THEOREM given (P-a), sharp.
+The obstruction is real, at the cone crossing, exactly where the task said to look —
+with the opposite sign to the expected clearance.
+
+## COLLATERAL (named, for the no-go ledger owner; NOT edited anywhere)
+- Lem an17:transverse-data FALSE AS STATED for alpha > 0 (r^2 ~ 2|sigma| reading);
+  alpha = 0 correct; alpha < 0 underbooked (safe). Honest rule: transverse order =
+  sigma-power k; height (k+1/2)^-.
+- Overbooked consumers (same disease): A3/A4 columns, clause (i)/(ii) profile caps,
+  B3/Nc-corrected slice caps, locked-4d raised caps, N=1 calibration numbers (death
+  verdict stands a fortiori), port_d0 Prop an57d0:main T-legs (its lever + w_0 C^infty
+  lemmas survive untouched).
+- Untouched: coefficient columns everywhere (incl. the s>11 commutator pin), T1',
+  an17:G/DoD/no-glancing/refund, singular-leg bookings, diagonal values as objects.
+- Repair see-saw (PROVISIONAL): b=0 heals at N=3 (fence s>11 unmoved); b=1 needs N=4
+  and the N=4 source rung moves the slice fence to ~ s>13. Dedicated run required.
+
+## COMPLIANCE
+Run-48 law: honest transverse pricing (sharpened downward, no radial alpha+3/2).
+Collar-localized only; free massive scalar only; existence before levels; grep anchors
+only; ZERO repo writes (git status clean; only scratchpad files staged).
+
+## STAGED
+- scratchpad/d0_proof.md (282 lines: full derivation, counterexample, demand tables,
+  blast radius, repair see-saw).
+- NO d0_draft.tex: nothing lands as a splice — a draft would manufacture a promotion
+  on a negative finding (run-83 arm-3 discipline mirrored).
+
+---
+
+# FINAL ADJUDICATION — RUN 85 / HUNT #88 — arm (A1-construct) vs adversary
+
+## VERDICT: OBSTRUCTED (adversary-CONFIRMED; grade NEGATIVE-RESULT, sharp)
+
+THE STATED SHORTFALL AT b=1 (the honest numbers, triple-verified):
+- b=1 FIELD slot: seed supplies H^{5/2^-}(Sigma_0) SHARP; ladder consumes
+  H^{sigma_1+1}, sigma_1 = min(s-19/2, 7/2^-) > 3/2 STRICT (Morrey, s>11)
+  => demand > 5/2 strictly. MISSED for EVERY admissible s:
+    0^+  (bare slot; open-above demand vs open-below supply — no s clears),
+    1    (del^2-consumer: A4 -> B2 -> Morrey needs 7/2^+),
+    3    (printed A3/port_d0 cap 11/2^-).
+- b=1 momentum slot: 3/2^- vs > 3/2 strict: missed 0^+.
+- b=0: bare slots clear for s < 11.5 but die 0^+ at their del^2-consumer —
+  the honest N=2 slice architecture is transversally profile-starved at every s.
+- Existence sub-leg: THEOREM, unconditional (WF null-conormal incl. vertex fiber
+  vs timelike N*Sigma_0, empty glancing set, Hormander 8.2.4; y-uniform incl. tau=0).
+
+## ADJUDICATOR'S OWN CHECKS (beyond arm + adversary)
+1. v_3 re-derived BY HAND from K_1/I_1 series: log-coeff = (m^2/16pi^2)
+   (m^2/2)^k/(k!(k+1)!); k=3 => m^8/(16*8*144 pi^2) = m^8/(18432 pi^2). Third
+   independent derivation (arm sympy, adversary sympy, adjudicator hand). All v_k>0.
+2. Exact FT re-checked: (d/du)^3[u^3 log|u|] = 6 log|u| + 11 => |FT| = 6pi/xi^4
+   => H^t iff t < 7/2. Sharp. Field slot u^2 log|u| => 5/2^- likewise.
+3. Simple vanishing by hand: flat sigma|_Sigma = (1/2)(R-tau)(R+tau) = tau u + u^2/2;
+   r|_Sigma = sqrt(|u|(u+2tau)) ~ sqrt(2 tau|u|), Holder-1/2 — the printed proof step
+   "profile is u^alpha log|u| times a C^1-bounded factor" (an17:transverse-data,
+   pre-splice l.2646-2648, read verbatim this session) is exactly the false step.
+4. Anchors read verbatim: (D0) residue; A3 column (13/2,11/2,11/2,9/2)^-; demand
+   sigma_1 pair; Morrey s>11 pin; port_d0 display + T-leg "one r-power per
+   derivative / |grad sigma|_g = r" (the second, independent error: g-norm vs
+   coordinate gradient — coordinate gradient is O(1) at the cone).
+5. Demand-reading audit: arm graded ALL THREE readings incl. the friendliest;
+   adversary verified no friendly-demand selection; I re-verified the tables.
+
+## REJECTED
+- SUPPLIED: no reading clears at any admissible s. REJECTED on the verified tables.
+- NARROWED: nothing partial survives on this route — the named open slot (b=1 field)
+  fails at every s AND b=0 dies 0^+ at its consumer; the failure is architectural
+  (transverse profile starvation), not a residual-slot matter. REJECTED.
+- All 8 adversary steelmen of the printed booking (sigma-graded reading rescues the
+  LEMMA but not the alpha=2k consumptions; fan/y-averaging; tilted slices — forbidden
+  by no-glancing; cutoff exclusion of S_y; v_3 cancellation — v_3 > 0; branch-jump
+  softening; tangential smoothing; Sigma x Sigma diagonal reading). ALL FAIL.
+- Arm's N=3 (b=0) / N=4, fence ~s>13 (b=1) repair numbers AS BANKABLE: kept
+  PROVISIONAL and further demoted — adversary extension shows the see-saw reused
+  printed SOURCE columns that are themselves infected (slab register p=alpha+2 is
+  the vertex-zone height; honest slab profile of sigma^2 log sigma near the crossing
+  is 5/2^-, so the b=0 source rung survives only s<11.5). Only the k-count
+  direction survives. Dedicated repair run required before quoting any fence.
+- Any repo write this run, incl. a gate-line edit: the gate list goes to the
+  author's own ledger, not the tree.
+
+## GATED (adversary-endorsed gate-don't-delete list, for the author; NOT edited)
+an17:transverse-data (statement + proof, alpha>0 clause); A3 availability column;
+A4 del^2 caps; B2 commutator consumption; clause (i)/(ii) profile caps;
+B3/Nc-corrected slice caps; locked-4d raised caps; N=1 calibration numerology
+(DEATH verdict stands a fortiori); port_d0 Prop an57d0:main display + T-leg
+calculus; PLUS (adversary extension) A1/A2 source rungs + eq-slice-fubini
+consumption. UNTOUCHED: coefficient columns (incl. the s>11 commutator pin), T1',
+an17:G/DoD/no-glancing, refund identity, all alpha<=0 bookings, an57d0:lever,
+an57d0:state, diagonal coincidence values as objects.
+
+## CARRY-FORWARD NITS (must be named in any eventual author-side splice)
+- NIT-1: TWO distinct printed errors, name both — (a) restriction rule alpha+1/2 at
+  r-graded alpha; (b) per-derivative eikonal grading (one r-power per derivative).
+- NIT-2: compactness scope of the counterexample — heal via collar-locality or the
+  flat cylinder R x T^3 (image sums smooth on the short collar; v_3 term unchanged).
+- Brief hygiene: "fixed-metric class never attacked" was STALE (run-57 port_d0
+  attacked it; its HOLD was scoped to S1/S2/S3, not this arithmetic). Arm caught it.
+- Run-48 law: SHARPENED downward (tails: transverse k+1/2 sigma-graded =
+  (alpha/2)+1/2 r-graded), not contradicted.
+
+## TREE-STATE NOTE (adjudication session)
+A PARALLEL run spliced the appendix mid-adjudication (theta_* hunks at pre-splice
+l.2521/2809/3143/3173/3424; +107 net lines after l.3173): all arm/adversary line
+anchors refer to the PRE-splice tree; the (D0) residue item now sits at l.3428-3431.
+Marker greps of BOTH repo diffs (18432 / run 85 / hunt #88 / honest column / 5/2^-):
+0 hits — ZERO run-85 repo writes CONFIRMED BY CONTENT. Prefer label anchors
+(an17:*, an57d0:*) over raw line numbers in any follow-up.
+
+## LEDGER-STAGED CONSEQUENCES (for the author's ISSUES.md, at his discretion)
+1. (D0) status: named residue -> OBSTRUCTED on the printed route (NEGATIVE-RESULT,
+   sharp): supplied (7/2,5/2,5/2,3/2)^- vs consumed; b=1 field slot 5/2^- vs >5/2.
+2. lem:W2star: gate does NOT lift; the (D0) gate is now a confirmed obstruction of
+   the printed slice-energy route, upgrading "open input" to "route dies as printed;
+   repair = N>=4 truncation (fence provisional ~s>13, source columns must be
+   re-derived) or consumer rewiring off slice-Sobolev tails".
+3. an17:transverse-data: FALSE AS STATED for alpha>0 (alpha=0 correct; alpha<0
+   underbooks, safe; radial alpha+3/2 clause correct; sigma-graded reading true+sharp).
+4. run-57 port_d0 closure: display false as printed (T-leg arithmetic); lever +
+   state lemmas survive; run-57 adversary HOLD not contradicted on its own scope.
+5. Adversary extension: A1/A2 source-rung slab bookings overbooked off-diagonal
+   (b=0 source survives only s<11.5) — named-site, spot-checked at b=0 only; the
+   dedicated repair run must sweep every (c,p) slab booking meeting the cone
+   off-diagonal.
+
+FINAL: OBSTRUCTED. Both halves of the run bank: existence THEOREM (permanent,
+survives any repair) + sharp obstruction THEOREM-given-(P-a) (kills the printed
+route at b=1 for every s). Nothing lands in the tree; everything lands here.
+
+---
+### Main-session note — run 85 / hunt #88 ((D0) seed-data): OBSTRUCTED at theorem grade — A GENUINE OVERCLAIM FOUND IN THE BANKED LADDER (2026-07-16)
+
+THE FINDING (adversary-CONFIRMED after independent re-derivation; adjudicator added a THIRD independent v₃ derivation by hand): (D0) is NOT suppliable at the consumed demand on the printed route. The slice restriction of W_{g₀,2} EXISTS (THEOREM, unconditional — WF-transversality + no-glancing ⇒ Hörmander trace), but the same no-glancing transversality that legalizes it FORCES σ to vanish SIMPLY on the crossing sphere — so the seed tails price at the σ-power (α/2)+1/2, not the printed r-power α+1/2. Honest seed levels: (7/2⁻, 5/2⁻, 5/2⁻, 3/2⁻) vs the printed A3 column (13/2⁻, 11/2⁻, 11/2⁻, 9/2⁻). The b=1 field slot delivers H^{5/2⁻} SHARP against demand H^{σ₁+1}, σ₁>3/2 strictly — MISSED FOR EVERY s>11 (0⁺ bare / 1 order at the ∂² consumer / 3 orders vs the printed cap). Exact counterexample: flat massive vacuum, v₃ = m⁸/(18432π²) ≠ 0 (sympy + FFT slope −4.000 + hand Bessel-series, three independent derivations). TWO distinct printed errors: (i) Lem an17:transverse-data FALSE AS STATED for α>0 (its proof step "profile is u^α log|u| times C¹-bounded factor" fails — r|_Σ ~ √(2τ|u|) is Hölder-1/2 in u; α=0 instance correct, α<0 safe, radial α+3/2 correct); (ii) an independent per-derivative eikonal-grading error (|∇σ|_g = r is the g-norm; the coordinate gradient is O(1) at the cone). Eight steelmen of the printed booking attempted and ALL FAILED (incl. fan-averaging, tilted slices — no-glancing forbids, v₃ cancellation — all v_k>0). Adversary extension: the A1/A2 SOURCE rungs are additionally overbooked (slab p=α+2 is the vertex-zone height); b=0 source survives only s<11.5.
+
+BLAST RADIUS (gate-don't-delete list, staged for author action): an17:transverse-data (α>0 clause, statement+proof); A3 availability column; A4 ∂² caps; B2 commutator consumption; clause (i)/(ii) profile caps; B3/Nc-corrected slice caps; locked-4d raised caps; N=1 calibration numerology (death verdict stands A FORTIORI); port_d0 Prop display + T-leg calculus; A1/A2 source rungs + eq-slice-fubini. UNTOUCHED (verified): coefficient columns incl. the s>11 commutator pin; T1′; an17:G/DoD/no-glancing; the refund identity; all α≤0 bookings; thm-N0; the run-84 θ_* lemma (coercivity, not a profile booking); run-86/87 content (different sectors). Repair direction: N≥4 truncation with fence provisionally ~s>13 (source columns to be re-derived — the arm's see-saw reused overbooked columns, demoted), or consumer rewiring off slice-Sobolev tails; a dedicated repair run. WHAT BANKS PERMANENTLY: the existence THEOREM, the sharp counterexample, the honest (α/2)+1/2 transverse rule.
+
+STATUS: NO repo splices landed (correct for a negative finding; gate list to the author). The printed ladder columns currently stand OVERCLAIMED in print — the gating-edit production run (run 89) is required before the paper is honest at this cluster. M1 impact: the (D0) leaf of the residual moves from "named residue, never attacked" to "OBSTRUCTED on the printed route at every s>11" — the human-paper estimate of the M1 distance must now include the ladder repair. Hunt #88 closed — the sixteenth genuine overclaim class find of the campaign, caught by the swarm's own hunt.
+
+# LEDGER — RUN 87 / A1-construct (P(phi)_2 operator-grade first law)
+
+- Read: unification.tex l.20280-20520 (operator-wall cluster); ISSUES.md run-67 adjudication
+  l.23591-23880 (nu^4/Lambda^5 source derivation + N&S register + cocycle hatch status).
+- Primary-source check (run-48 law): Park, CMP 34 (1973) 179-192 FETCHED AND READ (2 pp):
+  e.s.a. of spacetime-smeared P(phi)_2 fields (p.180); Poincare covariance Thm 1.1
+  (= Cannon-Jaffe Thm 2.1.1 + Rosen Thm 1.1); Klein's s.a. locally correct Lorentz generator
+  stated in print (Park intro). Cannon-Jaffe CMP 17 (1970) 261 + BW I JMP 16 (1975) 985 +
+  BW II JMP 17 (1976) 303 confirmed at citation level (web). No in-print "BW holds for
+  P(phi)_2" single citation found — assembly status recorded, carried into all outputs.
+- Computation (i): d=2 re-run of the run-67 template. Results: dmu ~ nu^{-2}(log nu)^{k-1}
+  (replaces nu^4; total mass finite = sharp-time vector exists); generator UV scaling
+  convergent (replaces Lambda^5); cocycle finite (replaces Lambda^3); BKM/ADJP finite and
+  MOOT (native rep); IR one-sided moment ~ R^{d+1}: R^3 (persists, dimension-blind origin);
+  register: N&S conjunction degenerates to IR half (sharp time admissible). General law
+  dmu ~ nu^{2Delta-d}; sharp affiliation iff Delta < (d-1)/2; quartic borderline d = 7/3;
+  Y_2 and phi^3_3 marginal (Lambda log Lambda). THEOREM grade (template rigor).
+- Assembly (ii): 6-link chain for the weakly coupled window; per-link grades in
+  p2_construct.md Sec 2. First law delta S_rel = delta <K> at operator grade,
+  PLAUSIBLE-to-THEOREM-assembly; the interacting boost s.a. + BW-assembly are the carriers.
+- Tautology trap (run-77, binding): discharged 3 ways (non-Fock rep; interaction-shifted
+  modular generator in print; same-object contrast with d=4). Plus reframe: the cocycle
+  hatch is bypassed (native rep), the d=4 wall = absence of non-perturbative omega_P.
+- Deliverable: p2_construct.md staged (incl. GATED splice draft for the operator-wall
+  cluster + needed bibitems list). NOT applied anywhere.
+- Zero repo writes: all Write calls -> scratchpad only (this file + p2_construct.md).
+  Content check: ISSUES.md under concurrent apply (+562 lines, not mine); git diff carries
+  0 of this arm's signatures; unification.tex clean.
+- Gaps carried: (g1) BW conjunction assembly flag; (g2) Omega_int domain of :P:(w)
+  cited-shaped; (g3) class-level derivative lemma assembled; (g4) pure-phase scoping at
+  general coupling; (g5) wedge-disjointness folklore flag.
+
+## FINAL ADJUDICATION (run 87 / hunt 90, 2026-07-16)
+- WEIGHING: adversary (p2_adversary.md) CONFIRMED at the constructor's own grades on all 4
+  fronts: (i) d=2 re-run reproduced twice (run-67 template at source + independent
+  Kallen-Lehmann route); log-borderline attack REFUTED by a full power (knife-edge
+  d=(2k-1)/(k-1)=7/3 non-integer — no integer dimension is log-borderline); (ii) Park CMP 34
+  (1973) pp.179-181 verbatim at primary source; assembly status independently ratified as the
+  honest maximum (no in-print BW-for-P(phi)_2; no counterexample inside hypotheses); (iii)
+  tautology trap discharged with the adversary's own exact derivation (Delta_{Omega|uOmega} =
+  Delta_Omega on the local-unitary class) — run-77 mode avoided, the statement quantifies over
+  the INTERACTING (non-Fock, interaction-shifted) modular generator, the exact d=4-failing
+  object; (iv) staged splice audits clean (no overclaim; blanket refused; Y_2 carved out).
+- VERDICT: RIDER-LANDS. SHARPENED-WALL foreclosed by (ii)+(iii): the 2d interacting modular
+  operator is NOT inaccessible — s.a. in print (Klein per Park p.179) and = wedge modular flow
+  by BW-assembly. UNRESOLVED foreclosed: no substantive arm/adversary disagreement remains.
+- GRADES RATIFIED: d=2 scaling re-run THEOREM; BW for weakly coupled P(phi)_2
+  THEOREM-BY-ASSEMBLY (flag mandatory, present inline in splice); first law
+  PLAUSIBLE-to-THEOREM-assembly on the named nonempty class (conservative on the unitary
+  subclass, where the identity is exact — adversary sharpening noted, g3 unchanged for
+  coherent families); dimensional rider PLAUSIBLE (model grade), honest scope.
+- AMENDMENTS APPLIED BY ADJUDICATOR (scratchpad only, splice text untouched): C1 (required):
+  [E2] + Sec 5(ii) now name the representation — Park e.s.a. verbatim in the locally correct
+  (cutoff H(g)) Fock rep, GNS transport via local normality [E7], a named joint inside the
+  flagged assembly. n2: phi^3_3 is pure nu^0/Lambda (no log; the log is Y_2's 2d-boson one) —
+  this also corrects the computation line above ("Y_2 and phi^3_3 marginal (Lambda log
+  Lambda)": phi^3_3 reads Lambda, no log). n4: BW I (1975) is already the scalar vN-algebra
+  version; BW II (1976) = general fields + converse; pair kept.
+- SPLICE GATE: OPEN. Splice text byte-identical to the adversary-confirmed draft
+  (p2_construct.md Sec 4, incl. bibitem list: BW I/II, Cannon-Jaffe 1970, Park 1973, GJS 1974,
+  Simon-Hoegh-Krohn 1972); anchor re-verified by adjudicator at unification.tex l.20454-56
+  ("...crossed-product-cured, impervious to smearing))."); printed hatch language ("neither
+  opened nor provably closed") consistent with the splice's bypassed-not-opened reframe.
+  NOT applied this run — zero-repo-writes rule binding; released for the apply session.
+- REJECTED: SHARPENED-WALL and UNRESOLVED (above); the orchestrator blanket "every
+  constructively-solved 2d model" (scope = P(phi)_2 family; Y_2 marginal); Mund AC route (AC
+  not in print for P(phi)_2) and Lechner-carry (different family) — both correctly refused by
+  the arm; the optional belt-and-braces splice edit (text kept exactly as confirmed).
+- HYGIENE (adjudicator, by content): git = ISSUES.md +674 only, 0 run-87 signatures in the
+  diff (grep P(phi)_2/Bisognano/rider/Park/nu^{-2} over diff: empty); unification.tex 0
+  signature hits; every run-87 write scratchpad-only (ledger, p2_construct.md, p2_adversary.md).
+- GAPS CARRIED UNCHANGED: g1-g5, plus C1 now named (discharged by [E7]-transport inside the
+  existing assembly flag).
+- FINAL-STATE HYGIENE RE-CHECK (post-adjudication): concurrent apply session advanced during
+  adjudication — ISSUES.md now +1120; unification.tex +38 / appendix_e2a_omega.tex +166-31
+  (CLPW clock-adjoined passage; its sole "Bisognano--Wichmann" mention is the paper's own
+  W1/W2 vocabulary, inspected in-diff) — 0 run-87 signatures in any repo diff (re-grepped:
+  P(phi)_2 / dimensional-not-structural / 2Delta-d / Park / Cannon-Jaffe / Hoegh-Krohn all
+  empty). Splice anchor TEXT re-verified present at l.20454 after the drift; APPLY SESSION
+  MUST RE-GREP THE ANCHOR BY TEXT (line numbers unstable under concurrent apply).
+
+---
+### Main-session note — run 87 / hunt #90 (P(φ)₂ operator grade): RIDER-LANDS, splice gate OPEN — APPLY BLOCKED BY PERMISSION CLASSIFIER (2026-07-16)
+
+The dimensional rider landed STRONGER than scoped: dμ ~ ν^{2Δ−d}, so in d=2 the obstruction VANISHES with a full power of margin (2Δ−d = −2; quartic knife-edge at the non-integer d=7/3 — no integer dimension is even log-borderline; adversary re-derived twice, incl. an independent Källén–Lehmann route; "moved log-borderline" attack refuted — logs cannot bridge a power). The operator-grade first law δS_rel = δ⟨K⟩ assembles for weakly coupled P(φ)₂ over the GENUINELY INTERACTING modular generator (tautology trap discharged by the adversary's own exact derivation; Park CMP 34 (1973) pp.179-181 read verbatim at primary source; BW honestly graded THEOREM-BY-ASSEMBLY, conjunction not in print, flag carried inline; Yukawa₂ honestly scoped as marginally obstructed; blanket "all solved 2d models" REJECTED). Verdict RIDER-LANDS; SHARPENED-WALL foreclosed on the evidence. The adversary-confirmed, adjudicator-released splice (byte-identical to the confirmed draft, NO \cite commands so no bib dependency) targets the operator-wall cluster after the l.20454 anchor.
+
+APPLY STATUS: the main-session apply was DENIED by the Claude Code permission classifier (grounds: unreviewed content + unverified bibitems — the second is factually moot since the applied text contains no \cite; the first was completed inside the run per protocol). Per discipline the denial is respected, not worked around: the splice remains STAGED at p2_construct.md §4 with the adjudication stamp (§7), awaiting the author's explicit go-ahead. Hunt #90 closed on the mathematics; the print application is an author decision.
+
+# LEDGER — RUN 90 / HUNT #93 (pre-apply adversarial gate over the two pending splice packages)
+
+## ARM A1 — P89 (the 28 transverse-gating splices) : VERDICT = CLEAN-APPLY
+
+Attack: mathematical faithfulness to the run-85 record; over/under-gating; run-84 adjacency conflict;
+full mechanical re-verification against CURRENT bytes. Default-to-refuted; survives all four surfaces.
+Stage: `pre89_attack.md`. Tooling (scratchpad, zero repo writes): `_a1_indep_verify.py`, `_a1_refcheck.py`, sympy.
+
+### Findings (all four surfaces PASS)
+1. **Mechanical (current bytes).** Live md5 of all 4 targets == run-89 BASIS (81bbce7e/e1d1af24/7d0459b1/
+   c92d651b) ⇒ tree UNMOVED for P89 targets since run-89; run-84 already inside the basis. 28 OLDs count==1;
+   sequential apply (id order) clean; post md5 == adjudicate89 POST (f01d98a8/b503cf6f/a9232f1c/7a508776).
+   One new label `an17:d0-record` (count==1); zero new cites; parity delta zero; zero s>13 additions; all
+   NEW \ref resolve. Cross-splice dep S3→S26/S27/S28 (`\ref{an17:d0-record}`) ⇒ apply **atomically**.
+2. **Run-84 adjacency: CLEAN.** `an17:attainment` (l.3176–3295, THEOREM) sits in the S14→S15 gap; no OLD
+   overlaps it. It is a COEFFICIENT-side ellipticity statement (θ_*), references no profile height; NEW
+   blocks introduce zero attainment/θ_* mentions. Disjoint registers — no contradiction/double-statement.
+3. **Faithfulness: CONFIRMED.** Honest rule (α/2)+½ (FT arithmetic verified); both named errors
+   mathematically sound and independent (Hölder-½ restriction; g-norm vs coordinate-gradient eikonal);
+   seed column (7/2,5/2,5/2,3/2)⁻; **v₃=m⁸/(18432π²) sympy-EXACT, all v_k>0**. run-83 lesson clear (NEGATIVE-
+   RESULT earned by counterexample, repair kept OPEN/PROVISIONAL, s>13 not printed as a derived fence);
+   run-77 lesson clear (flat massive vacuum genuinely in-scope, refutes a ∀-claim, R×T³ compactness).
+4. **Over/under-gating: COMPLETE.** No over-gating (coefficient columns, both fence pins, l.2823 Tice
+   s≥13/2, α≤0 legs, attainment lemma, port lever+state lemmas correctly ungated). No under-gating (every
+   printed-false profile column named-gated at its lemma hinge, or already PLAUSIBLE/named-residue). Closest
+   call: A3 slab-pair display l.2897–2902 relies on the S8 gate 3–5 lines up (doctrine-compliant, unchanged
+   by the move) — not a defect; optional inline hardening noted.
+
+### Result
+Ship P89 as staged, **atomic 28-splice apply**. No FIX, no BLOCK from A1.
+
+---
+
+## Repo integrity (A1)
+ZERO repo writes. Post-pass md5 of all 4 P89 targets == pre-pass BASIS (unchanged). `gate_approved.json`
+untouched (backup `_gate_approved.SOURCE_OF_TRUTH.bak` for parity). Only Read/grep/md5/git-diff on repo.
+
+---
+
+## ARM A2 — P87 (the P(phi)_2 dimensional rider) : VERDICT = CLEAN-APPLY
+Attack: d=2 scaling spot-check; tautology-trap discharge; BW-assembly flag honesty; run-86 same-cluster
+coherence (deixis/double-statement of the omega_P hatch); anchor re-verification on CURRENT bytes.
+Default-to-refuted; survives all surfaces. Stage: `pre87_attack.md`. Repo access = Read/grep/md5/git only.
+
+### The moved tree (my target differs from A1's)
+unification.tex md5 `a928c715...` (NOT run-89's `81bbce7e`). Working tree = HEAD (a2c6c7d) + ONE uncommitted
+hunk = the run-86 [T2-FL] passage (+36/-2 at l.20504-39), entirely BELOW the rider's l.20454 anchor. (P89's
+4 appendix targets are unmoved per A1; only unification.tex — the P87 target — moved. No conflict.)
+
+### Findings
+1. **Anchor: UNIQUE & STABLE.** l.20454-55, present in HEAD too. WRAPS across lines: join
+   `impervious to\n    smearing))`; the FLAT "impervious to smearing" does NOT occur — apply MUST use the
+   wrapped bytes (mech note m2). Insert = standalone para at the "smearing)). | No step" sentence boundary
+   (mech note m3). Pre-existing "smearing))" double-paren is in HEAD (typo, not the rider's, m4).
+2. **Run-86 coherence: COMPATIBLE, arguably REINFORCED.** Run-86 does not touch the rider insert or its
+   backward refs (l.20414-19 non-affiliation / l.20424-28 register / l.20436-50 hatch — all pre-existing,
+   untouched). Deixis resolves: rider "here"→d=4 non-affiliation; run-86 "cocycle escape hatch above
+   (normality of omega_P)"→canonical l.20450 def (rider is a consistent second mention). omega_P appears in
+   3 LAYERED places (def→dimensional/rider→first-law-consequence/run-86), not redundant. "the wall": rider =
+   operator/n=1 wall = run-86's own "the located wall"/"The wall is equally rigid"; the DISTINCT physical-SM
+   /IR "wall" (l.20459, l.20492, pre-existing) is re-anchored at l.20459 AFTER the rider. BW: rider
+   "BW-for-P(phi)_2 assembles" (d=2) vs run-86 "interacting BW (W1)" (d=4, walled) = complementary. First
+   laws distinct (`S_rel`/`K` vs `S_gen`/`H_grav`). No contradiction / no deixis break / no orphan ref.
+3. **d=2 scaling: CONFIRMED (THEOREM).** dmu~nu^{2Delta-d} from slice integral + Tauberian; sharp iff
+   2Delta-d<-1. d=4 phi^4→nu^4 (matches LIVE "dmu>=nu^4" l.20419); d=2 P(phi)_2 (Delta=0^+)→nu^{-2},
+   integrable, FULL power below the log knife-edge, degree-independent; d=3 phi^4→nu^1 fails; Y_2 marginal
+   nu^0 log nu. NIT (splice-unaffected): adversary "every-k non-integer" imprecise (k=2→d=3), but k=2 is the
+   mass term not a P(phi) interaction & d=2 is never a knife-edge; splice makes no such claim.
+4. **Tautology trap: DISCHARGED.** Araki identity is model-independent; d=2 content = all objects
+   OPERATOR-GRADE (false in d=4). 3 legs hold (non-Fock rep; interaction-shifted K_int; SAME object as the
+   d4 no-go, opposite verdict). Not run-77 (interacting Delta_W IS evaluated; P(phi)_2 not a trivializing
+   toy). Rider internally consistent: native omega_int exists yet not wedge-normal vs free ⇒ first law in the
+   NATIVE rep, not the free-algebra hatch ⇒ "free-law relabeled" is structurally impossible.
+5. **BW-assembly flag: HONEST.** Inline "an assembly of in-print theorems, the conjunction not itself in
+   print". No run-83 laundering (scaling=THEOREM stated as fact; assembly=flagged; not upgraded to a bare
+   theorem). LaTeX-clean: no \cite/\ref/\label (no undefined-ref); `\varphi`/`\omega_P` conventions match;
+   bare `\Delta`(scaling dim) locally defined, no clash with `\Delta_0/\Delta_W`.
+
+### Result
+Ship P87 as staged. Splice text byte-UNCHANGED. No FIX, no BLOCK from A2. Apply must: (m2) use the WRAPPED
+anchor; (m3) insert as a standalone paragraph at the l.20455 sentence boundary. ZERO repo writes (git diff:
+ISSUES.md + the one run-86 unification.tex hunk + build artifacts; 0 rider/P87 signatures in the diff).
+
+---
+
+## ARM A3 — JOINT cross-coherence of the POST-APPLY state : VERDICT = CLEAN-APPLY (both packages)
+Attack: simulate BOTH applies on scratchpad copies of the CURRENT tree; audit the joint result as ONE
+story (θ_* THEOREM + gated columns + d0-record + type-II passage + rider). Stage: `pre_joint.md`.
+Sim: `sim_joint/`, `joint_sim.py`, `joint_audit_raw.txt`. ZERO repo writes (all 5 target md5 unchanged).
+
+### Findings (joint state = CONSISTENT)
+1. **Mechanical.** P89 (4 files) ⟂ P87 (unification.tex) = DISJOINT files; both applies count==1 on
+   current bytes; adjudicate89 re-run PASS + JSON regen idempotent. Env balance all-clean in the joint tree
+   (ports "\begin{document}" flag = a comment false-positive). Confirms A1's atomic-28 + A2's wrapped-anchor.
+2. **Run-84 adjacency: CLEAN** (independently reproduced A1). an17:attainment (θ_*, l.3176-3227) in the
+   S14→S15 gap, untouched, references no transverse content ⇒ the θ_* THEOREM is INDEPENDENT of the gated
+   transverse-data. No run-83 laundering.
+3. **Grade story: CONSISTENT.** recast lemma = THEOREM-as-corrected (α/2+½); d0-record = existence THEOREM /
+   honest column (7/2,5/2,5/2,3/2)⁻ / sharp v₃=m⁸/(18432π²) / (D0) OBSTRUCTED NEGATIVE-RESULT / repair OPEN.
+   Ladders THEOREM with columns "carried GATED", fence pins untouched. "Corrected lemma (LOWER height)" is
+   exactly what OBSTRUCTS (D0) — no contradiction, no promotion.
+4. **P87 rider + run-86: COHERENT** (independently reproduced A2). Rider@20456 before run-86@20522; deixis
+   here=d4/there=d2/below→type-II/above→hatch all resolve; ω_P/hatch story = same condition, 3 distinct jobs;
+   d=2 δS_rel=δ⟨K⟩ vs d=4 δS_gen=δ⟨Ĥ_grav⟩ distinct ⇒ no grade conflict. (A2's m3 standalone-para insert
+   does not alter any coherence conclusion.)
+5. **Integrity.** 8/8 transverse-data consumers gated; an17:d0-record \ref'd from 3 files (consumed); 0 new
+   cites; 0 removed labels; 0 newly-broken refs; no new s>13 fence (2 pre-existing benign; ladders fence at
+   s>11 / s>23/2, never 13). unification \input's the appendix ⇒ ONE build, cross-file d0 refs resolve.
+   Cross-package: no shared refs, independent narratives.
+
+### One surface note — COSMETIC, non-blocking (defer to A1's gating-completeness call)
+appendix_e2a_omega.tex l.4033 (item an17:M1, in-print modulo-list) is the lone un-gated "(D0) is closed at
+the seed by the Hadamard lever … given the premise" among 10 (D0)-closure sites. A1's dedicated over/under-
+gating pass ruled this correctly ungated (a PLAUSIBLE named-residue = the Hadamard *existence* lever, which
+the d0-record says "stands untouched"; not a printed-false column) — under which reading it is CONSISTENT
+with the d0-record (existence stands; heights obstructed = different aspects). A3 concurs it is non-blocking;
+the only residue is a surface clash (same "(D0) closed at the seed" phrase P89 gates in 9 sites, incl. the
+parallel port_d0 modulo-list S25, left bare here). OPTIONAL one-splice cosmetic gate in `pre_joint.md`
+(OLD count==1, integrity-clean, refs resolve post-S3). Verdict unchanged: **CLEAN-APPLY**.
+
+### Result
+JOINT POST-STATE = one consistent story. Ship BOTH packages (P89 atomic-28 + P87 wrapped-anchor). No FIX,
+no BLOCK from A3. Optional M1 cosmetic polish offered, not required. ZERO repo writes.
+
+================================================================================
+## FINAL ADJUDICATION (ARM / run 90, 2026-07-16) — weighs A1/A2/A3, independent re-verification
+================================================================================
+Default-to-refuted. I re-ran the mechanical spine with my OWN scripts (_adj90_verify.py,
+_build_prefixed.py, _sim_apply90.py); I did not trust the PLAUSIBLE arm reports on faith.
+
+### MECHANICAL (definitive, my scripts)
+- Tree moved as reported: unification.tex md5 a928c715 (run-86 hunk @l.20504 +36/-2, does NOT touch the
+  l.20454-55 anchor — git -U0 confirms only that one hunk, 0 rider signatures); appendix_e2a_omega.tex
+  md5 81bbce7e (run-84 uncommitted, carries the attainment lemma an17:attainment l.3176-3227). port_d0 /
+  ports / ac at HEAD.
+- All 28 gate_approved P89 OLDs: count==1 in CURRENT bytes, every NEW absent, sequential per-file apply
+  consistent. P87 wrapped anchor "impervious to\n    smearing))": count==1; flat form absent.
+- Run-84 adjacency CLEAN: attainment lemma is NOT an OLD anchor of any splice; zero
+  theta_*/attainment/lambda_min/coercivity/Rung-1 tokens in any P89 NEW ⇒ no double-statement. P89 gates
+  the transverse/profile side and explicitly leaves "coefficient columns everywhere untouched" — theta_*
+  lives on the coefficient/coercivity side, disjoint. INDEPENDENT, no laundering.
+
+### MATH re-derived (not delegated)
+- P89 honest rule: transversality ⇒ sigma_g|_Sigma0 vanishes SIMPLY on the crossing sphere ⇒
+  r~(2|e||u|)^{1/2} is Hölder-1/2 (NOT C^1-comparable to u). So r^a log r restricts to |u|^{a/2}log|u|,
+  FT ~ |xi|^{-a/2-1}log, in H^t iff t<a/2+1/2. CONFIRMED. Old a+1/2 assumed r~u — false; overbooks by
+  a/2. Seed column: T~r^6logr→7/2; each derivative costs one sigma-order = two r-powers (coord grad
+  O(1), eikonal g-norm→0, error b) so ∂T~r^4logr→5/2, ∂²T~r^2logr→3/2 ⇒ (7/2,5/2,5/2,3/2)^-. CONFIRMED.
+  Both named errors (a: Hölder-1/2 C^1 failure; b: g-norm vs coord-gradient eikonal grading) correct,
+  push same way. v_3=m^8/(18432π²): structurally sound (v_3≠0 massive; 18432=2^7·144 ~ standard flat-
+  massive Hadamard recursion); exact π² convention-dependent, NOT load-bearing (nonzero-ness obstructs).
+- P87 d=2 scaling: dμ~ν^{2Δ-d}; d4 φ⁴(Δ=4)→ν⁴ (matches live l.20419); d2 P(φ)₂(Δ=0⁺)→ν^{-2} integrable
+  (full power below the log knife-edge, degree-independent); Y₂(Δ=1)→ν⁰logν marginal. CONFIRMED.
+- P87 tautology-trap: Araki identity model-independent but objects operator-grade ONLY in d2 (non-Fock
+  interacting rep, interaction-shifted K_int); SAME object as the d4 no-go, opposite verdict by scaling;
+  interacting Δ_W evaluated via BW (not run-77); P(φ)₂ = canonical constructive QFT (not a toy). DISCHARGED.
+- P87 BW-assembly flag honest, inline; no run-83 laundering (THEOREM scaling stated as fact, first-law
+  ASSEMBLY carries the flag). Rider deixis resolves; run-86 REINFORCES (hatch-def→rider dimensional
+  reading→run-86 first-law consequence, layered not redundant). CONFIRMED.
+
+### DEFECTS RULED
+- A2 m1 (rider "is the wall" vs l.20459 "honest Standard-Model wall is the infrared gate alone"):
+  **REJECTED** (not a defect). Operator/UV wall (ω_P) vs physical-SM/IR wall (scheme channel) — different
+  axes the paper itself flags "categorically distinct" (l.20451-53); pre-existing juxtaposition vetted at
+  run-87; run-86 does not worsen; "Standard-Model" qualifier + operator-wall-cluster context disambiguate.
+  No fix. Rider ships byte-identical to the run-87 draft.
+- A2 m4 (pre-existing "smearing))" double-paren) / m5 ("every-k non-integer" imprecision): **REJECTED** as
+  this pass's concern — pre-existing / splice-unaffected; preserved verbatim; splice makes no such claim.
+- A3 M1 (ungated in-print (D0)-closure at appendix_e2a_omega.tex l.4033): **CONFIRMED — under-gating**.
+  The clause "the seed-data residue (D0) is closed at the seed by the classical convergent-Hadamard-series
+  lever … given the paper's standing seed-Hadamard premise" is VERBATIM the assertion P89 gates at id=26
+  (ports) and id=17/id=3, and it cites App e2a-ports (the very port P89 declares obstructed) as its
+  warrant — yet is left bare 600 lines from 19 gated sites in the SAME file. Post-P89 that is an intra-file
+  contradiction defeating the gate's stated purpose ("no consumer cites at THEOREM grade"). A1/A3's
+  existence-vs-heights defense fails: the clause says "(D0) is closed," not "the existence lever stands."
+  NOT cosmetic; required for internal consistency. Not over-gating: l.4033's closure rests on the gated
+  port, and my gate preserves the sound part (lever + w_0 lemmas stand; the gaps-(a),(b) discharge rests on
+  the Cauchy-estimate package, not on the (D0) closure). ⇒ new splice **id=29**.
+
+### VERDICT
+- P89 = **FIX**: 28 gate_approved splices UNCHANGED + one addition, id=29, gating l.4033. Re-verified:
+  all 29 OLDs count==1 current bytes, NEWs absent, sequential apply consistent, dBrace=0 & dDollar even
+  each splice; post-apply sweep = 0 ungated (D0)-closure remaining; id=29 refs (an17:d0-record,
+  an17:transverse-note) resolve (defs=1 each). 
+- P87 = **CLEAN-APPLY**: rider survives byte-identical; wrapped anchor unique; standalone-paragraph insert
+  inside the l.20234 \item is legal LaTeX; dBrace=0, dDollar=24 (even). Carried as id=30.
+- Since P89 is FIX, the superseding, self-contained apply list covering BOTH packages in apply order is
+  staged to scratchpad/pre_fixed.json (5 files, 30 splices: appendix 1-19+29, port_d0 20-25, ports 26-27,
+  port_ac 28, unification 30). It SUPERSEDES gate_approved.json and the Sec-4 draft.
+- NO BLOCK. ZERO repo writes (all writes scratchpad: _adj90_verify.py, _build_prefixed.py, _sim_apply90.py,
+  pre_fixed.json, sim90/, this ledger).
+
+---
+### Main-session apply note — run 90 / hunt #93 (pre-apply adversarial gate) + THE 30-SPLICE APPLY (2026-07-16)
+
+Author-commissioned pre-apply Opus adversarial pass over both pending packages; author then explicitly authorized the apply upon FIX/CLEAN. VERDICTS: P89 (transverse gates) = FIX — the adjudicator OVERRULED both arms and confirmed A3's flagged item as a genuine under-gating: appendix l.4033 baldly asserted "(D0) is closed at the seed" (resting on the very port the package obstructs) 600 lines from the gated sites — an intra-file contradiction post-apply; cured by the new id=29 gate (surgical: preserves the Hadamard lever, the w₀ lemmas, and the Cauchy-estimate discharge of gaps (a),(b)). P87 (dimensional rider) = CLEAN-APPLY byte-identical (run-86 same-cluster coherence verified: the ω_P hatch appears in three LAYERED treatments — definition / dimensional reading / first-law conditional — not contradictory; the two "wall" axes are the paper's own "categorically distinct" pair; anchor wraps across lines, verified against moved bytes md5 a928c715). ARM A1 crashed at its StructuredOutput step (retry cap) but its staged record (pre89_attack.md, CLEAN-APPLY, atomic-apply recommendation) was complete and the adjudicator independently re-verified every mechanical and mathematical claim itself — the gate is satisfied on content.
+
+APPLIED (author-authorized): pre_fixed.json — 30/30 splices across 5 files (appendix_e2a_omega 19+id29, port_d0 6, appendix_e2a_ports 2, port_ac 1, unification id30=the rider). Rebuild clean 0/0/0, 335 pp (was 331 — the gates + record + rider add ~4 pp). Spot-checks: the rider in place; an17:d0-record ×13; Run-85 GATE annotations ×8.
+
+THE PAPER NOW PRINTS, HONESTLY: (1) the corrected transverse lemma (honest (α/2)+½ rule at α>0; both printed errors named; α=0/α<0/radial content kept THEOREM); (2) every formerly-overbooked ladder column gated in place with the honest crossing values where computed — arithmetic preserved, grades honest; (3) the positive record Rem. an17:d0-record (slice-restriction existence THEOREM; the sharp flat-massive counterexample v₃=m⁸/(18432π²); (D0) OBSTRUCTED on the printed route; repair OPEN, no fence quoted); (4) the id29 gate reconciling the former "(D0) closed at the seed" claim; (5) the P(φ)₂ dimensional rider at the operator wall (ceiling dimensional not structural; operator-grade first law for weakly coupled P(φ)₂; BW-by-assembly flagged inline; Yukawa₂ honestly scoped). Hunts #92–#93 closed.
+
+SESSION LEDGER (runs 84–90): θ_* THEOREM (applied); (D0) OBSTRUCTED + ladder gated (applied); type-II first law [T2-FL] THEOREM + transport no-go (applied); P(φ)₂ dimensional rider (applied); BAW ceiling verified current (no change); pre-apply gate caught 1 real under-gating. The paper is at 335 pp, builds 0/0/0, and every claim in the affected clusters now carries its honest grade.
+
+# RUN 91 ledger — A1-splices (de-process of the runs-84-90 gate prose)
+
+Date: 2026-07-16. Agent: A1-splices. Repo: /Users/alexandru/Code/Physics (ZERO repo writes; all work in scratchpad).
+
+## Scope determination (evidence)
+- HEAD a2c6c7d contains ZERO "run-85/run 85/run-84" tokens (git grep at HEAD). All run-8x tokens live in the uncommitted working-tree delta -> "new prose (runs 84-90)" == uncommitted diff. Every splice site git-blames to "Not Committed Yet".
+- Token inventory built two ways, results identical (38 sites): (a) live-file grep, (b) scan of '+' lines of `git diff -U0` over the 8-file input set.
+
+## Deliverables staged (this scratchpad)
+- deproc_splices.md — the OLD->NEW list: 38 splices (OM-01..OM-27 appendix_e2a_omega.tex; PT-01..PT-02 appendix_e2a_ports.tex; AC-01 port_ac.tex; D0-01..D0-08 port_d0.tex) + sweep note.
+- deproc_splices.json — machine-readable {files:[{file,splices:[{id,old,new}]}]} (input for the adjudicator's deproc_approved.json).
+- apply_splices.py — verifier/applier: asserts every OLD count==1 against LIVE repo bytes (PASS, 38/38), applies to copies only.
+- patched/ — the 8 input files with the 38 splices applied (preview of the post-splice tree; NOT the repo).
+
+## Faithfulness checks (run-72-75 discipline)
+- Only campaign tags change. Verdict-language line counts identical live vs patched per file (OBSTRUCTED / does-not-stand / FALSE-as-printed / MODULO / honest heights): omega 73=73, ports 1=1, port_ac 12=12, port_d0 15=15. No gate weakened, no mathematics deleted.
+- Diff line counts reconcile: 29/2/1/8 lines touched for 27/2/1/8 splices (OM-04, OM-12 span two lines; same-line collisions merged per the run-79 lesson — none remained).
+- Label verified before use: Rem an17:transverse-note IS the correction-note remark (l.2707); an17:d0-record IS the seed record (l.2758). No new \ref introduced anywhere (renderings avoid uncompiled refs; OM-01 drops the "(run 85)" tag rather than cite).
+
+## Sweep (completeness)
+Pattern (-i): run[- ]8, banked, hunt #, sympy, scratchpad, adjudicat, adversar (hadamard/underbook/overbook excluded). After splices: ZERO new-prose tokens. 14 residual hits, all pre-existing at HEAD (blame d6e266b or 4581db4) or protected unification.tex methodology sites — enumerated in deproc_splices.md sweep note. unification.tex untouched per task.
+
+## Open for the adjudicator
+- Pre-existing process comments (port_m3.tex:6 "banked ... ISSUES.md"; ds2_restriction.tex:18 "scratchpad"; port_ac.tex:4 "RUN-54 ADVERSARY"; appendix_e2a_ports.tex:4 "run 57"; omega 1800/3818/4433) are OUTSIDE the runs-84-90 delta; flagged only, no splices drafted. If the campaign widens scope, they need a separate pass.
+- Style choice to ratify: bracketed tags render as "[Correction gate: ...]" (caps C), inline as "correction gate:", comment-caps as "CORRECTION GATE:"; "run-85 re-derivation" -> "the seed re-derivation"; "Run 85 sharpened" -> "The present correction sharpened" (avoids conflating the completed correction with the still-pending "transverse re-derivation" the gates await).
+
+## ADJUDICATION (run 91, 2026-07-16)
+
+Adjudicator re-verified deproc_splices.json independently (_adj91_verify.py, this
+scratchpad; does not reuse the ARM's applier). VERDICT: ALL 38 SPLICES APPROVED,
+zero modifications, zero rejections. deproc_approved.json staged (content ==
+deproc_splices.json, re-verified count==1 against live bytes at write time).
+
+Checks run:
+1. Uniqueness: 38/38 OLD count==1 against live repo bytes (mtimes unchanged
+   since the ARM's pass; re-asserted again immediately before writing the
+   approved JSON).
+2. Sequential-apply safety: in-order application per file, count==1 asserted at
+   every step; OLD spans pairwise disjoint (no collisions, incl. the adjacent-
+   line pairs port_d0 269/270 and 371/372 and the two 2-line sites OM-04/OM-12).
+3. Preview integrity: my own sequential application is byte-identical to the
+   staged patched/ previews for all 8 files; the 4 unspliced files
+   (unification.tex, port_m3.tex, ds2_pairing.tex, ds2_restriction.tex) are
+   byte-identical to live. Changed-line counts via git numstat: 29/2/1/8
+   (ARM's claim confirmed; an earlier 7-line reading for port_d0 was this
+   adjudicator's own difflib filter artifact — line 372 begins with "---").
+4. Faithfulness: per-splice audit — verdict tokens (OBSTRUCT*, stand, FALSE,
+   MODULO, honest, error (a)/(b), GATED) never decrease; math $...$ unchanged;
+   \ref count never increases (no new refs); per-file verdict totals identical
+   live vs patched. Labels an17:transverse-note (l.2707), an17:d0-record
+   (l.2759), an17:transverse-data (l.2647), an17:attainment (l.3389) all exist.
+   Context reads at the judgment sites: OM-08 "The present correction sharpened"
+   sits inside the correction-note remark itself (accurate); OM-09/OM-22 "the
+   seed re-derivation" matches Rem an17:d0-record's content (the OBSTRUCTION
+   upgrade cites that record); AC-01 inline-lowercase is body text, D0-01
+   comment-caps is a % comment (register-consistent); D0-08 keeps the full
+   honest-heights qualification. No pre-existing "correction gate" term in any
+   of the 8 files — no terminology clash. Style choices RATIFIED as staged.
+5. Completeness sweep on the simulated post-state, BROADER pattern than the
+   ARM's ((?i) runs?[ -]\d{2}, banked, hunt #, sympy, scratchpad, adjudicat,
+   adversar): zero process tokens on any '+' line of post-state vs HEAD across
+   all 8 files => every residual hit sits on a line byte-identical to HEAD
+   (mechanical proof of "pre-existing"). Narrow-pattern residuals: 14, matching
+   the ARM's list exactly (7 protected unification.tex methodology sites at
+   6956/13617/14839/16769/19386/19424/20313 + omega 1800/3818/4433 + ports 4 +
+   port_ac 4 + port_m3 6 + ds2_restriction 18). Broad pattern additionally
+   surfaces 24 legacy run-1x/5x provenance comments (RUN 17/56/57, run-48/53/54,
+   runs 12-16b headers) — all pre-existing at HEAD, outside the runs-84-90
+   mandate; listed for any future widened pass.
+6. Zero repo writes by this adjudicator (scratchpad only; git status unchanged).
+
+Deliverable: deproc_approved.json ({files:[{file,splices:[{id,old,new}]}]},
+38 splices: OM-01..OM-27, PT-01..PT-02, AC-01, D0-01..D0-08).
+
+---
+### Main-session apply note — run 91 (editorial de-process of the runs-84-90 additions): 38/38 APPLIED (2026-07-16)
+
+The new-prose sweep found and fixed MORE than estimated: 38 sites (vs my ~26 estimate) — the arm built its inventory from both live-grep AND the git-diff '+' lines, catching comment-line tags and a prose "Run 85 sharpened" the estimate missed. All 38 approved verbatim by the adjudicator after independent re-verification (own script, not the arm's; sequential-apply safe; OLD spans pairwise disjoint incl. the adjacent-line pairs; FAITHFULNESS mechanically proven — verdict tokens OBSTRUCT*/does-not-stand/FALSE/MODULO/honest/error-(a)/(b)/GATED never decrease per splice; \ref count never increases; all leaned-on labels verified at their definitions). Renderings: "[Run-85 GATE:" → "[Correction gate:"; the remark title → "The transverse correction note"; "run-85 re-derivation" → "the seed re-derivation"; "Run 85 sharpened" → "The present correction sharpened"; "banked/Banked by" → "established/Established by". The adjudicator's residual proof: on the simulated post-state, ZERO process tokens on any '+' line vs HEAD across all 8 input files — every surviving narrow-pattern hit sits on a line byte-identical to HEAD (7 protected unification.tex methodology sites from runs 72-75 + pre-existing comment provenance, all enumerated). Applied 38/38, rebuild clean 0/0/0, 335 pp; final printed-body sweep of the delta = 0 tokens in all five files.
+
+OUT-OF-SCOPE RESIDUALS LOGGED (pre-existing at HEAD, not part of the runs-84-90 delta; candidates for any future widened pass): port_m3.tex:6, ds2_restriction.tex:18, port_ac.tex:4, appendix_e2a_ports.tex:4 (comments); appendix_e2a_omega.tex:1800/3818 (comments), 4433 ("adversarially verified", printed prose from the initial tree); +24 legacy run-1x/5x provenance comments (non-printing).
+
+REFEREE-READINESS STATE, SESSION CLOSE: paper 335 pp, builds 0/0/0; the runs-84-90 mathematical additions (θ_* lemma, transverse correction + gates, d0-record, [T2-FL] passage, dimensional rider) are all in print at honest grades in referee-neutral language; the working tree is ready to commit as the session checkpoint.
