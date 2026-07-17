@@ -28,13 +28,13 @@ with $\varepsilon_0$ small enough that (u1) $\inf_U\min_{K''}|\det g|
 {GH}}$ (global hyperbolicity, \cite{ChruscielGrant2012} --- the
 hypothesis' own smallness); (u3) the cone-transversality constants
 $c_*,c_t$ of Lemma~\ref{port:lem-sigma}(iii) below are positive. This is
-exactly the class $\mathcal U$ of Hyp.\ hyp:hadamard-uniform (Option B);
-by an17:lem-embed, $U_\omega\subseteq U$ once $\varepsilon_a\le
+exactly the class $\mathcal U$ of Hyp.~\ref{hyp:hadamard-uniform} (Option B);
+by Lem.~\ref{an17:lem-embed}, $U_\omega\subseteq U$ once $\varepsilon_a\le
 \varepsilon_0/C_{\mathrm{emb}}$, so everything below holds verbatim over
 $U_\omega$ with the same constants.
 
 $H_g$ is the appendix's own singular part: the $N{=}2$ truncated glued
-Hadamard parametrix of Lem.~an17:G,
+Hadamard parametrix of Lem.~\ref{an17:G},
 \begin{equation}\label{port:eq-Hdef}
   H_g=\sum_{a\le N(K)}\theta_a\,Z^{(2),a}_g,\qquad
   Z^{(2),a}_g(x,y)=\frac{1}{8\pi^2}\Bigl[\frac{\Delta_g^{1/2}(x,y)}
@@ -44,18 +44,18 @@ Hadamard parametrix of Lem.~an17:G,
 $v^{(2)}_g=\sum_{k=0}^{2}v_k[g]\,\sigma_g^k$, on the bi-collar
 $V_{\delta_c}=\{x\in K,\ r\le\delta_c\}$ of the ball-uniform
 convex-normal cover (radius $\delta_c$: Chen--LeFloch /
-Cheeger--Gromov--Taylor, cited at its printed site an17:G, THEOREM;
+Cheeger--Gromov--Taylor, cited at its printed site Lem.~\ref{an17:G}, THEOREM;
 the cutoffs $\theta_a$ are $g$-\emph{independent}, built from the
 $g_0$-atlas partition of unity, $\|\theta_a\|_{C^2}\le c_\theta$,
 overlap multiplicity $m(K)$). Here $\sigma_g$ is the world function,
 $\Delta_g^{1/2}$ the van Vleck determinant, $v_k[g]$ the Hadamard
 coefficients of the transport recursion (\cite[Thm.~2.1]{Moretti2003}),
-$\ell$ the single global length scale (an17:G(ii)), and
+$\ell$ the single global length scale (Lem.~\ref{an17:G}(ii)), and
 $\sigma_{g,\epsilon}=\sigma_g+2i\epsilon t_\Delta+\epsilon^2$ the
 prescription of \cite{KayWald1991}, $\epsilon\downarrow0$. The pairing
 $H_g(u\otimes v)$ is the $\epsilon\downarrow0$ limit, which exists per
 metric on the cited footing (\cite{Moretti2003,KayWald1991}; this is the
-single-metric half, established as Lem.~an17:clausei-single); every bound
+single-metric half, established as Lem.~\ref{lem:an17-clausei-single}); every bound
 below is uniform in $\epsilon\in(0,1]$, so it passes to the limit.
 
 \begin{theorem}[Clause (i), difference form, over the full $H^s$ ball;
@@ -184,7 +184,7 @@ c\exp\bigl(c\,\delta_c\,\Lambda_U^{7}d_U^{-4}\bigr)$
 three derivatives of the flow consume $\|\Gamma\|_{C^3}$). With
 $\xi=\exp_x^{-1}(y)$ (well defined and $C^3$, Jacobian
 $\ge\tfrac12$ on $V_{\delta_c}$ after the one ball-uniform shrink of
-$\delta_c$ built into an17:G) and
+$\delta_c$ built into Lem.~\ref{an17:G}) and
 $\sigma_g(x,y)=\tfrac12 q_{g,x}(\xi,\xi)$, homogeneity of the geodesic
 flow in $(\xi,t)$ gives $\xi=r\,\Xi_g(x,\omega,r)$ with
 $\Xi_g\in C^3$, $\Xi_g(x,\omega,0)=\omega$; set
@@ -287,7 +287,7 @@ $\le c(\kappa_S+\kappa_\Gamma(1))\|h\|_{C^{2}}$ and source difference
 $\le cP\cdot\|h\|_{C^{2k+2}}$ (linearity of $f_k$-assembly in its
 top jet; lower-order factors estimated by the sup bounds already
 obtained --- this is the linear-in-top-jet structure the appendix's
-(N-a) block records at l.3219--3222):
+(N-a) block records):
 $\kappa_v:=c\,e^{c\Lambda_S\delta_c}P\cdot
 \bigl(1+\kappa_S+\kappa_\Gamma(1)\bigr)$. No step differentiates in
 $g$; every difference is pair-Lipschitz on the real side.
@@ -486,12 +486,12 @@ used at any step. \qedhere
 \begin{remark}[Three-way fidelity: what this port states, against the
 appendix demand and the established theorem]\label{port:rem-match}
 (a) \emph{Appendix demand.} Display \eqref{port:eq-clausei} is verbatim
-eq:an17-clausei $=$ clause (i) of Hyp.\ hyp:hadamard-uniform (Option B)
-and of Hyp.\ hyp:hadamard-uniform-omega: same pairing, same three norms
+\eqref{eq:an17-clausei} $=$ clause (i) of Hyp.~\ref{hyp:hadamard-uniform} (Option B)
+and of Hyp.~\ref{hyp:hadamard-uniform-omega}: same pairing, same three norms
 $H^s,H^{s-2},H^{s-2}$, same support condition, and the quantifier is
 over the \emph{pair} $(g,g')$ ranging over the full ball $U$ ---
 strictly containing the $U_\omega\times U_\omega$ range item
-(M3) asks for (an17:lem-embed). $H_g$ is the appendix's own object
+(M3) asks for (Lem.~\ref{an17:lem-embed}). $H_g$ is the appendix's own object
 \eqref{port:eq-Hdef} (the $N{=}2$ glued parametrix, one global $\ell$).
 No hypothesis is strengthened; the only weakening is in the
 \emph{conclusion's} favor (full ball, asymmetric sharper form).
@@ -508,7 +508,7 @@ $\kappa=\kappa(g_0,K;s,\varepsilon_0,\delta_c,\ell,\text{atlas})$.
 (c) \emph{Single-metric consistency.} Applying L4 legs (P1)/(P3) to
 $H_g$ alone (weights $\Lambda_\Delta,\Lambda_v$ instead of the
 $\kappa$-differences) re-proves the single-metric
-Lem.~an17:clausei-single bound with $C_H(K,g)\le
+Lem.~\ref{lem:an17-clausei-single} bound with $C_H(K,g)\le
 C_{\mathrm{sob}}^2\,\kappa'(g_0,K)$, consistent with GT1.
 \end{remark}
 
@@ -536,14 +536,14 @@ printed statement of the paper or appendix.
 
 \begin{remark}[Grade and consumers; what this port does NOT do]
 \label{port:rem-grade}
-This port closes item (M3) of sec:an17-modulo at THEOREM grade: the difference form
+This port closes item (M3) of \S\ref{sec:an17-modulo} at THEOREM grade: the difference form
 \eqref{port:eq-clausei} is now \emph{derived}, ball-uniform over the
 family, at the hypothesis' own standing fence $s>n/2+6$ (no re-fence:
 the proof consumes $\|h\|_{C^6}$, $\|g\|_{C^{6,\alpha}}$ with
 $\alpha=\min(\tfrac12,\tfrac{s-8}2)$, both inside $H^{s}$, $s>8$).
-Consumer effect (per the printed audit, appendix l.3588--3591):
+Consumer effect (per the printed audit):
 clause (i)-diff feeds only the singular leg of
-thm:E2-Lipschitz and no quantitative slice-register consumer, so no
+Thm.~\ref{thm:E2-Lipschitz} and no quantitative slice-register consumer, so no
 downstream constant changes; the pivot's conditionality on (M1) and
 (M2) is untouched. This port says \emph{nothing} about the finite part
 $W_g$ (clause (ii)/M1: still PLAUSIBLE at its printed modulo-list) or

@@ -27,17 +27,17 @@ $b=1$ slot, via the classical analytic-convergence lever}
 Throughout, $g_0$ is the $U_\omega$ anchor: real-analytic on $K''$,
 holomorphic on the fixed complex collar $\mathcal K_{\rho_a}$ with
 $\|g_0\|_{\mathcal K_{\rho_a}}<\infty$ and $\inf_{\mathcal K_{\rho_a}}
-|\det g_0|\ge d_\omega>0$ (an17:sub-Uomega, l.126--150). The operator is
+|\det g_0|\ge d_\omega>0$ (Def.~\ref{an17:def-Uomega}). The operator is
 $P_0=\square_{g_0}+m^2$. The state is the \emph{seed} $\omega_0$, the paper's
-standing Hadamard state at $g_0$ (unification.tex l.17037--17042: the family
+standing Hadamard state at $g_0$ (the family
 $\omega_g$ is \emph{defined} as the Brunetti--Fredenhagen--Verch relative
 Cauchy evolution of $\omega_0$; the seed slot is $g=g_0$, no transport).
 $H^{(N)}_{g_0}$ is the glued $N$-truncated Hadamard parametrix of Lem.\
-an17:G (l.3231--3254): $H^{(N)}_{g_0}=\sum_a\theta_aZ^{(N),a}_{g_0}$ with
+\ref{an17:G}: $H^{(N)}_{g_0}=\sum_a\theta_aZ^{(N),a}_{g_0}$ with
 $Z^{(N),a}_{g_0}=\frac{1}{8\pi^2}\bigl[\Delta^{1/2}/\sigma
 +\bigl(\sum_{k\le N}v_k\sigma^k\bigr)\log(\sigma/\ell^2)\bigr]$ chartwise on
-the convex-normal cover, one \emph{global} length scale $\ell$ (an17:G(ii)),
-and $W_{g_0,2}=\omega^{(2)}_0-H^{(2)}_{g_0}$ (the (N-a) package, l.3203--3229).
+the convex-normal cover, one \emph{global} length scale $\ell$ (Lem.~\ref{an17:G}(ii)),
+and $W_{g_0,2}=\omega^{(2)}_0-H^{(2)}_{g_0}$ (the (N-a) package).
 The $v_k$ are the transport-recursion coefficients cited in print at (N-a)
 [Moretti 2003, Thm.~2.1]; in the source-verbatim normalisation of
 [Fewster--Smith, gr-qc/0702056, eqs.~(97)--(98)] ($n=4$, $\mu^2=m^2\ell^2$
@@ -68,15 +68,15 @@ consumes \emph{only} (S1), plus the two printed premises:
   $N$. This is the paper's own anchor hypothesis, restated --- \emph{not} a
   new conditionality; it is printed here so nothing is promoted silently.
 \item \emph{(collar-shrink licence; fence-neutral.)} The gluing collar
-  $\delta_c$ of Lem.\ an17:G may be shrunk: an17:G(i) demands only the upper
-  bound $\delta_c\le(2m(K)^2L_\chi)^{-1}$ (l.3242); the short-slab length
-  $T_c=\delta_c/(4c_*)$ of Lem.\ an17:DoD shrinks with it (l.3259) and the
-  DoD truncation is stated for every such slab; Lem.\ an17:transverse-data
+  $\delta_c$ of Lem.\ \ref{an17:G} may be shrunk: Lem.~\ref{an17:G}(i) demands only the upper
+  bound $\delta_c\le(2m(K)^2L_\chi)^{-1}$; the short-slab length
+  $T_c=\delta_c/(4c_*)$ of Lem.\ \ref{an17:DoD} shrinks with it and the
+  DoD truncation is stated for every such slab; Lem.\ \ref{an17:transverse-data}
   is local in the collar. No Sobolev fence moves ($s>11$ untouched).
 \end{enumerate}
 (S2) is \emph{never} used below; no partie-finie identity enters. The
 ball-uniform version of (S1) over all of $U_\omega$ (same majorants, by the
-uniform collar Cauchy estimates of an17:lem-embed/EP1) is \emph{available
+uniform collar Cauchy estimates of Lem.~\ref{an17:lem-embed}/EP1) is \emph{available
 but not consumed}: (D0) is the single-seed-metric residue (res1), and no parameter-analyticity in $g$ is asserted anywhere (EP0).
 
 \begin{lemma}[The lever, (S1) at the seed: the Hadamard coefficient series
@@ -113,18 +113,18 @@ nos.~52, 63, 65]. At the seed both hold \emph{with quantitative collar
 data}: $g_0$ and $g_0^{-1}=(\det g_0)^{-1}\operatorname{adj}g_0$ are
 holomorphic on $\mathcal K_{\rho_a}$ with the sup bound
 $\|g_0\|_{\mathcal K_{\rho_a}}$ and the determinant floor $d_\omega$
-(an17:sub-Uomega l.148--150), $m^2$ is constant, and the normal
+(Def.~\ref{an17:def-Uomega}), $m^2$ is constant, and the normal
 (Lipschitz) variables he works in exist holomorphically at a uniform radius:
 the complex-time geodesic IVP is solved by the analytic-ODE package
-an17:rem-CK (l.465--482; Picard contraction on $\mathcal K_{\rho_a/4}$, field
-bound $M_\Gamma$ of eq.\ an17:eq-MGamma), so the exponential map, its
-inverse on the uniform convex-normal cover of Lem.\ an17:G, and hence
+Rem.~\ref{an17:rem-CK} (Picard contraction on $\mathcal K_{\rho_a/4}$, field
+bound $M_\Gamma$ of \eqref{an17:eq-MGamma}), so the exponential map, its
+inverse on the uniform convex-normal cover of Lem.\ \ref{an17:G}, and hence
 $\sigma_{g_0}$ and $\Delta^{1/2}_{g_0}$ (Jacobian determinant of a
 holomorphic map; nonvanishing near the diagonal since $\Delta\to1$) are
 holomorphic on a complex diagonal collar whose radius depends only on
 $(\rho_a,\|g_0\|_{\mathcal K_{\rho_a}},d_\omega)$ through $M_\Gamma$. This
 is the same reduction the appendix already exercises for the phase
-(an17:prop-strip, l.484--500); nothing new is assumed.
+(Prop.~\ref{an17:prop-strip}); nothing new is assumed.
 
 \emph{Step 2 (identification of the series; re-derived).} For $n=4$
 Hadamard's exponent is $p=(m_{\dim}-2)/2=1$: his elementary solution
@@ -137,7 +137,7 @@ expansion $\mathcal V=\sum_h\mathcal V_h\Gamma^h$ [1932, eqs.~(44$'$), (52),
 (49$'$)] is, term by term in $\Gamma^h$, the hierarchy
 \eqref{an57d0:T0}--\eqref{an57d0:Tj}: both are the unique regular-at-the-%
 vertex solutions of the same singular linear transport ODEs along the
-geodesics from $y$ (the appendix's printed recursion site: (N-a), l.3208,
+geodesics from $y$ (the appendix's printed recursion site: (N-a),
 [Moretti 2003, Thm.~2.1]; the Fewster--Smith display above is that recursion
 verbatim at $n=4$). Uniqueness of regular solutions of the transport
 hierarchy identifies $\mathcal V_h=2^{-h}\,c_{\mathrm{nrm}}\,v_h$ with the
@@ -205,7 +205,7 @@ Let $\delta_c':=\min(\delta_c,\delta_{\mathrm{conv}}/2,\delta_H)$, where
 $\delta_H$ is a collar radius with
 $V_{\delta_H}\subset V_H\cap V_{\mathrm{conv}}$ (premise (P-a) and Lemma
 \ref{an57d0:lever}), and let $H^{(\infty)}_{g_0}$ denote the glued
-parametrix of Lem.\ an17:G with the chartwise truncations $Z^{(N),a}_{g_0}$
+parametrix of Lem.\ \ref{an17:G} with the chartwise truncations $Z^{(N),a}_{g_0}$
 replaced by the convergent sums $Z^{(\infty),a}_{g_0}=\frac1{8\pi^2}
 [\Delta^{1/2}/\sigma+v\log(\sigma/\ell^2)]$. Then on the collar
 $V_{\delta_c'}=\{d_{g_0}(x,y)<\delta_c'\}$ (intersected with
@@ -213,9 +213,9 @@ $\mathcal N\times\mathcal N$):
 \begin{enumerate}[label=\textup{(\roman*)},leftmargin=*,nosep]
 \item $Z^{(\infty),a}_{g_0}$ is patch-independent, so
   $H^{(\infty)}_{g_0}=\frac1{8\pi^2}[\Delta^{1/2}/\sigma
-  +v\log(\sigma/\ell^2)]$ exactly ($\sum_a\theta_a\equiv1$, an17:G(i); the
+  +v\log(\sigma/\ell^2)]$ exactly ($\sum_a\theta_a\equiv1$, Lem.~\ref{an17:G}(i); the
   members $\sigma,\Delta^{1/2},v_k$ are geometric biscalars and the length
-  scale $\ell$ is global, an17:G(ii));
+  scale $\ell$ is global, Lem.~\ref{an17:G}(ii));
 \item the $N{=}2$ tail is exact and analytic-profiled:
   $T:=H^{(\infty)}_{g_0}-H^{(2)}_{g_0}
   =\frac1{8\pi^2}\,\sigma^3\varrho\,\log(\sigma/\ell^2)$ with $\varrho$ as
@@ -228,10 +228,10 @@ $\mathcal N\times\mathcal N$):
 \end{enumerate}
 \end{lemma}
 \begin{proof}
-(i), (ii) are display arithmetic given an17:G(i)--(ii) and Lemma
+(i), (ii) are display arithmetic given Lem.~\ref{an17:G}(i)--(ii) and Lemma
 \ref{an57d0:lever}: on each patch overlap the chartwise members
 $\sigma,\Delta^{1/2},v_k$ agree (geometric biscalars; one global $\ell$
-kills the branch mismatch, an17:G(ii)), hence so do the convergent sums;
+kills the branch mismatch, Lem.~\ref{an17:G}(ii)), hence so do the convergent sums;
 $\sum_a\theta_a\equiv1$ collapses the gluing. For (iii): for every $N$,
 \[
  w_0=\bigl(\omega^{(2)}_0-H^{(N)}_{g_0}\bigr)
@@ -245,7 +245,7 @@ form of the Hadamard condition [Kay--Wald 1991; Radzikowski 1996; Sanders
 same factorisation at order $N$): a function with an $(N{+}1)$-fold zero on
 the cone times $\log$, hence $C^{N,\alpha^-}$ across the cone (transverse
 model $u^{N+1}\log|u|$; radial model $r^{2N+2}\log r$ is better, exactly
-the two model heights of Lem.\ an17:transverse-data's proof), and analytic
+the two model heights of Lem.\ \ref{an17:transverse-data}'s proof), and analytic
 off it. So $w_0\in C^N$ on the \emph{fixed} collar $V_{\delta_c'}$ for
 every $N$, i.e.\ $w_0\in C^\infty$; the jet sups are finite on compact
 closures. \emph{No partie-finie identity, no fundamental-solution property
@@ -256,10 +256,9 @@ of $H^{(\infty)}$, is used} --- only (S1) and (P-a).
 four slots, $b=1$ included]\label{an57d0:main}
 Premises: (P-a), (P-b), Lemmas \ref{an57d0:lever}--\ref{an57d0:state}. Work
 on the shrunken collar $\delta_c''$ and the correspondingly shortened DoD
-slab (Lem.\ an17:DoD at $T_c''=\delta_c''/(4c_*)$). Then the four Ladder-A
+slab (Lem.\ \ref{an17:DoD} at $T_c''=\delta_c''/(4c_*)$). Then the four Ladder-A
 data legs of $W_{g_0,2}(\cdot,y)=w_0(\cdot,y)+T(\cdot,y)$ on $\Sigma_0$
-exist and are finite at exactly the availability heights printed at A3
-(l.2882--2900), uniformly and continuously in the spectator $y\in K_y$:
+exist and are finite at exactly the availability heights printed at A3, uniformly and continuously in the spectator $y\in K_y$:
 \[
  W_{g_0,2}|_{\Sigma_0}\in H^{13/2^-}(\Sigma_0),\quad
  \partial_tW_{g_0,2}|_{\Sigma_0}\in H^{11/2^-},\quad
@@ -267,35 +266,36 @@ exist and are finite at exactly the availability heights printed at A3
  \partial_t\partial_yW_{g_0,2}|_{\Sigma_0}\in H^{9/2^-},
 \]
 \textup{[Correction gate on this display: it inherits the two printed errors
-corrected at Lem.\ an17:transverse-data (corrected form; both named at Rem.\
-an17:transverse-note) --- (a) the $\alpha+\tfrac12$ restriction rule at
+corrected at Lem.\ \ref{an17:transverse-data} (corrected form; both named at Rem.\
+\ref{an17:transverse-note}) --- (a) the $\alpha+\tfrac12$ restriction rule at
 $r$-graded $\alpha>0$, (b) the one-$r$-power-per-derivative eikonal grading
 --- and is FALSE as printed: the honest, sharp seed column is
 $H^{7/2^-},H^{5/2^-},H^{5/2^-},H^{3/2^-}$ (flat massive vacuum
 counterexample, $v_3=m^8/(18432\pi^2)\neq0$; appendix record Rem.\
-an17:d0-record). The display and the T-leg calculus below stand only MODULO
+\ref{an17:d0-record}). The display and the T-leg calculus below stand only MODULO
 the transverse re-derivation --- gated, not deleted; the $w_0$-legs and
 Lemmas \ref{an57d0:lever}--\ref{an57d0:state} are untouched.]}
 with norms bounded by
 $c_{\mathrm{tr}}(K)\bigl[w_*^{(9)}+M_{\mathrm{tail}}\,
 c_{\mathrm{prof}}(K)\bigr]$ ($w_*^{(9)}$: two slot derivatives plus seven
 slice derivatives; any $w_*^{(j)}$, $j\ge9$, works), $c_{\mathrm{prof}}$ the
-transverse-restriction constant of Lem.\ an17:transverse-data at the four
+transverse-restriction constant of Lem.\ \ref{an17:transverse-data} at the four
 profile exponents. In
 particular the $b=1$ \emph{field} slots ($\partial_y$, $\partial_t\partial_y$)
-are supplied, and the (D0) residue of an17:named-residues (l.3321--3324) is
+are supplied, and the (D0) residue of Rem.~\ref{an17:named-residues} is
 CLOSED at the seed: the single-metric write-out $W^{(2)}_*$ is no longer
 (D0)-gated. \textup{[Correction gate: this closure sentence does not stand as
 printed --- at the honest heights the $b{=}1$ field slot supplies $H^{5/2^-}$
-sharp versus every consumed demand $>\tfrac52$; (D0) remains gated, now as a
-confirmed obstruction of the printed route (Rem.\ an17:d0-record).]} \textup{(For general $g'\in U_\omega$ the spectator data reduce
+sharp versus every consumed demand $>\tfrac52$; (D0) remains gated on the printed route at the seed $N{=}2$, now a
+confirmed obstruction --- SUPPLIABLE at $N^\star{=}4$ (Rem.\ \ref{an17:d0-record},
+item (v); the source-rung survival sweep discharged, half-line $s>15$).]} \textup{(For general $g'\in U_\omega$ the spectator data reduce
 to seed data by the BFV/RCE surface anchoring at its carrier's grade; that
 reduction is \emph{not} part of (D0) and is not claimed here --- see
 Rem.~\ref{an57d0:modulo}.)}
 \end{proposition}
 \begin{proof}
 Split each leg as $w_0$-leg $+$ $T$-leg on the DoD-localised collar piece of
-$\Sigma_0$ (the cutoff $\psi$ of Lem.\ an17:DoD confines every consumed norm
+$\Sigma_0$ (the cutoff $\psi$ of Lem.\ \ref{an17:DoD} confines every consumed norm
 to $\{d_{g_0}(\cdot,y)\le\tfrac34\delta_c''\}$, compact).
 
 \emph{$w_0$-legs.} By Lemma \ref{an57d0:state}(iii) each of the four jets
@@ -311,11 +311,11 @@ continuous in $(x,y)$ on a compact closure.
 printed profile calculus).} $T=\frac1{8\pi^2}
 \sigma^3\varrho\log(\sigma/\ell^2)$ with $\|\varrho\|_{C^6}\le
 M_{\mathrm{tail}}$ (Lemma \ref{an57d0:lever}). In the profile coordinate of
-Lem.\ an17:transverse-data ($r^2\sim2|\sigma|$ near the cone, away from the
+Lem.\ \ref{an17:transverse-data} ($r^2\sim2|\sigma|$ near the cone, away from the
 vertex) the appendix's (N-a) profile calculus --- $\sigma^k\log\sigma$
 carries profile $r^{2k}\log r$, one $r$-power per derivative (the
 printed convention: S$'_2$'s $\sigma^2\log\sigma$ is booked
-$r^4\log r$ with ``$\partial^5\sim r^{-1}$'', l.2870--2871; its geometric
+$r^4\log r$ with ``$\partial^5\sim r^{-1}$''; its geometric
 root is the eikonal grading $|\nabla\sigma|_g=r$) --- books
 \[
  T\sim r^6\log r,\qquad
@@ -324,7 +324,7 @@ root is the eikonal grading $|\nabla\sigma|_g=r$) --- books
    +\sigma^2\varrho\,\partial\sigma\ \sim\ r^5\log r,\qquad
  \partial^2T\ \sim\ r^4\log r,
 \]
-\textup{[Correction gate: this is error (b) of Rem.\ an17:transverse-note ---
+\textup{[Correction gate: this is error (b) of Rem.\ \ref{an17:transverse-note} ---
 $|\nabla\sigma|_g$ is the Lorentzian $g$-norm, which vanishes at the cone,
 while the coordinate gradient is $O(1)$ there; near the crossing each
 derivative on $\sigma^k\log\sigma$ costs \emph{two} $r$-powers, so the honest
@@ -335,30 +335,30 @@ displayed one, coefficients bounded by $M_{\mathrm{tail}}$ on the closed
 collar; the $\partial_y$ and $\partial_t$ slots grade identically ($\sigma$
 a symmetric analytic biscalar; the vertex-adjacent radial regime is
 \emph{better}, the $\rho^\alpha\log\rho\in H^{\alpha+3/2^-}$ model height
-inside Lem.\ an17:transverse-data's proof). These are \emph{verbatim} the
+inside Lem.\ \ref{an17:transverse-data}'s proof). These are \emph{verbatim} the
 profile assignments the printed A3 column gives the same four legs; no new
 grading convention is introduced, and the established trace-audit that underwrites
 the printed calculus is consumed, not re-derived. Lem.\
-an17:transverse-data (THEOREM, sharp, $y$-uniform; the ``times any factor
+\ref{an17:transverse-data} (THEOREM, sharp, $y$-uniform; the ``times any factor
 smooth-modulo-$H^{s-2}$'' hypothesis is satisfied by the \emph{analytic}
 factors here, under the standing no-glancing hypotheses of Lem.\
-an17:no-glancing at the seed) applied at $\alpha=6,5,5,4$ gives restrictions
+\ref{an17:no-glancing} at the seed) applied at $\alpha=6,5,5,4$ gives restrictions
 in $H^{13/2^-},H^{11/2^-},H^{11/2^-},H^{9/2^-}$ respectively, norms
 $\le M_{\mathrm{tail}}\,c_{\mathrm{prof}}(K)$, uniformly and continuously
 in $y\in K_y$.
 
 Summing the two legs gives the display, which is verbatim the A3
-availability column (l.2886--2890: transverse heights $\rho^6\log\rho\in
+availability column (transverse heights $\rho^6\log\rho\in
 H^{13/2^-}$, $\rho^5\log\rho\in H^{11/2^-}$, $\rho^5\log\rho\in H^{11/2^-}$,
 $\rho^4\log\rho\in H^{9/2^-}$) --- now with the $b{=}1$ \emph{field} slots
 carried by $w_0\in C^\infty$ instead of a finite-regularity cap. The margins
 against Rung~2's demands are therefore $\ge$ the printed ones (at the
 analytic seed the ``conservative $H^s$-background coefficient ceilings'' of
-A3 are strict surplus), and Rung~2 of Lem.\ an17:slice-ladder consumes the
+A3 are strict surplus), and Rung~2 of Lem.\ \ref{an17:slice-ladder} consumes the
 column as printed; no step of the ladder is re-derived here.
 \textup{[Correction gate on this closing paragraph: error (a) of Rem.\
-an17:transverse-note --- the restriction rule applied at the $r$-powers
-$\alpha=6,5,5,4$; the corrected Lem.\ an17:transverse-data gives
+\ref{an17:transverse-note} --- the restriction rule applied at the $r$-powers
+$\alpha=6,5,5,4$; the corrected Lem.\ \ref{an17:transverse-data} gives
 $\tfrac\alpha2+\tfrac12$, so the honest column is
 $(\tfrac72,\tfrac52,\tfrac52,\tfrac32)^-$, sharp at the seed. The $w_0$-leg
 paragraph above is untouched (the sound half); the T-leg margins and the
@@ -372,8 +372,8 @@ move]\label{an57d0:modulo}
 --- the discharge claim below is gated. Existence of the four legs is established
 (THEOREM, unconditional), but at the honest heights
 $(\tfrac72,\tfrac52,\tfrac52,\tfrac32)^-$, not the printed ones; (D0) remains
-gated (Rem.\ an17:d0-record).]} The (D0) entry of an17:named-residues
-(l.3321--3324) is discharged at the seed: the four A3 data legs exist at
+gated on the printed route at the seed, SUPPLIABLE at $N^\star{=}4$
+(Rem.\ \ref{an17:d0-record}, item (v)).]} The (D0) entry of Rem.~\ref{an17:named-residues} is discharged at the seed: the four A3 data legs exist at
 the printed heights, $b{=}1$ included, given (P-a) (the paper's standing
 seed-Hadamard premise) and (P-b) (fence-neutral collar shrink). The
 single-metric seed write-out $W^{(2)}_*$ loses its (D0) gate; condition~W4's internal contradiction resolves in res1's favour with the gate now
@@ -387,7 +387,7 @@ discharge sentence; Props~A/C write-out$\}$:
   closure is BFV-free (the seed write-out consumes no difference data),
   but clause (ii)'s assembly still consumes the (N-c) difference legs
   \emph{on the BFV surface} at the carrier grade of Lem.\
-  an17:Nc-corrected (l.3289--3293: ``PLAUSIBLE \dots\ NEVER cited at
+  \ref{an17:Nc-corrected} (``PLAUSIBLE \dots\ NEVER cited at
   THEOREM grade''). A (D0) closure does NOT lift it; the resisting step for M1 remains
   conditional on it, with the Props~A/C state-side difference estimate the
   unconditional fallback.
@@ -396,13 +396,13 @@ discharge sentence; Props~A/C write-out$\}$:
 \item \textbf{Props~A/C $+$ Lemma~B full write-out} --- given in the
   family-uniformity package of this appendix; not this port's claim.
 \end{itemize}
-\emph{(c) Grade arithmetic.} M1's printed grade (an17:CW-grade, PLAUSIBLE)
+\emph{(c) Grade arithmetic.} M1's printed grade (Rem.~\ref{an17:CW-grade}, PLAUSIBLE)
 does \emph{not} move on this port alone. With all three ports
-applied and the corresponding re-pointing of an17:CW-grade in place, the honest M1 label is
+applied and the corresponding re-pointing of Rem.~\ref{an17:CW-grade} in place, the honest M1 label is
 ``theorem MODULO $\{$BFV-vanishing $@$ PLAUSIBLE; \#B$'$ for
 patch-traversal consumers$\}$'' --- still \emph{not} THEOREM, and the
 printed grade line stays PLAUSIBLE. (E-env) and \#A are data-side residues
-orthogonal to this port (an17:named-residues l.3329--3331) and are not
+orthogonal to this port (Rem.~\ref{an17:named-residues}) and are not
 touched. \emph{(d) Revival conditions.} (D0) re-opens if: the seed anchor
 is taken non-analytic (the lever's hypothesis fails); or a consumer feeds
 seed data beyond the collar (then \#B$'$, not (D0)); or the seed state's

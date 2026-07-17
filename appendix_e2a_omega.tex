@@ -25,7 +25,7 @@
 % named list {M1 clause (ii) PLAUSIBLE, M2 clause (iii) named, M3 clause (i)
 % difference-form named}. The appendix is NEVER titled "E2a-omega is a
 % theorem". Scope pins: free massive m>0 minimally-coupled scalar; MIXED jets
-% only; U_omega (H^s-dense, empty H^s-interior); s>11 / s>23/2.
+% only; U_omega (H^s(K'')-precompact/nowhere dense, empty H^s-interior); s>11 / s>23/2.
 %
 % Section order (audit A.0-A.9):
 %   Part 1  A.1-A.3  platform: U_omega, (R1)-(R5)/F2, the fold count N_0.
@@ -180,12 +180,43 @@ $U_\omega$ is fixed by exactly three data: the anchor $g_0$ (real-analytic), the
 collar radius $\rho_a$, and the collar sup-bound $\varepsilon_a$; the count $N_0$
 below is a function of these three alone --- \emph{no Sobolev index and no $C^k$
 norm} enters it, which is the entire gain over $U$. The disclosed cost, recorded
-here and respected throughout Parts~2--3: $U_\omega$ is $H^s$-dense but has empty
-$H^s$-interior, so every uniformity claimed over it is a supremum over the ball
-or a pair-Lipschitz modulus, never an $H^s$-open property. This is exactly the
+here and respected throughout Parts~2--3, and \emph{stronger} than the
+interior-emptiness recorded in earlier passes: on the slab $U_\omega$ is
+$H^s(K'')$-\emph{precompact} (run the Cauchy-estimate step of
+Lem.~\ref{an17:lem-embed} at any order $m>s$ and apply Rellich), hence nowhere
+dense in $H^s$ with empty $H^s$-interior; so every uniformity claimed over it is
+a supremum over the ball or a pair-Lipschitz modulus, never an $H^s$-open
+property. What \emph{is} $H^s$-dense (in the $C^0$-tube of $g_0$) is the
+analyticity restriction as such --- the union of the collar classes over all
+$\rho_a>0$ --- by heat-flow/entire-function mollification (chartwise
+mollification with a partition of unity destroys analyticity; standard fact,
+consumed nowhere below); every theorem of this appendix is uniform over each
+\emph{fixed} class. This is exactly the
 scope in which the paper carries Hyp.~\ref{hyp:hadamard-uniform-omega} (Option~A,
 the analytic-collar restatement).
 \end{remark}
+
+\begin{lemma}[strengthening of the disclosed cost: precompactness on the
+slab]\label{an17:lem-precompact}
+$U_\omega|_{K''}$ is $H^s(K'')$-precompact, and its $H^s(K'')$-closure lies in
+the $\le$-relaxed collar class on each strictly smaller collar: every limit
+point is holomorphic on $\mathcal K_{\rho}$ for each $0<\rho<\rho_a$ with
+$\|g-g_0\|_{\mathcal K_{\rho}}\le\varepsilon_a$.
+\end{lemma}
+\begin{proof}
+Fix any order $m>s$: the Cauchy-estimate step of Lem.~\ref{an17:lem-embed}, run
+at order $m$, bounds $U_\omega$ in $H^m(K'')$ by $C_{\mathrm{emb}}(m)\,
+\varepsilon_a$, and Rellich ($m>s$, $K''$ compact) compresses the bounded
+$H^m(K'')$-set into an $H^s(K'')$-precompact one. Montel identifies the closure:
+an $H^s(K'')$-convergent sequence in $U_\omega$ is uniformly bounded on the
+collar, so a subsequence converges locally uniformly on its interior to a
+holomorphic limit, and the sup bound survives as $\le\varepsilon_a$ on each
+$\mathcal K_{\rho}$, $0<\rho<\rho_a$ (the class's strict $<$ need not survive
+the limit --- closedness holds under $\le$). This abstract compactness is
+recorded as disclosure only; the quantitative route of record remains the
+collar margin with its explicit constants (Rem.~\ref{an17:rem-topology}):
+abstract compactness and attainment yield no numbers.
+\end{proof}
 
 \subsection{The fixed-atlas geometric package
 \texorpdfstring{$(R1)$--$(R5)$}{(R1)-(R5)}}
@@ -467,16 +498,27 @@ For $g\in U_\omega$ (so each $g_{ab}$ is holomorphic on $\mathcal K_{\rho_a}$ an
 $|\det g|\ge d_\omega>0$ there): \emph{(i)} the Christoffel symbols $\Gamma[g]$
 are holomorphic on the shrunk collar $\mathcal K_{\rho_a/2}$ with
 \begin{equation}\label{an17:eq-MGamma}
- M_\Gamma\;:=\;\sup_{g\in U_\omega}\|\Gamma[g]\|_{\mathcal K_{\rho_a/2}}\;\le\;
- c_n\,\rho_a^{-1}\bigl(\|g_0\|_{\mathcal K_{\rho_a}}+\varepsilon_a\bigr)
+ M_\Gamma\;:=\;\max\Bigl(\tfrac12,\ \sup_{g\in U_\omega}\|\Gamma[g]\|_{\mathcal K_{\rho_a/2}}\Bigr)\;\le\;
+ \tfrac12+c_n\,\rho_a^{-1}\bigl(\|g_0\|_{\mathcal K_{\rho_a}}+\varepsilon_a\bigr)
  \bigl(1+d_\omega^{-1}\bigr)^{n}\;<\;\infty
 \end{equation}
 (one Cauchy derivative costs $\rho_a^{-1}$; $\partial g$ and $g^{-1}=(\det g)^{-1}
-\operatorname{adj}g$ holomorphic by Lemma~\ref{an17:lem-embed}); \emph{(ii)} for
+\operatorname{adj}g$ holomorphic by Lemma~\ref{an17:lem-embed}; the $\max$ with
+$\tfrac12$ is a WLOG normalisation: $M_\Gamma$ is consumed downstream only as an
+upper bound on $\|\Gamma\|$ and as a formal parameter of the derived constants
+$r_t,M_\phi'',\mathcal R_0,N_0,\sigma_\dagger,C_{\mathrm{rim}}'$, each entered
+upper-bound-safely, and it secures the collar-containment margins of (ii) and
+Prop.~\ref{an17:prop-strip} uniformly --- closing the corner $M_\Gamma<\tfrac14$
+(near-flat anchor, thin collar) in which the containments printed before this
+normalisation failed); \emph{(ii)} for
 $z\in K'$ and $|p|\le\rho_a/(8M_\Gamma)$ the complex-time geodesic IVP has a
 unique holomorphic solution on the disc $\{|\tau|\le\tfrac14\}$ with $\gamma\in
 \mathcal K_{\rho_a/4}$ and $|\dot\gamma|\le2|p|$ (Picard iteration, contraction
-$\le\tfrac12$). References: Hille, \emph{ODE in the Complex Domain}, Thm~2.2.2;
+$\le\tfrac12$; containment: the drift is $\le2|p|\cdot\tfrac14\le
+\rho_a/(16M_\Gamma)\le\rho_a/8$ by the normalisation $M_\Gamma\ge\tfrac12$), and,
+by time-homogeneity $\gamma_p(\lambda\tau)=\gamma_{\lambda p}(\tau)$, the same
+statement holds at any momentum cap $P>0$ on the disc
+$\{|\tau|\le\rho_a/(32M_\Gamma P)\}$. References: Hille, \emph{ODE in the Complex Domain}, Thm~2.2.2;
 Ilyashenko--Yakovenko \S1.4. The literature is used strictly inside the analytic
 class it is stated for, never promoted to $C^k$.
 \end{remark}
@@ -486,7 +528,7 @@ class it is stated for, never promoted to $C^k$.
 There are ball-uniform $r_t>0$ and $M_\phi''<\infty$, depending on
 $(\rho_a,\varepsilon_a,g_0)$ only through $M_\Gamma$,
 \begin{equation}\label{an17:eq-rt}
- r_t\;:=\;\min\!\Bigl(\tfrac14,\ \tfrac{\rho_a}{16\,M_\Gamma\,c_{\mathrm{ch}}
+ r_t\;:=\;\min\!\Bigl(\tfrac14,\ \tfrac{\rho_a}{64\,M_\Gamma\,c_{\mathrm{ch}}
  \rho_0}\Bigr),
 \end{equation}
 such that for every $g\in U_\omega$, $y\in K_\Sigma$, $0<\rho\le\rho_0$, $x\in
@@ -503,10 +545,16 @@ On $\mathrm{fan}_\rho(y)$ the geodesic solves $\ddot\gamma=-\Gamma(\gamma)
 (\dot\gamma,\dot\gamma)$ with $|\dot\gamma(0)|\le c_{\mathrm{ch}}\rho$; the field
 $(\zeta,\eta)\mapsto(\eta,-\Gamma(\zeta)(\eta,\eta))$ is holomorphic on $\mathcal
 K_{\rho_a/2}\times\CC^n$ with $\|\Gamma\|\le M_\Gamma$
-(Remark~\ref{an17:rem-CK}). Applying (ii) at each base point $\gamma(t_0)$,
-$t_0\in[0,1]$, with momentum bounded by $2c_{\mathrm{ch}}\rho_0$ extends the flow
-to a complex-time disc of $t_0$-uniform radius $\tau_0'=\rho_a/(16M_\Gamma
-c_{\mathrm{ch}}\rho_0)$; the discs glue by uniqueness of continuation to the strip
+(Remark~\ref{an17:rem-CK}). Applying the momentum-rescaled (ii) at each base
+point $\gamma(t_0)$, $t_0\in[0,1]$, at the cap $P=2c_{\mathrm{ch}}\rho_0$ extends
+the flow to a complex-time disc of $t_0$-uniform radius
+$\tau_0'=\rho_a/(64M_\Gamma c_{\mathrm{ch}}\rho_0)$, with drift
+$\le\rho_a/(16M_\Gamma)\le\rho_a/8$ ($M_\Gamma\ge\tfrac12$), inside the collar
+where $\|\Gamma\|\le M_\Gamma$ \textup{[constant corrected: the previously
+printed radius $\rho_a/(16M_\Gamma c_{\mathrm{ch}}\rho_0)$ overdrew (ii)'s
+momentum--radius budget by the absolute factor $4$ and, for $M_\Gamma<\tfrac14$,
+exited the collar; no consumer reads the numeric $r_t$, so the correction moves
+no register]}; the discs glue by uniqueness of continuation to the strip
 $\Sigma_{r_t}$, $r_t=\min(\tfrac14,\tau_0')$. On the strip $|\dot\gamma(\tau)|\le
 2c_{\mathrm{ch}}\rho$ (Picard, on the whole disc), so \emph{directly from the ODE}
 (not a Cauchy shrinkage of $\phi$) $|\phi''(\tau)|=|e\cdot\Gamma(\gamma)(\dot
@@ -580,7 +628,8 @@ working-strip sup $\ge m_0$ \emph{on every tile}, set
  (complement)} .
 \end{equation}
 On $\mathcal N_{m_0}$ every tile carries a valid Jensen floor; on $\mathcal V_{m_0}$
-some tile has strip-sup $<m_0$ (the phase is near-flat there) and the count is not
+some tile has strip-sup $<m_0$ (the phase is near-flat on that tile --- the
+other tiles may still carry strip-sup up to $M_\phi''$) and the count is not
 invoked. The identically-vanishing set $\{\phi''\equiv0\}\subseteq\mathcal V_{m_0}$
 for every $m_0>0$. A single \emph{global} floor would bound zeros only in one
 $O(r_t)$-segment; the per-tile condition is the one the count actually requires.
@@ -723,10 +772,13 @@ $Z_0:=N_0$, from which the device constant $D=1+N_0$ is ball-uniform over
 $U_\omega$. The count itself is \emph{unconditional} over $U_\omega$. What is
 \emph{not} proved here, and is deferred to Part~2: the pure-linear device bound
 $d\theta(S_\mu)\le c_{\mathrm{sub}}\mu$ ($c_{\mathrm{sub}}=c_{\mathrm{vel}}(1+N_0)$)
-holds on the fold stratum $\mathcal N_{m_0}$ and for $\mu\ge\kappa_V$ (a fixed
-ball-uniform threshold), with a count-free $\mu^{1/2}$ remainder confined to the
-near-flat regime $\mu<\kappa_V$ where $\phi''$ is uniformly small and no genuine
-fold occurs; whether (D3) then closes over $U_\omega$ is Part~2's cascade, not a
+holds on the fold stratum $\mathcal N_{m_0}$ for all $\mu$, and on all of
+$\Sigma_y$ for $\mu\ge\kappa_V$ (a fixed ball-uniform threshold) with a
+ball-uniform inflated constant (Part~2, Thm.~\ref{an17:thm-linear}), with a
+count-free $\mu^{1/2}$ remainder confined to the sliver regime $\mu<\kappa_V$,
+where the per-tile floor fails on some tile and the count is not invoked (the
+fibre may still fold on its loud tiles --- no whole-interval
+$\phi''$-smallness is implied); whether (D3) then closes over $U_\omega$ is Part~2's cascade, not a
 claim of Part~1. On the near-vanishing stratum $\mathcal V_{m_0}$ no zero count of
 an identically-vanishing $\phi''$ is ever taken --- only the device measure is
 used there.
@@ -1211,19 +1263,35 @@ scalar $D$ \eqref{eq:an17-Ddef},
  \boxed{\;\int_{\mathcal C(y,\rho;e)}\bigl|I_\Lambda(x(\theta),y;e)\bigr|^{2}
  \,d\theta\;\le\;C_2\,D^{2}\,\Lambda^{-1}\rho^{-1}\;}
 \end{equation}
-with the ball-uniform, $\bar\kappa_2$-\emph{free} constant of record
+with the ball-uniform, $\bar\kappa_2$-\emph{free} constant of record, instantiated
+from the in-file cell ledger,
 \begin{equation}\label{eq:an17-C2}
- C_2\;:=\;\underbrace{16\,A_{\mathrm{II}}^2c_{\mathrm{fan}}c_w^2}_{\text{vdC-II}}
- +\underbrace{6\,A_{\mathrm{fold}}^2c_{\mathrm{fan}}c_w^2c_\tau^{-2/3}}_{\text{fold}}
- +\underbrace{\tfrac14 A_{\mathrm{bad}}c_w^2}_{\text{bad}}
- +\underbrace{16\,c_{\mathrm{fan}}c_w^2}_{\text{endpoint}},
+ C_2\;:=\;C_{\mathrm{part}}\;+\;8\,c_{\mathrm{fan}}c_w^2
+ \;=\;2^{12}c_w^2\bigl(c_{\mathrm{fan}}+c_{\mathrm{fold}}\bigr)
+ +8\,c_{\mathrm{fan}}c_w^2
 \end{equation}
-depending only on $(U_\omega,K_\Sigma,n,c_w)$ through
-$c_{\mathrm{fan}},c_w,A_{\mathrm{II}},A_{\mathrm{fold}},A_{\mathrm{bad}},c_\tau$
-{\rm(}the per-cell amplitude/measure constants, all $\bar\kappa_2$-free{\rm)}, and
-independent of $y,e,\rho,\Lambda$ and of $\bar\kappa_2$. The device factor $D^2$
-is carried \emph{only} by the bad cell; the vdC-II, fold, and endpoint masses are
-$D$-free.
+($C_{\mathrm{part}}$ of \eqref{eq:an17-Cpart} collecting the four cell lines of
+Lemma~\ref{an17:lem-ledger}; $8c_{\mathrm{fan}}c_w^2$ the endpoint $B_1$-mass of
+the proof below; on the consumed sublevel route, route-S,
+$c_{\mathrm{fold}}=c_{\mathrm{sub}}^\star$ and no $\phi'''$-floor fraction
+enters, the count-route $c_{\mathrm{fold}}=(1+N_0)^2\eta^{-2/3}$ being
+corroborating only). \textup{[Display correction: the earlier form of this
+constant was assembled from per-cell symbols
+$A_{\mathrm{II}},A_{\mathrm{fold}},A_{\mathrm{bad}},c_\tau$ quoted from ancillary
+worksheets that are not part of the shipped corpus, and its $c_\tau^{-2/3}$
+factor was a $\phi'''$-floor vestige of the count route that the consumed chain
+does not take; the display above replaces it by the in-file instantiation --- a
+bookkeeping reconciliation, not a re-pricing: splitting device powers between
+$c_{\mathrm{fold}}$ and $D^2$ redistributes but never lowers the composite
+$C_2D^2$, and the consumed headline $C_2(1+N_0)^2$ of
+Cor.~\ref{an17:cor-A1ledger}/Prop.~\ref{an17:prop-D3} dominates any such
+distribution.]} $C_2$ depends only on $(U_\omega,K_\Sigma,n,c_w)$ through the
+ledger constants {\rm(}all $\bar\kappa_2$-free{\rm)}, and is independent of
+$y,e,\rho,\Lambda$ and of $\bar\kappa_2$. The device factor $D^2$ rides the
+vdC-II shells \eqref{eq:an17-II} (and, on the count route only, the fold cell
+through $c_{\mathrm{fold}}$); the rim, bad, and endpoint masses are $D$-free ---
+the bad cell in particular is priced by the trivial cap against the F2 measure
+with no device input \eqref{eq:an17-bad}.
 \end{theorem}
 \begin{proof}
 The partition is $d\theta$-measurable and a.e.\ disjoint, so
@@ -1283,12 +1351,13 @@ or implied.
 The device scalar $D$ of \eqref{eq:an17-Ddef} is bounded, over $U_\omega$, by the
 count $N_0$ of (N0-an) --- but only where a genuine fold is present. The
 count-free split (Cor.~an-split, Lemma~\ref{an17:cor-split}, Part~1) proves the
-pure linear device bound $d\theta(S_\mu)\le c_{\mathrm{sub}}\mu$ for $\mu\ge
-\kappa_V:=m_0/(\bar\kappa_2\rho^2)=O(1)$; the (D3) bad cell, however, is fed at
+pure linear device bound $d\theta(S_\mu)\le(c_{\mathrm{sub}}
++c_{\mathrm{fan}}(\mathcal R_0\kappa_b+2))\mu$ for $\mu\ge
+\kappa_V:=m_0/(\bar\kappa_2\rho^2)$ ($=O(1)$ for $\rho\ge\rho_{\min}$); the (D3) bad cell, however, is fed at
 the binding cut $\mu_\star:=s_\flat=(\Lambda\rho)^{-1}\to0$, so for $\Lambda>
 \Lambda_0(\rho):=1/(\rho\kappa_V)$ one has $\mu_\star<\kappa_V$, and on the
 near-flat stratum $\mathcal V_{m_0}$ (Def.~an-strata, Lemma~\ref{an17:def-strata},
-Part~1: per-tile strip-sup $\sup_\tau|\phi''(\tau)|<m_0$) only the count-free
+Part~1: some tile has strip-sup $<m_0$) only the count-free
 $\mu^{1/2}$ remainder is available. This is the last load-bearing gap of the naive
 cascade. \emph{A1 is the theorem that the gap is harmless}: over any
 $\mathcal V_{m_0}$ fibre, the (D3) cone mass closes at the target $\Lambda^{-1}
@@ -1313,7 +1382,8 @@ For every $g\in U_\omega$ and every fibre $\theta$ in the cone,
  \mathcal R_0:=\frac{8M_\Gamma c_{\mathrm{ch}}^2}{c_0}\frac{\rho_0^2}{\rho_{\min}^2}
  =O(1),
 \end{equation}
-and consequently $|\phi'(t;\theta)-e\cdot v|=|\int_0^t\phi''|\le M_{\phi''}$, so
+and consequently $|\phi'(t;\theta)-e\cdot v|\le M_{\phi''}$ (mean-value anchor,
+see the proof), so
 $\phi'(t)\in[\rho\sigma-M_{\phi''},\rho\sigma+M_{\phi''}]$ for all $t$. \emph{This
 is an over-estimate, never a floor, and holds on the WHOLE cone.} {\rm(Grade:
 THEOREM; it is Prop.~an-strip's whole-cone bound, Lemma~\ref{an17:prop-strip} of
@@ -1322,9 +1392,15 @@ Part~1, imported verbatim.)}
 \begin{proof}
 $\sup_{[0,1]}|\phi''|\le\sup_{\Sigma_{r_t}}|\phi''|\le M_{\phi''}$ is
 Prop.~an-strip restricted to the real axis; $M_{\phi''}\le\mathcal R_0 m_0$ is the
-Part~1 ratio bound. The $\phi'$-window is the fundamental theorem of calculus,
-$\phi'(t)=\phi'(0)+\int_0^t\phi''$, absorbing the $O(\bar\kappa_2\rho^2)\le
-M_{\phi''}$ endpoint drift of (R3) into the stated window.
+Part~1 ratio bound. For the $\phi'$-window, anchor by the mean value theorem:
+$q(0)=q(1)=0$ (R1) gives $\phi(1)-\phi(0)=e\cdot v$, so $\phi'(\bar t\,)=e\cdot v$
+exactly for some $\bar t\in[0,1]$, whence $|\phi'(t)-e\cdot v|=
+|\int_{\bar t}^{t}\phi''|\le M_{\phi''}$. \textup{[Proof-line correction: the
+identity $\phi'(0)=e\cdot v$ implicitly used before is false ($\phi'(0)=e\cdot v
++e\cdot q'(0)$; only $q(0)=q(1)=0$, $\partial_yq(0)=0$ are exports), and the
+former clause absorbing an $O(\bar\kappa_2\rho^2)$ endpoint drift is deleted ---
+it compared the incomparable sup norms $K_\Gamma$ and $M_\Gamma$. The stated
+$\pm M_{\phi''}$ window is unchanged.]}
 \end{proof}
 
 Two regimes of a fibre follow, comparing $\rho\sigma$ to the flatness window
@@ -1347,7 +1423,7 @@ has span $\Delta:=\sup_\theta(\sup_t\phi'-\inf_t\phi')/\rho>0$ (a fixed $O(m_0/
 \end{equation}
 so the trivial-cap pricing $(b/2)^2d\theta(\Theta_\star)$ is a NON-DECAYING
 $O(m_0/\rho)$ constant and does not close (D3). The device's $\mu_\star$-measure
-bound $A_{\mathrm{bad}}D^2\mu_\star$ relies on $D^2$ being LARGE (it counts the
+bound $O(D^2\mu_\star)$ relies on $D^2$ being LARGE (it counts the
 $1+N_0$ interior dips), which is exactly what is unavailable device-free.
 \end{lemma}
 \begin{proof}
@@ -1527,7 +1603,7 @@ Lemma~\ref{an17:lem-band}, $\le C_{\mathcal E}b^2\Lambda^{-1}\rho^{-1}\ell_\Lamb
 (which already dominates the deep core; the explicit deep-core line is kept only to
 exhibit the cap term). \emph{Rim:} on $\{\sigma>\sigma_\dagger\}$,
 Lemma~\ref{an17:lem-flat} gives $\inf_t|\phi'|\ge\rho\sigma-M_{\phi''}>\tfrac12
-\rho\sigma>0$, so $\phi'$ is monotone and one IBP gives $|I_\Lambda|\le18b/(\Lambda
+\rho\sigma>0$, so $\phi'$ is single-signed and one IBP gives $|I_\Lambda|\le18b/(\Lambda
 \rho\sigma)$; layer-caking against F2,
 \[
  \int_{\mathrm{rim}}|I_\Lambda|^2 d\theta\le\int_{\sigma_\dagger}^{2\bar\kappa_2
@@ -1562,7 +1638,7 @@ passes through the priced ceiling), so it lands at target on any fibre.
 N_{m_0}$}: the auditable per-cell ledger (Theorem~\ref{an17:thm-D3fibre}) remains
 the reference closure there, and $N_0$ remains load-bearing for its bad-cell
 measure. A1's genuine and ONLY claim is the $\mathcal V_{m_0}$ gap, where the
-device measure $A_{\mathrm{bad}}D^2\mu_\star$ is unavailable below $\kappa_V$
+device measure bound $O(D^2\mu_\star)$ is unavailable below $\kappa_V$
 (Cor.~an-split gives only $\mu^{1/2}$) and A1 supplies the missing closure
 device-free. Over-reading \eqref{eq:an17-A1D3} as ``the device is dispensable''
 would be exactly the kind of overclaim the honesty discipline polices.
@@ -1643,18 +1719,23 @@ the device proof changes.
 Assume {\rm(N0-an)} with constant $N_0$. Set $c_{\mathrm{sub}}:=c_{\mathrm{vel}}
 (1+N_0)$ ($c_{\mathrm{vel}}=2c_{\mathrm{dens}}c_n$), let $C_{\mathrm{sub}}$ be the
 count-free constant of Theorem~\ref{an17:thm-Csub}, and $\kappa_V:=m_0/(\bar
-\kappa_2\rho^2)\le c_0/(2\bar\kappa_2)=O(1)$. Then for every $g\in U_\omega$,
+\kappa_2\rho^2)=(c_0/(2\bar\kappa_2))(\rho_{\min}/\rho)^2$ (so $\le c_0/(2\bar
+\kappa_2)=O(1)$ for $\rho\ge\rho_{\min}$; for $\rho<\rho_{\min}$ it grows like
+$\rho^{-2}$ --- harmless, since a larger $\kappa_V$ only narrows the claimed
+pure-linear range). Then for every $g\in U_\omega$,
 $y\in K_\Sigma$, $0<\rho\le\rho_0$, $|e|=1$,
 \begin{equation}\label{eq:an17-linear}
- d\theta(S_\mu)\le c_{\mathrm{sub}}\,\mu\ \ (\mu\ge\kappa_V),\qquad
+ d\theta(S_\mu)\le\bigl(c_{\mathrm{sub}}+c_{\mathrm{fan}}(\mathcal R_0\kappa_b
+ +2)\bigr)\mu\ \ (\mu\ge\kappa_V),\qquad
  d\theta(S_\mu)\le c_{\mathrm{sub}}\,\mu+C_{\mathrm{sub}}\,\rho\,\mu^{1/2}\ \
  (0<\mu<\kappa_V),
 \end{equation}
 $c_{\mathrm{sub}}$ ball-uniform over $U_\omega$, carrying the
 $(\rho_a,\varepsilon_a)$ dependence solely through $N_0=N_0(g_0,\rho_a,
-\varepsilon_a,\dots)$. The pure linear bound $d\theta(S_\mu)\le c_{\mathrm{sub}}\mu$
-holds for $\mu\ge\kappa_V$ on all of $\Sigma_y$ and for \emph{all} $\mu>0$ on the
-fold stratum $\mathcal B_{\mathcal N}$; the sole degradation is the count-free
+\varepsilon_a,\dots)$. The pure linear bound holds with constant
+$c_{\mathrm{sub}}+c_{\mathrm{fan}}(\mathcal R_0\kappa_b+2)$ for $\mu\ge\kappa_V$
+on all of $\Sigma_y$, and with constant $c_{\mathrm{sub}}$ for \emph{all} $\mu>0$
+on the fold stratum $\mathcal B_{\mathcal N}$ (the line the (D3) path consumes); the sole degradation is the count-free
 $\mu^{1/2}$ remainder confined to $\mu<\kappa_V$ on the near-flat sliver
 $\mathcal B_{\mathcal V}$ (where no zero count is taken). \textbf{No unqualified
 all-$\mu$ linear claim is made:} the pure linear form over all of $\Sigma_y$ for
@@ -1681,16 +1762,31 @@ critical time (Taylor, as in Theorem~\ref{an17:thm-Csub} Step~1), hence on one
 branch with $|c_k|<(1+\kappa_b)\mu$, so summing over $\le1+N_0$ branches (absorbing
 $1+\kappa_b$ into $c_{\mathrm{vel}}$) gives $d\theta(S_\mu\cap\mathcal B_{\mathcal
 N})\le(1+N_0)c_{\mathrm{vel}}\mu=c_{\mathrm{sub}}\mu$ for all $\mu>0$. \emph{Part B
-($\mathcal B_{\mathcal V}$).} Here $\sup_{[0,1]}|\phi''|<m_0$: no genuine fold, and
-the count is not invoked. Two facts (Cor.~an-split(b1)--(b2)), not their
+($\mathcal B_{\mathcal V}$).} Here \emph{some tile} carries strip-sup $<m_0$
+(Def.~\ref{an17:def-strata}); the whole-interval sup may still reach
+$M_\phi''=\mathcal R_0m_0$ on the other tiles (mixed fibres), so no
+whole-interval flatness is assumed; the count is not invoked. Two facts (Cor.~an-split(b1)--(b2)), not their
 unqualified union: (b1) the count-free $d\theta(S_\mu\cap\mathcal B_{\mathcal V})\le
 C_{\mathrm{sub}}\max(\mu,\rho\mu^{1/2})$ for all $\mu>0$
-(Theorem~\ref{an17:thm-Csub}); (b2) for $\mu\ge\kappa_V$ the $\phi''$-branch is
-inactive so $S_\mu\cap\mathcal B_{\mathcal V}$ is the pure velocity sublevel,
-measure $\le c_{\mathrm{vel}}\mu\le c_{\mathrm{sub}}\mu$. For $\mu<\kappa_V$ only
+(Theorem~\ref{an17:thm-Csub}); (b2) for $\mu\ge\kappa_V$ a $\sigma$-band estimate: by
+Lemma~\ref{an17:lem-flat} the $t$-span of $\Xi(\cdot,\theta)$ is $\le
+M_\phi''/\rho=\mathcal R_0\kappa_V\bar\kappa_2\rho\le\mathcal R_0\kappa_b\,\mu$
+(using $m_0=\kappa_V\bar\kappa_2\rho^2$ and $\bar\kappa_2\rho\le\kappa_b$), so by
+the equatorial band mechanism of Lemma~\ref{an17:lem-capfails} (the
+$\sigma$-shift structure and two-sided F2) $S_\mu\cap\mathcal B_{\mathcal V}$
+lies in a $\sigma$-band of width $\le(\mathcal R_0\kappa_b+2)\mu$, of measure
+$\le c_{\mathrm{fan}}(\mathcal R_0\kappa_b+2)\mu$. \textup{[Correction: the
+former (b2) declared the $\phi''$-branch inactive and priced the pure velocity
+sublevel at $c_{\mathrm{vel}}\mu$; on mixed fibres of $\mathcal B_{\mathcal V}$
+that inference fails as written, and the constant is repaired to
+$c_{\mathrm{fan}}(\mathcal R_0\kappa_b+2)$.]} For $\mu<\kappa_V$ only
 (b1)'s $C_{\mathrm{sub}}\rho\mu^{1/2}$ is proved; the pure linear form there is
 \emph{not} claimed. \emph{Assembly.} For $\mu\ge\kappa_V$, Part~A + Part~B(b2) give
-$d\theta(S_\mu)\le c_{\mathrm{sub}}\mu$; for $0<\mu<\kappa_V$, Part~A gives
+$d\theta(S_\mu)\le(c_{\mathrm{sub}}+c_{\mathrm{fan}}(\mathcal R_0\kappa_b+2))\mu$
+(this whole-$\Sigma_y$ line is consumed by nothing on the operative (D3) chain,
+which uses Part~A on $\mathcal B_{\mathcal N}$ and A1 on
+$\mathcal B_{\mathcal V}$; the (b2) constant inflation is confined to this
+display); for $0<\mu<\kappa_V$, Part~A gives
 $c_{\mathrm{sub}}\mu$ on $\mathcal B_{\mathcal N}$ and Part~B(b1) gives
 $C_{\mathrm{sub}}\rho\mu^{1/2}$ on $\mathcal B_{\mathcal V}$ --- exactly
 \eqref{eq:an17-linear}. Every constant is ball-uniform over $U_\omega$. The
@@ -1821,7 +1917,7 @@ assembly of Part~3.
 %    S1/S2/S3b interface" (t1p_S4a.tex l.471, t1p_S4b.tex l.443). beta=1/2 PROVED
 %    (t1p_S4a.tex Lem lem:S4a-beta), NOT asserted at heuristic strength.
 %  - Scope pins: free massive m>0 minimally-coupled scalar; MIXED jets only;
-%    U_omega (H^s-dense, interior-empty, sup/pair-Lipschitz only); s>11 slice /
+%    U_omega (H^s(K'')-precompact/nowhere dense, interior-empty, sup/pair-Lipschitz only); s>11 slice /
 %    s>23/2 locked-4d (NOT the naive 11.5/12 fallback). Coercivity floors, where
 %    they occur downstream, use the collar-margin attainment note, NOT closed-ball
 %    attainment (U_omega is not H^s-closed).
@@ -1881,9 +1977,9 @@ family. Those clauses are collected, at their honest grades, in the closing
 modulo-list of this appendix; this part cites them by name only, never at
 theorem grade. All scope is the free massive ($m>0$) minimally-coupled scalar
 of \eqref{eq:E2-QEI}; the jets are \emph{mixed} ($|a|+|b|\le1$ with the mixed
-pair $|a|=|b|=1$ only); the class $U_\omega$ is $H^s$-dense with empty
-$H^s$-interior, so every uniformity below is a supremum over the ball or a
-pair-Lipschitz modulus.
+pair $|a|=|b|=1$ only); the class $U_\omega$ is $H^s(K'')$-precompact ---
+nowhere dense, with empty $H^s$-interior --- so every uniformity below is a
+supremum over the ball or a pair-Lipschitz modulus.
 \end{remark}
 
 \subsection{A.6\quad The Schur assembly: (D1), the frequency-transfer matrix
@@ -2017,7 +2113,15 @@ $u\to1$ ($c_{\mathrm{geo}}\ge1$ the safe ball-uniform cutoff, the $O(\kappa_2
 \Lambda^{-a}\varepsilon_\Lambda\|\chi\|_{L^2}^{-1}$ gives \eqref{an17:eq-D4} with
 $C_{\mathrm{Schur}}=C_0\,c_{\mathrm{geo}}c_w\,c_{\mathrm{dens}}^{1/2}
 \|\chi\|_{L^2}^{-1}$ ball-uniform; the $\xi$-direction integral is moved outside
-$L^2_x$ by Minkowski using (D1)'s $e$-uniformity. No per-$\theta$ quantity is
+$L^2_x$ by Minkowski using (D1)'s $e$-uniformity --- it is here, and only here,
+that the fan mass normalisation enters, so the factor $C_0$ carries the (D1)
+constant $C_{\mathrm{fan}}=\sqrt{15c_{\mathrm{fan}}}\,c_w+\sqrt{C_2}\,D
+\supseteq(1+N_0)^{1/2}$: $C_{\mathrm{Schur}}$, not the dyadic factor $c_a$ of
+\eqref{an17:eq-D5} (which is $C_{\mathrm{fan}}$-free as displayed), is the
+$D$-carrier of the $S4$ leg. A $D$-free reading of
+\eqref{an17:eq-D4}--\eqref{an17:eq-D5} would prove the booking over the naive
+$H^s$ ball, contradicting the ripple no-go (Lemma~\ref{an17:lem-ripple}). No
+per-$\theta$ quantity is
 used --- only the fan-integrated (D1) and the $L^2_X$ synthesis mass.
 \end{proof}
 
@@ -2127,7 +2231,8 @@ i.e.\ the register books
 Proposition~\ref{an17:S4a-D1}. The constant
 \begin{equation}\label{an17:eq-KT1}
  K_{T1}\;=\;C_{\mathrm{Schur}}\,c_a^{1/2}\;+\;(\text{$S1c$ soft-leg constants}),
- \qquad c_a\ \text{built from}\ C_{\mathrm{fan}}^2,
+ \qquad C_{\mathrm{Schur}}\ \text{built from}\ C_{\mathrm{fan}}\
+ \text{(via $C_0$; $c_a$ is $C_{\mathrm{fan}}$-free)},
 \end{equation}
 is ball-uniform over $U_\omega$ and independent of $y$ and of $h$ \textup{(}linear\textup{)}.
 For the Lipschitz-in-$g$ form \textup{(}$T1'$-c\textup{)}, both $g$ and the
@@ -2197,7 +2302,7 @@ chain, through the fold count, and propagates monotonically:
  \ \longrightarrow\
  C_{\mathrm{fan}}
  \ \longrightarrow\
- c_a\sim C_{\mathrm{fan}}^2
+ C_{\mathrm{Schur}}\ (\text{via }C_0,\ \text{Thm.~\ref{an17:S4a-D4}})
  \ \longrightarrow\
  \underbrace{K_{T1}=C_{\mathrm{Schur}}c_a^{1/2}+\cdots}_{\text{Thm.~\ref{an17:T1prime}}}.
 \end{equation}
@@ -2387,10 +2492,10 @@ Lemma~\ref{an17:N0-analytic} is stated with its own shrinkage built in
 slice chain ever invokes compactness of a fixed-collar sup-ball --- the discipline
 against citing Montel where it does not apply. Every uniformity in A.6 is a
 plain supremum over $U_\omega$ or a pair-Lipschitz modulus, and $U_\omega$ is
-$H^s$-\emph{dense} with \emph{empty} $H^s$-interior; downstream coercivity floors
-therefore use the collar-margin attainment note (the infimum over the \emph{open}
-$U_\omega$ is controlled by the collar margin, \emph{not} by attainment on a
-closed $H^s$-ball, which fails).
+$H^s(K'')$-\emph{precompact} --- nowhere dense, with \emph{empty}
+$H^s$-interior; downstream coercivity floors therefore use the collar-margin
+attainment note (the infimum over $U_\omega$ is controlled by the collar
+margin, \emph{not} by attainment on a closed $H^s$-ball, which fails).
 \end{remark}
 
 \subsection{A.6$''$\quad Calibration record (a numerics witness)}
@@ -2402,7 +2507,9 @@ The exhibited ball-uniform constants and exponents of A.6 are accompanied by an
 independent numerical calibration, recorded in the companion reproducibility
 scripts \texttt{t1p\_calibrate.py} (with the \texttt{ref12} integrator),
 \texttt{s4a\_beta\_final.py} / \texttt{s4a\_beta\_finitefan.py}, and
-\texttt{s4b\_arith\_check.py} / \texttt{s4b\_schur\_check.py}. The record is a
+\texttt{s4b\_arith\_check.py} / \texttt{s4b\_schur\_check.py}, deposited as
+ancillary files with the arXiv source (not needed to compile or to check
+any proof). The record is a
 \emph{witness}, not a proof; it is stated here at that grade and no higher.
 \emph{What the numerics confirm.}
 \begin{itemize}
@@ -2468,10 +2575,15 @@ Hyp.~\ref{hyp:hadamard-uniform-omega}\textup{)} rests on. It is \emph{not} a pro
 of Hyp.~\ref{hyp:hadamard-uniform-omega}: clauses~(i)--(iii) --- the singular-part
 dual-Lipschitz bound (a named input; the single-metric $(1,1)$ jet is $C^0$ at
 $s>8$ but the family-uniform difference bound is part of the named E2a black box),
-the mixed-jet finite-part family $\{C_W,W_*\}$ (PLAUSIBLE: reduced to $s>11$ modulo
-the not-in-print $N{=}2$ family-uniform Hadamard construction and the un-executed
-multi-index constant-tracking), and the Sanders QEI-constant uniformity (a named
-input, un-derived in print, F-iii-fenced) --- remain the paper's external input,
+the mixed-jet finite-part family $\{C_W,W_*\}$ (PLAUSIBLE: reduced to $s>15$ at
+$N^\star{=}4$ via the $N{=}4$ truncated finite part --- the $N{=}2$ route is
+obstructed at the seed data heights at every $s>11$, Rem.~\ref{an17:d0-record} ---
+modulo the not-in-print $N{=}4$ family-uniform Hadamard construction (existence a
+named premise), the un-executed multi-index constant-tracking, and the
+$N^\star{=}4$ seed-data supply), and the Sanders QEI-constant uniformity (its
+multiplicative $C_S$ leg now a theorem over $U_\omega$,
+Lem.~\ref{lem:cs-CS-uniform}; its additive $c_S$ leg riding clause~(ii),
+F-iii-fenced) --- remain, at those grades, the paper's external input,
 consumed by Prop.~\ref{prop:N1-free-omega} and Thm.~\ref{thm:E2-Lipschitz}, and
 are collected with their exact grades in the appendix's closing modulo-list. The
 fused free-field first law (Prop.~\ref{prop:N1-free-omega}) is therefore a
@@ -2677,8 +2789,11 @@ $\sigma_g(\cdot,y)|_{\Sigma_0}$ to vanish \emph{simply} on $\mathcal S_y$: at
 $p\in\mathcal S_y$ the gradient of $\sigma_g$ is the nonzero null generator,
 and a nonzero null covector cannot annihilate the uniformly spacelike
 $T_p\Sigma_0$ (it would then be proportional to its timelike conormal), so
-$d(\sigma_g|_{\Sigma_0})(p)\neq0$, with slope bounded below by the
-$c_0,\delta_0$-data. Hence in $c_0$-uniform tubular coordinates
+$d(\sigma_g|_{\Sigma_0})(p)\neq0$, with slope bounded below, at each
+\emph{fixed} $y$, by the $c_0,\delta_0$-data (the fixed-$y$ floor
+degenerates as the vertex approaches the slice; the $y$-uniform statement
+is carried by the two-zone estimate closing this proof). Hence in
+$c_0$-uniform tubular coordinates
 $(u,\omega)\in(-u_0,u_0)\times\mathcal S_y$ one has
 $\sigma_g|_{\Sigma_0}=e(u,\omega)\,u$ with $e\neq0$, so
 $r|_{\Sigma_0}\sim(2|e|\,|u|)^{1/2}$ is H\"older-$\tfrac12$ in $u$ ---
@@ -2699,7 +2814,23 @@ $\rho^\alpha\log\rho$ of Lem.~\ref{an17:no-glancing}(ii), which lies in
 $H^{t}$ for $t<\alpha+\tfrac32$ --- \emph{more} regular; two-zone patching
 across the collar gives the $y$-uniform bound at the worse exponent
 $\tfrac\alpha2+\tfrac12$ (the transverse slope factor shrinks the norm, not
-the level, as the vertex approaches the slice).
+the level, as the vertex approaches the slice). Quantitatively: let
+$\tau\in(0,u_0]$ be the vertex height above $\Sigma_0$ and split at
+$|u|\asymp\tau$. On the transverse zone $|u|\gtrsim\tau$ the profile is the
+one-dimensional model above with the degenerating slope $|e|\asymp\tau$ as
+amplitude factor; the scaling count (amplitude $\times$ length$^{1/2}$
+$\times$ frequency$^{t}$) bounds the zone-boundary shell $|u|\asymp\tau$ by
+$C\,\tau^{\alpha+\frac12-t}|\log\tau|$ (at $\alpha=0$ the slope enters only
+through the logarithm, leaving $C\,\tau^{\frac12-t}|\log\tau|$), and the
+outer shells sum geometrically to the fixed-$y$ transverse bound already
+proved. On the radial zone $|u|\lesssim\tau$ the profile is the radial
+model $\rho^\alpha\log\rho$ of Lem.~\ref{an17:no-glancing}(ii) at scale
+$\rho\asymp\tau$; the same count in the three transverse dimensions gives
+$C\,\tau^{\alpha+\frac32-t}|\log\tau|$. For every $t<\tfrac\alpha2+\tfrac12$
+both $\tau$-exponents are positive, so the supremum over $\tau\in(0,u_0]$
+is finite and the degenerate limit contributes $0$: the patched bound is
+$y$-uniform at the level $t<\tfrac\alpha2+\tfrac12$, with no loss from the
+gluing.
 \end{proof}
 
 \begin{remark}[The transverse correction note: two printed errors, both named;
@@ -2737,7 +2868,10 @@ Both errors push the same way (overbooking of $\alpha>0$ tail legs); the sharp
 in-scope counterexample and the honest seed column are recorded in
 Rem.~\ref{an17:d0-record}. \emph{Consequently the following printed sites are
 GATED --- each stands at its printed value MODULO the transverse
-re-derivation; the arithmetic is deliberately kept, not deleted:} the A1/A2
+re-derivation --- now performed (the source-rung survival sweep of
+Rem.~\ref{an17:d0-record}(v): every gated column is confirmed and the source
+rung over-delivers in lockstep, imposing no upper fence); the arithmetic is
+deliberately kept, not deleted:} the A1/A2
 source-rung slab profile bookings and their \eqref{an17:eq-slice-fubini}
 consumption, the A3 availability column, the A4 $\partial^2$-caps, the B2
 commutator consumption, the B3/Lem.~\ref{an17:Nc-corrected} slice caps, the
@@ -2802,22 +2936,59 @@ cutoff of Lem.~\ref{an17:DoD}; no global-in-$x$ slice norm):
   ($\sigma_1>\tfrac32$ strict at every $s>11$, so demand $>\tfrac52$: missed
   by $0^+$ at the bare slot, by one order at the $\partial^2$-consumer, by
   three versus the printed cap; the $b{=}0$ chain clears its bare slots for
-  $s<11.5$ and dies $0^+$ at its $\partial^2$-consumer). (D0) is OBSTRUCTED
-  on the printed route --- a real obstruction at the cone crossing, not a
-  write-out gap.
-\item \emph{Repair: OPEN.} Raising the truncation $N$ buys one transverse
-  order per unit $N$ on every data leg; the $k$-counts suggest $b{=}0$ heals
-  at $N{=}3$ and $b{=}1$ needs $N\ge4$, but the see-saw reused printed source
-  columns that are themselves gated (the slab register $p=\alpha+2$ is the
-  vertex-zone height; near the crossing the honest slab profile of the
-  $\sigma^2\log\sigma$ factor is $\tfrac52^-$, under which the $b{=}0$ source
-  rung survives only for $s<11.5$ --- spot-checked at $b{=}0$ only). The
-  $N\ge4$ see-saw is PROVISIONAL; no repaired fence value is derived or
-  quoted here, and the source columns must be re-derived before any is. The
-  alternative repair direction is a consumer rewiring that stops feeding
-  slice-Sobolev norms of the tail across crossing spheres. Neither is
-  executed here.
+  $s<11.5$ on the half-corrected spot-check (for all $s$ once the demand is
+  priced honestly, item~(v)) and dies $0^+$ at its $\partial^2$-consumer). (D0)
+  is OBSTRUCTED on the printed route at the seed truncation $N{=}2$ --- a real
+  obstruction at the cone crossing, not a write-out gap; it is SUPPLIABLE at
+  $N^\star{=}4$ once the source columns are re-derived (item~(v)).
+\item \emph{Repair: LANDS at $N^\star{=}4$ (the source columns re-derived; the
+  precondition of this record now met).} Raising the truncation $N$ buys one
+  transverse order per unit $N$ on every data leg; the $k$-counts give $b{=}0$
+  healing at $N{=}3$ and $b{=}1$ at $N\ge4$. The see-saw's reuse of the gated
+  source columns (the slab register $p=\alpha+2$ is the vertex-zone height;
+  near the crossing the honest slab profile of the $\sigma^2\log\sigma$ factor
+  is $\tfrac52^-$, under which the $b{=}0$ source rung would survive only for
+  $s<11.5$ --- the half-corrected number, spot-checked at $b{=}0$ only) is now
+  discharged: the dedicated source-rung survival sweep has been carried out
+  over every slab booking meeting the cone off-diagonal. Under the FULL honest
+  pricing the source demand is the profiled $\partial^2$-package output, which
+  drops in lockstep with the supply (componentwise margins $(\tfrac12,1)$ at
+  every $N$, both $b$), so the source rung over-delivers for all $s$ and
+  imposes no upper fence --- the $s<11.5$ ceiling was the supply-only
+  half-correction. The genuine obstruction is the fixed-threshold race: the
+  mixed $(1,1)$ coincidence profile $(N-\tfrac32)^-$ against the $\tfrac32$
+  Morrey embedding, missed by one order at $N{=}2$ (the (D0) death of (iv),
+  which stands at the seed), dead-$0^+$ at $N{=}3$, cleared with margin $1$ at
+  $N{=}4$. The source columns thus re-derived, the repaired fence may now be
+  quoted: the half-line $s>15$ in the slice register and $s>\tfrac{31}2$ in the
+  locked-4d register ($=2N+7$ resp.\ $2N+\tfrac{15}2$ at $N^\star{=}4$,
+  recovering the printed $N{=}2$ values $s>11,\ s>\tfrac{23}2$). Hence (D0) is
+  SUPPLIABLE at $N^\star{=}4$ --- THEOREM at the seed given the corrected
+  transverse rule, the ungated coefficient columns, and $N{=}4$ existence; the
+  end-to-end close-out inherits the standing $B3/$Lem.~\ref{an17:Nc-corrected}
+  difference-data interface at PLAUSIBLE and the family-uniform finite-part as
+  a named input. The $N{=}2$ obstruction of (iv) is unchanged; the alternative
+  repair direction (a consumer rewiring that stops feeding slice-Sobolev norms
+  of the tail across crossing spheres) is not needed.
 \end{enumerate}
+\end{remark}
+
+\begin{remark}[the survival-audit rows behind item (v); verifiability only]
+Transcribed from the item-(v) sweep record in its $(c,p)$ register --- no new
+claim, no re-derivation; the affine law is one transverse order per unit $N$ on
+every data leg. Binding per-slot rows, supply pair vs demand coefficient:
+$b{=}0$ source rung $(2N+4,\,N+\tfrac12)$ vs $2N+5$, supply-only ceiling
+$3N+\tfrac{11}2$ --- $\tfrac{23}2$ at $N{=}2$ (the printed half-corrected
+$s<11.5$), $\tfrac{29}2$ at $N{=}3$, $\tfrac{35}2$ at $N{=}4$; $b{=}1$ rung
+$(2N+4,\,N-\tfrac12)$ vs $2N+\tfrac{11}2$, ceiling $3N+5$ --- $14$ at $N{=}3$,
+$17$ at $N{=}4$ (tighter by $\tfrac12$ at every $N$). Under the full honest
+pricing the demand is the profiled $\partial^2$-package output dropping in
+lockstep, so the componentwise margins are $(\tfrac12,1)$ at every $N$, both
+$b$: these ceilings are saturation loci, not fences (item (v)). What gates is
+the race column alone: the mixed $(1,1)$ profile $(N-\tfrac32)^-$ against the
+fixed $\tfrac32$ --- $\tfrac12$ at $N{=}2$ (missed by one), $\tfrac32^-$
+(dead-$0^+$) at $N{=}3$, $\tfrac52$ (margin $1$) at $N{=}4$; fences $s>2N+7$,
+resp.\ $s>2N+\tfrac{15}2$.
 \end{remark}
 
 \subsection{The slice-register ladder at \texorpdfstring{$s>11$}{s>11} over
@@ -2918,7 +3089,9 @@ they stand at the printed values MODULO the transverse re-derivation
 $b{=}1$ field slot is supplied at $H^{5/2^-}$ sharp versus demand
 $H^{\sigma_1+1}$ with $\sigma_1>\tfrac32$ strict --- missed at every $s>11$
 --- and the $b{=}0$ chain dies $0^+$ at its $\partial^2$-consumer
-(Rem.~\ref{an17:d0-record}); the coefficient columns and the $s>11$
+(Rem.~\ref{an17:d0-record}), both at the seed truncation $N{=}2$; the repair
+lands at $N^\star{=}4$ (Rem.~\ref{an17:d0-record}(v), source-rung sweep
+discharged). The coefficient columns and the $s>11$
 commutator pin are untouched.]} The three scope pins are
 enforced verbatim: minimally-coupled \emph{free massive} ($m>0$) scalar; the
 \emph{mixed} jet set $|a|+|b|\le1$ together with $|a|=|b|=1$ (the pure same-slot
@@ -2972,9 +3145,7 @@ $A^0\ge\theta I$,
  \lambda_{\min}(a^{jk}/a^{00})\Bigr)\ge\theta_*
  :=\min\bigl(1,\tfrac12\theta_0^{\mathrm{anch}}\bigr)>0
 \]
-ball-uniform \emph{by the collar margin, not by attainment} ($U_\omega$ is
-$H^s$-dense with empty $H^s$-interior, hence not $H^s$-closed; the old
-closed-ball attainment clause is void): the anchor floor
+ball-uniform \emph{by the collar margin, not by attainment}: the anchor floor
 $\theta_0^{\mathrm{anch}}=\min_{K_\Sigma}\lambda_{\min}(a_{g_0})>0$ holds over
 the compact slab at the analytic $g_0$ (Chru\'sciel--Grant nondegeneracy
 \cite{ChruscielGrant2012}); $a^{jk}/a^{00}$ is algebraic in $g$ with
@@ -3049,19 +3220,28 @@ derivative, $\partial^6\sim r^{-2}$ never consumed).
   $3+\delta$.
 \item[A2.] \emph{Source, $b=1$ \textup{[Thm.~\ref{an17:T1prime}]}:}
   $\partial_yS'_2=(\partial_y[\square_{g'}v'_2])\Pi$ books $(8{+}\tfrac12,5)$ by
-  the promoted booking (tail hypothesis $a=s-8>\tfrac32$: margin
-  $\tfrac32+\delta$), plus $(\square_{g'}v'_2)(\partial_y\Pi)$ at $(8,5)$, plus
+  the promoted booking (tail hypothesis $a=s-8>2$, the
+  Thm.~\ref{an17:T1prime} floor \textup{[corrected from the misquoted
+  ``$>\tfrac32$: margin $\tfrac32+\delta$'', which understated the demand and
+  would falsely license $s\in(9.5,10]$]}: margin over the true floor $1+\delta$
+  at the $s>11$ fence, every consuming locus having $a>3$), plus $(\square_{g'}v'_2)(\partial_y\Pi)$ at $(8,5)$, plus
   bitensor/weight legs at register $\ge s-3$ and $R_{\mathrm{sm}}$-legs at
   $(8.5,\ge6)$. Sum: $(8.5,5)$; legality margin $\tfrac52+\delta$.
   \textup{[Correction gate on A1/A2 and their \eqref{an17:eq-slice-fubini}
   consumption: the slab profile columns $6$ resp.\ $5$ are vertex-zone
   heights; near the cone crossing the honest slab profile of the
   $\sigma^2\log\sigma$ factor is $\tfrac52^-$, under which the $b{=}0$ source
-  rung survives only for $s<11.5$ and the $b{=}1$ rung tightens
-  correspondingly (spot-checked at $b{=}0$; the dedicated re-derivation must
-  sweep every slab booking meeting the cone off-diagonal). The printed
-  bookings and legality margins stand MODULO the transverse re-derivation
-  (Rem.~\ref{an17:transverse-note}); the Fubini inequality
+  rung would survive only for $s<11.5$ WERE the demand left at its gated
+  coefficient register --- a half-correction. The dedicated sweep is now
+  performed over every slab booking meeting the cone off-diagonal
+  (Rem.~\ref{an17:d0-record}(v)): correcting the demand booking in lockstep
+  with the supply --- both are $\sigma^2\log\sigma$-type vertex-zone profiles
+  over-priced by the identical old rule, so both drop by the same amount and
+  the componentwise margins are $(\tfrac12,1)$ at every $N$, both $b$ --- every
+  source-side booking over-delivers, and the source rung imposes NO upper fence
+  ($s<11.5$ was the half-corrected, supply-only number). The printed bookings
+  and legality margins therefore STAND, now confirmed by the transverse
+  re-derivation (Rem.~\ref{an17:transverse-note}); the Fubini inequality
   \eqref{an17:eq-slice-fubini} itself is untouched.]}
 \item[A3.] \emph{Solves with the data-cap column.} Availabilities on $\Sigma_0$
   (Lem.~\ref{an17:transverse-data}; on the BFV surface the legs are $g_0$-seed
@@ -3425,10 +3605,9 @@ Consequently $\theta=\min\bigl(1,\inf_{K_\Sigma\times U_\omega}
 \lambda_{\min}(a_g)\bigr)\ge\theta_*:=\min\bigl(1,\tfrac12
 \theta_0^{\mathrm{anch}}\bigr)>0$: the Rung-1 floor is ball-uniform
 \emph{by the collar margin, not by attainment on the ball}. No infimum
-over the $H^s$-dense, $H^s$-interior-empty (hence non-$H^s$-closed)
-$U_\omega$ is attained or needed --- a lower bound on an infimum requires
-no minimiser; this is the honest replacement of the false ``$H^s$-closed
-ball, infimum attained'' clause. Only $1/\theta\le1/\theta_*$ is consumed
+over the $H^s$-interior-empty $U_\omega$ is needed --- a lower bound on an
+infimum requires no minimiser; this is the honest replacement of the false
+``$H^s$-closed ball, infimum attained'' clause. Only $1/\theta\le1/\theta_*$ is consumed
 downstream; $d_{00},\theta_0^{\mathrm{anch}},C_{\mathrm{inv}},C_a$ are
 existence constants, not numerically certified, and are \emph{not quoted
 downstream}. \textbf{Grade: THEOREM} over $U_\omega$, relative to the
@@ -3649,10 +3828,13 @@ one is on notice.
   printed route (NEGATIVE-RESULT, sharp): the seed supplies
   $(\tfrac72,\tfrac52,\tfrac52,\tfrac32)^-$, the $b{=}1$ field slot
   $H^{5/2^-}$ sharp versus consumed demand $>\tfrac52$ at every $s>11$
-  (Rem.~\ref{an17:d0-record}). The gate does NOT lift; repair is OPEN
-  ($N\ge4$ truncation see-saw, PROVISIONAL, source columns to be re-derived
-  --- no repaired fence value is quoted; or a consumer rewiring off
-  slice-Sobolev tails). The (D0) port's closure display
+  (Rem.~\ref{an17:d0-record}). At the seed $N{=}2$ the gate does NOT lift; the repair LANDS at $N^\star{=}4$
+  (the source-rung survival sweep of Rem.~\ref{an17:d0-record}(v) now
+  discharged --- the source columns re-derived, the source demand priced
+  honestly as the profiled $\partial^2$-package output that drops in lockstep
+  with the supply, so the source rung over-delivers for all $s$ and imposes no
+  upper fence; (D0) is SUPPLIABLE for $s>15$ --- THEOREM at the seed,
+  end-to-end PLAUSIBLE via the standing $B3$/(E-env) interface). The (D0) port's closure display
   (App.~\ref{app:e2a-ports}) is gated accordingly; its lever and $w_0$
   lemmas stand.}
 \item \#B' --- \emph{the off-collar single-metric variant.} The kernel variant
@@ -3673,9 +3855,12 @@ Lem.~\ref{an17:slice-ladder-4d}(iii)) and the single-metric sups $W^{(2)}_*$.
 Assembling these into clause (ii) of Hyp.~\ref{hyp:hadamard-uniform-omega}
 (the finite-part family $C_W(K),W_*(K)$) is where the honest boundary of this
 appendix lies: the fence value $s>11$ is a THEOREM-grade result, but clause (ii)
-\emph{as a whole} is PLAUSIBLE (REDUCED, not proved), because the family-uniform
-finite-regularity Hadamard construction is not in print and the full multi-index
-constant-tracking is not executed. Clause (ii) is therefore carried, here and in
+\emph{as a whole} is PLAUSIBLE (REDUCED, not proved) --- reduced to $s>15$ at
+$N^\star{=}4$ via the $N=4$ truncated finite part (the $N=2$ route is obstructed
+at the seed data heights at every $s>11$, Rem.~\ref{an17:d0-record}) --- because
+the $N=4$ family-uniform finite-regularity Hadamard construction is not in print
+(its existence a named premise), the full multi-index constant-tracking is not
+executed, and the $N^\star{=}4$ seed-data supply is outstanding. Clause (ii) is therefore carried, here and in
 the paper, as the NAMED INPUT (E2a) it is; it is \emph{never} cited at THEOREM.
 
 \begin{remark}[The mixed jets, and why the pure same-slot jets are excluded]
@@ -3701,8 +3886,10 @@ statement is made about ``all second jets'' or the full $C^2(K\times K)$ norm.
 
 \begin{remark}[The assembled constant $C_W$, and its honest grade]
 \label{an17:CW-grade}
-On a single convex-normal chart the mixed $(1,1)$ difference jet closes at $s>11$
-via the $N{=}2$ truncated finite part, and the clause-(ii) constant assembles as
+On a single convex-normal chart the mixed $(1,1)$ difference jet closes at $s>15$
+at $N^\star{=}4$ via the $N{=}4$ truncated finite part (the $N{=}2$ route is
+obstructed at the seed data heights at every $s>11$, Rem.~\ref{an17:d0-record};
+$N{=}4$ existence a named premise), and the clause-(ii) constant assembles as
 \[
  C_W(K)=N_{\mathrm{geo}}(K)\,c^{\mathrm{Mor}}(K)\,\sqrt{Q_*e^{P_*T(K)}}
  \bigl[c_{\mathrm{mult}}(s)\,W^{(2)}_*(K)+C_{\mathrm{trans}}(K)+C_{\mathrm{data}}(K)\bigr],
@@ -3772,8 +3959,9 @@ The one honest boundary this part draws, repeated so it cannot be missed: the
 fence value $s>11$ is a THEOREM, but clause (ii) --- and hence the fused
 first-law statement Prop.~\ref{prop:N1-free-omega} of the paper --- is
 \emph{not} a theorem; it is a theorem MODULO the finite named list \{clause (ii)
-$C_W/W_*$ PLAUSIBLE (Rem.~\ref{an17:CW-grade}); clause (iii) Sanders
-constant-tracking, named-un-derived\} (the clause (i) difference form,
+$C_W/W_*$ PLAUSIBLE (Rem.~\ref{an17:CW-grade})\} alone; clause (iii) is now a
+theorem modulo clause~(ii): its $C_S$ leg is proved over $U_\omega$
+(Lem.~\ref{lem:cs-CS-uniform}), its $c_S$ leg riding clause~(ii) (the clause (i) difference form,
 formerly on this list, is now a ported theorem, App.~\ref{app:e2a-ports}). The
 appendix therefore titles itself as the analytic slice chain over $U_\omega$
 (the THEOREM of Parts~1--3 plus the ladders of Part~4), and states the first law
@@ -3945,8 +4133,8 @@ the hypothesis as a package for its microlocal role.
 \end{remark}
 
 % ---------------------------------------------------------------------
-\subsection{Clause (iii): the QEI-constant uniformity (a named input,
-at its audited grade)}
+\subsection{Clause (iii): the QEI-constant uniformity (a theorem modulo
+clause~(ii), at its audited grade)}
 \label{sec:an17-clause-iii}
 % ---------------------------------------------------------------------
 
@@ -3956,16 +4144,16 @@ stress-tensor bound~\cite{Sanders2024StressBounds,ChialastriSanders2025}
 (entering \eqref{eq:E2-QEI}) are locally uniform on $U_\omega$:
 \emph{bounded}, $\sup_{U_\omega}c_S=:c_S^*<\infty$, and \emph{continuous
 in $g$ on $U_\omega$ in its subspace $H^s$ topology} (Fence F-iii).  We
-record its grade exactly, and do \emph{not} upgrade it.
+record its grade exactly.
 
-\begin{remark}[Clause~(iii) is retained as a named input; its status is
-un-derived in print]\label{rem:an17-clauseiii}
+\begin{remark}[Clause~(iii) is a theorem modulo clause~(ii); its $C_S$ leg is
+proved in print, its $c_S$ leg rides clause~(ii)]\label{rem:an17-clauseiii}
 The Sanders constants are constructed by reference-Hadamard subtraction
 through explicit chart / Fourier-integral expressions, so their
 $H^s$-continuity in $g$ at fixed smearing is, as the paper states, ``a
-matter of constant-tracking rather than new analysis'' -- but
-\emph{no such derivation is in print}, and the corpus does \emph{not}
-supply one.  The companion chain's only contact with clause~(iii) is the
+matter of constant-tracking rather than new analysis''.  The multiplicative
+($C_S$) half of this tracking \emph{is} now derived in print over $U_\omega$
+(Lem.~\ref{lem:cs-CS-uniform}); only the additive ($c_S$) half rides clause~(ii).  The companion chain's only contact with clause~(iii) is the
 scoping repair \textbf{Fence F-iii}: the modulus is read in the
 \emph{subspace} $H^s$ topology of $U_\omega$ (which has empty
 $H^s$-interior), not the open-set continuity of an $H^s$ neighbourhood.
@@ -3980,8 +4168,9 @@ state-independent bound~\cite{FewsterRoman2003}, so clause~(iii) cannot
 be extended off the free massive scope; (b) nothing in the analytic
 slice-chain theorem (\S\ref{sec:an17-main}) touches $c_S$ -- clause~(iii)
 enters only the fused first-law corollary, as an explicit named
-hypothesis.  \emph{Grade: NAMED INPUT (PLAUSIBLE): the constant-tracking
-is un-derived in print; only the F-iii subspace-topology scoping is
+hypothesis.  \emph{Grade: THEOREM modulo clause~(ii): the multiplicative ($C_S$)
+constant-tracking is derived (Lem.~\ref{lem:cs-CS-uniform}); the additive
+($c_S$) leg rides clause~(ii), and the F-iii subspace-topology scoping is
 established.}  Carried on the modulo-list as item \ref{item:an17-M2}
 (\S\ref{sec:an17-modulo}).
 \end{remark}
@@ -3991,14 +4180,18 @@ proved -- forward pointer]\label{rem:an17-clauseii-pointer}
 For completeness of the modulo-list bookkeeping we recall the grade of
 clause~(ii), the load-bearing finite-part clause, established in
 \S\ref{sec:an17-clause-ii} (part~4): its finite part $W_g$ mixed-jet
-Lipschitz bound closes at the fence $s>11=n/2+9$ via the $N=2$ truncated
-Hadamard finite part, with $C_W(K)$ assembled from named ball-uniform
-factors; but it is \emph{reduced, not proved}, modulo two honest gaps --
-the $N=2$ finite-regularity Hadamard-parametrix construction with
-quantitative $v_2$, family-uniform in $g$, is not in print as a
-ball-uniform statement (the same status the paper already grants the
-$N=1$ construction), and the exact multi-index constant-tracking through
-the $N=2$ commutator source and the energy estimate is not executed.
+Lipschitz bound closes at $s>15$ at $N^\star{=}4$ via the $N=4$ truncated
+Hadamard finite part (the $N=2$ route is obstructed at the seed data
+heights at every $s>11$, Rem.~\ref{an17:d0-record}), with $C_W(K)$
+assembled from named ball-uniform factors; but it is \emph{reduced, not
+proved}, modulo three honest gaps -- the $N=4$ finite-regularity
+Hadamard-parametrix construction with quantitative $v_4$, family-uniform
+in $g$, is not in print as a ball-uniform statement (the same status the
+paper already grants the $N=1$ construction; its existence a named
+premise), the exact multi-index constant-tracking through the $N=4$
+commutator source and the energy estimate is not executed, and the
+$N^\star{=}4$ seed-data supply (the re-derived source columns,
+Rem.~\ref{an17:d0-record}(v)) is outstanding.
 \emph{Grade: PLAUSIBLE.}  It is the classic overclaim home: clause~(ii)
 is a named input (E2a) and \emph{must never be cited at THEOREM}.
 Carried on the modulo-list as item \ref{item:an17-M1}
@@ -4152,8 +4345,9 @@ looser statement would overclaim, and is held tight.
     state-independent bound~\cite{FewsterRoman2003}, so the scope cannot
     be relaxed to massless.
   \item \emph{The class is $U_\omega$, not an open $H^s$ ball.}
-    $U_\omega$ is $H^s$-dense with \emph{empty} $H^s$-interior (the
-    disclosed cost).  Every uniformity in
+    $U_\omega$ is $H^s(K'')$-precompact --- nowhere dense, with
+    \emph{empty} $H^s$-interior (the disclosed cost, stronger than
+    interior-emptiness alone).  Every uniformity in
     Thm.~\ref{thm:an17:E2a-omega-main} is a \emph{supremum} over the ball
     or a \emph{pair-Lipschitz} modulus; no $H^s$-open property is claimed
     (Fences F-iii, F-diff).  Coercivity floors use the collar-margin
@@ -4199,9 +4393,12 @@ Even with (M1)--(M3) granted, Thm.~\ref{thm:an17:E2a-omega-main} is a
 \emph{free-field} statement, and several boundaries are untouched.
 \begin{enumerate}[label=\textup{(\alph*)},leftmargin=*]
   \item \emph{The three named clauses themselves.}  (M1) clause~(ii) is
-    PLAUSIBLE (reduced to $s>11$ modulo the $N=2$ Hadamard construction
-    and the constant-tracking); (M2) clause~(iii)
-    is a named input, un-derived in print for the family; (M3)
+    PLAUSIBLE (reduced to $s>15$ at $N^\star{=}4$ modulo the $N=4$
+    Hadamard construction --- the $N=2$ route obstructed at the seed,
+    Rem.~\ref{an17:d0-record} --- the constant-tracking, and the
+    seed-data supply); (M2) clause~(iii)
+    is a theorem modulo clause~(ii) ($C_S$ leg proved,
+    Lem.~\ref{lem:cs-CS-uniform}; $c_S$ rides clause~(ii)); (M3)
     clause~(i) difference-form is now a ported theorem
     (App.~\ref{app:e2a-ports}).
     The literal flip of Hyp.~\ref{hyp:hadamard-uniform-omega} to a
@@ -4250,13 +4447,16 @@ critical path; each is listed as \textbf{exact open content} -- its
     $\sup_{x\in K}|[\partial_x^a\partial_y^b(W_g-W_{g'})](x,x)|\le
     C_W(K)\|g-g'\|_{H^s}$ ($|a|+|b|\le1$ and $|a|=|b|=1$) and the uniform
     $\sup_{U_\omega}\sup_{x\in K}|[\partial_x^a\partial_y^b W_g](x,x)|\le
-    W_*(K)$, ball-uniform.  Reduced to $s>11$ via the $N=2$ truncated
-    Hadamard finite part with $C_W(K)$ assembled from named ball-uniform
-    factors, \emph{modulo two honest gaps not closed}: (a) the $N=2$
-    finite-regularity Hadamard-parametrix construction with quantitative
-    $v_2$, family-uniform in $g$, is not in print as a ball-uniform
-    statement; (b) the exact multi-index constant-tracking through the
-    $N=2$ commutator source and the energy estimate is not executed.
+    W_*(K)$, ball-uniform.  Reduced to $s>15$ at $N^\star{=}4$ via the
+    $N=4$ truncated Hadamard finite part (the $N=2$ route is obstructed
+    at the seed, Rem.~\ref{an17:d0-record}(v); $N=4$ existence a named
+    premise --- the correction gate below) with $C_W(K)$ assembled from
+    named ball-uniform factors, \emph{modulo two honest gaps not closed}:
+    (a) the $N=4$ finite-regularity Hadamard-parametrix construction with
+    quantitative $v_4$, family-uniform in $g$, is not in print as a
+    ball-uniform statement; (b) the exact multi-index constant-tracking
+    through the $N=4$ commutator source and the energy estimate is not
+    executed.
     Over $U_\omega$ both gaps are discharged \emph{as
     family-uniformity questions} by the Cauchy-estimate package now
     written out in App.~\ref{app:e2a-ports} (one polydisc estimate on
@@ -4274,7 +4474,10 @@ critical path; each is listed as \textbf{exact open content} -- its
     honest heights $(\tfrac72,\tfrac52,\tfrac52,\tfrac32)^-$ (the two printed
     errors named at Rem.~\ref{an17:transverse-note}; sharp flat-massive
     counterexample $v_3=m^8/(18432\pi^2)\neq0$ at Rem.~\ref{an17:d0-record}),
-    so (D0) remains gated as a confirmed obstruction of the printed route.
+    so (D0) is a confirmed obstruction of the printed route at the seed $N{=}2$,
+    SUPPLIABLE at $N^\star{=}4$ once the source columns are re-derived
+    (Rem.~\ref{an17:d0-record}(v); the survival sweep discharged, the half-line
+    $s>15$).
     The lever and the $w_0$-smoothness lemmas stand, and the discharge of
     gaps (a),(b) for the finite-part family rests on the Cauchy-estimate
     package, not on this (D0) closure.]} The honest modulo list is therefore: the
@@ -4298,8 +4501,8 @@ critical path; each is listed as \textbf{exact open content} -- its
     \emph{Open content:} for fixed smearing, the Sanders constants
     $c_S(g,t,F),C_S(g,t,f,F)$ are bounded on $U_\omega$
     ($\sup_{U_\omega}c_S=:c_S^*$) and continuous in $g$ in the subspace
-    $H^s$ topology (Fence F-iii); the constant-tracking that would
-    establish this is not in print.  \emph{Consumer:}
+    $H^s$ topology (Fence F-iii); the multiplicative ($C_S$) constant-tracking is now derived in print
+    (Lem.~\ref{lem:cs-CS-uniform}), the additive ($c_S$) leg riding clause~(ii).  \emph{Consumer:}
     Cor.~\ref{cor:E2-entropy-smallness} (the QEI budget), which consumes
     only $c_S^*$ and subspace-continuity -- never differentiates $c_S$ in
     $g$, never takes an $H^s$-open modulus. The QEI bites exactly once, at the \emph{seed} --- the
@@ -4309,9 +4512,9 @@ critical path; each is listed as \textbf{exact open content} -- its
     boundedness $c_S^*$ and the subspace continuity are stated but
     unconsumed. Revival condition: any future consumer applying
     \eqref{eq:E2-QEI} at a $g$-native state revives the ball clause.
-    \emph{Grade: NAMED INPUT}
-    (its only companion touch is the F-iii scoping repair; the tracking
-    itself is un-derived in print).
+    \emph{Grade: THEOREM modulo clause~(ii)}
+    (the $C_S$ leg is derived, Lem.~\ref{lem:cs-CS-uniform}; the $c_S$ leg
+    rides clause~(ii), and the companion touch is the F-iii scoping repair).
   \item\label{item:an17-M3} \textbf{Clause (i) difference form --
     singular part $H_g$ dual-Lipschitz.}  \emph{Open content:} the
     difference bound \eqref{eq:an17-clausei}, ball-uniform over the
@@ -4339,8 +4542,8 @@ orthogonal to the slice chain]\label{rem:an17-orthogonal}
 For the reader tracking the full no-go ledger: the further open items
 $(E$-$\mathrm{env})$ (the data-side kernel envelope, PLAUSIBLE), $(D0)$
 and \#B$'$ (the N-a data residues gating $\mathrm{lem:W2star}$ across
-patches; $(D0)$ is OBSTRUCTED on the printed route,
-Rem.~\ref{an17:d0-record}), the \#A collar architecture (the long-slab
+patches; $(D0)$ is OBSTRUCTED on the printed route at the seed $N{=}2$, SUPPLIABLE
+at $N^\star{=}4$, Rem.~\ref{an17:d0-record}), the \#A collar architecture (the long-slab
 restatement, a negative result, discharged iff $(E$-$\mathrm{env})$), the
 transverse correction with its gated profile columns
 (Rem.~\ref{an17:transverse-note}, over the corrected

@@ -9,6 +9,7 @@
 % environments, amsmath); does NOT open \begin{document}.
 % ============================================================================
 
+\renewcommand{\thesection}{E2aD}% distinct tag: unfreezes the shared E2a section number
 \section{The seed-fixed spacetime-smeared Dirac floor}
 \label{app:dirac-seed-floor}
 
@@ -135,6 +136,331 @@ $\langle\widehat T^{\mathrm{ren}}[ttF^{2}]\rangle_\omega
 \rangle_{\omega_0}\big|=-c_{\mathrm{fl}}$.
 \end{proof}
 
+% ======================================================================
+% b_draft.tex -- RUN 96 / HUNT #98, census candidate B.
+% THE DIRAC SPINOR HADAMARD-PARAMETRIX BALL CLAUSE, ported by
+% BUNDLE-INDEXED RE-DERIVATION of the scalar clause-(i)/M3 theorem
+% (port:thm-M3, port_m3.tex) onto the spinor Hadamard parametrix.
+% Discharges the *ball clause* of rem:dsf-imports (appendix_dirac_floor.tex
+% l.150-55): "local uniformity of c_fl in g ... is exactly the H^s-uniform
+% spinor Hadamard parametrix residual".
+%
+% Provenance: adjudicated (run-96, J1/J2) and spliced into production.
+% One \input fragment; ASSUMES the paper
+% preamble (theorem/remark/lemma environments, amsmath, enumitem); does NOT
+% open \begin{document}. Compiles alongside port_m3.tex (its scalar twin):
+% every metric-only leg is CONSUMED by \ref to a port: lemma, not re-derived.
+% Labels prefixed dspin: to avoid collision. Assembles arms b1-b5.
+% ======================================================================
+
+\subsection*{P-DSPIN. The spinor Hadamard-parametrix ball clause: the
+clause-(i)/M3 difference theorem, bundle-indexed to Dirac, with constants}
+
+% fragment-local Dirac-slash (paper preamble loads no `slashed' package);
+% \providecommand is collision-safe (no-op if the paper later defines it).
+\providecommand{\Dsl}{\ensuremath{D\mkern-12mu/}}
+
+\paragraph{Setting (inherited from the scalar port).} $n=4$; the seed
+$(\MM,g_0)=(\mathbb R_t\times\Sigma,-dt^2\oplus h_\Sigma)$, $\Sigma$ a compact
+spin Cauchy slice --- the standing data of Thm.~\ref{thm:dirac-seed-floor}.
+Fix $s>n/2+6=8$, $\alpha:=\min(\tfrac12,\tfrac{s-8}2)\in(0,\tfrac12]$, and the
+ball $U:=\{g\in H^s:\ \|g-g_0\|_{H^s(K'')}\le\varepsilon_0\}$ of
+Thm.~\ref{port:thm-M3}, with the smallnesses (u1)~$d_U:=\inf_U\min_{K''}
+|\det g|>0$, (u2)~$C^0$-image radius $<\varepsilon_{\mathrm{GH}}$
+(\cite{ChruscielGrant2012}), (u3)~cone transversality, and
+$\Lambda_U:=1+\sup_{g\in U}\|g\|_{C^{6,\alpha}(K'')}$. \emph{All metric-only
+constructs are reused verbatim from the scalar port:} the world function
+$\sigma_g$, van Vleck $\Delta^{1/2}_g$, the cone data $(\Lambda_S,\kappa_S,
+c_*,c_t,\theta_*)$ of Lem.~\ref{port:lem-sigma}, the exact Christoffel
+difference $\delta\Gamma$ with $\|\delta\Gamma\|_{C^k}\le\kappa_\Gamma(k)
+\|h\|_{C^{k+1}}$, $\kappa_\Gamma(k)=c_k\Lambda_U^{2k+7}d_U^{-2(k+1)}$
+(Lem.~\ref{port:lem-gamma}), and the uniform cone pairing constant $\kappa_P$
+of Lem.~\ref{port:lem-pair}. These carry \emph{no} spin data and transcribe
+without change; the present fragment adds only the spinor-specific objects.
+
+\paragraph{Spinor data (fixed once, background).} Over the chart-compact
+$K''$ (frame bundle trivial there) fix a $g_0$-orthonormal oriented coframe
+$e_0\in C^\infty$, $g_0=e_0^{\mathsf T}\eta e_0$, $\eta=\mathrm{diag}(-1,1,1,1)$,
+with $E_0:=1+\|e_0\|_{C^{6,\alpha}}+\|e_0^{-1}\|_{C^{6,\alpha}}<\infty$
+($U$-independent). For $g\in U$ set the frame-relative metric
+$G[g]:=(e_0^{-1})^{\mathsf T}g\,e_0^{-1}$, so $G[g_0]=\eta$ and
+$G[g]-\eta=(e_0^{-1})^{\mathsf T}(g-g_0)e_0^{-1}$. $S$ denotes the (rank
+$N_{\mathrm{sp}}=4$) Dirac bundle, $\gamma^a$ the Clifford generators
+($\gamma^a\gamma^b+\gamma^b\gamma^a=2\eta^{ab}$).
+
+\begin{lemma}[spinor-frame ball-uniformity]\label{dspin:lem-frame}
+Let $\Phi(M)=M^{\mathsf T}\eta M$. There is $\rho_\eta>0$ and a real-analytic
+$\eta$-symmetric square root $\Psi:B_{\rho_\eta}(\eta)\to\{M:\eta M\ \mathrm{sym}\}$
+with $\Phi\circ\Psi=\mathrm{id}$, $\Psi(\eta)=I$, and $L_k:=\sup_{\|G-\eta\|
+\le\rho_\eta/2}\|D^k\Psi\|<\infty$ (real-analytic inverse function theorem;
+only nondegeneracy of $\eta$ and $G\approx\eta$ are used, so the indefinite
+signature is immaterial and no branch is crossed). Tighten $\varepsilon_0$ by
+the one further $C^0$-smallness \textup{(u2$'$)} $\sup_{g\in U}\|G[g]-\eta\|
+_{C^0(K'')}<\rho_\eta/2$ --- the same \emph{kind} of $C^0$-tightening as
+\textup{(u2)}, the sole analytic cost of the frame. Define, for $g\in U$,
+\[
+  e[g]:=\Psi(G[g])\,e_0,\qquad e^{-1}[g]:=e_0^{-1}\Psi(G[g])^{-1},\qquad
+  \omega[g]_\mu:=\tfrac14\bigl[e^{-1}(\partial_\mu e)+e^{-1}\Gamma[g]_\mu e\bigr]
+  ^{ab}\gamma_a\gamma_b,
+\]
+so $e[g]^{\mathsf T}\eta e[g]=g$ and $|\det e[g]|=\sqrt{|\det g|}\ge
+\sqrt{d_U}$. Then $e[g],e^{-1}[g],\omega[g]$ are single-valued real-analytic
+functions of the $1$-jet of $g$, the $g_0$-spin structure transports uniquely
+along the convex (hence contractible) ball $U$ --- no spin-structure jump ---
+and there are ball-uniform $\Lambda_e,\Lambda_\omega,\kappa_e,\kappa_\omega
+<\infty$, depending on $U$ only through $(g_0,\varepsilon_0,s,K'')$, with
+\begin{align}
+  \|e^{\pm1}[g]\|_{C^{6,\alpha}(K'')}&\le\Lambda_e\ \ (H^s\text{ register}),
+  &\|\omega[g]\|_{C^{5,\alpha}(K'')}&\le\Lambda_\omega\ \ (H^{s-1}\text{ register}),
+  \label{dspin:eq-framesup}\\
+  \|e[g]-e[g']\|_{C^{6,\alpha}}&\le\kappa_e\,\|h\|_{C^{6,\alpha}},
+  &\|\omega[g]-\omega[g']\|_{C^{5,\alpha}}&\le\kappa_\omega\,\|h\|_{C^{6,\alpha}},
+  \label{dspin:eq-framediff}
+\end{align}
+$h:=g-g'$; no step differentiates in $g$ (real-side, pair-Lipschitz). The
+displayed constants are
+$\Lambda_e=cE_0(1+E_0^2\Lambda_U)^6\max_{k\le6}L_k$,
+$\Lambda_\omega=c\Lambda_e^2(\Lambda_e+\Lambda_U^9 d_U^{-6})$,
+$\kappa_e=cE_0^2(1+E_0^2\Lambda_U)^6\max_{k\le7}L_k$, and
+$\kappa_\omega=c[\Lambda_e^2\kappa_e(\Lambda_e+\Lambda_U^9d_U^{-6})
++\Lambda_e(\kappa_e+\kappa_\Gamma(5)+\Lambda_U^9d_U^{-6}\kappa_e)]$ with
+$\kappa_\Gamma(5)=c_5(n)\Lambda_U^{17}d_U^{-12}$ \emph{the scalar port's
+Christoffel-difference constant, consumed verbatim}.
+\end{lemma}
+\begin{proof}
+$e,e^{-1}$ are compositions/quotients of the fixed real-analytic $\Psi$ with
+the affine $g\mapsto G[g]$ (image in $B_{\rho_\eta/2}(\eta)$ by (u2$'$)),
+single-valued and real-analytic; $\omega$ adds $\partial e$ and $\Gamma[g]$,
+real-analytic in the $1$-jet off $\{|\det g|\ge d_U\}$. Spin structure: the
+reduction lives on the metric-independent $GL$-frame bundle, and over the
+connected ball the $SO^\uparrow(1,3)$-subbundles are homotopic, so the
+$H^1(\MM;\mathbb Z_2)$-torsor is rigid. \eqref{dspin:eq-framesup}:
+$\|G[g]\|_{C^{6,\alpha}}\le E_0^2\Lambda_U$, Fa\`a-di-Bruno with sup-jets
+$L_{\le6}$, times $e_0$; the inverse rides $|\det\Psi(G)|$ bounded below by
+(u1); $\omega=e^{-1}\partial e+e^{-1}\Gamma e$ in $C^{5,\alpha}$ with
+$\|\Gamma[g]\|_{C^{5,\alpha}}\le c\Lambda_U^9d_U^{-6}$ (port L1 at $k=5$).
+\eqref{dspin:eq-framediff}: $e[g]-e[g']=(\int_0^1 D\Psi(G_\tau)\,d\tau)[G-G']
+\,e_0$ along the real segment $G_\tau=(1-\tau)G'+\tau G$ (interior to
+$B_{\rho_\eta/2}$), $G-G'=(e_0^{-1})^{\mathsf T}h\,e_0^{-1}$ --- \emph{the M3
+mechanism exactly}, a fixed analytic map differenced along the real segment,
+not a variation in $g$; the connection Leibniz telescope contributes
+$\Delta(e^{-1})$, $\partial(\Delta e)$, and $\Delta\Gamma=\delta\Gamma$
+($\kappa_\Gamma(5)$, port L1).
+\end{proof}
+
+\paragraph{The spinor parametrix and its normally-hyperbolic reduction.}
+The massive Dirac operator $\Dsl=\gamma^\mu\nabla_\mu$ on $S$ obeys the
+Lichnerowicz--Weitzenb\"ock identity
+\begin{equation}\label{dspin:eq-lich}
+  P:=\Dsl^2\mp m^2=\square^\nabla+E,\qquad
+  E:=(\tfrac14 R\mp m^2)\,\mathbf 1_S,
+\end{equation}
+with $\square^\nabla=g^{\mu\nu}\nabla_\mu\nabla_\nu$ the spin-connection wave
+operator (principal part $=\square_g$ \emph{exactly}) and $E$ the
+\emph{central} (scalar-curvature $\times$ identity) endomorphism --- by the
+first Bianchi identity there is no Ricci/Weyl part on $S$; the sign of the
+mass term is a signature/convention choice that enters only a tracked constant.
+$P$ is normally hyperbolic, so the bundle Hadamard/DeWitt parametrix exists
+per metric (Moretti~\cite[Thm.~2.1]{Moretti2003}, stated for
+normally-hyperbolic \emph{bundle} operators --- the same theorem the scalar
+port's Lem.~\ref{port:lem-vk} cites; classical origins
+Dimock (1982), DeWitt--Brehme, B\"ar--Ginoux--Pf\"affle; fixed-$g$
+Dirac Hadamard renormalisation in print,
+\cite{DappiaggiHackPinamonti2009}). \emph{Only the family-uniform
+finite-regularity form is new here}, mirroring the scalar port. Write
+\begin{equation}\label{dspin:eq-Hdef}
+  H^{\mathrm{sp}}_g=\sum_{a\le N(K)}\theta_a\,Z^{(2),a}_{\mathrm{sp},g},\quad
+  Z^{(2)}_{\mathrm{sp},g}=\frac1{8\pi^2}\Bigl[\frac{\Delta^{1/2}_g\,I_g}
+  {\sigma_{g,\epsilon}}+V^{(2)}_g\log\frac{\sigma_{g,\epsilon}}{\ell^2}\Bigr],
+  \quad V^{(2)}_g=\sum_{k=0}^2 V_k[g]\,\sigma_g^k,
+\end{equation}
+with the same $g$-independent cutoffs $\theta_a$, the same single length
+$\ell$, the same $N=2$ truncation and $\sigma_{g,\epsilon}$-prescription as
+\eqref{port:eq-Hdef}; $I_g(x,y)\in\mathrm{End}(S)$ is the bispinor parallel
+propagator ($\nabla_{\nabla\sigma}I_g=0$, $I_g(x,x)=\mathbf 1_S$) and
+$V_k[g]\in\mathrm{End}(S)$ the bundle Hadamard coefficients. Both $\sigma_g$
+and $\Delta^{1/2}_g$ are the \emph{scalar} metric objects.
+
+\begin{lemma}[bundle Hadamard coefficients: ball-uniform sup and difference;
+the register is unchanged]\label{dspin:lem-rec}
+Let $I_g$ solve, in the rescaled normal form of Lem.~\ref{port:lem-sigma}(i),
+$(d/dr)I+\Omega(x,\omega,r)I=0$, $\Omega:=\omega[g](\dot\xi)\in\mathrm{End}(S)$,
+$I(x,x)=\mathbf 1$; and $V_k$ the transport recursion
+\begin{equation}\label{dspin:eq-rec}
+  2\nabla_{\nabla\sigma}V_k+(\square\sigma-2n+4k)V_k=-(\square^\nabla+E)V_{k-1},
+  \qquad V_{-1}:=0,\quad V_0=\Delta^{1/2}_g I_g.
+\end{equation}
+Then, on the collar $V_{\delta_c}$ (fiber operator norm), with
+$\Lambda_R:=\sup_U\|R[g]\|_{C^{0,\alpha}(V)}$,
+\begin{align}
+  \|I_g\|_{C^{1,\alpha}(V)}&\le\Lambda_I,& \|I_g-I_{g'}\|_{C^{0,\alpha}(V)}
+  &\le\kappa_I\,\|h\|_{C^{1,\alpha}(K'')},\label{dspin:eq-Ibnd}\\
+  \|V_k[g]\|_{C^{0,\alpha}(V)}&\le\Lambda_V,& \|V_k[g]-V_k[g']\|_{C^0(V)}
+  &\le\kappa_V\,\|h\|_{C^{2k+2}(K'')}\le\kappa_V\|h\|_{C^6},\label{dspin:eq-Vbnd}
+\end{align}
+with $\Lambda_I=c\,e^{c\delta_c\Lambda_\omega}(1+\Lambda_S)^2$,
+$\kappa_I=c\Lambda_I^2(\kappa_\omega(0)+\Lambda_\omega\kappa_{\mathrm{fl}})$,
+$E[g]=(\tfrac14R\mp m^2)\mathbf 1_S$ with $\|E_g-E_{g'}\|_{C^0}\le\kappa_E
+\|h\|_{C^2}$ ($\kappa_E\le c\Lambda_U^3 d_U^{-2}$), and
+\[
+  \Lambda_V=c\,e^{c(\Lambda_S+\Lambda_\omega)\delta_c}\,
+  \mathsf P(\Lambda_S,\Lambda_\Delta,\Lambda_I,\Lambda_\omega,\Lambda_R,
+  \Lambda_U,d_U^{-1}),\quad
+  \kappa_V=c\,e^{c(\Lambda_S+\Lambda_\omega)\delta_c}\,\mathsf P\,
+  (1+\kappa_S+\kappa_\Gamma(1)+\kappa_\omega(1)+\kappa_E).
+\]
+All are ball-uniform, state-independent. \emph{Register verdict:} the deepest
+metric jet consumed, linearly, is $\partial^6 g\in C^{0,\alpha}$ at $V_2$ ---
+\emph{identical} to the scalar $v_2$ (Lem.~\ref{port:lem-vk} proof); the fence
+stays $s>n/2+6=8$, with no lift.
+\end{lemma}
+\begin{proof}
+$I_g$: a linear transport ODE with $C^3$-flow coefficient $\omega[g]$
+(Lem.~\ref{dspin:lem-frame}); Gronwall on the length-$\le\delta_c$ collar
+geodesic gives $\Lambda_I$, its variational (inverse-flow) difference gives
+$\kappa_I$ --- exactly Lem.~\ref{port:lem-sigma}(ii)'s Gronwall-along-geodesics
+with $\omega$ in place of $\Gamma$, \emph{not} a new estimate class. In
+\eqref{dspin:eq-rec} the transport correction $[\omega(\nabla\sigma),\cdot]$ is
+$O(r)$ ($\nabla\sigma=O(r)$ at coincidence), folded into the ``$+O(r)$'' of the
+indicial coefficient $A_k=\square\sigma-2n+4k+O(r)$; the indicial root
+$A_k(0)=4k>0$ ($k\ge1$; $k=0$ fixed by the $V_0$ anchor) is \emph{unchanged},
+so the regular-singular Duhamel/Gronwall of Lem.~\ref{port:lem-vk} transcribes
+with the same rates, the unknown now $\mathrm{End}(S)$-valued (matrix Gronwall
+in the fiber norm; the fiber constants of $n$ absorb into $c_n$). Jet count:
+the source $-(\square^\nabla+E)V_{k-1}$ has top metric jet
+$\partial^2 V_{k-1}\!\supset\partial^{2k+2}g$ (the leg the scalar $\square$
+also has); every extra term is a product with a strictly shallower top factor
+--- $\omega\,\partial V_{k-1}\!\to\!\partial^{2k+1}g$,
+$(\partial\omega)V_{k-1},\,\omega^2V_{k-1},\,EV_{k-1}\!\to\!\partial^{2k}g$ ---
+because $E=\tfrac14R\mp m^2$ and $\partial\omega$ are clean metric $2$-jets
+(the frame is \emph{algebraic} in $g$: Lem.~\ref{dspin:lem-frame}). Hence the
+ledger equals the scalar one line for line ($\Delta^{1/2}I:\|h\|_{C^4}$,
+$V_0:\|h\|_{C^2}$, $V_1:\|h\|_{C^4}$, $V_2:\|h\|_{C^6}$); the $C^{0,\alpha}$
+grade rides one order down of the $C^{6,\alpha}$ metric and $C^{5,\alpha}$
+frame data (frame margin $\ge2$). The $\mp m^2$ constant enters $\Lambda_V$
+additively; the bundle rank contributes the fixed factor $N_{\mathrm{sp}}$.
+\end{proof}
+
+\begin{lemma}[spinor clause (i), difference form, over the full $H^s$ ball;
+every constant displayed]\label{lem:dirac-parametrix-ball}
+With $U,s,\alpha$ as above, there is a ball-uniform, state-independent
+constant $C_H^{\mathrm{sp}}(K)=C_{\mathrm{sob}}(K)^3\,\kappa^{\mathrm{sp}}
+(g_0,K)$ such that for all $g,g'\in U$ and all $u,v$ supported in $K$,
+\begin{equation}\label{dspin:eq-clausei}
+  \bigl|(H^{\mathrm{sp}}_g-H^{\mathrm{sp}}_{g'})(u\otimes v)\bigr|
+  \le C_H^{\mathrm{sp}}(K)\,\|g-g'\|_{H^s}\,\|u\|_{H^{s-2}}\|v\|_{H^{s-2}},
+\end{equation}
+$u,v$ now sections of $S$, $H^{s-2}=H^{s-2}(K;S)$. The same $C_{\mathrm{sob}}$
+and cube as \eqref{port:eq-csob} (frame and connection differences ride the
+\emph{same} $C^{6,\alpha}\hookleftarrow H^s$ embedding as $\|h\|_{C^6}$), and
+\[
+  \kappa^{\mathrm{sp}}=\frac{|K|\,m(K)\,c_\theta\,\kappa_P^{\mathrm{sp}}}{8\pi^2}
+  \bigl[\underbrace{\kappa_{\mathrm{lead}}\tfrac{\delta_c^2}2}_{(A^{\mathrm{sp}})}
+  +\underbrace{c\Lambda_I\Lambda_\Delta\kappa_S\tfrac{\delta_c^2}2}
+  _{(B^{\mathrm{sp}})}
+  +\underbrace{\kappa_C'^{\mathrm{sp}}\delta_c^2(1+|\log\tfrac{\delta_c^2}
+  {\ell^2}|)}_{(C^{\mathrm{sp}})}
+  +\underbrace{c\Lambda_V(1+\Lambda_\sigma\delta_c^2)^2\kappa_S
+  \tfrac{\delta_c^4}4}_{(D^{\mathrm{sp}})}\bigr],
+\]
+$\kappa_P^{\mathrm{sp}}=N_{\mathrm{sp}}\kappa_P$ (Lem.~\ref{port:lem-pair}, the
+End-valued amplitude a passive spectator up to the trace contraction),
+$\kappa_{\mathrm{lead}}=\Lambda_I\kappa_\Delta+\Lambda_\Delta\kappa_I$, and
+$\kappa_C'^{\mathrm{sp}}=c[\kappa_V(1+\Lambda_\sigma\delta_c^2)^2+\Lambda_V
+\kappa_\sigma\delta_c^2(1+\Lambda_\sigma\delta_c^2)]$. It holds a fortiori over
+$U_\omega\times U_\omega$.
+\end{lemma}
+\begin{proof}
+The leading term differences by the exact calculus identities of
+\eqref{port:eq-clausei}'s proof; the sole new split is
+$\Delta^{1/2}_g I_g-\Delta^{1/2}_{g'}I_{g'}
+=(\Delta^{1/2}_g-\Delta^{1/2}_{g'})I_g+\Delta^{1/2}_{g'}(I_g-I_{g'})$, the
+second summand the one genuinely-new sub-leg (weight $\kappa_I$, cost
+$\|h\|_{C^{1,\alpha}}$ by \eqref{dspin:eq-Ibnd} --- far below the fence). The
+four graded legs (A$^{\mathrm{sp}}$)=leading-coeff difference [P1, $a=0$],
+(B$^{\mathrm{sp}}$)=$\Delta^{1/2}I\cdot w/\sigma^2$ [P2, $a=2$, the $r^{-2}$
+kernel, $L^1_{\mathrm{loc}}$ at $n=4$], (C$^{\mathrm{sp}}$)=$V^{(2)}$-difference
+$\cdot\log$ [P3, the $\partial^6g$-register leg], (D$^{\mathrm{sp}}$)=
+$V^{(2)}\cdot w/\sigma$ [P1, $a=2$] apply the cone-pairing
+Lem.~\ref{port:lem-pair} \emph{verbatim} --- the kernels $\sigma_\epsilon^{-1},
+\sigma_\epsilon^{-2},\log\sigma_\epsilon$ are scalar metric functions and the
+$\mathrm{End}(S)$ amplitude is pulled through in operator norm,
+$|\int\bar u\,\Phi\,\sigma_\epsilon^{-p}v|\le\sup\|\Phi\|_{\mathrm{op}}\cdot
+(\text{scalar }\kappa_P\text{ bound})\cdot\|u\|\|v\|$, so $\kappa_P$ is
+unchanged (only $|\cdot|\to\|\cdot\|_{\mathrm{op}}$, matrix Taylor $=$ entrywise
+Taylor). Summing legs, charts ($\le m(K)$), and integrating $|u|$ over $K$
+gives the sharper asymmetric form
+$|(H^{\mathrm{sp}}_g-H^{\mathrm{sp}}_{g'})(u\otimes v)|\le\kappa^{\mathrm{sp}}
+\|h\|_{C^6}\|u\|_{C^0}\|v\|_{C^{1,\alpha}}$; three Morrey conversions
+\eqref{port:eq-csob} give \eqref{dspin:eq-clausei}. Uniform in
+$\epsilon\in(0,1]$, passing to the per-metric limit of
+\cite{DappiaggiHackPinamonti2009,Moretti2003}. No state entered.
+\end{proof}
+
+\begin{remark}[floor interface: what Thm.~\ref{thm:dirac-seed-floor}
+becomes]\label{dspin:rem-floor}
+Lem.~\ref{lem:dirac-parametrix-ball} supplies the parametrix
+(coincidence-coefficient) half of the ball clause of
+Rem.~\ref{rem:dsf-imports}: the local uniformity of the Dirac Hadamard
+\emph{parametrix subtraction} in $g$ over the full $H^s$ ball. The
+remaining half is the elementary ground-state spectral-envelope
+uniformity (Weyl law, Sobolev $H^2\hookrightarrow C^0$, Paley--Wiener),
+transcribed from the fixed-$g$ floor; both halves are uniform over the
+ultrastatic family, so the ball clause discharges. Because the seed
+floor constant $c_{\mathrm{fl}}(g)$ of Thm.~\ref{thm:dirac-seed-floor} is
+assembled from the fixed-$g$ Hadamard-renormalised density
+$\langle\widehat T^{\mathrm{ren}}\rangle_{\omega_0}$ and the mode weights
+$w_k(x)$ (whose spin-frame contractions carry the frame factors $e[g]$ of
+Lem.~\ref{dspin:lem-frame}), the difference bound \eqref{dspin:eq-clausei}
+together with that spectral envelope upgrades the derivation from
+\emph{seed-fixed} to \emph{locally $g$-uniform}: $g\mapsto c_{\mathrm{fl}}(g)$
+is bounded and continuous in the $H^s$ topology over the ultrastatic
+seed-scope ball $U_{\mathrm{us}}:=\{g\in U:\ g=-dt^2\oplus h_\Sigma\ \text{ultrastatic}\}$,
+the sub-ball on which $c_{\mathrm{fl}}$ is defined (the mode sum needs the
+static spectrum $\{E_k\}$ and ground state $\omega_0$). The engine bound
+\eqref{dspin:eq-clausei} itself holds over the full $H^s$ ball $U$; only the
+floor upgrade is scoped to $U_{\mathrm{us}}$. The floor \emph{inequality} of
+Thm.~\ref{thm:dirac-seed-floor} --- its \emph{positivity} leg --- is
+\textbf{untouched}: it rests on the Fewster--Verch/Dawson--Fewster
+CAR-frequency-split organisation at the fixed seed, and the indefinite-density
+obstruction remains scoped there (Rem.~\ref{rem:dsf-imports}(a)). This fragment
+discharges the uniformity of the constant \emph{only}.
+\end{remark}
+
+\begin{remark}[three-way fidelity and scope]\label{dspin:rem-match}
+(a) \emph{Twin.} \eqref{dspin:eq-clausei} is \eqref{port:eq-clausei} bundle
+indexed: same pairing, same three norms $H^s,H^{s-2},H^{s-2}$, same support
+condition, same full-ball pair quantifier, same architecture
+$C_H^{\mathrm{sp}}=C_{\mathrm{sob}}^3\kappa^{\mathrm{sp}}$. The metric-only
+engine (Lem.~\ref{port:lem-gamma}--\ref{port:lem-pair}) is reused verbatim; the
+only genuinely-new estimate is Fact~SR (bounded-derivative real-analyticity of
+a fixed algebraic map) plus the bispinor-propagator Gronwall
+\eqref{dspin:eq-Ibnd} --- both instances of the port's own machinery, not
+imports. (b) \emph{Register.} $e$ undifferentiated at $H^s$, $\omega$ at
+$H^{s-1}$, $E$ at $H^{s-2}$ --- exactly the Sobolev bookkeeping of
+Rem.~\ref{rem:E2-discharged}; the recursion fence $s>8$ is earned channel by channel, with the
+frame $2$-derivative-inside and $E$ order-$2$. The ``$\sim0.5$--$1$ tighter
+margin'' noted there is not a deeper fence but (i) a positive good-cone binding
+margin at the same register and (ii) larger explicit powers of
+$(\Lambda_U,d_U^{-1})$ in $\kappa^{\mathrm{sp}}$. The $N=2$ truncation is
+Dirac-earned: the first-order stress bilinear compensates the extra
+$\Dsl$ in $H^{\mathrm{Dirac}}=(\Dsl+m)H^{\mathrm{sp}}$, keeping the
+short-distance order at $r^{-4}$ ($n=4$). (c) \emph{Not claimed.} The floor
+positivity leg (Dawson--Fewster, Dirac-sea scoped); the Sanders QEI-constant
+route (\emph{blocked} for Dirac by the indefinite density, so its object does
+not exist here --- this fragment consumes \emph{only} the DHP2009 parametrix,
+not scalar clause~(iii)); the massless case (Rem.~\ref{rem:dsf-massless}); the
+photon-parity/notch instance-level residual. The Dirac dressing
+$(\Dsl+m)$ and its one integration by parts (spin connection at
+$H^{s-1}$) are the pairing interface, downstream of \eqref{dspin:eq-clausei};
+the seed floor does \emph{not} consume this dressing --- the coincidence
+reading (P-i), controlled by the coefficient jets of
+Lem.~\ref{dspin:lem-rec}, suffices --- so the dressed distributional
+pairing (P-ii) is a stronger, unconsumed object, not on the floor's
+critical path.
+\end{remark}
+% ================= end of P-DSPIN fragment (DRAFT; gated J1/J2) =========
+
 \begin{remark}[imports, each at printed strength]
 \label{rem:dsf-imports}
 (a) The Dawson--Fewster worldline bound~\cite{DawsonFewster2006}
@@ -148,11 +474,12 @@ Dirac Hadamard renormalisation~\cite{DappiaggiHackPinamonti2009}
 elementary given (a)--(c); no step consumes an unpublished estimate.
 The theorem is therefore closed at the fixed seed metric. The
 remaining \emph{ball clause} of the audited strength --- local
-uniformity of $c_{\mathrm{fl}}$ in $g$ --- is exactly the
-$H^{s}$-uniform spinor Hadamard parametrix residual of the (E2b)
-discussion, at parity with how
-Hyp.~\ref{hyp:hadamard-uniform}\,(iii) carries the same clause on
-the scalar leg.
+uniformity of $c_{\mathrm{fl}}$ in $g$ --- is discharged over the
+ultrastatic seed-scope ball by Lem.~\ref{lem:dirac-parametrix-ball}
+(the spinor-bundle transcription of the clause-(i) difference theorem
+\ref{port:thm-M3}) together with the elementary ground-state spectral
+envelope; the floor therefore holds locally uniformly in $g$ over that
+ball.
 \end{remark}
 
 \begin{remark}[massless case]

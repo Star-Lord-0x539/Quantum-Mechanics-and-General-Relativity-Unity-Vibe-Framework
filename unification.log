@@ -1,9 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.22)  16 JUL 2026 10:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.22)  17 JUL 2026 17:19
 entering extended mode
  restricted \write18 enabled.
+ file:line:error style messages enabled.
  %&-line parsing enabled.
-**unification.tex
-(./unification.tex
+**/Users/alexandru/Code/Physics/unification.tex
+(/Users/alexandru/Code/Physics/unification.tex
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
 (/usr/local/texlive/2026/texmf-dist/tex/latex/base/article.cls
@@ -22,33 +23,27 @@ File: size11.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
 \abovecaptionskip=\skip49
 \belowcaptionskip=\skip50
 \bibindent=\dimen148
-)
-(/usr/local/texlive/2026/texmf-dist/tex/latex/base/inputenc.sty
+) (/usr/local/texlive/2026/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2024/02/08 v1.3d Input encoding file
 \inpenc@prehook=\toks17
 \inpenc@posthook=\toks18
-)
-(/usr/local/texlive/2026/texmf-dist/tex/latex/base/fontenc.sty
+) (/usr/local/texlive/2026/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2025/07/18 v2.1d Standard LaTeX package
-)
-(/usr/local/texlive/2026/texmf-dist/tex/latex/amsmath/amsmath.sty
+) (/usr/local/texlive/2026/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2025/07/09 v2.17z AMS math features
 \@mathmargin=\skip51
 
 For additional information on amsmath, use the `?' option.
 (/usr/local/texlive/2026/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2024/11/17 v2.01 AMS text
-
-(/usr/local/texlive/2026/texmf-dist/tex/latex/amsmath/amsgen.sty
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks19
 \ex@=\dimen149
-))
-(/usr/local/texlive/2026/texmf-dist/tex/latex/amsmath/amsbsy.sty
+)) (/usr/local/texlive/2026/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen150
-)
-(/usr/local/texlive/2026/texmf-dist/tex/latex/amsmath/amsopn.sty
+) (/usr/local/texlive/2026/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
 \inf@bad=\count283
@@ -98,19 +93,16 @@ LaTeX Info: Redefining \Relbar on input line 970.
 \mathdisplay@stack=\toks23
 LaTeX Info: Redefining \[ on input line 2950.
 LaTeX Info: Redefining \] on input line 2951.
-)
-(/usr/local/texlive/2026/texmf-dist/tex/latex/amsfonts/amssymb.sty
+) (/usr/local/texlive/2026/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
-
-(/usr/local/texlive/2026/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-))
-(/usr/local/texlive/2026/texmf-dist/tex/latex/amscls/amsthm.sty
+)) (/usr/local/texlive/2026/texmf-dist/tex/latex/amscls/amsthm.sty
 Package: amsthm 2020/05/29 v2.20.6
 \thm@style=\toks24
 \thm@bodyfont=\toks25
@@ -121,15 +113,12 @@ Package: amsthm 2020/05/29 v2.20.6
 \thm@postskip=\skip55
 \thm@headsep=\skip56
 \dth@everypar=\toks29
-)
-(/usr/local/texlive/2026/texmf-dist/tex/latex/mathtools/mathtools.sty
+) (/usr/local/texlive/2026/texmf-dist/tex/latex/mathtools/mathtools.sty
 Package: mathtools 2024/10/04 v1.31 mathematical typesetting tools
-
-(/usr/local/texlive/2026/texmf-dist/tex/latex/graphics/keyval.sty
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
 \KV@toks@=\toks30
-)
-(/usr/local/texlive/2026/texmf-dist/tex/latex/tools/calc.sty
+) (/usr/local/texlive/2026/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2025/03/01 v4.3b Infix arithmetic (KKT,FJ)
 \calc@Acount=\count295
 \calc@Bcount=\count296
@@ -141,8 +130,7 @@ LaTeX Info: Redefining \setlength on input line 86.
 LaTeX Info: Redefining \addtolength on input line 87.
 \calc@Ccount=\count297
 \calc@Cskip=\skip59
-)
-(/usr/local/texlive/2026/texmf-dist/tex/latex/mathtools/mhsetup.sty
+) (/usr/local/texlive/2026/texmf-dist/tex/latex/mathtools/mhsetup.sty
 Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
 )
 \g_MT_multlinerow_int=\count298
@@ -156,8 +144,7 @@ Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
 \l_MT_below_shortintertext_sep=\dimen166
 \xmathstrut@box=\box55
 \xmathstrut@dim=\dimen167
-)
-(/usr/local/texlive/2026/texmf-dist/tex/latex/tools/bm.sty
+) (/usr/local/texlive/2026/texmf-dist/tex/latex/tools/bm.sty
 Package: bm 2025/10/21 v1.2g Bold Symbol Support (DPC/FMi)
 \symboldoperators=\mathgroup6
 \symboldletters=\mathgroup7
@@ -166,14 +153,11 @@ Package bm Info: No bold for \OMX/cmex/m/n, using \pmb.
 Package bm Info: No bold for \U/msa/m/n, using \pmb.
 Package bm Info: No bold for \U/msb/m/n, using \pmb.
 LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 149.
-)
-(/usr/local/texlive/2026/texmf-dist/tex/latex/geometry/geometry.sty
+) (/usr/local/texlive/2026/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2026/03/07 v6.0 Page Geometry
-
-(/usr/local/texlive/2026/texmf-dist/tex/generic/iftex/ifvtex.sty
+ (/usr/local/texlive/2026/texmf-dist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
-
-(/usr/local/texlive/2026/texmf-dist/tex/generic/iftex/iftex.sty
+ (/usr/local/texlive/2026/texmf-dist/tex/generic/iftex/iftex.sty
 Package: iftex 2024/12/12 v1.0g TeX engine tests
 ))
 \Gm@cnth=\count299
@@ -188,73 +172,54 @@ Package: iftex 2024/12/12 v1.0g TeX engine tests
 \Gm@layouthoffset=\dimen174
 \Gm@layoutvoffset=\dimen175
 \Gm@dimlist=\toks31
-)
-(/usr/local/texlive/2026/texmf-dist/tex/latex/hyperref/hyperref.sty
+) (/usr/local/texlive/2026/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2026-01-29 v7.01p Hypertext links for LaTeX
-
-(/usr/local/texlive/2026/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
 Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
-)
-(/usr/local/texlive/2026/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+) (/usr/local/texlive/2026/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
-)
-(/usr/local/texlive/2026/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+) (/usr/local/texlive/2026/texmf-dist/tex/generic/pdfescape/pdfescape.sty
 Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
-
-(/usr/local/texlive/2026/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+ (/usr/local/texlive/2026/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
 Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
-)
-(/usr/local/texlive/2026/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
-Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
-)
-
-(/usr/local/texlive/2026/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+) (/usr/local/texlive/2026/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
+ (/usr/local/texlive/2026/texmf-dist/tex/generic/infwarerr/infwarerr.sty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
-))
-(/usr/local/texlive/2026/texmf-dist/tex/latex/hycolor/hycolor.sty
+)) (/usr/local/texlive/2026/texmf-dist/tex/latex/hycolor/hycolor.sty
 Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
-)
-(/usr/local/texlive/2026/texmf-dist/tex/latex/hyperref/nameref.sty
+) (/usr/local/texlive/2026/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2026-01-29 v2.58 Cross-referencing by name of section
-
-(/usr/local/texlive/2026/texmf-dist/tex/latex/refcount/refcount.sty
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/refcount/refcount.sty
 Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
-)
-(/usr/local/texlive/2026/texmf-dist/tex/generic/gettitlestring/gettitlestring.s
-ty
+) (/usr/local/texlive/2026/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
  (/usr/local/texlive/2026/texmf-dist/tex/latex/kvoptions/kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 ))
 \c@section@level=\count302
-)
-(/usr/local/texlive/2026/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+) (/usr/local/texlive/2026/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count303
-)
-(/usr/local/texlive/2026/texmf-dist/tex/generic/stringenc/stringenc.sty
-Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
-)
+) (/usr/local/texlive/2026/texmf-dist/tex/generic/stringenc/stringenc.sty
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO)
 )
 \@linkdim=\dimen176
 \Hy@linkcounter=\count304
 \Hy@pagecounter=\count305
-
-(/usr/local/texlive/2026/texmf-dist/tex/latex/hyperref/pd1enc.def
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2026-01-29 v7.01p Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
-)
-(/usr/local/texlive/2026/texmf-dist/tex/generic/intcalc/intcalc.sty
+) (/usr/local/texlive/2026/texmf-dist/tex/generic/intcalc/intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
 \Hy@SavedSpaceFactor=\count306
-
-(/usr/local/texlive/2026/texmf-dist/tex/latex/hyperref/puenc.def
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2026-01-29 v7.01p Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
@@ -267,20 +232,16 @@ Package hyperref Info: Backreferencing OFF on input line 4221.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4468.
 \c@Hy@tempcnt=\count307
-
-(/usr/local/texlive/2026/texmf-dist/tex/latex/url/url.sty
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip18
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 4807.
 \XeTeXLinkMargin=\dimen177
-
-(/usr/local/texlive/2026/texmf-dist/tex/generic/bitset/bitset.sty
+ (/usr/local/texlive/2026/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
-
-(/usr/local/texlive/2026/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
-Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
-)
+ (/usr/local/texlive/2026/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
 ))
 \Fld@menulength=\count308
 \Field@Width=\dimen178
@@ -297,20 +258,16 @@ Package hyperref Info: PDF/A mode OFF on input line 6114.
 \c@Hfootnote=\count311
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
-
-(/usr/local/texlive/2026/texmf-dist/tex/latex/hyperref/hpdftex.def
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2026-01-29 v7.01p Hyperref driver for pdfTeX
 \Fld@listcount=\count312
 \c@bookmark@seq@number=\count313
-
-(/usr/local/texlive/2026/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2025-06-21 v1.11 Rerun checks for auxiliary files (HO)
-
-(/usr/local/texlive/2026/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+ (/usr/local/texlive/2026/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
 Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
-Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
-84.
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 284.
 )
 \Hy@SectionHShift=\skip61
 ) (/usr/local/texlive/2026/texmf-dist/tex/latex/cleveref/cleveref.sty
@@ -337,18 +294,15 @@ Package: enumitem 2025/02/06 v3.11 Customized lists
 \enit@inbox=\box56
 \enit@count@id=\count314
 \enitdp@description=\count315
-)
-(/usr/local/texlive/2026/texmf-dist/tex/latex/jknapltx/mathrsfs.sty
+) (/usr/local/texlive/2026/texmf-dist/tex/latex/jknapltx/mathrsfs.sty
 Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
 \symrsfs=\mathgroup9
 )
 \c@theorem=\count316
-
-(/usr/local/texlive/2026/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count317
-)
-(./unification.aux)
+) (./unification.aux)
 \openout1 = `unification.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 58.
@@ -369,25 +323,19 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 58.
 LaTeX Font Info:    ... okay on input line 58.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 58.
 LaTeX Font Info:    ... okay on input line 58.
-
-(/usr/local/texlive/2026/texmf-dist/tex/latex/graphics/graphicx.sty
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
-
-(/usr/local/texlive/2026/texmf-dist/tex/latex/graphics/graphics.sty
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
-
-(/usr/local/texlive/2026/texmf-dist/tex/latex/graphics/trig.sty
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
-)
-(/usr/local/texlive/2026/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+) (/usr/local/texlive/2026/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 106.
-
-(/usr/local/texlive/2026/texmf-dist/tex/latex/graphics-def/pdftex.def
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/graphics-def/pdftex.def
 File: pdftex.def 2025/09/29 v1.2d Graphics/color driver for pdftex
-
-(/usr/local/texlive/2026/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+ (/usr/local/texlive/2026/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count318
 \scratchdimen=\dimen181
@@ -400,15 +348,11 @@ File: pdftex.def 2025/09/29 v1.2d Graphics/color driver for pdftex
 \MPnumerator=\count322
 \makeMPintoPDFobject=\count323
 \everyMPtoPDFconversion=\toks34
-)))
-(/usr/local/texlive/2026/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+))) (/usr/local/texlive/2026/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
-85.
-
-(/usr/local/texlive/2026/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
-e
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 \Gin@req@height=\dimen183
 \Gin@req@width=\dimen184
@@ -453,207 +397,195 @@ Package hyperref Info: Link coloring OFF on input line 58.
 \openout3 = `unification.out'.
 
 LaTeX Font Info:    Trying to load font information for U+msa on input line 60.
-
-
-(/usr/local/texlive/2026/texmf-dist/tex/latex/amsfonts/umsa.fd
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 60.
-
-
-(/usr/local/texlive/2026/texmf-dist/tex/latex/amsfonts/umsb.fd
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 60
-.
-
-(/usr/local/texlive/2026/texmf-dist/tex/latex/jknapltx/ursfs.fd
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 60.
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
 LaTeX Font Info:    Trying to load font information for U+euf on input line 88.
-
-
-(/usr/local/texlive/2026/texmf-dist/tex/latex/amsfonts/ueuf.fd
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/amsfonts/ueuf.fd
 File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
 ) [1
 
-{/usr/local/texlive/2026/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/loc
-al/texlive/2026/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}] [2] (./un
-ification.toc [3]
+{/usr/local/texlive/2026/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}] [2] (./unification.toc [3]
 Overfull \hbox (19.91077pt too wide) in paragraph at lines 47--47
- [][] [][]\T1/cmr/m/n/10.95 (E2) QFT-regime entropy-smallness via spacetime-sme
-ared QEIs and modular- 
+ [][] [][]\T1/cmr/m/n/10.95 (E2) QFT-regime entropy-smallness via spacetime-smeared QEIs and modular- 
  []
 
 
 Overfull \hbox (2.03976pt too wide) in paragraph at lines 48--48
- [][] [][]\T1/cmr/m/n/10.95 (E3) Dynamical-horizon al-ge-bra via Ashtekar--Kris
-hnan + quasi-local mod- 
+ [][] [][]\T1/cmr/m/n/10.95 (E3) Dynamical-horizon al-ge-bra via Ashtekar--Krishnan + quasi-local mod- 
  []
 
 [4] [5]
-Overfull \hbox (4.21368pt too wide) detected at line 102
+Overfull \hbox (4.21368pt too wide) detected at line 103
 \T1/cmr/bx/n/10.95 E2a 
- []
-
-
-Overfull \hbox (1.72272pt too wide) detected at line 103
-\T1/cmr/m/n/10.95 E2a.1 
  []
 
 
 Overfull \hbox (1.72272pt too wide) detected at line 104
-\T1/cmr/m/n/10.95 E2a.2 
- []
-
-
-Overfull \hbox (1.72272pt too wide) detected at line 105
-\T1/cmr/m/n/10.95 E2a.3 
- []
-
-
-Overfull \hbox (1.72272pt too wide) detected at line 106
-\T1/cmr/m/n/10.95 E2a.4 
- []
-
-
-Overfull \hbox (1.72272pt too wide) detected at line 107
-\T1/cmr/m/n/10.95 E2a.5 
- []
-
-
-Overfull \hbox (1.72272pt too wide) detected at line 108
-\T1/cmr/m/n/10.95 E2a.6 
- []
-
-
-Overfull \hbox (1.72272pt too wide) detected at line 109
-\T1/cmr/m/n/10.95 E2a.7 
- []
-
-
-Overfull \hbox (1.72272pt too wide) detected at line 110
-\T1/cmr/m/n/10.95 E2a.8 
- []
-
-
-Overfull \hbox (1.72272pt too wide) detected at line 111
-\T1/cmr/m/n/10.95 E2a.9 
- []
-
-
-Overfull \hbox (7.16666pt too wide) detected at line 112
-\T1/cmr/m/n/10.95 E2a.10 
- []
-
-
-Overfull \hbox (7.16666pt too wide) detected at line 116
-\T1/cmr/m/n/10.95 E2a.11 
- []
-
-
-Overfull \hbox (7.16666pt too wide) detected at line 120
-\T1/cmr/m/n/10.95 E2a.12 
- []
-
-
-Overfull \hbox (7.16666pt too wide) detected at line 121
-\T1/cmr/m/n/10.95 E2a.13 
- []
-
-
-Overfull \hbox (7.16666pt too wide) detected at line 122
-\T1/cmr/m/n/10.95 E2a.14 
- []
-
-
-Overfull \hbox (7.16666pt too wide) detected at line 123
-\T1/cmr/m/n/10.95 E2a.15 
- []
-
-
-Overfull \hbox (7.16666pt too wide) detected at line 124
-\T1/cmr/m/n/10.95 E2a.16 
- []
-
-
-Overfull \hbox (7.16666pt too wide) detected at line 125
-\T1/cmr/m/n/10.95 E2a.17 
- []
-
-
-Overfull \hbox (7.16666pt too wide) detected at line 127
-\T1/cmr/m/n/10.95 E2a.18 
- []
-
-
-Overfull \hbox (7.16666pt too wide) detected at line 128
-\T1/cmr/m/n/10.95 E2a.19 
- []
-
-
-Overfull \hbox (7.16666pt too wide) detected at line 129
-\T1/cmr/m/n/10.95 E2a.20 
- []
-
-
-Overfull \hbox (7.16666pt too wide) detected at line 130
-\T1/cmr/m/n/10.95 E2a.21 
- []
-
-
-Overfull \hbox (7.16666pt too wide) detected at line 131
-\T1/cmr/m/n/10.95 E2a.22 
- []
-
-[6]
-Overfull \hbox (7.16666pt too wide) detected at line 132
-\T1/cmr/m/n/10.95 E2a.23 
- []
-
-
-Overfull \hbox (7.16666pt too wide) detected at line 133
-\T1/cmr/m/n/10.95 E2a.24 
- []
-
-
-Overfull \hbox (4.21368pt too wide) detected at line 134
-\T1/cmr/bx/n/10.95 E2a 
- []
-
-
-Overfull \hbox (4.21368pt too wide) detected at line 135
-\T1/cmr/bx/n/10.95 E2a 
- []
-
-
-Overfull \hbox (4.21368pt too wide) detected at line 136
-\T1/cmr/bx/n/10.95 E2a 
- []
-
-
-Overfull \hbox (1.72272pt too wide) detected at line 137
 \T1/cmr/m/n/10.95 E2a.1 
  []
 
 
-Overfull \hbox (1.72272pt too wide) detected at line 140
+Overfull \hbox (1.72272pt too wide) detected at line 105
 \T1/cmr/m/n/10.95 E2a.2 
  []
 
 
-Overfull \hbox (1.72272pt too wide) detected at line 143
+Overfull \hbox (1.72272pt too wide) detected at line 106
 \T1/cmr/m/n/10.95 E2a.3 
  []
 
 
-Overfull \hbox (4.21368pt too wide) detected at line 146
-\T1/cmr/bx/n/10.95 E2a 
+Overfull \hbox (1.72272pt too wide) detected at line 107
+\T1/cmr/m/n/10.95 E2a.4 
  []
 
 
-Overfull \hbox (4.21368pt too wide) detected at line 147
-\T1/cmr/bx/n/10.95 E2a 
+Overfull \hbox (1.72272pt too wide) detected at line 108
+\T1/cmr/m/n/10.95 E2a.5 
+ []
+
+
+Overfull \hbox (1.72272pt too wide) detected at line 109
+\T1/cmr/m/n/10.95 E2a.6 
+ []
+
+
+Overfull \hbox (1.72272pt too wide) detected at line 110
+\T1/cmr/m/n/10.95 E2a.7 
+ []
+
+
+Overfull \hbox (1.72272pt too wide) detected at line 111
+\T1/cmr/m/n/10.95 E2a.8 
+ []
+
+
+Overfull \hbox (1.72272pt too wide) detected at line 112
+\T1/cmr/m/n/10.95 E2a.9 
+ []
+
+
+Overfull \hbox (7.16666pt too wide) detected at line 113
+\T1/cmr/m/n/10.95 E2a.10 
+ []
+
+
+Overfull \hbox (7.16666pt too wide) detected at line 117
+\T1/cmr/m/n/10.95 E2a.11 
+ []
+
+
+Overfull \hbox (7.16666pt too wide) detected at line 121
+\T1/cmr/m/n/10.95 E2a.12 
+ []
+
+
+Overfull \hbox (7.16666pt too wide) detected at line 122
+\T1/cmr/m/n/10.95 E2a.13 
+ []
+
+
+Overfull \hbox (7.16666pt too wide) detected at line 123
+\T1/cmr/m/n/10.95 E2a.14 
+ []
+
+
+Overfull \hbox (7.16666pt too wide) detected at line 124
+\T1/cmr/m/n/10.95 E2a.15 
+ []
+
+
+Overfull \hbox (7.16666pt too wide) detected at line 125
+\T1/cmr/m/n/10.95 E2a.16 
+ []
+
+
+Overfull \hbox (7.16666pt too wide) detected at line 126
+\T1/cmr/m/n/10.95 E2a.17 
+ []
+
+
+Overfull \hbox (7.16666pt too wide) detected at line 128
+\T1/cmr/m/n/10.95 E2a.18 
+ []
+
+
+Overfull \hbox (7.16666pt too wide) detected at line 129
+\T1/cmr/m/n/10.95 E2a.19 
+ []
+
+
+Overfull \hbox (7.16666pt too wide) detected at line 130
+\T1/cmr/m/n/10.95 E2a.20 
+ []
+
+[6]
+Overfull \hbox (7.16666pt too wide) detected at line 131
+\T1/cmr/m/n/10.95 E2a.21 
+ []
+
+
+Overfull \hbox (7.16666pt too wide) detected at line 132
+\T1/cmr/m/n/10.95 E2a.22 
+ []
+
+
+Overfull \hbox (7.16666pt too wide) detected at line 133
+\T1/cmr/m/n/10.95 E2a.23 
+ []
+
+
+Overfull \hbox (7.16666pt too wide) detected at line 134
+\T1/cmr/m/n/10.95 E2a.24 
+ []
+
+
+Overfull \hbox (13.79948pt too wide) detected at line 135
+\T1/cmr/bx/n/10.95 E2aD 
+ []
+
+
+Overfull \hbox (12.03189pt too wide) detected at line 139
+\T1/cmr/bx/n/10.95 E0dS 
+ []
+
+
+Overfull \hbox (12.75725pt too wide) detected at line 140
+\T1/cmr/bx/n/10.95 E2aP 
+ []
+
+
+Overfull \hbox (8.22298pt too wide) detected at line 141
+\T1/cmr/m/n/10.95 E2aP.1 
+ []
+
+
+Overfull \hbox (8.22298pt too wide) detected at line 144
+\T1/cmr/m/n/10.95 E2aP.2 
+ []
+
+
+Overfull \hbox (8.22298pt too wide) detected at line 147
+\T1/cmr/m/n/10.95 E2aP.3 
+ []
+
+
+Overfull \hbox (3.8224pt too wide) detected at line 150
+\T1/cmr/bx/n/10.95 dS1 
+ []
+
+
+Overfull \hbox (3.8224pt too wide) detected at line 151
+\T1/cmr/bx/n/10.95 dS2 
  []
 
 )
@@ -661,1785 +593,1199 @@ Overfull \hbox (4.21368pt too wide) detected at line 147
 \openout4 = `unification.toc'.
 
  [7]
-Overfull \hbox (19.54741pt too wide) in paragraph at lines 428--505
-\T1/cmr/m/n/10.95 and a mod-i-fied Wheeler--DeWitt con-straint (Conj. []10.13[]
-); (a$[]$) the thermal-time pos-tu-late (Pos. []11.11[],
+Overfull \hbox (19.54741pt too wide) in paragraph at lines 434--511
+\T1/cmr/m/n/10.95 and a mod-i-fied Wheeler--DeWitt con-straint (Conj. []10.13[]); (a$[]$) the thermal-time pos-tu-late (Pos. []11.11[],
  []
 
-[8{/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
-}] [9] [10] [11] [12] [13]
-Overfull \hbox (110.58424pt too wide) detected at line 1001
-\OML/cmm/m/it/10.95 M[] \OT1/cmr/m/n/10.95 := []\OMS/cmsy/m/n/10.95 f\OML/cmm/m
-/it/10.95 ^^Z; \OT1/cmr/m/n/10.95 ^^C\OMS/cmsy/m/n/10.95 g \OT1/cmr/m/n/10.95 (
-[] [] \OML/cmm/m/it/10.95 M[] \OT1/cmr/m/n/10.95 = 1)\OML/cmm/m/it/10.95 ;  ^^Z
-[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 ^^\ \OMS/cmsy/m/n/10.95 j \OML/cmm/m/
-it/10.95 k\OT1/cmr/m/n/10.95 ) = [] \OML/cmm/m/it/10.95 ^^Z[]\OT1/cmr/m/n/10.95
- ^^C\OML/cmm/m/it/10.95 ^^Z[] \OT1/cmr/m/n/10.95 ([])\OML/cmm/m/it/10.95 ;
+[8{/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] [9] [10] [11] [12] [13]
+Overfull \hbox (110.58424pt too wide) detected at line 1007
+\OML/cmm/m/it/10.95 M[] \OT1/cmr/m/n/10.95 := []\OMS/cmsy/m/n/10.95 f\OML/cmm/m/it/10.95 ^^Z; \OT1/cmr/m/n/10.95 ^^C\OMS/cmsy/m/n/10.95 g \OT1/cmr/m/n/10.95 ([] [] \OML/cmm/m/it/10.95 M[] \OT1/cmr/m/n/10.95 = 1)\OML/cmm/m/it/10.95 ;  ^^Z[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 ^^\ \OMS/cmsy/m/n/10.95 j \OML/cmm/m/it/10.95 k\OT1/cmr/m/n/10.95 ) = [] \OML/cmm/m/it/10.95 ^^Z[]\OT1/cmr/m/n/10.95 ^^C\OML/cmm/m/it/10.95 ^^Z[] \OT1/cmr/m/n/10.95 ([])\OML/cmm/m/it/10.95 ;
  []
 
-
-Overfull \hbox (8.46648pt too wide) in paragraph at lines 1022--1023
-\T1/cmr/m/it/10.95 metrised two-time quasiprob-a-bil-ity $\OML/cmm/m/it/10.95 q
-[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 a\OT1/cmr/m/n/10.95 ) = [] [](\OMS/cm
-sy/m/n/10.95 f\OT1/cmr/m/n/10.95 ^^C\OML/cmm/m/it/10.95 ; P[]\OMS/cmsy/m/n/10.9
-5 g\OML/cmm/m/it/10.95 ^^Z\OT1/cmr/m/n/10.95 ) = \OMS/cmsy/m/n/10.95 h\OML/cmm/
-m/it/10.95 a\OMS/cmsy/m/n/10.95 j\OML/cmm/m/it/10.95 M[]\OMS/cmsy/m/n/10.95 j\O
-ML/cmm/m/it/10.95 a\OMS/cmsy/m/n/10.95 i$ \T1/cmr/m/it/10.95 sat-is-fies $[][] 
-[][] \OML/cmm/m/it/10.95 q[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 a\OT1/cmr/m
-/n/10.95 ) =
+[14]
+Overfull \hbox (8.46648pt too wide) in paragraph at lines 1028--1029
+\T1/cmr/m/it/10.95 metrised two-time quasiprob-a-bil-ity $\OML/cmm/m/it/10.95 q[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 a\OT1/cmr/m/n/10.95 ) = [] [](\OMS/cmsy/m/n/10.95 f\OT1/cmr/m/n/10.95 ^^C\OML/cmm/m/it/10.95 ; P[]\OMS/cmsy/m/n/10.95 g\OML/cmm/m/it/10.95 ^^Z\OT1/cmr/m/n/10.95 ) = \OMS/cmsy/m/n/10.95 h\OML/cmm/m/it/10.95 a\OMS/cmsy/m/n/10.95 j\OML/cmm/m/it/10.95 M[]\OMS/cmsy/m/n/10.95 j\OML/cmm/m/it/10.95 a\OMS/cmsy/m/n/10.95 i$ \T1/cmr/m/it/10.95 sat-is-fies $[][] [][] \OML/cmm/m/it/10.95 q[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 a\OT1/cmr/m/n/10.95 ) =
  []
 
 
-Overfull \hbox (12.18732pt too wide) in paragraph at lines 1022--1023
-\T1/cmr/m/it/10.95 joint Kol-mogorov / no com-mut-ing model'' is cer-ti-fied. A
-v-er-ag-ing re-stores clas-si-cal-ity: $[][] \OML/cmm/m/it/10.95 p\OT1/cmr/m/n/
-10.95 (\OML/cmm/m/it/10.95 k\OT1/cmr/m/n/10.95 ) \OML/cmm/m/it/10.95 M[] \OT1/c
-mr/m/n/10.95 =
+Overfull \hbox (12.18732pt too wide) in paragraph at lines 1028--1029
+\T1/cmr/m/it/10.95 joint Kol-mogorov / no com-mut-ing model'' is cer-ti-fied. Av-er-ag-ing re-stores clas-si-cal-ity: $[][] \OML/cmm/m/it/10.95 p\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 k\OT1/cmr/m/n/10.95 ) \OML/cmm/m/it/10.95 M[] \OT1/cmr/m/n/10.95 =
  []
 
-[14] [15]
-Overfull \hbox (28.44043pt too wide) detected at line 1097
-[][]\OML/cmm/m/it/10.95 ^^Z[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 ^^\\OT1/cm
-r/m/n/10.95 (\OML/cmm/m/it/10.95 x\OT1/cmr/m/n/10.95 ) \OMS/cmsy/m/n/10.95 j \O
-ML/cmm/m/it/10.95 k\OT1/cmr/m/n/10.95 ) [](\OML/cmm/m/it/10.95 x\OT1/cmr/m/n/10
-.95 )[] = [][]\OML/cmm/m/it/10.95 U\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 ^^\\
-OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 x\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95
- ; ^^\[]\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 ^^Z[]\OT1/cmr/m/n/10.95 (\OML/c
-mm/m/it/10.95 ^^\[] \OMS/cmsy/m/n/10.95 j \OML/cmm/m/it/10.95 k\OT1/cmr/m/n/10.
-95 )\OML/cmm/m/it/10.95 U\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 ^^\\OT1/cmr/m/
-n/10.95 (\OML/cmm/m/it/10.95 x\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 ; ^^\[]\O
-T1/cmr/m/n/10.95 )[] \OMS/cmsy/m/n/10.95 ^^A []\OT1/cmr/m/n/10.95 (\OML/cmm/m/i
-t/10.95 x\OT1/cmr/m/n/10.95 )[] = [][]\OML/cmm/m/it/10.95 ^^Z[]\OT1/cmr/m/n/10.
-95 (\OML/cmm/m/it/10.95 ^^\[] \OMS/cmsy/m/n/10.95 j \OML/cmm/m/it/10.95 k\OT1/c
-mr/m/n/10.95 ) [](\OML/cmm/m/it/10.95 x\OT1/cmr/m/n/10.95 )[]
+[15]
+Overfull \hbox (28.44043pt too wide) detected at line 1103
+[][]\OML/cmm/m/it/10.95 ^^Z[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 ^^\\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 x\OT1/cmr/m/n/10.95 ) \OMS/cmsy/m/n/10.95 j \OML/cmm/m/it/10.95 k\OT1/cmr/m/n/10.95 ) [](\OML/cmm/m/it/10.95 x\OT1/cmr/m/n/10.95 )[] = [][]\OML/cmm/m/it/10.95 U\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 ^^\\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 x\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 ; ^^\[]\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 ^^Z[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 ^^\[] \OMS/cmsy/m/n/10.95 j \OML/cmm/m/it/10.95 k\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 U\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 ^^\\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 x\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 ; ^^\[]\OT1/cmr/m/n/10.95 )[] \OMS/cmsy/m/n/10.95 ^^A []\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 x\OT1/cmr/m/n/10.95 )[] = [][]\OML/cmm/m/it/10.95 ^^Z[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 ^^\[] \OMS/cmsy/m/n/10.95 j \OML/cmm/m/it/10.95 k\OT1/cmr/m/n/10.95 ) [](\OML/cmm/m/it/10.95 x\OT1/cmr/m/n/10.95 )[]
  []
 
 [16] [17] [18] [19]
-Overfull \hbox (61.61562pt too wide) in paragraph at lines 1481--1503
-\T1/cmr/m/it/10.95 Remark \T1/cmr/m/n/10.95 6.2 (Why $\OML/cmm/m/it/10.95 p\OT1
-/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 k\OT1/cmr/m/n/10.95 )$ \T1/cmr/m/n/10.95 is
- \T1/cmr/m/it/10.95 not \T1/cmr/m/n/10.95 in-vari-ant)\T1/cmr/m/it/10.95 . \T1/
-cmr/m/n/10.95 An anal-o-gous ar-gu-ment ap-plied to $\OML/cmm/m/it/10.95 p\OT1/
-cmr/m/n/10.95 (\OML/cmm/m/it/10.95 k\OT1/cmr/m/n/10.95 ) = [](\OML/cmm/m/it/10.
-95 E[]U\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 ^^\[]; ^^\[]\OT1/cmr/m/n/10.95 )
-\OML/cmm/m/it/10.95 ^^Z[]U\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 ^^\[]; ^^\[]\
-OT1/cmr/m/n/10.95 )[])$
+Overfull \hbox (61.61562pt too wide) in paragraph at lines 1494--1516
+\T1/cmr/m/it/10.95 Remark \T1/cmr/m/n/10.95 6.2 (Why $\OML/cmm/m/it/10.95 p\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 k\OT1/cmr/m/n/10.95 )$ \T1/cmr/m/n/10.95 is \T1/cmr/m/it/10.95 not \T1/cmr/m/n/10.95 in-vari-ant)\T1/cmr/m/it/10.95 . \T1/cmr/m/n/10.95 An anal-o-gous ar-gu-ment ap-plied to $\OML/cmm/m/it/10.95 p\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 k\OT1/cmr/m/n/10.95 ) = [](\OML/cmm/m/it/10.95 E[]U\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 ^^\[]; ^^\[]\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 ^^Z[]U\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 ^^\[]; ^^\[]\OT1/cmr/m/n/10.95 )[])$
  []
 
-[20]
-Overfull \hbox (10.49655pt too wide) in paragraph at lines 1589--1592
-\T1/cmr/bx/n/10.95 Axiom 7.1 \T1/cmr/m/n/10.95 (Ter-mi-nal record--com-plete-ne
-ss)\T1/cmr/bx/n/10.95 . $\OML/cmm/m/it/10.95 K$ \T1/cmr/m/n/10.95 is $[][]$-mea
-surable, where $[][] \OT1/cmr/m/n/10.95 := [][] [][]$\T1/cmr/m/n/10.95 . 
+[20] [21]
+Overfull \hbox (10.49655pt too wide) in paragraph at lines 1655--1658
+\T1/cmr/bx/n/10.95 Axiom 7.1 \T1/cmr/m/n/10.95 (Ter-mi-nal record--com-plete-ness)\T1/cmr/bx/n/10.95 . $\OML/cmm/m/it/10.95 K$ \T1/cmr/m/n/10.95 is $[][]$-measurable, where $[][] \OT1/cmr/m/n/10.95 := [][] [][]$\T1/cmr/m/n/10.95 . 
  []
 
-[21] [22] [23] [24] [25] [26] [27] [28] [29]
-Overfull \hbox (64.04039pt too wide) in paragraph at lines 2401--2408
-\T1/cmr/m/it/10.95 Joint prob-lem. \T1/cmr/m/n/10.95 Let $\OML/cmm/m/it/10.95 K
- \OT1/cmr/m/n/10.95 : 
- \OMS/cmsy/m/n/10.95 ! K$ \T1/cmr/m/n/10.95 be the ab-stract ter-mi-nal la-bel,
- with prior law $\OML/cmm/m/it/10.95 p\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 k
-\OT1/cmr/m/n/10.95 ) = [](\OML/cmm/m/it/10.95 ^^Z[]U\OT1/cmr/m/n/10.95 (\OML/cm
-m/m/it/10.95 ^^\[]; ^^\[]\OT1/cmr/m/n/10.95 )[]\OML/cmm/m/it/10.95 E[]U\OT1/cmr
-/m/n/10.95 (\OML/cmm/m/it/10.95 ^^\[]; ^^\[]\OT1/cmr/m/n/10.95 ))$
+[22] [23] [24] [25] [26] [27] [28] [29] [30]
+Overfull \hbox (64.04039pt too wide) in paragraph at lines 2467--2474
+\T1/cmr/m/it/10.95 Joint prob-lem. \T1/cmr/m/n/10.95 Let $\OML/cmm/m/it/10.95 K \OT1/cmr/m/n/10.95 : 
+ \OMS/cmsy/m/n/10.95 ! K$ \T1/cmr/m/n/10.95 be the ab-stract ter-mi-nal la-bel, with prior law $\OML/cmm/m/it/10.95 p\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 k\OT1/cmr/m/n/10.95 ) = [](\OML/cmm/m/it/10.95 ^^Z[]U\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 ^^\[]; ^^\[]\OT1/cmr/m/n/10.95 )[]\OML/cmm/m/it/10.95 E[]U\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 ^^\[]; ^^\[]\OT1/cmr/m/n/10.95 ))$
  []
 
-[30]
-Overfull \hbox (74.93033pt too wide) detected at line 2476
-[][][][]\OML/cmm/m/it/10.95 G[]\OT1/cmr/m/n/10.95 [\OML/cmm/m/it/10.95 g[]\OT1/
-cmr/m/n/10.95 ] + ^^C\OML/cmm/m/it/10.95 g[]  \OT1/cmr/m/n/10.95 =  [][]\OML/cm
-m/m/it/10.95 T[]\OT1/cmr/m/n/10.95 [\OML/cmm/m/it/10.95 g[]\OT1/cmr/m/n/10.95 ]
-(\OML/cmm/m/it/10.95 x\OT1/cmr/m/n/10.95 ; \OML/cmm/m/it/10.95 !\OT1/cmr/m/n/10
-.95 )  +  [] \OML/cmm/m/it/10.95 ^^N[] ^^W[]\OT1/cmr/m/n/10.95 [\OML/cmm/m/it/1
-0.95 g[]\OT1/cmr/m/n/10.95 ] \OML/cmm/m/it/10.95 e[]e[]  \OT1/cmr/m/n/10.95 +  
-\OML/cmm/m/it/10.95 ^^N[] S[]\OT1/cmr/m/n/10.95 [\OML/cmm/m/it/10.95 g[]\OT1/cm
-r/m/n/10.95 ] \OML/cmm/m/it/10.95 e[]e[][];  g[] \OMS/cmsy/m/n/10.95 2 B[]\OML/
-cmm/m/it/10.95 ;
+[31]
+Overfull \hbox (74.93033pt too wide) detected at line 2542
+[][][][]\OML/cmm/m/it/10.95 G[]\OT1/cmr/m/n/10.95 [\OML/cmm/m/it/10.95 g[]\OT1/cmr/m/n/10.95 ] + ^^C\OML/cmm/m/it/10.95 g[]  \OT1/cmr/m/n/10.95 =  [][]\OML/cmm/m/it/10.95 T[]\OT1/cmr/m/n/10.95 [\OML/cmm/m/it/10.95 g[]\OT1/cmr/m/n/10.95 ](\OML/cmm/m/it/10.95 x\OT1/cmr/m/n/10.95 ; \OML/cmm/m/it/10.95 !\OT1/cmr/m/n/10.95 )  +  [] \OML/cmm/m/it/10.95 ^^N[] ^^W[]\OT1/cmr/m/n/10.95 [\OML/cmm/m/it/10.95 g[]\OT1/cmr/m/n/10.95 ] \OML/cmm/m/it/10.95 e[]e[]  \OT1/cmr/m/n/10.95 +  \OML/cmm/m/it/10.95 ^^N[] S[]\OT1/cmr/m/n/10.95 [\OML/cmm/m/it/10.95 g[]\OT1/cmr/m/n/10.95 ] \OML/cmm/m/it/10.95 e[]e[][];  g[] \OMS/cmsy/m/n/10.95 2 B[]\OML/cmm/m/it/10.95 ;
  []
 
 
-Overfull \hbox (95.60771pt too wide) detected at line 2525
-[][][][]\OML/cmm/m/it/10.95 ^^W[]  \OT1/cmr/m/n/10.95 =  \OML/cmm/m/it/10.95 ^^
-V `[]`[] \OT1/cmr/m/n/10.95 + \OML/cmm/m/it/10.95 j[][]`[]e[] \OT1/cmr/m/n/10.9
-5 + \OML/cmm/m/it/10.95 e[]`[][] \OT1/cmr/m/n/10.95 + \OML/cmm/m/it/10.95 p ^^[
-[]e[]e[];  ^^V \OT1/cmr/m/n/10.95 = \OMS/cmsy/m/n/10.95 ^^@[] \OML/cmm/m/it/10.
-95 ^^[[]\OT1/cmr/m/n/10.95 [\OML/cmm/m/it/10.95 C[]\OT1/cmr/m/n/10.95 ]\OML/cmm
-/m/it/10.95 ;  j[] \OT1/cmr/m/n/10.95 = [] \OML/cmm/m/it/10.95 ^^[[]\OT1/cmr/m/
-n/10.95 [\OML/cmm/m/it/10.95 C[]\OT1/cmr/m/n/10.95 ]\OML/cmm/m/it/10.95 ;  p \O
-T1/cmr/m/n/10.95 = \OMS/cmsy/m/n/10.95 ^^@[] \OT1/cmr/m/n/10.95 [\OML/cmm/m/it/
-10.95 C[]\OT1/cmr/m/n/10.95 ]\OML/cmm/m/it/10.95 ;
+Overfull \hbox (95.60771pt too wide) detected at line 2591
+[][][][]\OML/cmm/m/it/10.95 ^^W[]  \OT1/cmr/m/n/10.95 =  \OML/cmm/m/it/10.95 ^^V `[]`[] \OT1/cmr/m/n/10.95 + \OML/cmm/m/it/10.95 j[][]`[]e[] \OT1/cmr/m/n/10.95 + \OML/cmm/m/it/10.95 e[]`[][] \OT1/cmr/m/n/10.95 + \OML/cmm/m/it/10.95 p ^^[[]e[]e[];  ^^V \OT1/cmr/m/n/10.95 = \OMS/cmsy/m/n/10.95 ^^@[] \OML/cmm/m/it/10.95 ^^[[]\OT1/cmr/m/n/10.95 [\OML/cmm/m/it/10.95 C[]\OT1/cmr/m/n/10.95 ]\OML/cmm/m/it/10.95 ;  j[] \OT1/cmr/m/n/10.95 = [] \OML/cmm/m/it/10.95 ^^[[]\OT1/cmr/m/n/10.95 [\OML/cmm/m/it/10.95 C[]\OT1/cmr/m/n/10.95 ]\OML/cmm/m/it/10.95 ;  p \OT1/cmr/m/n/10.95 = \OMS/cmsy/m/n/10.95 ^^@[] \OT1/cmr/m/n/10.95 [\OML/cmm/m/it/10.95 C[]\OT1/cmr/m/n/10.95 ]\OML/cmm/m/it/10.95 ;
  []
 
 
-Overfull \hbox (105.79483pt too wide) detected at line 2535
-[][][][]\OML/cmm/m/it/10.95 S[]  \OT1/cmr/m/n/10.95 :=  \OMS/cmsy/m/n/10.95 ^^@
- \OML/cmm/m/it/10.95 ^^O [][]\OT1/cmr/m/n/10.95 [\OML/cmm/m/it/10.95 K[]\OT1/cm
-r/m/n/10.95 ] \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 h[] h[]\OT1/cmr/m/n/1
-0.95 [\OML/cmm/m/it/10.95 K[]\OT1/cmr/m/n/10.95 ][]\OML/cmm/m/it/10.95 ;  ^^O \
-OT1/cmr/m/n/10.95 := \OML/cmm/m/it/10.95 n[]n[]  \OT1/cmr/m/n/10.95 (= \OMS/cms
-y/m/n/10.95 ^^@\OT1/cmr/m/n/10.95 1 []^^F[][])\OML/cmm/m/it/10.95 ;
+Overfull \hbox (105.79483pt too wide) detected at line 2601
+[][][][]\OML/cmm/m/it/10.95 S[]  \OT1/cmr/m/n/10.95 :=  \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 ^^O [][]\OT1/cmr/m/n/10.95 [\OML/cmm/m/it/10.95 K[]\OT1/cmr/m/n/10.95 ] \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 h[] h[]\OT1/cmr/m/n/10.95 [\OML/cmm/m/it/10.95 K[]\OT1/cmr/m/n/10.95 ][]\OML/cmm/m/it/10.95 ;  ^^O \OT1/cmr/m/n/10.95 := \OML/cmm/m/it/10.95 n[]n[]  \OT1/cmr/m/n/10.95 (= \OMS/cmsy/m/n/10.95 ^^@\OT1/cmr/m/n/10.95 1 []^^F[][])\OML/cmm/m/it/10.95 ;
  []
 
-[31] [32]
-Overfull \hbox (0.32582pt too wide) in paragraph at lines 2701--2707
-\T1/cmr/m/it/10.95 Joint fixed point and uni-ver-sal sam-ple space. \T1/cmr/m/n
-/10.95 The in-duced fam-ily $\OMS/cmsy/m/n/10.95 f\OT1/cmr/m/n/10.95 (\OML/cmm/
-m/it/10.95 g[]; ^^W[]\OT1/cmr/m/n/10.95 [\OML/cmm/m/it/10.95 g[]\OT1/cmr/m/n/10
-.95 ]\OML/cmm/m/it/10.95 ; ^^Z[]\OT1/cmr/m/n/10.95 [\OML/cmm/m/it/10.95 g[]\OT1
-/cmr/m/n/10.95 ](\OMS/cmsy/m/n/10.95 ^^A j \OML/cmm/m/it/10.95 k\OT1/cmr/m/n/10
-.95 ))\OMS/cmsy/m/n/10.95 g[]$
+[32] [33]
+Overfull \hbox (0.32582pt too wide) in paragraph at lines 2767--2773
+\T1/cmr/m/it/10.95 Joint fixed point and uni-ver-sal sam-ple space. \T1/cmr/m/n/10.95 The in-duced fam-ily $\OMS/cmsy/m/n/10.95 f\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 g[]; ^^W[]\OT1/cmr/m/n/10.95 [\OML/cmm/m/it/10.95 g[]\OT1/cmr/m/n/10.95 ]\OML/cmm/m/it/10.95 ; ^^Z[]\OT1/cmr/m/n/10.95 [\OML/cmm/m/it/10.95 g[]\OT1/cmr/m/n/10.95 ](\OMS/cmsy/m/n/10.95 ^^A j \OML/cmm/m/it/10.95 k\OT1/cmr/m/n/10.95 ))\OMS/cmsy/m/n/10.95 g[]$
  []
 
-[33] [34]
-Overfull \hbox (30.65295pt too wide) in paragraph at lines 2916--2980
-\T1/cmr/m/n/10.95 Combined, (vi-a) and (vi-b), to-gether with the caus-tic resi
-d-ual (vi-b$[]$) and the non-crossing/composition
+[34] [35]
+Overfull \hbox (30.65295pt too wide) in paragraph at lines 2982--3046
+\T1/cmr/m/n/10.95 Combined, (vi-a) and (vi-b), to-gether with the caus-tic resid-ual (vi-b$[]$) and the non-crossing/composition
  []
 
 
-Overfull \hbox (8.1189pt too wide) in paragraph at lines 2916--2980
-\T1/cmr/m/n/10.95 scope (vi-b$[]$), make the null-shell data $\OT1/cmr/m/n/10.9
-5 (\OML/cmm/m/it/10.95 ^^V; j[]; p\OT1/cmr/m/n/10.95 )[]$ \T1/cmr/m/n/10.95 def
-in-ing [] well-defined el-e-ments of $\OML/cmm/m/it/10.95 L[]\OT1/cmr/m/n/10.95
- (\OMS/cmsy/m/n/10.95 N[]\OT1/cmr/m/n/10.95 )$
+Overfull \hbox (8.1189pt too wide) in paragraph at lines 2982--3046
+\T1/cmr/m/n/10.95 scope (vi-b$[]$), make the null-shell data $\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 ^^V; j[]; p\OT1/cmr/m/n/10.95 )[]$ \T1/cmr/m/n/10.95 defin-ing [] well-defined el-e-ments of $\OML/cmm/m/it/10.95 L[]\OT1/cmr/m/n/10.95 (\OMS/cmsy/m/n/10.95 N[]\OT1/cmr/m/n/10.95 )$
  []
 
-[35] [36]
-Overfull \hbox (6.13553pt too wide) in paragraph at lines 3102--3147
-\T1/cmr/m/it/10.95 Remark \T1/cmr/m/n/10.95 10.4 (Why the adapted $\OML/cmm/m/i
-t/10.95 ^^Z[]$ \T1/cmr/m/n/10.95 source is con-ser-va-tion--con-sis-tent (and w
-hy naive $\OML/cmm/m/it/10.95 ^^Z[]$\T1/cmr/m/n/10.95 -sourcing
+[36] [37]
+Overfull \hbox (6.13553pt too wide) in paragraph at lines 3168--3213
+\T1/cmr/m/it/10.95 Remark \T1/cmr/m/n/10.95 10.4 (Why the adapted $\OML/cmm/m/it/10.95 ^^Z[]$ \T1/cmr/m/n/10.95 source is con-ser-va-tion--con-sis-tent (and why naive $\OML/cmm/m/it/10.95 ^^Z[]$\T1/cmr/m/n/10.95 -sourcing
  []
 
-[37]
-Overfull \hbox (2.33446pt too wide) in paragraph at lines 3242--3250
-[]\T1/cmr/m/it/10.95 (\T1/cmr/m/n/10.95 No an-tic-i-pa-tion.\T1/cmr/m/it/10.95 
-) For $\OML/cmm/m/it/10.95 s \OMS/cmsy/m/n/10.95 ^^T \OML/cmm/m/it/10.95 ^^\$\T
-1/cmr/m/it/10.95 , con-di-tion-ing on met-ric data in $\OML/cmm/m/it/10.95 J[]\
-OT1/cmr/m/n/10.95 (^^F[])$ \T1/cmr/m/it/10.95 alone gives $\U/msb/m/n/10.95 P[]
-\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 K \OT1/cmr/m/n/10.95 =
+[38]
+Overfull \hbox (2.33446pt too wide) in paragraph at lines 3308--3316
+[]\T1/cmr/m/it/10.95 (\T1/cmr/m/n/10.95 No an-tic-i-pa-tion.\T1/cmr/m/it/10.95 ) For $\OML/cmm/m/it/10.95 s \OMS/cmsy/m/n/10.95 ^^T \OML/cmm/m/it/10.95 ^^\$\T1/cmr/m/it/10.95 , con-di-tion-ing on met-ric data in $\OML/cmm/m/it/10.95 J[]\OT1/cmr/m/n/10.95 (^^F[])$ \T1/cmr/m/it/10.95 alone gives $\U/msb/m/n/10.95 P[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 K \OT1/cmr/m/n/10.95 =
  []
 
-[38] [39] [40] [41]
-Overfull \hbox (6.06195pt too wide) in paragraph at lines 3623--3627
-\T1/cmr/bx/n/10.95 Conjecture 10.13 \T1/cmr/m/n/10.95 (Mod-i-fied Wheel-er--De-
-Witt con-straint; rigged-Hilbert form)\T1/cmr/bx/n/10.95 . \T1/cmr/m/n/10.95 Le
-t $\OT1/cmr/m/n/10.95 ^^H \OMS/cmsy/m/n/10.95 ^^Z H[] 
+[39] [40] [41] [42]
+Overfull \hbox (6.06195pt too wide) in paragraph at lines 3689--3693
+\T1/cmr/bx/n/10.95 Conjecture 10.13 \T1/cmr/m/n/10.95 (Mod-i-fied Wheel-er--De-Witt con-straint; rigged-Hilbert form)\T1/cmr/bx/n/10.95 . \T1/cmr/m/n/10.95 Let $\OT1/cmr/m/n/10.95 ^^H \OMS/cmsy/m/n/10.95 ^^Z H[] 
 
  []
 
-[42] [43]
-Overfull \hbox (30.53629pt too wide) in paragraph at lines 3755--3757
-\T1/cmr/bx/n/10.95 Proposition 10.14 \T1/cmr/m/n/10.95 (Con-di-tional: sym-met-
-ric-d-if-fer-ence TDSE from Conj. []10.13[])\T1/cmr/bx/n/10.95 . \T1/cmr/m/it/1
-0.95 As-sume Conj. []10.13[].
+[43]
+Overfull \hbox (30.53629pt too wide) in paragraph at lines 3821--3823
+\T1/cmr/bx/n/10.95 Proposition 10.14 \T1/cmr/m/n/10.95 (Con-di-tional: sym-met-ric-d-if-fer-ence TDSE from Conj. []10.13[])\T1/cmr/bx/n/10.95 . \T1/cmr/m/it/10.95 As-sume Conj. []10.13[].
+ []
+
+[44]
+Overfull \hbox (11.10251pt too wide) in paragraph at lines 3872--3881
+\T1/cmr/bx/n/10.95 Proposition 10.15 \T1/cmr/m/n/10.95 (Suf-fi-cient con-di-tion for joint com-pat-i-bil-ity [])\T1/cmr/bx/n/10.95 . \T1/cmr/m/it/10.95 In the set-ting of Conj. []10.13[],
+ []
+
+[45] [46] [47] [48] [49] [50] [51] [52] [53] [54] [55] [56]
+Overfull \hbox (81.34244pt too wide) in paragraph at lines 5150--5167
+\T1/cmr/m/n/10.95 and the dual weight eval-u-ates the $\OML/cmm/m/it/10.95 ^^U[]$ \T1/cmr/m/n/10.95 (Plancherel) com-po-nent: $[]\OT1/cmr/m/n/10.95 (^^C[]\OML/cmm/m/it/10.95 ^^Y\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 a\OT1/cmr/m/n/10.95 )^^C[]) = 2\OML/cmm/m/it/10.95 ^^Y  [] \OMS/cmsy/m/n/10.95 j[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 s\OT1/cmr/m/n/10.95 )\OMS/cmsy/m/n/10.95 j[] \OML/cmm/m/it/10.95 ![]^^[[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 a\OT1/cmr/m/n/10.95 )[] \OML/cmm/m/it/10.95 ds \OT1/cmr/m/n/10.95 =
+ []
+
+[57] [58] [59] [60] [61] [62] [63]
+Overfull \hbox (5.65987pt too wide) in paragraph at lines 5941--5959
+[]\T1/cmr/m/it/10.95 under (KE) the iso-mor-phism of (1) can be cho-sen $\OML/cmm/m/it/10.95 K$\T1/cmr/m/it/10.95 -equivariant: the joint laws of $\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 K; ^^Y[]\OT1/cmr/m/n/10.95 )$
+ []
+
+[64] [65] [66]
+Overfull \hbox (1.28249pt too wide) in paragraph at lines 6236--6245
+\T1/cmr/bx/n/10.95 Postulate 11.11 \T1/cmr/m/n/10.95 (Ther-mal--time iden-ti-fi-ca-tion)\T1/cmr/bx/n/10.95 . \T1/cmr/m/n/10.95 Let $\OML/cmm/m/it/10.95 !$ \T1/cmr/m/n/10.95 be the seed back-ground state of Conj. []11.1[]
+ []
+
+[67] [68] [69] [70] [71]
+Overfull \hbox (30.50195pt too wide) in paragraph at lines 6681--6695
+[]\T1/cmr/bx/n/10.95 Nonlinear entanglement-to-Einstein ex-ten-sions. \T1/cmr/m/n/10.95 Faulkner--Haehl--Hijano--Parrikar--Rabideau--
  []
 
 
-Overfull \hbox (11.10251pt too wide) in paragraph at lines 3806--3815
-\T1/cmr/bx/n/10.95 Proposition 10.15 \T1/cmr/m/n/10.95 (Suf-fi-cient con-di-tio
-n for joint com-pat-i-bil-ity [])\T1/cmr/bx/n/10.95 . \T1/cmr/m/it/10.95 In the
- set-ting of Conj. []10.13[],
+Overfull \hbox (7.29544pt too wide) in paragraph at lines 6714--6718
+[]\T1/cmr/bx/n/10.95 Matter stress-energy as mod-u-lar den-sity. \T1/cmr/m/n/10.95 The smeared mat-ter stress-energy $[]\OT1/cmr/m/n/10.95 [[]; \OML/cmm/m/it/10.95 f\OT1/cmr/m/n/10.95 ]$
  []
 
-[44] [45] [46] [47] [48] [49] [50] [51] [52] [53] [54] [55]
-Overfull \hbox (81.34244pt too wide) in paragraph at lines 5065--5082
-\T1/cmr/m/n/10.95 and the dual weight eval-u-ates the $\OML/cmm/m/it/10.95 ^^U[
-]$ \T1/cmr/m/n/10.95 (Plancherel) com-po-nent: $[]\OT1/cmr/m/n/10.95 (^^C[]\OML
-/cmm/m/it/10.95 ^^Y\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 a\OT1/cmr/m/n/10.95 
-)^^C[]) = 2\OML/cmm/m/it/10.95 ^^Y  [] \OMS/cmsy/m/n/10.95 j[]\OT1/cmr/m/n/10.9
-5 (\OML/cmm/m/it/10.95 s\OT1/cmr/m/n/10.95 )\OMS/cmsy/m/n/10.95 j[] \OML/cmm/m/
-it/10.95 ![]^^[[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 a\OT1/cmr/m/n/10.95 )[
-] \OML/cmm/m/it/10.95 ds \OT1/cmr/m/n/10.95 =
+[72] [73] [74] [75] [76]
+Overfull \hbox (10.5433pt too wide) in paragraph at lines 7160--7168
+\T1/cmr/m/it/10.95 record-permanence con-di-tion-ing --- what grav-i-tates is what has de-co-hered ir-re-versibly (Def. []10.1[],
  []
 
-[56] [57] [58] [59] [60] [61] [62]
-Overfull \hbox (5.65987pt too wide) in paragraph at lines 5856--5874
-[]\T1/cmr/m/it/10.95 under (KE) the iso-mor-phism of (1) can be cho-sen $\OML/c
-mm/m/it/10.95 K$\T1/cmr/m/it/10.95 -equivariant: the joint laws of $\OT1/cmr/m/
-n/10.95 (\OML/cmm/m/it/10.95 K; ^^Y[]\OT1/cmr/m/n/10.95 )$
+[77]
+Overfull \hbox (7.5926pt too wide) in paragraph at lines 7256--7260
+\T1/cmr/bx/n/10.95 Proposition 11.24 \T1/cmr/m/n/10.95 (KMS sta-tion-ar-ity along the mod-u-lar flow)\T1/cmr/bx/n/10.95 . \T1/cmr/m/it/10.95 Un-der Pos. []11.11[] and Pos. []11.18[],
  []
 
-[63] [64] [65]
-Overfull \hbox (1.28249pt too wide) in paragraph at lines 6151--6160
-\T1/cmr/bx/n/10.95 Postulate 11.11 \T1/cmr/m/n/10.95 (Ther-mal--time iden-ti-fi
--ca-tion)\T1/cmr/bx/n/10.95 . \T1/cmr/m/n/10.95 Let $\OML/cmm/m/it/10.95 !$ \T1
-/cmr/m/n/10.95 be the seed back-ground state of Conj. []11.1[]
+[78] [79] [80] [81] [82]
+Overfull \hbox (81.45547pt too wide) in paragraph at lines 7802--7827
+\T1/cmr/bx/n/10.95 Hypothesis 11.35 \T1/cmr/m/n/10.95 ($\OML/cmm/m/it/10.95 "$\T1/cmr/m/n/10.95 -tail ro-bust-ness of the cut-off dis-charge)\T1/cmr/bx/n/10.95 . \T1/cmr/m/n/10.95 Let $\OML/cmm/m/it/10.95 ^^Z$ \T1/cmr/m/n/10.95 be a state with $[][] \OMS/cmsy/m/n/10.95 ^^T
  []
 
-[66] [67] [68] [69] [70]
-Overfull \hbox (30.50195pt too wide) in paragraph at lines 6596--6610
-[]\T1/cmr/bx/n/10.95 Nonlinear entanglement-to-Einstein ex-ten-sions. \T1/cmr/m
-/n/10.95 Faulkner--Haehl--Hijano--Parrikar--Rabideau--
+[83] [84] [85] [86]
+Overfull \hbox (4.64557pt too wide) in paragraph at lines 8176--8188
+[]\T1/cmr/m/it/10.95 The ensemble-averaged test re-sponse over the uni-ver-sal sam-ple space is a classical-probability
+ []
+
+[87] [88]
+Overfull \hbox (2.17276pt too wide) detected at line 8341
+\OML/cmm/m/it/10.95 ^^Z\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 ^^\\OT1/cmr/m/n/10.95 ) = \OML/cmm/m/it/10.95 e[]\OMS/cmsy/m/n/10.95 j\OT1/cmr/m/n/10.95 0\OMS/cmsy/m/n/10.95 ih\OT1/cmr/m/n/10.95 0\OMS/cmsy/m/n/10.95 j \OT1/cmr/m/n/10.95 + [][]\OML/cmm/m/it/10.95 e[] \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 e[][]\OMS/cmsy/m/n/10.95 j\OT1/cmr/m/n/10.95 1[]\OMS/cmsy/m/n/10.95 ih\OT1/cmr/m/n/10.95 1[]\OMS/cmsy/m/n/10.95 j\OML/cmm/m/it/10.95 ;  n\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 ^^\\OT1/cmr/m/n/10.95 ) = []\OMS/cmsy/m/n/10.95 f\OML/cmm/m/it/10.95 m \OT1/cmr/m/n/10.95 : \OML/cmm/m/it/10.95 s[] \OMS/cmsy/m/n/10.95 ^^T \OML/cmm/m/it/10.95 ^^\\OMS/cmsy/m/n/10.95 g\OML/cmm/m/it/10.95 ;  s[] \OT1/cmr/m/n/10.95 := 0\OML/cmm/m/it/10.95 ;
  []
 
 
-Overfull \hbox (7.29544pt too wide) in paragraph at lines 6629--6633
-[]\T1/cmr/bx/n/10.95 Matter stress-energy as mod-u-lar den-sity. \T1/cmr/m/n/10
-.95 The smeared mat-ter stress-energy $[]\OT1/cmr/m/n/10.95 [[]; \OML/cmm/m/it/
-10.95 f\OT1/cmr/m/n/10.95 ]$
+Overfull \hbox (2.74913pt too wide) in paragraph at lines 8359--8385
+\T1/cmr/m/n/10.95 non-negative. The record step: at each $\OML/cmm/m/it/10.95 s[]$ \T1/cmr/m/n/10.95 the pro-to-col reads the pointer ba-sis $\OMS/cmsy/m/n/10.95 fj\OT1/cmr/m/n/10.95 0\OMS/cmsy/m/n/10.95 i\OML/cmm/m/it/10.95 ; \OMS/cmsy/m/n/10.95 j\OT1/cmr/m/n/10.95 1[]\OMS/cmsy/m/n/10.95 i\OML/cmm/m/it/10.95 ; [] ; \OMS/cmsy/m/n/10.95 j\OT1/cmr/m/n/10.95 1[]\OMS/cmsy/m/n/10.95 ig$
  []
 
-[71] [72] [73] [74]
-Overfull \hbox (10.5433pt too wide) in paragraph at lines 7015--7023
-\T1/cmr/m/it/10.95 record-permanence con-di-tion-ing --- what grav-i-tates is w
-hat has de-co-hered ir-re-versibly (Def. []10.1[],
+[89] [90] [91] [92] [93] [94] [95] [96] [97] [98]
+Overfull \hbox (0.88095pt too wide) in paragraph at lines 9397--9418
+\T1/cmr/m/n/10.95 This wit-ness is finite-dimensional in the mat-ter sec-tor by spec-tral cut-off, and infinite-dimensional
  []
 
-[75]
-Overfull \hbox (7.5926pt too wide) in paragraph at lines 7106--7110
-\T1/cmr/bx/n/10.95 Proposition 11.24 \T1/cmr/m/n/10.95 (KMS sta-tion-ar-ity alo
-ng the mod-u-lar flow)\T1/cmr/bx/n/10.95 . \T1/cmr/m/it/10.95 Un-der Pos. []11.
-11[] and Pos. []11.18[],
- []
-
-[76] [77] [78] [79] [80] [81]
-Overfull \hbox (81.45547pt too wide) in paragraph at lines 7641--7666
-\T1/cmr/bx/n/10.95 Hypothesis 11.35 \T1/cmr/m/n/10.95 ($\OML/cmm/m/it/10.95 "$\
-T1/cmr/m/n/10.95 -tail ro-bust-ness of the cut-off dis-charge)\T1/cmr/bx/n/10.9
-5 . \T1/cmr/m/n/10.95 Let $\OML/cmm/m/it/10.95 ^^Z$ \T1/cmr/m/n/10.95 be a stat
-e with $[][] \OMS/cmsy/m/n/10.95 ^^T
- []
-
-[82] [83] [84]
-Overfull \hbox (4.64557pt too wide) in paragraph at lines 8012--8024
-[]\T1/cmr/m/it/10.95 The ensemble-averaged test re-sponse over the uni-ver-sal 
-sam-ple space is a classical-probability
- []
-
-[85] [86]
-Overfull \hbox (2.17276pt too wide) detected at line 8177
-\OML/cmm/m/it/10.95 ^^Z\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 ^^\\OT1/cmr/m/n/
-10.95 ) = \OML/cmm/m/it/10.95 e[]\OMS/cmsy/m/n/10.95 j\OT1/cmr/m/n/10.95 0\OMS/
-cmsy/m/n/10.95 ih\OT1/cmr/m/n/10.95 0\OMS/cmsy/m/n/10.95 j \OT1/cmr/m/n/10.95 +
- [][]\OML/cmm/m/it/10.95 e[] \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 e[][]\
-OMS/cmsy/m/n/10.95 j\OT1/cmr/m/n/10.95 1[]\OMS/cmsy/m/n/10.95 ih\OT1/cmr/m/n/10
-.95 1[]\OMS/cmsy/m/n/10.95 j\OML/cmm/m/it/10.95 ;  n\OT1/cmr/m/n/10.95 (\OML/cm
-m/m/it/10.95 ^^\\OT1/cmr/m/n/10.95 ) = []\OMS/cmsy/m/n/10.95 f\OML/cmm/m/it/10.
-95 m \OT1/cmr/m/n/10.95 : \OML/cmm/m/it/10.95 s[] \OMS/cmsy/m/n/10.95 ^^T \OML/
-cmm/m/it/10.95 ^^\\OMS/cmsy/m/n/10.95 g\OML/cmm/m/it/10.95 ;  s[] \OT1/cmr/m/n/
-10.95 := 0\OML/cmm/m/it/10.95 ;
- []
-
-
-Overfull \hbox (2.74913pt too wide) in paragraph at lines 8195--8221
-\T1/cmr/m/n/10.95 non-negative. The record step: at each $\OML/cmm/m/it/10.95 s
-[]$ \T1/cmr/m/n/10.95 the pro-to-col reads the pointer ba-sis $\OMS/cmsy/m/n/10
-.95 fj\OT1/cmr/m/n/10.95 0\OMS/cmsy/m/n/10.95 i\OML/cmm/m/it/10.95 ; \OMS/cmsy/
-m/n/10.95 j\OT1/cmr/m/n/10.95 1[]\OMS/cmsy/m/n/10.95 i\OML/cmm/m/it/10.95 ; [] 
-; \OMS/cmsy/m/n/10.95 j\OT1/cmr/m/n/10.95 1[]\OMS/cmsy/m/n/10.95 ig$
- []
-
-[87] [88] [89] [90] [91] [92] [93] [94] [95] [96] [97]
-Overfull \hbox (0.88095pt too wide) in paragraph at lines 9232--9253
-\T1/cmr/m/n/10.95 This wit-ness is finite-dimensional in the mat-ter sec-tor by
- spec-tral cut-off, and infinite-dimensional
- []
-
-[98] [99] [100]
-Overfull \hbox (3.53032pt too wide) in paragraph at lines 9518--9532
-\T1/cmr/m/n/10.95 obtained from the clock-time-smeared em-bed-dings $\OML/cmm/m
-/it/10.95 ^^S[] \OT1/cmr/m/n/10.95 : \OMS/cmsy/m/n/10.95 H[] 
+[99] [100] [101]
+Overfull \hbox (3.53032pt too wide) in paragraph at lines 9704--9723
+\T1/cmr/m/n/10.95 obtained from the clock-time-smeared em-bed-dings $\OML/cmm/m/it/10.95 ^^S[] \OT1/cmr/m/n/10.95 : \OMS/cmsy/m/n/10.95 H[] 
  H[] ! \OT1/cmr/m/n/10.95 ^^H[]$ \T1/cmr/m/n/10.95 of Rem. []11.58[]
  []
 
-[101] [102] [103] [104] [105] [106] [107] [108] [109]
-Overfull \hbox (12.69667pt too wide) in paragraph at lines 10464--10515
-[]\T1/cmr/bx/it/10.95 Semiclassical Ein-stein equa-tion. \T1/cmr/m/it/10.95 In 
-the regime of small retro-d-ic-tive en-tropy $\OMS/cmsy/m/n/10.95 S\OT1/cmr/m/n
-/10.95 (\OML/cmm/m/it/10.95 ^^Z[]; \OMS/cmsy/m/n/10.95 f\OML/cmm/m/it/10.95 E[]
-\OMS/cmsy/m/n/10.95 g\OT1/cmr/m/n/10.95 ) \OML/cmm/m/it/10.95 <
+[102] [103] [104] [105] [106] [107] [108] [109] [110] [111]
+Overfull \hbox (12.69667pt too wide) in paragraph at lines 10690--10741
+[]\T1/cmr/bx/it/10.95 Semiclassical Ein-stein equa-tion. \T1/cmr/m/it/10.95 In the regime of small retro-d-ic-tive en-tropy $\OMS/cmsy/m/n/10.95 S\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 ^^Z[]; \OMS/cmsy/m/n/10.95 f\OML/cmm/m/it/10.95 E[]\OMS/cmsy/m/n/10.95 g\OT1/cmr/m/n/10.95 ) \OML/cmm/m/it/10.95 <
  []
 
-[110] [111] [112]
-Overfull \hbox (6.92903pt too wide) in paragraph at lines 10847--10853
-\T1/cmr/bx/n/10.95 Theorem 11.73 \T1/cmr/m/n/10.95 (Mas-ter Uni-fi-ca-tion The-
-o-rem)\T1/cmr/bx/n/10.95 . \T1/cmr/m/it/10.95 As-sume $\OT1/cmss/m/n/10.95 H$\T
-1/cmr/m/it/10.95 =\T1/cmr/m/n/10.95 (H0)--(H6)\T1/cmr/m/it/10.95 . Then the Two
--Boundary
+[112] [113] [114] [115]
+Overfull \hbox (36.3597pt too wide) in paragraph at lines 11110--11131
+[]\T1/cmr/bx/it/10.95 Semiclassical general-relativistic re-duc-tion. \T1/cmr/m/it/10.95 In the small-entropy WKB regime $\OMS/cmsy/m/n/10.95 S\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 ^^Z[]; \OMS/cmsy/m/n/10.95 f\OML/cmm/m/it/10.95 E[]\OMS/cmsy/m/n/10.95 g\OT1/cmr/m/n/10.95 ) \OML/cmm/m/it/10.95 <
  []
 
-[113]
-Overfull \hbox (36.3597pt too wide) in paragraph at lines 10879--10900
-[]\T1/cmr/bx/it/10.95 Semiclassical general-relativistic re-duc-tion. \T1/cmr/m
-/it/10.95 In the small-entropy WKB regime $\OMS/cmsy/m/n/10.95 S\OT1/cmr/m/n/10
-.95 (\OML/cmm/m/it/10.95 ^^Z[]; \OMS/cmsy/m/n/10.95 f\OML/cmm/m/it/10.95 E[]\OM
-S/cmsy/m/n/10.95 g\OT1/cmr/m/n/10.95 ) \OML/cmm/m/it/10.95 <
+[116] [117]
+Overfull \hbox (77.43173pt too wide) in paragraph at lines 11323--11350
+\T1/cmr/m/n/10.95 the-o-rems of the present pa-per un-der the three pos-tu-lates and Hyp. []12.9[] (Props. []12.1[], []12.3[], []12.5[], []12.7[], []12.11[], []12.13[]);
  []
 
-[114] [115]
-Overfull \hbox (77.43173pt too wide) in paragraph at lines 11079--11106
-\T1/cmr/m/n/10.95 the-o-rems of the present pa-per un-der the three pos-tu-late
-s and Hyp. []12.9[] (Props. []12.1[], []12.3[], []12.5[], []12.7[], []12.11[], 
-[]12.13[]);
+[118]
+Overfull \hbox (38.11438pt too wide) in paragraph at lines 11427--11460
+\T1/cmr/m/n/10.95 struc-tural (T)-condition of Conj. []11.56[] that is tractable un-der the three pos-tu-lates Pos. []11.11[], []11.18[], []11.30[]
  []
 
-[116]
-Overfull \hbox (38.11438pt too wide) in paragraph at lines 11183--11216
-\T1/cmr/m/n/10.95 struc-tural (T)-condition of Conj. []11.56[] that is tractabl
-e un-der the three pos-tu-lates Pos. []11.11[], []11.18[], []11.30[]
- []
-
-[117] [118] [119] [120] [121] [122]
-Overfull \hbox (3.73007pt too wide) in paragraph at lines 11877--11930
-[]\T1/cmr/m/n/10.95 G.2[]), the resid-u-als (E3)--(E4) are \T1/cmr/m/it/10.95 t
-he-o-rems of the present pa-per \T1/cmr/m/n/10.95 mod-ulo one \T1/cmr/m/it/10.9
-5 named \T1/cmr/m/n/10.95 ambient-
- []
-
-[123]
-Overfull \hbox (2.60555pt too wide) in paragraph at lines 11957--11961
-[]\T1/cmr/m/it/10.95 (T0), (T8) (strengthened-compatibility), (T9), (T12): dis-
-charged by Prop. []12.7[] and Prop. []12.13[]
- []
-
-[124]
-Overfull \hbox (3.31935pt too wide) in paragraph at lines 12036--12050
-[]\T1/cmr/m/n/10.95 (H3) (spec-u-la-tive clo-sures) con-sists of Conj. []11.1[]
-, Conj. []11.4[], Conj. []11.5[], Conj. []11.8[]. Conj. []11.5[]
+[119] [120] [121] [122] [123] [124] [125]
+Overfull \hbox (3.73007pt too wide) in paragraph at lines 12122--12176
+[]\T1/cmr/m/n/10.95 G.2[]), the resid-u-als (E3)--(E4) are \T1/cmr/m/it/10.95 the-o-rems of the present pa-per \T1/cmr/m/n/10.95 mod-ulo one \T1/cmr/m/it/10.95 named \T1/cmr/m/n/10.95 ambient-
  []
 
 
-Overfull \hbox (4.98012pt too wide) in paragraph at lines 12110--12114
-[]\T1/cmr/m/it/10.95 Named ex-ter-nal in-puts. \T1/cmr/m/n/10.95 (E2a) Hyp. []E
-.1[] (with the scope resid-u-als (E2b)--(E2d) of Rem. []E.10[])
+Overfull \hbox (2.60555pt too wide) in paragraph at lines 12203--12207
+[]\T1/cmr/m/it/10.95 (T0), (T8) (strengthened-compatibility), (T9), (T12): dis-charged by Prop. []12.7[] and Prop. []12.13[]
  []
 
-[125] [126] [127]
-Overfull \hbox (14.86005pt too wide) in paragraph at lines 12382--12382
-[]\T1/cmr/bx/n/10.95 (E2) QFT-regime entropy-smallness via spacetime-smeared QE
-Is and modular-
+[126]
+Overfull \hbox (3.31935pt too wide) in paragraph at lines 12282--12296
+[]\T1/cmr/m/n/10.95 (H3) (spec-u-la-tive clo-sures) con-sists of Conj. []11.1[], Conj. []11.4[], Conj. []11.5[], Conj. []11.8[]. Conj. []11.5[]
  []
 
-
-Overfull \hbox (0.98634pt too wide) in paragraph at lines 12409--12416
-[]\T1/cmr/m/it/10.95 Partial progress. \T1/cmr/m/n/10.95 Prop. []11.49[] gives 
-the finite-dim toy bound with ex-plicit con-stants; Cor. []11.51[]
+[127]
+Overfull \hbox (4.98012pt too wide) in paragraph at lines 12360--12364
+[]\T1/cmr/m/it/10.95 Named ex-ter-nal in-puts. \T1/cmr/m/n/10.95 (E2a) Hyp. []E.1[] (with the scope resid-u-als (E2b)--(E2d) of Rem. []E.12[])
  []
 
-[128]
-Overfull \hbox (10.88087pt too wide) in paragraph at lines 12523--12537
-[]\T1/cmr/m/it/10.95 What is and is not at stake for com-plete pos-i-tiv-ity. \
-T1/cmr/m/n/10.95 We stress that the map $\OML/cmm/m/it/10.95 x \OMS/cmsy/m/n/10
-.95 7! \OML/cmm/m/it/10.95 p\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 k\OT1/cmr/m
-/n/10.95 )[]\OML/cmm/m/it/10.95 !\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 L[]xL[
-]\OT1/cmr/m/n/10.95 )$
- []
-
-[129] [130] [131] [132] [133]
-Overfull \hbox (9.49113pt too wide) in paragraph at lines 13073--13073
-[]\T1/cmr/bx/n/12 Coherent gravity-mediated en-tan-gle-ment at Bose--Marletto--
-Vedral scales 
+[128] [129] [130]
+Overfull \hbox (14.86005pt too wide) in paragraph at lines 12652--12652
+[]\T1/cmr/bx/n/10.95 (E2) QFT-regime entropy-smallness via spacetime-smeared QEIs and modular-
  []
 
 
-Overfull \hbox (8.93405pt too wide) in paragraph at lines 13077--13086
-\T1/cmr/bx/n/10.95 Proposition 13.5 \T1/cmr/m/n/10.95 (Co-her-ent en-tan-gle-me
-nt from Clau-sius cou-pling)\T1/cmr/bx/n/10.95 . \T1/cmr/m/it/10.95 Un-der Pos.
- []11.18[] (Jacobson--
+Overfull \hbox (0.98634pt too wide) in paragraph at lines 12679--12686
+[]\T1/cmr/m/it/10.95 Partial progress. \T1/cmr/m/n/10.95 Prop. []11.49[] gives the finite-dim toy bound with ex-plicit con-stants; Cor. []11.51[]
  []
 
-[134] [135]
+[131]
+Overfull \hbox (10.88087pt too wide) in paragraph at lines 12793--12807
+[]\T1/cmr/m/it/10.95 What is and is not at stake for com-plete pos-i-tiv-ity. \T1/cmr/m/n/10.95 We stress that the map $\OML/cmm/m/it/10.95 x \OMS/cmsy/m/n/10.95 7! \OML/cmm/m/it/10.95 p\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 k\OT1/cmr/m/n/10.95 )[]\OML/cmm/m/it/10.95 !\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 L[]xL[]\OT1/cmr/m/n/10.95 )$
+ []
+
+[132] [133] [134] [135] [136]
+Overfull \hbox (9.49113pt too wide) in paragraph at lines 13344--13344
+[]\T1/cmr/bx/n/12 Coherent gravity-mediated en-tan-gle-ment at Bose--Marletto--Vedral scales 
+ []
+
+
+Overfull \hbox (8.93405pt too wide) in paragraph at lines 13348--13357
+\T1/cmr/bx/n/10.95 Proposition 13.5 \T1/cmr/m/n/10.95 (Co-her-ent en-tan-gle-ment from Clau-sius cou-pling)\T1/cmr/bx/n/10.95 . \T1/cmr/m/it/10.95 Un-der Pos. []11.18[] (Jacobson--
+ []
+
+[137] [138]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 13212.
+(hyperref)                removing `math shift' on input line 13483.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\setbox' on input line 13212.
+(hyperref)                removing `\setbox' on input line 13483.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 13212.
+(hyperref)                removing `\z@' on input line 13483.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hbox' on input line 13212.
+(hyperref)                removing `\hbox' on input line 13483.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mathsurround' on input line 13212.
+(hyperref)                removing `\mathsurround' on input line 13483.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 13212.
+(hyperref)                removing `\z@' on input line 13483.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 13212.
+(hyperref)                removing `math shift' on input line 13483.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\textstyle' on input line 13212.
+(hyperref)                removing `\textstyle' on input line 13483.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\Sigma' on input line 13212.
+(hyperref)                removing `\Sigma' on input line 13483.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 13212.
+(hyperref)                removing `math shift' on input line 13483.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mathaccent' on input line 13212.
+(hyperref)                removing `\mathaccent' on input line 13483.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\Sigma' on input line 13212.
+(hyperref)                removing `\Sigma' on input line 13483.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 13212.
+(hyperref)                removing `subscript' on input line 13483.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\delta' on input line 13212.
+(hyperref)                removing `\delta' on input line 13483.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 13212.
+(hyperref)                removing `math shift' on input line 13483.
 
-[136]
-Overfull \hbox (5.29309pt too wide) in paragraph at lines 13311--13315
-\T1/cmr/bx/n/10.95 Proposition 13.8 \T1/cmr/m/n/10.95 (CMB cor-rec-tion from th
-e clock--shift co-cy-cle; par-i-ty-even)\T1/cmr/bx/n/10.95 . \T1/cmr/m/it/10.95
- As-sume Thm. []B.5[],
+
+Overfull \hbox (5.29309pt too wide) in paragraph at lines 13582--13586
+\T1/cmr/bx/n/10.95 Proposition 13.8 \T1/cmr/m/n/10.95 (CMB cor-rec-tion from the clock--shift co-cy-cle; par-i-ty-even)\T1/cmr/bx/n/10.95 . \T1/cmr/m/it/10.95 As-sume Thm. []B.5[],
+ []
+
+[139]
+Overfull \hbox (44.5043pt too wide) in paragraph at lines 13608--13612
+[]\T1/cmr/m/it/10.95 every parity-odd cor-re-la-tor of the scalar and ten-sor per-tur-ba-tions van-ishes iden-ti-cally (Lem. []13.7[](ii));
  []
 
 
-Overfull \hbox (44.5043pt too wide) in paragraph at lines 13337--13341
-[]\T1/cmr/m/it/10.95 every parity-odd cor-re-la-tor of the scalar and ten-sor p
-er-tur-ba-tions van-ishes iden-ti-cally (Lem. []13.7[](ii));
+Overfull \hbox (4.30328pt too wide) in paragraph at lines 13661--13729
+\T1/cmr/m/it/10.95 Remark \T1/cmr/m/n/10.95 13.10 (Re-trac-tion of the par-i-ty-odd bis-pec-trum claim)\T1/cmr/m/it/10.95 . \T1/cmr/m/n/10.95 Ear-lier ver-sions of this manuscript
+ []
+
+[140] [141] [142]
+Overfull \hbox (7.95552pt too wide) in paragraph at lines 13924--13924
+[]\T1/cmr/bx/n/12 Laboratory fal-si-fier: uni-ver-sal quadratic soft-en-ing in macro-scopic phonon
  []
 
 
-Overfull \hbox (4.30328pt too wide) in paragraph at lines 13390--13458
-\T1/cmr/m/it/10.95 Remark \T1/cmr/m/n/10.95 13.10 (Re-trac-tion of the par-i-ty
--odd bis-pec-trum claim)\T1/cmr/m/it/10.95 . \T1/cmr/m/n/10.95 Ear-lier ver-sio
-ns of this manuscript
- []
-
-[137] [138] [139]
-Overfull \hbox (7.95552pt too wide) in paragraph at lines 13650--13650
-[]\T1/cmr/bx/n/12 Laboratory fal-si-fier: uni-ver-sal quadratic soft-en-ing in 
-macro-scopic phonon
- []
-
-
-Overfull \hbox (21.14838pt too wide) in paragraph at lines 13674--13678
-[]\T1/cmr/m/it/10.95 (\T1/cmr/m/n/10.95 Universal soft-en-ing.\T1/cmr/m/it/10.9
-5 ) The mod-i-fied gen-er-a-tor shifts the lev-els by $\OML/cmm/m/it/10.95 ^^NE
-[] \OT1/cmr/m/n/10.95 = \OMS/cmsy/m/n/10.95 ^^@[]\OML/cmm/m/it/10.95 E[] \OT1/c
-mr/m/n/10.95 + \OMS/cmsy/m/n/10.95 O\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95  ^
-^Nt[]E[]=\U/msb/m/n/10.95 ~[]\OT1/cmr/m/n/10.95 )$
- []
-
-[140]
-Overfull \hbox (19.60864pt too wide) in paragraph at lines 13747--13776
-\T1/cmr/m/it/10.95 Remark \T1/cmr/m/n/10.95 13.15 (Uni-ver-sal-ity dis-crim-i-n
-a-tor; free-dom from the soc-cer-ball am-bi-gu-ity)\T1/cmr/m/it/10.95 . \T1/cmr
-/m/n/10.95 GUP/minimum-
- []
-
-
-Overfull \hbox (0.9034pt too wide) in paragraph at lines 13809--13842
-\T1/cmr/m/n/10.95 ver-sal soft-en-ing [] is the quadratic ap-prox-i-ma-tion of 
-the ex-act co-sine cor-rec-tion $\OML/cmm/m/it/10.95 \OT1/cmr/m/n/10.95 ([](\O
-ML/cmm/m/it/10.95 ^^Nt E=\U/msb/m/n/10.95 ~\OT1/cmr/m/n/10.95 ) \OMS/cmsy/m/n/1
-0.95 ^^@
- []
-
-[141] [142]
-Overfull \hbox (20.37921pt too wide) in paragraph at lines 14009--14012
-\T1/cmr/bx/n/10.95 Definition A.3 \T1/cmr/m/n/10.95 (Back-ward ef-fect op-er-a-
-tors)\T1/cmr/bx/n/10.95 . \T1/cmr/m/n/10.95 For $\OML/cmm/m/it/10.95 k \OMS/cms
-y/m/n/10.95 2 K$ \T1/cmr/m/n/10.95 and $\OML/cmm/m/it/10.95 t \OMS/cmsy/m/n/10.
-95 2 \OT1/cmr/m/n/10.95 [\OML/cmm/m/it/10.95 t[]; t[]\OT1/cmr/m/n/10.95 ]$\T1/c
-mr/m/n/10.95 , $\OT1/cmr/m/n/10.95 ^^C[](\OML/cmm/m/it/10.95 t\OT1/cmr/m/n/10.9
-5 ) := \OML/cmm/m/it/10.95 U[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 t[]; t\OT
-1/cmr/m/n/10.95 ) \OML/cmm/m/it/10.95 E[] U\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10
-.95 t[]; t\OT1/cmr/m/n/10.95 )$\T1/cmr/m/n/10.95 .
+Overfull \hbox (21.14838pt too wide) in paragraph at lines 13950--13954
+[]\T1/cmr/m/it/10.95 (\T1/cmr/m/n/10.95 Universal soft-en-ing.\T1/cmr/m/it/10.95 ) The mod-i-fied gen-er-a-tor shifts the lev-els by $\OML/cmm/m/it/10.95 ^^NE[] \OT1/cmr/m/n/10.95 = \OMS/cmsy/m/n/10.95 ^^@[]\OML/cmm/m/it/10.95 E[] \OT1/cmr/m/n/10.95 + \OMS/cmsy/m/n/10.95 O\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95  ^^Nt[]E[]=\U/msb/m/n/10.95 ~[]\OT1/cmr/m/n/10.95 )$
  []
 
 [143]
-Overfull \hbox (4.34189pt too wide) in paragraph at lines 14113--14115
-\T1/cmr/bx/n/10.95 Definition A.12 \T1/cmr/m/n/10.95 (Ter-mi-nal out-come ran-d
-om vari-able)\T1/cmr/bx/n/10.95 . $\OML/cmm/m/it/10.95 K \OT1/cmr/m/n/10.95 : (
+Overfull \hbox (19.60864pt too wide) in paragraph at lines 14023--14052
+\T1/cmr/m/it/10.95 Remark \T1/cmr/m/n/10.95 13.15 (Uni-ver-sal-ity dis-crim-i-na-tor; free-dom from the soc-cer-ball am-bi-gu-ity)\T1/cmr/m/it/10.95 . \T1/cmr/m/n/10.95 GUP/minimum-
+ []
 
-\OML/cmm/m/it/10.95 ; \OMS/cmsy/m/n/10.95 F\OT1/cmr/m/n/10.95 ) \OMS/cmsy/m/n/1
-0.95 ! \OT1/cmr/m/n/10.95 (\OMS/cmsy/m/n/10.95 K\OML/cmm/m/it/10.95 ; \OT1/cmr/
-m/n/10.95 2[])$ \T1/cmr/m/n/10.95 is an $\OMS/cmsy/m/n/10.95 F$\T1/cmr/m/n/10.9
-5 -measurable
+
+Overfull \hbox (0.9034pt too wide) in paragraph at lines 14085--14118
+\T1/cmr/m/n/10.95 ver-sal soft-en-ing [] is the quadratic ap-prox-i-ma-tion of the ex-act co-sine cor-rec-tion $\OML/cmm/m/it/10.95 \OT1/cmr/m/n/10.95 ([](\OML/cmm/m/it/10.95 ^^Nt E=\U/msb/m/n/10.95 ~\OT1/cmr/m/n/10.95 ) \OMS/cmsy/m/n/10.95 ^^@
  []
 
 [144]
-Overfull \hbox (6.1883pt too wide) in paragraph at lines 14180--14187
-[]\T1/cmr/m/n/10.95 Monotonicity of con-di-tional ex-pec-ta-tion gives $\OT1/cm
-r/m/n/10.95 0 \OMS/cmsy/m/n/10.95 ^^T \OML/cmm/m/it/10.95 ^^Y[]\OT1/cmr/m/n/10.
-95 (\OML/cmm/m/it/10.95 k\OT1/cmr/m/n/10.95 ) \OMS/cmsy/m/n/10.95 ^^T \OT1/cmr/
-m/n/10.95 1$ \T1/cmr/m/n/10.95 a.s.; lin-ear-ity gives $[][] \OML/cmm/m/it/10.9
-5 ^^Y[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 k\OT1/cmr/m/n/10.95 ) =
- []
-
-
-Overfull \hbox (58.03944pt too wide) in paragraph at lines 14270--14277
-[]\T1/cmr/m/n/10.95 For $\OML/cmm/m/it/10.95 p\OT1/cmr/m/n/10.95 (\OML/cmm/m/it
-/10.95 k\OT1/cmr/m/n/10.95 ) = 0$ \T1/cmr/m/n/10.95 the claim is clear. For $\O
-ML/cmm/m/it/10.95 p\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 k\OT1/cmr/m/n/10.95 
-) \OML/cmm/m/it/10.95 > \OT1/cmr/m/n/10.95 0$\T1/cmr/m/n/10.95 , $\OML/cmm/m/it
-/10.95 ^^Z[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 t\OT1/cmr/m/n/10.95 )^^C[](
-\OML/cmm/m/it/10.95 t\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 ^^Z[]\OT1/cmr/m/n/
-10.95 (\OML/cmm/m/it/10.95 t\OT1/cmr/m/n/10.95 ) = []^^C[](\OML/cmm/m/it/10.95 
-t\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 ^^Z[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it
-/10.95 t\OT1/cmr/m/n/10.95 )[][][]^^C[](\OML/cmm/m/it/10.95 t\OT1/cmr/m/n/10.95
- )\OML/cmm/m/it/10.95 ^^Z[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 t\OT1/cmr/m/
-n/10.95 )[] \OMS/cmsy/m/n/10.95 ^^W
+Overfull \hbox (19.60333pt too wide) in paragraph at lines 14192--14247
+\T1/cmr/m/n/10.95 tional and struc-tural (no nu-mer-i-cal $\OT1/cmr/m/n/10.95 ^^C$\T1/cmr/m/n/10.95 ), fal-si-fi-able in-di-rectly through the running-vacuum/holographic
  []
 
 [145]
-Overfull \hbox (4.39503pt too wide) in paragraph at lines 14324--14333
-\T1/cmr/m/n/10.95 Set $\OML/cmm/m/it/10.95 ^^Y[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/
-it/10.95 K\OT1/cmr/m/n/10.95 ) := [][] \OML/cmm/m/it/10.95 ^^Y[]\OT1/cmr/m/n/10
-.95 (\OML/cmm/m/it/10.95 k\OT1/cmr/m/n/10.95 )\OT1/cmr/bx/n/10.95 1[]$\T1/cmr/m
-/n/10.95 . On $\OMS/cmsy/m/n/10.95 f\OML/cmm/m/it/10.95 K \OT1/cmr/m/n/10.95 = 
-\OML/cmm/m/it/10.95 j\OMS/cmsy/m/n/10.95 g$\T1/cmr/m/n/10.95 , and a.s. on the 
-full-measure set where $[][] \OML/cmm/m/it/10.95 ^^Y[]\OT1/cmr/m/n/10.95 (\OML/
-cmm/m/it/10.95 k\OT1/cmr/m/n/10.95 ) =
+Overfull \hbox (20.37921pt too wide) in paragraph at lines 14298--14301
+\T1/cmr/bx/n/10.95 Definition A.3 \T1/cmr/m/n/10.95 (Back-ward ef-fect op-er-a-tors)\T1/cmr/bx/n/10.95 . \T1/cmr/m/n/10.95 For $\OML/cmm/m/it/10.95 k \OMS/cmsy/m/n/10.95 2 K$ \T1/cmr/m/n/10.95 and $\OML/cmm/m/it/10.95 t \OMS/cmsy/m/n/10.95 2 \OT1/cmr/m/n/10.95 [\OML/cmm/m/it/10.95 t[]; t[]\OT1/cmr/m/n/10.95 ]$\T1/cmr/m/n/10.95 , $\OT1/cmr/m/n/10.95 ^^C[](\OML/cmm/m/it/10.95 t\OT1/cmr/m/n/10.95 ) := \OML/cmm/m/it/10.95 U[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 t[]; t\OT1/cmr/m/n/10.95 ) \OML/cmm/m/it/10.95 E[] U\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 t[]; t\OT1/cmr/m/n/10.95 )$\T1/cmr/m/n/10.95 .
  []
 
-[146] [147]
-Overfull \hbox (52.75195pt too wide) detected at line 14521
-[]\OT1/cmr/m/n/10.95 [^^C[](\OML/cmm/m/it/10.95 s[]\OT1/cmr/m/n/10.95 ) \OMS/cm
-sy/m/n/10.95 L[]\OT1/cmr/m/n/10.95 (\OMS/cmsy/m/n/10.95 U[]\OT1/cmr/m/n/10.95 (
-\OML/cmm/m/it/10.95 ^^Z[]\OT1/cmr/m/n/10.95 ))] = [][\OMS/cmsy/m/n/10.95 L[]\OT
-1/cmr/m/n/10.95 (^^C[](\OML/cmm/m/it/10.95 s[]\OT1/cmr/m/n/10.95 )) \OMS/cmsy/m
-/n/10.95 U[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 ^^Z[]\OT1/cmr/m/n/10.95 )] 
-= [][^^C[](\OML/cmm/m/it/10.95 s[]\OT1/cmr/m/n/10.95 ) \OMS/cmsy/m/n/10.95 U[]\
-OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 ^^Z[]\OT1/cmr/m/n/10.95 )] = [][^^C[](\O
-ML/cmm/m/it/10.95 s[]\OT1/cmr/m/n/10.95 ) \OML/cmm/m/it/10.95 ^^Z[]\OT1/cmr/m/n
-/10.95 ] = \OML/cmm/m/it/10.95 ^^V[];
+[146]
+Overfull \hbox (4.34189pt too wide) in paragraph at lines 14402--14404
+\T1/cmr/bx/n/10.95 Definition A.12 \T1/cmr/m/n/10.95 (Ter-mi-nal out-come ran-dom vari-able)\T1/cmr/bx/n/10.95 . $\OML/cmm/m/it/10.95 K \OT1/cmr/m/n/10.95 : (
+\OML/cmm/m/it/10.95 ; \OMS/cmsy/m/n/10.95 F\OT1/cmr/m/n/10.95 ) \OMS/cmsy/m/n/10.95 ! \OT1/cmr/m/n/10.95 (\OMS/cmsy/m/n/10.95 K\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 2[])$ \T1/cmr/m/n/10.95 is an $\OMS/cmsy/m/n/10.95 F$\T1/cmr/m/n/10.95 -measurable
+ []
+
+[147]
+Overfull \hbox (6.1883pt too wide) in paragraph at lines 14469--14476
+[]\T1/cmr/m/n/10.95 Monotonicity of con-di-tional ex-pec-ta-tion gives $\OT1/cmr/m/n/10.95 0 \OMS/cmsy/m/n/10.95 ^^T \OML/cmm/m/it/10.95 ^^Y[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 k\OT1/cmr/m/n/10.95 ) \OMS/cmsy/m/n/10.95 ^^T \OT1/cmr/m/n/10.95 1$ \T1/cmr/m/n/10.95 a.s.; lin-ear-ity gives $[][] \OML/cmm/m/it/10.95 ^^Y[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 k\OT1/cmr/m/n/10.95 ) =
+ []
+
+
+Overfull \hbox (58.03944pt too wide) in paragraph at lines 14559--14566
+[]\T1/cmr/m/n/10.95 For $\OML/cmm/m/it/10.95 p\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 k\OT1/cmr/m/n/10.95 ) = 0$ \T1/cmr/m/n/10.95 the claim is clear. For $\OML/cmm/m/it/10.95 p\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 k\OT1/cmr/m/n/10.95 ) \OML/cmm/m/it/10.95 > \OT1/cmr/m/n/10.95 0$\T1/cmr/m/n/10.95 , $\OML/cmm/m/it/10.95 ^^Z[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 t\OT1/cmr/m/n/10.95 )^^C[](\OML/cmm/m/it/10.95 t\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 ^^Z[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 t\OT1/cmr/m/n/10.95 ) = []^^C[](\OML/cmm/m/it/10.95 t\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 ^^Z[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 t\OT1/cmr/m/n/10.95 )[][][]^^C[](\OML/cmm/m/it/10.95 t\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 ^^Z[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 t\OT1/cmr/m/n/10.95 )[] \OMS/cmsy/m/n/10.95 ^^W
  []
 
 [148]
-Overfull \hbox (60.45927pt too wide) in paragraph at lines 14705--14708
-[]\T1/cmr/m/it/10.95 (\T1/cmr/m/n/10.95 Entropy bounds, Pinsker-type.\T1/cmr/m/
-it/10.95 ) Al-most surely $\OT1/cmr/m/n/10.95 2(1 \OMS/cmsy/m/n/10.95 ^^@ \OML/
-cmm/m/it/10.95 ^^Y[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 K\OT1/cmr/m/n/10.95
- )) \OMS/cmsy/m/n/10.95 ^^T [][]^^@\OT1/cmr/m/n/10.95 2 [] \OML/cmm/m/it/10.95 
-^^Y[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 K\OT1/cmr/m/n/10.95 )\OML/cmm/m/it
-/10.95 ;  [][]$\T1/cmr/m/it/10.95 ,
+Overfull \hbox (4.39503pt too wide) in paragraph at lines 14613--14622
+\T1/cmr/m/n/10.95 Set $\OML/cmm/m/it/10.95 ^^Y[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 K\OT1/cmr/m/n/10.95 ) := [][] \OML/cmm/m/it/10.95 ^^Y[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 k\OT1/cmr/m/n/10.95 )\OT1/cmr/bx/n/10.95 1[]$\T1/cmr/m/n/10.95 . On $\OMS/cmsy/m/n/10.95 f\OML/cmm/m/it/10.95 K \OT1/cmr/m/n/10.95 = \OML/cmm/m/it/10.95 j\OMS/cmsy/m/n/10.95 g$\T1/cmr/m/n/10.95 , and a.s. on the full-measure set where $[][] \OML/cmm/m/it/10.95 ^^Y[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 k\OT1/cmr/m/n/10.95 ) =
  []
 
-[149]
-Overfull \hbox (3.26218pt too wide) in paragraph at lines 14730--14742
-[]\T1/cmr/m/n/10.95 (i) By The-o-rem []A.21[], $\OML/cmm/m/it/10.95 ^^Y[]\OT1/c
-mr/m/n/10.95 (\OML/cmm/m/it/10.95 k\OT1/cmr/m/n/10.95 ) \OMS/cmsy/m/n/10.95 ! \
-OML/cmm/m/it/10.95 ^^Y[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 k\OT1/cmr/m/n/1
-0.95 )$ \T1/cmr/m/n/10.95 a.s. for each of the finitely many $\OML/cmm/m/it/10.
-95 k$\T1/cmr/m/n/10.95 , and $[][] \OML/cmm/m/it/10.95 ^^Y[]\OT1/cmr/m/n/10.95 
-(\OML/cmm/m/it/10.95 k\OT1/cmr/m/n/10.95 ) =
+[149] [150]
+Overfull \hbox (52.75195pt too wide) detected at line 14810
+[]\OT1/cmr/m/n/10.95 [^^C[](\OML/cmm/m/it/10.95 s[]\OT1/cmr/m/n/10.95 ) \OMS/cmsy/m/n/10.95 L[]\OT1/cmr/m/n/10.95 (\OMS/cmsy/m/n/10.95 U[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 ^^Z[]\OT1/cmr/m/n/10.95 ))] = [][\OMS/cmsy/m/n/10.95 L[]\OT1/cmr/m/n/10.95 (^^C[](\OML/cmm/m/it/10.95 s[]\OT1/cmr/m/n/10.95 )) \OMS/cmsy/m/n/10.95 U[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 ^^Z[]\OT1/cmr/m/n/10.95 )] = [][^^C[](\OML/cmm/m/it/10.95 s[]\OT1/cmr/m/n/10.95 ) \OMS/cmsy/m/n/10.95 U[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 ^^Z[]\OT1/cmr/m/n/10.95 )] = [][^^C[](\OML/cmm/m/it/10.95 s[]\OT1/cmr/m/n/10.95 ) \OML/cmm/m/it/10.95 ^^Z[]\OT1/cmr/m/n/10.95 ] = \OML/cmm/m/it/10.95 ^^V[];
  []
 
-[150] [151] [152]
-Overfull \hbox (6.05789pt too wide) in paragraph at lines 15048--15062
-\T1/cmr/m/it/10.95 and, more gen-er-ally, norm-bounded fam-i-lies whose fi-bre 
-scale is not even es-sen-tially bounded,
+[151]
+Overfull \hbox (60.45927pt too wide) in paragraph at lines 14994--14997
+[]\T1/cmr/m/it/10.95 (\T1/cmr/m/n/10.95 Entropy bounds, Pinsker-type.\T1/cmr/m/it/10.95 ) Al-most surely $\OT1/cmr/m/n/10.95 2(1 \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 ^^Y[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 K\OT1/cmr/m/n/10.95 )) \OMS/cmsy/m/n/10.95 ^^T [][]^^@\OT1/cmr/m/n/10.95 2 [] \OML/cmm/m/it/10.95 ^^Y[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 K\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 ;  [][]$\T1/cmr/m/it/10.95 ,
  []
 
-[153] [154] [155] [156]
+[152]
+Overfull \hbox (3.26218pt too wide) in paragraph at lines 15019--15031
+[]\T1/cmr/m/n/10.95 (i) By The-o-rem []A.21[], $\OML/cmm/m/it/10.95 ^^Y[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 k\OT1/cmr/m/n/10.95 ) \OMS/cmsy/m/n/10.95 ! \OML/cmm/m/it/10.95 ^^Y[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 k\OT1/cmr/m/n/10.95 )$ \T1/cmr/m/n/10.95 a.s. for each of the finitely many $\OML/cmm/m/it/10.95 k$\T1/cmr/m/n/10.95 , and $[][] \OML/cmm/m/it/10.95 ^^Y[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 k\OT1/cmr/m/n/10.95 ) =
+ []
+
+[153] [154] [155]
+Overfull \hbox (6.05789pt too wide) in paragraph at lines 15337--15351
+\T1/cmr/m/it/10.95 and, more gen-er-ally, norm-bounded fam-i-lies whose fi-bre scale is not even es-sen-tially bounded,
+ []
+
+[156] [157] [158] [159]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 15504.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\alpha' on input line 15504.
+(hyperref)                removing `math shift' on input line 15793.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 15504.
-
-[157]
-Overfull \hbox (16.87729pt too wide) in paragraph at lines 15563--15567
-[]\T1/cmr/m/it/10.95 (\T1/cmr/m/n/10.95 Effective single-branch TDSE.\T1/cmr/m/
-it/10.95 ) The con-di-tional state sat-is-fies \T1/cmr/m/n/10.95 ex-actly $\OML
-/cmm/m/it/10.95 i\U/msb/m/n/10.95 ~ \OML/cmm/m/it/10.95 @[] \OT1/cmr/m/n/10.95 
-(\OML/cmm/m/it/10.95 t\OT1/cmr/m/n/10.95 ) = \OML/cmm/m/it/10.95 h\OT1/cmr/m/n/
-10.95 ([]) \OML/cmm/m/it/10.95  \OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 t\OT1/c
-mr/m/n/10.95 )$\T1/cmr/m/it/10.95 ,
- []
+(hyperref)                removing `\alpha' on input line 15793.
 
 
-Overfull \hbox (10.71721pt too wide) in paragraph at lines 15607--15623
-\T1/cmr/m/it/10.95 with $[] \OMS/cmsy/m/n/10.95 ^^T [] []$ \T1/cmr/m/it/10.95 o
-n $\OMS/cmsy/m/n/10.95 D\OT1/cmr/m/n/10.95 ([])$ \T1/cmr/m/it/10.95 (fi-bre-wis
-e La-grange re-main-der $\OMS/cmsy/m/n/10.95 j [] \OML/cmm/m/it/10.95 x \OMS/cm
-sy/m/n/10.95 ^^@
- []
-
-[158]
-Overfull \hbox (2.62822pt too wide) in paragraph at lines 15702--15726
-\T1/cmr/m/n/10.95 The lead-ing cor-rec-tion $\OMS/cmsy/m/n/10.95 ^^@[][]$ \T1/c
-mr/m/n/10.95 of [] has ex-actly the op-er-a-tor struc-ture of the Born--Oppenhe
-imer
- []
-
-
-Overfull \hbox (12.26709pt too wide) in paragraph at lines 15753--15769
-\T1/cmr/m/it/10.95 Remark \T1/cmr/m/n/10.95 C.4 (Ten-sion be-tween the cut-off 
-scal-ing and the Born--Op-pen-heimer match-ing)\T1/cmr/m/it/10.95 . \T1/cmr/m/n
-/10.95 Rem. []11.37[]
- []
-
-[159]
-Overfull \hbox (3.3691pt too wide) in paragraph at lines 15792--15792
-[]\T1/cmr/bx/n/12 Thermodynamic con-sis-tency: Araki-perturbed equi-lib-rium an
-d the mod-
- []
-
-
-Overfull \hbox (26.10155pt too wide) in paragraph at lines 15860--15869
-\T1/cmr/m/it/10.95 the clock-side per-tur-ba-tion of Conj. []10.13[] (its on-sh
-ell system-side form dif-fers by $\OML/cmm/m/it/10.95 O\OT1/cmr/m/n/10.95 (\OML
-/cmm/m/it/10.95 ^^U\OT1/cmr/m/n/10.95 )$\T1/cmr/m/it/10.95 , Prop. []C.2[](ii))
-.
- []
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 15793.
 
 [160]
-Overfull \hbox (8.0758pt too wide) in paragraph at lines 15926--15936
-\T1/cmr/m/it/10.95 every term an en-ergy. Equiv-a-lently, with the Beken-stein 
-cal-i-bra-tion of Pos. []11.18[], $\OML/cmm/m/it/10.95 ^^NA=\OT1/cmr/m/n/10.95 
-4\OML/cmm/m/it/10.95 G\U/msb/m/n/10.95 ~ \OT1/cmr/m/n/10.95 =
+Overfull \hbox (16.87729pt too wide) in paragraph at lines 15852--15856
+[]\T1/cmr/m/it/10.95 (\T1/cmr/m/n/10.95 Effective single-branch TDSE.\T1/cmr/m/it/10.95 ) The con-di-tional state sat-is-fies \T1/cmr/m/n/10.95 ex-actly $\OML/cmm/m/it/10.95 i\U/msb/m/n/10.95 ~ \OML/cmm/m/it/10.95 @[] \OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 t\OT1/cmr/m/n/10.95 ) = \OML/cmm/m/it/10.95 h\OT1/cmr/m/n/10.95 ([]) \OML/cmm/m/it/10.95  \OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 t\OT1/cmr/m/n/10.95 )$\T1/cmr/m/it/10.95 ,
  []
 
 
-Overfull \hbox (23.34761pt too wide) detected at line 15959
-[][][][]\OML/cmm/m/it/10.95 ![]\OT1/cmr/m/n/10.95 ([]) = []\OML/cmm/m/it/10.95 
-e[] \OMS/cmsy/m/n/10.95 ^^@ \OT1/cmr/m/n/10.95 1[][] = []\OML/cmm/m/it/10.95 e[
-] \OMS/cmsy/m/n/10.95 ^^@ \OT1/cmr/m/n/10.95 1[][]\OML/cmm/m/it/10.95 ;  [] \OT
-1/cmr/m/n/10.95 = 1 + [] + \OML/cmm/m/it/10.95 O []^^V[]E[];  \OMS/cmsy/m/n/10.
-95 j\OML/cmm/m/it/10.95 \OMS/cmsy/m/n/10.95 j \OML/cmm/m/it/10.95 ^^Nt[]E[]=\U
-/msb/m/n/10.95 ~[][]\OML/cmm/m/it/10.95 :
- []
-
-
-Overfull \hbox (38.4665pt too wide) in paragraph at lines 15989--16011
-\T1/cmr/m/it/10.95 the con-di-tion be-ing asymp-tot-i-cally sharp as $\OML/cmm/
-m/it/10.95 ^^Nt E[]=\U/msb/m/n/10.95 ~ \OMS/cmsy/m/n/10.95 ! \OT1/cmr/m/n/10.95
- 0$\T1/cmr/m/it/10.95 ; more-over $\OML/cmm/m/it/10.95 "[]\OT1/cmr/m/n/10.95 (\
-OML/cmm/m/it/10.95 ^^X\OT1/cmr/m/n/10.95 ) = 1 \OMS/cmsy/m/n/10.95 ^^@ \OT1/cmr
-/m/n/10.95 (\OML/cmm/m/it/10.95  ^^Nt=\U/msb/m/n/10.95 ~\OT1/cmr/m/n/10.95 ) [
-](\OML/cmm/m/it/10.95 ^^Nt ^^X=\U/msb/m/n/10.95 ~\OT1/cmr/m/n/10.95 ) \OMS/cmsy
-/m/n/10.95 ^^U
+Overfull \hbox (10.71721pt too wide) in paragraph at lines 15896--15912
+\T1/cmr/m/it/10.95 with $[] \OMS/cmsy/m/n/10.95 ^^T [] []$ \T1/cmr/m/it/10.95 on $\OMS/cmsy/m/n/10.95 D\OT1/cmr/m/n/10.95 ([])$ \T1/cmr/m/it/10.95 (fi-bre-wise La-grange re-main-der $\OMS/cmsy/m/n/10.95 j [] \OML/cmm/m/it/10.95 x \OMS/cmsy/m/n/10.95 ^^@
  []
 
 [161]
-Overfull \hbox (8.36688pt too wide) in paragraph at lines 16027--16046
-[]\T1/cmr/m/it/10.95 (i) \T1/cmr/m/n/10.95 is Araki's bounded-perturbation the-
-ory of KMS states [[]], in the standard-form/Liouvillian
+Overfull \hbox (2.62822pt too wide) in paragraph at lines 15992--16016
+\T1/cmr/m/n/10.95 The lead-ing cor-rec-tion $\OMS/cmsy/m/n/10.95 ^^@[][]$ \T1/cmr/m/n/10.95 of [] has ex-actly the op-er-a-tor struc-ture of the Born--Oppenheimer
+ []
+
+
+Overfull \hbox (12.26709pt too wide) in paragraph at lines 16043--16059
+\T1/cmr/m/it/10.95 Remark \T1/cmr/m/n/10.95 C.4 (Ten-sion be-tween the cut-off scal-ing and the Born--Op-pen-heimer match-ing)\T1/cmr/m/it/10.95 . \T1/cmr/m/n/10.95 Rem. []11.37[]
  []
 
 [162]
-Overfull \hbox (17.09442pt too wide) in paragraph at lines 16181--16186
-\T1/cmr/m/it/10.95 self-adjoint op-er-a-tor and $\OML/cmm/m/it/10.95 U[]\OT1/cm
-r/m/n/10.95 (\OML/cmm/m/it/10.95 t[]; t[]\OT1/cmr/m/n/10.95 ) := \OML/cmm/m/it/
-10.95 e[]$\T1/cmr/m/it/10.95 . Then, with $\OML/cmm/m/it/10.95 ^^Z\OT1/cmr/m/n/
-10.95 (\OML/cmm/m/it/10.95 t\OT1/cmr/m/n/10.95 ) := \OML/cmm/m/it/10.95 U[]\OT1
-/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 t; t[]\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.
-95 ^^Z[]U[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 t; t[]\OT1/cmr/m/n/10.95 )[]
-$
- []
-
-[163] [164] [165] [166] [167]
-Overfull \hbox (8.50294pt too wide) in paragraph at lines 16736--16750
-\T1/cmr/m/n/10.95 stant [[]]. Both ends de-scend from the same induced-gravity 
-heat-kernel ex-pan-sion of Prop. []11.20[]:
- []
-
-[168] [169] [170] [171]
-Overfull \hbox (43.91162pt too wide) in paragraph at lines 17118--17123
-\OML/cmm/m/it/10.95 H[]\OT1/cmr/m/n/10.95 (\OMS/cmsy/m/n/10.95 M\OML/cmm/m/it/1
-0.95 ; [][]T[]\OMS/cmsy/m/n/10.95 M\OT1/cmr/m/n/10.95 )$ \T1/cmr/m/n/10.95 of $
-\OML/cmm/m/it/10.95 g[]$\T1/cmr/m/n/10.95 , $\OML/cmm/m/it/10.95 s > n=\OT1/cmr
-/m/n/10.95 2 + 6$\T1/cmr/m/n/10.95 , and for ev-ery com-pact $\OML/cmm/m/it/10.
-95 K \OMS/cmsy/m/n/10.95 ^^Z M$ \T1/cmr/m/n/10.95 con-stants $\OML/cmm/m/it/10.
-95 C[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 K\OT1/cmr/m/n/10.95 )\OML/cmm/m/i
-t/10.95 ; C[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 K\OT1/cmr/m/n/10.95 )\OML/
-cmm/m/it/10.95 ; W[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 K\OT1/cmr/m/n/10.95
- ) \OML/cmm/m/it/10.95 <
+Overfull \hbox (3.3691pt too wide) in paragraph at lines 16094--16094
+[]\T1/cmr/bx/n/12 Thermodynamic con-sis-tency: Araki-perturbed equi-lib-rium and the mod-
  []
 
 
-Overfull \hbox (4.71902pt too wide) in paragraph at lines 17128--17148
-[][][]\OT1/cmr/m/n/10.95 [\OML/cmm/m/it/10.95 @[]@[]\OT1/cmr/m/n/10.95 (\OML/cm
-m/m/it/10.95 W[] \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 W[]\OT1/cmr/m/n/10
-.95 )](\OML/cmm/m/it/10.95 x; x\OT1/cmr/m/n/10.95 )[] \OMS/cmsy/m/n/10.95 ^^T \
-OML/cmm/m/it/10.95 C[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 K\OT1/cmr/m/n/10.
-95 ) \OMS/cmsy/m/n/10.95 k\OML/cmm/m/it/10.95 g \OMS/cmsy/m/n/10.95 ^^@ \OML/cm
-m/m/it/10.95 g[]\OMS/cmsy/m/n/10.95 k[]$\T1/cmr/m/n/10.95 , and $[][] [][][]\OT
-1/cmr/m/n/10.95 [\OML/cmm/m/it/10.95 @[]@[]W[]\OT1/cmr/m/n/10.95 ](\OML/cmm/m/i
-t/10.95 x; x\OT1/cmr/m/n/10.95 )[] \OMS/cmsy/m/n/10.95 ^^T
+Overfull \hbox (26.10155pt too wide) in paragraph at lines 16162--16171
+\T1/cmr/m/it/10.95 the clock-side per-tur-ba-tion of Conj. []10.13[] (its on-shell system-side form dif-fers by $\OML/cmm/m/it/10.95 O\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 ^^U\OT1/cmr/m/n/10.95 )$\T1/cmr/m/it/10.95 , Prop. []C.2[](ii)).
  []
 
-[172]
-Overfull \hbox (241.60374pt too wide) detected at line 17174
-\OML/cmm/m/it/10.95 U[] \OT1/cmr/m/n/10.95 := [] \OML/cmm/m/it/10.95 g \OMS/cms
-y/m/n/10.95 2 \OML/cmm/m/it/10.95 H[]\OT1/cmr/m/n/10.95 (\OMS/cmsy/m/n/10.95 M\
-OML/cmm/m/it/10.95 ; [][]T[]\OMS/cmsy/m/n/10.95 M\OT1/cmr/m/n/10.95 ) : \OML/cm
-m/m/it/10.95 g [];  g [] \OMS/cmsy/m/n/10.95 fj[] \OML/cmm/m/it/10.95 z\OMS/cms
-y/m/n/10.95 j \OML/cmm/m/it/10.95 < ^^Z[]\OMS/cmsy/m/n/10.95 g []  [] j\OML/cmm
-/m/it/10.95 g \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 g[]\OMS/cmsy/m/n/10.9
-5 j ^^T \OML/cmm/m/it/10.95 "[] [];
+[163]
+Overfull \hbox (8.0758pt too wide) in paragraph at lines 16228--16238
+\T1/cmr/m/it/10.95 every term an en-ergy. Equiv-a-lently, with the Beken-stein cal-i-bra-tion of Pos. []11.18[], $\OML/cmm/m/it/10.95 ^^NA=\OT1/cmr/m/n/10.95 4\OML/cmm/m/it/10.95 G\U/msb/m/n/10.95 ~ \OT1/cmr/m/n/10.95 =
  []
 
 
-Overfull \hbox (9.75998pt too wide) in paragraph at lines 17190--17210
-[][][]\OT1/cmr/m/n/10.95 [\OML/cmm/m/it/10.95 @[]@[]\OT1/cmr/m/n/10.95 (\OML/cm
-m/m/it/10.95 W[] \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 W[]\OT1/cmr/m/n/10
-.95 )](\OML/cmm/m/it/10.95 x; x\OT1/cmr/m/n/10.95 )[] \OMS/cmsy/m/n/10.95 ^^T \
-OML/cmm/m/it/10.95 C[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 K\OT1/cmr/m/n/10.
-95 ) \OMS/cmsy/m/n/10.95 k\OML/cmm/m/it/10.95 g \OMS/cmsy/m/n/10.95 ^^@ \OML/cm
-m/m/it/10.95 g[]\OMS/cmsy/m/n/10.95 k[]$\T1/cmr/m/n/10.95 , and $[][] [][][]\OT
-1/cmr/m/n/10.95 [\OML/cmm/m/it/10.95 @[]@[]W[]\OT1/cmr/m/n/10.95 ](\OML/cmm/m/i
-t/10.95 x; x\OT1/cmr/m/n/10.95 )[] \OMS/cmsy/m/n/10.95 ^^T
+Overfull \hbox (23.34761pt too wide) detected at line 16267
+[][][][]\OML/cmm/m/it/10.95 ![]\OT1/cmr/m/n/10.95 ([]) = []\OML/cmm/m/it/10.95 e[] \OMS/cmsy/m/n/10.95 ^^@ \OT1/cmr/m/n/10.95 1[][] = []\OML/cmm/m/it/10.95 e[] \OMS/cmsy/m/n/10.95 ^^@ \OT1/cmr/m/n/10.95 1[][]\OML/cmm/m/it/10.95 ;  [] \OT1/cmr/m/n/10.95 = 1 + [] + \OML/cmm/m/it/10.95 O []^^V[]E[];  \OMS/cmsy/m/n/10.95 j\OML/cmm/m/it/10.95 \OMS/cmsy/m/n/10.95 j \OML/cmm/m/it/10.95 ^^Nt[]E[]=\U/msb/m/n/10.95 ~[][]\OML/cmm/m/it/10.95 :
  []
 
-[173]
-Overfull \hbox (13.55405pt too wide) in paragraph at lines 17286--17314
-\T1/cmr/m/n/10.95 the unique zero-slack in-equal-ity of the chain (the com-mu-t
-a-tor branch $\OML/cmm/m/it/10.95 L[]H[]\OT1/cmr/m/n/10.95 (^^F[])$
- []
-
-[174] [175] [176]
-Overfull \hbox (5.2229pt too wide) in paragraph at lines 17613--17621
-\T1/cmr/bx/n/10.95 Corollary E.8 \T1/cmr/m/n/10.95 (QFT-regime en-tropy--s-mall
--ness bound, con-di-tional on (E2a))\T1/cmr/bx/n/10.95 . \T1/cmr/m/it/10.95 As-
-sume Pos. []11.30[]
+[164]
+Overfull \hbox (38.4665pt too wide) in paragraph at lines 16301--16323
+\T1/cmr/m/it/10.95 the con-di-tion be-ing asymp-tot-i-cally sharp as $\OML/cmm/m/it/10.95 ^^Nt E[]=\U/msb/m/n/10.95 ~ \OMS/cmsy/m/n/10.95 ! \OT1/cmr/m/n/10.95 0$\T1/cmr/m/it/10.95 ; more-over $\OML/cmm/m/it/10.95 "[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 ^^X\OT1/cmr/m/n/10.95 ) = 1 \OMS/cmsy/m/n/10.95 ^^@ \OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95  ^^Nt=\U/msb/m/n/10.95 ~\OT1/cmr/m/n/10.95 ) [](\OML/cmm/m/it/10.95 ^^Nt ^^X=\U/msb/m/n/10.95 ~\OT1/cmr/m/n/10.95 ) \OMS/cmsy/m/n/10.95 ^^U
  []
 
 
-Overfull \hbox (15.7816pt too wide) in paragraph at lines 17626--17632
-[]\T1/cmr/m/n/10.95 ((S4) dis-charged) \T1/cmr/m/it/10.95 the uni-form stress-e
-nergy norm bound holds with $\OML/cmm/m/it/10.95 M  \OMS/cmsy/m/n/10.95 ^^T  \O
-ML/cmm/m/it/10.95 M[] \OT1/cmr/m/n/10.95 := \OML/cmm/m/it/10.95 c[]\OT1/cmr/m/n
-/10.95 (\OML/cmm/m/it/10.95 g[]; f\OT1/cmr/m/n/10.95 ) (1 +
+Overfull \hbox (8.36688pt too wide) in paragraph at lines 16339--16358
+[]\T1/cmr/m/it/10.95 (i) \T1/cmr/m/n/10.95 is Araki's bounded-perturbation the-ory of KMS states [[]], in the standard-form/Liouvillian
  []
 
-[177] [178] [179] [180] [181]
-Overfull \hbox (4.68486pt too wide) in paragraph at lines 18100--18100
-[]\T1/cmr/bx/n/14.4 Ashtekar--Krishnan dynamical-horizon mod-u-lar flow: dis-ch
-arge
+[165]
+Overfull \hbox (17.09442pt too wide) in paragraph at lines 16496--16501
+\T1/cmr/m/it/10.95 self-adjoint op-er-a-tor and $\OML/cmm/m/it/10.95 U[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 t[]; t[]\OT1/cmr/m/n/10.95 ) := \OML/cmm/m/it/10.95 e[]$\T1/cmr/m/it/10.95 . Then, with $\OML/cmm/m/it/10.95 ^^Z\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 t\OT1/cmr/m/n/10.95 ) := \OML/cmm/m/it/10.95 U[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 t; t[]\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 ^^Z[]U[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 t; t[]\OT1/cmr/m/n/10.95 )[]$
  []
 
-[182] [183]
-Overfull \hbox (15.1758pt too wide) in paragraph at lines 18231--18236
-[]\T1/cmr/m/n/10.95 (ii) The cen-traliser is type II$[]$ by the stan-dard cross
-ed- prod-uct trace ar-gu-ment [[], Thm. X.1.17].
+[166] [167] [168] [169] [170] [171]
+Overfull \hbox (8.50294pt too wide) in paragraph at lines 17051--17065
+\T1/cmr/m/n/10.95 stant [[]]. Both ends de-scend from the same induced-gravity heat-kernel ex-pan-sion of Prop. []11.20[]:
  []
 
-
-Overfull \hbox (2.23619pt too wide) in paragraph at lines 18298--18298
-[]\T1/cmr/bx/n/14.4 Non-(CP) Araki re-al-i-sa-tion of two-boundary con-di-tion-
-ing: dis-
- []
-
-[184] [185]
-Overfull \hbox (2.38626pt too wide) in paragraph at lines 18399--18407
-[]\T1/cmr/m/it/10.95 (\T1/cmr/m/n/10.95 (CP) spe-cial-i-sa-tion.\T1/cmr/m/it/10
-.95 ) If $\OML/cmm/m/it/10.95 L[] \OMS/cmsy/m/n/10.95 2 N[]$ \T1/cmr/m/it/10.95
- (the un-dressed centralizer-rich regime (a) of Conj. []11.1[],
- []
-
-[186]
-Overfull \hbox (8.85638pt too wide) in paragraph at lines 18563--18567
-[]\T1/cmr/m/n/10.95 (ii) The Connes co-cy-cle is pre-served un-der the dual-wei
-ght con-struc-tion ([[], Thm. X.1.17(iii)]),
- []
-
-[187]
-Overfull \hbox (4.53732pt too wide) in paragraph at lines 18691--18696
-[]\T1/cmr/m/it/10.95 (\T1/cmr/m/n/10.95 Self-adjoint con-straint + an-a-lytic c
-ore.\T1/cmr/m/it/10.95 ) The dressed mod-u-lar gen-er-a-tor $[] \OT1/cmr/m/n/10
-.95 := []$
- []
-
-[188] [189] [190] [191] [192] [193] [194] [195] [196]
-Overfull \hbox (8.35863pt too wide) in paragraph at lines 19484--19507
-\T1/cmr/m/n/10.95 with a sin-gle state-independent ad-di-tive con-stant $\OML/c
-mm/m/it/10.95 c[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 ![]\OT1/cmr/m/n/10.95 
-) \OMS/cmsy/m/n/10.95 2 \U/msb/m/n/10.95 R$ \T1/cmr/m/n/10.95 at or-der zero (t
-he species-independent
+[172] [173] [174] [175]
+Overfull \hbox (43.91162pt too wide) in paragraph at lines 17439--17444
+\OML/cmm/m/it/10.95 H[]\OT1/cmr/m/n/10.95 (\OMS/cmsy/m/n/10.95 M\OML/cmm/m/it/10.95 ; [][]T[]\OMS/cmsy/m/n/10.95 M\OT1/cmr/m/n/10.95 )$ \T1/cmr/m/n/10.95 of $\OML/cmm/m/it/10.95 g[]$\T1/cmr/m/n/10.95 , $\OML/cmm/m/it/10.95 s > n=\OT1/cmr/m/n/10.95 2 + 6$\T1/cmr/m/n/10.95 , and for ev-ery com-pact $\OML/cmm/m/it/10.95 K \OMS/cmsy/m/n/10.95 ^^Z M$ \T1/cmr/m/n/10.95 con-stants $\OML/cmm/m/it/10.95 C[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 K\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 ; C[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 K\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 ; W[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 K\OT1/cmr/m/n/10.95 ) \OML/cmm/m/it/10.95 <
  []
 
 
-Overfull \hbox (8.38715pt too wide) in paragraph at lines 19522--19542
-\T1/cmr/m/n/10.95 strictly pos-i-tive on per-tur-ba-tions car-ry-ing gravi-ton 
-or bulk-matter flux; no state-independent
- []
-
-[197] [198] [199]
-Overfull \hbox (20.5627pt too wide) in paragraph at lines 19786--19807
-[]\T1/cmr/m/n/10.95 The Fröb--Zahn Weyl-anomaly the-o-rem [[]] es-tab-lishes th
-e rig-or-ous state-independent
- []
-
-[200]
-Overfull \hbox (9.9298pt too wide) in paragraph at lines 19907--19913
-\T1/cmr/m/it/10.95 CGM-window data, not on $\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/1
-0.95 x; k\OT1/cmr/m/n/10.95 )$ \T1/cmr/m/it/10.95 (direction-uniformity is kine
--matic, App. []J[]; point-uniformity
+Overfull \hbox (4.71902pt too wide) in paragraph at lines 17449--17469
+[][][]\OT1/cmr/m/n/10.95 [\OML/cmm/m/it/10.95 @[]@[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 W[] \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 W[]\OT1/cmr/m/n/10.95 )](\OML/cmm/m/it/10.95 x; x\OT1/cmr/m/n/10.95 )[] \OMS/cmsy/m/n/10.95 ^^T \OML/cmm/m/it/10.95 C[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 K\OT1/cmr/m/n/10.95 ) \OMS/cmsy/m/n/10.95 k\OML/cmm/m/it/10.95 g \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 g[]\OMS/cmsy/m/n/10.95 k[]$\T1/cmr/m/n/10.95 , and $[][] [][][]\OT1/cmr/m/n/10.95 [\OML/cmm/m/it/10.95 @[]@[]W[]\OT1/cmr/m/n/10.95 ](\OML/cmm/m/it/10.95 x; x\OT1/cmr/m/n/10.95 )[] \OMS/cmsy/m/n/10.95 ^^T
  []
 
 
-Overfull \hbox (0.59554pt too wide) in paragraph at lines 19958--19982
-[]\T1/cmr/m/it/10.95 (2) The $\OML/cmm/m/it/10.95 n[]\OT1/cmr/m/n/10.95 1$ \T1/
-cmr/m/it/10.95 cor-rec-tion: the grav-i-ta-tional \T1/cmr/m/n/10.95 dress-ing \
-T1/cmr/m/it/10.95 leg is closed on Killing loci; the interacting-
+Overfull \hbox (9.75998pt too wide) in paragraph at lines 17515--17535
+[][][]\OT1/cmr/m/n/10.95 [\OML/cmm/m/it/10.95 @[]@[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 W[] \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 W[]\OT1/cmr/m/n/10.95 )](\OML/cmm/m/it/10.95 x; x\OT1/cmr/m/n/10.95 )[] \OMS/cmsy/m/n/10.95 ^^T \OML/cmm/m/it/10.95 C[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 K\OT1/cmr/m/n/10.95 ) \OMS/cmsy/m/n/10.95 k\OML/cmm/m/it/10.95 g \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 g[]\OMS/cmsy/m/n/10.95 k[]$\T1/cmr/m/n/10.95 , and $[][] [][][]\OT1/cmr/m/n/10.95 [\OML/cmm/m/it/10.95 @[]@[]W[]\OT1/cmr/m/n/10.95 ](\OML/cmm/m/it/10.95 x; x\OT1/cmr/m/n/10.95 )[] \OMS/cmsy/m/n/10.95 ^^T
  []
 
-[201] [202] [203] [204] [205] [206] [207] [208] [209] [210]
-Overfull \hbox (21.85074pt too wide) in paragraph at lines 20795--20807
-[]\T1/cmr/m/it/10.95 Step 5 (the order-independent uni-for-mity thresh-old). \T
-1/cmr/m/n/10.95 The point-uniformity con-stant of Cor. []J.4[](iii)
+[176] [177]
+Overfull \hbox (13.55405pt too wide) in paragraph at lines 17625--17656
+\T1/cmr/m/n/10.95 the unique zero-slack in-equal-ity of the chain (the com-mu-ta-tor branch $\OML/cmm/m/it/10.95 L[]H[]\OT1/cmr/m/n/10.95 (^^F[])$
  []
 
-[211]
-Overfull \hbox (2.56061pt too wide) in paragraph at lines 20920--20941
-\T1/cmr/m/it/10.95 Remark \T1/cmr/m/n/10.95 K.2 (The in-duc-tive limit en-force
-s the trace free-dom)\T1/cmr/m/it/10.95 . \T1/cmr/m/n/10.95 For \T1/cmr/m/it/10
-.95 any \T1/cmr/m/n/10.95 well-posed AFD-preserving
+[178] [179] [180] [181] [182]
+Overfull \hbox (11.47777pt too wide) in paragraph at lines 18156--18164
+\T1/cmr/bx/n/10.95 Corollary E.10 \T1/cmr/m/n/10.95 (QFT-regime en-tropy--s-mall-ness bound, con-di-tional on (E2a))\T1/cmr/bx/n/10.95 . \T1/cmr/m/it/10.95 As-sume Pos. []11.30[]
  []
 
 
-Overfull \hbox (3.32513pt too wide) in paragraph at lines 20947--20951
-\T1/cmr/m/it/10.95 Remark \T1/cmr/m/n/10.95 K.3 (Sin-gu-lar-ity sta-tus un-der 
-the Type II ma-chin-ery)\T1/cmr/m/it/10.95 . \T1/cmr/m/n/10.95 The hon-est as-s
-ess-ment of classical-
+Overfull \hbox (15.7816pt too wide) in paragraph at lines 18169--18175
+[]\T1/cmr/m/n/10.95 ((S4) dis-charged) \T1/cmr/m/it/10.95 the uni-form stress-energy norm bound holds with $\OML/cmm/m/it/10.95 M  \OMS/cmsy/m/n/10.95 ^^T  \OML/cmm/m/it/10.95 M[] \OT1/cmr/m/n/10.95 := \OML/cmm/m/it/10.95 c[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 g[]; f\OT1/cmr/m/n/10.95 ) (1 +
  []
 
-[212]
-Overfull \hbox (4.32646pt too wide) in paragraph at lines 21000--21031
-\T1/cmr/m/n/10.95 gravitational-sector ana-logue of struc-tures al-ready re-ali
-sed in the holo-graphic and lat-tice operator-
+[183] [184] [185] [186] [187]
+Overfull \hbox (4.68486pt too wide) in paragraph at lines 18646--18646
+[]\T1/cmr/bx/n/14.4 Ashtekar--Krishnan dynamical-horizon mod-u-lar flow: dis-charge
+ []
+
+[188] [189]
+Overfull \hbox (15.1758pt too wide) in paragraph at lines 18777--18782
+[]\T1/cmr/m/n/10.95 (ii) The cen-traliser is type II$[]$ by the stan-dard crossed- prod-uct trace ar-gu-ment [[], Thm. X.1.17].
+ []
+
+
+Overfull \hbox (2.23619pt too wide) in paragraph at lines 18844--18844
+[]\T1/cmr/bx/n/14.4 Non-(CP) Araki re-al-i-sa-tion of two-boundary con-di-tion-ing: dis-
+ []
+
+[190]
+Overfull \hbox (2.38626pt too wide) in paragraph at lines 18945--18953
+[]\T1/cmr/m/it/10.95 (\T1/cmr/m/n/10.95 (CP) spe-cial-i-sa-tion.\T1/cmr/m/it/10.95 ) If $\OML/cmm/m/it/10.95 L[] \OMS/cmsy/m/n/10.95 2 N[]$ \T1/cmr/m/it/10.95 (the un-dressed centralizer-rich regime (a) of Conj. []11.1[],
+ []
+
+[191] [192]
+Overfull \hbox (8.85638pt too wide) in paragraph at lines 19109--19113
+[]\T1/cmr/m/n/10.95 (ii) The Connes co-cy-cle is pre-served un-der the dual-weight con-struc-tion ([[], Thm. X.1.17(iii)]),
+ []
+
+[193]
+Overfull \hbox (4.53732pt too wide) in paragraph at lines 19237--19242
+[]\T1/cmr/m/it/10.95 (\T1/cmr/m/n/10.95 Self-adjoint con-straint + an-a-lytic core.\T1/cmr/m/it/10.95 ) The dressed mod-u-lar gen-er-a-tor $[] \OT1/cmr/m/n/10.95 := []$
+ []
+
+[194] [195] [196] [197] [198] [199] [200] [201]
+Overfull \hbox (8.35863pt too wide) in paragraph at lines 20031--20054
+\T1/cmr/m/n/10.95 with a sin-gle state-independent ad-di-tive con-stant $\OML/cmm/m/it/10.95 c[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 ![]\OT1/cmr/m/n/10.95 ) \OMS/cmsy/m/n/10.95 2 \U/msb/m/n/10.95 R$ \T1/cmr/m/n/10.95 at or-der zero (the species-independent
+ []
+
+[202]
+Overfull \hbox (8.38715pt too wide) in paragraph at lines 20069--20089
+\T1/cmr/m/n/10.95 strictly pos-i-tive on per-tur-ba-tions car-ry-ing gravi-ton or bulk-matter flux; no state-independent
+ []
+
+[203] [204]
+Overfull \hbox (20.5627pt too wide) in paragraph at lines 20333--20354
+[]\T1/cmr/m/n/10.95 The Fröb--Zahn Weyl-anomaly the-o-rem [[]] es-tab-lishes the rig-or-ous state-independent
+ []
+
+[205] [206]
+Overfull \hbox (9.9298pt too wide) in paragraph at lines 20454--20460
+\T1/cmr/m/it/10.95 CGM-window data, not on $\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 x; k\OT1/cmr/m/n/10.95 )$ \T1/cmr/m/it/10.95 (direction-uniformity is kine-matic, App. []J[]; point-uniformity
+ []
+
+
+Overfull \hbox (0.59554pt too wide) in paragraph at lines 20505--20529
+[]\T1/cmr/m/it/10.95 (2) The $\OML/cmm/m/it/10.95 n[]\OT1/cmr/m/n/10.95 1$ \T1/cmr/m/it/10.95 cor-rec-tion: the grav-i-ta-tional \T1/cmr/m/n/10.95 dress-ing \T1/cmr/m/it/10.95 leg is closed on Killing loci; the interacting-
+ []
+
+[207] [208] [209] [210] [211] [212] [213] [214] [215] [216]
+Overfull \hbox (21.85074pt too wide) in paragraph at lines 21349--21361
+[]\T1/cmr/m/it/10.95 Step 5 (the order-independent uni-for-mity thresh-old). \T1/cmr/m/n/10.95 The point-uniformity con-stant of Cor. []J.4[](iii)
+ []
+
+[217]
+Overfull \hbox (2.56061pt too wide) in paragraph at lines 21474--21495
+\T1/cmr/m/it/10.95 Remark \T1/cmr/m/n/10.95 K.2 (The in-duc-tive limit en-forces the trace free-dom)\T1/cmr/m/it/10.95 . \T1/cmr/m/n/10.95 For \T1/cmr/m/it/10.95 any \T1/cmr/m/n/10.95 well-posed AFD-preserving
+ []
+
+
+Overfull \hbox (3.32513pt too wide) in paragraph at lines 21501--21505
+\T1/cmr/m/it/10.95 Remark \T1/cmr/m/n/10.95 K.3 (Sin-gu-lar-ity sta-tus un-der the Type II ma-chin-ery)\T1/cmr/m/it/10.95 . \T1/cmr/m/n/10.95 The hon-est as-sess-ment of classical-
+ []
+
+[218]
+Overfull \hbox (4.32646pt too wide) in paragraph at lines 21554--21585
+\T1/cmr/m/n/10.95 gravitational-sector ana-logue of struc-tures al-ready re-alised in the holo-graphic and lat-tice operator-
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 21035.
+(hyperref)                removing `math shift' on input line 21589.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 21035.
+(hyperref)                removing `subscript' on input line 21589.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 21035.
+(hyperref)                removing `math shift' on input line 21589.
 
-[213] [214] [215]
-Overfull \hbox (14.35945pt too wide) in paragraph at lines 21342--21441
-\T1/cmr/m/it/10.95 Remark \T1/cmr/m/n/10.95 L.7 (Open prob-lem: canon-i-cal mas
-a se-lec-tion)\T1/cmr/m/it/10.95 . \T1/cmr/m/n/10.95 Un-der the Car-tan re-stat
-e-ment of clause (A),
+[219] [220] [221] [222]
+Overfull \hbox (14.35945pt too wide) in paragraph at lines 21917--22016
+\T1/cmr/m/it/10.95 Remark \T1/cmr/m/n/10.95 L.8 (Open prob-lem: canon-i-cal masa se-lec-tion)\T1/cmr/m/it/10.95 . \T1/cmr/m/n/10.95 Un-der the Car-tan re-state-ment of clause (A),
  []
 
-[216] [217] [218] [219]
-Overfull \hbox (5.53682pt too wide) in paragraph at lines 21723--21736
-\T1/cmr/m/n/10.95 Hamil-to-ni-ans, Page--Wootters-compatible \T1/cmtt/m/n/10.95
- mesolve \T1/cmr/m/n/10.95 / prop-a-ga-tor, built-in partial-trace and POVM
+[223] [224] [225]
+Overfull \hbox (5.53682pt too wide) in paragraph at lines 22300--22313
+\T1/cmr/m/n/10.95 Hamil-to-ni-ans, Page--Wootters-compatible \T1/cmtt/m/n/10.95 mesolve \T1/cmr/m/n/10.95 / prop-a-ga-tor, built-in partial-trace and POVM
  []
 
-[220] [221] [222]
+[226] [227] [228]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 22001.
+(hyperref)                removing `math shift' on input line 22587.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 22001.
+(hyperref)                removing `math shift' on input line 22587.
 
-[223]
-Overfull \hbox (15.86401pt too wide) in paragraph at lines 22083--22095
-\T1/cmr/m/n/10.95 space car-ry-ing a mod-u-lar flow with com-pact (amenable) st
-a-bilis-ers, the crossed-product/conditional-
+[229]
+Overfull \hbox (15.86401pt too wide) in paragraph at lines 22669--22681
+\T1/cmr/m/n/10.95 space car-ry-ing a mod-u-lar flow with com-pact (amenable) sta-bilis-ers, the crossed-product/conditional-
  []
 
-[224]
-Overfull \hbox (3.15392pt too wide) in paragraph at lines 22169--22178
-[]\T1/cmr/m/it/10.95 The con-di-tioned ABL state $\OML/cmm/m/it/10.95 ^^Z[]\OT1
-/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 ^^\ \OMS/cmsy/m/n/10.95 j \OML/cmm/m/it/10.
-95 k\OT1/cmr/m/n/10.95 )$ \T1/cmr/m/it/10.95 de-fines a faith-ful nor-mal state
- $\OML/cmm/m/it/10.95 ![]$ \T1/cmr/m/it/10.95 on $\OMS/cmsy/m/n/10.95 A\OT1/cmr
-/m/n/10.95 (\OMS/cmsy/m/n/10.95 O\OT1/cmr/m/n/10.95 )$ \T1/cmr/m/it/10.95 (Thm.
- []G.1[]),
+[230]
+Overfull \hbox (3.15392pt too wide) in paragraph at lines 22755--22764
+[]\T1/cmr/m/it/10.95 The con-di-tioned ABL state $\OML/cmm/m/it/10.95 ^^Z[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 ^^\ \OMS/cmsy/m/n/10.95 j \OML/cmm/m/it/10.95 k\OT1/cmr/m/n/10.95 )$ \T1/cmr/m/it/10.95 de-fines a faith-ful nor-mal state $\OML/cmm/m/it/10.95 ![]$ \T1/cmr/m/it/10.95 on $\OMS/cmsy/m/n/10.95 A\OT1/cmr/m/n/10.95 (\OMS/cmsy/m/n/10.95 O\OT1/cmr/m/n/10.95 )$ \T1/cmr/m/it/10.95 (Thm. []G.1[]),
  []
 
 
-Overfull \hbox (10.31718pt too wide) in paragraph at lines 22188--22193
-\T1/cmr/m/it/10.95 Schlieder para-dox is gen-er-ated by con-di-tion-ing. The ve
-ry iden-tity in-voked here, $[][] \OML/cmm/m/it/10.95 p\OT1/cmr/m/n/10.95 (\OML
-/cmm/m/it/10.95 k\OT1/cmr/m/n/10.95 ) \OML/cmm/m/it/10.95 M[] \OT1/cmr/m/n/10.9
-5 =
+Overfull \hbox (10.31718pt too wide) in paragraph at lines 22774--22779
+\T1/cmr/m/it/10.95 Schlieder para-dox is gen-er-ated by con-di-tion-ing. The very iden-tity in-voked here, $[][] \OML/cmm/m/it/10.95 p\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 k\OT1/cmr/m/n/10.95 ) \OML/cmm/m/it/10.95 M[] \OT1/cmr/m/n/10.95 =
  []
 
 
-Overfull \hbox (10.63426pt too wide) in paragraph at lines 22188--22193
-\T1/cmr/m/it/10.95 ness (Thm. []3.10[]): any temporal-quasiprobability neg-a-ti
-v-ity $\OML/cmm/m/it/10.95 f[] > \OT1/cmr/m/n/10.95 0$ \T1/cmr/m/it/10.95 en-co
-d-ing non-commutation
+Overfull \hbox (10.63426pt too wide) in paragraph at lines 22774--22779
+\T1/cmr/m/it/10.95 ness (Thm. []3.10[]): any temporal-quasiprobability neg-a-tiv-ity $\OML/cmm/m/it/10.95 f[] > \OT1/cmr/m/n/10.95 0$ \T1/cmr/m/it/10.95 en-cod-ing non-commutation
  []
 
-[225]
-Overfull \hbox (14.74278pt too wide) in paragraph at lines 22274--22281
-\T1/cmr/m/n/10.95 This ap-pendix records the hon-est sta-tus of CFT struc-tures
- (CHM mod-u-lar Hamil-to-nian, Bisognano--
+[231]
+Overfull \hbox (14.74278pt too wide) in paragraph at lines 22860--22867
+\T1/cmr/m/n/10.95 This ap-pendix records the hon-est sta-tus of CFT struc-tures (CHM mod-u-lar Hamil-to-nian, Bisognano--
  []
 
-[226] [227]
-Overfull \hbox (5.85127pt too wide) in paragraph at lines 22440--22447
-[]\T1/cmr/m/n/10.95 PBR preparation-independence. \T1/cmr/m/it/10.95 Prepa-ra-t
-ion in-de-pen-dence holds for the ini-tial slice; terminal-
+[232] [233]
+Overfull \hbox (5.85127pt too wide) in paragraph at lines 23026--23033
+[]\T1/cmr/m/n/10.95 PBR preparation-independence. \T1/cmr/m/it/10.95 Prepa-ra-tion in-de-pen-dence holds for the ini-tial slice; terminal-
  []
 
-[228]
-Overfull \hbox (0.69745pt too wide) in paragraph at lines 22611--22621
-\T1/cmr/bx/n/10.95 Lemma U.2 \T1/cmr/m/n/10.95 (Boltz-man-n-brain trun-ca-tion 
-by fu-ture bound-ary)\T1/cmr/bx/n/10.95 . \T1/cmr/m/it/10.95 Un-der Ax. []7.1[]
- (ter-mi-nal record-
+[234] [235]
+Overfull \hbox (0.69745pt too wide) in paragraph at lines 23197--23207
+\T1/cmr/bx/n/10.95 Lemma U.2 \T1/cmr/m/n/10.95 (Boltz-man-n-brain trun-ca-tion by fu-ture bound-ary)\T1/cmr/bx/n/10.95 . \T1/cmr/m/it/10.95 Un-der Ax. []7.1[] (ter-mi-nal record-
  []
 
-[229] [230] [231]
+[236] [237] [238]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 22925.
+(hyperref)                removing `math shift' on input line 23511.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\xi' on input line 22925.
+(hyperref)                removing `\xi' on input line 23511.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\eta' on input line 22925.
+(hyperref)                removing `\eta' on input line 23511.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 22925.
+(hyperref)                removing `math shift' on input line 23511.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 22925.
+(hyperref)                removing `math shift' on input line 23511.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\Sigma' on input line 22925.
+(hyperref)                removing `\Sigma' on input line 23511.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 22925.
+(hyperref)                removing `subscript' on input line 23511.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\delta' on input line 22925.
+(hyperref)                removing `\delta' on input line 23511.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 22925.
+(hyperref)                removing `math shift' on input line 23511.
 
-[232]
-Overfull \hbox (4.84332pt too wide) in paragraph at lines 22945--22951
-\T1/cmr/bx/n/10.95 Proposition X.1 \T1/cmr/m/n/10.95 (Ab-sence of de-rived Lore
-ntz-vi-o-lat-ing dis-per-sion in the ther-mal--time/geometric
+
+Overfull \hbox (4.84332pt too wide) in paragraph at lines 23565--23571
+\T1/cmr/bx/n/10.95 Proposition X.1 \T1/cmr/m/n/10.95 (Ab-sence of de-rived Lorentz-vi-o-lat-ing dis-per-sion in the ther-mal--time/geometric
+ []
+
+[239]
+Overfull \hbox (18.44812pt too wide) in paragraph at lines 23600--23610
+\T1/cmr/bx/n/10.95 Proposition X.2 \T1/cmr/m/n/10.95 (In-duced sub-lu-mi-nal lin-ear dis-per-sion from the $\OT1/cmr/m/n/10.95 ^^F[]$ \T1/cmr/m/n/10.95 soft-en-ing)\T1/cmr/bx/n/10.95 . \T1/cmr/m/it/10.95 As-sume Conj. []10.13[]
  []
 
 
-Overfull \hbox (18.44812pt too wide) in paragraph at lines 22980--22990
-\T1/cmr/bx/n/10.95 Proposition X.2 \T1/cmr/m/n/10.95 (In-duced sub-lu-mi-nal li
-n-ear dis-per-sion from the $\OT1/cmr/m/n/10.95 ^^F[]$ \T1/cmr/m/n/10.95 soft-e
-n-ing)\T1/cmr/bx/n/10.95 . \T1/cmr/m/it/10.95 As-sume Conj. []10.13[]
+Overfull \hbox (9.67078pt too wide) in paragraph at lines 23615--23628
+\T1/cmr/m/it/10.95 an energy-dependent, \T1/cmr/m/n/10.95 sub-lu-mi-nal \T1/cmr/m/it/10.95 (for $\OML/cmm/m/it/10.95  > \OT1/cmr/m/n/10.95 0$\T1/cmr/m/it/10.95 ), strictly \T1/cmr/m/n/10.95 lin-ear \T1/cmr/m/it/10.95 time-of-flight dis-per-sion with quantum-
+ []
+
+[240] [241]
+Overfull \hbox (7.76521pt too wide) in paragraph at lines 23828--23844
+\T1/cmr/m/it/10.95 forces $[]\OT1/cmr/m/n/10.95 ([])$ \T1/cmr/m/it/10.95 to be only \T1/cmr/m/n/10.95 sym-met-ric about $\OT1/cmr/m/n/10.95 0$ \T1/cmr/m/it/10.95 (it con-ju-gates $\OT1/cmr/m/n/10.95 ^^A[]$ \T1/cmr/m/it/10.95 to $\OT1/cmr/m/n/10.95 ^^A[]$\T1/cmr/m/it/10.95 ); \T1/cmr/m/n/10.95 full-ness $[]\OT1/cmr/m/n/10.95 ([]) =
+ []
+
+[242]
+Overfull \hbox (20.46664pt too wide) in paragraph at lines 23958--23962
+\T1/cmr/bx/n/10.95 Proposition Z.1 \T1/cmr/m/n/10.95 (Ob-server-in-vari-ance and frame-rel-a-tive gauge data)\T1/cmr/bx/n/10.95 . \T1/cmr/m/it/10.95 Un-der Pos. []11.11[], Thm. []H.1[],
  []
 
 
-Overfull \hbox (9.67078pt too wide) in paragraph at lines 22995--23008
-\T1/cmr/m/it/10.95 an energy-dependent, \T1/cmr/m/n/10.95 sub-lu-mi-nal \T1/cmr
-/m/it/10.95 (for $\OML/cmm/m/it/10.95  > \OT1/cmr/m/n/10.95 0$\T1/cmr/m/it/10.
-95 ), strictly \T1/cmr/m/n/10.95 lin-ear \T1/cmr/m/it/10.95 time-of-flight dis-
-per-sion with quantum-
- []
-
-[233]
-Overfull \hbox (2.57738pt too wide) in paragraph at lines 23075--23077
-\T1/cmr/m/it/10.95 Remark \T1/cmr/m/n/10.95 X.4 (Em-pir-i-cal sta-tus: GRB pho-
-ton tim-ing is the bind-ing con-straint on $\OML/cmm/m/it/10.95 ^^V$\T1/cmr/m/n
-/10.95 )\T1/cmr/m/it/10.95 . \T1/cmr/m/n/10.95 By Prop. []X.2[],
- []
-
-[234]
-Overfull \hbox (7.76521pt too wide) in paragraph at lines 23185--23201
-\T1/cmr/m/it/10.95 forces $[]\OT1/cmr/m/n/10.95 ([])$ \T1/cmr/m/it/10.95 to be 
-only \T1/cmr/m/n/10.95 sym-met-ric about $\OT1/cmr/m/n/10.95 0$ \T1/cmr/m/it/10
-.95 (it con-ju-gates $\OT1/cmr/m/n/10.95 ^^A[]$ \T1/cmr/m/it/10.95 to $\OT1/cmr
-/m/n/10.95 ^^A[]$\T1/cmr/m/it/10.95 ); \T1/cmr/m/n/10.95 full-ness $[]\OT1/cmr/
-m/n/10.95 ([]) =
- []
-
-[235]
-Overfull \hbox (20.46664pt too wide) in paragraph at lines 23315--23319
-\T1/cmr/bx/n/10.95 Proposition Z.1 \T1/cmr/m/n/10.95 (Ob-server-in-vari-ance an
-d frame-rel-a-tive gauge data)\T1/cmr/bx/n/10.95 . \T1/cmr/m/it/10.95 Un-der Po
-s. []11.11[], Thm. []H.1[],
- []
-
-
-Overfull \hbox (5.70198pt too wide) in paragraph at lines 23320--23335
-\OML/cmm/m/it/10.95 C[]$ \T1/cmr/m/n/10.95 for ideal QRFs \T1/cmr/m/it/10.95 (p
-erspective-neutral / al-ge-braic / ef-fec-tive QRF equiv-a-lence the-o-rem [[]]
-).
- []
-
-[236]
-Overfull \hbox (2.57076pt too wide) in paragraph at lines 23375--23383
-\T1/cmr/m/it/10.95 Remark \T1/cmr/m/n/10.95 Z.2 (Sta-tus)\T1/cmr/m/it/10.95 . \
-T1/cmr/m/n/10.95 Prop. []Z.1[] adopts the con-sen-sus 2024--2026 perspective-ne
-utral / subsystem-
- []
-
-(./appendix_e2a_omega.tex [237]
-Overfull \hbox (17.93025pt too wide) in paragraph at lines 280--286
-\T1/cmr/m/n/10.95 so $\OML/cmm/m/it/10.95 E[]$ \T1/cmr/m/n/10.95 is a bi-Lipsch
-itz $\OML/cmm/m/it/10.95 C[]$ \T1/cmr/m/n/10.95 dif-feo-mor-phism on $\OML/cmm/
-m/it/10.95 B\OT1/cmr/m/n/10.95 (0\OML/cmm/m/it/10.95 ; ^^Z[]\OT1/cmr/m/n/10.95 
-)$ \T1/cmr/m/n/10.95 with $[] \OMS/cmsy/m/n/10.95 ^^T k\OML/cmm/m/it/10.95 d\OT
-1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 E[]\OT1/cmr/m/n/10.95 )[]\OMS/cmsy/m/n/10.
-95 k[] ^^T []$ \T1/cmr/m/n/10.95 and $\OML/cmm/m/it/10.95 E[]\OT1/cmr/m/n/10.95
- (\OML/cmm/m/it/10.95 B\OT1/cmr/m/n/10.95 (0\OML/cmm/m/it/10.95 ; ^^Z[]\OT1/cmr
-/m/n/10.95 )) \OMS/cmsy/m/n/10.95 ^^S
- []
-
-[238] [239] [240] [241] [242]
-Overfull \hbox (7.74504pt too wide) in paragraph at lines 686--691
-\T1/cmr/m/it/10.95 ev-ery-where $\OML/cmm/m/it/10.95 ^^^[]$\T1/cmr/m/it/10.95 -
-flat), a col-lar ra-dius $\OML/cmm/m/it/10.95 ^^Z[] \OMS/cmsy/m/n/10.95 2 \OT1/
-cmr/m/n/10.95 (0\OML/cmm/m/it/10.95 ; ^^Z[]\OT1/cmr/m/n/10.95 ]$\T1/cmr/m/it/10
-.95 , and $\OML/cmm/m/it/10.95 "[] > \OT1/cmr/m/n/10.95 0$ \T1/cmr/m/it/10.95 w
-ith $\OML/cmm/m/it/10.95 "[] \OMS/cmsy/m/n/10.95 ^^T [][]\OML/cmm/m/it/10.95 "[
-]=C[];  m[]=\OT1/cmr/m/n/10.95 (4\OML/cmm/m/it/10.95 C[]\OT1/cmr/m/n/10.95 )[]$
-
+Overfull \hbox (5.70198pt too wide) in paragraph at lines 23963--23978
+\OML/cmm/m/it/10.95 C[]$ \T1/cmr/m/n/10.95 for ideal QRFs \T1/cmr/m/it/10.95 (perspective-neutral / al-ge-braic / ef-fec-tive QRF equiv-a-lence the-o-rem [[]]).
  []
 
 [243]
-Overfull \hbox (11.61505pt too wide) in paragraph at lines 710--717
-\T1/cmr/m/n/10.95 uniform (Prop. []E2a.9[], Lem. []E2a.14[]); the count is []; 
-the ra-tio $\OMS/cmsy/m/n/10.95 R[]$ \T1/cmr/m/n/10.95 is $\OML/cmm/m/it/10.95 
-^^Z$\T1/cmr/m/n/10.95 -bounded (Re-mark []E2a.10[]).
+Overfull \hbox (2.57076pt too wide) in paragraph at lines 24018--24026
+\T1/cmr/m/it/10.95 Remark \T1/cmr/m/n/10.95 Z.2 (Sta-tus)\T1/cmr/m/it/10.95 . \T1/cmr/m/n/10.95 Prop. []Z.1[] adopts the con-sen-sus 2024--2026 perspective-neutral / subsystem-
  []
 
-[244] [245]
-Overfull \hbox (24.38191pt too wide) in paragraph at lines 1000--1007
-[]\T1/cmr/m/n/10.95 Fix $\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 g; y; ^^Z; e\O
-T1/cmr/m/n/10.95 )$\T1/cmr/m/n/10.95 ; $\OML/cmm/m/it/10.95 t \OMS/cmsy/m/n/10.
-95 7! \OT1/cmr/m/n/10.95 ^^D(\OML/cmm/m/it/10.95 t; ^^R\OT1/cmr/m/n/10.95 )$ \T
-1/cmr/m/n/10.95 is $\OML/cmm/m/it/10.95 C[]$ \T1/cmr/m/n/10.95 with $\OMS/cmsy/
-m/n/10.95 k\OML/cmm/m/it/10.95 @[]\OT1/cmr/m/n/10.95 ^^D\OMS/cmsy/m/n/10.95 k[]
- ^^T \OML/cmm/m/it/10.95 ^^T[]^^Z[]$ []\T1/cmr/m/n/10.95 . Put $\OML/cmm/m/it/1
-0.95 ^^N \OT1/cmr/m/n/10.95 := [](1\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 (2\
-OML/cmm/m/it/10.95 ^^V=\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 ^^T[]^^Z[]\OT1/c
-mr/m/n/10.95 ))[]) \OMS/cmsy/m/n/10.95 2
+(./appendix_e2a_omega.tex [244] [245]
+Overfull \hbox (17.93025pt too wide) in paragraph at lines 311--317
+\T1/cmr/m/n/10.95 so $\OML/cmm/m/it/10.95 E[]$ \T1/cmr/m/n/10.95 is a bi-Lipschitz $\OML/cmm/m/it/10.95 C[]$ \T1/cmr/m/n/10.95 dif-feo-mor-phism on $\OML/cmm/m/it/10.95 B\OT1/cmr/m/n/10.95 (0\OML/cmm/m/it/10.95 ; ^^Z[]\OT1/cmr/m/n/10.95 )$ \T1/cmr/m/n/10.95 with $[] \OMS/cmsy/m/n/10.95 ^^T k\OML/cmm/m/it/10.95 d\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 E[]\OT1/cmr/m/n/10.95 )[]\OMS/cmsy/m/n/10.95 k[] ^^T []$ \T1/cmr/m/n/10.95 and $\OML/cmm/m/it/10.95 E[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 B\OT1/cmr/m/n/10.95 (0\OML/cmm/m/it/10.95 ; ^^Z[]\OT1/cmr/m/n/10.95 )) \OMS/cmsy/m/n/10.95 ^^S
  []
 
-[246]
+[246] [247] [248] [249] [250]
+Overfull \hbox (7.74504pt too wide) in paragraph at lines 735--740
+\T1/cmr/m/it/10.95 ev-ery-where $\OML/cmm/m/it/10.95 ^^^[]$\T1/cmr/m/it/10.95 -flat), a col-lar ra-dius $\OML/cmm/m/it/10.95 ^^Z[] \OMS/cmsy/m/n/10.95 2 \OT1/cmr/m/n/10.95 (0\OML/cmm/m/it/10.95 ; ^^Z[]\OT1/cmr/m/n/10.95 ]$\T1/cmr/m/it/10.95 , and $\OML/cmm/m/it/10.95 "[] > \OT1/cmr/m/n/10.95 0$ \T1/cmr/m/it/10.95 with $\OML/cmm/m/it/10.95 "[] \OMS/cmsy/m/n/10.95 ^^T [][]\OML/cmm/m/it/10.95 "[]=C[];  m[]=\OT1/cmr/m/n/10.95 (4\OML/cmm/m/it/10.95 C[]\OT1/cmr/m/n/10.95 )[]$
+ []
+
+[251] [252] [253]
+Overfull \hbox (24.38191pt too wide) in paragraph at lines 1052--1059
+[]\T1/cmr/m/n/10.95 Fix $\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 g; y; ^^Z; e\OT1/cmr/m/n/10.95 )$\T1/cmr/m/n/10.95 ; $\OML/cmm/m/it/10.95 t \OMS/cmsy/m/n/10.95 7! \OT1/cmr/m/n/10.95 ^^D(\OML/cmm/m/it/10.95 t; ^^R\OT1/cmr/m/n/10.95 )$ \T1/cmr/m/n/10.95 is $\OML/cmm/m/it/10.95 C[]$ \T1/cmr/m/n/10.95 with $\OMS/cmsy/m/n/10.95 k\OML/cmm/m/it/10.95 @[]\OT1/cmr/m/n/10.95 ^^D\OMS/cmsy/m/n/10.95 k[] ^^T \OML/cmm/m/it/10.95 ^^T[]^^Z[]$ []\T1/cmr/m/n/10.95 . Put $\OML/cmm/m/it/10.95 ^^N \OT1/cmr/m/n/10.95 := [](1\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 (2\OML/cmm/m/it/10.95 ^^V=\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 ^^T[]^^Z[]\OT1/cmr/m/n/10.95 ))[]) \OMS/cmsy/m/n/10.95 2
+ []
+
+[254]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1076.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 1076.
+(hyperref)                removing `math shift' on input line 1128.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1076.
+(hyperref)                removing `subscript' on input line 1128.
 
-[247] [248]
-Overfull \hbox (18.09785pt too wide) in paragraph at lines 1220--1227
-\T1/cmr/m/it/10.95 depending only on $\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 U
-[]; K[]; n; c[]\OT1/cmr/m/n/10.95 )$ \T1/cmr/m/it/10.95 through $\OML/cmm/m/it/
-10.95 c[]; c[]; A[]; A[]; A[]; c[]$ \T1/cmr/m/n/10.95 (\T1/cmr/m/it/10.95 the p
-er-cell am-pli-tude/measure
- []
 
-[249] [250] [251] [252]
-Overfull \hbox (3.67114pt too wide) in paragraph at lines 1551--1569
-\T1/cmr/m/it/10.95 Remark \T1/cmr/m/n/10.95 E2a.38 (scope hon-esty: A1 does NOT
- dis-solve the de-vice on $\OMS/cmsy/m/n/10.95 N[]$\T1/cmr/m/n/10.95 )\T1/cmr/m
-/it/10.95 . \T1/cmr/m/n/10.95 Since The-o-rem []E2a.37[]
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1128.
+
+[255] [256] [257] [258] [259] [260]
+Overfull \hbox (3.67114pt too wide) in paragraph at lines 1627--1645
+\T1/cmr/m/it/10.95 Remark \T1/cmr/m/n/10.95 E2a.39 (scope hon-esty: A1 does NOT dis-solve the de-vice on $\OMS/cmsy/m/n/10.95 N[]$\T1/cmr/m/n/10.95 )\T1/cmr/m/it/10.95 . \T1/cmr/m/n/10.95 Since The-o-rem []E2a.38[]
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1629.
+(hyperref)                removing `math shift' on input line 1705.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 1629.
+(hyperref)                removing `subscript' on input line 1705.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\omega' on input line 1629.
+(hyperref)                removing `\omega' on input line 1705.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1629.
+(hyperref)                removing `math shift' on input line 1705.
 
-[253]
-Overfull \hbox (2.1129pt too wide) in paragraph at lines 1652--1664
-$\OML/cmm/m/it/10.95 c[]$ \T1/cmr/m/it/10.95 ball-uniform over $\OML/cmm/m/it/1
-0.95 U[]$\T1/cmr/m/it/10.95 , car-ry-ing the $\OT1/cmr/m/n/10.95 (\OML/cmm/m/it
-/10.95 ^^Z[]; "[]\OT1/cmr/m/n/10.95 )$ \T1/cmr/m/it/10.95 de-pen-dence solely t
-hrough $\OML/cmm/m/it/10.95 N[] \OT1/cmr/m/n/10.95 = \OML/cmm/m/it/10.95 N[]\OT
-1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 g[]; ^^Z[]; "[]; [] \OT1/cmr/m/n/10.95 )$\
-T1/cmr/m/it/10.95 .
+[261]
+Overfull \hbox (2.1129pt too wide) in paragraph at lines 1732--1745
+$\OML/cmm/m/it/10.95 c[]$ \T1/cmr/m/it/10.95 ball-uniform over $\OML/cmm/m/it/10.95 U[]$\T1/cmr/m/it/10.95 , car-ry-ing the $\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 ^^Z[]; "[]\OT1/cmr/m/n/10.95 )$ \T1/cmr/m/it/10.95 de-pen-dence solely through $\OML/cmm/m/it/10.95 N[] \OT1/cmr/m/n/10.95 = \OML/cmm/m/it/10.95 N[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 g[]; ^^Z[]; "[]; [] \OT1/cmr/m/n/10.95 )$\T1/cmr/m/it/10.95 .
  []
 
-[254] [255]
+[262] [263]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \hskip 10.88788pt
-(hyperref)                replaced by space on input line 1890.
+(hyperref)                replaced by space on input line 1986.
 
-[256]
-Overfull \hbox (36.8659pt too wide) in paragraph at lines 1984--2022
+[264]
+Overfull \hbox (36.8659pt too wide) in paragraph at lines 2080--2126
 []
  []
 
-[257]
-Overfull \hbox (5.21349pt too wide) in paragraph at lines 2038--2049
-[][] \OML/cmm/m/it/10.95 @[]C[]$ \T1/cmr/m/n/10.95 has its $\OML/cmm/m/it/10.95
- H[]$ \T1/cmr/m/n/10.95 norm con-trolled by the frequency-transfer ma-trix thro
-ugh $\OMS/cmsy/m/n/10.95 k\OML/cmm/m/it/10.95 @[]C\OMS/cmsy/m/n/10.95 k[] ^^T
+[265]
+Overfull \hbox (5.21349pt too wide) in paragraph at lines 2142--2153
+[][] \OML/cmm/m/it/10.95 @[]C[]$ \T1/cmr/m/n/10.95 has its $\OML/cmm/m/it/10.95 H[]$ \T1/cmr/m/n/10.95 norm con-trolled by the frequency-transfer ma-trix through $\OMS/cmsy/m/n/10.95 k\OML/cmm/m/it/10.95 @[]C\OMS/cmsy/m/n/10.95 k[] ^^T
  []
 
 
-Overfull \hbox (32.19337pt too wide) in paragraph at lines 2078--2085
-\T1/cmr/m/n/10.95 with the slab reg-is-ter through the near-diagonal dis-in-te-
-gra-tion $\OMS/cmsy/m/n/10.95 k\OML/cmm/m/it/10.95 F\OMS/cmsy/m/n/10.95 k[] \OT
-1/cmr/m/n/10.95 = [][] \OML/cmm/m/it/10.95 ^^Z[]\OMS/cmsy/m/n/10.95 k\OML/cmm/m
-/it/10.95 F\OMS/cmsy/m/n/10.95 k[] \OML/cmm/m/it/10.95 d^^Z$
+Overfull \hbox (32.19337pt too wide) in paragraph at lines 2182--2189
+\T1/cmr/m/n/10.95 with the slab reg-is-ter through the near-diagonal dis-in-te-gra-tion $\OMS/cmsy/m/n/10.95 k\OML/cmm/m/it/10.95 F\OMS/cmsy/m/n/10.95 k[] \OT1/cmr/m/n/10.95 = [][] \OML/cmm/m/it/10.95 ^^Z[]\OMS/cmsy/m/n/10.95 k\OML/cmm/m/it/10.95 F\OMS/cmsy/m/n/10.95 k[] \OML/cmm/m/it/10.95 d^^Z$
  []
 
-[258]
-Overfull \hbox (111.08083pt too wide) detected at line 2203
-[][][][][]  [][]\OMS/cmsy/m/n/10.95 !  \OML/cmm/m/it/10.95 c[] \OT1/cmr/m/n/10.
-95 = \OML/cmm/m/it/10.95 c[]\OT1/cmr/m/n/10.95 (1 + \OML/cmm/m/it/10.95 N[]\OT1
-/cmr/m/n/10.95 )  [][]\OMS/cmsy/m/n/10.95 !  \OML/cmm/m/it/10.95 D \OT1/cmr/m/n
-/10.95 = \OML/cmm/m/it/10.95 c[]  [][]\OMS/cmsy/m/n/10.95 !  []  [][]!  \OML/cm
-m/m/it/10.95 C[]  [][]\OMS/cmsy/m/n/10.95 !  \OML/cmm/m/it/10.95 c[] \OMS/cmsy/
-m/n/10.95 ^^X \OML/cmm/m/it/10.95 C[]  [][]\OMS/cmsy/m/n/10.95 !  [] \OML/cmm/m
-/it/10.95 :
+[266]
+Overfull \hbox (8.2104pt too wide) detected at line 2236
+[][][][]\OML/cmm/m/it/10.95 K[]  \OT1/cmr/m/n/10.95 =  \OML/cmm/m/it/10.95 C[] c[]  \OT1/cmr/m/n/10.95 +  ([])\OML/cmm/m/it/10.95 ;  C[] [] C[] [];
  []
 
 
-Overfull \hbox (19.81839pt too wide) in paragraph at lines 2203--2209
-\T1/cmr/m/n/10.95 tight-en-ing $\OML/cmm/m/it/10.95 "[]$ \T1/cmr/m/n/10.95 can 
-change $\OML/cmm/m/it/10.95 K[]$ \T1/cmr/m/n/10.95 only through $\OML/cmm/m/it/
-10.95 N[]$\T1/cmr/m/n/10.95 's own de-pen-dence, so $\OML/cmm/m/it/10.95 K[] \O
-T1/cmr/m/n/10.95 = \OML/cmm/m/it/10.95 K[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.
-95 g[]; ^^Z[]; "[]; K[]; j; c[]\OT1/cmr/m/n/10.95 )$\T1/cmr/m/n/10.95 . 
+Overfull \hbox (206.43861pt too wide) detected at line 2308
+[][][][][]  [][]\OMS/cmsy/m/n/10.95 !  \OML/cmm/m/it/10.95 c[] \OT1/cmr/m/n/10.95 = \OML/cmm/m/it/10.95 c[]\OT1/cmr/m/n/10.95 (1 + \OML/cmm/m/it/10.95 N[]\OT1/cmr/m/n/10.95 )  [][]\OMS/cmsy/m/n/10.95 !  \OML/cmm/m/it/10.95 D \OT1/cmr/m/n/10.95 = \OML/cmm/m/it/10.95 c[]  [][]\OMS/cmsy/m/n/10.95 !  []  [][]!  \OML/cmm/m/it/10.95 C[]  [][]\OMS/cmsy/m/n/10.95 !  \OML/cmm/m/it/10.95 C[] \OT1/cmr/m/n/10.95 ([]\OML/cmm/m/it/10.95 C[];  []\OT1/cmr/m/n/10.95 )  [][]\OMS/cmsy/m/n/10.95 !  [] \OML/cmm/m/it/10.95 :
  []
 
-[259]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 2262.
+[267]
+Overfull \hbox (19.81839pt too wide) in paragraph at lines 2308--2314
+\T1/cmr/m/n/10.95 tight-en-ing $\OML/cmm/m/it/10.95 "[]$ \T1/cmr/m/n/10.95 can change $\OML/cmm/m/it/10.95 K[]$ \T1/cmr/m/n/10.95 only through $\OML/cmm/m/it/10.95 N[]$\T1/cmr/m/n/10.95 's own de-pen-dence, so $\OML/cmm/m/it/10.95 K[] \OT1/cmr/m/n/10.95 = \OML/cmm/m/it/10.95 K[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 g[]; ^^Z[]; "[]; K[]; j; c[]\OT1/cmr/m/n/10.95 )$\T1/cmr/m/n/10.95 . 
+ []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 2262.
+(hyperref)                removing `math shift' on input line 2367.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 2367.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \hskip 10.88788pt
-(hyperref)                replaced by space on input line 2262.
+(hyperref)                replaced by space on input line 2367.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 2262.
+(hyperref)                removing `math shift' on input line 2367.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 2262.
-
-[260] [261]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 2396.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 2396.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                \hskip 10.88788pt
-(hyperref)                replaced by space on input line 2396.
-
-
-Overfull \hbox (28.40819pt too wide) in paragraph at lines 2427--2433
-[]\T1/cmr/m/n/10.95 The Schur/extraction arith-metic: the ex-po-nent iden-tity 
-$\OML/cmm/m/it/10.95 M[]!\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 M=\OT1/cmr/m/n
-/10.95 ^^C)^^C[] = (\OML/cmm/m/it/10.95 M=\OT1/cmr/m/n/10.95 ^^C)[]$
- []
-
-[262] [263] [264] [265] [266] [267]
-Overfull \hbox (85.74652pt too wide) detected at line 2949
-\OML/cmm/m/it/10.95 @[] \OT1/cmr/m/n/10.95 : (\OML/cmm/m/it/10.95 c; p\OT1/cmr/
-m/n/10.95 ) \OMS/cmsy/m/n/10.95 7! \OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 c[]\
-OT1/cmr/m/n/10.95 1\OML/cmm/m/it/10.95 ; p[]\OT1/cmr/m/n/10.95 1);  \OML/cmm/m/
-it/10.95 @[] [] \OT1/cmr/m/n/10.95 : (\OML/cmm/m/it/10.95 c; p\OT1/cmr/m/n/10.9
-5 ) \OMS/cmsy/m/n/10.95 7! \OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 c[][]; p[]\O
-T1/cmr/m/n/10.95 1)  [];
- []
+(hyperref)                removing `math shift' on input line 2367.
 
 [268] [269]
-Overfull \hbox (53.76184pt too wide) detected at line 3143
-\OMS/cmsy/m/n/10.95 k\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 g \OMS/cmsy/m/n/10
-.95 ^^@ \OML/cmm/m/it/10.95 g[]\OT1/cmr/m/n/10.95 )[]\OML/cmm/m/it/10.95 @[]@[]
-W[]\OMS/cmsy/m/n/10.95 k[] ^^T \OML/cmm/m/it/10.95 c[]c[]c[]\OMS/cmsy/m/n/10.95
- W[]k\OML/cmm/m/it/10.95 g \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 g[]\OMS/
-cmsy/m/n/10.95 k[]\OML/cmm/m/it/10.95 ;  ^^T[] \OT1/cmr/m/n/10.95 = [](\OML/cmm
-/m/it/10.95 s \OMS/cmsy/m/n/10.95 ^^@ []\OML/cmm/m/it/10.95 ; [][]\OT1/cmr/m/n/
-10.95 )\OML/cmm/m/it/10.95 ;  ^^T[] \OT1/cmr/m/n/10.95 = [](\OML/cmm/m/it/10.95
- s \OMS/cmsy/m/n/10.95 ^^@ \OT1/cmr/m/n/10.95 9\OML/cmm/m/it/10.95 ; [][]\OT1/c
-mr/m/n/10.95 )\OML/cmm/m/it/10.95 ;
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 2501.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 2501.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                \hskip 10.88788pt
+(hyperref)                replaced by space on input line 2501.
+
+
+Overfull \hbox (28.40819pt too wide) in paragraph at lines 2534--2540
+[]\T1/cmr/m/n/10.95 The Schur/extraction arith-metic: the ex-po-nent iden-tity $\OML/cmm/m/it/10.95 M[]!\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 M=\OT1/cmr/m/n/10.95 ^^C)^^C[] = (\OML/cmm/m/it/10.95 M=\OT1/cmr/m/n/10.95 ^^C)[]$
  []
 
-[270] [271] [272]
-Overfull \hbox (18.2284pt too wide) detected at line 3412
-\OML/cmm/m/it/10.95 B[] \OT1/cmr/m/n/10.95 := []\OML/cmm/m/it/10.95 ;  C[] \OT1
-/cmr/m/n/10.95 := \OML/cmm/m/it/10.95 n B[];  R[] \OT1/cmr/m/n/10.95 := [] \OMS
-/cmsy/m/n/10.95 k\OML/cmm/m/it/10.95 a[]\OMS/cmsy/m/n/10.95 k[]\OML/cmm/m/it/10
-.95 ;  C[] \OT1/cmr/m/n/10.95 := [] + []\OML/cmm/m/it/10.95 ;
+[270] [271] [272] [273] [274] [275] [276]
+Overfull \hbox (85.74652pt too wide) detected at line 3122
+\OML/cmm/m/it/10.95 @[] \OT1/cmr/m/n/10.95 : (\OML/cmm/m/it/10.95 c; p\OT1/cmr/m/n/10.95 ) \OMS/cmsy/m/n/10.95 7! \OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 c[]\OT1/cmr/m/n/10.95 1\OML/cmm/m/it/10.95 ; p[]\OT1/cmr/m/n/10.95 1);  \OML/cmm/m/it/10.95 @[] [] \OT1/cmr/m/n/10.95 : (\OML/cmm/m/it/10.95 c; p\OT1/cmr/m/n/10.95 ) \OMS/cmsy/m/n/10.95 7! \OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 c[][]; p[]\OT1/cmr/m/n/10.95 1)  [];
  []
 
-[273]
-Overfull \hbox (37.46587pt too wide) in paragraph at lines 3554--3576
-\T1/cmr/m/it/10.95 Gromov--Taylor in-jec-tiv-ity bound; con-vex-ity ra-dius $\O
-ML/cmm/m/it/10.95 r[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 n; K[]; V[]\OT1/cm
-r/m/n/10.95 ) \OML/cmm/m/it/10.95 > \OT1/cmr/m/n/10.95 0$ \T1/cmr/m/it/10.95 fr
-om $\OML/cmm/m/it/10.95 g[]$\T1/cmr/m/it/10.95 -data and $[][] \OMS/cmsy/m/n/10
-.95 k\OML/cmm/m/it/10.95 g\OMS/cmsy/m/n/10.95 k[]$\T1/cmr/m/it/10.95 ),
+[277] [278]
+Overfull \hbox (53.76184pt too wide) detected at line 3323
+\OMS/cmsy/m/n/10.95 k\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 g \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 g[]\OT1/cmr/m/n/10.95 )[]\OML/cmm/m/it/10.95 @[]@[]W[]\OMS/cmsy/m/n/10.95 k[] ^^T \OML/cmm/m/it/10.95 c[]c[]c[]\OMS/cmsy/m/n/10.95 W[]k\OML/cmm/m/it/10.95 g \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 g[]\OMS/cmsy/m/n/10.95 k[]\OML/cmm/m/it/10.95 ;  ^^T[] \OT1/cmr/m/n/10.95 = [](\OML/cmm/m/it/10.95 s \OMS/cmsy/m/n/10.95 ^^@ []\OML/cmm/m/it/10.95 ; [][]\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 ;  ^^T[] \OT1/cmr/m/n/10.95 = [](\OML/cmm/m/it/10.95 s \OMS/cmsy/m/n/10.95 ^^@ \OT1/cmr/m/n/10.95 9\OML/cmm/m/it/10.95 ; [][]\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 ;
  []
 
-[274]
-Overfull \hbox (26.44075pt too wide) detected at line 3602
-[][][]\OML/cmm/m/it/10.95 @[]D[]\OT1/cmr/m/n/10.95 (\OMS/cmsy/m/n/10.95 ^^A\OML
-/cmm/m/it/10.95 ; y\OT1/cmr/m/n/10.95 )\OMS/cmsy/m/n/10.95 j[][][] \OT1/cmr/m/n
-/10.95 + []\OML/cmm/m/it/10.95 @[]@[]D[]\OT1/cmr/m/n/10.95 (\OMS/cmsy/m/n/10.95
- ^^A\OML/cmm/m/it/10.95 ; y\OT1/cmr/m/n/10.95 )\OMS/cmsy/m/n/10.95 j[][][][] ^^
-T \OML/cmm/m/it/10.95 C[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 g[]; \OT1/cmr/
-m/n/10.95 ^^F[]\OML/cmm/m/it/10.95 ; K[]\OT1/cmr/m/n/10.95 ) \OMS/cmsy/m/n/10.9
-5 k\OML/cmm/m/it/10.95 g \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 g[]\OMS/cm
-sy/m/n/10.95 k[]\OML/cmm/m/it/10.95 ;
+[279] [280] [281]
+Overfull \hbox (18.2284pt too wide) detected at line 3592
+\OML/cmm/m/it/10.95 B[] \OT1/cmr/m/n/10.95 := []\OML/cmm/m/it/10.95 ;  C[] \OT1/cmr/m/n/10.95 := \OML/cmm/m/it/10.95 n B[];  R[] \OT1/cmr/m/n/10.95 := [] \OMS/cmsy/m/n/10.95 k\OML/cmm/m/it/10.95 a[]\OMS/cmsy/m/n/10.95 k[]\OML/cmm/m/it/10.95 ;  C[] \OT1/cmr/m/n/10.95 := [] + []\OML/cmm/m/it/10.95 ;
  []
 
-[275]
-Overfull \hbox (23.14334pt too wide) in paragraph at lines 3670--3680
-\T1/cmr/m/n/10.95 The two lad-ders de-liver the mixed $\OT1/cmr/m/n/10.95 (1\OM
-L/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 1)$ \T1/cmr/m/n/10.95 co-in-ci-dence valu
-e of $\OML/cmm/m/it/10.95 D[]$ \T1/cmr/m/n/10.95 at the Lip-s-chitz rate (Lem. 
-[]E2a.67[](iii),
- []
-
-[276] [277] [278] [279]
-Overfull \hbox (12.22952pt too wide) in paragraph at lines 4095--4126
-\T1/cmr/m/n/10.95 gether with Thm. []E2a.37[] (A1, with the kernel-lemma com-pl
-e-tion); (A3) is the cas-cade Prop. []E2a.43[],
- []
-
-[280]
-Overfull \hbox (6.29713pt too wide) in paragraph at lines 4248--4296
-\T1/cmr/m/it/10.95 Open con-tent: \T1/cmr/m/n/10.95 the mixed-jet Lip-s-chitz b
-ound $[][] \OMS/cmsy/m/n/10.95 j\OT1/cmr/m/n/10.95 [\OML/cmm/m/it/10.95 @[]@[]\
-OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 W[] \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/i
-t/10.95 W[]\OT1/cmr/m/n/10.95 )](\OML/cmm/m/it/10.95 x; x\OT1/cmr/m/n/10.95 )\O
-MS/cmsy/m/n/10.95 j ^^T \OML/cmm/m/it/10.95 C[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/i
-t/10.95 K\OT1/cmr/m/n/10.95 )\OMS/cmsy/m/n/10.95 k\OML/cmm/m/it/10.95 g \OMS/cm
-sy/m/n/10.95 ^^@
- []
-
-[281] [282]) (./appendix_dirac_floor.tex [283]
-Overfull \hbox (14.45552pt too wide) in paragraph at lines 70--80
-\T1/cmr/m/n/10.95 renor-mal-i-sa-tion, [[]]); $\OML/cmm/m/it/10.95 d[][] \OT1/c
-mr/m/n/10.95 = \OML/cmm/m/it/10.95 dt d[][]$ \T1/cmr/m/n/10.95 and $\OML/cmm/m/
-it/10.95 F$ \T1/cmr/m/n/10.95 is com-pactly sup-ported, so by Fu-bini $\OMS/cms
-y/m/n/10.95 h[]\OT1/cmr/m/n/10.95 [\OML/cmm/m/it/10.95 ttF[]\OT1/cmr/m/n/10.95 
-]\OMS/cmsy/m/n/10.95 i[] \OT1/cmr/m/n/10.95 =
+[282] [283]
+Overfull \hbox (37.46587pt too wide) in paragraph at lines 3733--3755
+\T1/cmr/m/it/10.95 Gromov--Taylor in-jec-tiv-ity bound; con-vex-ity ra-dius $\OML/cmm/m/it/10.95 r[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 n; K[]; V[]\OT1/cmr/m/n/10.95 ) \OML/cmm/m/it/10.95 > \OT1/cmr/m/n/10.95 0$ \T1/cmr/m/it/10.95 from $\OML/cmm/m/it/10.95 g[]$\T1/cmr/m/it/10.95 -data and $[][] \OMS/cmsy/m/n/10.95 k\OML/cmm/m/it/10.95 g\OMS/cmsy/m/n/10.95 k[]$\T1/cmr/m/it/10.95 ),
  []
 
 
-Overfull \hbox (2.69678pt too wide) detected at line 125
-[][]  \OML/cmm/m/it/10.95 d^^V ^^V S[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 x
-\OT1/cmr/m/n/10.95 ) \OMS/cmsy/m/n/10.95 ^^T \OML/cmm/m/it/10.95 C[] []\OT1/cmr
-/m/n/10.95 (1 + \OMS/cmsy/m/n/10.95 j\OML/cmm/m/it/10.95 E[]\OMS/cmsy/m/n/10.95
- j\OT1/cmr/m/n/10.95 )[] [][] [] \OMS/cmsy/m/n/10.95 ^^T \OML/cmm/m/it/10.95 C 
-[]\OT1/cmr/m/n/10.95 (1 + \OMS/cmsy/m/n/10.95 j\OML/cmm/m/it/10.95 E[]\OMS/cmsy
-/m/n/10.95 j\OT1/cmr/m/n/10.95 )[] \OML/cmm/m/it/10.95 < \OMS/cmsy/m/n/10.95 1 
-\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 N > \OT1/cmr/m/n/10.95 9)\OML/cmm/m/it/
-10.95 ;
+Overfull \hbox (26.44075pt too wide) detected at line 3781
+[][][]\OML/cmm/m/it/10.95 @[]D[]\OT1/cmr/m/n/10.95 (\OMS/cmsy/m/n/10.95 ^^A\OML/cmm/m/it/10.95 ; y\OT1/cmr/m/n/10.95 )\OMS/cmsy/m/n/10.95 j[][][] \OT1/cmr/m/n/10.95 + []\OML/cmm/m/it/10.95 @[]@[]D[]\OT1/cmr/m/n/10.95 (\OMS/cmsy/m/n/10.95 ^^A\OML/cmm/m/it/10.95 ; y\OT1/cmr/m/n/10.95 )\OMS/cmsy/m/n/10.95 j[][][][] ^^T \OML/cmm/m/it/10.95 C[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 g[]; \OT1/cmr/m/n/10.95 ^^F[]\OML/cmm/m/it/10.95 ; K[]\OT1/cmr/m/n/10.95 ) \OMS/cmsy/m/n/10.95 k\OML/cmm/m/it/10.95 g \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 g[]\OMS/cmsy/m/n/10.95 k[]\OML/cmm/m/it/10.95 ;
+ []
+
+[284]
+Overfull \hbox (23.14334pt too wide) in paragraph at lines 3852--3865
+\T1/cmr/m/n/10.95 The two lad-ders de-liver the mixed $\OT1/cmr/m/n/10.95 (1\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 1)$ \T1/cmr/m/n/10.95 co-in-ci-dence value of $\OML/cmm/m/it/10.95 D[]$ \T1/cmr/m/n/10.95 at the Lip-s-chitz rate (Lem. []E2a.69[](iii),
+ []
+
+[285] [286] [287]
+Overfull \hbox (14.29565pt too wide) in paragraph at lines 4137--4137
+[]\T1/cmr/bx/n/12 Clause (iii): the QEI-constant uni-for-mity (a the-o-rem mod-ulo clause (ii),
+ []
+
+[288]
+Overfull \hbox (12.22952pt too wide) in paragraph at lines 4288--4319
+\T1/cmr/m/n/10.95 gether with Thm. []E2a.38[] (A1, with the kernel-lemma com-ple-tion); (A3) is the cas-cade Prop. []E2a.44[],
+ []
+
+[289] [290]
+Overfull \hbox (6.29713pt too wide) in paragraph at lines 4445--4499
+\T1/cmr/m/it/10.95 Open con-tent: \T1/cmr/m/n/10.95 the mixed-jet Lip-s-chitz bound $[][] \OMS/cmsy/m/n/10.95 j\OT1/cmr/m/n/10.95 [\OML/cmm/m/it/10.95 @[]@[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 W[] \OMS/cmsy/m/n/10.95 ^^@ \OML/cmm/m/it/10.95 W[]\OT1/cmr/m/n/10.95 )](\OML/cmm/m/it/10.95 x; x\OT1/cmr/m/n/10.95 )\OMS/cmsy/m/n/10.95 j ^^T \OML/cmm/m/it/10.95 C[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 K\OT1/cmr/m/n/10.95 )\OMS/cmsy/m/n/10.95 k\OML/cmm/m/it/10.95 g \OMS/cmsy/m/n/10.95 ^^@
+ []
+
+[291]) (./appendix_dirac_floor.tex [292]
+Overfull \hbox (14.45552pt too wide) in paragraph at lines 71--81
+\T1/cmr/m/n/10.95 renor-mal-i-sa-tion, [[]]); $\OML/cmm/m/it/10.95 d[][] \OT1/cmr/m/n/10.95 = \OML/cmm/m/it/10.95 dt d[][]$ \T1/cmr/m/n/10.95 and $\OML/cmm/m/it/10.95 F$ \T1/cmr/m/n/10.95 is com-pactly sup-ported, so by Fu-bini $\OMS/cmsy/m/n/10.95 h[]\OT1/cmr/m/n/10.95 [\OML/cmm/m/it/10.95 ttF[]\OT1/cmr/m/n/10.95 ]\OMS/cmsy/m/n/10.95 i[] \OT1/cmr/m/n/10.95 =
+ []
+
+[293]
+Overfull \hbox (2.69678pt too wide) detected at line 126
+[][]  \OML/cmm/m/it/10.95 d^^V ^^V S[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 x\OT1/cmr/m/n/10.95 ) \OMS/cmsy/m/n/10.95 ^^T \OML/cmm/m/it/10.95 C[] []\OT1/cmr/m/n/10.95 (1 + \OMS/cmsy/m/n/10.95 j\OML/cmm/m/it/10.95 E[]\OMS/cmsy/m/n/10.95 j\OT1/cmr/m/n/10.95 )[] [][] [] \OMS/cmsy/m/n/10.95 ^^T \OML/cmm/m/it/10.95 C []\OT1/cmr/m/n/10.95 (1 + \OMS/cmsy/m/n/10.95 j\OML/cmm/m/it/10.95 E[]\OMS/cmsy/m/n/10.95 j\OT1/cmr/m/n/10.95 )[] \OML/cmm/m/it/10.95 < \OMS/cmsy/m/n/10.95 1 \OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 N > \OT1/cmr/m/n/10.95 9)\OML/cmm/m/it/10.95 ;
  []
 
 
-Overfull \hbox (8.3823pt too wide) in paragraph at lines 130--136
-[]\T1/cmr/m/n/10.95 (6) \T1/cmr/m/it/10.95 Sum-ma-tion. \T1/cmr/m/n/10.95 In-te
--grat-ing (3) over $\OT1/cmr/m/n/10.95 (^^F\OML/cmm/m/it/10.95 ; d[]\OT1/cmr/m/
-n/10.95 )$ \T1/cmr/m/n/10.95 and com-bin-ing with (1)--(2) gives $\OMS/cmsy/m/n
-/10.95 h[]\OT1/cmr/m/n/10.95 [\OML/cmm/m/it/10.95 ttF[]\OT1/cmr/m/n/10.95 ]\OMS
-/cmsy/m/n/10.95 i[] ^^U
+Overfull \hbox (8.3823pt too wide) in paragraph at lines 131--137
+[]\T1/cmr/m/n/10.95 (6) \T1/cmr/m/it/10.95 Sum-ma-tion. \T1/cmr/m/n/10.95 In-te-grat-ing (3) over $\OT1/cmr/m/n/10.95 (^^F\OML/cmm/m/it/10.95 ; d[]\OT1/cmr/m/n/10.95 )$ \T1/cmr/m/n/10.95 and com-bin-ing with (1)--(2) gives $\OMS/cmsy/m/n/10.95 h[]\OT1/cmr/m/n/10.95 [\OML/cmm/m/it/10.95 ttF[]\OT1/cmr/m/n/10.95 ]\OMS/cmsy/m/n/10.95 i[] ^^U
  []
 
+[294]
+Overfull \hbox (27.24228pt too wide) detected at line 311
+\OT1/cmr/m/n/10.95 ^^C[] = \OML/cmm/m/it/10.95 c e[] \OT1/cmss/m/n/10.95 P\OT1/cmr/m/n/10.95 (^^C[]\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 ^^C[]\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 ^^C[]\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 ^^C[]\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 ^^C[]\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 ^^C[]\OML/cmm/m/it/10.95 ; d[]\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 ;  ^^T[] \OT1/cmr/m/n/10.95 = \OML/cmm/m/it/10.95 c e[] \OT1/cmss/m/n/10.95 P \OT1/cmr/m/n/10.95 (1 + \OML/cmm/m/it/10.95 ^^T[] \OT1/cmr/m/n/10.95 + \OML/cmm/m/it/10.95 ^^T[]\OT1/cmr/m/n/10.95 (1) + \OML/cmm/m/it/10.95 ^^T[]\OT1/cmr/m/n/10.95 (1) + \OML/cmm/m/it/10.95 ^^T[]\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 :
+ []
 
-Overfull \hbox (5.83192pt too wide) in paragraph at lines 140--156
-\T1/cmr/m/it/10.95 Remark \T1/cmr/m/n/10.95 E2a.2 (im-ports, each at printed st
-rength)\T1/cmr/m/it/10.95 . \T1/cmr/m/n/10.95 (a) The Dawson--Fewster world-lin
-e bound [[]]
+[295] [296]
+Overfull \hbox (14.14557pt too wide) in paragraph at lines 466--483
+\T1/cmr/m/it/10.95 Remark \T1/cmr/m/n/10.95 E2aD.7 (im-ports, each at printed strength)\T1/cmr/m/it/10.95 . \T1/cmr/m/n/10.95 (a) The Dawson--Fewster world-line bound [[]]
  []
 
 ) (./appendix_e0ds_min.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 13.
+(hyperref)                removing `math shift' on input line 14.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 13.
+(hyperref)                removing `math shift' on input line 14.
 
-[284] [285]) (./appendix_e2a_ports.tex [286] (./port_m3.tex [287]
+[297] [298]) (./appendix_e2a_ports.tex [299] (./port_m3.tex [300]
 Overfull \hbox (30.90695pt too wide) in paragraph at lines 155--161
-[]\T1/cmr/m/it/10.95 (rescaled nor-mal form) $\OML/cmm/m/it/10.95 ^^[[]\OT1/cmr
-/m/n/10.95 (\OML/cmm/m/it/10.95 x; x \OT1/cmr/m/n/10.95 + \OML/cmm/m/it/10.95 r
-!\OT1/cmr/m/n/10.95 ) = \OML/cmm/m/it/10.95 r[]S[]\OT1/cmr/m/n/10.95 (\OML/cmm/
-m/it/10.95 x; !; r\OT1/cmr/m/n/10.95 )$\T1/cmr/m/it/10.95 , $\OMS/cmsy/m/n/10.9
-5 j\OML/cmm/m/it/10.95 !\OMS/cmsy/m/n/10.95 j \OT1/cmr/m/n/10.95 = 1$\T1/cmr/m/
-it/10.95 , with $\OML/cmm/m/it/10.95 S[] \OMS/cmsy/m/n/10.95 2 \OML/cmm/m/it/10
-.95 C[]$\T1/cmr/m/it/10.95 , $\OMS/cmsy/m/n/10.95 k\OML/cmm/m/it/10.95 S[]\OMS/
-cmsy/m/n/10.95 k[] ^^T
+[]\T1/cmr/m/it/10.95 (rescaled nor-mal form) $\OML/cmm/m/it/10.95 ^^[[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 x; x \OT1/cmr/m/n/10.95 + \OML/cmm/m/it/10.95 r!\OT1/cmr/m/n/10.95 ) = \OML/cmm/m/it/10.95 r[]S[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 x; !; r\OT1/cmr/m/n/10.95 )$\T1/cmr/m/it/10.95 , $\OMS/cmsy/m/n/10.95 j\OML/cmm/m/it/10.95 !\OMS/cmsy/m/n/10.95 j \OT1/cmr/m/n/10.95 = 1$\T1/cmr/m/it/10.95 , with $\OML/cmm/m/it/10.95 S[] \OMS/cmsy/m/n/10.95 2 \OML/cmm/m/it/10.95 C[]$\T1/cmr/m/it/10.95 , $\OMS/cmsy/m/n/10.95 k\OML/cmm/m/it/10.95 S[]\OMS/cmsy/m/n/10.95 k[] ^^T
  []
 
-[288] [289]
+[301] [302]
 Overfull \hbox (6.1727pt too wide) detected at line 324
-[][][][]\OML/cmm/m/it/10.95 ^^T[] \OT1/cmr/m/n/10.95 := \OML/cmm/m/it/10.95 c[]
-[]\OT1/cmr/m/n/10.95 1 + ^^C[] + \OML/cmm/m/it/10.95 c[][][][]^^R[]\U/msb/m/n/1
-0.95 {[] \OT1/cmr/m/n/10.95 + (\OML/cmm/m/it/10.95 ^^Y \OT1/cmr/m/n/10.95 + 4) 
-+ []\OML/cmm/m/it/10.95 ^^R[] \OT1/cmr/m/n/10.95 + []1 + \OML/cmm/m/it/10.95 c[
-][][]\OT1/cmr/m/n/10.95 1 + ^^C[][][]\OML/cmm/m/it/10.95 ;  \U/msb/m/n/10.95 { 
-\OT1/cmr/m/n/10.95 := [][][]\OML/cmm/m/it/10.95 ;  [] c[]=[][]:
+[][][][]\OML/cmm/m/it/10.95 ^^T[] \OT1/cmr/m/n/10.95 := \OML/cmm/m/it/10.95 c[][]\OT1/cmr/m/n/10.95 1 + ^^C[] + \OML/cmm/m/it/10.95 c[][][][]^^R[]\U/msb/m/n/10.95 {[] \OT1/cmr/m/n/10.95 + (\OML/cmm/m/it/10.95 ^^Y \OT1/cmr/m/n/10.95 + 4) + []\OML/cmm/m/it/10.95 ^^R[] \OT1/cmr/m/n/10.95 + []1 + \OML/cmm/m/it/10.95 c[][][]\OT1/cmr/m/n/10.95 1 + ^^C[][][]\OML/cmm/m/it/10.95 ;  \U/msb/m/n/10.95 { \OT1/cmr/m/n/10.95 := [][][]\OML/cmm/m/it/10.95 ;  [] c[]=[][]:
  []
 
 
 Overfull \hbox (15.94853pt too wide) detected at line 374
-[][][][][][][] [][] \OT1/cmr/m/n/10.95 = [][][] \OMS/cmsy/m/n/10.95 ^^T []\OML/
-cmm/m/it/10.95 ;  [][][] [][] \OT1/cmr/m/n/10.95 = [][] [] + [][][][] \OMS/cmsy
-/m/n/10.95 ^^T \OML/cmm/m/it/10.95 ^^Y \OT1/cmr/m/n/10.95 + 2\OML/cmm/m/it/10.9
-5 ;
+[][][][][][][] [][] \OT1/cmr/m/n/10.95 = [][][] \OMS/cmsy/m/n/10.95 ^^T []\OML/cmm/m/it/10.95 ;  [][][] [][] \OT1/cmr/m/n/10.95 = [][] [] + [][][][] \OMS/cmsy/m/n/10.95 ^^T \OML/cmm/m/it/10.95 ^^Y \OT1/cmr/m/n/10.95 + 2\OML/cmm/m/it/10.95 ;
  []
 
-[290]
+[303]
 Overfull \hbox (9.9365pt too wide) in paragraph at lines 474--484
-\T1/cmr/m/n/10.95 This is the sharper (asym-met-ric) form. Since $\OMS/cmsy/m/n
-/10.95 k\OML/cmm/m/it/10.95 h\OMS/cmsy/m/n/10.95 k[] ^^T k\OML/cmm/m/it/10.95 h
-\OMS/cmsy/m/n/10.95 k[] ^^T \OML/cmm/m/it/10.95 C[]\OMS/cmsy/m/n/10.95 k\OML/cm
-m/m/it/10.95 h\OMS/cmsy/m/n/10.95 k[]$\T1/cmr/m/n/10.95 , $\OMS/cmsy/m/n/10.95 
-k\OML/cmm/m/it/10.95 u\OMS/cmsy/m/n/10.95 k[] ^^T \OML/cmm/m/it/10.95 C[]\OMS/c
-msy/m/n/10.95 k\OML/cmm/m/it/10.95 u\OMS/cmsy/m/n/10.95 k[]$
+\T1/cmr/m/n/10.95 This is the sharper (asym-met-ric) form. Since $\OMS/cmsy/m/n/10.95 k\OML/cmm/m/it/10.95 h\OMS/cmsy/m/n/10.95 k[] ^^T k\OML/cmm/m/it/10.95 h\OMS/cmsy/m/n/10.95 k[] ^^T \OML/cmm/m/it/10.95 C[]\OMS/cmsy/m/n/10.95 k\OML/cmm/m/it/10.95 h\OMS/cmsy/m/n/10.95 k[]$\T1/cmr/m/n/10.95 , $\OMS/cmsy/m/n/10.95 k\OML/cmm/m/it/10.95 u\OMS/cmsy/m/n/10.95 k[] ^^T \OML/cmm/m/it/10.95 C[]\OMS/cmsy/m/n/10.95 k\OML/cmm/m/it/10.95 u\OMS/cmsy/m/n/10.95 k[]$
  []
 
-[291]) (./port_ac.tex
-Overfull \hbox (10.49568pt too wide) in paragraph at lines 43--47
-\T1/cmr/m/n/10.95 de-rives $\OML/cmm/m/it/10.95 W[]$ \T1/cmr/m/n/10.95 from $\O
-ML/cmm/m/it/10.95 C[]$\T1/cmr/m/n/10.95 ). Fix: the wiring or-der above; spec-t
-a-tor sups re-routed at Prop. []E2a.12[](C3).
+[304]) (./port_ac.tex
+Overfull \hbox (16.99594pt too wide) in paragraph at lines 43--47
+\T1/cmr/m/n/10.95 de-rives $\OML/cmm/m/it/10.95 W[]$ \T1/cmr/m/n/10.95 from $\OML/cmm/m/it/10.95 C[]$\T1/cmr/m/n/10.95 ). Fix: the wiring or-der above; spec-ta-tor sups re-routed at Prop. []E2aP.12[](C3).
  []
 
-[292] [293] [294]
-Overfull \hbox (55.98445pt too wide) detected at line 278
-[]\OML/cmm/m/it/10.95 \OT1/cmr/m/n/10.95 ![][][][]\OML/cmm/m/it/10.95 "[] \OT1
-/cmr/m/n/10.95 (\OMS/cmsy/m/n/10.95 j\OML/cmm/m/it/10.95 \OMS/cmsy/m/n/10.95 j
- ^^T \OML/cmm/m/it/10.95 s[]\OT1/cmr/m/n/10.95 1);  ^^C[]\OML/cmm/m/it/10.95 ; 
-\OT1/cmr/m/n/10.95 ^^C[]\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 ^^C[];  \OML/c
-mm/m/it/10.95 C[]\OT1/cmr/m/n/10.95 ;  \OML/cmm/m/it/10.95 d[]\OT1/cmr/m/n/10.9
-5 ;  \OML/cmm/m/it/10.95 Q[]; P[]; T[]\OT1/cmr/m/n/10.95 ;  \OML/cmm/m/it/10.95
- c[]; c[]; c[]; c[]; c[]; c[]\OT1/cmr/m/n/10.95 ;  \OML/cmm/m/it/10.95 m\OT1/cm
-r/m/n/10.95 (\OML/cmm/m/it/10.95 K\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 ; L[]
-[];
+[305]
+Overfull \hbox (27.13596pt too wide) in paragraph at lines 160--242
+\T1/cmr/m/n/10.95 holo-mor-phic ex-ten-sion: on $\OMS/cmsy/m/n/10.95 K[]$ \T1/cmr/m/n/10.95 the Christof-fels $\OT1/cmr/m/n/10.95 ^^@[\OML/cmm/m/it/10.95 g\OT1/cmr/m/n/10.95 ]$ \T1/cmr/m/n/10.95 are holo-mor-phic with $\OML/cmm/m/it/10.95 M[] \OT1/cmr/m/n/10.95 := [][] \OMS/cmsy/m/n/10.95 k\OT1/cmr/m/n/10.95 ^^@[\OML/cmm/m/it/10.95 g\OT1/cmr/m/n/10.95 ]\OMS/cmsy/m/n/10.95 k[] \OML/cmm/m/it/10.95 <
  []
 
-[295]
-Overfull \hbox (1.3393pt too wide) in paragraph at lines 376--384
-\T1/cmr/m/it/10.95 grade: Lem. an17:Nc-corrected, PLAU-SI-BLE, never at THE-O-R
-EM (l.3289--3293). Where
- []
-
-[296]) (./port_d0.tex [297] [298]
-Overfull \hbox (34.0436pt too wide) in paragraph at lines 204--213
-\T1/cmr/bx/n/10.95 Lemma E2a.18 \T1/cmr/m/n/10.95 (the seed ex-act fi-nite part
- is $\OML/cmm/m/it/10.95 C[]$ \T1/cmr/m/n/10.95 on the shrunken col-lar)\T1/cmr
-/bx/n/10.95 . \T1/cmr/m/it/10.95 Let $\OML/cmm/m/it/10.95 ^^N[] \OT1/cmr/m/n/10
-.95 := [](\OML/cmm/m/it/10.95 ^^N[]; ^^N[]=\OT1/cmr/m/n/10.95 2\OML/cmm/m/it/10
-.95 ; ^^N[]\OT1/cmr/m/n/10.95 )$\T1/cmr/m/it/10.95 ,
- []
-
-[299]
-Overfull \hbox (1.94263pt too wide) detected at line 268
-\OML/cmm/m/it/10.95 W[]\OMS/cmsy/m/n/10.95 j[] 2 \OML/cmm/m/it/10.95 H[]\OT1/cm
-r/m/n/10.95 (^^F[])\OML/cmm/m/it/10.95 ;  @[]W[]\OMS/cmsy/m/n/10.95 j[] 2 \OML/
-cmm/m/it/10.95 H[];  @[]W[]\OMS/cmsy/m/n/10.95 j[] 2 \OML/cmm/m/it/10.95 H[];  
-@[]@[]W[]\OMS/cmsy/m/n/10.95 j[] 2 \OML/cmm/m/it/10.95 H[];
+[306]
+Overfull \hbox (55.98445pt too wide) detected at line 272
+[]\OML/cmm/m/it/10.95 \OT1/cmr/m/n/10.95 ![][][][]\OML/cmm/m/it/10.95 "[] \OT1/cmr/m/n/10.95 (\OMS/cmsy/m/n/10.95 j\OML/cmm/m/it/10.95 \OMS/cmsy/m/n/10.95 j ^^T \OML/cmm/m/it/10.95 s[]\OT1/cmr/m/n/10.95 1);  ^^C[]\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 ^^C[]\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 ^^C[];  \OML/cmm/m/it/10.95 C[]\OT1/cmr/m/n/10.95 ;  \OML/cmm/m/it/10.95 d[]\OT1/cmr/m/n/10.95 ;  \OML/cmm/m/it/10.95 Q[]; P[]; T[]\OT1/cmr/m/n/10.95 ;  \OML/cmm/m/it/10.95 c[]; c[]; c[]; c[]; c[]; c[]\OT1/cmr/m/n/10.95 ;  \OML/cmm/m/it/10.95 m\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 K\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 ; L[][];
  []
 
 
-Overfull \hbox (11.85803pt too wide) in paragraph at lines 268--295
-\T1/cmr/m/n/10.95 [Correction gate on this dis-play: it in-her-its the two prin
-ted er-rors cor-rected at Lem. an17:transverse-
+Overfull \hbox (9.42392pt too wide) in paragraph at lines 272--280
+\OML/cmm/m/it/10.95 Q[]; P[]; T[]$\T1/cmr/m/it/10.95 ; the lad-der con-stant dis-play and its prove-nance note, for $\OML/cmm/m/it/10.95 c[]; c[]; c[]; c[]; c[]; c[]$\T1/cmr/m/it/10.95 ;
  []
 
-[300])) (./ds2_restriction.tex
+[307] [308]
+Overfull \hbox (24.76271pt too wide) in paragraph at lines 399--409
+\T1/cmr/m/it/10.95 (The-o-rem []E2aP.14[], mod-ulo its list). Let $\OML/cmm/m/it/10.95 W[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 K\OT1/cmr/m/n/10.95 ) := [][] [][][][\OML/cmm/m/it/10.95 @[]@[]W[]\OT1/cmr/m/n/10.95 ](\OML/cmm/m/it/10.95 x; x\OT1/cmr/m/n/10.95 )[]$
+ []
+
+) (./port_d0.tex
+Overfull \hbox (41.32355pt too wide) in paragraph at lines 27--45
+[][][] \OML/cmm/m/it/10.95 v[]^^[[][] []\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 ^^[=`[]\OT1/cmr/m/n/10.95 )[]$ \T1/cmr/m/n/10.95 chart-wise on the convex-normal cover, one \T1/cmr/m/it/10.95 global \T1/cmr/m/n/10.95 length scale $\OML/cmm/m/it/10.95 `$ \T1/cmr/m/n/10.95 (Lem. []E2a.75[](ii)),
+ []
+
+[309] [310] [311]
+Overfull \hbox (41.54494pt too wide) in paragraph at lines 204--213
+\T1/cmr/bx/n/10.95 Lemma E2aP.18 \T1/cmr/m/n/10.95 (the seed ex-act fi-nite part is $\OML/cmm/m/it/10.95 C[]$ \T1/cmr/m/n/10.95 on the shrunken col-lar)\T1/cmr/bx/n/10.95 . \T1/cmr/m/it/10.95 Let $\OML/cmm/m/it/10.95 ^^N[] \OT1/cmr/m/n/10.95 := [](\OML/cmm/m/it/10.95 ^^N[]; ^^N[]=\OT1/cmr/m/n/10.95 2\OML/cmm/m/it/10.95 ; ^^N[]\OT1/cmr/m/n/10.95 )$\T1/cmr/m/it/10.95 ,
+ []
+
+
+Overfull \hbox (1.94263pt too wide) detected at line 267
+\OML/cmm/m/it/10.95 W[]\OMS/cmsy/m/n/10.95 j[] 2 \OML/cmm/m/it/10.95 H[]\OT1/cmr/m/n/10.95 (^^F[])\OML/cmm/m/it/10.95 ;  @[]W[]\OMS/cmsy/m/n/10.95 j[] 2 \OML/cmm/m/it/10.95 H[];  @[]W[]\OMS/cmsy/m/n/10.95 j[] 2 \OML/cmm/m/it/10.95 H[];  @[]@[]W[]\OMS/cmsy/m/n/10.95 j[] 2 \OML/cmm/m/it/10.95 H[];
+ []
+
+[312] [313])) (./ds2_restriction.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 22.
+(hyperref)                removing `math shift' on input line 23.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 22.
+(hyperref)                removing `math shift' on input line 23.
 
-[301]
-Overfull \hbox (13.35545pt too wide) in paragraph at lines 81--85
-[]\T1/cmr/m/it/10.95 The wedge boost (the $\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10
-.95 X[]; X[]\OT1/cmr/m/n/10.95 )$ \T1/cmr/m/it/10.95 boost of $[]\OT1/cmr/m/n/1
-0.95 (1\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 4)$\T1/cmr/m/it/10.95 , the mod
--u-lar/KMS flow of $\OML/cmm/m/it/10.95 ![]$ \T1/cmr/m/it/10.95 on $\OMS/cmsy/m
-/n/10.95 A\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 W\OT1/cmr/m/n/10.95 )$ \T1/cm
-r/m/it/10.95 [[]])
+[314]
+Overfull \hbox (13.35545pt too wide) in paragraph at lines 82--86
+[]\T1/cmr/m/it/10.95 The wedge boost (the $\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 X[]; X[]\OT1/cmr/m/n/10.95 )$ \T1/cmr/m/it/10.95 boost of $[]\OT1/cmr/m/n/10.95 (1\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 4)$\T1/cmr/m/it/10.95 , the mod-u-lar/KMS flow of $\OML/cmm/m/it/10.95 ![]$ \T1/cmr/m/it/10.95 on $\OMS/cmsy/m/n/10.95 A\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 W\OT1/cmr/m/n/10.95 )$ \T1/cmr/m/it/10.95 [[]])
  []
 
-[302] [303]
-Overfull \hbox (22.67131pt too wide) in paragraph at lines 245--254
-[]$\OML/cmm/m/it/10.95  \OMS/cmsy/m/n/10.95 j[]$ \T1/cmr/m/it/10.95 is smooth w
-ith $\OMS/cmsy/m/n/10.95 j\OML/cmm/m/it/10.95  \OT1/cmr/m/n/10.95 (\OML/cmm/m/i
-t/10.95 v; []\OT1/cmr/m/n/10.95 )\OMS/cmsy/m/n/10.95 j ^^T \OML/cmm/m/it/10.95 
-C\OT1/cmr/m/n/10.95 (1 + \OMS/cmsy/m/n/10.95 j\OML/cmm/m/it/10.95 v\OMS/cmsy/m/
-n/10.95 j\OT1/cmr/m/n/10.95 )[]$ \T1/cmr/m/it/10.95 and $\OMS/cmsy/m/n/10.95 j\
-OML/cmm/m/it/10.95 @[] \OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 v; []\OT1/cmr/m/
-n/10.95 )\OMS/cmsy/m/n/10.95 j ^^T \OML/cmm/m/it/10.95 C\OT1/cmr/m/n/10.95 (1 +
- \OMS/cmsy/m/n/10.95 j\OML/cmm/m/it/10.95 v\OMS/cmsy/m/n/10.95 j\OT1/cmr/m/n/10
-.95 )[]$\T1/cmr/m/it/10.95 :
+[315]
+Overfull \hbox (22.67131pt too wide) in paragraph at lines 246--255
+[]$\OML/cmm/m/it/10.95  \OMS/cmsy/m/n/10.95 j[]$ \T1/cmr/m/it/10.95 is smooth with $\OMS/cmsy/m/n/10.95 j\OML/cmm/m/it/10.95  \OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 v; []\OT1/cmr/m/n/10.95 )\OMS/cmsy/m/n/10.95 j ^^T \OML/cmm/m/it/10.95 C\OT1/cmr/m/n/10.95 (1 + \OMS/cmsy/m/n/10.95 j\OML/cmm/m/it/10.95 v\OMS/cmsy/m/n/10.95 j\OT1/cmr/m/n/10.95 )[]$ \T1/cmr/m/it/10.95 and $\OMS/cmsy/m/n/10.95 j\OML/cmm/m/it/10.95 @[] \OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 v; []\OT1/cmr/m/n/10.95 )\OMS/cmsy/m/n/10.95 j ^^T \OML/cmm/m/it/10.95 C\OT1/cmr/m/n/10.95 (1 + \OMS/cmsy/m/n/10.95 j\OML/cmm/m/it/10.95 v\OMS/cmsy/m/n/10.95 j\OT1/cmr/m/n/10.95 )[]$\T1/cmr/m/it/10.95 :
  []
 
 
-Overfull \hbox (19.42445pt too wide) in paragraph at lines 254--266
-\T1/cmr/m/n/10.95 con-verges on ev-ery com-plete gen-er-a-tor, for ev-ery $\OML
-/cmm/m/it/10.95 m[] > \OT1/cmr/m/n/10.95 0$\T1/cmr/m/it/10.95 : the in-te-grand
- is $\OML/cmm/m/it/10.95 O\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 v[]\OT1/cmr/m
-/n/10.95 )$
+Overfull \hbox (19.42445pt too wide) in paragraph at lines 255--267
+\T1/cmr/m/n/10.95 con-verges on ev-ery com-plete gen-er-a-tor, for ev-ery $\OML/cmm/m/it/10.95 m[] > \OT1/cmr/m/n/10.95 0$\T1/cmr/m/it/10.95 : the in-te-grand is $\OML/cmm/m/it/10.95 O\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 v[]\OT1/cmr/m/n/10.95 )$
+ []
+
+[316]
+Overfull \hbox (16.80959pt too wide) in paragraph at lines 267--272
+\T1/cmr/m/it/10.95 (all principal-series masses), con-sis-tently with the bound-ary space $\OML/cmm/m/it/10.95 S\OT1/cmr/m/n/10.95 (\OMS/cmsy/m/n/10.95 =[]\OT1/cmr/m/n/10.95 )$ \T1/cmr/m/it/10.95 of [[]], Thm. 4.4(a). 
  []
 
 
-Overfull \hbox (16.80959pt too wide) in paragraph at lines 266--271
-\T1/cmr/m/it/10.95 (all principal-series masses), con-sis-tently with the bound
--ary space $\OML/cmm/m/it/10.95 S\OT1/cmr/m/n/10.95 (\OMS/cmsy/m/n/10.95 =[]\OT
-1/cmr/m/n/10.95 )$ \T1/cmr/m/it/10.95 of [[]], Thm. 4.4(a). 
+Overfull \hbox (15.52182pt too wide) in paragraph at lines 329--337
+[]\T1/cmr/m/it/10.95 the vac-uum mod-u-lar Hamil-to-nian of the cut al-ge-bra $\OMS/cmsy/m/n/10.95 A[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 V\OT1/cmr/m/n/10.95 )$ \T1/cmr/m/it/10.95 is $\OML/cmm/m/it/10.95 K[] \OT1/cmr/m/n/10.95 = 2\OML/cmm/m/it/10.95 ^^Y [][]  [] d[]\OT1/cmr/m/n/10.95 
+ [][]  \OML/cmm/m/it/10.95 dv \OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 v \OMS/cmsy/m/n/10.95 ^^@
  []
 
-[304]
-Overfull \hbox (15.52182pt too wide) in paragraph at lines 328--336
-[]\T1/cmr/m/it/10.95 the vac-uum mod-u-lar Hamil-to-nian of the cut al-ge-bra $
-\OMS/cmsy/m/n/10.95 A[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 V\OT1/cmr/m/n/10
-.95 )$ \T1/cmr/m/it/10.95 is $\OML/cmm/m/it/10.95 K[] \OT1/cmr/m/n/10.95 = 2\OM
-L/cmm/m/it/10.95 ^^Y [][]  [] d[]\OT1/cmr/m/n/10.95 
- [][]  \OML/cmm/m/it/10.95 dv \OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 v \OMS/cm
-sy/m/n/10.95 ^^@
+[317] [318]) (./ds2_pairing.tex [319]
+Overfull \hbox (7.78468pt too wide) in paragraph at lines 205--207
+\T1/cmr/bx/n/10.95 Lemma dS2.3 \T1/cmr/m/n/10.95 (weighted tail cal-cu-lus: the en-tire con-sump-tion of the finite--first--mo-ment premise)\T1/cmr/bx/n/10.95 .
  []
 
-[305]) (./ds2_pairing.tex [306] [307]
-Overfull \hbox (8.17596pt too wide) in paragraph at lines 204--206
-\T1/cmr/bx/n/10.95 Lemma E2a.3 \T1/cmr/m/n/10.95 (weighted tail cal-cu-lus: the
- en-tire con-sump-tion of the finite--first--mo-ment premise)\T1/cmr/bx/n/10.95
- .
+[320] [321] [322]
+Overfull \hbox (30.8184pt too wide) in paragraph at lines 479--485
+\T1/cmr/m/it/10.95 and un-der $\OT1/cmr/m/n/10.95 ([]) + ([]) + ([][]) + ([][])$ \T1/cmr/m/it/10.95 --- which also give ex-is-tence of $\OML/cmm/m/it/10.95 ^^NS[] \OT1/cmr/m/n/10.95 := [][] \OML/cmm/m/it/10.95 ^^NS[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 V \OMS/cmsy/m/n/10.95 ^^Q
  []
 
-[308] [309] [310]
-Overfull \hbox (30.8184pt too wide) in paragraph at lines 478--484
-\T1/cmr/m/it/10.95 and un-der $\OT1/cmr/m/n/10.95 ([]) + ([]) + ([][]) + ([][])
-$ \T1/cmr/m/it/10.95 --- which also give ex-is-tence of $\OML/cmm/m/it/10.95 ^^
-NS[] \OT1/cmr/m/n/10.95 := [][] \OML/cmm/m/it/10.95 ^^NS[]\OT1/cmr/m/n/10.95 (\
-OML/cmm/m/it/10.95 V \OMS/cmsy/m/n/10.95 ^^Q
- []
-
-[311]
-Overfull \hbox (27.82132pt too wide) in paragraph at lines 599--641
-[]\T1/cmr/m/n/10.95 Geometric side: by the ex-act cut-area for-mula (Lem. []E2a
-.1[](iv)), $\OML/cmm/m/it/10.95 ^^NA\OT1/cmr/m/n/10.95 [\OML/cmm/m/it/10.95 V[]
-\OT1/cmr/m/n/10.95 ] = [] \OML/cmm/m/it/10.95 d[]\OT1/cmr/m/n/10.95 
- \OML/cmm/m/it/10.95 ^^N[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 V[]\OT1/cmr/m
-/n/10.95 (
+[323]
+Overfull \hbox (27.0672pt too wide) in paragraph at lines 600--642
+[]\T1/cmr/m/n/10.95 Geometric side: by the ex-act cut-area for-mula (Lem. []dS2.1[](iv)), $\OML/cmm/m/it/10.95 ^^NA\OT1/cmr/m/n/10.95 [\OML/cmm/m/it/10.95 V[]\OT1/cmr/m/n/10.95 ] = [] \OML/cmm/m/it/10.95 d[]\OT1/cmr/m/n/10.95 
+ \OML/cmm/m/it/10.95 ^^N[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 V[]\OT1/cmr/m/n/10.95 (
 )\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 
 )$\T1/cmr/m/n/10.95 ,
  []
 
-[312])
-Underfull \hbox (badness 1205) in paragraph at lines 23417--23422
-[]\T1/cmr/m/n/10.95 R. Silva, Y. Guryanova, N. Brun-ner, N. Lin-den, A. J. Shor
-t, S. Popescu, \T1/cmr/m/it/10.95 Pre-
- []
-
-[313]
-Underfull \hbox (badness 5817) in paragraph at lines 23466--23469
-[]\T1/cmr/m/n/10.95 S. Hol-lands, R. M. Wald, \T1/cmr/m/it/10.95 Sta-bil-ity of
- black holes and black branes\T1/cmr/m/n/10.95 , Com-
+[324]) [325]
+Underfull \hbox (badness 1205) in paragraph at lines 24060--24065
+[]\T1/cmr/m/n/10.95 R. Silva, Y. Guryanova, N. Brun-ner, N. Lin-den, A. J. Short, S. Popescu, \T1/cmr/m/it/10.95 Pre-
  []
 
 
-Underfull \hbox (badness 1796) in paragraph at lines 23498--23501
-[]\T1/cmr/m/n/10.95 E. Pois-son, \T1/cmr/m/it/10.95 A re-for-mu-la-tion of the 
-Barrabès--Israel null-shell for-mal-ism\T1/cmr/m/n/10.95 , arXiv:gr-
+Underfull \hbox (badness 5817) in paragraph at lines 24109--24112
+[]\T1/cmr/m/n/10.95 S. Hol-lands, R. M. Wald, \T1/cmr/m/it/10.95 Sta-bil-ity of black holes and black branes\T1/cmr/m/n/10.95 , Com-
  []
 
-[314]
-Underfull \hbox (badness 1546) in paragraph at lines 23593--23596
-[]\T1/cmr/m/n/10.95 T. Am-ru-tam, Y. Jiang, \T1/cmr/m/it/10.95 On in-vari-ant v
-on Neu-mann sub-al-ge-bras rigid-ity prop-erty\T1/cmr/m/n/10.95 ,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 23602--23605
-[]\T1/cmr/m/n/10.95 T. Ma-suda, R. Tomatsu, \T1/cmr/m/it/10.95 Rohlin flows on 
-von Neu-mann al-ge-bras\T1/cmr/m/n/10.95 ,
- []
-
-[315]
-Underfull \hbox (badness 7221) in paragraph at lines 23648--23651
-[]\T1/cmr/m/n/10.95 T. Ja-cob-son, \T1/cmr/m/it/10.95 Ther-mo-dy-nam-ics of spa
-ce-time: the Ein-stein equa-tion of state\T1/cmr/m/n/10.95 ,
- []
-
-[316]
-Underfull \hbox (badness 1412) in paragraph at lines 23753--23756
-[]\T1/cmr/m/n/10.95 F. Calderón, \T1/cmr/m/it/10.95 The causal ax-ioms of al-ge
--braic quan-tum field the-ory: A di-ag-nos-tic\T1/cmr/m/n/10.95 ,
- []
-
-[317]
-Underfull \hbox (badness 5970) in paragraph at lines 23808--23811
-[]\T1/cmr/m/n/10.95 S. Le-ichenauer, A. Levine, A. Shahbazi-Moghaddam, \T1/cmr/
-m/it/10.95 En-ergy is en-tan-gle-ment\T1/cmr/m/n/10.95 ,
- []
-
-
-Underfull \hbox (badness 1675) in paragraph at lines 23882--23885
-[]\T1/cmr/m/n/10.95 A. Svesko, \T1/cmr/m/it/10.95 Equi-lib-rium to Ein-stein: e
-n-tan-gle-ment, ther-mo-dy-nam-ics, and grav-ity\T1/cmr/m/n/10.95 ,
- []
-
-[318]
-Underfull \hbox (badness 10000) in paragraph at lines 23923--23926
-[]\T1/cmr/m/n/10.95 M. Van Raams-donk, \T1/cmr/m/it/10.95 Build-ing up space-ti
-me with quan-tum en-tan-gle-ment\T1/cmr/m/n/10.95 ,
- []
-
-
-Underfull \hbox (badness 1383) in paragraph at lines 23933--23939
-\T1/cmr/m/it/10.95 co-her-ence\T1/cmr/m/n/10.95 , arXiv:2205.06279; and \T1/cmr
-/m/it/10.95 Killing hori-zons de-co-here quan-tum su-per-po-si-tions\T1/cmr/m/n
-/10.95 ,
- []
-
-[319] [320]
-Underfull \hbox (badness 4467) in paragraph at lines 24089--24092
-[]\T1/cmr/m/n/10.95 J. Xu, \T1/cmr/m/it/10.95 Von Neu-mann al-ge-bras in double
--scaled SYK\T1/cmr/m/n/10.95 , JHEP \T1/cmr/bx/n/10.95 03 \T1/cmr/m/n/10.95 (20
-26) 016,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 24097--24100
-[]\T1/cmr/m/n/10.95 M. Berkooz, O. Mam-roud, \T1/cmr/m/it/10.95 A cor-dial in-t
-ro-duc-tion to dou-ble scaled SYK\T1/cmr/m/n/10.95 ,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 24125--24128
-[]\T1/cmr/m/n/10.95 N. Kaloper, A. Padilla, \T1/cmr/m/it/10.95 Se-ques-ter-ing 
-the Stan-dard Model vac-uum en-ergy\T1/cmr/m/n/10.95 ,
- []
-
-[321]
-Underfull \hbox (badness 1242) in paragraph at lines 24204--24208
-\T1/cmr/m/it/10.95 tum tra-jec-to-ries be-yond non-demolition mea-sure-ments\T1
-/cmr/m/n/10.95 , Ann. Henri Poincaré (2025),
- []
-
-[322]
-Underfull \hbox (badness 1199) in paragraph at lines 24303--24306
-[]\T1/cmr/m/n/10.95 R. Cor-rea da Silva, \T1/cmr/m/it/10.95 Per-tur-ba-tions of
- KMS states and non-com-mu-ta-tive $\OML/cmm/m/it/10.95 L[]$\T1/cmr/m/it/10.95 
--spaces\T1/cmr/m/n/10.95 ,
- []
-
-
-Underfull \hbox (badness 1953) in paragraph at lines 24307--24312
-[]\T1/cmr/m/n/10.95 T. Faulkner, S. Hol-lands, \T1/cmr/m/it/10.95 Ap-prox-i-mat
-e re-cov-er-abil-ity and rel-a-tive en-tropy II: 2-
- []
-
-
-Underfull \hbox (badness 6220) in paragraph at lines 24331--24335
-[]\T1/cmr/m/n/10.95 H. Sahlmann, R. Verch, \T1/cmr/m/it/10.95 Pas-siv-ity and m
-i-crolo-cal spec-trum con-di-tion\T1/cmr/m/n/10.95 , Com-
- []
-
-[323]
-Underfull \hbox (badness 1418) in paragraph at lines 24359--24363
-[]\T1/cmr/m/n/10.95 A. Chialas-tri, K. Sanders, \T1/cmr/m/it/10.95 Quasi-equiva
-lence of Gaus-sian states and en-ergy es-ti-
- []
-
-
-Underfull \hbox (badness 2269) in paragraph at lines 24368--24371
-[]\T1/cmr/m/n/10.95 C. J. Few-ster, T. A. Ro-man, \T1/cmr/m/it/10.95 Null en-er
-gy con-di-tions in quan-tum field the-ory\T1/cmr/m/n/10.95 ,
- []
-
-[324]
-Underfull \hbox (badness 10000) in paragraph at lines 24491--24495
-[]\T1/cmr/m/n/10.95 F. Cey-han, T. Faulkner, \T1/cmr/m/it/10.95 Re-cov-er-ing t
-he QNEC from the ANEC\T1/cmr/m/n/10.95 , Com-
- []
-
-[325] [326]
-Underfull \hbox (badness 3503) in paragraph at lines 24623--24626
-[]\T1/cmr/m/n/10.95 M. Ro-tondo, \T1/cmr/m/it/10.95 A Wheeler--DeWitt equa-tion
- with time\T1/cmr/m/n/10.95 , Uni-verse \T1/cmr/bx/n/10.95 8\T1/cmr/m/n/10.95 ,
- 580 (2022),
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 24637--24641
-[]\T1/cmr/m/n/10.95 S. Hol-lands, \T1/cmr/m/it/10.95 Renor-mal-ized quan-tum Ya
-ng--Mills fields in curved space-time\T1/cmr/m/n/10.95 ,
- []
-
-
-Underfull \hbox (badness 1917) in paragraph at lines 24679--24682
-[]\T1/cmr/m/n/10.95 F. La Pi-ana, G. Morsella, \T1/cmr/m/it/10.95 The fermionic
- mass-less mod-u-lar Hamil-to-nian\T1/cmr/m/n/10.95 , Com-
+[326]
+Underfull \hbox (badness 1796) in paragraph at lines 24145--24148
+[]\T1/cmr/m/n/10.95 E. Pois-son, \T1/cmr/m/it/10.95 A re-for-mu-la-tion of the Barrabès--Israel null-shell for-mal-ism\T1/cmr/m/n/10.95 , arXiv:gr-
  []
 
 [327]
-Underfull \hbox (badness 1242) in paragraph at lines 24755--24758
-[]\T1/cmr/m/n/10.95 A. Kent, \T1/cmr/m/it/10.95 Non-lin-ear-ity with-out su-per
--lu-mi-nal-ity\T1/cmr/m/n/10.95 , Phys. Rev. A \T1/cmr/bx/n/10.95 72\T1/cmr/m/n
-/10.95 , 012108 (2005),
+Underfull \hbox (badness 1546) in paragraph at lines 24240--24243
+[]\T1/cmr/m/n/10.95 T. Am-ru-tam, Y. Jiang, \T1/cmr/m/it/10.95 On in-vari-ant von Neu-mann sub-al-ge-bras rigid-ity prop-erty\T1/cmr/m/n/10.95 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 24249--24252
+[]\T1/cmr/m/n/10.95 T. Ma-suda, R. Tomatsu, \T1/cmr/m/it/10.95 Rohlin flows on von Neu-mann al-ge-bras\T1/cmr/m/n/10.95 ,
+ []
+
+
+Underfull \hbox (badness 7221) in paragraph at lines 24295--24298
+[]\T1/cmr/m/n/10.95 T. Ja-cob-son, \T1/cmr/m/it/10.95 Ther-mo-dy-nam-ics of space-time: the Ein-stein equa-tion of state\T1/cmr/m/n/10.95 ,
  []
 
 [328]
-Underfull \hbox (badness 10000) in paragraph at lines 24856--24859
-[]\T1/cmr/m/n/10.95 K. Sanders, \T1/cmr/m/it/10.95 On the Reeh--Schlieder prop-
-erty in curved space-time\T1/cmr/m/n/10.95 , Com-
+Underfull \hbox (badness 1412) in paragraph at lines 24400--24403
+[]\T1/cmr/m/n/10.95 F. Calderón, \T1/cmr/m/it/10.95 The causal ax-ioms of al-ge-braic quan-tum field the-ory: A di-ag-nos-tic\T1/cmr/m/n/10.95 ,
+ []
+
+[329]
+Underfull \hbox (badness 5970) in paragraph at lines 24455--24458
+[]\T1/cmr/m/n/10.95 S. Le-ichenauer, A. Levine, A. Shahbazi-Moghaddam, \T1/cmr/m/it/10.95 En-ergy is en-tan-gle-ment\T1/cmr/m/n/10.95 ,
+ []
+
+[330]
+Underfull \hbox (badness 1675) in paragraph at lines 24529--24532
+[]\T1/cmr/m/n/10.95 A. Svesko, \T1/cmr/m/it/10.95 Equi-lib-rium to Ein-stein: en-tan-gle-ment, ther-mo-dy-nam-ics, and grav-ity\T1/cmr/m/n/10.95 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 24875--24879
-[]\T1/cmr/m/n/10.95 J. Pye, \T1/cmr/m/it/10.95 Co-vari-ant ban-dlim-i-ta-tion f
-rom gen-er-al-ized un-cer-tainty prin-ci-ples\T1/cmr/m/n/10.95 ,
- []
-
-[329] [330]
-Underfull \hbox (badness 1242) in paragraph at lines 25016--25019
-[]\T1/cmr/m/n/10.95 Y. K. Yazdi et al., \T1/cmr/m/it/10.95 Prin-ci-ples for a d
-is-tin-guished global vac-uum on causal sets\T1/cmr/m/n/10.95 ,
+Underfull \hbox (badness 10000) in paragraph at lines 24570--24573
+[]\T1/cmr/m/n/10.95 M. Van Raams-donk, \T1/cmr/m/it/10.95 Build-ing up space-time with quan-tum en-tan-gle-ment\T1/cmr/m/n/10.95 ,
  []
 
 
-Underfull \hbox (badness 1107) in paragraph at lines 25045--25049
-[]\T1/cmr/m/n/10.95 V. Vasileiou et al., \T1/cmr/m/it/10.95 Con-straints on Lor
-entz in-vari-ance vi-o-la-tion from Fermi-Large
+Underfull \hbox (badness 1383) in paragraph at lines 24580--24586
+\T1/cmr/m/it/10.95 co-her-ence\T1/cmr/m/n/10.95 , arXiv:2205.06279; and \T1/cmr/m/it/10.95 Killing hori-zons de-co-here quan-tum su-per-po-si-tions\T1/cmr/m/n/10.95 ,
  []
 
-[331]
-Underfull \hbox (badness 10000) in paragraph at lines 25135--25138
-[]\T1/cmr/m/n/10.95 F. Hi-roshima, N. Teran-ishi, \T1/cmr/m/it/10.95 Self-adjoi
-ntness of un-bounded time op-er-a-tors\T1/cmr/m/n/10.95 ,
+[331] [332]
+Underfull \hbox (badness 4467) in paragraph at lines 24736--24739
+[]\T1/cmr/m/n/10.95 J. Xu, \T1/cmr/m/it/10.95 Von Neu-mann al-ge-bras in double-scaled SYK\T1/cmr/m/n/10.95 , JHEP \T1/cmr/bx/n/10.95 03 \T1/cmr/m/n/10.95 (2026) 016,
  []
 
-[332]
-Underfull \hbox (badness 10000) in paragraph at lines 25225--25228
-[]\T1/cmr/m/n/10.95 G. Lind-blad, \T1/cmr/m/it/10.95 On the gen-er-a-tors of qu
-an-tum dy-nam-i-cal semi-groups\T1/cmr/m/n/10.95 , Com-
+
+Underfull \hbox (badness 10000) in paragraph at lines 24744--24747
+[]\T1/cmr/m/n/10.95 M. Berkooz, O. Mam-roud, \T1/cmr/m/it/10.95 A cor-dial in-tro-duc-tion to dou-ble scaled SYK\T1/cmr/m/n/10.95 ,
  []
 
-[333] [334] [335] (./unification.aux)
+[333]
+Underfull \hbox (badness 10000) in paragraph at lines 24772--24775
+[]\T1/cmr/m/n/10.95 N. Kaloper, A. Padilla, \T1/cmr/m/it/10.95 Se-ques-ter-ing the Stan-dard Model vac-uum en-ergy\T1/cmr/m/n/10.95 ,
+ []
+
+
+Underfull \hbox (badness 1242) in paragraph at lines 24851--24855
+\T1/cmr/m/it/10.95 tum tra-jec-to-ries be-yond non-demolition mea-sure-ments\T1/cmr/m/n/10.95 , Ann. Henri Poincaré (2025),
+ []
+
+[334] [335]
+Underfull \hbox (badness 1199) in paragraph at lines 24950--24953
+[]\T1/cmr/m/n/10.95 R. Cor-rea da Silva, \T1/cmr/m/it/10.95 Per-tur-ba-tions of KMS states and non-com-mu-ta-tive $\OML/cmm/m/it/10.95 L[]$\T1/cmr/m/it/10.95 -spaces\T1/cmr/m/n/10.95 ,
+ []
+
+
+Underfull \hbox (badness 1953) in paragraph at lines 24954--24959
+[]\T1/cmr/m/n/10.95 T. Faulkner, S. Hol-lands, \T1/cmr/m/it/10.95 Ap-prox-i-mate re-cov-er-abil-ity and rel-a-tive en-tropy II: 2-
+ []
+
+
+Underfull \hbox (badness 6220) in paragraph at lines 24978--24982
+[]\T1/cmr/m/n/10.95 H. Sahlmann, R. Verch, \T1/cmr/m/it/10.95 Pas-siv-ity and mi-crolo-cal spec-trum con-di-tion\T1/cmr/m/n/10.95 , Com-
+ []
+
+
+Underfull \hbox (badness 1418) in paragraph at lines 25006--25010
+[]\T1/cmr/m/n/10.95 A. Chialas-tri, K. Sanders, \T1/cmr/m/it/10.95 Quasi-equivalence of Gaus-sian states and en-ergy es-ti-
+ []
+
+
+Underfull \hbox (badness 2269) in paragraph at lines 25015--25018
+[]\T1/cmr/m/n/10.95 C. J. Few-ster, T. A. Ro-man, \T1/cmr/m/it/10.95 Null en-ergy con-di-tions in quan-tum field the-ory\T1/cmr/m/n/10.95 ,
+ []
+
+[336] [337]
+Underfull \hbox (badness 10000) in paragraph at lines 25138--25142
+[]\T1/cmr/m/n/10.95 F. Cey-han, T. Faulkner, \T1/cmr/m/it/10.95 Re-cov-er-ing the QNEC from the ANEC\T1/cmr/m/n/10.95 , Com-
+ []
+
+[338]
+Underfull \hbox (badness 3503) in paragraph at lines 25270--25273
+[]\T1/cmr/m/n/10.95 M. Ro-tondo, \T1/cmr/m/it/10.95 A Wheeler--DeWitt equa-tion with time\T1/cmr/m/n/10.95 , Uni-verse \T1/cmr/bx/n/10.95 8\T1/cmr/m/n/10.95 , 580 (2022),
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25284--25288
+[]\T1/cmr/m/n/10.95 S. Hol-lands, \T1/cmr/m/it/10.95 Renor-mal-ized quan-tum Yang--Mills fields in curved space-time\T1/cmr/m/n/10.95 ,
+ []
+
+[339]
+Underfull \hbox (badness 1917) in paragraph at lines 25326--25329
+[]\T1/cmr/m/n/10.95 F. La Pi-ana, G. Morsella, \T1/cmr/m/it/10.95 The fermionic mass-less mod-u-lar Hamil-to-nian\T1/cmr/m/n/10.95 , Com-
+ []
+
+[340]
+Underfull \hbox (badness 1242) in paragraph at lines 25410--25413
+[]\T1/cmr/m/n/10.95 A. Kent, \T1/cmr/m/it/10.95 Non-lin-ear-ity with-out su-per-lu-mi-nal-ity\T1/cmr/m/n/10.95 , Phys. Rev. A \T1/cmr/bx/n/10.95 72\T1/cmr/m/n/10.95 , 012108 (2005),
+ []
+
+[341]
+Underfull \hbox (badness 10000) in paragraph at lines 25511--25514
+[]\T1/cmr/m/n/10.95 K. Sanders, \T1/cmr/m/it/10.95 On the Reeh--Schlieder prop-erty in curved space-time\T1/cmr/m/n/10.95 , Com-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25530--25534
+[]\T1/cmr/m/n/10.95 J. Pye, \T1/cmr/m/it/10.95 Co-vari-ant ban-dlim-i-ta-tion from gen-er-al-ized un-cer-tainty prin-ci-ples\T1/cmr/m/n/10.95 ,
+ []
+
+[342] [343]
+Underfull \hbox (badness 1242) in paragraph at lines 25671--25674
+[]\T1/cmr/m/n/10.95 Y. K. Yazdi et al., \T1/cmr/m/it/10.95 Prin-ci-ples for a dis-tin-guished global vac-uum on causal sets\T1/cmr/m/n/10.95 ,
+ []
+
+
+Underfull \hbox (badness 1107) in paragraph at lines 25700--25704
+[]\T1/cmr/m/n/10.95 V. Vasileiou et al., \T1/cmr/m/it/10.95 Con-straints on Lorentz in-vari-ance vi-o-la-tion from Fermi-Large
+ []
+
+[344]
+Underfull \hbox (badness 10000) in paragraph at lines 25808--25811
+[]\T1/cmr/m/n/10.95 F. Hi-roshima, N. Teran-ishi, \T1/cmr/m/it/10.95 Self-adjointness of un-bounded time op-er-a-tors\T1/cmr/m/n/10.95 ,
+ []
+
+[345]
+Underfull \hbox (badness 10000) in paragraph at lines 25898--25901
+[]\T1/cmr/m/n/10.95 G. Lind-blad, \T1/cmr/m/it/10.95 On the gen-er-a-tors of quan-tum dy-nam-i-cal semi-groups\T1/cmr/m/n/10.95 , Com-
+ []
+
+[346]
+Underfull \hbox (badness 1142) in paragraph at lines 25969--25970
+[]\T1/cmr/m/n/10.95 M. Spriet, C. Lan-grenez, R. Brum-mel-huis, S. De Bièvre, \T1/cmr/m/it/10.95 What is spe-cial about
+ []
+
+[347] [348] (./unification.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
  ***********
 Package rerunfilecheck Info: File `unification.out' has not changed.
-(rerunfilecheck)             Checksum: FA9E9D58FA48D4B127FD191ABF5CC91A;43310.
+(rerunfilecheck)             Checksum: 53F9BA9520E192AC3C9A524F8B797313;43407.
  ) 
 Here is how much of TeX's memory you used:
- 17728 strings out of 467525
- 291165 string characters out of 5418982
- 783136 words of memory out of 5000000
- 44382 multiletter control sequences out of 15000+600000
+ 17828 strings out of 467525
+ 292998 string characters out of 5418982
+ 789841 words of memory out of 5000000
+ 44432 multiletter control sequences out of 15000+600000
  667356 words of font info for 158 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,14n,79p,1674b,792s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
-></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb><
-/usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></
-usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb
-></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.
-pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.p
-fb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pf
-b></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb>
-</usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></
-usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></us
-r/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/
-local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/lo
-cal/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/loca
-l/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/t
-exlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texl
-ive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive
-/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/20
-26/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/202
-6/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2026/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2026/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2026/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2026/texmf
--dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2026/texmf-d
-ist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/local/texlive/2026/texmf
--dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2026/t
-exmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/20
-26/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb></usr/local/texlive
-/2026/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/local/texlive/2026/te
-xmf-dist/fonts/type1/public/cm-super/sfbi1095.pfb></usr/local/texlive/2026/texm
-f-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2026/texmf-
-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texlive/2026/texmf-di
-st/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2026/texmf-dist
-/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2026/texmf-dist/f
-onts/type1/public/cm-super/sfrm0600.pfb></usr/local/texlive/2026/texmf-dist/fon
-ts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2026/texmf-dist/fonts
-/type1/public/cm-super/sfrm0900.pfb></usr/local/texlive/2026/texmf-dist/fonts/t
-ype1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2026/texmf-dist/fonts/typ
-e1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1
-/public/cm-super/sfrm1200.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/p
-ublic/cm-super/sfrm1728.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/pub
-lic/cm-super/sfti0800.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/publi
-c/cm-super/sfti0900.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/
-cm-super/sfti1000.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm
--super/sfti1095.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-s
-uper/sftt1095.pfb>
-Output written on unification.pdf (335 pages, 2855451 bytes).
+ 75i,14n,79p,1704b,797s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfbi1095.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfti0800.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfti0900.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
+Output written on unification.pdf (348 pages, 2949063 bytes).
 PDF statistics:
- 9665 PDF objects out of 10688 (max. 8388607)
- 9100 compressed objects within 91 object streams
- 2027 named destinations out of 2073 (max. 500000)
+ 10079 PDF objects out of 10688 (max. 8388607)
+ 9494 compressed objects within 95 object streams
+ 2076 named destinations out of 2487 (max. 500000)
  961 words of extra memory for PDF output out of 10000 (max. 10000000)
 

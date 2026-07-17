@@ -1,0 +1,372 @@
+% dm_note.tex -- COMPANION NOTE SKELETON (RUN 101 / HUNT #103, arm m8-destination)
+% Self-contained; compiles standalone. Companion to unification.tex.
+% Parent-paper cross-references are given by NAME in prose with the exact
+% \label + line anchor in a %-comment, so this file has ZERO undefined refs.
+% ASSEMBLES: m3 (proposition) / m4->m5 (candidate table) / m6 (gate) / m7 (floors,PBH).
+% STATUS: skeleton. m1,m2,m3,m4,m6,m7 staged and folded in at their own grades.
+%   m5 (candidate-table arm) has since staged and CERTIFIED the Lane-2 rows
+%   (dm_m5.md; adversary+J1/J2 verified; honest TeV floor >= 29 orders bare /
+%   ~30 with prefactor). m7 (dm_m7.md) folded into Secs 3.2--3.3.
+% RUN 112 (hunt #113, W1-BROKEN repair): Lane 2 re-derived. The consumed str[k_1]=-14.83 was
+%   the statistics-blind plain trace Tr[k_1]; the printed bosons-minus-fermions definition
+%   gives +1/6-4xi_H (48-Weyl: +2/3-4xi_H) [byte-verified: Visser gr-qc/0204062 Eq.12+Table 1;
+%   Larsen-Wilczek hep-th/9506066]. Anchor consumed as the parent's POSITED O(1) H*2 (run-112
+%   restatement). Corrections printed in abstract/Sec.3/summary; old numbers not laundered.
+% ZERO repo writes. Grades carried faithfully; no PLAUSIBLE consumed at THEOREM.
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}      % T1 + lmodern: bold small caps available
+\usepackage{lmodern}          % kills OT1 font-shape warning
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{xcolor}           % required before hyperref for blue!50!black mixing
+\usepackage[colorlinks=true,linkcolor=blue!50!black,citecolor=blue!50!black]{hyperref}
+\newtheorem{proposition}{Proposition}
+\newtheorem{remark}{Remark}
+\newcommand{\Epl}{E_{\mathrm{Pl}}}
+\newcommand{\str}{\mathrm{str}}
+\newcommand{\Tmn}{\langle T_{\mu\nu}\rangle}
+% normal-weight small caps: avoids the unavailable bold-smallcaps (bx/sc) shape
+% when these terms appear inside \textbf (e.g. the abstract's Lane labels).
+\newcommand{\reqs}{{\normalfont\scshape requires}}
+\newcommand{\cons}{{\normalfont\scshape constrains}}
+\newcommand{\touch}{{\normalfont\scshape touches}}
+\title{Dark-sector characterization within TBRME:\\
+what the framework requires, constrains, and touches\\
+\large (companion note --- constraints and taxonomy, never identity)}
+\author{Alexandru Dima}
+\date{}
+
+\begin{document}
+\maketitle
+
+%========================================================================
+\begin{center}\fbox{\parbox{0.92\textwidth}{\small
+\textbf{Identity fence (binding).} This note does \emph{not} and \emph{cannot}
+determine what dark matter \emph{is}. TBRME takes the matter QFT as an input to
+$\Tmn$ and is agnostic about dark-sector field content by construction. Every
+statement below is one of three kinds: what the framework \reqs{} (a category
+statement), \cons{} (its own anchor accounting run against candidate classes),
+or \touch{}es (which theorems apply to which candidate classes). No sentence
+identifies, explains, or predicts a dark-matter field content.}}\end{center}
+
+\begin{abstract}\noindent
+Within TBRME, gravitational dynamics is Einstein gravity plus a pinned,
+exhaustively catalogued set of deviations, all either cosmologically homogeneous
+or decoherence-gated. We record three findings. \textbf{(Lane 1, \reqs.)} No
+framework deviation carries a quasi-static galactic footprint; despite the
+numerical coincidence $a_0\approx cH_0/2\pi$ the effective-$\Lambda$ running
+delivers only $a_\Lambda(r)\approx H_0^2\,\Omega_\Lambda\,r$, smaller than $a_0$
+by $\sim10^{-5}$ at galactic radii ($a_\Lambda/a_0\approx1.2\times10^{-5}$ at $10\,$kpc) and of the wrong sign and radial
+profile, so rotation-curve/lensing/cluster phenomenology requires genuine
+stress-energy $\Tmn$. \textbf{(Lane 2, \cons.)} \emph{Corrected and re-derived (run 112).}
+The previously quoted $\str[k_1]\approx-14.83$ (whence $g\approx0.42$) was the
+statistics-blind plain trace; the signed bosons-minus-fermions supertrace this note names
+evaluates to the near-cancellation $\str[k_1]_{\rm SM}=+\tfrac16-4\xi_H$ ($+\tfrac23-4\xi_H$
+with right-handed neutrinos), sign-indefinite in $\xi_H$; the parent now consumes the anchor
+only as a \emph{posited} $\mathcal O(1)$ input. The accounting inverts: the anchor still
+excludes no standard candidate, but no longer by insensitivity --- every individual
+sub-Planckian candidate shifts $\str[k_1]$ by $100$--$400\%$ of its whole corrected value (a
+single massless dark vector is $400\%$, and nulls it exactly on the right-handed-neutrino
+variant), so the anchor is co-determined by the dark sector rather than a constraint on it;
+a hidden sector's aggregate aligned weight is banded conditionally on the posited anchor, no
+longer excluded.
+\textbf{(Lane 3, \touch.)} A taxonomy of which framework theorems apply to which
+candidate class.
+\end{abstract}
+
+%========================================================================
+\section{The deviation budget (lane-1 foundation)}\label{sec:budget}
+% Source: dm_m1.md + live print. Faithful grades.
+TBRME reproduces Newtonian and post-Newtonian gravity exactly ($\gamma=\beta=1$;
+``at Newtonian order there is no deviation from textbook GR'').
+% parent: rem:two-body-framework (unification.tex l.8472); prop:two-body-newtonian (l.8305)
+Its complete set of departures from Einstein gravity is:
+\begin{center}\small
+\begin{tabular}{@{}c l l l@{}}
+\toprule
+ & Deviation & Scale & Grade (parent) \\
+\midrule
+D1 & $H^2$ running of $\Lambda_{\mathrm{eff}}$, $\nu$ unobservably small
+   & cosmological (homogeneous) & Proposition \\
+D2 & dissipative Clausius-$\sigma$, $w\!\ge\!-1$, amp.\ $\sim10^{-122}$
+   & cosmological (dS horizon) & mechanism-settled \\
+D3 & CC variance $\delta\Lambda/\Lambda\sim10^{-61}$
+   & cosmological (homogeneous) & Proposition \\
+D4 & modified-TDSE $H_{\mathrm{eff}}=H_s-\tfrac{\mu}{2}H_s^2$
+   & mesoscopic (BMV) only & Proposition \\
+\bottomrule
+\end{tabular}
+\end{center}
+% parents: prop:pred-cc l.13481; dissipative l.22738; prop:pred-cc-variance l.22567; rem:two-body-framework(b) l.8497
+D1--D3 enter the effective cosmological constant / Friedmann background and are
+spatially homogeneous; D4 is unitary, ``does not modify the static potential,''
+and is decoherence-gated off for any classical (astrophysical) source. Hence
+none is a position-dependent galactic potential. (Budget exhaustiveness is
+certified by the m1 arm; the galactic conclusion is robust even against an
+incomplete cosmological-sector census, since any missing deviation cannot live
+in the decohered quasi-static regime by the Newtonian-correspondence result.)
+
+%========================================================================
+\section{Lane 1: no gravitational mimic of dark matter (\reqs)}\label{sec:prop}
+% Source: dm_m3.md (proposition, PLAUSIBLE) + dm_m2.md (a_0~cH_0).
+The MOND scale $a_0\approx1.2\times10^{-10}\,\mathrm{m/s^2}$ satisfies
+$a_0/(cH_0)=0.17$--$0.18\approx1/2\pi=0.159$ (verified): the famous coincidence
+is real. It is not dynamically realized. The only quasi-static footprint of the
+$H^2$ term is the Schwarzschild--de Sitter tidal acceleration
+$a_\Lambda(r)=(\Lambda_{\mathrm{eff}}c^2/3)\,r=H_0^2\Omega_\Lambda\,r$:
+\begin{center}\small
+\begin{tabular}{@{}l c c c@{}}
+\toprule
+$r$ & $10$ kpc & $100$ kpc & $1$ Mpc \\
+\midrule
+$a_\Lambda\,(\mathrm{m/s^2})$ & $1.5\times10^{-15}$ & $1.5\times10^{-14}$ & $1.5\times10^{-13}$ \\
+$a_0/a_\Lambda$ & $\sim8\times10^{4}$ & $\sim8\times10^{3}$ & $\sim8\times10^{2}$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+It reaches $a_0$ only at $r\sim700$--$815$ Mpc. Triple disqualification: it is
+$\sim10^{4}$--$10^{5}\times$ too small at galactic radii; it is \emph{repulsive}
+(outward, $\Lambda>0$) where a halo needs inward attraction; and it grows as
+$+r$ where a flat rotation curve needs $a\propto1/r$.
+
+\begin{proposition}[No galactic-scale gravitational mimic of dark matter; \emph{PLAUSIBLE}]
+\label{prop:no-mimic}
+In the decohered, static, weak-field regime governing galactic dynamics, TBRME
+reduces to ordinary linearised Einstein gravity sourced by the classical
+$\Tmn$; its distributional/two-boundary apparatus and its unitary modified-TDSE
+correction leave the static force law unmodified. The only genuine gravitational
+deviations (D1--D3) are cosmologically homogeneous, and (despite $a_0\approx
+cH_0/2\pi$) deliver at galactic radius only $a_\Lambda(r)\approx H_0^2
+\Omega_\Lambda r$ --- of the wrong magnitude, sign, and radial profile to source
+a rotation-curve or lensing halo. Consequently no framework deviation can
+masquerade as dark matter at galactic scales, and any rotation-curve, lensing,
+or cluster phenomenology within TBRME \emph{requires} genuine stress-energy
+$\Tmn$ in the source.
+\end{proposition}
+\noindent\emph{Grade.} PLAUSIBLE: a proof from in-print inputs with a
+THEOREM-grade core (the Newtonian-correspondence result plus verified
+arithmetic), conditional on (R1) budget exhaustiveness and (R2) the composite-body
+$\mu$-caveat, both flagged unresolved in the parent and both orthogonal to the
+static force law. This is a \reqs{} statement: it makes no claim about the dark
+sector's field content.
+
+%========================================================================
+\section{Lane 2: the supertrace / anchor accounting (\cons)}\label{sec:supertrace}
+% Source: dm_m4.md engine; m5-CERTIFIED rows: RUN 112 SUPERSEDES the Delta-str column and
+% verdicts (they consumed the statistics-blind Tr); the nu_eff column and row labels survive.
+\noindent\textbf{Correction (run 112; supersedes the anchor numbers previously printed
+here).} Earlier versions of this note and of the parent's H$^{*}2$ set
+$g:=(E_\star/\Epl)^2\approx0.42$ ($E_\star\approx0.65\,\Epl$) from a quoted
+$\str[k_1]\approx-14.83$. That number is not the value of the printed definition:
+$-14.83=-\tfrac{89}{6}=4(\tfrac16)+12(-\tfrac23)+45(-\tfrac16)$ is the
+statistics-\emph{blind} plain trace $\mathrm{Tr}[k_1]$ over the SM tower (4 minimal scalars,
+12 massless vectors, 45 Weyl fermions). The signed, spin-weighted supertrace --- bosons
+\emph{minus} fermions, Visser's Eq.~12 --- evaluates on the same tower, with per-species
+weights verified against the primary sources (Visser gr-qc/0204062 Table~1: scalar
+$+\tfrac16-\xi$, Weyl $-\tfrac16$, Dirac $-\tfrac13$, massless vector $-\tfrac23$;
+Larsen--Wilczek hep-th/9506066 Secs.~3.4--3.5: each spin-$\tfrac12$ d.o.f.\ enters with the
+\emph{same} sign as a scalar), to
+$\str[k_1]_{\rm SM}=4(\tfrac16-\xi_H)+12(-\tfrac23)-45(-\tfrac16)=+\tfrac16-4\xi_H$ (48
+Weyl, i.e.\ 3 right-handed $\nu$: $+\tfrac23-4\xi_H$) --- a 49-vs-48 near-cancellation in
+units of $\tfrac16$ at minimal coupling, \emph{sign-indefinite} in the un-pinned $\xi_H$
+(zero at $\xi_H=\tfrac1{24}$, resp.\ $\tfrac16$). Under the anchor map confirmed by the
+printed pair, $g=2\pi/|\str[k_1]|$, the corrected value gives $g=37.7$ ($9.42$) and
+$E_\star=6.14$ ($3.07$)\,$\Epl$ --- super-Planckian. Accordingly the parent (run-112
+restatement) no longer derives the anchor from an SM evaluation: H$^{*}2$ is consumed as a
+\emph{posited} $\mathcal O(1)$ input --- sign and magnitude content- and $\xi_H$-dependent,
+the $0.42/0.65$ headline and the definite-sign clause surrendered, $E_\star=\mathcal
+O(1$--$6)\,\Epl$ priced against the (H0) clause $E_\star\lesssim\Epl$ and the CHL window
+$(2$--$4)\,\Epl$. Lane 2 is re-derived against that posited anchor; nothing below consumes
+$-14.83$.
+% parent: prop:no-fundamental-G, H*2 AS RESTATED in run 112 (pre-restatement anchors
+% l.6797/l.7428 superseded); sources byte-verified 2026-07-17.
+Two facts fix the accounting. \textbf{(i)} $\str[k_1]$ is \emph{mass-independent}
+to leading order: it is the coefficient of the quadratically divergent
+$\propto E_\star^2$ Sakharov piece, a democratic signed spin-weight count of every
+sub-cutoff field, with mass entering only at $\mathcal O(m^2/E_\star^2)$. A new
+field's shift $\Delta\str[k_1]$ is its net signed spin-weight, mass-free.
+\textbf{(ii)} \emph{Withdrawn and reversed (run 112).} This item previously read: ``a
+single $\mathcal O(1)$ shift ($\sim7\%$ of $|\str[k_1]|$) is \emph{inside} tolerance'' ---
+arithmetic against the superseded $|\str[k_1]|\approx14.83$, on which a dark vector was
+$4.5\%$. Against the corrected $|\str[k_1]|_{\rm SM}=\tfrac16$ the same shifts are
+$100$--$400\%$ of the \emph{entire} SM value: one minimal scalar or Weyl fermion
+($\Delta\str=+\tfrac16$) is $100\%$, one Dirac fermion ($+\tfrac13$) $200\%$, one massless
+dark vector ($-\tfrac23$) $400\%$ --- the latter flips the 45-Weyl total
+($+\tfrac16\to-\tfrac12$) and, on the 48-Weyl variant at $\xi_H=0$, cancels it
+\emph{exactly}. No candidate is ``inside tolerance'': every individual field re-prices the
+anchor by an $\mathcal O(1)$ factor or can flip or null it. What survives is
+posited-anchor-relative and weaker: any single candidate leaves $|\str[k_1]|\le\mathcal
+O(1)$, so the posit is not violated --- but the anchor's value, sign, and $E_\star$ cannot
+be quoted independently of dark-sector content (and are $\xi_H$-indefinite in-SM).
+% parent tolerance (O(1), un-sharpenable) as restated in run 112; the pre-restatement
+% ``correct sign'' clause is surrendered there.
+
+\smallskip\noindent
+The separate running-vacuum coefficient \emph{is} mass-weighted,
+$\nu_{\mathrm{eff}}=\tfrac1{2\pi}(\tfrac16-\xi)M_X^2/\Epl^2\,[1+\mathcal
+O(m^2/M_X^2)]$ with $M_X$ the heaviest contributing field; a Planck-mass field gives
+$\nu\sim\tfrac1{2\pi}\cdot\tfrac16\approx3\times10^{-2}$, and a field at the corrected
+posited $E_\star=\mathcal O(1$--$6)\,\Epl$ a fortiori more (the figure previously printed
+here, $\nu\sim10^{-2}$ at ``the native $E_\star$'', consumed the superseded
+$E_\star=0.65\,\Epl$) --- excluded by more than an order of magnitude by $\dot G/G$ and
+running-vacuum bounds, while every sub-Planckian candidate gives
+$\nu_{\mathrm{eff}}=(m/\Epl)^2\lll$ the bound. This mass-weighted leg is otherwise
+\emph{untouched} by the run-112 statistics correction.
+% parent: rem:pred-cc-diff l.13616-13646, Eq(7.3) MorenoPulidoSola2020; bounds SolaPeracaula2026RVM, DESIDR2_2025
+% NOTE: cite the print's ">1 order below ~1e-2"; the hard (2-5)e-4 dot-G/G->nu ceiling is a
+%   campaign-record number (ISSUES l.1993), NOT quoted as a published strength here.
+
+\begin{center}\small
+\footnotesize\setlength{\tabcolsep}{4pt}%
+\begin{tabular}{@{}l l c c >{\raggedright\arraybackslash}p{2.9cm}@{}}
+\toprule
+Candidate class & scale & $\Delta\str[k_1]$ & $\nu_{\mathrm{eff}}=(m/\Epl)^2$ & Verdict (vs.\ $|\str|_{\rm SM}{=}\tfrac16$, $\xi_H{=}0$) \\
+\midrule
+(a) WIMP-class field      & GeV--TeV   & $+\tfrac16$ / $+\tfrac13$ (Maj./Dirac) & $6.7{\times}10^{-33}\!\dots\!10^{-39}$ & TOLERATED; re-prices anchor by $100$--$200\%$ \\
+(b) ultralight/fuzzy scalar & $10^{-22}$ eV & $+(\tfrac16-\xi)$ (0 if conformal) & $6.7{\times}10^{-101}$ & TOLERATED; $0$--$100\%$ \\
+(c) dark photon (massless U(1)) & $m=0$ & $-\tfrac23$ exactly & $0$ & TOLERATED; $400\%$: flips (45W) or \emph{nulls} (48W) the total \\
+(d) sterile-$\nu$-class fermion & keV & $+\tfrac16$ per Weyl & $6.7{\times}10^{-51}$ & TOLERATED; $100\%$ each (three ${=}$ 48W variant) \\
+(e) PBH (no new field)    & --- & $0$ & $0$ & TOLERATED (trivially; unchanged) \\
+(f) full hidden sector    & many fields & $\sum$ net signed & (heaviest field) & \textbf{CONSTRAINED} (conditional band); EXCL.\ clause withdrawn \\
+\bottomrule
+\end{tabular}
+\end{center}
+\noindent\textbf{The honest inversion (run 112; replaces the previous ``honest null'').}
+The withdrawn text asserted insensitivity --- single fields shift $\str[k_1]$ ``inside the
+$\mathcal O(1)$ tolerance''; only a hidden sector with net aligned spin-weight
+$\gtrsim|\str[k_1]|\sim15$ was CONSTRAINED; net positive weight $\gtrsim15$ (``flipping
+$\str[k_1]$'s sign, $g<0$'') was EXCLUDED. All three clauses were arithmetic against the
+superseded plain-trace $-14.83$ and are withdrawn. \emph{(1) No insensitivity:} against
+$|\str[k_1]|_{\rm SM}=\tfrac16$ every single candidate class shifts the supertrace by
+$100$--$400\%$ (table); the anchor is co-determined by the dark sector, not a constraint on
+it. Any single field still leaves $|\str[k_1]|\le\mathcal O(1)$, so the \emph{posited}
+anchor survives, but $E_\star$ is re-priced per field ($6.14\to4.34\,\Epl$ for one minimal
+scalar, $6.14\to3.54\,\Epl$ for one Dirac; 45-Weyl, $\xi_H=0$). \emph{(2) No sign-flip
+exclusion:} the corrected baseline is itself sign-indefinite in $\xi_H$ (zero at
+$\tfrac1{24}$; a conformally coupled Higgs alone gives $-\tfrac12$) and the restated
+H$^{*}2$ surrenders the definite-sign clause; a criterion excluding candidates for flipping
+a sign the SM does not fix is empty --- the EXCLUDED verdict is withdrawn, not re-graded,
+and nothing replaces it. \emph{(3) What (f) retains --- a conditional band:} priced against
+the CHL window $E_\star\in(2$--$4)\,\Epl$, the posited anchor needs total
+$|\str[k_1]|\in(2\pi/16,\,2\pi/4)\approx(0.39,\,1.57)$: net aligned dark weight $\sim$1--9
+units of $\tfrac16$ beyond the SM's $+\tfrac16$ (positive branch; $\sim$3--10 units,
+$\approx$1--2.5 vectors, negative) --- a two-sided band, not an upper bound. On the strict
+(H0) reading $E_\star\lesssim\Epl$ the inversion completes: $|\str[k_1]|\ge2\pi$ would
+\emph{require} net aligned weight $\gtrsim37$ units ($\approx$37 scalar-equivalents or
+$\gtrsim$10 dark vectors) --- the configuration the withdrawn text EXCLUDED is what that
+reading would demand. The parent prices this tension rather than resolving it; we record
+the arithmetic and make no field-content claim (the identity fence binds).
+\emph{Grade:} PLAUSIBLE, re-scoped --- the corrected
+$\str[k_1]_{\rm SM}=+\tfrac16-4\xi_H$ ($+\tfrac23-4\xi_H$ with right-handed neutrinos)
+rests on source-verified weights (Visser gr-qc/0204062 Table~1; Larsen--Wilczek
+hep-th/9506066) and exact row arithmetic; the superseded $-14.83$ was the statistics-blind
+$\mathrm{Tr}[k_1]$, its billing as ``framework-internal SM evaluation'' revoked; the (f)
+band is conditional on the parent's \emph{posited} H$^{*}2$, an assumed $\mathcal O(1)$
+input, not a derived value.
+
+%========================================================================
+\section{Lane 3: the machinery taxonomy (\touch)}\label{sec:taxonomy}
+
+\subsection{Massless dark U(1) vs.\ the $m=0$ IR gate}
+% Source: dm_m6.md (THEOREM, taxonomy).
+A massless dark U(1) --- pure dark Maxwell or dark QED with fermionic matter,
+\emph{no} dark scalar --- does \emph{not} carry the $b_0$ improvement site and
+does \emph{not} inherit the $m=0$ IR-gate wall. Its physical degrees of freedom
+are transverse (co-exact $1$-form, $b_1$ sector), closed by the geometric floor
+$\omega_1$; it has no gauge-invariant dimension-2 scalar, hence no
+$c'\!:\!\varphi^2\!:$ improvement seed (free-Maxwell $T^\mu_{\ \mu}=0$), and its
+gauge-fixing quartet is BRST-exact and emptied by Kugo--Ojima. The $b_0$ wall is
+\emph{scalar-improvement-generic}, not gauge-sector-generic --- the ``gauge-sector
+generic'' reading is refuted, since the gauge sector is precisely the one that
+closes. A Higgsed dark U(1) carries the site via its dark \emph{scalar}
+(\S\ref{sec:floors}), never via the gauge boson.
+% parent: m=0 gate cluster l.20459-20603; transverse-photon l.17828-17857.
+\emph{Grade: THEOREM (taxonomy/applicability).}
+
+\subsection{Ultralight scalar DM vs.\ the QEI floors}\label{sec:floors}
+% Source: dm_m7.md (Part A). Grades from m7.
+A fuzzy scalar at $m\sim10^{-22}$ eV has $m>0$ --- it is not strictly massless
+--- so the free-scalar QEI floor $\langle\widehat T^{\mathrm{ren}}_{\mu\nu}[t^\mu
+t^\nu F^2]\rangle_\omega\ge-c_S(g,t,F)$ applies to it \emph{directly}, and it is
+the \emph{best}-served candidate class, not the worst. The floor does \emph{not}
+degrade in the ultralight limit: on the load-bearing one-sided floor $c_S$ the
+mass enters only as \emph{forward} (tightening) powers --- $m>0$ strictly
+tightens it, and the \emph{massless} limit is finite (the massless Dirac floor
+is $\tfrac43\times$ the scalar one) --- so as $m$ shrinks the floor relaxes
+\emph{monotonically toward its finite massless value}.
+% parent: eq:E2-QEI l.17411; m-census + finite massless floor l.17874-17877 (RUN44 certified).
+The only inverse-mass factors --- the upper-bound constant's $1/m^2$ and the
+modular-trace $1/m$ --- sit on sides the chain consumes nowhere, are decoupled
+from the floor, are finite for any $m>0$, and are geometrically re-anchored to
+the lowest seed frequency $\omega_1$. The controlling IR scale is therefore
+slice \emph{geometry}, not the candidate mass; the only honest wall is gapless
+horizon spectra ($\omega_1\to0$), a mass-independent slice statement lying
+$\gtrsim11$ orders below any dark-matter mass scale.
+% parent: modular estimate eq:E2-CS l.17462; omega_1 geometric floor l.17840-17847.
+\emph{Grade: THEOREM} (floor non-degradation, print + certified); \touch{}es (an
+applicability statement, not a constraint on $m$).
+
+\subsection{PBH dark matter vs.\ the horizon machinery}
+% Source: dm_m7.md (Part B). Grades from m7.
+For primordial black holes the framework introduces no new field
+(\S\ref{sec:supertrace}, row (e), $\Delta\str[k_1]=0$). The horizon machinery
+applies \emph{per object}, split by the object's dynamical state:
+\begin{itemize}\itemsep2pt
+\item \emph{Stationary} (the asteroid-mass window $\sim10^{17}$--$10^{23}$ g ---
+the only window in which PBHs can be all of the dark matter, and near-stationary
+because the evaporation time far exceeds a Hubble time): the type-II / modified
+first law $T_H\,\delta S=\delta\langle\widehat H_c\rangle+\alpha\,
+\delta\langle\Sigma_\delta t\rangle$, the free first law of entanglement, and the
+generalised entropy $S_{\mathrm{gen}}=A/4G+S_{\mathrm{bulk}}$ hold at each PBH
+horizon at its own $\kappa$, $T_H$, $A$. \emph{THEOREM}, mass-independent in
+applicability.
+% parent: prop:step6-thermo / eq:step6-first-law l.15838,15916; free first law Thm E0-lin l.19394; S_gen l.19250,19274.
+\item \emph{Evaporating} (the endpoint / non-DM regime): the Type II$_\infty$
+structure, unbounded $S_{\mathrm{gen}}$, and the Page curve hold, \emph{conditional}
+on the ambient quasi-local modular-flow hypothesis. \emph{CONDITIONAL THEOREM};
+this conditionality attaches to the non-DM branch, not to the viable-DM PBHs.
+% parent: prop:pred-page l.12981; Hyp:ak-modular-flow residual (E3a).
+\end{itemize}
+These are statements of \emph{applicability}, not constraints on PBH-as-DM, and
+assert nothing about dark-matter identity.
+% external: asteroid-mass window Gorton-Green arXiv:2406.03114, WebSearch-verified review-strength (m7 F4).
+
+\subsection{DM decoherence channel (kept tight)}
+The framework's conditioned-source/instrument structure and its
+horizon-decoherence floor describe the decoherence of \emph{quantum} sources.
+Whether they imply any dark-matter-specific decoherence channel cannot be
+derived without asserting dark-sector field content, which the identity fence
+forbids. \textbf{[SPECULATION.]} No such channel is claimed. \emph{(Stop.)}
+
+%========================================================================
+\section{Summary: requires / constrains / touches}\label{sec:summary}
+\begin{center}\small
+\begin{tabular}{@{}l p{0.72\textwidth}@{}}
+\toprule
+\reqs & genuine $\Tmn$ for all galactic-scale (rotation-curve / lensing /
+cluster) phenomenology; no gravitational mimic exists (Prop.~\ref{prop:no-mimic}). \\
+\cons & (run-112 correction) \emph{nothing outright}: with
+$\str[k_1]_{\rm SM}=+\tfrac16-4\xi_H$ --- not the superseded $-14.83$ --- and the anchor a
+posited $\mathcal O(1)$ input, no candidate class is excluded; the old
+$N_{\mathrm{dark}}\lesssim\mathcal O(10\text{--}100)$ bound and the sign-flip exclusion are
+withdrawn. A hidden sector's net aligned weight is \emph{banded} conditionally on the
+posited anchor (\S\ref{sec:supertrace}); every single candidate re-prices the anchor at
+$\mathcal O(1)$; and still \emph{no} candidate is constrained via $\nu_{\mathrm{eff}}$/CC. \\
+\touch & the $m=0$ gate does \emph{not} touch a pure/fermionic dark U(1)
+(scalar-generic); the QEI floors touch ultralight scalars (finite,
+non-degrading); the type-II / Bekenstein first laws touch every PBH horizon
+(availability). \\
+\bottomrule
+\end{tabular}
+\end{center}
+\noindent
+\textbf{The honest ceiling.} The framework \reqs{} genuine stress-energy for the dark
+sector; after the run-112 correction its anchor accounting \cons{} no candidate outright
+--- it conditionally bands aggregate spin-weight under a \emph{posited} $\mathcal O(1)$
+anchor whose value the dark sector co-determines --- and its theorems \touch{} candidate
+classes in the taxonomy above. It \emph{does not, and by construction cannot,} say what
+dark matter is.
+
+\end{document}
