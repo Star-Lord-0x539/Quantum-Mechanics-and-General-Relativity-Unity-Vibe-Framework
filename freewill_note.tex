@@ -1,0 +1,717 @@
+% freewill_note.tex — companion note to unification.tex
+% RUN provenance:
+%   run 1 (2026-07-18): drafted from a four-reader extraction sweep of unification.tex.
+%   run 2 (2026-07-18): adversarially certified by a 110-agent swarm (6 attack lenses ->
+%     per-finding refuter votes -> completeness critic). 31 confirmed findings (3 FATAL)
+%     and 2 coverage gaps folded into this version; 31 candidate findings refuted.
+%     Key repairs: F2a scoped (protocol admissibility constraints exist: ax:complete,
+%     (RP)); F3b restated time-indexed (K IS record-measurable under ax:complete);
+%     F1b corner re-tensed (jailer = terminal record, a future-boundary datum, and the
+%     BRANCH's records, not the being's own); F1b/F1c regraded onto the net bundle;
+%     regime scoping added (no single regime carries the whole conjunction; conj:tomita
+%     named); corollary (ii) scoped to the passive law; inter-being influence conceded.
+%   run 3 (2026-07-18): budgeted 8-agent targeted verification of the run-2 fix
+%     sites (one pinned checker per cluster; 250k tokens). All 8 clusters verified
+%     faithful; 2 MINOR wording slips found and fixed in this version (F2a final
+%     clause overclaimed record-generation; rem:regimes silently upgraded F2c's
+%     regime). No FATAL/MAJOR residue.
+% Grade discipline: grades carried faithfully; no PLAUSIBLE consumed at THEOREM;
+%   every clause carries its own conditionality tag and its regime.
+% ZERO writes to unification.tex / ISSUES.md. Self-contained; compiles standalone.
+% Parent-paper cross-references are given by NAME in prose with the exact \label
+%   + line anchor in a %-comment, so this file has ZERO undefined refs.
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{xcolor}
+\usepackage[colorlinks=true,linkcolor=blue!50!black,citecolor=blue!50!black]{hyperref}
+
+\emergencystretch=1.5em
+
+\newtheorem{definition}{Definition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}{Corollary}
+\newtheorem{proposition}{Proposition}
+\newtheorem{remark}{Remark}
+
+% status macros (tbrme-uniqueness-outline house style)
+\newcommand{\THM}{{\normalfont\scshape theorem}}                % theorem-grade in its stated regime
+\newcommand{\THMC}[1]{{\normalfont\scshape theorem}$\,\mid\,${\normalfont\small #1}} % conditional; bundle listed
+\newcommand{\ADOPTED}{{\normalfont\scshape adopted}}            % ambient-literature import
+\newcommand{\STRUCT}{{\normalfont\scshape structural}}          % true by inspection of the axiom set
+\newcommand{\DERIVED}{{\normalfont\scshape derived}}            % one-step corollary proved in this note
+\newcommand{\CONCEDED}{{\normalfont\scshape conceded}}          % explicitly not claimed
+
+\newcommand{\MM}{\mathcal M}
+\newcommand{\HH}{\mathcal H}
+\newcommand{\AAA}{\mathcal A}
+\newcommand{\KK}{\mathcal K}
+\newcommand{\FF}{\mathcal F}
+\newcommand{\PP}{\mathcal P}
+\newcommand{\E}{\mathbb E}
+\newcommand{\Prob}{\mathbb P}
+\newcommand{\Tr}{\operatorname{Tr}}
+\newcommand{\id}{\mathbf 1}
+\newcommand{\RC}{\mathrm{RC}}
+
+\title{Operational freedom in the two-boundary retrocausal framework:\\
+an equal-possibility theorem\\
+\large (companion note --- hospitality and equality, never metaphysics)}
+\author{Alexandru Dima}
+\date{}
+
+\begin{document}
+\maketitle
+
+\begin{center}
+\fbox{\parbox{0.92\textwidth}{\small
+\textbf{Metaphysics fence (binding).} This note does \emph{not} and \emph{cannot} prove
+libertarian (metaphysical) free will. What it proves is that a precisely defined
+\emph{operational} surrogate --- the conjunction of four formal properties
+(equal possibility, non-coercion, openness, efficacy) --- holds for every admissible
+observer of the parent framework, with the same strength for every observer, at the
+regime- and bundle-scoped grades stated clause by clause.
+Whether that conjunction deserves the name ``free will'' is a philosophical
+judgment outside physics; the note's own position is compatibilist and is argued,
+not smuggled. The parent paper defines an observer operationally (ideal-QRF axioms)
+and explicitly disclaims any appeal to consciousness or agency; this note inherits
+that disclaimer verbatim. % parent: prop:observer-invariance, tier (C) (unification.tex l.23957)
+Deliberation, intention, and phenomenology are not modeled anywhere in the framework
+and are not modeled here.}}
+\end{center}
+
+\begin{abstract}
+\noindent Within the two-boundary retrocausal framework of the parent paper, an
+observer (``being'') is a worldline--protocol--filtration triple. We define, in the
+framework's own vocabulary, four properties that jointly constitute
+\emph{operational freedom}: (F1) \emph{equal possibility} --- at every moment the
+algebra of available instruments is the same, up to $*$-isomorphism, for every
+being; no available option is assigned probability zero by the two-boundary
+conditioning except through incompatibility with the branch's terminal record;
+and every being has the same (dense) operational reach; (F2) \emph{non-coercion}
+--- no axiom determines or probabilistically weights the choice of protocol, no
+spacelike intervention by any other being can alter the being's marginal
+statistics, and the final boundary condition is operationally inert in prior
+average; (F3) \emph{openness} --- the being's forecast of the terminal record is
+an unbiased martingale, no variable available before the terminal limit predicts
+it better, and definiteness arrives only with the records themselves; (F4)
+\emph{efficacy} --- the being's choices shift the law of the realized branch,
+lawfully and causally. The main theorem asserts F1--F4 for every admissible
+being, clause by clause, each at its honest grade and regime: the Part-I spine
+clauses are theorems of the finite-dimensional core; the field-theoretic clauses
+carry a named net bundle; the measurement-independence and no-better-predictor
+clauses are conditional on the parent's \textsf{CHT-POVM} conjecture plus the
+thermal-time postulate; and the transfer of the whole conjunction to a single
+field-theoretic being is scoped by the parent's type-III lift (Araki branch
+theorem-grade; sandwich branch \textsf{conj:tomita}). The corollary that gives
+the note its title: \emph{at any moment, all beings have the same possibilities
+of choice} --- isomorphic choice algebras, a common passive-law terminal
+distribution, universal reach, common outer time flow (postulate-grade) ---
+while what differs between beings (location, records, thermodynamic state) is
+exhaustively indexical. An attack ledger and a grade table close the note.
+\end{abstract}
+
+\section{Setting and vocabulary}\label{sec:setting}
+
+All objects are the parent paper's. $(\MM,g)$ is a fixed globally hyperbolic
+background with Cauchy temporal function $\tau$ and slab $\MM_{[\tau_i,\tau_f]}$;
+$\rho_{\rm i}$ is the initial state on $\Sigma_{\tau_i}$ and $\{E_k\}_{k\in\KK}$
+the terminal POVM on $\Sigma_{\tau_f}$, with backward effects
+$\Lambda_k(\tau)$ and time-invariant Born weights $p(k)=\Tr(\rho(\tau)\Lambda_k(\tau))$.
+% parent: ax:data (unification.tex l.583); def:rho2 (l.817); lem:born (l.754)
+The conditioned state is the symmetric-sandwich branch
+$\rho_2(\tau\mid k)=\rho(\tau)^{1/2}\Lambda_k(\tau)\rho(\tau)^{1/2}/p(k)$, unitarily
+covariant with the same generator $H(\tau)$.
+% parent: thm:unitary (l.942)
+Local algebras $\AAA(R)$ satisfy isotony, microcausality (M2) and causal
+propagation (M3).
+% parent: ax:microcausality (l.589)
+
+Two probability laws must be kept apart throughout, as the parent insists: the
+\emph{passive} law $\Prob_\gamma$, defined by construction so that its terminal
+marginal is $p(k)$ for every protocol, and the \emph{active} sequential-Born law
+$P_M$, describing physically performed interventions, whose terminal marginal is
+the disturbed weight $\widetilde p(k)$ and need not equal $p(k)$.
+% parent: passive law and by-construction marginal (l.1188--1191); active law
+% distinction (l.1229--1241); disturbed Born law fd:thm:instrument (iv) (l.14678)
+Statements of ``sameness of law'' below are passive-law statements; statements of
+``efficacy'' are active-law statements. Conflating the two was the single most
+frequent defect found by this note's adversarial review, and the scoping is now
+explicit at every use.
+
+\emph{Regimes.} The parent proves its Part-I spine in the finite-dimensional
+core (all operator identities literal), and its conditioning, Reeh--Schlieder,
+and no-go--evasion results in the field-theoretic regime (type III$_1$ net).
+The type-III lift of the sandwich-state machinery is the parent's conjecture
+\textsf{conj:tomita}; its Araki-perturbation branch is realised at theorem grade
+(the parent's (E4) is closed unconditionally), while the collapse chain
+transfers type-free through the algebra-free predual theorem.
+% parent: conj:tomita (l.4699); Araki realization / E4 closure per app. G and the
+% sharpened summary; fd:thm:predual (l.14898)
+Each clause below names the regime in which its grade is earned; the transfer of
+the full conjunction to one field-theoretic being is scoped in
+Remark~\ref{rem:regimes}.
+
+\begin{definition}[Being; admissibility]\label{def:being}
+A \emph{being} is the parent paper's observer datum: a triple
+$B=(\gamma,\PP_\gamma,\FF^\gamma_\bullet)$ consisting of an inextendible
+future-directed timelike worldline $\gamma$ crossing each slice once, a fixed
+measurement protocol $\PP_\gamma=(\{M^{(m)}_j\}_j)_{m}$ with
+$M^{(m)}_j\in\AAA(D_{\varepsilon_m}(\gamma(s_m)))$ for some resolutions
+$\varepsilon_m>0$, and the record filtration $\overline\FF^\gamma_\tau$ it
+generates under the passive law $\Prob_\gamma$.
+% parent: sec:filt, worldline+protocol+filtration definitions (l.1128--1246);
+% the parent's point-algebra formulation A(gamma(s_m)) is the outer-regularized
+% finite-dimensional core version; the diamond formulation used here specializes
+% to it there and is the non-trivial one in the field-theoretic regime, where
+% point algebras are trivial. The parent's Part-I formulas use only that the
+% M^{(m)}_j lie in a local algebra at the slice, so they go through verbatim.
+A being is \emph{admissible} for a result if it satisfies the protocol
+conditions that result assumes: informativeness where terminal
+record-completeness is invoked, and the record-layer restriction (RP) where the
+record-sourced geometry is invoked. These are genuine admissibility conditions
+of the parent, not conveniences of this note.
+% parent: ax:complete (l.1654); (RP) ``a genuine restriction on P_gamma, not
+% bookkeeping'' (l.2445--2449); uniformly informative protocol class (l.3603--3605)
+A \emph{branch} $k$ is admissible if $p(k)>0$. When frame-invariance of
+predictions is invoked, $B$ is additionally assumed to satisfy the ideal-QRF
+axioms of the parent observer appendix.
+% parent: prop:observer-invariance, tier (C) (l.23957)
+\end{definition}
+
+\begin{definition}[Choice situation]\label{def:choice}
+For a being $B$, a moment $\tau$, and a resolution $\varepsilon>0$, the
+\emph{choice set} $\mathsf C_B(\tau;\varepsilon)$ is the set of all finite Kraus
+instruments $\{M_j\}$ with $M_j\in\AAA(D_\varepsilon(\gamma(\tau)))$ and
+$\sum_j M_j^{*}M_j=\id$, where $D_\varepsilon(x)$ is the causal diamond of radius
+$\varepsilon$ about $x$. By construction, every step of an admissible protocol
+$\PP_\gamma$ is an element of the choice set at its moment and resolution.
+\end{definition}
+
+\begin{lemma}[Functoriality of choice sets]\label{lem:functorial}
+Any unital $*$-isomorphism of local algebras carries choice sets bijectively
+onto choice sets.
+\end{lemma}
+\begin{proof}
+A unital $*$-isomorphism preserves adjoints, sums, and the unit, hence the
+Kraus normalization $\sum_j M_j^*M_j=\id$; its inverse does the same.
+\end{proof}
+
+\begin{definition}[Operational freedom]\label{def:freedom}
+A being $B$ is \emph{operationally free} if the following four properties hold.
+\begin{itemize}
+\item[\textbf{(F1)}] \emph{Equal possibility.}
+  (a) For any two beings $B,B'$, moments $\tau,\tau'$, and resolutions
+  $\varepsilon,\varepsilon'$ in the field-theoretic regime, the choice sets
+  $\mathsf C_B(\tau;\varepsilon)$ and $\mathsf C_{B'}(\tau';\varepsilon')$ are
+  identified by a $*$-isomorphism of the underlying local algebras.
+  (b) \emph{Non-extinction:} for every admissible branch $k$, no nonzero effect
+  available to $B$ is assigned probability zero by the conditioned state, except
+  on the corner fixed by the branch's terminal record --- a future-boundary
+  datum, block-fixed but in general not yet recorded at $\tau$.
+  (c) \emph{Universal reach:} from $B$'s diamond alone, local operations applied
+  to the conditioned state reach a dense set of global states.
+\item[\textbf{(F2)}] \emph{Non-coercion.}
+  (a) No axiom or equation of the framework determines or probabilistically
+  weights the protocol $\PP_\gamma$; the framework's protocol conditions
+  (informativeness, (RP)) delimit which protocols support which of its
+  results, never which protocol the being adopts.
+  (b) Measurement independence holds at the initial slice (the framework is not
+  superdeterministic).
+  (c) No intervention by any spacelike-separated being alters $B$'s marginal
+  statistics.
+  (d) The final boundary condition is operationally inert for $B$ in prior
+  average: averaged over branches, $B$'s statistics are exactly those of forward
+  quantum mechanics.
+\item[\textbf{(F3)}] \emph{Openness.}
+  (a) $B$'s posterior $\pi^\gamma_\tau(k)$ over the terminal record is a
+  martingale on $B$'s own filtration, unbiased under every record-measurable
+  stopping strategy, and this survives measurement disturbance.
+  (b) No variable available strictly before the terminal limit --- and no
+  extension of the framework's statistics beyond $\{E_k\}$ --- predicts $K$
+  better than the posterior.
+  (c) Definiteness arrives only with the records: $\pi^\gamma$ collapses to
+  $\mathbf 1_{\{K=k\}}$ only in the terminal limit, and for horizon-restricted
+  beings may never fully collapse.
+\item[\textbf{(F4)}] \emph{Efficacy.}
+  (a) $B$'s choice of instrument changes the law of the realized branch:
+  the terminal weights are intervention-dependent under the active law.
+  (b) The consequences are lawful: between interventions, conditioned
+  expectations obey the conserved Ehrenfest dynamics along the realized branch,
+  and the intervention step itself is governed by the instrument update.
+  (c) The consequences are causal, not anticipating: a deferred decision enters
+  the record-sourced geometry only after its record lies in the causal past of
+  the readout.
+\end{itemize}
+\end{definition}
+
+\section{The theorem}\label{sec:theorem}
+
+\begin{theorem}[Operational freedom of every being]\label{thm:freedom}
+Every admissible being of the parent framework is operationally free in the
+sense of Definition~\ref{def:freedom}, with the following clause-by-clause
+provenance, regime, and conditionality.
+\begin{itemize}
+\item[\textbf{(F1a)}] \ADOPTED{} $+$ net bundle; field-theoretic regime. The
+parent's field-theoretic results assume a Haag--Kastler net of type III$_1$ on
+globally hyperbolic spacetime.
+% parent: conj:tomita setting (l.4699); thm:reeh-schlieder-ABL hypotheses (l.22739)
+Granting in addition that every relatively compact diamond algebra is a
+\emph{factor} with separable predual and that the net has the
+split/hyperfiniteness property standard for well-behaved nets, every such
+algebra is the unique hyperfinite type III$_1$ factor (Haagerup uniqueness;
+Connes classification), hence any two beings' diamond algebras --- at any two
+moments, at any two resolutions --- are $*$-isomorphic, and by
+Lemma~\ref{lem:functorial} their choice sets are identified. \emph{Honest
+fences:} (i) factoriality and predual separability are part of the import
+bundle, not stated at the parent anchor --- a nontrivial center at any diamond
+would break the pairwise identification; (ii) in the finite-dimensional Part~I
+core this clause can fail (unital $*$-subalgebras of $\mathcal L(\HH)$ at
+different worldline points need not be isomorphic). Equality of possibility is
+a genuinely field-theoretic fact, and the type III$_1$ structure is
+load-bearing, not decorative.
+\item[\textbf{(F1b)}] \THMC{net hypotheses}; field-theoretic regime; dense-range
+branch class exact, corner form in general. The parent's Reeh--Schlieder theorem
+for ABL conditioning --- proved under its stated hypotheses: type III$_1$
+Haag--Kastler net, faithful normal Hadamard state with the Reeh--Schlieder
+property (ambient imports), $L_k=\Lambda_k(\tau)^{1/2}$ bounded --- gives: if
+$L_k$ has dense range the conditioned state $\omega_k$ is faithful and normal on
+every local algebra, so $\omega_k(F)>0$ for every nonzero effect $F$ available
+to any being at any moment.
+% parent: thm:reeh-schlieder-ABL, clauses (i)--(iii) (l.22739)
+If $E_k$ is projective with nontrivial kernel, faithfulness is preserved
+exactly on the support corner and lost exactly on $\ker L_k$.
+% parent: thm:reeh-schlieder-ABL, clause (iv); rem:reeh-schlieder-status:
+% ``the post-selection collapse ... onto outcomes compatible with k'' (l.22834--22838)
+The corner is fixed by the \emph{terminal record of the branch}: a
+future-boundary datum, block-fixed at every $\tau$ but in general not yet
+recorded at $\tau$; under terminal record-completeness it coincides in the
+terminal limit with the branch's accumulated record history --- the branch's,
+not the individual being's, since other beings' recorded outcomes are part of
+it. What the clause rules out is extinction by location, constitution, or by
+another being's \emph{protocol choices}; extinction by facts recorded on the
+branch (by anyone) is exactly what conditioning is.
+\item[\textbf{(F1c)}] \THMC{net hypotheses} $+$ \DERIVED{}; field-theoretic
+regime, dense-range class. Cyclicity of the conditioned vector for every local
+algebra
+% parent: thm:reeh-schlieder-ABL, clause (ii) (l.22739)
+plus the standard instrument construction (any $A\in\AAA(D)$ with
+$\|A\|\le1$ is a success branch $M_1=A$ of the two-outcome instrument
+$\{A,\sqrt{\id-A^*A}\}$; rescale a cyclic-orbit approximant) yields: for every
+global normal state $\varphi$ and every $\delta>0$ there is an operation in
+$B$'s diamond, of strictly positive success probability, whose normalized
+output state is within $\delta$ of $\varphi$ in vector norm on the GNS space.
+The derivation from cyclicity is this note's (one step, sketched above); the
+cyclicity is the parent's. Every being has the same dense reach; postselected,
+and with possibly minute success probability, but available identically to all.
+\item[\textbf{(F2a)}] \STRUCT{}; scoped. By inspection of the axiom set: no
+axiom or equation determines the protocol or assigns it a probability --- the
+parent introduces $\PP_\gamma$ as a fixed non-random external input.
+% parent: ``The POVM choices are encoded in P_gamma and are not random'' (l.1150--1151)
+What inspection does \emph{not} yield --- and this note's first version wrongly
+asserted --- is that no axiom constrains $\PP_\gamma$ at all: terminal
+record-completeness is a joint identifiability condition on the pair
+$(\PP_\gamma,K)$ that fails for uninformative protocols, and the Part-II
+record layer imposes (RP), ``a genuine restriction on $\PP_\gamma$, not
+bookkeeping.''
+% parent: ax:complete (l.1654); (RP) restriction (l.2445--2449)
+These are admissibility conditions delimiting which protocols support
+collapse and record-sourcing; they do not weight, forbid, or select the
+being's choice among admissible protocols. Hospitality, correctly scoped:
+the framework has no resource to force or bias the choice; it does say which
+choices yield records that identify the outcome and may source geometry.
+\item[\textbf{(F2b)}] \THMC{Conj.\ \textsf{CHT-POVM} $+$ Pos.\ thermal-time}.
+The parent's combined Bell-style evasion theorem --- whose standing hypotheses
+are the \textsf{CHT-POVM} conjecture, the thermal-time postulate, terminal
+record-completeness, and bulk no-signalling --- places the framework as
+``non-dynamical (all-at-once), future-input-dependent retrocausal without
+operational signalling'' and states verbatim that it is \emph{not}
+superdeterministic: measurement independence at the initial slice is retained;
+what is abandoned is No-Retrocausality, and the resulting future-input
+dependence of past hidden variables is a modular invariant, not a tunable
+parameter.
+% parent: thm:bell-no-go-evasion, hypotheses l.22993--22995, item (1)
+% (meas.-indep. at l.23014--23016); conditionality per rem:bell-no-go-status
+% (l.23100), inherited from thm:wood-spekkens-evasion (l.22491) via
+% conj:CHT-POVM (l.21659).
+The parent's own concessions are inherited unshrunk: the evasion is of
+\emph{causal} fine-tuning, not Catani--Leifer \emph{operational} fine-tuning
+(``lawful fine-tuning, not its absence''), and a general adaptive-interventions
+analysis is an open scope item.
+% parent: rem:WS-operational-scope (l.22566)
+\item[\textbf{(F2c)}] \THM{}; Part-I core (finite-dimensional). Bulk
+no-signalling: for spacelike separated regions, the choice of instrument in one
+leaves the outcome \emph{marginals} in the other exactly invariant; the
+past-to-future direction uses microcausality and causal propagation, the
+future-to-past direction not even that.
+% parent: thm:no-signal (l.1340); consolidated statement rem:nosignal-coherent (l.1602)
+Scope, stated plainly: this protects $B$'s $k$-summed marginals. It does not
+protect per-branch post-selected statistics, and it does not make the shared
+terminal law insensitive to others (see Remark~\ref{rem:mutual}).
+\item[\textbf{(F2d)}] \THM{} in the Part-I core; in the field-theoretic regime
+via the Araki-conditioning branch, with the sandwich-branch lift carried by
+\textsf{conj:tomita}. The prior-average identity
+$\E_{\Prob_\gamma}[\rho^\gamma_\RC(\tau)]=\rho(\tau)$ and the reduction
+corollary: averaged over branches, every expectation any being can form is the
+ordinary forward-QM expectation from $\rho_{\rm i}$.
+% parent: lem:post-props (iii) (l.1257); cor:reduction (l.1312); type-III
+% averaging identity on the Araki branch per thm:E4-dual-weight (iv) as cited in
+% the parent's conj:tomita discussion (l.4699ff)
+The future boundary shapes which past is realised and provably cannot be used
+to send a message into it.
+% parent: closing line of rem:nosignal-coherent (l.1602)
+\item[\textbf{(F3a)}] \THM{} in the Part-I core; type-free in general
+(disturbance-robust) $+$ \DERIVED{}. The posterior is a martingale on the record
+filtration by the tower property; the martingale property survives arbitrary
+measurement disturbance --- disturbance changes the measure, not the Bayesian
+structure --- and the collapse chain is algebra-free (valid verbatim for type
+III preduals).
+% parent: lem:post-props (i) (l.1257); fd:thm:instrument, clause (ii) (l.14678);
+% fd:thm:predual (l.14898)
+Derived here (standard probability, one step): for every record-measurable
+stopping time $T$, $\E[\pi^\gamma_T(k)]=\pi^\gamma_0(k)$ (optional sampling for
+a bounded martingale closed by $\mathbf 1_{\{K=k\}}$). This is
+\emph{unbiasedness} under stopping strategies, not non-improvement of accuracy:
+expected forecast accuracy does improve as records accumulate --- that is
+exactly F3c's collapse --- but no strategy can bias the forecast or extract an
+expectation advantage over the current posterior.
+\item[\textbf{(F3b)}] \THMC{Conj.\ \textsf{CHT-POVM} $+$ Pos.\ thermal-time}.
+The Colbeck--Renner clause: the terminal PVM is the maximal abelian centraliser
+of the tracial state on the cosmological-horizon algebra, so no predictive
+extension beyond $\{E_k\}$ exists.
+% parent: thm:bell-no-go-evasion, item (4) (l.22992); conj:CHT-POVM (l.21659)
+Stated with the correct time index: no variable available strictly before the
+terminal limit, and no extension of the framework's statistics, predicts $K$
+better than the posterior. (Under terminal record-completeness $K$ \emph{is}
+a.s.\ a function of the complete pre-terminal record history --- this note's
+first version wrongly denied it; openness is openness-at-every-interior-moment,
+not ontological chanciness of the completed block. The compatibilist reading of
+this fact is discussed, not asserted, in Section~\ref{sec:notproven}.)
+\item[\textbf{(F3c)}] \THM{} under terminal record-completeness (Part-I core;
+type-free via the predual theorem); quantitative residual form without it.
+Collapse $\pi^\gamma_{s_n}(k)\to\mathbf 1_{\{K=k\}}$ holds only in the terminal
+limit,
+% parent: thm:collapse (l.1735); ax:complete (l.1654); fd:thm:predual (l.14898)
+and for accessible sub-filtrations the residual entropy $H(K\mid\mathcal G)\ge0$
+can remain strictly positive: definiteness never precedes the records.
+% parent: prop:gen-collapse (l.1893); cor:horizon (l.1954); fd:thm:quantitative (l.14972)
+\item[\textbf{(F4a)}] \THM{}; Part-I core, active law. The Born weight is not
+invariant under bulk interventions: under the active law the terminal marginal
+is the disturbed weight, dependent on the chosen instruments; the change is a
+causal influence on a non-local quantity, not a signal, and backward influence
+is permitted within the post-selected sub-ensemble.
+% parent: remark ``Why p(k) is not invariant'' + rem:gsssbp (l.1493--1540);
+% fd:thm:instrument (iv) disturbed Born law (l.14678);
+% capacity quantification rem:JLW-retrocausal-capacity (l.1544)
+\item[\textbf{(F4b)}] \THM{}; Part-I core only (the Ehrenfest identity is
+formulated by the parent in the finite-dimensional setting and no
+field-theoretic analogue is claimed here). Outcome-wise conservation of
+conditioned expectations and the conditioned Ehrenfest theorem: \emph{between}
+interventions, conditioned expectations along the realized branch obey the
+ordinary conserved Hamiltonian dynamics; the intervention step itself is the
+instrument update.
+% parent: thm:conservation (l.1067); prop:ehrenfest (l.2178); instrument update
+% fd:thm:instrument (l.14678)
+\item[\textbf{(F4c)}] \STRUCT{}$\mid$record layer (RP), per worldline. The
+parent's delayed-choice scope statement holds by construction of the
+(RP)-admissible protocol class --- a deferred commit/erase decider is outside
+the class until its decision becomes a record in the causal past of the readout
+--- supported at proposition grade by protocol-counterfactual independence of
+the metric outside record cones.
+% parent: delayed-choice scope discussion (l.2454--2465); protocol-counterfactual
+% independence clause (l.3328--3343)
+\emph{Open corner, inherited unshrunk:} the reconciliation of \emph{distinct}
+worldlines whose deferred choices are mutually spacelike is the parent's open
+multi-worldline corner; the multi-being form of this clause is not claimed.
+% parent: closing sentence of the delayed-choice scope passage (l.2463--2465)
+\end{itemize}
+\end{theorem}
+
+\begin{remark}[Proof discipline]\label{rem:discipline}
+Each clause is one of: quoted from a parent theorem at its printed grade (with
+label and line anchor in the source comment); imported from the ambient
+literature at \ADOPTED{} grade; verified by inspection of the parent axiom set
+(\STRUCT{}); or a one-step corollary derived in this note with its proof
+sketched in place (\DERIVED{}: the instrument construction in F1c, the optional
+sampling step in F3a). No clause is asserted above the grade of its weakest
+ingredient; the conjunction is graded in Table~\ref{tab:grades}.
+\end{remark}
+
+\begin{remark}[Regime scoping of the conjunction]\label{rem:regimes}
+No single regime carries all thirteen clauses at unconditional grade, and the
+theorem does not pretend otherwise. In the finite-dimensional Part-I core, the
+spine F2a, F2c, F2d, F3a, F3c, F4a, F4b is theorem-grade, but F1a can fail and
+F1b/F1c are not available (no Reeh--Schlieder). In the field-theoretic regime,
+F1a--F1c hold under the net bundle, F3a/F3c transfer type-free via the parent's
+algebra-free predual collapse theorem, two-boundary conditioning itself is
+theorem-grade on the Araki branch (the parent's (E4), closed unconditionally),
+and the sandwich-state form of F2d rides on \textsf{conj:tomita}, which is
+hereby named in the bundle rather than silently consumed. F4b is claimed in the
+core only. A single field-theoretic being therefore satisfies the conjunction
+at the grades: F1 as printed; F2a structural; F2b conditional; F2c in the core
+idealization; F2d on the Araki branch; F3 as printed; F4a--F4b in the core
+idealization; F4c per worldline. This is the strongest honest form of the claim; concentration, not
+concealment.
+\end{remark}
+
+\section{The equality corollary}\label{sec:equality}
+
+\begin{corollary}[Equal possibility of all beings]\label{cor:equal}
+At any moment, all beings have the same possibilities of choice, in the
+following precise and graded sense.
+\begin{itemize}
+\item[(i)] \emph{Same options} (grade: F1a's). Their choice sets are identified
+by $*$-isomorphism of their diamond algebras: there is no algebraic fact about
+what one being \emph{could do} that is not equally a fact about every other.
+\item[(ii)] \emph{Same passive law} (grade: \THM{} for worldline-independence;
+\ADOPTED{}$\mid$Pos.\ thermal-time bundle for frame-independence). Under the
+passive two-boundary law the terminal distribution $p(k)$ is
+worldline-independent,
+% parent: lem:born (l.754); remark ``Worldline dependence'' (l.1810--1816)
+and, for ideal QRF observers, frame-independent --- the frame-independence half
+resting on the parent's observer-invariance proposition, itself an adoption
+conditional on the thermal-time postulate and the gravity-sector realisation,
+and weakening for non-ideal QRFs.
+% parent: prop:observer-invariance, tier (A) and its hypothesis line (l.23957)
+Under the \emph{active} law the realized terminal marginal is
+protocol-dependent --- that is F4a's efficacy, shared symmetrically by all
+beings, not an inequality between them.
+\item[(iii)] \emph{Same reach} (grade: F1c's). Each being's local operations
+reach a dense set of global conditioned states; none is granted a region of
+state space inaccessible to another.
+\item[(iv)] \emph{Same openness} (grade: F3a unconditional; F3b conditional).
+Each being's forecast of the realized branch is bounded by the same martingale
+structure, and no being possesses --- or, conditional on the F3b bundle, could
+possess --- a better predictor. No being is the universe's oracle.
+\item[(v)] \emph{Same time, modulo gauge} (grade: postulate-conditional ---
+Pos.\ thermal-time, with the parent's co-scoping residual and
+\textsf{conj:tomita} seed behind it; not theorem-grade). Thermal time is
+state-dependent only at the inner level; the Connes cocycle is inner, so beings
+share a canonical outer flow, their clocks differing exactly by their
+thermodynamic state.
+% parent: pos:thermal-time (a \begin{postulate}, l.6235); rem:thermal-time-physics,
+% item (i) (l.6289)
+\end{itemize}
+What distinguishes beings is exhaustively indexical: \emph{which} subalgebra
+(location), \emph{which} filtration (history), \emph{which} inner cocycle
+(thermodynamic state), and --- per (F1b) --- which options the branch's terminal
+record forecloses. None of these alters the abstract possibility structure, the
+passive law, the reach, or the openness. The weakest-link rule of
+Table~\ref{tab:grades} covers every anchor cited by an item, parent postulates
+and adopted propositions included, not only F-clauses.
+\end{corollary}
+
+\begin{remark}[What equality does \emph{not} say]\label{rem:not-equal}
+Equality of possibility is not equality of knowledge or of practical capacity.
+Horizon-restricted beings carry strictly positive residual entropy about the
+terminal record while others may not;
+% parent: cor:horizon (l.1954)
+and the magnitude of a being's influence on the realized law depends on its
+location and instruments. The corollary asserts equality of the
+\emph{possibility structure, passive law, reach, and openness} --- not of
+epistemic access, resources, or leverage. Conflating these would overclaim, and
+the parent's own horizon-entropy corollary refutes the conflation.
+\end{remark}
+
+\begin{remark}[Equality and mutual influence]\label{rem:mutual}
+Non-coercion is a statement about marginals and must not be inflated. What is
+theorem-protected (F2c) is each being's $k$-summed spacelike marginal
+statistics. What is \emph{not} protected --- and is in fact asserted by F4a,
+symmetrically for every being --- is the shared terminal law and the per-branch
+post-selected statistics: any being's intervention shifts the disturbed weights
+$\widetilde p(k)$ that all beings jointly face, and backward influence within a
+post-selected sub-ensemble is permitted by the parent.
+% parent: rem:gsssbp (l.1519); active-law marginal non-invariance (l.1493--1540)
+In a multi-agent world, beings are mutually \emph{influential} at the level of
+the branch law while mutually \emph{non-coercive} at the level of marginals ---
+the same distinction the parent draws between causal influence and signalling.
+Freedom here is freedom among interdependent beings, not isolation.
+\end{remark}
+
+\begin{remark}[Why this is freedom-shaped and not merely randomness]\label{rem:not-noise}
+Chance alone is not freedom; the conjunction is what carries the content. (F2)
+says nothing outside the being forces or biases its options at the level of its
+marginal statistics --- not the initial data (measurement independence), not
+other beings (no-signalling), not the future boundary (prior-average inertness)
+--- while Remark~\ref{rem:mutual} states exactly the sense in which beings
+remain mutually influential; (F3) says nothing, inside or outside the
+framework, forecasts the resolution better than the being's own posterior; (F1)
+says the option set is never degraded by the conditioning except through the
+branch's terminal record; (F4) says the choice genuinely reshapes the law of
+what is realized, including retro-shaping the post-selected past, lawfully and
+causally. A fixed future boundary that is provably non-coercive at the marginal
+level, non-predictive, option-preserving, and choice-sensitive is the strongest
+freedom-compatible structure a two-boundary theory can offer.
+\end{remark}
+
+\section{What is not proven}\label{sec:notproven}
+
+\begin{itemize}
+\item \CONCEDED{} \emph{Libertarian free will.} Per realization, the two-boundary
+block --- initial data, terminal record $K$, and the record history --- is a
+fixed fact, and under terminal record-completeness $K$ is a.s.\ determined by
+the complete pre-terminal record history. The framework offers no ontological
+``could have done otherwise'' over and above (F2a)'s protocol-externality and
+(F3b)'s no-better-predictor clause. The theorem is compatibilist in kind: it
+proves the fixity is undetectable in prior average (F2d), non-coercive at the
+marginal level (F2), non-predictive from any interior moment (F3), and
+option-preserving (F1). It does not dissolve the block; it proves the block
+cannot be used against its inhabitants.
+\item \CONCEDED{} \emph{A theory of deliberation.} The protocol $\PP_\gamma$ is
+an unanalyzed input. The framework does not model how a being chooses; it
+proves the choice, however made, enters as an external variable the dynamics
+does not weight (F2a) and cannot anticipate (F3, F4c). This is a hospitality
+theorem, not a mechanism of agency.
+\item \CONCEDED{} \emph{Unconditional status of every clause.} (F2b) and (F3b)
+ride on Conj.\ \textsf{CHT-POVM} \emph{and} Pos.\ thermal-time --- two named
+points of conditionality, the first being the same one the parent flags for its
+no-go evasions; (F1a--F1c) carry the net bundle (III$_1$, Hadamard/RS state,
+factoriality, separable predual, split); the field-theoretic sandwich form of
+(F2d) rides on \textsf{conj:tomita}; (F4b) is core-only; (F4c) is per-worldline
+with the multi-worldline corner open. Failure of \textsf{CHT-POVM} degrades
+(F2b) to the parent's symmetry-natural fine-tuning fallback but eliminates
+(F3b)'s no-predictive-extension clause outright --- no fallback for it exists in
+the parent --- leaving openness supported only by the unconditional martingale
+and collapse-timing clauses (F3a, F3c).
+% parent: rem:WS-conditional fallback governs the fine-tuning defence only
+% (app:wood-spekkens, l.22491--22583)
+\item \CONCEDED{} \emph{Derivation of the Born weight.} The equality-of-law
+clause inherits the parent's status register: the Born weight is an input, not
+a derived quantity.
+% parent: rem:born-status (l.787--811); rem:fpf-born (l.1818)
+\end{itemize}
+
+\section{Attack ledger}\label{sec:attacks}
+
+Anticipated referee attacks, recorded in the ledger idiom; each with a verdict.
+FW-A1 through FW-A7 were drafted with the note; FW-A8 and FW-A9 were added
+after the adversarial swarm run, which also forced the re-tensing of FW-A3.
+
+\begin{itemize}
+\item[\textbf{FW-A1}] \emph{``Block fatalism: $K$ is fixed, so nothing is
+free.''} Verdict: \textsc{contained}, with grades displayed. The fixity is
+per-realization and per-protocol: the joint law is a function of the being's
+free protocol choice (F4a, unconditional), the boundary's fixity is provably
+inert in prior average (F2d, unconditional in the core), and no interior-moment
+variable predicts the resolution (F3a unconditional; the no-extension leg F3b
+conditional on \textsf{CHT-POVM}$+$thermal-time). The residue --- ``given the
+whole block, this block'' --- is a tautology, conceded in
+Section~\ref{sec:notproven} and carrying no operational content by (F2d).
+\item[\textbf{FW-A2}] \emph{``Equal possibility is vacuous algebra.''} Verdict:
+\textsc{refuted}. The isomorphism clause fails in the finite-dimensional core
+and holds precisely because local algebras in the field-theoretic regime are
+the unique hyperfinite III$_1$ factor. Equality of beings is a contingent,
+load-bearing structural fact about the universe's local algebras, not a
+notational triviality.
+\item[\textbf{FW-A3}] \emph{``Projective terminal effects extinguish options,
+and \textsf{CHT-POVM} selects a PVM.''} Verdict: \textsc{conceded-and-scoped},
+re-tensed after review. On projective branches faithfulness holds on the
+support corner and fails exactly on $\ker L_k$ (F1b). The extinguished options
+are those incompatible with the branch's \emph{terminal record} --- a
+future-boundary datum, not the being's past. The defence is therefore not the
+past-constraint trope (this note's first version used it; the swarm killed it)
+but non-coercion: the future-record constraint is block-level conditioning that
+is operationally inert in prior average (F2d), undetectable and unusable from
+inside, and identical in kind for every being. Constraint by the branch one is
+in fact on is what conditioning \emph{means}; what freedom requires --- and
+what the theorem delivers --- is that the constraint is not wielded by anything
+against anyone. Cross-reference FW-A1.
+\item[\textbf{FW-A4}] \emph{``Retrocausal setting-dependence is superdeterminism
+by the back door.''} Verdict: \textsc{refuted at grade}. The dependence runs
+from settings to past hidden variables within post-selected sub-ensembles ---
+not from initial data to settings. Measurement independence at the initial
+slice is retained verbatim in the parent; cosmic Bell tests are structurally
+blind to future-boundary conditioning. Grade honestly carried: conditional on
+\textsf{CHT-POVM}$+$thermal-time, with the parent's lawful-fine-tuning
+concession inherited.
+\item[\textbf{FW-A5}] \emph{``The `beings' are QRF triples; no agent, no will.''}
+Verdict: \textsc{conceded by design}. See the metaphysics fence. The theorem's
+content survives the deflation: whatever does the choosing, the framework
+does not weight it, cannot coerce it at the marginal level, cannot foresee it,
+and does not asymmetrically endow it.
+\item[\textbf{FW-A6}] \emph{``Equality is false: a being behind a horizon knows
+less.''} Verdict: \textsc{conceded and quarantined}. Epistemic access is
+provably unequal (horizon-hidden entropy); the corollary claims equality of
+possibility structure, passive law, reach, and openness only
+(Remark~\ref{rem:not-equal}).
+\item[\textbf{FW-A7}] \emph{``Universal reach is postselection theater: the
+success probability can be astronomically small.''} Verdict:
+\textsc{conceded-and-scoped}. (F1c) is a possibility statement, graded as such;
+it asserts the same dense reach for all beings, not cheap reach for any. The
+note's freedom notion nowhere trades on confusing possibility with facility.
+\item[\textbf{FW-A8}] \emph{``Beings coerce each other through the shared law:
+A's intervention changes the $\widetilde p(k)$ that B faces.''} Verdict:
+\textsc{conceded-and-scoped} (Remark~\ref{rem:mutual}). True, symmetric, and
+not coercion in the theorem's sense: B's spacelike marginals are
+theorem-protected (F2c); the shared branch law is influence-sensitive for
+everyone alike (F4a). Mutual influence at the law level with mutual
+non-coercion at the marginal level is the framework's precise shape of
+interdependent freedom; the note claims nothing stronger.
+\item[\textbf{FW-A9}] \emph{``Agents reasoning about agents: Wigner's friend
+and Frauchiger--Renner break shared-world reasoning.''} Verdict:
+\textsc{delegated at grade}. The parent's Bell-evasion theorem, item (3),
+makes nested agents' reasoning chains well-defined relative to the unique
+terminal record, blocking the Frauchiger--Renner contradiction ---
+\THMC{\textsf{CHT-POVM}$+$thermal-time}, the same bundle as F2b/F3b.
+% parent: thm:bell-no-go-evasion, item (3) (l.22992); delegation of the
+% measurement-paradox face per prop:observer-invariance tier (C) (l.23957)
+A being coherently manipulated as another's measured system is outside the
+record-generating protocol class; the equality corollary speaks of
+record-generating beings.
+\end{itemize}
+
+\section{Grade table}\label{sec:grades}
+
+\begin{table}[h]
+\centering\scriptsize\setlength{\tabcolsep}{2.5pt}
+\begin{tabular}{@{}lllll@{}}
+\toprule
+Clause & Content & Grade & Regime & Parent anchor \\
+\midrule
+F1a & isomorphic choice algebras & \ADOPTED{} $+$ net bundle & QFT & RS-ABL hyp.; ambient \\
+F1b & non-extinction of options & \THMC{net} (dense-range; corner o.w.) & QFT & RS-ABL (i)--(iv) \\
+F1c & universal reach & \THMC{net} $+$ \DERIVED{} & QFT & RS-ABL (ii) \\
+F2a & no weighting of protocol & \STRUCT{} (scoped; adm.\ conditions exist) & both & filtration section \\
+F2b & measurement independence & \THMC{\textsf{CHT-POVM}$+$th.-time} & QFT & Bell evasion (1) \\
+F2c & marginal non-coercion & \THM{} & core & bulk no-signalling \\
+F2d & inert future boundary & \THM{} core; $\mid$\textsf{conj:tomita} QFT & both & prior-average identity \\
+F3a & martingale openness & \THM{} $+$ \DERIVED{}; type-free & both & posterior lemma; predual thm. \\
+F3b & no better predictor & \THMC{\textsf{CHT-POVM}$+$th.-time} & QFT & Bell evasion (4) \\
+F3c & definiteness only with records & \THM{}$\mid$record-completeness; type-free & both & collapse thm.; horizon cor. \\
+F4a & efficacy on the branch law & \THM{} (active law) & core & $p(k)$ non-invariance \\
+F4b & lawful consequences & \THM{} & core only & conservation; Ehrenfest \\
+F4c & causal, not anticipating & \STRUCT{}$\mid$(RP); per worldline & core & delayed-choice scope \\
+Cor.~\ref{cor:equal} & equality of beings & weakest-link over \emph{all} cited anchors & --- & incl.\ Pos.\ th.-time, obs.-inv. \\
+\bottomrule
+\end{tabular}
+\caption{Grades carried faithfully; the corollary's weakest-link rule ranges
+over every anchor its items cite --- F-clauses, parent postulates, and adopted
+propositions alike. Unconditional spine (each in its stated regime): F2a
+(scoped), F2c, F2d (core), F3a, F3c ($\mid$record-completeness), F4a, F4b
+(core). F1b/F1c are theorem-grade under the net bundle; nothing in this note is
+unconditional in a regime it is not stated for.}
+\label{tab:grades}
+\end{table}
+
+\section*{Ambient references (import list)}
+\noindent Cited from standard knowledge; primary-source verification pending
+per house rule before any import into the parent.
+\begin{itemize}
+\item U. Haagerup, \emph{Connes' bicentralizer problem and uniqueness of the
+injective factor of type III$_1$}, Acta Math.\ 158 (1987) 95--148. [F1a]
+\item A. Connes, \emph{Classification of injective factors}, Ann.\ Math.\ 104
+(1976) 73--115. [F1a]
+\item D. Buchholz, C. D'Antoni, K. Fredenhagen, \emph{The universal structure
+of local algebras}, Commun.\ Math.\ Phys.\ 111 (1987) 123--135. [F1a: split,
+and the hyperfinite-III$_1$-factor-up-to-center reduction that makes the
+factoriality hypothesis explicit]
+\item C. List, \emph{Free will, determinism, and the possibility of doing
+otherwise}, No\^us 48 (2014) 156--178. [compatibilist framing, fence]
+\end{itemize}
+
+\end{document}
